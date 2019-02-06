@@ -272,7 +272,7 @@ You can hide the separator added at end of each page by setting the `HidePageSep
 {% endhighlight %}
 
 ## Password protect exported document
-Allows you to protect the exported document such as PDF, Word, Excel and PowerPonit from unauthorized users by encrypting the document using encryption password. The following code snippet illustrates how to encrypt the exported document with the user defined password.
+Allows you to protect the exported document such as PDF, Word, Excel, and PowerPoint from unauthorized users by encrypting the document using encryption password. The following code snippet illustrates how to encrypt the exported document with the user defined password.
 
 {% highlight c# %}
         public void OnInitReportOptions(ReportViewerOptions reportOption)

@@ -38,7 +38,7 @@ This section describes step by step procedure to create a RDLC report using Visu
 
 N> If you don't see the Business Intelligence or Report Server Project options, you need to update SSDT with the Business Intelligence templates. See [Download SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/previous-releases-of-sql-server-data-tools-ssdt-and-ssdt-bi?view=sql-server-2017#links-to-download-pages).
 
-![Create new reporting application project](/images/how-to/create-report/reporting-application.png)
+![Create new reporting application project](images/how-to/create-report/reporting-application.png)
 
 ### Create business object class
 1.In the solution explorer, right click on the project, click Add -> Class and name it as "ProductSales.cs" then click Add.
@@ -70,26 +70,26 @@ N> If you don't see the Business Intelligence or Report Server Project options, 
 
 3.Click Add.
 
-![Add a new rdlc using report wizard template](/images/how-to/create-report/add-sales-report-rdlc.png)
+![Add a new rdlc using report wizard template](images/how-to/create-report/add-sales-report-rdlc.png)
 
 ### Data source and table configuration wizard
 
 1.Choose Object type from the Data Source Configuration Wizard and click Next.
-![Select data source type in configuration wizard](/images/how-to/create-report/choose-data-source-type.png)
+![Select data source type in configuration wizard](images/how-to/create-report/choose-data-source-type.png)
 2.Expand the tree view and select ProductSales and click Finish.
-![Choose data object class in the application namespace](/images/how-to/create-report/select-data-objects.png)
+![Choose data object class in the application namespace](images/how-to/create-report/select-data-objects.png)
 
 3.In the Dataset Properties wizard, specify the dataset name as SalesData.
-![Set rdlc dataset properties](/images/how-to/create-report/rdlc-dataset-properties.png)
+![Set rdlc dataset properties](images/how-to/create-report/rdlc-dataset-properties.png)
 
 4.Drag and drop fields into Values, Row and Column groups then click Next.
-![Arrange table row, column and value groups](/images/how-to/create-report/arrange-table-fields.png)
+![Arrange table row, column and value groups](images/how-to/create-report/arrange-table-fields.png)
 
 5.Choose the table layout and click Next.
 6.Select table style, then click Finish.
-![Choose table toggle, repeat header and total options](/images/how-to/create-report/choose-table-layout.png)
+![Choose table toggle, repeat header and total options](images/how-to/create-report/choose-table-layout.png)
 
 7.Once select Finish, the RDLC report is ready and is displayed in the Visual Studio as shown below.
-![Visual Studio design output of the sales report](/images/how-to/create-report/sales-report-design.png)
+![Visual Studio design output of the sales report](images/how-to/create-report/sales-report-design.png)
 
 To render the RDLC using Report Viewer refer the section [RDLC Report](/js/reportviewer/rdlc-report).
