@@ -139,7 +139,7 @@ The ‘IReportController’ interface contains the required actions and helper m
 N> You cannot load the application report with path information in ASP.NET Core. So, you must load the report as Stream like an example provided above in `OnInitReportOptions`. The Sales Order Detail.rdl report can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686).
 You can find all the rdl/rdlc files in the Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
-Run the application and use the API URL (http://localhost:portnumber/Home) in Report Viewer `reportServiceUrl` property.
+Run the application and use the API URL (http://localhost:port number/Home) in Report Viewer `reportServiceUrl` property.
 
 ## Enable Cross-Origin Requests
 Browser security prevents Report Viewer from making requests to your Web API Service when both runs in a different domain. To allow access to your Web API service from different domain, you must enable cross-origin requests.
@@ -170,7 +170,6 @@ To specify the CORS policy for Home controller, add the [EnableCors] attribute t
         {
             return View();
         }
-
         ....
     }
 
