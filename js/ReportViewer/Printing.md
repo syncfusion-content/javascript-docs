@@ -113,40 +113,15 @@ To set height and width values to the report page setup use the property [`heigh
 
 N> The values set in height and width property are considered as inches input.
 
-## Print Delay
-When the report has more images, the browser will send the report stream to print dialog before the images are completely loaded. To load the stream with complete image, you need to increase the print delay in current print job. Report Viewer provides the event [`reportPrint`](../api/ejreportviewer#events:reportprint) in which you can increase the print delay as shown in below code.
+## Print report with images
+When the report has more images, the browser will send the report stream to print dialog before the images are completely loaded. To load the print report stream with complete images, you need to set the `EmbedImageData` property to true in `OnInitReportOptions` as shown in below code.
 
-{% highlight javascript %}
-    <script type="text/javascript">
+{% highlight c# %}
+    public void OnInitReportOptions(ReportViewerOptions reportOption)
+    {
+        reportOption.ReportModel.EmbedImageData = true;
+    }
 
-        $(function () {
-            $("#container").ejReportViewer(
-                {
-                    reportServiceUrl: "/api/ReportsApi",
-                    reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    reportPrint: "onReportPrint"
-                });
-        });
-
-        function onReportPrint(args) {
-            args.printWind.printDelay = 2000;
-        }
-    </script>
-{% endhighlight %}
-
-You can also increase the print delay based in the number of pages in report print view and based on browser type, to do this use the below code.
-
-{% highlight javascript %}
-    <script type="text/javascript">
-        ....
-        function onReportPrint(args) {
-        var data = $("#container").data('ejReportViewer');
-
-        if (data._browserInfo.name != "msie") {
-                args.printWind.printDelay = 2000 * data._pageModel.TotalPages;
-            }
-        }
-    </script>
 {% endhighlight %}
 
 ## External styles in report printing
@@ -209,6 +184,8 @@ Report Viewer provides events that helps to show the progress information, when 
                     }
                 }
             }
+
+            args.handled = true;
         }
     </script>
 {% endhighlight %}

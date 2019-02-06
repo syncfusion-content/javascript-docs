@@ -53,6 +53,8 @@ You can show the progress information, when the exporting takes long time to com
                     }
                 }
             }
+
+            args.handled = true;
         }
     </script>
 
