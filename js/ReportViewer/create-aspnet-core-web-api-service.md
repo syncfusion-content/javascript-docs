@@ -20,6 +20,59 @@ In this section, you will learn how to create a ASP.NET Core Web API for Report 
 ## List of dependency libraries
 The Web API service configuration requires the following reporting server-side packages. In the Solution Explore, right-click on Dependencies, select Manage NuGet Packages then search the below packages and install to the application.
 
+<table>
+<tr>
+<th>
+Package</th>
+<th>
+Purpose
+</th>
+</tr>
+<tr>
+<td>Syncfusion.EJ.ReportViewer.ASPNET.Core</td>
+<td>Builds the server-side implementations.</td>
+</tr>
+<tr>
+<td>Syncfusion.EJ</td>
+<td>Builds the report viewer controls with the tag helper.</td>
+</tr>
+<tr>
+<td>Syncfusion.EJ.ASPNET.Core</td>
+<td>Builds the report viewer controls with the tag helper.</td>
+</tr>
+<tr>
+<td>Syncfusion.Report.NETStandard</td>
+<td>It is a base library for the <b>Syncfusion.EJ.ReportViewer.ASPNET.Core</b> package.</td>
+</tr>
+<tr>
+<td>Syncfusion.Compression.NETStandard</td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages <b>Syncfusion.Pdf.NETStandard</b> , <b>Syncfusion.DocIO.NETStandard</b> and <b>Syncfusion.XlsIO.NETStandard</b>. </td>
+</tr>
+<tr>
+<td>Syncfusion.Pdf.NETStandard</td>
+<td>Supports for exporting the report to a PDF.</td>
+</tr>
+<tr>
+<td>Syncfusion.DocIO.NETStandard</td>
+<td>Supports for exporting the report to a Word.</td>
+</tr>
+<tr>
+<td>Syncfusion.XlsIO.NETStandard</td>
+<td>Supports for exporting the report to an Excel.</td>
+</tr>
+<tr>
+<td>Syncfusion.OfficeChart.NETStandard</td>
+<td>It is a base library of the <b>Syncfusion.XlsIO.NETStandard package</b>.</td>
+</tr>
+<tr>
+<td>Newtonsoft.Json</td>
+<td>Serialize and deserialize the data for report viewer. It is a mandatory package for the report viewer, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
+</tr>
+<tr>
+<td>System.Data.SqlClient</td>
+<td>This is an optional package for the report viewer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
+</tr>
+</table>
 
 I> Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this link to learn about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
