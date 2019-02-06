@@ -59,4 +59,4 @@ N> DataSource credentials must be added for shared data sources that do not have
 
 Build and run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-![Territory Sales SSRS Report Server report preview in Report Viewer](/images/getting-started/territory-sales-report.png)
+![Territory Sales SSRS Report Server report preview in Report Viewer](images/getting-started/territory-sales-report.png)

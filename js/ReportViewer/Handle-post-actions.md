@@ -11,7 +11,7 @@ documentation: ug
 Report processing actions are sent in ajax request to exchange data with Web API service. You can use the following Report Viewer events to customize the ajax requests.
 
 * AjaxBeforeLoad
-* AjaxSucess
+* AjaxSuccess
 * AjaxError
 
 ## AjaxBeforeLoad

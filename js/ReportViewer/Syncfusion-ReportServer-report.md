@@ -69,4 +69,4 @@ N> You can also load the report using guid instead of report location. Set the g
 
 3.View the HTML file in web browser and the report result shows as in the following screenshot.
 
-![Renders company sales report from Syncfusion Report Server](/images/getting-started/company-sales-report.png)
+![Renders company sales report from Syncfusion Report Server](images/getting-started/company-sales-report.png)

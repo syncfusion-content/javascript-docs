@@ -35,7 +35,7 @@ N> The parameter name is case sensitive, it should be same as available in the r
 
 3.Run the application and the result shown as in below screenshot.
 
-![Sales order detail report preview](/images/report-parameter/set-paramerter-at-client.png)
+![Sales order detail report preview](images/report-parameter/set-paramerter-at-client.png)
 
 ## Set parameters in Web API Controller
 To set parameter default value in Web API Controller, use the following code in `OnReportLoaded` method.

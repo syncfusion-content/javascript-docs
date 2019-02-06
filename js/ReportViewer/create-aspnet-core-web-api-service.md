@@ -15,7 +15,7 @@ In this section, you will learn how to create a ASP.NET Core Web API for Report 
 2.	Select the ASP.NET Core Web Application template. Name the project “ReportViewerWebAPIService” and click OK.
 3.	Choose the ASP.NET Core version. Select the Empty template and click OK. Do not select Enable Docker Support.
 
-    ![Creating a new ASP.NET Core Application Project](/images/report-service/aspnet-core-web-application.png)
+    ![Creating a new ASP.NET Core Application Project](images/report-service/aspnet-core-web-application.png)
 
 ## List of dependency libraries
 The Web API service configuration requires the following reporting server-side packages. In the Solution Explore, right-click on Dependencies, select Manage NuGet Packages then search the below packages and install to the application.
@@ -29,7 +29,7 @@ I> Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial set
 3.	In the Add New Item dialog, select the API Controller Class template.
 4.	Name the class ReportsApiController and select Add.
 
-    ![Add ASP.NET Core api controller](/images/report-service/add-core-api-controller.png)
+    ![Add ASP.NET Core api controller](images/report-service/add-core-api-controller.png)
 
 ## Inherit IReportController
 The ‘IReportController’ interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that helps to process Post/Get request from control and return the response. Open the ReportsApiController, inherit the IReportController interface and implement its methods (you can use the following codes).

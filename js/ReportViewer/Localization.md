@@ -40,6 +40,6 @@ You can localize static text and tooltip of Report Viewer. To render the static 
 
 N> Refer the [Localization](../localization) document to get the culture specific script files.
 
-![Renders Report Viewer in French localization](/images/localization.png)
+![Renders Report Viewer in French localization](images/localization.png)
 
 You can view the online Report Viewer localization demo [here](https://js.syncfusion.com/demos/web/#!/bootstrap/reportviewer/localization).

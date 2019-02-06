@@ -68,7 +68,7 @@ In this tutorial the Report Viewer page and Web API service are in same applicat
 ## Run the Application
 Build and run the application, the report rendered in Report Viewer as shown in the below screenshot.
 
-![Sales order detail report preview](/images/getting-started/sales-order-detail-report.png)
+![Sales order detail report preview](images/getting-started/sales-order-detail-report.png)
 
 ## Render report in print mode
 By default, reports are rendered in normal layout in which the print margins are not displayed. To view the render the report as like printable output, set the [`printMode`](../api/ejreportviewer#members:printmode) property value as true as shown in below code snippet. 
