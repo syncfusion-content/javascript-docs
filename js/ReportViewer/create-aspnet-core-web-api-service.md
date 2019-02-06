@@ -12,10 +12,10 @@ api: /api/js/ejreportviewer
 In this section, you will learn how to create a ASP.NET Core Web API for Report Viewer using the new ASP.NET Core Web Application template.
 
 1.	Open Visual Studio 2017, from the File menu, select New Project. 
-2.	Select the ASP.NET Core Web Application template. Name the project “ReportViewerWebAPIService” and click OK.
-3.	Choose the ASP.NET Core version. Select the Empty template and click OK. Do not select Enable Docker Support.
+2.	Select the ASP.NET Core Web Application template. Name the project “ReportViewerCoreWebAPIService” and click OK.
+3.	Choose the ASP.NET Core version. Select the Web Application(Model-View-Controller) template and click OK. Do not select Enable Docker Support.
 
-    ![Creating a new ASP.NET Core Application Project](images/report-service/aspnet-core-web-application.png)
+    ![Creating a new ASP.NET Core Application Project](images/report-service/aspnet-core-web-application-template.png)
 
 ## List of dependency libraries
 The Web API service configuration requires the following reporting server-side packages. In the Solution Explore, right-click on Dependencies, select Manage NuGet Packages then search the below packages and install to the application.
@@ -76,19 +76,11 @@ Purpose
 
 I> Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this link to learn about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
-## Add a controller
-1.	Right-click the Controllers folder.
-2.	Select Add > New Item.
-3.	In the Add New Item dialog, select the API Controller Class template.
-4.	Name the class ReportsApiController and select Add.
-
-    ![Add ASP.NET Core api controller](images/report-service/add-core-api-controller.png)
-
 ## Inherit IReportController
-The ‘IReportController’ interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that helps to process Post/Get request from control and return the response. Open the ReportsApiController, inherit the IReportController interface and implement its methods (you can use the following codes).
+The ‘IReportController’ interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that helps to process Post/Get request from control and return the response. Open the HomeController, inherit the IReportController interface and implement its methods (replace the template code with the following code).
 
 {% highlight c# %}
-public class HomeController : Controller, IReportController
+    public class HomeController : Controller, IReportController
     {
         // Report viewer requires a memory cache to store the information of consecutive client request and
         // have the rendered report viewer information in server.
@@ -117,7 +109,7 @@ public class HomeController : Controller, IReportController
         {
             string basePath = _hostingEnvironment.WebRootPath;
             // Here, we have loaded the sample report report from application the folder wwwroot. Sample.rdl should be there in wwwroot application folder.
-            FileStream reportStream = new FileStream(basePath + @"\invoice.rdl", FileMode.Open, FileAccess.Read);
+            FileStream reportStream = new FileStream(basePath + @"\Reports\Sales Order Detail.rdl", FileMode.Open, FileAccess.Read);
             reportOption.ReportModel.Stream = reportStream;
         }
 
@@ -144,6 +136,42 @@ public class HomeController : Controller, IReportController
 
 {% endhighlight %}
 
-N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as Stream like an example provided above in OnInitReportOptions. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
+N> You cannot load the application report with path information in ASP.NET Core. So, you must load the report as Stream like an example provided above in `OnInitReportOptions`. The Sales Order Detail.rdl report can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686).
+You can find all the rdl/rdlc files in the Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
-Compile and run the Web API service application.
+Run the application and use the API URL (http://localhost:portnumber/Home) in Report Viewer `reportServiceUrl` property.
+
+## Enable Cross-Origin Requests
+Browser security prevents Report Viewer from making requests to your Web API Service when both runs in a different domain. To allow access to your Web API service from different domain, you must enable cross-origin requests.
+
+Call AddCors in Startup.ConfigureServices to add CORS services to the app's service container. Replace the below code to allow any origin requests.
+
+{% highlight c# %}
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMvc();
+        services.AddCors(o => o.AddPolicy("AllowAllOrigins", builder =>
+        {
+            builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+        }));
+    }
+
+{% endhighlight %}
+
+To specify the CORS policy for Home controller, add the [EnableCors] attribute to the controller class. Specify the policy name.
+
+{% highlight c# %}
+    [Microsoft.AspNetCore.Cors.EnableCors("AllowAllOrigins")]
+    public class HomeController : Controller, IReportController
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        ....
+    }
+
+{% endhighlight %}

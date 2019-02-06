@@ -44,8 +44,7 @@ To change the subreport file path, set ReportPath property of SubReportModel in 
         {
             if (reportOption.SubReportModel != null)
             {
-                reportOption.SubReportModel.ReportPath = @" D:\Tutorial\ReportViewerWebAPIService\ReportViewerWebAPIService\App_Data \SubReport_Detail.rdl";
-                reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
+                reportOption.SubReportModel.ReportPath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/SubReport_Detail.rdl");
             }
         }
 
@@ -59,7 +58,6 @@ You can change the parameter default values of a subreport in Web API Controller
         {
             if (reportOption.SubReportModel != null)
             {
-
                 reportOption.SubReportModel.Parameters = new Syncfusion.Reports.EJ.ReportParameterInfoCollection();
                 reportOption.SubReportModel.Parameters.Add(new Syncfusion.Reports.EJ.ReportParameterInfo()
                 {
@@ -80,7 +78,8 @@ To change the data source of a RDLC subreport, set the `ReportDataSource` collec
             //Assigning the data source for 'Product List.rdlc'
             if (reportOption.SubReportModel != null)
             {
-                reportOption.ReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
+                reportOption.SubReportModel.DataSources = new Syncfusion.Reports.EJ.ReportDataSourceCollection();
+                reportOption.SubReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
             }
         }
 
@@ -96,7 +95,8 @@ You can change the credential and connection information of the data sources use
         {
             if (reportOption.SubReportModel != null)
             {
-                reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
+                reportOption.SubReportModel.DataSourceCredentials = new List<Syncfusion.Reports.EJ.DataSourceCredentials>();
+                reportOption.SubReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
             }
         }
 
