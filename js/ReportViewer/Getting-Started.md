@@ -12,7 +12,7 @@ api: /api/js/ejreportviewer
 This section explains briefly about the steps required to display a report that is already created and added to your web application. Report Viewer requires a Web API service to process the report file, so you must create any one of the following Web API service,
 
 * [ASP.NET Web API Service](/js/reportviewer/create-aspnet-web-api-service)
-* [ASP.NET Core Web API Service](/js/reportviewer/create-aspnetcore-web-api)
+* [ASP.NET Core Web API Service](/js/reportviewer/create-aspnet-core-web-api-service)
 
 Once created the Web API service, add Report Viewer to your application page to render the reports.
 
