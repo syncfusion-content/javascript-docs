@@ -12,9 +12,11 @@ api: /api/js/ejreportviewer
 This section explains briefly about the steps required to display a report that is already created and added to your web application. Report Viewer requires a Web API service to process the report file, so you must create any one of the following Web API service,
 
 * [ASP.NET Web API Service](/js/reportviewer/create-aspnet-web-api-service)
-* [ASP.NET Core Web API Service](/js/reportviewer/create-aspnetcore-web-api)
+* [ASP.NET Core Web API Service](/js/reportviewer/create-aspnet-core-web-api-service)
 
 Once created the Web API service, add Report Viewer to your application page to render the reports.
+
+I> The Report Viewer is only for rendering the reports. You must use a report generation tool to create a report, to know more refer the [Create Report](/js/reportviewer/how-to/create-report) section for creating new reports.
 
 ## Adding already created report
 Create a folder App_Data in your application for storage and add already created reports to it.
@@ -66,10 +68,10 @@ In this tutorial the Report Viewer page and Web API service are in same applicat
 ## Run the Application
 Build and run the application, the report rendered in Report Viewer as shown in the below screenshot.
 
-![Sales order detail report preview](Getting-Started_images/sales-order-detail-report.png)
+![Sales order detail report preview](images/getting-started/sales-order-detail-report.png)
 
-## Load report in print view mode
-Report Viewer has the property [`printMode`](../api/ejreportviewer#members:printmode) to render the report in print layout. Set the printMode property value as true as shown in below code snippet. 
+## Render report in print mode
+By default, reports are rendered in normal layout in which the print margins are not displayed. To view the render the report as like printable output, set the [`printMode`](../api/ejreportviewer#members:printmode) property value as true as shown in below code snippet. 
 
 {% highlight html %}
     <script type="text/javascript">
@@ -90,7 +92,7 @@ You can specify credentials in Web API service for the report data sources that 
     public class ReportsApiController : ApiController, IReportController
     {
         ……
-        
+                
         public void OnInitReportOptions(ReportViewerOptions reportOption)
         {
             reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("AdventureWorks", "demoreadonly@data-platform-demo", "N@c)=Y8s*1&dh"));

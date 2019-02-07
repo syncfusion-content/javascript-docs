@@ -12,7 +12,7 @@ api: /api/js/ejreportviewer
 
 Report Viewer has support to displays another report inside the body of a main report. The following guides you to customize the subreport properties such as data source, report path, and parameters. 
 
-1.Add the sub report and main reports to your application, in this tutorial we are using the already created reports. Refer the Create Report section to create a new report.
+1.Add the sub report and main reports to your application, in this tutorial we are using the already created reports. Refer the [Create Report](/js/reportviewer/how-to/create-report) section to create a new report.
 
 N> You can obtain Side_By_SideMainReport.rdl, Side_By_SideSubReport.rdl files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate) or you can download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Subreports-1004880284).
 
@@ -34,7 +34,7 @@ N> If the reports used from installed location it requires NorthwindIO_Reports.s
 
 3.Build and run the application, to view the below result.
 
-![Employee comparison using subreport report item](Getting-Started_images/side-by-side-subreport.png)
+![Employee comparison using subreport report item](images/getting-started/side-by-side-subreport.png)
 
 ## Change subreport path
 To change the subreport file path, set ReportPath property of SubReportModel in `OnInitReportOptions` method.
@@ -44,8 +44,7 @@ To change the subreport file path, set ReportPath property of SubReportModel in 
         {
             if (reportOption.SubReportModel != null)
             {
-                reportOption.SubReportModel.ReportPath = @" D:\Tutorial\ReportViewerWebAPIService\ReportViewerWebAPIService\App_Data \SubReport_Detail.rdl";
-                reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
+                reportOption.SubReportModel.ReportPath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/SubReport_Detail.rdl");
             }
         }
 
@@ -59,7 +58,6 @@ You can change the parameter default values of a subreport in Web API Controller
         {
             if (reportOption.SubReportModel != null)
             {
-
                 reportOption.SubReportModel.Parameters = new Syncfusion.Reports.EJ.ReportParameterInfoCollection();
                 reportOption.SubReportModel.Parameters.Add(new Syncfusion.Reports.EJ.ReportParameterInfo()
                 {
@@ -80,7 +78,8 @@ To change the data source of a RDLC subreport, set the `ReportDataSource` collec
             //Assigning the data source for 'Product List.rdlc'
             if (reportOption.SubReportModel != null)
             {
-                reportOption.ReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
+                reportOption.SubReportModel.DataSources = new Syncfusion.Reports.EJ.ReportDataSourceCollection();
+                reportOption.SubReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
             }
         }
 
@@ -96,7 +95,8 @@ You can change the credential and connection information of the data sources use
         {
             if (reportOption.SubReportModel != null)
             {
-                reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
+                reportOption.SubReportModel.DataSourceCredentials = new List<Syncfusion.Reports.EJ.DataSourceCredentials>();
+                reportOption.SubReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
             }
         }
 

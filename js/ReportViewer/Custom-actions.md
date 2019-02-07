@@ -121,4 +121,4 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
 
 4.Build and run the application, to view the Report Viewer with custom toolbar option.
 
-![Report Viewer with custom email option in toolbar](Report-Service_images/add-web-api-controller.png)
+![Report Viewer with custom email option in toolbar](images/email-report.png)

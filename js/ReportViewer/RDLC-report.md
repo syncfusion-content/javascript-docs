@@ -127,4 +127,42 @@ N> Here the `Name` is case sensitive and it should be same as in the data source
 
 4.Build and run the application, the result shown as in below screenshot.
 
-![Product list RDLC report with client side JSON array data binding](Getting-Started_images/rdlc-local-report.png)
+![Product list RDLC report with client side JSON array data binding](images/getting-started/rdlc-local-report.png)
+
+## Load report as stream
+To load report as stream, open your report using FileStream and assign the report stream to ReportModel `Stream` property.
+
+{% highlight c# %}
+        public void OnInitReportOptions(ReportViewerOptions reportOption)
+        {
+            string filePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/Product List.rdlc"); ;
+            // Here, we have loaded the sample report report from application the folder wwwroot. Sample.rdl should be there in wwwroot application folder.
+            FileStream reportStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            reportOption.ReportModel.Stream = reportStream;
+        }
+
+{% endhighlight %}
+
+N> Here the report Product List.rdlc loaded from App_Data folder location.
+
+## View Report Click
+You can get the selected parameter details when user clicks the ViewReport button in Report Viewer. The `viewReportClick` event lets you to handle the ViewReport click at client side as in below code.
+
+{% highlight c# %}
+    <script type="text/javascript">
+            $(function () {
+                $("#container").ejReportViewer({
+                    reportServiceUrl: "/api/InternalApi",
+                    reportPath: '~/App_Data/Sales Order Detail.rdl',
+                    viewReportClick:"onViewReportClick",
+                });
+            });
+
+            function onViewReportClick(args) {
+                var reportParams = [];
+                reportParams.push({ name: 'SalesOrderNumber', labels: ['SO50756'], values: ['SO50756'] });
+                args.model.parameters = reportParams;
+            }
+    </script>
+
+{% endhighlight %}

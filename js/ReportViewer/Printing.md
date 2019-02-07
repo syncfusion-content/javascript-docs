@@ -8,13 +8,13 @@ documentation: ug
 ---
 
 # Printing 
-Report Viewer provides Print button in the toolbar to print a copy of the report. The page setup dialog allows to set the paper size or other page setup properties, to see print margins, click Print Layout on the toolbar. 
+Report Viewer provides print button in the toolbar to print a copy of the report. The page setup dialog allows to set the paper size or other page setup properties, to see print margins, click Print Layout on the toolbar. 
 
-N> The values you set in the Page Setup dialog box are for current session only. When you close the report and reopen it, it will have the default values again. The default values for page setup dialog come from the report properties, which are set in Design view.
+N> The values you set in the Page Setup dialog box are for current session only. When you close the report and reopen it, it will have the default values again. The default values for page setup dialog come from the report properties, which are set in design view.
 
 ## View report in print mode
 Print margins are displayed in Print Layout only, to view report in print mode by default, set the [`printMode`](../api/ejreportviewer#members:printmode) property to true. 
-  
+
 {% highlight javascript %}
         <script type="text/javascript">
             $(function () {
@@ -28,6 +28,8 @@ Print margins are displayed in Print Layout only, to view report in print mode b
 
     </script>
 {% endhighlight %}
+
+N> By default, Report Viewer renders report in normal layout in which the print margins are not displayed.
 
 ## Print in new page
 To open the print in new tab of the current browser set the property [`printOptions`](../api/ejreportviewer#members:printOptions) to NewTab. By default, it shows the print dialog in same page.
@@ -111,40 +113,15 @@ To set height and width values to the report page setup use the property [`heigh
 
 N> The values set in height and width property are considered as inches input.
 
-## Print Delay
-When the report has more images, the browser will send the report stream to print dialog before the images are completely loaded. To load the stream with complete image, you need to increase the print delay in current print job. Report Viewer provides the event [`reportPrint`](../api/ejreportviewer#events:reportprint) in which you can increase the print delay as shown in below code.
+## Print report with images
+When the report has more images, the browser will send the report stream to print dialog before the images are completely loaded. To load the print report stream with complete images, you need to set the `EmbedImageData` property to true in `OnInitReportOptions` as shown in below code.
 
-{% highlight javascript %}
-    <script type="text/javascript">
+{% highlight c# %}
+    public void OnInitReportOptions(ReportViewerOptions reportOption)
+    {
+        reportOption.ReportModel.EmbedImageData = true;
+    }
 
-        $(function () {
-            $("#container").ejReportViewer(
-                {
-                    reportServiceUrl: "/api/ReportsApi",
-                    reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    reportPrint: "onReportPrint"
-                });
-        });
-
-        function onReportPrint(args) {
-            args.printWind.printDelay = 2000;
-        }
-    </script>
-{% endhighlight %}
-
-You can also increase the print delay based in the number of pages in report print view and based on browser type, to do this use the below code.
-
-{% highlight javascript %}
-    <script type="text/javascript">
-        ....
-        function onReportPrint(args) {
-        var data = $("#container").data('ejReportViewer');
-
-        if (data._browserInfo.name != "msie") {
-                args.printWind.printDelay = 2000 * data._pageModel.TotalPages;
-            }
-        }
-    </script>
 {% endhighlight %}
 
 ## External styles in report printing
@@ -207,6 +184,8 @@ Report Viewer provides events that helps to show the progress information, when 
                     }
                 }
             }
+
+            args.handled = true;
         }
     </script>
 {% endhighlight %}
@@ -216,5 +195,5 @@ The extra blank page is created when the Body of your report is too wide for you
 
 **Body Width <= Page Width - (Left Margin + Right Margin)**
 
-For more details on designing a report to remove the empty pages in report, you can refer to the knowledge base article of report page sizing.
+For more details on designing a report to remove the empty pages in report, you can refer to the knowledge base article of [report page sizing](https://www.syncfusion.com/kb/8622/how-to-avoid-the-extra-blank-pages-in-print-and-print-preview).
 
