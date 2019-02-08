@@ -18,11 +18,13 @@ Once created the Web API service, add Report Viewer to your application page to 
 
 I> The Report Viewer is only for rendering the reports. You must use a report generation tool to create a report, to know more refer the [Create Report](/js/reportviewer/how-to/create-report) section for creating new reports.
 
+This tutorial uses the same Web API service application created in [Create ASP.NET Web API Service](/js/reportviewer/create-aspnet-web-api-service) tutorial.
+
 ## Adding already created report
 Create a folder App_Data in your application for storage and add already created reports to it.
 
-N> You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
-In this tutorial, Sales Order Detail.rdl report is used, it can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686).
+N> In this tutorial, Sales Order Detail.rdl report is used, it can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686).
+ You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
 ## Adding scripts and CSS references
 Create a HTML page in your application and add scripts and style sheets that are mandatorily required to use Report Viewer which are listed below in an appropriate order.

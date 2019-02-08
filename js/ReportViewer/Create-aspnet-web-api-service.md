@@ -12,7 +12,7 @@ api: /api/js/ejreportviewer
 In this section, you will use the new ASP.NET web project templates to create a Web API for Report Viewer to process the report actions.
 
 1.Open Visual Studio 2012, from the File menu, select New Project. 
-2.Select the Visual C#, Web project type from the project type, then select the ASP.NET Empty Web Application project type. Set the project's Name to “ReportViewerWebAPIService” then click OK.
+2.Select the Visual C#, Web project type from the project type, then select the ASP.NET Empty Web Application project type. Set the project name then click OK.
 
 ![Creating a new ASP.NET Empty Web Application Project](images/report-service/aspnet-empty-application.png)
 
@@ -55,20 +55,19 @@ I> Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial set
 N> While adding WebAPI Controller class, name it with the suffix “Controller” that is mandatory.
 
 ## Inherit IReportController
-The ‘IReportController’ interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that helps to process Post/Get request from control and return the response. Open the ReportsApiController, inherit the IReportController interface and implement its methods (you can use the following codes).
+The ‘IReportController’ interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that helps to process Post/Get request from control and return the response. 
+
+1.Open the ReportsApiController and add the following using statement.
 
 {% highlight c# %}
-using Syncfusion.EJ.ReportViewer;
-using Syncfusion.EJ.ReportViewer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 
-namespace ReportViewerWebAPIService
-{
+using Syncfusion.EJ.ReportViewer;
+
+{% endhighlight %}
+
+2.Inherit the IReportController interface and implement its methods (you can use the following codes).
+
+{% highlight c# %}
     public class ReportsApiController : ApiController, IReportController
     {
         //Post action for processing the rdl/rdlc report 
@@ -97,11 +96,10 @@ namespace ReportViewerWebAPIService
             //You can update report options here
         }
     }
-}
 
 {% endhighlight %}
 
-## Configure routing in global application class
+## Add Routing Information
 The following steps guides you to configure the routing to include action name in the URI.
 
 1.Right-click the project in the solution explorer and select Add > New item.
@@ -109,22 +107,17 @@ The following steps guides you to configure the routing to include action name i
 
 ![Adding Global.asax file](images/report-service/add-global-application-class.png)
 
-3.In the Global.asax file, add namespace “using System.Web.Http;”, then configure the routing in Application_Start event as shown in the below code.
+3.Open the code-behind file Global.asax.cs and add the following using statement.
 
 {% highlight c# %}
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+
 using System.Web.Http;
-using System.Web.Security;
-using System.Web.SessionState;
 
-namespace ReportViewerWebAPIService
-{
-    public class Global : System.Web.HttpApplication
-    {
+{% endhighlight %}
 
+4.Then add the following code to the Application_Start method:
+
+{% highlight c# %}
         protected void Application_Start(object sender, EventArgs e)
         {
             System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
@@ -132,9 +125,8 @@ namespace ReportViewerWebAPIService
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional });
         }
-    }
-}
-
 {% endhighlight %}
+
+N> For more information about routing tables, see [Routing in ASP.NET Web API](https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/routing-in-aspnet-web-api).
 
 4.Compile and run the Web API service application.
