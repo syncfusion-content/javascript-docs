@@ -10,7 +10,7 @@ api: /api/js/ejreportviewer
 
 # Load SharePoint integrated reports
 
-To render SharePoint integrated SSRS reports set the [`reportServerUrl`](../api/ejreportviewer#members:reportserverurl), [`reportPath`](../api/ejreportviewer#members:reportpath), `reportServiceUrl` properties as in the below code snippet.
+To render SharePoint integrated SSRS reports set the [`reportServerUrl`](../api/ejreportviewer#members:reportserverurl), [`reportPath`](../api/ejreportviewer#members:reportpath), and  `reportServiceUrl` properties as in the following code snippet.
 
 {% highlight javascript %}
     <div style="height: 100%; width: 100%;">
@@ -28,11 +28,10 @@ To render SharePoint integrated SSRS reports set the [`reportServerUrl`](../api/
 
 {% endhighlight %}
 
-N> In SharePoint integrated mode reportServerUrl will be same as your site URL.
-The report path is relative to your reportServerUrl with file extension.
+N> In SharePoint integrated mode, the `reportServerUrl` will be same as your site URL. The `reportPath` is relative to the Report Server URL with the file extension.
 
 ## Forms credential for SharePoint server
-The Forms credentials are required to connect with the specified SharePoint integrated SSRS Report Server using Report Viewer. Specify the `ReportServerFormsCredential` property in Web API Controller `OnInitReportOptions` method.
+The Forms credentials are required to connect with the specified SharePoint integrated SSRS Report Server using the Report Viewer. Specify the `ReportServerFormsCredential` property in the Web API Controller `OnInitReportOptions` method.
 
 {% highlight c# %}
 public void OnInitReportOptions(ReportViewerOptions reportOption)
@@ -43,9 +42,9 @@ public void OnInitReportOptions(ReportViewerOptions reportOption)
 {% endhighlight %}
 
 
-## Data source credential for shared data sources
+## Set data source credential for shared data sources
 
-Add the data source credentials in `DataSourceCredentials` to connect with database, for all the report data source to use in the report that do not have credentials in the connection strings.
+The shared data source credentials can be added to the `DataSourceCredentials` property to connect with the database.
 
 {% highlight c# %}
 public void OnInitReportOptions(ReportViewerOptions reportOption)
@@ -56,8 +55,8 @@ public void OnInitReportOptions(ReportViewerOptions reportOption)
 }
 {% endhighlight %}
 
-N> DataSource credentials must be added for shared data sources that do not have credentials in the connection strings.
+N> Data source credentials must be added for shared data sources that do not have credentials in the connection strings.
 
-Build and run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
+Build and run the application and you can see the Report Viewer on the page as displayed in the following screenshot.
 
 ![SharePoint integrated SSRS report preview in Report Viewer](images/getting-started/territory-sales-report.png)

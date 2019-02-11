@@ -10,15 +10,13 @@ api: /api/js/ejreportviewer
 
 # Preview subreport
 
-Report Viewer has support to displays another report inside the body of a main report. The following guides you to customize the subreport properties such as data source, report path, and parameters. 
+You can display another report inside the body of a main report using the Report Viewer. The following steps helps you to customize the subreport properties such as data source, report path, and parameters.
 
-1.Add the sub report and main reports to your application, in this tutorial we are using the already created reports. Refer the [Create Report](/js/reportviewer/how-to/create-report) section to create a new report.
+1.Add the sub report and main reports to your application App_Data folder. In this tutorial, use the already created reports. Refer to the [Create Report](/js/reportviewer/how-to/create-report) section to create a new report.
 
-N> You can obtain Side_By_SideMainReport.rdl, Side_By_SideSubReport.rdl files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate) or you can download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Subreports-1004880284).
+N> Download the Side_By_SideMainReport.rdl, Side_By_SideSubReport.rdl reports from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Subreports-1004880284). Also, you can add the report from Syncfusion installation location. For more information, see [Samples and demos](/js/reportviewer/samples-and-demos). The reports used from installed location, requires NorthwindIO_Reports.sdf database to run, so add it to your application.
 
-N> If the reports used from installed location it requires NorthwindIO_Reports.sdf database to run, so add it to your application.
-
-2.Set `reportPath` and `reportServiceUrl` properties of Report Viewer as in below code snippet.
+2.Set the `reportpath` and `reportServiceUrl` properties of the Report Viewer as in following code snippet..
 
 {% highlight javascript %}
         <script type="text/javascript">
@@ -32,12 +30,12 @@ N> If the reports used from installed location it requires NorthwindIO_Reports.s
 
 {% endhighlight %}
 
-3.Build and run the application, to view the below result.
+3.Build and run the application, to view the following result
 
 ![Employee comparison using subreport report item](images/getting-started/side-by-side-subreport.png)
 
 ## Change subreport path
-To change the subreport file path, set ReportPath property of SubReportModel in `OnInitReportOptions` method.
+To change the subreport file path, set the `ReportPath` property of SubReportModel in the `OnInitReportOptions` method.
 
 {% highlight c# %}
         public void OnInitReportOptions(ReportViewerOptions reportOption)
@@ -51,7 +49,7 @@ To change the subreport file path, set ReportPath property of SubReportModel in 
 {% endhighlight %}
 
 ## Set subreport parameter
-You can change the parameter default values of a subreport in Web API Controller `OnReportLoaded`, method as given in below code snippet.
+You can change the parameter default values of a subreport in the Web API Controller `OnReportLoaded`, method as given in the following code snippet.
 
 {% highlight c# %}
         public void OnReportLoaded(ReportViewerOptions reportOption)
@@ -69,24 +67,6 @@ You can change the parameter default values of a subreport in Web API Controller
 
 {% endhighlight %}
 
-## Set or modify subreport data source
-To change the data source of a RDLC subreport, set the `ReportDataSource` collection in `OnReportLoaded` method. The data source name is case sensitive, it should be same as in the report definition.
-
-{% highlight c# %}
-        public void OnReportLoaded(ReportViewerOptions reportOption)
-        {
-            //Assigning the data source for 'Product List.rdlc'
-            if (reportOption.SubReportModel != null)
-            {
-                reportOption.SubReportModel.DataSources = new Syncfusion.Reports.EJ.ReportDataSourceCollection();
-                reportOption.SubReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
-            }
-        }
-
-{% endhighlight %}
-
-N> You can bind data source only for RDLC reports. The RDL report has the connection information in report definition itself, so no need to bind data source.
-
 ## Modify subreport data source connection string
 You can change the credential and connection information of the data sources used in the subreport using the SubReportModel in `OnInitReportOptions` method.
 
@@ -101,3 +81,22 @@ You can change the credential and connection information of the data sources use
         }
 
 {% endhighlight %}
+
+## Set subreport data source
+To specify data source of a RDLC subreport, set the `ReportDataSource` property in `OnReportLoaded` method. The data source name is case sensitive, it should be same as in the report definition.
+
+{% highlight c# %}
+        public void OnReportLoaded(ReportViewerOptions reportOption)
+        {
+            //Assigning the data source for 'Product List.rdlc'
+            if (reportOption.SubReportModel != null)
+            {
+                reportOption.SubReportModel.DataSources = new Syncfusion.Reports.EJ.ReportDataSourceCollection();
+                reportOption.SubReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
+            }
+        }
+
+{% endhighlight %}
+
+N> You can bind local business object data source collection only for RDLC reports. The RDL report has the connection information in report definition itself, so no need to bind data source.
+

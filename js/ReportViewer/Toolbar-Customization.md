@@ -9,10 +9,10 @@ api: /api/js/ejreportviewer
 ---
 
 # Toolbar Customization
-You can hide the component toolbar and show customized user interface or customize toolbar icons, element’s appearances using templates and Report Viewer properties. 
+You can hide the component toolbar to show customized user interface or to customize the toolbar icons and element’s appearances using the templates and Report Viewer properties.  
 
 ## Hide parameter block and toolbar items
-To hide toolbar items, set the [`toolbarSettings`](../api/ejreportviewer#members:toolbarsettings) property. Set the items property as ToolbarItems.Parameters to remove parameter button from toolbar and hide the parameter block. 
+To hide toolbar items, set the [`toolbarSettings`](../api/ejreportviewer#members:toolbarsettings) property. The following code can be used to remove the parameter option from the toolbar and hide the parameter block.
 
 {% highlight javascript %}
         <script type="text/javascript">
@@ -27,7 +27,7 @@ To hide toolbar items, set the [`toolbarSettings`](../api/ejreportviewer#members
 
 {% endhighlight %}
 
-The below code sample hides the Print options from toolbar items.
+The following code sample hides the print options from the toolbar items.
 
 {% highlight javascript %}
         <script type="text/javascript">
@@ -43,7 +43,7 @@ The below code sample hides the Print options from toolbar items.
 
 {% endhighlight %}
 
-Similarly, show or hide all other toolbar options with help of [`toolbarSettings.items`](../api/ejreportviewer#members:toolbarsettings-items) enum.
+Similarly, you can show or hide all other toolbar options with the help of [`toolbarSettings.items`](../api/ejreportviewer#members:toolbarsettings-items) enum.
 
 ## Hide toolbar
 To hide the Report Viewer toolbar set the [`showToolbar`](../api/ejreportviewer#members:members:toolbarsettings-showtoolbar) property to false.
@@ -64,7 +64,7 @@ To hide the Report Viewer toolbar set the [`showToolbar`](../api/ejreportviewer#
 {% endhighlight %}
 
 ## Decide the export option
-Report Viewer provides [`exportOptions`](../api/ejreportviewer#members:members:exportsettings-exportoptions) property to show or hide the default export types available in component. The following code hides the HTML export type from default export options. 
+The Report Viewer provides the [`exportOptions`](../api/ejreportviewer#members:members:exportsettings-exportoptions) property to show or hide the default export types available in the component. The following code hides the HTML export type from the default export options. 
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -81,8 +81,8 @@ Report Viewer provides [`exportOptions`](../api/ejreportviewer#members:members:e
 
 {% endhighlight %}
 
-## Add custom items to export dropdown
-To add custom items to the export drop-down available in the Report Viewer toolbar, use the property [`customExportItems`](../api/ejreportviewer#members:members:exportsettings-customexportitems) and provide the JSON array of collection input with index, cssClass name and value property as given below code snippet.
+## Add custom items to the export drop-down
+To add custom items to the export drop-down available in the Report Viewer toolbar, use the property [`customExportItems`](../api/ejreportviewer#members:members:exportsettings-customexportitems) and provide the JSON array of collection input with the index, cssClass name, and value properties as given in following code snippet.
 
 {% highlight javascript %}
             $(function () {
@@ -106,7 +106,7 @@ To add custom items to the export drop-down available in the Report Viewer toolb
 {% endhighlight %}
 
 ## Add custom option to toolbar
-The properties [`customToolBarItems`](../api/ejreportviewer#members:members:toolbarsettings-customtoolbaritems) and [`customToolBarGroups`](../api/ejreportviewer#members:members:toolbarsettings-customtoolbargroups) used to add custom toolbar items to the Report Viewer toolbar and it takes JSON array collection input with index, cssClass name, tooltip, event to fire when clicked on it. The below code adds an email option to the toolbar.
+The properties [`customToolBarItems`](../api/ejreportviewer#members:members:toolbarsettings-customtoolbaritems) and [`customToolBarGroups`](../api/ejreportviewer#members:members:toolbarsettings-customtoolbargroups) are used to add custom toolbar items to the Report Viewer toolbar. It takes JSON array input with index, cssClass name, tooltip, and event to fire by clicking it. following code adds an email option to the toolbar.
 
 {% highlight javascript %}
             $(function () {
