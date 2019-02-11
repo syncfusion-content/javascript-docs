@@ -12,7 +12,7 @@ api: /api/js/ejreportviewer
 
 The data binding support, allows you to view RDLC reports that exist on the local file system with JSON array and custom business object data collection. The following steps demonstrates how to render a RDLC report with JSON array and custom business object data collection.
 
-In this tutorial, going to render the RDLC report `Product List.rdlc`, you should add the report from Syncfusion installation location. For more information, see [Samples and demos](/js/reportviewer/samples-and-demos).
+N> Add the RDLC report `Product List.rdlc` from Syncfusion installation location to your application App_Data folder. For more information, see [Samples and demos](/js/reportviewer/samples-and-demos).
 
 ## Bind data source at client side
 1.Set the RDLC report path to the `reportPath` property.
@@ -20,14 +20,14 @@ In this tutorial, going to render the RDLC report `Product List.rdlc`, you shoul
 3.Bind the JSON array collection to the [`dataSources`](../api/ejreportviewer#members:datasources) property as shown in following code.
 
 {% highlight javascript %}
-<div style="height: 100%; width: 100%;">
+    <div style="height: 100%; width: 100%;">
         <div style="height: 600px; width: 950px; min-height: 400px;" id="viewer"></div>
         <script type="text/javascript">
             $(function () {
                 $("#viewer").ejReportViewer({
                     reportServiceUrl: "/api/ReportsApi",
                     processingMode: ej.ReportViewer.ProcessingMode.Local,
-                    reportPath: 'Product List.rdlc',
+                    reportPath: '~/App_Data/Product List.rdlc',
                     dataSources: [{
                         value: [
                         {
@@ -106,20 +106,15 @@ The following steps help you to configure the Web API to render the RDLC report 
     }
 {% endhighlight %}
 
-2.Set the `ProcessingMode` to Local and `ReportPath` to the RDLC report location.
+2.Set the `ProcessingMode` to `ProcessingMode.Local` and `ReportPath` to the RDLC report location.
 3.Bind the business object data values collection by adding new item to the `DataSources` as in the following code snippet.
 
 {% highlight c# %}
-public class ReportsApiController : ApiController, IReportController
+    public void OnInitReportOptions(ReportViewerOptions reportOption)
     {
-        ..
-        public void OnInitReportOptions(ReportViewerOptions reportOption)
-        {
-            reportOption.ReportModel.ProcessingMode = ProcessingMode.Local;
-            reportOption.ReportModel.ReportPath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/Product List.rdlc");
-            reportOption.ReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
-        }
-        ..
+        reportOption.ReportModel.ProcessingMode = ProcessingMode.Local;
+        reportOption.ReportModel.ReportPath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/Product List.rdlc");
+        reportOption.ReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
     }
 {% endhighlight %}
 
@@ -132,20 +127,20 @@ T> The `Value` accepts IList, DataSet, and DataTable inputs.
 ![Product list RDLC report with client side JSON array data binding](images/getting-started/rdlc-local-report.png)
 
 ## Load report as stream
-To load report as a stream, create a report stream using the FileStream class and assign the report stream to the ReportModel  `Stream` property.
+To load report as a stream, create a report stream using the FileStream class and assign the report stream to the ReportModel `Stream` property.
 
 {% highlight c# %}
-        public void OnInitReportOptions(ReportViewerOptions reportOption)
-        {
-            string filePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/Product List.rdlc"); ;
-            // Here, we have loaded the sample report report from application the folder wwwroot. Sample.rdl should be there in wwwroot application folder.
-            FileStream reportStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-            reportOption.ReportModel.Stream = reportStream;
-        }
-
+    public void OnInitReportOptions(ReportViewerOptions reportOption)
+    {
+        string filePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/Product List.rdlc"); ;
+        // Opens the report from application App_Data folder usinf FileStream
+        FileStream reportStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+        reportOption.ReportModel.Stream = reportStream;
+        reportOption.ReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
+    }
 {% endhighlight %}
 
-N> In the above code, Product List.rdlc report is loaded from the App_Data folder location.
+N> In the above code, `Product List.rdlc` report is loaded from the App_Data folder location.
 
 ## View Report Click
 You can get the user selected parameter details when the user clicks on the ViewReport button in the parameter block. The `viewReportClick` event lets you to handle the ViewReport button click at client-side as in the following code.
