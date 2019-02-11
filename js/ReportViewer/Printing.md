@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Printing 
-Report Viewer provides print button in the toolbar to print a copy of the report. The page setup dialog allows to set the paper size or other page setup properties, to see print margins, click Print Layout on the toolbar. 
+Report Viewer provides print button in the toolbar to print a copy of the report. The page setup dialog allows to set the paper size or other page setup properties, to see print margins, click Print Layout on the toolbar.
 
 N> The values you set in the Page Setup dialog box are for current session only. When you close the report and reopen it, it will have the default values again. The default values for page setup dialog come from the report properties, which are set in design view.
 

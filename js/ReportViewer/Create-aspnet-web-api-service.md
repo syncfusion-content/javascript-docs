@@ -46,6 +46,29 @@ N> If you have not installed any version of Essential Studio then you can add th
 
 I> Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET application to use our components.
 
+3.Install the `Newtonsoft.Json` NuGet package via the NuGet package manager console.
+
+{% highlight c# %}
+
+Install-Package Newtonsoft.Json -Version 9.0.1
+
+{% endhighlight %}
+
+N> It is a mandatory package for the report viewer to serialize and deserialize the JSON data and the package version should be  9.0.1 or higher.
+
+4.Make sure to add bindingRedirect for `Newtonsoft.Json` inside the &lt;configuration&gt; tag in the project's web.config file.
+
+{% highlight c# %}
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-9.0.0.0" newVersion="9.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+{% endhighlight %}
+
 ## Add Web API Service
 1.Right-click the project and select Add -> New Item from the context menu.
 2.In the Add New Item dialog, select Web API Controller class and name it as ReportsApiController then, click Add.

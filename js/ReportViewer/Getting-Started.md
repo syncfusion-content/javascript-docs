@@ -91,15 +91,11 @@ By default, reports are rendered in normal layout in which the print margins are
 You can specify credentials in Web API service for the report data sources that use Windows Authentication, database authentication, or custom authentication. Create a new DataSourceCredentials object with data source name, username and password then add it to `DataSourceCredentials` property in `OnInitReportOptions` method as in the below code snippet.
 
 {% highlight c# %}
-    public class ReportsApiController : ApiController, IReportController
-    {
-        ……
-                
-        public void OnInitReportOptions(ReportViewerOptions reportOption)
-        {
-            reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("AdventureWorks", "demoreadonly@data-platform-demo", "N@c)=Y8s*1&dh"));
-        }
-    }
+public void OnInitReportOptions(ReportViewerOptions reportOption)
+{
+    //Here the "AdventureWorks" is the data source name provided in report definition. Name property is case sensitive.
+    reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("AdventureWorks", "demoreadonly@data-platform-demo", "N@c)=Y8s*1&dh"));
+}
 {% endhighlight %}
 
 N> The data source name is case sensitive, so name should be same as available in the report definition.
