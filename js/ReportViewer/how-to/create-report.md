@@ -24,7 +24,7 @@ Provides intuitive user interface to create or edit report online. For more deta
 You can create a RDL report using the Microsoft standalone Report Builder. For more details refer to the [online documentation](https://docs.microsoft.com/en-us/sql/reporting-services/report-builder/start-report-builder?view=sql-server-2014).
 
 ### Visual Studio Report Server template
-To create a RDL report in Visual Studio, a report server project is required where you can save your report definition (.rdl) file. For more details, refer to the  [Visual Studio documentation](https://docs.microsoft.com/en-us/sql/reporting-services/create-a-basic-table-report-ssrs-tutorial?view=sql-server-2014).
+To create a RDL report in Visual Studio, a Report Server project is required where you can save your report definition (.rdl) file. For more details, refer to the  [Visual Studio documentation](https://docs.microsoft.com/en-us/sql/reporting-services/create-a-basic-table-report-ssrs-tutorial?view=sql-server-2014).
 
 N> If you do not see the Business Intelligence or Report Server Project options, you should update SSDT with the Business Intelligence templates. See [Download SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017).
 

@@ -16,7 +16,7 @@ You can display another report inside the body of a main report using the Report
 
 N> Download the Side_By_SideMainReport.rdl, Side_By_SideSubReport.rdl reports from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Subreports-1004880284). Also, you can add the report from Syncfusion installation location. For more information, see [Samples and demos](/js/reportviewer/samples-and-demos). The reports used from installed location, requires NorthwindIO_Reports.sdf database to run, so add it to your application.
 
-2.Set the `reportpath` and `reportServiceUrl` properties of the Report Viewer as in following code snippet..
+2.Set the `reportPath` and `reportServiceUrl` properties of the Report Viewer as in following code snippet.
 
 {% highlight javascript %}
         <script type="text/javascript">
