@@ -133,7 +133,7 @@ To load report as a stream, create a report stream using the FileStream class an
     public void OnInitReportOptions(ReportViewerOptions reportOption)
     {
         string filePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/Product List.rdlc"); ;
-        // Opens the report from application App_Data folder usinf FileStream
+        // Opens the report from application App_Data folder using FileStream
         FileStream reportStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
         reportOption.ReportModel.Stream = reportStream;
         reportOption.ReportModel.DataSources.Add(new Syncfusion.Reports.EJ.ReportDataSource { Name = "list", Value = ProductList.GetData() });
