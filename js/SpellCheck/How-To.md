@@ -60,3 +60,57 @@ The following code example describes the above behavior.
 
     
 {% endhighlight %}
+
+## How to manually trigger SpellCheck after SpellCheck dialog is closed
+
+When a content is validated dynamically through SpellCheck dialog mode, validation classes will not be maintained once dialog is closed. To overcome this, validation can be done manually through dialogClose event of SpellCheck. 
+
+The following example describes the above behavior
+
+{% highlight html %}
+
+     <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area" style="margin-left:50px">
+                <div id="TextArea" class="sentence" contenteditable="true" name="sentence">
+                    It is a concepst vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)
+                    and 400  (295.02 lbf ft), diesel particulate filter and Bluetec emission control system, quattro permanent four-wheel drve system,
+                    Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+                    MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+                </div><br />
+                <div>
+                    <input type="button" id="SpellCheck"/>
+                   <input type="button" id="SpellCheckdialog"/>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(function () {
+            $("#TextArea").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "https://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "https://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+              	 dialogClose:function()
+					{
+					  this.validate();
+					}
+            });
+            $("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showInContextMenu", text: "Spell check" });
+            $("#SpellCheckdialog").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using Dialog" });
+         });
+       function showInContextMenu() {
+            var spellObj = $("#TextArea").data("ejSpellCheck");
+            spellObj.validate();
+         }
+      function showDialog()
+        {
+               var spellChecker = $("#TextArea").data('ejSpellCheck');
+               spellChecker.showInDialog();
+        }
+    </script>
+
+{% endhighlight %}
+
+[Sample](https://jsplayground.syncfusion.com/gq5nodrd)
