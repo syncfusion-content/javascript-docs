@@ -73,14 +73,14 @@ The following example describes the above behavior
         <div class="row">
             <div class="cols-sample-area" style="margin-left:50px">
                 <div id="TextArea" class="sentence" contenteditable="true" name="sentence">
-                    It is a concepst vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)
-                    and 400  (295.02 lbf ft), diesel particulate filter and Bluetec emission control system, quattro permanent four-wheel drve system,
+                    It is a concepts vehicle with Livid Silver body color, 20-inch wheels, fabric folding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)
+                    and 400  (295.02 lbf ft), diesel particulate filter and Bluetec emission control system, quattro permanent four-wheel drive system,
                     Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
-                    MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+                    MMI control panel with touch pad and dual-view technology, sound system with the prominent extending tweeters.
                 </div><br />
                 <div>
                     <input type="button" id="SpellCheck"/>
-                   <input type="button" id="SpellCheckdialog"/>
+                   <input type="button" id="dialog"/>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@ The following example describes the above behavior
 					}
             });
             $("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showInContextMenu", text: "Spell check" });
-            $("#SpellCheckdialog").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using Dialog" });
+            $("#dialog").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using Dialog" });
          });
        function showInContextMenu() {
             var spellObj = $("#TextArea").data("ejSpellCheck");
