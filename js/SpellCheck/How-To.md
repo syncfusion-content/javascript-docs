@@ -11,10 +11,9 @@ api: /api/js/ejspellcheck
 
 ## How to SpellCheck on typing with time interval?
 
-SpellCheck control provides option to validate the content with periodic interval once we stopped the typing by using [`enableValidateOnType`](/api/js/ejspellcheck#members:enablevalidateontype) property. 
-You can achieved sample side time interval by trigger event of keyup. You can add/update the speed of time for validate on typing in the sample. Here, [`actionSuccess`](/api/js/ejspellcheck#events:actionsuccess) client side event is used to set the cursor position.
+When a content is validated dynamically through SpellCheck dialog mode, validation classes will not be maintained after the dialog has been closed. To overcome this, validation can be done manually using the dialogClose event of SpellCheck. 
 
-The following code example describes the above behavior.
+The following code example demonstrates how to trigger SpellCheck manually after the SpellCheck dialog has been closed.
 
 {% highlight html %}
 
