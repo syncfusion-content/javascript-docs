@@ -63,9 +63,9 @@ The following code example describes the above behavior.
 
 ## How to manually trigger SpellCheck after SpellCheck dialog is closed
 
-When a content is validated dynamically through SpellCheck dialog mode, validation classes will not be maintained once dialog is closed. To overcome this, validation can be done manually through dialogClose event of SpellCheck. 
+When a content is validated dynamically through SpellCheck dialog mode, validation classes will not be maintained after the dialog has been closed. To overcome this, validation can be done manually using the dialogClose event of SpellCheck. 
 
-The following example describes the above behavior
+The following code example demonstrates how to trigger SpellCheck manually after the SpellCheck dialog has been closed.
 
 {% highlight html %}
 
