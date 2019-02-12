@@ -9,11 +9,19 @@ api: /api/js/ejreportviewer
 ---
 
 # Report interaction events
+You can handle the report processing actions and interact with reports using the following events.
+
+* ReportLoaded
+* ReportError
+* ShowError
+* Drill through
+* Hyperlink
 
 ## Report loaded
-The ‘reportLoaded` event fires once the report loading is completed and ready to start the processing and evaluation. You can override the event and specify data source, parameters at client side The following sample code loads a report by assigning report data source input in reportLoaded event.
 
-N> Here in this sample, used the IndicatorReport.rdlc and you can find the report from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
+The [`reportLoaded`](../api/ejreportviewer#events:reportloaded) event fires once the report loading is completed and ready to start the processing. You can handle the event and specify data source, parameters at client-side. The following sample code loads a report by assigning report data source input in the reportLoaded event.
+
+N> In this tutorial, `IndicatorReport.rdlc` report is used, you can add the report from Syncfusion installation location. For more information, see [Samples and demos](/js/reportviewer/samples-and-demos).
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -123,7 +131,7 @@ N> Here in this sample, used the IndicatorReport.rdlc and you can find the repor
 {% endhighlight %}
 
 ## Report error
-When an error occurs in the report it raises the [`reportError`](../api/ejreportviewer#events:reporterror) event and you can handle and show the details in your custom dialog instead of component default error detail interface.
+When an error occurs in the report processing, it raises the [`reportError`](../api/ejreportviewer#events:reporterror) event. You can handle the event and show the details in your custom dialog instead of component default error detail interface.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -146,7 +154,7 @@ When an error occurs in the report it raises the [`reportError`](../api/ejreport
 N> To suppress the default error dialog, set the cancel argument to true.
 
 ## Show error
-The [`showError`](../api/ejreportviewer#events:showerror) event invoked whenever click on a report item that contains error processing errors. It provides detailed information about the cause of error. You can override it and show your customized dialog.
+The [`showError`](../api/ejreportviewer#events:showerror) event invoked whenever the user clicks a report item that contains an error in processing. It provides detailed information about the cause of the error. You can hide the default dialog and show your customized dialog.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -171,7 +179,7 @@ The [`showError`](../api/ejreportviewer#events:showerror) event invoked whenever
 {% endhighlight %}
 
 ## Drill through
-When a drill through item is selected in a report, it invokes the [`drillThrough`](../api/ejreportviewer#events:drillthrough) event, you can change the drill through arguments such as drill through report parameter, datasources. The following sample code loads drill through report and adds data source to the report before the drillthrough report is rendered.
+When a drill through item is selected in a report, it invokes the [`drillThrough`](../api/ejreportviewer#events:drillthrough) event. You can change the drill through arguments such as report parameter and data sources. The following sample code can be used to change the drill through report name and set the parameter value before the drill through report is rendered.
 
 {% highlight c# %}
     <script type="text/javascript">
@@ -193,7 +201,7 @@ When a drill through item is selected in a report, it invokes the [`drillThrough
 {% endhighlight %}
 
 ## Hyperlink
-The [`hyperlink`](../api/ejreportviewer#events:hyperlink) event occurs when a user clicks a hyperlink in a report, before the hyperlink is followed. The following sample code redirects to new custom URL and cancels the component default action.
+The [`hyperlink`](../api/ejreportviewer#events:hyperlink) event occurs when the user clicks a hyperlink in a report, before the hyperlink is followed. The following sample code redirects to a new custom URL and cancels the component default action.
 
 {% highlight c# %}
     <script type="text/javascript">
@@ -211,5 +219,3 @@ The [`hyperlink`](../api/ejreportviewer#events:hyperlink) event occurs when a us
         }
     </script>
 {% endhighlight %}
-
-N> You can bind data source only for RDLC reports. The RDL report has the connection information in report definition itself, so no need to bind data source.

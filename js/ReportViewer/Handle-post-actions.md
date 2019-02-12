@@ -8,17 +8,17 @@ documentation: ug
 ---
 
 # Handle Post Actions
-Report processing actions are sent in ajax request to exchange data with Web API service. You can use the following Report Viewer events to customize the ajax requests.
+Report processing actions are sent in an Ajax request to exchange data with the Web API service. You can use the following Report Viewer events to customize the Ajax requests.
 
 * AjaxBeforeLoad
 * AjaxSuccess
 * AjaxError
 
 ## AjaxBeforeLoad
-This event triggered before an Ajax request is sent to Report Viewer Web API service. It allows you to set additional headers, custom data. Here in the following code sample demonstrates adding custom authorization header and passing default parameter value to service.
+This event can be triggered before an Ajax request is sent to the Report Viewer Web API service. It allows you to set additional headers, custom data in the Ajax request. The following code sample demonstrates adding custom authorization header and passing default parameter values to service.
 
 ### Add custom header in ajax request
-Initialize the [`ajaxBeforeLoad`](../api/ejreportviewer#events:ajaxbeforeload) event in script and add the authorization token to `headers` property.
+Initialize the [`ajaxBeforeLoad`](../api/ejreportviewer#events:ajaxbeforeload) event in the script and add the authorization token to the `headers` property
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -36,7 +36,7 @@ Initialize the [`ajaxBeforeLoad`](../api/ejreportviewer#events:ajaxbeforeload) e
     </script>
 {% endhighlight %}
 
-Get the custom header value from HttpContext header collection using the key name specified at client side.
+Get the custom header value from the HttpContext header collection using the key name specified at client-side.
 
 {% highlight c# %}
         public object PostReportAction(Dictionary<string, object> jsonResult)
@@ -59,7 +59,7 @@ Get the custom header value from HttpContext header collection using the key nam
 N> Perform your own action to validate the header values.
 
 ### Pass custom data in ajax request
-Use the `data` property to set custom data to server in ajax request. Here in the below code sample, parameter values are passed to server side.
+Use the `data` property to set custom data to the server in the Ajax request. In the following code sample, parameter values are passed to the server-side.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -73,7 +73,7 @@ Use the `data` property to set custom data to server in ajax request. Here in th
     </script>
 {% endhighlight %}
 
-The custom data values are stored in `CustomData` header key, you can store it to local property. The following code sample stores parameter values, then values are set to report in `OnReportLoaded` method.
+The custom data values are stored in the `CustomData` header key, you can store it to the local property. The following code sample stores parameter values, then the values are set to report in the `OnReportLoaded` method.
 
 {% highlight c# %}
     public class ReportsApiController : ApiController, IReportController
@@ -114,7 +114,7 @@ The custom data values are stored in `CustomData` header key, you can store it t
 {% endhighlight %}
 
 ## AjaxSuccess
-To perform custom action or show user defined message, when an ajax request was successful you can use the [`ajaxSuccess`](../api/ejreportviewer#events:ajaxsuccess) event.
+To perform custom action or show user defined message, use the [`ajaxSuccess`](../api/ejreportviewer#events:ajaxsuccess) event on the successful Ajax request.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -134,7 +134,7 @@ To perform custom action or show user defined message, when an ajax request was 
 {% endhighlight %}
 
 ## AjaxError
-The [`ajaxError`](../api/ejreportviewer#events:ajaxerror) event is called if an error occurred with the request, you can display the customized error detail in the event method.
+The [`ajaxError`](../api/ejreportviewer#events:ajaxerror) event is called, if an error occurred with the request, you can display the customized error detail in the event method.
 
 {% highlight javascript %}
     <script type="text/javascript">

@@ -37,7 +37,7 @@ Report loaded method that is triggered when report and sub report begin loading.
 
 ## ReportHelper
 
-TThe class `ReportHelper` contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. It has the following methods. 
+TThe class `ReportHelper` contains helper methods that help process Post or Get request from the ReportViewer control and returns the response to the ReportViewer control. It has the following methods. 
 
 <table>
 <tr>

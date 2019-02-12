@@ -10,15 +10,16 @@ api: /api/js/ejreportviewer
 
 # Report Parameters
 
-Report Viewer allows to pass or set report parameters default values at runtime. It provides [`parameters`](../api/ejreportviewer#members:parameters) property to set values of report parameters. You can set report parameters while creating ReportViewer control in script or in Web API Controller.
+Provides property options to pass or set report parameters default values at runtime using the [`parameters`](../api/ejreportviewer#members:parameters) property. You can set the report parameters while creating the Report Viewer control in a script or in the Web API Controller.
 
 ## Set parameter at client
-The [`parameters`](../api/ejreportviewer#members:parameters) property takes JSON array values with parameter details such as name, prompt, labels, values, and nullable. 
-1.Set the default value to the [`values`](../api/ejreportviewer#members:parameters-values) property and name of the report parameter to [`name`](../api/ejreportviewer#members:parameters-name) property.
+The [`parameters`](../api/ejreportviewer#members:parameters) property takes the JSON array value input with parameter details.
+ 
+1.Set the default value data to the [`values`](../api/ejreportviewer#members:parameters-values) property and name of the report parameter to the [`name`](../api/ejreportviewer#members:parameters-name) property.
 
 N> The parameter name is case sensitive, it should be same as available in the report definition.
 
-2.The following code example illustrates how to set ReportParameter in script.
+2.The following code example illustrates how to set report parameter in the script.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -33,12 +34,12 @@ N> The parameter name is case sensitive, it should be same as available in the r
 
 {% endhighlight %}
 
-3.Run the application and the result shown as in below screenshot.
+3.Run the application and the result shown as in the following screenshot.
 
 ![Sales order detail report preview](images/report-parameter/set-paramerter-at-client.png)
 
 ## Set parameters in Web API Controller
-To set parameter default value in Web API Controller, use the following code in `OnReportLoaded` method.
+To set parameter default value in Web API Controller, use the following code in the `OnReportLoaded` method.
 
 {% highlight c# %}
 public void OnReportLoaded(ReportViewerOptions reportOption)
@@ -54,7 +55,7 @@ public void OnReportLoaded(ReportViewerOptions reportOption)
 {% endhighlight %}
 
 ## Get report parameter
-The `ReportHelper` class provides methods that helps to get the report parameters used in report. The following helper methods used to get parameter with or without values.
+The `ReportHelper` class provides methods that help you to get the report parameters used in the report. The following helper methods used to get parameter with or without values.
 
 <table>
 <tr>
@@ -71,7 +72,7 @@ GetParametersWithValues</td><td>
 Returns the report parameters with processed data values that are used in the current report.</td></tr>
 </table>
 
-You can use the below code sample to get parameter names and set parameter default values.
+You can use the following code sample to get parameter names and set parameter default values.
 
 {% highlight c# %}
     public class ReportsApiController : ApiController, IReportController

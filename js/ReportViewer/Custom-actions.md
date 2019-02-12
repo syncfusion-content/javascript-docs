@@ -8,12 +8,12 @@ documentation: ug
 ---
 
 # Custom Actions (Email a report)
-Add user defined buttons and invoke custom actions using Report Viewer property options. In this section, we will create custom action to email the rendered report to users.
+Add user defined buttons in the toolbar and invoke custom actions using the Report Viewer property. In this section, custom action can be created to email the rendered report to the users.
 
 ## Add email button
 
-1.Create email button option in toolbar, using the [`customToolBarItems`](../api/ejreportviewer#members:toolbarSettings-customtoolbaritems) property with values such as index, cssClass name, tooltip, click event to fire when click the button.
-2.Access the Report Viewer model and create json array for sending to Web API server. You can use the following codes for creating the event with custom action.  
+1.Create email button option in the toolbar using the [`customToolBarItems`](../api/ejreportviewer#members:toolbarSettings-customtoolbaritems) property with the values such as index, cssClass name, tooltip, click event to fire when you click the button.
+2.Access the Report Viewer model and create a JSON array for sending requests to the Web API server. You can use the following codes for creating the event with custom action.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -64,9 +64,9 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
 
 ## Create custom email action
 
-1.Create a new action method `SendEmail` in Web API service.
-2.Export the report to required type using ReportHelper.GetReport to send report stream as attachment.
-3.The following code sample exports the report to stream and send it as attachment to a specified mail address. Here in the code, used SmtpClient to send the report as email attachment.
+1.Create a new action method `SendEmail` in the Web API service.
+2.Export the report to the required type using ReportHelper.GetReport to send report stream as an attachment.
+3.The following code sample exports the report to stream and send it as an attachment to a specified mail address. In the code, SmtpClient is used to send the report as an email attachment.
 
 {% highlight c# %}
         public object SendEmail(Dictionary<string, object> jsonResult)
@@ -119,6 +119,8 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
         }
 {% endhighlight %}
 
-4.Build and run the application, to view the Report Viewer with custom toolbar option.
+N> In the above code sample, the report is exported to PDF and sent to users using SmptClient.
+
+4.Build and run the application, to view the Report Viewer with the custom toolbar option.
 
 ![Report Viewer with custom email option in toolbar](images/email-report.png)

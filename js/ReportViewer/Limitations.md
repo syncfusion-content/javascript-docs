@@ -20,5 +20,4 @@ The ReportViewer control does not support RDL Specification for SQL Server 2000 
 The object function and VB function do not have complete support.
 
 ## SSRS
-The SSRS Report Server does not provide options to get credential information of the report data source deployed on server. If the report has any data source that uses credentials to connect with database, then you must specify the data source credentials for each report data source to establish database connection.
-
+The SSRS Report Server does not provide options to get credential information of the report data source deployed on the server. If the report has any data source that uses credentials to connect with the database, then you must specify the data source credentials for each report data source to establish database connection.
