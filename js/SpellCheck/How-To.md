@@ -85,29 +85,27 @@ The following example describes the above behavior
             </div>
         </div>
       </div>
-      <script type="text/javascript">
+     <script type="text/javascript">
         $(function () {
             $("#TextArea").ejSpellCheck({
                 dictionarySettings: {
                     dictionaryUrl: "https://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
                     customDictionaryUrl: "https://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
-              	 dialogClose:function()
-					{
-					  this.validate();
-					}
+                dialogClose: function () {
+                    this.validate();
+                }
             });
             $("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showInContextMenu", text: "Spell check" });
             $("#dialog").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using Dialog" });
-         });
-       function showInContextMenu() {
+        });
+        function showInContextMenu() {
             var spellObj = $("#TextArea").data("ejSpellCheck");
             spellObj.validate();
-         }
-      function showDialog()
-        {
-               var spellChecker = $("#TextArea").data('ejSpellCheck');
-               spellChecker.showInDialog();
+        }
+        function showDialog() {
+            var spellChecker = $("#TextArea").data('ejSpellCheck');
+            spellChecker.showInDialog();
         }
     </script>
 
