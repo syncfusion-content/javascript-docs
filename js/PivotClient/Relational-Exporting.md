@@ -197,7 +197,7 @@ N> By default, the pivot chart will be exported to image format in the Excel doc
 
 The following screenshot shows the pivot chart control exported to Excel document as chart format:
 
-![Excel exporting of JavaScript pivot client control](Export_images/Export_ExcelChartClient.png)
+![Exporting format in JavaScript pivot client control](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting customization
 

@@ -153,7 +153,7 @@ Now, set the JSON data to the **"data"** property present in the **"dataSource"*
 
 Now, the pivot client is rendered with pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![JavaScript pivot client control rendered with relational client mode](Getting-Started_images/purejs.png)
+![JavaScript pivot client control with relational client mode](Getting-Started_images/purejs.png)
 
 The following table will explain the [`relational`](/api/js/ejpivotclient#members:analysisMode) and [`datasource`](/api/js/ejpivotclient#members:datasource) properties at [`client-side`](/api/js/ejpivotclient#members:operationalmode) in detail:
 

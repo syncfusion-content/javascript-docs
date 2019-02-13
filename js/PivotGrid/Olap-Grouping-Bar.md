@@ -80,7 +80,7 @@ You can also alter the report by using the context menu.
 ## Searching values
 Search option in the grouping bar allows you to search a specific value that needs to be filtered from the list of values in the filter pop-up window.
 
-![Filtering icon in grouping bar of JavaScript pivot grid control](Grouping-Bar_images/OlapClntFiltering.png)
+![Filtering option in grouping bar of JavaScript pivot grid control](Grouping-Bar_images/OlapClntFiltering.png)
 
 ![Searching in member editor dialog of JavaScript pivot grid control](Grouping-Bar_images/olapclientsearching.png)
 

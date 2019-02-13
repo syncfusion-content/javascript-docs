@@ -21,7 +21,7 @@ The pivot client widget supports responsive rendering based on the target device
 
 {% endhighlight %}
 
-![Responsive layout of JavaScript pivot client control](Responsive-Layout_images/responsive.png)
+![Responsive layout in JavaScript pivot client control](Responsive-Layout_images/responsive.png)
 
 
 
