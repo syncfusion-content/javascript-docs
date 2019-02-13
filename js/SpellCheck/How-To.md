@@ -60,3 +60,55 @@ The following code example describes the above behavior.
 
     
 {% endhighlight %}
+
+## How to manually trigger spell check after the spell check dialog has been closed
+
+When a content is validated dynamically through spell check dialog mode, validation classes will not be maintained after the dialog has been closed. To overcome this, validation can be done manually using the dialogClose event of SpellCheck. 
+
+The following code example demonstrates how to trigger spell check manually after the spell check dialog has been closed
+
+{% highlight html %}
+
+     <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area" style="margin-left:50px">
+                <div id="TextArea" class="sentence" contenteditable="true" name="sentence">
+                    It is a concepts vehicle with Livid Silver body color, 20-inch wheels, fabric folding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)
+                    and 400  (295.02 lbf ft), diesel particulate filter and Bluetec emission control system, quattro permanent four-wheel drive system,
+                    Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+                    MMI control panel with touch pad and dual-view technology, sound system with the prominent extending tweeters.
+                </div><br />
+                <div>
+                    <input type="button" id="SpellCheck"/>
+                   <input type="button" id="dialog"/>
+                </div>
+            </div>
+        </div>
+      </div>
+     <script type="text/javascript">
+        $(function () {
+            $("#TextArea").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "https://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "https://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                dialogClose: function () {
+                    this.validate();
+                }
+            });
+            $("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showInContextMenu", text: "Spell check" });
+            $("#dialog").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using Dialog" });
+        });
+        function showInContextMenu() {
+            var spellObj = $("#TextArea").data("ejSpellCheck");
+            spellObj.validate();
+        }
+        function showDialog() {
+            var spellChecker = $("#TextArea").data('ejSpellCheck');
+            spellChecker.showInDialog();
+        }
+    </script>
+
+{% endhighlight %}
+
+[Sample](https://jsplayground.syncfusion.com/gq5nodrd)
