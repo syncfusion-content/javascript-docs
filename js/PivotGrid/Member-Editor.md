@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Member Editor
+title: Member Editor with PivotGrid widget for Syncfusion Essential JS
 description: Member editor in pivot grid control
 platform: js
 control: PivotGrid
@@ -12,7 +12,7 @@ api: /api/js/ejpivotgrid
 
 The member editor dialog displays the members of current field in a tree view structure, which is opened by clicking the filter icon available in the grouping bar. It helps to search, filter, and sort the field members available in the pivot grid control.
 
-![Member editor in pivot grid control](Member_Editor_images/member_editor.png)
+![Member editor in JavaScript pivot grid control](Member_Editor_images/member_editor.png)
 
 ## Member editor - Paging
 
@@ -40,13 +40,13 @@ Following are the navigation options available in the member editor pager:
 * Move last: Navigates to the last page.
 * Numeric box: Navigates to the desired page by entering an appropriate page number in the numeric value.
 
-![Paging in member editor](Member_Editor_images/member_editor_paging.png)
+![Paging support in member editor of JavaScript pivot grid control](Member_Editor_images/member_editor_paging.png)
 
 ## Member editor - Sorting
 
 The sorting support in the member editor helps you to sort the field members in ascending or descending order.
 
-You can enable the member editor sorting in the pivot grid control by setting the [`enableMemberEditorSorting`](/api/js/ejpivotgrid#members:enableMemberEditorSorting) property.
+You can enable the member editor sorting in the pivot grid control by setting the [`enableMemberEditorSorting`](/api/js/ejpivotgrid#members:enablemembereditorsorting) property.
 
 {% highlight html %}
 
@@ -60,6 +60,6 @@ You can enable the member editor sorting in the pivot grid control by setting th
 
 {% endhighlight %}
 
-![Field members sorted in ascending order](Member_Editor_images/member_editor_sorting_ascending.png)
+![Ascending order of field items in JavaScript pivot grid control](Member_Editor_images/member_editor_sorting_ascending.png)
 
-![Field members sorted in descending order](Member_Editor_images/member_editor_sorting_descending.png)
+![Descending order of field items in JavaScript pivot grid control](Member_Editor_images/member_editor_sorting_descending.png)

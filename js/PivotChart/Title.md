@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title
+title: Title with PivotChart widget for Syncfusion Essential JS
 description: title
 platform: js
 control: PivotChart
@@ -12,7 +12,7 @@ api: /api/js/ejpivotchart
 
 ## Title text
 By using the [`title.text`](/api/js/ejpivotchart#members:title-text) property, you can add the title text for the pivot chart.
- 
+
 
 {% highlight javascript %}
 
@@ -29,7 +29,7 @@ $(function () {
 
 {% endhighlight %}
 
-![](Title_images/Title_img1.png) 
+![Title text in JavaScript pivot chart control](Title_images/Title_img1.png)
 
 ## Title alignment
 
@@ -41,7 +41,7 @@ $(function () {
     $("#PivotChart1").ejPivotChart(
        ....
        title: {
-            text: "PivotChart", 
+            text: "PivotChart",
             //Change title text alignment
             textAlignment: "near"
        },
@@ -51,7 +51,7 @@ $(function () {
 
 {% endhighlight %}
 
-![](Title_images/Title_img2.png) 
+![Title alignment in JavaScript pivot chart control](Title_images/Title_img2.png)
 
 ## Title customization
 By using the [`title`](/api/js/ejpivotchart#members:title) property, you can add the title text for X-axis and Y-axis. The title text can be customized by using the [`text`](/api/js/ejchart#members:title-text) and [`font`](/api/js/ejchart#members:title-font) properties. By setting the [`enableTrim`](/api/js/ejchart#members:primaryyaxis-enabletrim) to true, the title text can be trimmed based on its length.
@@ -79,4 +79,4 @@ $(function () {
 
 {% endhighlight %}
 
-![](Title_images/Title_img3.png) 
+![Title customization in JavaScript pivot chart control](Title_images/Title_img3.png)

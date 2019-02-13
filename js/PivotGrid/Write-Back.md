@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Write-back
+title:  Write-back with PivotGrid widget for Syncfusion Essential JS
 description:  Write-back
 platform: js
 control: PivotGrid
@@ -35,8 +35,8 @@ public Dictionary < string, object > WriteBack(string action, string value, stri
     DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(currentReport));
     return htmlHelper.GetJsonData(action, DataManager, value, rowUniqueName, columnUniqueName);
 }
-        
+
 {% endhighlight %}
 
-![](Write-Back_images/writeback.png)
+![Write-back support in JavaScript pivot grid control](Write-Back_images/writeback.png)
 

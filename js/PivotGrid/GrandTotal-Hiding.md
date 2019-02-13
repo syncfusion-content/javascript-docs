@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GrandTotal Hiding
+title:  GrandTotal Hiding with PivotGrid widget for Syncfusion Essential JS
 description: GrandTotal Hiding
 platform: js
 control: PivotGrid
@@ -23,7 +23,7 @@ You can hide the **Grand Total** in row alone by setting the [`enableRowGrandTot
 {% highlight html %}
 
 <script>
-    $(function() {    
+    $(function() {
         $("#PivotGrid1").ejPivotGrid({
         //...
         enableRowGrandTotal: false
@@ -33,7 +33,7 @@ You can hide the **Grand Total** in row alone by setting the [`enableRowGrandTot
 
 {% endhighlight %}
 
-![](GrandTotal-Hiding_images/enableRowGrandTotal.png)
+![Hiding row totals in JavaScript pivot grid control](GrandTotal-Hiding_images/enableRowGrandTotal.png)
 
 ## Column grand total hiding
 
@@ -54,7 +54,7 @@ You can hide the **Grand Total** in column alone by setting the [`enableColumnGr
 
 {% endhighlight %}
 
-![](GrandTotal-Hiding_images/enableColumnGrandTotal.png)
+![Hiding column totals in JavaScript pivot grid control](GrandTotal-Hiding_images/enableColumnGrandTotal.png)
 
 ## Both
 
@@ -65,7 +65,7 @@ You can hide the **Grand Total** in both row and column by setting the [`enableG
 <div id="PivotGrid1"></div>
 
 <script>
-    $(function() {            
+    $(function() {
         $("#PivotGrid1").ejPivotGrid({
             //...
             enableGrandTotal: false
@@ -75,4 +75,4 @@ You can hide the **Grand Total** in both row and column by setting the [`enableG
 
 {% endhighlight %}
 
-![](GrandTotal-Hiding_images/enableGrandTotal.png)
+![Hiding totals in JavaScript pivot grid control](GrandTotal-Hiding_images/enableGrandTotal.png)

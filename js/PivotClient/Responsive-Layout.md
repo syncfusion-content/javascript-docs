@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive-Layout
+title: Responsive-Layout with PivotClient widget for Syncfusion Essential JS
 description: responsive layout
 platform: js
 control: PivotClient
@@ -21,7 +21,7 @@ The pivot client widget supports responsive rendering based on the target device
 
 {% endhighlight %}
 
-![](Responsive-Layout_images/responsive.png)
+![Responsive layout of JavaScript pivot client control](Responsive-Layout_images/responsive.png)
 
 
 

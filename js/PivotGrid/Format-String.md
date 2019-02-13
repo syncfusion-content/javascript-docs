@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Format String
+title: Format String with PivotGrid widget for Syncfusion Essential JS
 description: Format String
 platform: js
 control: PivotGrid
@@ -38,29 +38,29 @@ $(function() {
 
 {% endhighlight %}
 
-![](Number-Format_images/formatstring.png)
+![Format string support in JavaScript pivot grid contrtol](Number-Format_images/formatstring.png)
 
 The following table describes the result of applying some commonly used format strings on numeric values:
- 
+
 <table>
 <tr>
 <td><b>Label Value</b></td>
 <td><b>Label Format property value</b></td>
 <td><b>Result </b></td>
 <td><b>Description </b></td>
-</tr>        
+</tr>
 <tr>
 <td>1000</td>
 <td>n1</td>
 <td>1000.0</td>
 <td>The Number is rounded to 1 decimal place</td>
-</tr> 
+</tr>
 <tr>
 <td>1000</td>
 <td>n2</td>
 <td>1000.00</td>
 <td>The Number is rounded to 2 decimal place</td>
-</tr> 
+</tr>
 <tr>
 <td>1000</td>
 <td>n3</td>
@@ -112,7 +112,7 @@ The following table describes the result of applying some commonly used format s
 </table>
 
 The following table describes the result of applying some commonly used format strings on numeric values:
- 
+
 <table>
 <tr>
 <th>

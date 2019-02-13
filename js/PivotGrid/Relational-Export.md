@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Exporting with PivotGrid widget for Syncfusion Essential JS
 description: export
 platform: js
 control: PivotGrid
@@ -27,7 +27,7 @@ I> By default, the JSON export mode will be applied for server and client modes.
 
     <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
     <button id="btnExport">Export</button>
-    
+
     <script type="text/javascript">
         $(function () {
             $("#PivotGrid1").ejPivotGrid({
@@ -59,7 +59,7 @@ To achieve Excel export, the service URL and the file name are set as parameters
         pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
     }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Word export
 
@@ -75,7 +75,7 @@ To achieve Word export, the service URL and the file name are set as parameters.
         pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport", "fileName");
     }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### PDF export
 
@@ -91,7 +91,7 @@ To achieve PDF export, the service URL and the file name are set as parameters.
         pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport", "fileName");
     }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### CSV export
 
@@ -107,7 +107,7 @@ To achieve CSV export, the service URL and the file name are set as parameters.
         pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport", "fileName");
     }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Customize the export document name
 
@@ -120,7 +120,7 @@ For customizing the file name, you should set the file name as parameter to **ex
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
         pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
     }
-    
+
 {% endhighlight %}
 
 ## PivotEngine export
@@ -133,7 +133,7 @@ To perform exporting with the use of PivotEngine available in the server-side, t
 
     <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
     <button id="btnExport">Export</button>
-    
+
     <script type="text/javascript">
         $(function () {
             $("#PivotGrid1").ejPivotGrid({
@@ -149,7 +149,7 @@ To perform exporting with the use of PivotEngine available in the server-side, t
             pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
         }
         function Export(args) {
-            args.exportMode = ej.PivotGrid.ExportMode.PivotEngine; 
+            args.exportMode = ej.PivotGrid.ExportMode.PivotEngine;
         }
     </script>
     </body>
@@ -224,7 +224,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Word export
 
@@ -268,7 +268,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.PDF);
 }
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ### CSV export
 
@@ -285,7 +285,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.CSV);
 }
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ### File format selection
 
@@ -297,16 +297,16 @@ N> By default, the excel document will be exported to ".xls" format using the Pi
 
 {% highlight javascript %}
 
-        $("#PivotGrid1").ejPivotGrid({
-                //..
-                beforeExport: "Export"
-            });
-        
-        function Export(args) {
-            args.exportMode = ej.PivotGrid.ExportMode.PivotEngine; 
-            args.fileFormat = ".xlsx"; //you can set the excel sheet format here
-        }
-        
+$("#PivotGrid1").ejPivotGrid({
+    //..
+    beforeExport: "Export"
+});
+
+function Export(args) {
+    args.exportMode = ej.PivotGrid.ExportMode.PivotEngine;
+    args.fileFormat = ".xlsx"; //you can set the excel sheet format here
+}
+
  {% endhighlight %}
 
 ### Customize the export document name
@@ -361,36 +361,36 @@ public void Export(System.IO.Stream stream)
 You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight html %}
-<html> 
+<html>
     //...
-<body> 
+<body>
     //...
     <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
     <button id="btnExport">Export</button>
-    
-    <script type="text/javascript">
-        $(function () {
-            $("#PivotGrid1").ejPivotGrid({
-                //..
-                beforeExport: "Exporting"
-            });
-            $("#btnExport").ejButton({
-                click: "exportBtnClick"
-            });
+
+<script type="text/javascript">
+    $(function () {
+        $("#PivotGrid1").ejPivotGrid({
+            //..
+            beforeExport: "Exporting"
         });
-        function exportBtnClick(args) {
-            var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-            //JSON export
-            pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
-            //PivotEngine Export 
-            pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
-        }
-        function Exporting(args) {
-            args.title = "PivotGrid";
-            args.description = "Displays both OLAP and Relational datasource in tabular format";
-			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
-        }
-    </script>
+        $("#btnExport").ejButton({
+            click: "exportBtnClick"
+        });
+    });
+    function exportBtnClick(args) {
+        var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+        //JSON export
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
+        //PivotEngine Export
+        pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
+    }
+    function Exporting(args) {
+        args.title = "PivotGrid";
+        args.description = "Displays both OLAP and Relational datasource in tabular format";
+		args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
+    }
+</script>
 </body>
 </html>
 
@@ -408,7 +408,7 @@ using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
  //Following service method needs to be added in the WebAPI for JSON export.
- 
+
 [System.Web.Http.ActionName("ExcelExport")]
 [System.Web.Http.HttpPost]
 public void ExcelExport()
@@ -538,16 +538,16 @@ When paging is enabled, you can export the complete data by enabling the [enable
 
 The following screenshot shows the pivot grid control exported to the Excel document:
 
-![](Export_images/ExportPivotExcel.png)
+![Excel exporting in JavaScript pivot grid control](Export_images/ExportPivotExcel.png)
 
 The following screenshot shows the pivot grid control exported to the Word document:
 
-![](Export_images/ExportPivotWord.png)
+![Word exporting in JavaScript pivot grid control](Export_images/ExportPivotWord.png)
 
 The following screenshot shows the pivot grid control exported to the PDF document:
 
-![](Export_images/ExportPivotPDF.png)
+![PDF exporting in JavaScript pivot grid control](Export_images/ExportPivotPDF.png)
 
 The following screenshot shows the pivot grid control exported to the CSV document:
 
-![](Export_images/ExportPivotCSV.png)
+![CSV exporting in JavaScript pivot grid control](Export_images/ExportPivotCSV.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Defer-Update
+title: Defer-Update with PivotClient widget for Syncfusion Essential JS
 description: defer update
 platform: js
 control: PivotClient
@@ -17,7 +17,7 @@ Defer Update support allows the user to refresh the control on-demand and not du
 {% highlight javascript %}
 
     $("#PivotClient1").ejPivotClient({
-        url: "/OlapService",    
+        url: "/OlapService",
         enableDeferUpdate: true
     });
 
@@ -25,9 +25,9 @@ Defer Update support allows the user to refresh the control on-demand and not du
 
 After enabling this property, an icon for Defer Update will appear inside the toolbar.
 
-![](Defer-Update_images/Before-defer-update.png)
+![Defer update icon in JavaScript pivot client control](Defer-Update_images/Before-defer-update.png)
 
 On clicking the icon, after making the necessary UI interactions, the PivotGrid and PivotChart controls will be updated according to the OlapReport available at that instant.
 
-![](Defer-Update_images/after-defer-update.png)
+![Defer update in JavaScript pivot client control](Defer-Update_images/after-defer-update.png)
 

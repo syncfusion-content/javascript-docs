@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization with PivotClient widget for Syncfusion Essential JS
 description: Localization and Globalization
 platform: js
 control: PivotClient
@@ -22,7 +22,7 @@ The following code example illustrates how to localize the pivot client based on
 
     ej.PivotClient.Locale["fr-FR"] = {
         DeferUpdate: "Différer Mise à jour",
-		MDXQuery: "de requêtes MDX",
+        MDXQuery: "de requêtes MDX",
         Column: "Colonne",
         Row: "Rangée",
         Slicer: "Tranche",
@@ -58,7 +58,7 @@ The following code example illustrates how to localize the pivot client based on
     }
 
     $("#PivotClient1").ejPivotClient({
-        url: "/OlapClient",    
+        url: "/OlapClient",
         locale: "fr-FR"
     });
 
@@ -305,7 +305,7 @@ Types de graphiques</td></tr>
 <tr>
 <td>Sort</td>
 <td>Trier</td>
-</tr>  
+</tr>
 <tr>
 <td>SelectField</td>
 <td>sélectionnez Champ</td>
@@ -317,7 +317,7 @@ Types de graphiques</td></tr>
 <tr>
 <td>ValueFilterLabel</td>
 <td>Voir les articles pour lesquels</td>
-</tr>    
+</tr>
 <tr>
 <td>LabelFilters</td>
 <td>Filtres d'étiquetage</td>
@@ -333,15 +333,15 @@ Types de graphiques</td></tr>
 <tr>
 <td>EndsWith</td>
 <td>Se termine par</td>
-</tr>     
+</tr>
 <tr>
 <td>NotEndsWith</td>
 <td>Non Se termine par</td>
-</tr>   
+</tr>
 <tr>
 <td>Contains</td>
 <td>Contient</td>
-</tr>    
+</tr>
 <tr>
 <td>NotContains</td>
 <td>Ne contient pas</td>
@@ -357,23 +357,23 @@ Types de graphiques</td></tr>
 <tr>
 <td>Equals</td>
 <td>Équivaut à</td>
-</tr>     
+</tr>
 <tr>
 <td>Top10</td>
 <td>"Top Count"</td>
-</tr>    
+</tr>
 <tr>
 <td>EqualTo</td>
 <td>Égal à</td>
-</tr>     
+</tr>
 <tr>
 <td>NotEquals</td>
 <td>pas equals</td>
-</tr>     
+</tr>
 <tr>
 <td>GreaterThan</td>
 <td>Plus grand que</td>
-</tr>     
+</tr>
 <tr>
 <td>GreaterThanOrEqualTo</td>
 <td>Plus grand ou égal à</td>
@@ -383,7 +383,7 @@ Types de graphiques</td></tr>
 <td>LessThan</td>
 <td>Moins que</td>
 </tr>
-     
+
 <tr>
 <td>LessThanOrEqualTo</td>
 <td>Inférieur ou égal à</td>
@@ -393,7 +393,7 @@ Types de graphiques</td></tr>
 <td>Between</td>
 <td>Entre</td>
 </tr>
-     
+
 <tr>
 <td>NotBetween</td>
 <td>Entre pas</td>
@@ -639,17 +639,17 @@ Types de graphiques</td></tr>
 
 Th content displayed within the pivot client control is obtained from the OLAP cube. The following are the steps to get the localized and globalized cube content.
 
-* To get the localized data from the OLAP cube, you need to set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property of the **"dataSource"**. 
+* To get the localized data from the OLAP cube, you need to set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property of the **"dataSource"**.
 * To bind the globalized content in pivot client control, you need to set the [`locale`](/api/js/ejpivotclient#members:locale) property to a specific culture and the specific culture file is referred in the sample.
- 
-N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
- 
+
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".**
+
 {% highlight javascript %}
 
     //1036 refers to “fr-FR” culture.
     $("#PivotClient1").ejPivotClient({
         dataSource: {
-                data: "http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;",
+                data: "https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;",
                 //...
                 },
                 locale: "fr-FR",
@@ -658,12 +658,12 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 {% endhighlight %}
 
-![](Localization_images/localization.png)
- 
+![Localization and globalization of cube in OLAP client mode](Localization_images/localization.png)
+
 ## Localization and globalization of cube (server mode)
 
 The content displayed within the pivot client control is obtained from the OLAP cube. The following are the steps to get the localized and globalized cube content.
- 
+
 * To get the localized string based on different cultures from OLAP cube, you should set **"Locale Identifier"** in the connection string to a specific culture.
 * To bind the globalized content in pivot client control, you should set the **"Culture"** and `OverrideDefaultFormatStrings` properties in the "OlapDataManager" class to a specific culture.
 
@@ -677,17 +677,17 @@ The content displayed within the pivot client control is obtained from the OLAP 
 
 {% endhighlight %}
 
-![](Localization_images/localization-servermode.png)
+![Localization and globalization of cube in OLAP server mode](Localization_images/localization-servermode.png)
 
 ## Localization and globalization of relational info (client mode)
 
 The content displayed within the pivot client control is obtained from the relational data source. The following are the steps to get the localized and globalized content.
- 
-* To get the localized content, the relational data source should have localized headers, which will be directly applied to the pivot client.  
+
+* To get the localized content, the relational data source should have localized headers, which will be directly applied to the pivot client.
 * To globalize the values appeared in the pivot client, you should set the **"format"** and **"locale"** property accordingly.  Also, the specific culture file is referred in the sample.
 
-N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
- 
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".**
+
 {% highlight javascript %}
 
     $("#PivotClient1").ejPivotClient({
@@ -703,11 +703,11 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
     });
 {% endhighlight %}
 
-![](Localization_images/relational-localization.png)
+![Localization and globalization in JavaScript pivot client with relational cient mode](Localization_images/relational-localization.png)
 
 ## Localization and globalization of relational info (server mode)
 The content displayed within the pivot client control is obtained from the relational data source. The following are the steps to get the localized and globalized content.
- 
+
 * To get the localized content, the relational data source should have localized headers, which will be directly applied to the pivot client.
 * **“Format”** settings in the "PivotComputationInfo" class will globalize the values appeared in the pivot client.
 
@@ -722,7 +722,7 @@ The content displayed within the pivot client control is obtained from the relat
 
 {% endhighlight %}
 
-![](Localization_images/relational-localization.png)
+![Localization and globalization in JavaScript pivot client with relational server mode](Localization_images/relational-localization.png)
 
 ## RTL
 
@@ -739,4 +739,4 @@ You can render the pivot client control from right to left by setting the [`enab
 
 {% endhighlight %}
 
-![](Localization_images/rtl.png)
+![RTL support in JavaScript pivot client control](Localization_images/rtl.png)

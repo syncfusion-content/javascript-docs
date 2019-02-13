@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Exporting with PivotChart widget for Syncfusion Essential JS
 description: export
 platform: js
 control: PivotChart
@@ -21,9 +21,9 @@ The pivot chart control can be exported by invoking the [`exportPivotChart`](/ap
 
 {% highlight html %}
 
-<html> 
+<html>
     //...
-<body> 
+<body>
     //...
     <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
     <button id="btnExport">Export</button>
@@ -43,16 +43,16 @@ The pivot chart control can be exported by invoking the [`exportPivotChart`](/ap
         function exportBtnClick(args)
         {
             var chartObj = $('#PivotChart1').data("ejPivotChart");
-            
+
             //If you render pivot chart in Client Mode, set the export option like below.
             chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
-            
+
             //If you render pivot chart in Server Mode, set the export option like below.
             chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
         }
     </script>
 </body>
-</html>                                           
+</html>
 
 {% endhighlight %}
 
@@ -101,7 +101,7 @@ function exportBtnClick(args)
     chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Server mode
 
@@ -121,7 +121,7 @@ function exportBtnClick(args)
     chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ## Word export
 
@@ -139,7 +139,7 @@ function exportBtnClick(args)
     chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport","fileName");
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Server mode
 
@@ -177,7 +177,7 @@ function exportBtnClick(args)
     chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Server mode
 
@@ -197,7 +197,7 @@ function exportBtnClick(args)
     chartObj.exportPivotChart(ej.PivotChart.ExportOptions.PDF);
 }
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ## Image export
 
@@ -221,7 +221,7 @@ function exportBtnClick(args)
     chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG);
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Server mode
 
@@ -236,7 +236,7 @@ function exportBtnClick(args)
     chartObj.exportPivotChart(ej.PivotChart.ExportOptions.PNG);
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ## Pivot chart - exporting format
 
@@ -253,16 +253,16 @@ N> By default, the pivot chart will be exported in image format to an Excel docu
                //...
                beforeExport:"Exporting",
         });
-        
+
         function Exporting(args) {
             args.exportChartAsImage = false; //you can set the chart format here
         }
-        
+
  {% endhighlight %}
 
 The following screenshot illustrates the control exported to an Excel document by showing its own format (pivoting chart).
 
-![](Export_images/Export_ExcelChartClient.png)
+![Excel exporting of JavaScript pivot chart control](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting customization
 
@@ -272,9 +272,9 @@ N> The title and description cannot be added to image formats.
 
 {% highlight html %}
 
-<html> 
+<html>
     //...
-<body> 
+<body>
     //...
     <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
     <button id="btnExport">Export</button>
@@ -298,16 +298,16 @@ N> The title and description cannot be added to image formats.
         function exportBtnClick(args)
         {
             var chartObj = $('#PivotChart1').data("ejPivotChart");
-            
+
             //If you render pivot chart in Client Mode, set the export option like below.
             chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
-            
+
             //If you render pivot chart in Server Mode, set the export option like below.
             chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
         }
     </script>
 </body>
-</html>                                           
+</html>
 
 {% endhighlight %}
 
@@ -425,7 +425,7 @@ function exportBtnClick(args)
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
     chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport", "fileName");
 }
-{% endhighlight %}    
+{% endhighlight %}
 
 For server mode, the exporting document name is provided in the WebAPI controller as shown in the following code snippet:
 
@@ -456,16 +456,16 @@ public void Export(System.IO.Stream stream) {
 
 The following screenshot shows the pivot chart control exported to an Excel document:
 
-![](Export_images/Export_ExcelClient.png)
+![Excel exporting of JavaScript pivot chart control](Export_images/Export_ExcelClient.png)
 
 The following screenshot shows the pivot chart control exported to a Word document:
 
-![](Export_images/Export_WordClient.png)
+![Word exporting of JavaScript pivot chart control](Export_images/Export_WordClient.png)
 
 The following screenshot shows the pivot chart control exported to a PDF document:
 
-![](Export_images/Export_PDFClient.png)
+![PDF exporting of JavaScript pivot chart control](Export_images/Export_PDFClient.png)
 
 The following screenshot shows the pivot chart control exported to a PNG format:
 
-![](Export_images/Export_PNGClient.png)
+![PNG exporting of JavaScript pivot chart control](Export_images/Export_PNGClient.png)

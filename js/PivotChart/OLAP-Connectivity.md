@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Connection-Types
+title: OLAP-Connection with PivotChart for Syncfusion Essential JS
 description: OLAP Connection Types
 platform: js
 control: PivotChart
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotchart
 ---
 
-# Data binding 
+# Data binding
 
 ## Binding pivot chart to offline cube
 To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube available in the local machine, set the physical path of the cube in the connection string. The following code example illustrates this process:
@@ -24,7 +24,7 @@ To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube availa
 
 {% highlight c# %}
 
-string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube availa
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
+string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 **Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF Service and name it **“OlapService.svc,”** and then click **Add**.
- 
+
 The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * OlapService.svc
@@ -88,7 +88,7 @@ namespace PivotChartDemo
 **List of dependency libraries**
 
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
+
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
@@ -139,7 +139,7 @@ namespace PivotChartDemo
     public class OlapService : IOlapService
     {
         PivotChart pivotChart = new PivotChart();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         //Other codes
 
     }
@@ -175,7 +175,7 @@ namespace PivotChartDemo
     public class OlapService : IOlapService
     {
         PivotChart pivotChart = new PivotChart();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 
         public Dictionary<string, object> InitializeChart(string action, string customObject)
         {
@@ -234,7 +234,7 @@ You can expose the services through properties such as binding, contract, and ad
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
 The endpointBehaviors are illustrated as follows:
- 
+
 {% highlight xml %}
 
 <system.serviceModel>
@@ -269,5 +269,5 @@ N> In this example, the “PivotChartDemo” indicates the name and root namespa
 
 Now, the pivot chart is rendered with customer count over a period of fiscal years across different customer geographic locations.
 
-![](OLAP-Connectivity_images/ServerModeWCF.png)
+![JavaScript pivot chart control with OLAP wcf service](OLAP-Connectivity_images/ServerModeWCF.png)
 

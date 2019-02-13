@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Getting-Started
+title: OLAP-Getting-Started with PivotChart for Syncfusion JavaScript
 description: olap-getting started
 platform: js
 control: PivotClient
@@ -73,7 +73,7 @@ Initialize the [`OLAP`](/api/js/ejpivotclient#members:analysisMode) data source 
         $(function() {
             $("#PivotClient1").ejPivotClient({
                 dataSource: {
-                    data: "http://bi.syncfusion.com/olap/msmdpump.dll",
+                    data: "https://bi.syncfusion.com/olap/msmdpump.dll",
                     catalog: "Adventure Works DW 2008 SE",
                     cube: "Adventure Works",
                     rows: [{
@@ -99,7 +99,7 @@ Initialize the [`OLAP`](/api/js/ejpivotclient#members:analysisMode) data source 
 
 Now, the pivot client is rendered with the pivot chart, and the pivot grid is rendered with "Customer Geography" in the column, "Fiscal" in the row, and "Internet Sales Amount" measure in the value section.
 
-![](Getting-Started_images/OlapClientside.png) 
+![JavaScript pivot client control with OLAP client mode](Getting-Started_images/OlapClientside.png)
 
 
 The following table will explain the [`OLAP`](/api/js/ejpivotclient#members:analysismode) [`datasource`](/api/js/ejpivotclient#members:datasource) properties at [`client-side`](/api/js/ejpivotclient#members:operationalmode) in detail:
@@ -473,7 +473,7 @@ N> The above "GettingStarted.html" page contains WebAPI [`url`](/api/js/ejpivotc
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it **“OlapController.cs”**, and then click **Add.**
 
 The WebAPI controller is added to your application with the following file. The utilization of this file will be explained in the following sections:
- 
+
 * OlapController.cs
 
 N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “OlapController”.
@@ -486,7 +486,7 @@ namespace PivotClientDemo
 {
     public class OlapController: ApiController
     {
-    
+
     }
 }
 
@@ -496,7 +496,7 @@ namespace PivotClientDemo
 
 Next, add the following dependency libraries to the web application. You can find these libraries in the GAC (Global Assembly Cache) in the machine.
 
-To add them to the web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to the web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -538,7 +538,7 @@ namespace PivotClientDemo
 {
     public class OlapController: ApiController
     {
-    
+
     }
 }
 
@@ -558,7 +558,7 @@ namespace PivotClientDemo
         PivotTreeMap treeMapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
     }
@@ -569,7 +569,7 @@ namespace PivotClientDemo
 **Service methods in WebAPI controller**
 
 You can define the service methods in the OlapController class. To do so, find the `OlapController.cs` file which was created while adding the WebAPI Controller class to your web application.
- 
+
 {% highlight c# %}
 
 namespace PivotClientDemo
@@ -580,7 +580,7 @@ namespace PivotClientDemo
         PivotTreeMap treeMapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
 
         [System.Web.Http.ActionName("InitializeClient")]
@@ -869,7 +869,7 @@ namespace PivotClientDemo
             {
                 currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
                 if (currentRptName.Equals(jsonResult["reportName"].ToString()))
-                {                  
+                {
                     byte[] reportByte = new byte[2 * 1024];
                     reportByte = (row.ItemArray[1] as byte[]);
                     if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
@@ -994,7 +994,7 @@ public class Global: System.Web.HttpApplication
 
 The pivot client is rendered with the pivot chart and pivot grid showing customer count over a period of fiscal years.
 
-![](Getting-Started_images/olapwebapi.png) 
+![JavaScript pivot client control with OLAP server mode](Getting-Started_images/olapwebapi.png)
 
 ### WCF
 This section demonstrates the utilization of the WCF service as endpoint binding OLAP data source to the simple pivot client. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotclient/olap-connectivity#wcf).

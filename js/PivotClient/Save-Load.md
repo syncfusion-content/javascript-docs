@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save and Load Report
+title: Save and Load with PivotClient widget in Syncfusion JavaScript
 description: save and load report
 platform: js
 control: PivotClient
@@ -27,11 +27,11 @@ You can store the report collection of the pivot client to database by using the
 <script>
     $("#PivotClient1").ejPivotClient({
         //...
-        saveReport: saveReportSettings
+        saveReport: "saveReportSettings"
     });
 
     function saveReportSettings(args) {
-        if(args.saveReportSettings)
+        if(args.saveReportSetting)
             return args.saveReportSetting.url = "../wcf/OlapService.svc";
     }
 </script>
@@ -148,8 +148,8 @@ You can load the stored report collection of the pivot client from the database 
 <script>
     $("#PivotClient1").ejPivotClient({
         //...
-        loadReport : reportSettings,
-        fetchReport: reportSettings
+        loadReport : "reportSettings",
+        fetchReport: "reportSettings"
     });
 
     function reportSettings(args) {
@@ -200,7 +200,7 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
     {
         currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
         if (currentRptName.Equals(jsonResult["reportName"].ToString()))
-        {                  
+        {
             byte[] reportByte = new byte[2 * 1024];
             reportByte = (row.ItemArray[1] as byte[]);
             if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
@@ -340,8 +340,8 @@ You can load the stored report collection of the pivot client from the local sto
     $("#PivotClient1").ejPivotClient({
         //...
         enableLocalStorage: true,
-        loadReport : reportSettings,
-        fetchReport: reportSettings
+        loadReport : "reportSettings",
+        fetchReport: "reportSettings"
     });
 
     function reportSettings(args) {
@@ -349,9 +349,9 @@ You can load the stored report collection of the pivot client from the local sto
         if ((localStorage.pivotClientRPTCollection != "" && !ej.isNullOrUndefined(localStorage.pivotClientRPTCollection))) {
             reportCollection = JSON.parse(localStorage.pivotClientRPTCollection);
         }
-        if (args.fetchReportSetting) 
+        if (args.fetchReportSetting)
             args.fetchReportSetting.reportList = $.map(reportCollection, function (item, index) { return item.reportName; }).join("__");
-        else if (args.loadReportSetting) 
+        else if (args.loadReportSetting)
             args.loadReportSetting.reportCollection = $.map(reportCollection, function (item, index) { if (item.reportName == args.loadReportSetting.selectedReport) return item.reportCol; });
     }
 </script>

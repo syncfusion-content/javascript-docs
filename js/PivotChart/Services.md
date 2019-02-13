@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Service Reference for ejPivotChart widget
+title: Service Reference for PivotChart widget in Syncfusion Essential JS
 description: What are the services used in JavaScript ejPivotChart widget
 platform: js
 control: ejPivotChart
-documentation: api
+documentation: ug
 keywords: ejPivotChart, Services, JS PivotChart, PivotChart, PivotChart Exporting, Image Exporting
 api: /api/js/ejpivotchart
 ---
@@ -15,11 +15,11 @@ The pivot chart widget is a lightweight control that reads both OLAP and relatio
 
 ## WCF/WebAPI service to populate pivot chart
 You can populate a simple pivot chart with the OLAP/relational data completely from the server-side using the WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
- 
+
 For relational data source, [click here.](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode)
 
 For OLAP data source, [click here.](https://help.syncfusion.com/js/pivotchart/olap-getting-started#creating-a-simple-application-with-pivotchart-and-olap-datasource-server-mode)
- 
+
 ## Exporting service
 
 ### Excel export
@@ -53,7 +53,7 @@ To achieve Excel export, the service URL and the file name are set as parameters
 <html>
 //...
 <body>
-      
+
      <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
      <button id="btnExport">Export</button>
      <script type="text/javascript">
@@ -82,9 +82,9 @@ To achieve Excel export, the service URL and the file name are set as parameters
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName"); 
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
        }
-       
+
      </script>
 </body>
 </html>
@@ -106,7 +106,7 @@ public void ExcelExport()
 }
 
 {% endhighlight %}
- 
+
 #### Response
 
 ##### Code: 200
@@ -147,7 +147,7 @@ To achieve Word export, the service URL and the file name are set as parameters.
 <html>
 //...
 <body>
-      
+
      <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
      <button id="btnExport">Export</button>
      <script type="text/javascript">
@@ -178,7 +178,7 @@ To achieve Word export, the service URL and the file name are set as parameters.
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
           pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport","fileName");
        }
-       
+
      </script>
 </body>
 </html>
@@ -200,7 +200,7 @@ public void WordExport()
 }
 
 {% endhighlight %}
- 
+
 #### Response
 
 ##### Code: 200
@@ -241,7 +241,7 @@ To achieve PDF export, the service URL and the file name are set as parameters.
 <html>
 //...
 <body>
-      
+
      <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
      <button id="btnExport">Export</button>
      <script type="text/javascript">
@@ -270,9 +270,9 @@ To achieve PDF export, the service URL and the file name are set as parameters.
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");   
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");
        }
-       
+
      </script>
 </body>
 </html>
@@ -294,7 +294,7 @@ public void PDFExport()
 }
 
 {% endhighlight %}
- 
+
 #### Response
 
 ##### Code: 200
@@ -341,7 +341,7 @@ To export pivot chart in the PNG format, the service URL, file name and **“ej.
 <html>
 //...
 <body>
-      
+
      <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
      <button id="btnExport">Export</button>
      <script type="text/javascript">
@@ -376,7 +376,7 @@ To export pivot chart in the PNG format, the service URL, file name and **“ej.
           pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.GIF); //GIF Export
           pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.BMP); //BMP Export
        }
-       
+
      </script>
 </body>
 </html>
@@ -395,10 +395,10 @@ public void ImageExport()
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
     Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
     pivotChartImageExport.ExportToImage(chartParams);
-}  
+}
 
 {% endhighlight %}
- 
+
 #### Response
 
 ##### Code: 200

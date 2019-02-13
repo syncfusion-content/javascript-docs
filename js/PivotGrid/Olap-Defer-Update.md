@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Defer-Update
+title: Defer-Update with PivotGrid widget for Syncfusion Essential JS
 description: defer update
 platform: js
 control: PivotGrid
@@ -32,6 +32,6 @@ function onServiceInvokes(args) {
 
 {% endhighlight %}
 
-![](Defer-Update_images/defer.png) 
+![Defer update in JavaScript pivot grid OLAP server mode](Defer-Update_images/defer.png)
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Connection-Types
+title: OLAP-Connection with PivotClient for Syncfusion JavaScript
 description: OLAP Connection Types
 platform: js
 control: PivotClient
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# DataBinding 
+# DataBinding
 
 ## Binding pivot client to offline cube
 To connect to an OLAP cube available in the local machine, set the physical path of the cube in the connection string. The following code example illustrates the same:
@@ -25,7 +25,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service of the l
 
 {% highlight c# %}
 
-string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -35,7 +35,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service of the o
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
+string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -67,8 +67,8 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 **Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF Service and name it **“OlapService.svc”**, and then click **Add**.
- 
-The WCF service is added to your application, which, in turn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
+
+The WCF service is added to your application, which, in turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * OlapService.svc
 * OlapService.svc.cs
@@ -94,8 +94,8 @@ namespace PivotClientDemo
 **List of dependency libraries**
 
 Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found: 
+
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found:
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -160,7 +160,7 @@ namespace PivotClientDemo
         PivotTreeMap treemapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
 
@@ -246,9 +246,9 @@ namespace PivotClientDemo
         PivotTreeMap treemapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-        string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports       
-        
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
+
         public Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams)
         {
             OlapDataManager DataManager = null;
@@ -319,7 +319,7 @@ namespace PivotClientDemo
 
         public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport,string clientReports, string headerInfo, string layout)
         {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);    
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
             DataManager.Reports = pivotClientHelper.DeserializedReports(clientReports);
             return pivotClientHelper.GetJsonData(action, DataManager, cellPosition, headerInfo, layout);
@@ -566,8 +566,8 @@ You can expose services through the properties such as binding, contract, and ad
 * Binding: In your application, you can use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
-The endpointBehaviors are illustrated as follows: 
- 
+The endpointBehaviors are illustrated as follows:
+
 {% highlight xaml %}
 
 <system.serviceModel>
@@ -605,4 +605,4 @@ N> In this example, the “PivotClientDemo” indicates the name and root namesp
 
 Now, the pivot client is rendered with the pivot chart and the pivot grid showing customer count over a period of fiscal years.
 
-![](Getting-Started_images/olapwebapi.png) 
+![JavaScript pivot client control with OLAP server mode](Getting-Started_images/olapwebapi.png)

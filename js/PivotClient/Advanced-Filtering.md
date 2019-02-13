@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Filtering and Sorting
+title: Advanced Filtering with PivotClient for Syncfusion JavaScript
 description: advanced filtering and sorting
 platform: js
 control: PivotClient
@@ -14,7 +14,7 @@ It allows you to filter and sort the field members in the pivot client.
 
 ### Client mode
 
-In client mode, you can enable the advanced filtering and sorting option in the pivot client by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:datasource-enableadvancedfilter) property under the [`dataSource`] to true.
+In client mode, you can enable the advanced filtering and sorting option in the pivot client by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:datasource-enableadvancedfilter) property under the [`dataSource`](/api/js/ejpivotclient#members:datasource) to true.
 
 {% highlight html %}
 
@@ -48,23 +48,23 @@ In server mode, you can enable the advanced filtering and sorting option in the 
 
 ## Sorting
 
-Sorting provides an option to sort the members of the field either in the ascending or descending order. 
+Sorting provides an option to sort the members of the field either in the ascending or descending order.
 
-![](AdvanceFiltering_images/sorting.png)
+![Sorting options in JavaScript pivot client control](AdvanceFiltering_images/sorting.png)
 
 ## Label filtering
 
 The label filtering provides an option to filter the members of the field purely based on their caption.
 
-![](AdvanceFiltering_images/filtering.png)
+![Label filtering options in JavaScript pivot client control](AdvanceFiltering_images/filtering.png)
 
-![](AdvanceFiltering_images/filtering_dialog.png)
+![Label filter dialog in JavaScript pivot client control](AdvanceFiltering_images/filtering_dialog.png)
 
 
 ## Value filtering
 
-The value filtering provides an option to filter the members based on total values of the appropriate measure between the members of the level. 
+The value filtering provides an option to filter the members based on total values of the appropriate measure between the members of the level.
 
-![](AdvanceFiltering_images/valuefilter.png)
+![Value filtering options in JavaScript pivot client control](AdvanceFiltering_images/valuefilter.png)
 
-![](AdvanceFiltering_images/valuefilter_dialog.png)
+![Value filter dialog in JavaScript pivot client control](AdvanceFiltering_images/valuefilter_dialog.png)
