@@ -244,7 +244,7 @@ The [`chartType`](/api/js/ejpivotclient#members:charttype) property takes column
 
 The chart type can also be changed dynamically through the toolbar icon.
 
-![Chart types icon in JavaScript pivot client control](Layout-Customization_images/chart-type.png)
+![Chart types in JavaScript pivot client control](Layout-Customization_images/chart-type.png)
 
 ![JavaScript pivot client control with line chart type](Layout-Customization_images/chart-type-changed.png)
 

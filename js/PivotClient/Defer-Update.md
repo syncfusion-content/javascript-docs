@@ -25,7 +25,7 @@ Defer Update support allows the user to refresh the control on-demand and not du
 
 After enabling this property, an icon for Defer Update will appear inside the toolbar.
 
-![Defer update icon in JavaScript pivot client control](Defer-Update_images/Before-defer-update.png)
+![Defer update in JavaScript pivot client control](Defer-Update_images/Before-defer-update.png)
 
 On clicking the icon, after making the necessary UI interactions, the PivotGrid and PivotChart controls will be updated according to the OlapReport available at that instant.
 

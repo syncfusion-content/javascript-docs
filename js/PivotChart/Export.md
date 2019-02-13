@@ -262,7 +262,7 @@ N> By default, the pivot chart will be exported in image format to an Excel docu
 
 The following screenshot illustrates the control exported to an Excel document by showing its own format (pivoting chart).
 
-![Excel exporting of JavaScript pivot chart control](Export_images/Export_ExcelChartClient.png)
+![Exporting format in JavaScript pivot chart control](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting customization
 
@@ -456,16 +456,16 @@ public void Export(System.IO.Stream stream) {
 
 The following screenshot shows the pivot chart control exported to an Excel document:
 
-![Excel exporting of JavaScript pivot chart control](Export_images/Export_ExcelClient.png)
+![Excel exporting in JavaScript pivot chart control](Export_images/Export_ExcelClient.png)
 
 The following screenshot shows the pivot chart control exported to a Word document:
 
-![Word exporting of JavaScript pivot chart control](Export_images/Export_WordClient.png)
+![Word exporting in JavaScript pivot chart control](Export_images/Export_WordClient.png)
 
 The following screenshot shows the pivot chart control exported to a PDF document:
 
-![PDF exporting of JavaScript pivot chart control](Export_images/Export_PDFClient.png)
+![PDF exporting in JavaScript pivot chart control](Export_images/Export_PDFClient.png)
 
 The following screenshot shows the pivot chart control exported to a PNG format:
 
-![PNG exporting of JavaScript pivot chart control](Export_images/Export_PNGClient.png)
+![PNG exporting in JavaScript pivot chart control](Export_images/Export_PNGClient.png)

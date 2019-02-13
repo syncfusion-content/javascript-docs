@@ -67,19 +67,19 @@ Node type</th><th>
 Is Draggable</th></tr>
 <tr>
 <td>
-{{ '![Folder icon JavaScript pivot client control](OLAP-Client-Elements_images/Folder icon.png)' | markdownify }}</td><td>
+{{ '![Folder icon in JavaScript pivot client control](OLAP-Client-Elements_images/Folder icon.png)' | markdownify }}</td><td>
 Display Folder</td><td>
 Display Folder</td><td>
 False</td></tr>
 <tr>
 <td>
-{{ '![Measure icon JavaScript pivot client control](OLAP-Client-Elements_images/Measure icon.png)' | markdownify }}</td><td>
+{{ '![Measure icon in JavaScript pivot client control](OLAP-Client-Elements_images/Measure icon.png)' | markdownify }}</td><td>
 Measure</td><td>
 Measure</td><td>
 True</td></tr>
 <tr>
 <td>
-{{ '![Dimension icon JavaScript pivot client control](OLAP-Client-Elements_images/Dimension icon.png)' | markdownify }}</td><td>
+{{ '![Dimension icon in JavaScript pivot client control](OLAP-Client-Elements_images/Dimension icon.png)' | markdownify }}</td><td>
 Dimension</td><td>
 Dimension</td><td>
 True</td></tr>
@@ -247,7 +247,7 @@ This option allows you to rename the current/active report. By clicking the rena
 
 After an appropriate name has been provided clicking OK. The active report is refreshed with the new name.
 
-![Renamed the previos report in JavaScript pivot client control](OLAP-Client-Elements_images/RenameReport1.png)
+![Renamed the previous report in JavaScript pivot client control](OLAP-Client-Elements_images/RenameReport1.png)
 
 ### Save
 The save option saves the entire report collection by only one name to the database. The database is connected to the application through a connection string provided in the service.

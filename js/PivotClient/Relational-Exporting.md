@@ -321,12 +321,12 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 
 The following screenshot shows the pivot grid and pivot chart controls exported to an Excel document.
 
-![Excel exporting of JavaScript pivot client control](Export_images/relational-excel-export.png)
+![Excel exporting in JavaScript pivot client control](Export_images/relational-excel-export.png)
 
 The following screenshot shows the pivot grid and pivot chart controls exported to a Word document.
 
-![Word exporting of JavaScript pivot client control](Export_images/relational-word-Export.png)
+![Word exporting in JavaScript pivot client control](Export_images/relational-word-Export.png)
 
 The following screenshot shows the pivot grid and pivot chart controls exported to a PDF document.
 
-![PDF exporting of JavaScript pivot client control](Export_images/relational-Pdf-Export.png)
+![PDF exporting in JavaScript pivot client control](Export_images/relational-Pdf-Export.png)
