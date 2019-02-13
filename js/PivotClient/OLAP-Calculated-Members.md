@@ -36,7 +36,7 @@ To show the icon in the toolbar panel, you need to set the property `enableCalcu
 
 {% endhighlight %}
 
-![Calculated members in JavaScript pivot client control](Calculated-Members_images/icon.png)
+![Calculated members icon in JavaScript pivot client control](Calculated-Members_images/icon.png)
 
 To insert a new calculated member, open the calculated member dialog by clicking the icon available in the toolbar panel. You can define the following options in the dialog:
 
