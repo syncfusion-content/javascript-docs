@@ -587,11 +587,11 @@ N> We have prevent the spellcheck context menu using "contextBeforeOpen" event a
 
 ## RTE - Spellcheck Integration ContextMenu Mode
 
-![](RTESpellcheck_images/spellcheck_contextmode.png)
+![contextmode](RTESpellcheck_images/spellcheck_contextmode.png)
 
 ## RTE - Spellcheck Integration Dialog Mode
 
-![](RTESpellcheck_images/spellcheck_dialogmode.png)
+![dialogmode](RTESpellcheck_images/spellcheck_dialogmode.png)
 
 ## Resolve content overflow issue with RichTextEditor in IE, Edge, and FireFox browsers
 
@@ -625,7 +625,7 @@ Refer to the following code.
         var rteObj = $("#editor").ejRTE("instance");
         rteObj.setHtml("The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.");
 
-         $(".nav-tabs a[href='#menu3']").on('shown.bs.tab', function () {
+         $("#tab a[href='#menu3']").on('shown.bs.tab', function () {
             var rteObj = $("#editor").ejRTE("instance");
             rteObj.refresh();
          });
