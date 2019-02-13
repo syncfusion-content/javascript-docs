@@ -377,7 +377,7 @@ To improve user action, the context menu option in the pivot chart allows you to
 
 {% endhighlight %}
 
-![Context menu in JavaScript pivot chart widget](How-To_images/contextMenu.png)
+![Context menu in JavaScript pivot chart control](How-To_images/contextMenu.png)
 
 The following are the available features in the context menu:
 
@@ -385,29 +385,29 @@ The following are the available features in the context menu:
 * [`Legend`](/api/js/ejpivotchart#members:legend): It allows you to show/hide the legend in the pivot chart component.
 * [`Zooming`](/api/js/ejchart#members:zooming-enable): It allows you to zoom the chart by using the rubber band selection.
 
-![Zooming in JavaScript pivot chart widget](How-To_images/zooming.png)
+![Zooming in JavaScript pivot chart control](How-To_images/zooming.png)
 
 * [`Chart types`](/api/js/ejpivotchart#members:commonseriesoptions-type): You can choose different 2D charts by UI operations.
 
-![Chart types in JavaScript pivot chart widget](How-To_images/chartTypes.png)
+![Chart types in JavaScript pivot chart control](How-To_images/chartTypes.png)
 
 * [`3D Charts`](/api/js/ejpivotchart#members:enable3d): You can choose different 3D chart types. The **"Disable 3D Charts"** option is available to disable the 3D chart, and it is rendered as the respective 2D chart.
 
-![Chart types in JavaScript pivot chart widget](How-To_images/TDCharts.png)
+![Chart types in JavaScript pivot chart control](How-To_images/TDCharts.png)
 
 * `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](/api/js/ejpivotchart#events:beforeexport) event.
 
-![Exporting in JavaScript pivot chart widget](How-To_images/exporting.png)
+![Exporting in JavaScript pivot chart control](How-To_images/exporting.png)
 
 * `Interactions`: Different types of interactions are available in the context menu to view the datum in the chart.
 
 For more on this topic, [click here](https://help.syncfusion.com/js/pivotchart/user-interactions)
 
-![UI interaction in JavaScript pivot chart widget](How-To_images/interactions.png)
+![UI interaction in JavaScript pivot chart control](How-To_images/interactions.png)
 
 * [`Smart Labels`](/api/js/ejchart#members:primaryxaxis-labelintersectaction): You can customize the labels in a different view by giving the options mentioned in the following image:
 
-![Smart labels in JavaScript pivot chart widget](How-To_images/smartLabels.png)
+![Smart labels in JavaScript pivot chart control](How-To_images/smartLabels.png)
 
 ### Setting custom theme
 You can render the pivot chart with one of the available built-in themes by using the [`cssClass`](/api/js/ejpivotchart#members:cssclass) property.
