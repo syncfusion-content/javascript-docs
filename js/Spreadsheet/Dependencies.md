@@ -231,7 +231,7 @@ And the internal dependencies are tabulated below.
         <td>
             ej.pivot.common.min.js
         </td>
-        <td rowspan="2">
+        <td rowspan="5">
             Should be referred when pivot table is enabled in Spreadsheet
         </td>
     </tr>
