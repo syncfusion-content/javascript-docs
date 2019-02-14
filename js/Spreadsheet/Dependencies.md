@@ -1,5 +1,5 @@
 ---
-title: Essential JavaScript Spreadsheet dependencies
+title: Essential JavaScript Spreadsheet dependencies | Syncfusion
 description: Listed Spreadsheet internal and external dependencies
 platform: JS
 control: Spreadsheet
