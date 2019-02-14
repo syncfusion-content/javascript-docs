@@ -39,7 +39,7 @@ I> By default, the JSON export mode will be applied for server and client modes.
         });
         function exportBtnClick(args) {
             var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-            pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
+            pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
         }
     </script>
 
@@ -56,7 +56,7 @@ To achieve Excel export, the service URL and the file name are set as parameters
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
     }
 
 {% endhighlight %}
@@ -72,7 +72,7 @@ To achieve Word export, the service URL and the file name are set as parameters.
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport", "fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport", "fileName");
     }
 
 {% endhighlight %}
@@ -88,7 +88,7 @@ To achieve PDF export, the service URL and the file name are set as parameters.
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport", "fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport", "fileName");
     }
 
 {% endhighlight %}
@@ -104,7 +104,7 @@ To achieve CSV export, the service URL and the file name are set as parameters.
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport", "fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport", "fileName");
     }
 
 {% endhighlight %}
@@ -118,7 +118,7 @@ For customizing the file name, you should set the file name as parameter to **ex
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
     }
 
 {% endhighlight %}
@@ -381,7 +381,7 @@ You can add title and description to the exporting document by using the title a
     function exportBtnClick(args) {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
         //JSON export
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
         //PivotEngine Export
         pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
     }

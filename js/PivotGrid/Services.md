@@ -28,7 +28,7 @@ You can export the contents of PivotGrid to an Excel document for future archiva
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport)
+[https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport](https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport)
 
 #### Parameter
 
@@ -38,7 +38,7 @@ You can export the contents of PivotGrid to an Excel document for future archiva
    <th>MultipleExport </th>
    <tr>
       <td>Excel</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -83,7 +83,7 @@ To achieve Excel export, the service URL and the file name are set as parameters
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport","fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport","fileName");
       }
 
      </script>
@@ -123,7 +123,7 @@ You can export the contents of PivotGrid to a Word document for future archival,
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport)
+[https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport](https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport)
 
 #### Parameter
 
@@ -133,7 +133,7 @@ You can export the contents of PivotGrid to a Word document for future archival,
    <th>MultipleExport </th>
    <tr>
       <td>Word</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -178,7 +178,7 @@ To achieve Word export, the service URL and the file name are set as parameters.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport","fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport","fileName");
       }
 
      </script>
@@ -217,7 +217,7 @@ You can export the contents of PivotGrid to a PDF document for future archival, 
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport)
+[https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport](https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport)
 
 #### Parameter
 
@@ -227,7 +227,7 @@ You can export the contents of PivotGrid to a PDF document for future archival, 
    <th>MultipleExport </th>
    <tr>
       <td>PDF</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -272,7 +272,7 @@ To achieve PDF export, the service URL and the file name are set as parameters.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport","fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport","fileName");
       }
 
      </script>
@@ -311,7 +311,7 @@ You can export the contents of PivotGrid to a CSV document for future archival, 
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport)
+[https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport](https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport)
 
 #### Parameter
 
@@ -321,7 +321,7 @@ You can export the contents of PivotGrid to a CSV document for future archival, 
    <th>MultipleExport </th>
    <tr>
       <td>CSV</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -366,7 +366,7 @@ To achieve CSV export, the service URL and the file name are set as parameters.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport","fileName");
+        pGridObj.exportPivotGrid("https://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport","fileName");
       }
 
      </script>

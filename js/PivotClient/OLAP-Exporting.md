@@ -37,7 +37,7 @@ To perform exporting with the use of a custom service method, the service contai
         });
 
         function Export(args) {
-            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";//Exporting url can be modified here
+            args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";//Exporting url can be modified here
         }
 {% endhighlight %}
 
@@ -54,7 +54,7 @@ The name of the document can be customized. The following code sample illustrate
         });
 
         function Export(args) {
-            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
+            args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             args.fileName="File name is customized here";
         }
 {% endhighlight %}
@@ -208,7 +208,7 @@ You can add title and description to the exporting document by using the title a
         });
         function Exporting(args) {
             //ClientMode export
-            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
+            args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             //PivotEngine Export
             args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
 

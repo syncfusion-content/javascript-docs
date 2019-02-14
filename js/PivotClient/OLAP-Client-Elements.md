@@ -105,7 +105,7 @@ Level Element</td><td>
 True</td></tr>
 <tr>
 <td>
-{{ '![Named set icon in JavaScript pivot client control](OLAP-Client-Elements_images/names set element.png)' | markdownify }}</td><td>
+{{ '![NamedSet icon in JavaScript pivot client control](OLAP-Client-Elements_images/names set element.png)' | markdownify }}</td><td>
 Named Set</td><td>
 Named Set</td><td>
 True</td></tr>

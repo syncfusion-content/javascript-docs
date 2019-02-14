@@ -285,7 +285,7 @@ You can customize the display of toolbar by enabling/disabling the visibility of
 
 {% endhighlight %}
 
-![Report toolbar of JavaScript pivot client control](Layout-Customization_images/toolbarIconSettings1.png)
+![Report toolbar in JavaScript pivot client control](Layout-Customization_images/toolbarIconSettings1.png)
 
 The following screenshot will be displayed after disabling the toolbar icons.
 

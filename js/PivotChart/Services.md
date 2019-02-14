@@ -28,7 +28,7 @@ You can export the contents of the pivot chart to Excel document for future arch
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport)
+[https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport](https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport)
 
 #### Parameter
 <table>
@@ -37,7 +37,7 @@ You can export the contents of the pivot chart to Excel document for future arch
    <th>MultipleExport </th>
    <tr>
       <td>Excel</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -82,7 +82,7 @@ To achieve Excel export, the service URL and the file name are set as parameters
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
        }
 
      </script>
@@ -122,7 +122,7 @@ You can export the contents of the pivot chart to a Word document for future arc
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport)
+[https://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport](https://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport)
 
 #### Parameter
 <table>
@@ -131,7 +131,7 @@ You can export the contents of the pivot chart to a Word document for future arc
    <th>MultipleExport </th>
    <tr>
       <td>Word</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -176,7 +176,7 @@ To achieve Word export, the service URL and the file name are set as parameters.
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport","fileName");
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport","fileName");
        }
 
      </script>
@@ -216,7 +216,7 @@ You can export the contents of the pivot chart to a PDF document for future arch
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport)
+[https://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport](https://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport)
 
 #### Parameter
 <table>
@@ -225,7 +225,7 @@ You can export the contents of the pivot chart to a PDF document for future arch
    <th>MultipleExport </th>
    <tr>
       <td>PDF</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -270,7 +270,7 @@ To achieve PDF export, the service URL and the file name are set as parameters.
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");
        }
 
      </script>
@@ -316,7 +316,7 @@ You can export the contents of the pivot chart to an image format for future arc
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport)
+[https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport](https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport)
 
 #### Parameter
 <table>
@@ -325,7 +325,7 @@ You can export the contents of the pivot chart to an image format for future arc
    <th>MultipleExport </th>
    <tr>
       <td>Image</td>
-      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport</td>
+      <td>https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -370,11 +370,11 @@ To export pivot chart in the PNG format, the service URL, file name and **“ej.
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG); //PNG Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.EMF); //EMF Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.JPG); //JPG Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.GIF); //GIF Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.BMP); //BMP Export
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG); //PNG Export
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.EMF); //EMF Export
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.JPG); //JPG Export
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.GIF); //GIF Export
+          pChartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.BMP); //BMP Export
        }
 
      </script>

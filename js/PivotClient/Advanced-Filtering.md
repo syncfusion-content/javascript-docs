@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Filtering with PivotClient for Syncfusion JavaScript
+title: Advanced Filtering | Sorting | PivotClient | Syncfusion JS
 description: advanced filtering and sorting
 platform: js
 control: PivotClient

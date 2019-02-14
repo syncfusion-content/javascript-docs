@@ -26,7 +26,7 @@ In cube dimension browser, the tree view can be viewed in a filtered manner thro
 
 When you select a measure group from the drop-down list, the tree view of the cube dimension browser will display the related measures and dimensions as follows:
 
-![List of Measure groups in JavaScript pivot client control](Measure-Groups_images/beforemeasure.png)
+![Measure group in JavaScript pivot client control](Measure-Groups_images/beforemeasure.png)
 
-![Measure Group in JavaScript pivot client control](Measure-Groups_images/aftermeasure.png)
+![Internet sales Measure Group in JavaScript pivot client control](Measure-Groups_images/aftermeasure.png)
 

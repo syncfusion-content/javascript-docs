@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Filtering for PivotGrid in Syncfusion Essential JS
+title: Advanced Filtering | Sorting | PivotGrid |Syncfusion | JS
 description: advance filtering and sorting
 platform: js
 control: PivotGrid
