@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Member Editor
+title: Member Editor with PivotClient widget for Syncfusion Essential JS
 description: Member editor in PivotClient control
 platform: js
 control: PivotClient
@@ -12,7 +12,7 @@ api: /api/js/ejpivotclient
 
 The member editor dialog displays the members of current field in a tree view structure, which is opened by clicking the pivot button available in axis elements. It helps to search, filter, and sort the field members available in the pivot client control.
 
-![Member editor in pivot client control](Member_Editor_images/member_editor.png)
+![Member editor in JavaScript pivot client control](Member_Editor_images/member_editor.png)
 
 ## Member editor - Paging
 
@@ -42,7 +42,7 @@ The following are the navigation options available in the member editor pager:
 * Numeric box: Navigates to the desired page by entering an appropriate page number in a numeric value.
 
 
-![Paging in member editor](Member_Editor_images/member_editor_paging.png)
+![Member editor paging in JavaScript pivot client control](Member_Editor_images/member_editor_paging.png)
 
 ## Member editor - Sorting
 
@@ -62,6 +62,6 @@ You can enable the member editor sorting in the pivot grid control by setting th
 
 {% endhighlight %}
 
-![Field members sorted in ascending order](Member_Editor_images/member_editor_sorting_ascending.png)
+![Member editor sorting with ascending order in JavaScript pivot client control](Member_Editor_images/member_editor_sorting_ascending.png)
 
-![Field members sorted in descending order](Member_Editor_images/member_editor_sorting_descending.png)
+![Member editor sorting with descending order in JavaScript pivot client control](Member_Editor_images/member_editor_sorting_descending.png)

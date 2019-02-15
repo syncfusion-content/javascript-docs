@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relational-Getting-Started
+title: Relational-Getting-Started for PivotChart Syncfusion JavaScript
 description: relational-getting started
 platform: js
 control: PivotChart
@@ -74,7 +74,7 @@ Now, set the JSON data to the **"data"** property available in the **"dataSource
 <html>
 
     //....
-    <body>
+   <body>
         <div id="PivotChart1" style="width: 800px; height: 350px"></div>
         <script type="text/javascript">
 
@@ -119,13 +119,13 @@ Now, set the JSON data to the **"data"** property available in the **"dataSource
                 });
             });
         </script>
-    </body>
+   </body>
 </html>
 {% endhighlight %}
 
 The above code will generate a simple pivot chart with sales amount over a range of products across different locations.
 
-![](Relational-Getting-Started_images/PopulatePivotChartWithData.png)
+![JavaScript pivot chart control with relational client mode](Relational-Getting-Started_images/PopulatePivotChartWithData.png)
 
 The following table will explain the [`relational`](/api/js/ejpivotchart#members:analysismode) [`datasource`](/api/js/ejpivotchart#members:datasource) properties at [`client-side`](/api/js/ejpivotchart#members:operationalmode) in detail:
 
@@ -365,7 +365,7 @@ $(function () {
 {% endhighlight %}
 
 
-![](Relational-Getting-Started_images/ApplySorting.png)
+![Sorting support in JavaScript pivot chart control](Relational-Getting-Started_images/ApplySorting.png)
 
 
 ### Apply filtering
@@ -410,7 +410,7 @@ $(function () {
 });
 {% endhighlight %}
 
-![](Relational-Getting-Started_images/ApplyFiltering.png)
+![Filtering support in JavaScript pivot chart control](Relational-Getting-Started_images/ApplyFiltering.png)
 
 ## Creating a simple application with pivot chart and relational data source (server mode)
 
@@ -423,7 +423,7 @@ N>This section illustrates creating a simple web application through the Visual 
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project as **“PivotChartDemo.”**
 
 Next, you can add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it “GettingStarted.html”, and then click **Add.**
- 
+
 Now, you can set the “GettingStarted.html” page as start-up page. To do so, right-click the “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS initialization
@@ -436,7 +436,7 @@ The scripts and style sheets that are required to render a pivot chart widget in
 The scripts and style sheets listed above can be found in any of the following locations:
 
 Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed on the local machine.
- 
+
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
 NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
@@ -478,14 +478,14 @@ To initialize a pivot chart widget, first you can define a “div” tag with an
 
 The [`url`](/api/js/ejpivotchart#members:url) property in the pivot chart widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WebAPI and WCF.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Relational”**. If you are using the WCF service, then the URL will look like **"/RelationalService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Relational”**. If you are using the WCF service, then the URL will look like **"/RelationalService.svc"**.
 
 ### WebAPI
 
 **Adding a WebAPI controller**
 
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it “RelationalController.cs,” and then click **Add**.
- 
+
 Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the immediate sections.
 
 * RelationalController.cs
@@ -500,7 +500,7 @@ namespace PivotChartDemo
 {
     public class RelationalController: ApiController
     {
-    
+
     }
 }
 
@@ -529,12 +529,12 @@ N> If you have installed any version of Essential Studio, then the location of S
 **List of namespaces**
 
 Following are the list of namespaces to be added on top of the main class in the `RelationalController.cs` file.
- 
+
 {% highlight c# %}
 
 using System.Web.Script.Serialization;
 using Syncfusion.JavaScript;
-using Syncfusion.PivotAnalysis.Base; 
+using Syncfusion.PivotAnalysis.Base;
 
 namespace PivotChartDemo
 {
@@ -555,7 +555,7 @@ namespace PivotChartDemo
 {
     //....
     //....
-    
+
     internal class ProductSales
     {
         public string Product { get; set; }
@@ -661,7 +661,7 @@ namespace PivotChartDemo
 **Service methods in WebAPI controller**
 
 Now, you can define the service methods in the RelationalController class, find the `RelationalController.cs` file which was created while adding the WebAPI controller class to your web application.
- 
+
 {% highlight c# %}
 
 namespace PivotChartDemo
@@ -705,7 +705,7 @@ namespace PivotChartDemo
 **Configure routing in global application class**
 
 To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax,”** and then click **Add.**
- 
+
 After adding the **Global.asax** file, delete all methods in the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
 {% highlight c# %}
@@ -724,12 +724,12 @@ public class Global : System.Web.HttpApplication
 {% endhighlight %}
 
 Now, the pivot chart is rendered with sales amount details over a set of products across different countries.
- 
-![](Relational-Getting-Started_images/ServerMode.png)
+
+![JavaScript pivot chart control in relational server mode](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf-1).
-  
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf).
+
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Value-Sorting
+title: Value-Sorting with PivotClient widget for Syncfusion Essential JS
 description: value Sorting
 platform: js
 control: PivotClient
@@ -58,7 +58,7 @@ The following code snippet shows how to sort values in descending order.
 {% endhighlight %}
 
 The below screenshot shows PivotClient before applying value sorting.
-![Before-value-sorting](Value-Sorting_images/Before.png)
+![JavaScript pivot client control](Value-Sorting_images/Before.png)
 
 The below screenshot shows PivotClient after applying value sorting.
-![After-value-sorting](Value-Sorting_images/After.png)
+![JavaScript pivot client control with value sorting](Value-Sorting_images/After.png)

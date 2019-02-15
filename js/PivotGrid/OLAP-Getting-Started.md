@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Getting-Started
+title: OLAP-Getting-Started with PivotGrid for Syncfusion JavaScript
 description: olap-getting started
 platform: js
 control: PivotGrid
@@ -72,7 +72,7 @@ Initialize the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) data source fo
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
                 dataSource: {
-                    data: "http://bi.syncfusion.com/olap/msmdpump.dll",
+                    data: "https://bi.syncfusion.com/olap/msmdpump.dll",
                     catalog: "Adventure Works DW 2008 SE",
                     cube: "Adventure Works",
                     rows: [{
@@ -99,7 +99,7 @@ Initialize the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) data source fo
 
 The above code will generate a simple pivot grid with "Customer Geography" field in column, "Fiscal" field in row, and "Internet Sales Amount" field in the value section.
 
-![](Getting-Started_images/OlapClientside.png) 
+![JavaScript pivot grid control in OLAP client mode](Getting-Started_images/OlapClientside.png)
 
 The following table will explain the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) [`datasource`](/api/js/ejpivotgrid#members:datasource) properties at [`client-side`](/api/js/ejpivotgrid#members:operationalmode) in detail:
 
@@ -397,7 +397,7 @@ NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-depl
 
 ### Control initialization
 To initialize a pivot grid widget, you can define a “div” tag with an appropriate “ID” attribute which acts as a container for the pivot grid widget. Then, you can initialize the widget by using the `ejPivotGrid` method.
-    
+
 {% highlight html %}
 
 <!DOCTYPE html>
@@ -444,7 +444,7 @@ N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs”, and then click **Add.**
 
 Now, the WebAPI controller is added to your application, which, in turn, comprise the following file. The utilization of this file will be explained in the following sections:
- 
+
 * OlapController.cs
 
 N> While adding the WebAPI Controller Class, add the mandatory suffix “Controller” that is . For example, in the demo, the controller is named “OlapController”.
@@ -457,7 +457,7 @@ namespace PivotGridDemo
 {
     public class OlapController : ApiController
     {
-        
+
     }
 }
 
@@ -526,7 +526,7 @@ namespace PivotGridDemo
     public class OlapController : ApiController
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
@@ -539,7 +539,7 @@ namespace PivotGridDemo
 **Service methods in WebAPI controller**
 
 You can define the service methods in the OlapController class. To do so, find the `OlapController.cs` file, which was created while adding the WebAPI controller Class from the Visual Studio to your web application.
- 
+
 {% highlight c# %}
 
 namespace PivotGridDemo
@@ -548,7 +548,7 @@ namespace PivotGridDemo
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         public static int cultureIDInfoval = 1033;
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
 
@@ -556,8 +556,7 @@ namespace PivotGridDemo
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> InitializeOlapGrid(Dictionary<string, object> jsonResult)
         {
-            OlapDataManager DataManager = null;
-            DataManager = new OlapDataManager(connectionString);
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(CreateOlapReport());
             DataManager.OverrideDefaultFormatStrings = true;
             return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult.ContainsKey("gridLayout") ? jsonResult["gridLayout"].ToString() : null, Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
@@ -568,7 +567,6 @@ namespace PivotGridDemo
         public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
             return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, jsonResult["cellPosition"].ToString(), jsonResult["headerInfo"].ToString(), jsonResult["layout"].ToString());
         }
@@ -722,7 +720,7 @@ namespace PivotGridDemo
             con.Close();
             return dSet.Tables[0];
         }
-        
+
         [System.Web.Http.ActionName("DeferUpdate")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
@@ -731,7 +729,7 @@ namespace PivotGridDemo
             DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
             return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
         }
-        
+
         [System.Web.Http.ActionName("Paging")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
@@ -794,7 +792,7 @@ public class Global : System.Web.HttpApplication
 
 The pivot grid will be rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
 
-![](Getting-Started_images/olapwebapi.png)
+![JavaScript pivot grid control in OLAP server mode](Getting-Started_images/olapwebapi.png)
 
 ### WCF
 This section demonstrates the utilization of the WCF service as an endpoint binding the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) data source to the simple pivot grid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).

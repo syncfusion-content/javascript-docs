@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance with PivotChart widget for Syncfusion Essential JS
 description: appearance
 platform: js
 control: PivotChart
@@ -48,7 +48,7 @@ By using the [`theme`](/api/js/ejchart#members:theme) property, you can set the 
     });
 {% endhighlight %}
 
-![](Appearance_images/BuiltInThemes.png)
+![JavaScript pivot chart control rendered with built-in theme](Appearance_images/BuiltInThemes.png)
 
 ## Pivot chart - area customization
 
@@ -74,7 +74,7 @@ To customize the pivot chart border, use the [`border`](/api/js/ejchart#members:
     });
 {% endhighlight %}
 
-![](Appearance_images/BorderCustomization.png)
+![Border customization for JavaScript pivot chart control](Appearance_images/BorderCustomization.png)
 
 ### Margin customization
 The [`margin`](/api/js/ejchart#members:margin) property of the pivot chart control is used to add a margin to the chart area at the left, right, top, and bottom of the chart.
@@ -99,7 +99,7 @@ The [`margin`](/api/js/ejchart#members:margin) property of the pivot chart contr
     });
 {% endhighlight %}
 
-![](Appearance_images/MarginCustomization.png)
+![Margin customization for JavaScript pivot chart control](Appearance_images/MarginCustomization.png)
 
 ### Background customization
 The pivot chart control background can be customized by using the [`background`](/api/js/ejchart#members:chartarea-background) property in the chart area.
@@ -121,7 +121,7 @@ The pivot chart control background can be customized by using the [`background`]
     });
 {% endhighlight %}
 
-![](Appearance_images/BackgroundCustomization.png)
+![Background customization for JavaScript pivot chart control](Appearance_images/BackgroundCustomization.png)
 
 ### Grid bands customization
 By using the [`alternateGridBand`](/api/js/ejchart#members:primaryxaxis-alternategridband) property of the axis, you can provide different colors for grid rows and columns that are formed by the grid lines in the chart area. The [`odd`](/api/js/ejchart#members:primaryyaxis-alternategridband-odd) and [`even`](/api/js/ejchart#members:primaryyaxis-alternategridband-even) properties are used to customize the grid bands at odd and even positions respectively.
@@ -152,7 +152,7 @@ By using the [`alternateGridBand`](/api/js/ejchart#members:primaryxaxis-alternat
     });
 {% endhighlight %}
 
-![](Appearance_images/GridBandsCustomization.png)
+![Grid band customization for JavaScript pivot chart control](Appearance_images/GridBandsCustomization.png)
 
 ### Animation
 You can enable the animation by using the [`enableAnimation`](/api/js/ejchart#members:commonseriesoptions-enableanimation) property under the [`commonSeriesOptions`](/api/js/ejchart#members:commonseriesoptions) of the pivot chart control. It animates the chart series on two occasions - when the chart is loaded for the first time, and when the series type is changed by using the “type” property.

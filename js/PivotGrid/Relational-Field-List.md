@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Field-List
+title: Field-List with PivotGrid widget for Syncfusion Essential JS
 description: field list
 platform: js
 control: PivotGrid
@@ -81,7 +81,7 @@ To initialize the PivotTable field list, first you should define a “div” tag
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/relationalfieldlist.png)
+![Field list support in JavaScript pivot grid control with client mode](PivotTable-Field-List_images/relationalfieldlist.png)
 
 ### Server mode
 
@@ -122,7 +122,7 @@ To initialize the PivotTable field list, first you should define a “div” tag
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/relationalserverfieldlist.png)
+![Field list support in JavaScript pivot grid control with server mode](PivotTable-Field-List_images/relationalserverfieldlist.png)
 
 N> The [`url`](/api/js/ejpivotschemadesigner#members:url) property is used to connect the service by using the specified URL for any server updates.
 
@@ -209,7 +209,7 @@ The [`layout`](/api/js/ejpivotschemadesigner#members:layout) property is used to
 
 You can alter the report on fly through the drag-and-drop operation. You can drag any item from the field list and drop it into the column, row, value, or filter section available at the bottom of the field list.
 
-![](PivotTable-Field-List_images/ralationaldragndrop.png)
+![Drag and drop in field list of JavaScript pivot grid control](PivotTable-Field-List_images/ralationaldragndrop.png)
 
 N> You can enable/disable the drag and drop operation by using the [`enableDragDrop`](/api/js/ejpivotschemadesigner#members:enabledragdrop) property.
 
@@ -217,39 +217,39 @@ N> You can enable/disable the drag and drop operation by using the [`enableDragD
 
 You can also drag and drop elements from the field list to grid headers.
 
-![](PivotTable-Field-List_images/HeaderDrop.png)
+![Drag and drop in grouping bar of JavaScript pivot grid control](PivotTable-Field-List_images/HeaderDrop.png)
 
-![](PivotTable-Field-List_images/HeaderDrop1.png)
+![Drag and drop in grouping bar of JavaScript pivot grid control](PivotTable-Field-List_images/HeaderDrop1.png)
 
-![](PivotTable-Field-List_images/HeaderDrop2.png)
+![Drag and drop in grouping bar of JavaScript pivot grid control](PivotTable-Field-List_images/HeaderDrop2.png)
 
 ### By tree view selection
 
 You can alter the report on fly through the check and uncheck option as an alternate. By default, fields will be added to the row label when checked.
 
-![](PivotTable-Field-List_images/relationalcheckRuncheck.png)
+![Filtering in field list of JavaScript pivot grid control](PivotTable-Field-List_images/relationalcheckRuncheck.png)
 
 ### By context menu
 
 You can also alter the report by using the context menu.
 
-![](PivotTable-Field-List_images/Pivotbutton_Context.png)
+![Context menu in pivot button of field list](PivotTable-Field-List_images/Pivotbutton_Context.png)
 
-![](PivotTable-Field-List_images/Treeview_Context.png)
+![Context menu in tree view elements of field list](PivotTable-Field-List_images/Treeview_Context.png)
 
 ## Searching values
 The search option in the field list allows you to search a specific value that needs to be filtered from the list of values in the filter pop-up window.
 
-![](PivotTable-Field-List_images/relationalBfiltering.png)
+![Shows tree drop icon to open member editor dialog in field list](PivotTable-Field-List_images/relationalBfiltering.png)
 
-![](PivotTable-Field-List_images/relationaldialogsearch.png)
+![Shows searching in member editor dialog through field list](PivotTable-Field-List_images/relationaldialogsearch.png)
 
 ## Filtering
 Values can be filtered by checking/unchecking the check box besides them, in the filter pop-up window. At least, one value should be present in checked state while filtering. Otherwise “Ok” will be disabled.
 
-![](PivotTable-Field-List_images/relationalBfiltering.png)
+![Tree drop icon in field list of JavaScript pivot grid control](PivotTable-Field-List_images/relationalBfiltering.png)
 
-![](PivotTable-Field-List_images/relationaldialogfilter.png)
+![Filtering in field list of JavaScript pivot grid control](PivotTable-Field-List_images/relationaldialogfilter.png)
 
 ## Defer update
 Defer update in the field list allows you to refresh the control on-demand and not during every UI operation. This operation can be enabled/disabled through [`enableDeferUpdate`](/api/js/ejpivotgrid#members:enabledeferupdate) property internally.

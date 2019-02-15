@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization with PivotGrid widget for Syncfusion Essential JS
 description: localization
 platform: js
 control: PivotGrid
@@ -10,7 +10,7 @@ api: /api/js/ejpivotgrid
 
 # Localization and Globalization
 
-## Localization in PivotGrid 
+## Localization in PivotGrid
 You can localize the PivotGrid controls text with a collection of localized strings by using [`ej.PivotGrid.Locale`](/api/js/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in the **"en-US"** culture.
 
 {% highlight html %}
@@ -22,15 +22,15 @@ You can localize the PivotGrid controls text with a collection of localized stri
     <!--Create a tag which acts as a container for PivotGrid-->
     <div id="PivotGrid1" style="width: 55%; height: 670px; overflow: scroll; float: left;"></div>
 
-    <!--Create a tag which acts as a container for PivotTable Field List-->
-    <div id="PivotSchemaDesigner1" style="height:650px;width:40%;">
-    </div>
+   <!--Create a tag which acts as a container for PivotTable Field List-->
+   <div id="PivotSchemaDesigner1" style="height:650px;width:40%;">
+   </div>
 
-    <!--Create a tag which acts as a container for Pager. -->
-    <div id="Pager1" style="margin-top: 10px; overflow: auto"></div>
+   <!--Create a tag which acts as a container for Pager. -->
+   <div id="Pager1" style="margin-top: 10px; overflow: auto"></div>
 
 
-    <script type="text/javascript">
+   <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
                 //...
@@ -134,7 +134,7 @@ Afficher les éléments pour lesquels
 LabelFilters
 </td>
 <td>
-Filtres d'étiquetage  
+Filtres d'étiquetage
 </td>
 </tr>
 <tr>
@@ -222,7 +222,7 @@ Not Equals
 GreaterThan
 </td>
 <td>
-Supérieur 
+Supérieur
 </td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ Supérieur
 GreaterThanOrEqualTo
 </td>
 <td>
-supérieur ou égal à 
+supérieur ou égal à
 </td>
 </tr>
 <tr>
@@ -238,7 +238,7 @@ supérieur ou égal à
 LessThan
 </td>
 <td>
-Less Than 
+Less Than
 </td>
 </tr>
 <tr>
@@ -1666,15 +1666,15 @@ Content displayed within the PivotGrid control are obtained from the OLAP cube. 
 
 * To get the localized data from OLAP cube, you need to set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"dataSource"**.
 * To bind the globalized content in the PivotGrid control, you can set the **"locale"** property to a specific culture and refer the specific culture file in the sample.
- 
-N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
- 
+
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".**
+
 {% highlight js %}
 
 //1036 refers to “fr-FR” culture.
  $("#PivotGrid1").ejPivotGrid({
       dataSource: {
-            data: "http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;",
+            data: "https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;",
             ......
             },
             locale: "fr-FR",
@@ -1685,7 +1685,7 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 ## Localization and globalization of cube (server mode)
 Content displayed within the PivotGrid control are obtained from the OLAP cube. So, following are the steps that need to be done to get the localized and globalized cube content.
- 
+
 * To get the localized string based on different cultures, from the OLAP cube, you need to set **"Locale Identifier"** in the connection string to a specific culture.
 * To bind the globalized content in the PivotGrid control, you need to set **"Culture"** and `OverrideDefaultFormatStrings` properties in the OlapDataManager class to a specific culture.
 
@@ -1700,16 +1700,16 @@ DataManager.OverrideDefaultFormatStrings = true;
 {% endhighlight %}
 
 
-![](Localization-and-Globalization_images/localization.png)
+![Localization support in JavaScript pivot grid OLAP mode](Localization-and-Globalization_images/localization.png)
 
 ## Localization and globalization of relational info (client mode)
 Content displayed within the PivotGrid control are obtained from the relational datasource. So, following are the steps that need to done to get localized as well as globalized content.
- 
-* To get the localized content, the relational datasource should have localized headers in them which will be directly applied to the PivotGrid.  
+
+* To get the localized content, the relational datasource should have localized headers in them which will be directly applied to the PivotGrid.
 * To globalize the values appear in the PivotGrid, you can set the **"format"** and **"locale"** property to a specific culture and refer the specific culture file in the sample.
 
-N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
- 
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".**
+
 {% highlight js %}
 
 $("#PivotGrid1").ejPivotGrid({
@@ -1728,8 +1728,8 @@ $("#PivotGrid1").ejPivotGrid({
 
 ## Localization and globalization of relational info (server mode)
 Content displayed within the PivotGrid control are obtained from the relational datasource. So, following are the steps that need to done to get localized as well as globalized content.
- 
-* To get the localized content, the relational datasource should have localized headers in them which will be directly applied to the PivotGrid.  
+
+* To get the localized content, the relational datasource should have localized headers in them which will be directly applied to the PivotGrid.
 * **“Format”** settings in the PivotComputationInfo class will globalize the values appear in the PivotGrid.
 
 {% highlight c# %}
@@ -1743,7 +1743,7 @@ Content displayed within the PivotGrid control are obtained from the relational 
 
 {% endhighlight %}
 
-![](Localization-and-Globalization_images/localizationinfo.png)
+![Localization support JavaScript pivot grid relational server mode](Localization-and-Globalization_images/localizationinfo.png)
 
 ## RTL
 
@@ -1761,7 +1761,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](Localization-and-Globalization_images/rtl.png)
+![Right to Left, aka RTL support in JavaScript pivot grid control](Localization-and-Globalization_images/rtl.png)
 
 ### RTL in PivotSchemaDesigner
 You can render the pivot schema designer control from right to left by setting the [`enableRTL`](/api/js/ejpivotschemadesigner#members:enablertl) property to true.
@@ -1779,5 +1779,5 @@ $(function() {
 
 {% endhighlight %}
 
-![](Localization-and-Globalization_images/rtlSchema.png)
+![Right to Left, aka RTL support in JavaScript pivot schema designer control](Localization-and-Globalization_images/rtlSchema.png)
 

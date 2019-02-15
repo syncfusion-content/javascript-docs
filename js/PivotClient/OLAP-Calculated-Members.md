@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Members
+title: Calculated Members with PivotClient widget for Syncfusion Essential JS
 description: calculated members
 platform: js
 control: PivotClient
@@ -30,13 +30,13 @@ To show the icon in the toolbar panel, you need to set the property `enableCalcu
     $(function() {
         $("#PivotClient1").ejPivotClient({
             //...
-            toolbarIconSettings: { enableCalculatedMember: true }            
+            toolbarIconSettings: { enableCalculatedMember: true }
         });
     });
 
 {% endhighlight %}
 
-![](Calculated-Members_images/icon.png)
+![Calculated members icon in JavaScript pivot client control](Calculated-Members_images/icon.png)
 
 To insert a new calculated member, open the calculated member dialog by clicking the icon available in the toolbar panel. You can define the following options in the dialog:
 
@@ -45,7 +45,7 @@ To insert a new calculated member, open the calculated member dialog by clicking
     Member type - To specify the hierarchy of the member set in an expression.
     Format string - To set the format for the calculated member.
 
-![](Calculated-Members_images/dialog.png)
+![Calculated members dialog in JavaScript pivot client control](Calculated-Members_images/dialog.png)
 
 ## Through code behind
 
@@ -108,9 +108,9 @@ Th following code snippet describes the creation and addition of a calculated me
     calculatedDimension.AddElement(internalDimension);
 
     olapReport.CalculatedMembers.Add(calculatedDimension);
-    
+
     olapReport.CategoricalElements.Add(calculatedDimension);
 
 {% endhighlight %}
 
-![](Calculated-Members_images/members.png)
+![Calculated members in JavaScript pivot client control](Calculated-Members_images/members.png)
