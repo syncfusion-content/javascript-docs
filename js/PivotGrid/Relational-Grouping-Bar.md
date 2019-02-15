@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping-Bar
+title: Grouping-Bar with PivotGrid widget for Syncfusion Essential JS
 description: grouping bar
 platform: js
 control: PivotGrid
@@ -10,7 +10,7 @@ api: /api/js/ejpivotgrid
 
 # Grouping Bar
 
-## Initialization 
+## Initialization
 Grouping bar allows you to dynamically alter the report by filter, sort, and remove operations in the PivotGrid control. Based on the relational datasource and report bound to the PivotGrid control, the grouping bar will be automatically populated. You can enable the grouping bar option in the PivotGrid by setting the [`enableGroupingBar`](/api/js/ejpivotgrid#members:enablegroupingbar) property to true.
 
 ### Client mode
@@ -20,7 +20,7 @@ Grouping bar allows you to dynamically alter the report by filter, sort, and rem
   <script type="text/javascript">
 
   // Datasource
-  
+
     $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
@@ -62,7 +62,7 @@ Grouping bar allows you to dynamically alter the report by filter, sort, and rem
 
 {% endhighlight %}
 
-![](Grouping-Bar_images/ClientsideGr.png)
+![Grouping bar support in JavaScript pivot grid control with relational client mode](Grouping-Bar_images/ClientsideGr.png)
 
 
 ### Server mode
@@ -78,46 +78,46 @@ $(function() {
 
 {% endhighlight %}
 
-![](Grouping-Bar_images/groupingbar.png)
+![Grouping bar support in JavaScript pivot grid control with relational server mode](Grouping-Bar_images/groupingbar.png)
 
 ## Drag and drop
 
 You can alter the report on fly through the drag-and-drop operation.
 
-![](Grouping-Bar_images/GBar_Rel.png)
+![Drag and drop in JavaScript pivot grid control](Grouping-Bar_images/GBar_Rel.png)
 
 ## Context menu
 
 You can also alter the report by using the context menu.
 
-![](Grouping-Bar_images/CMenu_Rel.png)
+![Context menu in JavaScript pivot grid control](Grouping-Bar_images/CMenu_Rel.png)
 
 ## Searching values
 Search option in the grouping bar allows you to search a specific value that needs to be filtered from the list of values in the filter pop-up window.
 
-![](Grouping-Bar_images/groupingbar-filter.png)
+![Member editor dialog in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-filter.png)
 
-![](Grouping-Bar_images/groupingbar-search.png)
+![Searching in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-search.png)
 
 ## Filtering values
 Filtering option in the grouping bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control. At least, one value should be present in the checked state while filtering. Otherwise, “Ok” will be disabled.
 
-![](Grouping-Bar_images/groupingbar-filter.png)
+![Member editor in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-filter.png)
 
-![](Grouping-Bar_images/groupingbar-filter1.png)
+![Filtering in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-filter1.png)
 
 ## Sorting values
 Sorting option in the grouping bar allows you to arrange headers in ascending or descending order. Sorting option is applicable for fields that are available only in the row and column region. By default, headers are sorted in the ascending order. Regarding the sorting indicator, an up arrow denotes the ascending order and a down arrow denotes the descending order.
 
-![](Grouping-Bar_images/groupingbar-sort.png)
+![Sorting icon in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-sort.png)
 
-![](Grouping-Bar_images/groupingbar-sort-grid.png)
+![Sorted results in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-sort-grid.png)
 
 ## Removing field
 Remove option in the grouping bar allows you to completely remove a specific field from the PivotGrid control. Remove operation can be achieved either by clicking the remove icon in each field or by dragging and dropping the field out of the grouping bar region.
 
-![](Grouping-Bar_images/groupingbar-remove.png)
+![Remove icon in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-remove.png)
 
-![](Grouping-Bar_images/groupingbar-remove-grid.png)
+![Removed items in JavaScript pivot grid control](Grouping-Bar_images/groupingbar-remove-grid.png)
 
 

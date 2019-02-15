@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group by date
+title: Group by date with PivotGrid widget for Syncfusion Essential JS
 description: group by date
 platform: js
 control: PivotGrid
@@ -16,7 +16,7 @@ Allows you to categorize the date type field and showcase them based on year, qu
 
 {% highlight js %}
 
- $(function() {    
+ $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
                 //...
@@ -32,14 +32,14 @@ Allows you to categorize the date type field and showcase them based on year, qu
         });
     });
 
-  
+
 {% endhighlight %}
 
 The properties associated with the group by date option are,
 
-* format - To set the data type format. 
+* format - To set the data type format.
 * formatString - Specifies the structure of the date format.
 * delimiter - Specifies the separator of the date values.
 * groupByDate.interval - Specifies the pattern in which date type to be displayed.
 
-![](GroupByDate_images/group_by_date.png)
+![Group by date support in JavaScript pivot grid control](GroupByDate_images/group_by_date.png)

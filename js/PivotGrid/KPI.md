@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key-Performance-Indicator-KPI
+title: KPI with PivotGrid widget for Syncfusion Essential JS
 description: key performance indicator (KPI)
 platform: js
 control: PivotGrid
@@ -27,12 +27,12 @@ The **“KpiElements”** class in the OLAP base library holds the KPI name, and
 
 <!--Create a tag which acts as a container for PivotGrid-->
  <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
- 
+
 <script type="text/javascript">
     $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
-                data: "http://bi.syncfusion.com/olap/msmdpump.dll",
+                data: "https://bi.syncfusion.com/olap/msmdpump.dll",
                 catalog: "Adventure Works DW 2008 SE",
                 cube: "Adventure Works",
                 rows: [{
@@ -57,7 +57,7 @@ The **“KpiElements”** class in the OLAP base library holds the KPI name, and
 {% endhighlight %}
 
 
-![](KPI_images/ClientSideKPI.png)
+![Key Performance indicator, aka KPI support in JavaScript pivot grid client mode](KPI_images/ClientSideKPI.png)
 
 ## Server mode
 
@@ -87,5 +87,5 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![](KPI_images/kpi.png)
+![Key Performance indicator, aka KPI support in JavaScript pivot grid server mode](KPI_images/kpi.png)
 

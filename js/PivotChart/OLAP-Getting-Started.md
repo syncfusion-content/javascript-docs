@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Getting-Started
+title: OLAP-Getting-Started with PivotChart for Syncfusion JavaScript
 description: olap-getting started
 platform: js
 control: PivotChart
@@ -59,13 +59,13 @@ Initialize the [`OLAP`](/api/js/ejpivotchart#members:analysismode) data source f
 
     //....
 
-    <body>
+   <body>
         <div id="PivotChart1" style="width: 800px; height: 350px"></div>
         <script type="text/javascript">
             $(function() {
                 $("#PivotChart1").ejPivotChart({
                     dataSource: {
-                        data: "http://bi.syncfusion.com/olap/msmdpump.dll",
+                        data: "https://bi.syncfusion.com/olap/msmdpump.dll",
                         catalog: "Adventure Works DW 2008 SE",
                         cube: "Adventure Works",
                         rows: [{
@@ -94,7 +94,7 @@ Initialize the [`OLAP`](/api/js/ejpivotchart#members:analysismode) data source f
 
 The above code will generate a simple pivot chart showing internet sales amount over a period of fiscal years across different customer geographic locations.
 
-![](Olap-Getting-Started_images/OlapClientMode.png) 
+![JavaScript pivot chart control with OLAP client mode](Olap-Getting-Started_images/OlapClientMode.png)
 
 The following table will explain the [`OLAP`](/api/js/ejpivotchart#members:analysismode) [`datasource`](/api/js/ejpivotchart#members:datasource) properties at [`client-side`](/api/js/ejpivotchart#members:operationalmode) in detail:
 
@@ -298,7 +298,7 @@ NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-depl
 
 ### Control initialization
 To initialize a pivot chart widget, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the pivot chart widget. Then, you can initialize the widget by using the `ejPivotChart` method.
-    
+
 {% highlight html %}
 
 <!DOCTYPE html>
@@ -332,26 +332,26 @@ To initialize a pivot chart widget, first you can define a “div” tag with an
 
 The [`url`](/api/js/ejpivotchart#members:url) property in the pivot chart widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. If you are using the WCF service, then the URL will look like **"/OlapService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. If you are using the WCF service, then the URL will look like **"/OlapService.svc"**.
 
 Register the referenced assemblies in "Web.config" file available at the root of the application.
 
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5.1">
-    <assemblies> 
-        …… 
+    <assemblies>
+        ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     </assemblies>
 </compilation>
 
@@ -364,7 +364,7 @@ Register the referenced assemblies in "Web.config" file available at the root of
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs,” and then click **Add.**
 
 The WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections.
- 
+
 * OlapController.cs
 
 N> While adding the WebAPI controller class, add the mandatory suffix “Controller.” For example, in the demo, the controller is named “OlapController”.
@@ -377,7 +377,7 @@ namespace PivotChartDemo
 {
     public class OlapController : ApiController
     {
-    
+
     }
 }
 
@@ -387,7 +387,7 @@ namespace PivotChartDemo
 
 Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
 
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -433,7 +433,7 @@ namespace PivotChartDemo
 {
     public class OlapController : ApiController
     {
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         PivotChart pivotChart = new PivotChart();
         //Other codes
     }
@@ -444,16 +444,16 @@ namespace PivotChartDemo
 **Service methods in WebAPI controller**
 
 Now, you can define the service methods in the OlapController class. To do this, find the `OlapController.cs` file which was created while adding the WebAPI controller class to your web application.
- 
+
 {% highlight c# %}
 
 namespace PivotChartDemo
 {
     public class OlapController : ApiController
     {
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         PivotChart pivotChart = new PivotChart();
-        
+
         [System.Web.Http.ActionName("InitializeChart")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> InitializeChart(Dictionary<string, object> jsonResult)
@@ -529,7 +529,7 @@ public class Global : System.Web.HttpApplication
 
 The pivot chart will be rendered with customer count over a period of fiscal years across different customer geographic locations.
 
-![](Olap-Getting-Started_images/ServerMode.png)
+![JavaScript pivot chart control with OLAP server mode](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
 This section demonstrates the utilization of the WCF service as an endpoint binding the OLAP data source to the simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).

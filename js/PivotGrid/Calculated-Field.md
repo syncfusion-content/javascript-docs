@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Field
+title: Calculated Field with PivotGrid widget for Syncfusion Essential JS
 description: calculated field
 platform: js
 control: PivotGrid
@@ -17,7 +17,7 @@ The pivot grid provides support to insert a new calculated field based on the ex
 ### Through UI
 To insert a new calculated field, open the calculated field dialog by using the grouping bar context menu. You can define "Name" for the new calculated field, and "Formula" can be entered by inserting required fields through the fields section. For inserting numbers and operators, you can use the formula pop-up as shown in the below screen-shot:
 
-![](Calculated-Field_images/Calculated-Field-Popup.png)
+![Calculated field dialog in JavaScript pivot grid control](Calculated-Field_images/Calculated-Field-Popup.png)
 
 Click **Add** to add the respective calculated field, and then click **OK** to populate the pivot grid control.
 
@@ -35,7 +35,7 @@ For client mode, the calculated field can be created at code-behind by defining 
                     {
                         fieldName: "Amount",
                         fieldCaption: "Amount"
-                    }, 
+                    },
                     {
                         fieldName: "Price",
                         fieldCaption: "Price",
@@ -43,7 +43,7 @@ For client mode, the calculated field can be created at code-behind by defining 
                         formula: "Amount*15"
                     }
                 ]
-            }, 
+            },
             enableGroupingBar: true
         });
     });
@@ -73,4 +73,4 @@ For server mode, you should set the **CalculationType** property to **Calculatio
 {% endhighlight %}
 
 
-![](Calculated-Field_images/Calculated-Field1.png)
+![JavaScript pivot grid control with user-defined field, aka calculated field](Calculated-Field_images/Calculated-Field1.png)

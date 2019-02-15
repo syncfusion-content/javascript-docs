@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi-level Labels
+title: Multi-level Labels with PivotChart widget for Syncfusion Essential JS
 description: multilevellabels
 platform: js
 control: PivotChart
@@ -25,9 +25,9 @@ Multi-level labels allow you to drill down to access the detailed level of data 
 
 ## Relational
 
-![](MultiLevelLabels_images/relational.png)
+![Multi-level labels in JavaScript pivot chart with relational mode](MultiLevelLabels_images/relational.png)
 
 ## OLAP
 
-![](MultiLevelLabels_images/olap.png)
+![Multi-level labels in JavaScript pivot chart OLAP mode](MultiLevelLabels_images/olap.png)
 

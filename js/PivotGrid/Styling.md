@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling
+title: Styling with PivotGrid widget for Syncfusion Essential JS
 description:  Styling
 platform: js
 control: PivotGrid
@@ -32,7 +32,7 @@ By default, the PivotGrid supports **17** different themes.
 You can also customize the appearance of the following component manually.
 
 * PivotGrid
-* Grouping bar 
+* Grouping bar
 * PivotTable field list
 
 To change the appearance of the PivotGrid, apply the below customized CSS.
@@ -68,7 +68,7 @@ To change the appearance of the PivotGrid, apply the below customized CSS.
 
 {% endhighlight %}
 
-![](Styling_images/customtheme-pivotgrid.png)
+![Customization of JavaScript pivot grid cells](Styling_images/customtheme-pivotgrid.png)
 
 To change the appearance of the grouping bar, apply the below customized CSS.
 
@@ -82,7 +82,7 @@ To change the appearance of the grouping bar, apply the below customized CSS.
    background: green;
 }
 .e-pivotgrid .e-pivotButton .e-btn.e-select, .e-pivotgrid .e-rows .e-pivotButton, .e-pivotgrid .values .e-pivotButton, .e-pivotgrid .columns .e-pivotButton, .e-pivotgrid .e-drag .e-pivotButton {
-   background: blanchedalmond;    
+   background: blanchedalmond;
 }
 .e-pivotgrid .colheader, .e-pivotgrid .rowheader {
    color: #5c5c5c;
@@ -97,7 +97,7 @@ To change the appearance of the grouping bar, apply the below customized CSS.
 
 {% endhighlight %}
 
-![](Styling_images/customtheme-groupingbar.png)
+![Customization of JavaScript pivot grid grouping bar](Styling_images/customtheme-groupingbar.png)
 
 To change the appearance of the pivotTable field list, apply the below customized CSS.
 
@@ -105,7 +105,7 @@ To change the appearance of the pivotTable field list, apply the below customize
 
 .e-pivotschemadesigner, .e-pivotschemadesigner .e-fieldTable {
      background-color: white;
-     color: black;   
+     color: black;
 }
 .e-pivotschemadesigner .e-treeview .e-active {
      background: white;
@@ -123,7 +123,7 @@ To change the appearance of the pivotTable field list, apply the below customize
 
 {% endhighlight %}
 
-![](Styling_images/customtheme-fieldist.png)
+![Customization of JavaScript pivot grid field list](Styling_images/customtheme-fieldist.png)
 
 You can also customize the appearance of the pivot component by using the Theme Studio utility. To know more about Theme Studio [click here](/js/PivotGrid/Styling).
 

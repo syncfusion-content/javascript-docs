@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip
+title: ToolTip with PivotGrid widget for Syncfusion Essential JS
 description: ToolTip
 platform: js
 control: PivotGrid
@@ -30,12 +30,12 @@ The pivot grid provides option to animate the tooltip that is displayed in the g
 {% highlight js %}
 
     $(function() {
-        $("#PivotGrid1").ejPivotGrid({ 
+        $("#PivotGrid1").ejPivotGrid({
             //..
             enableToolTipAnimation: true
         });
     });
 {% endhighlight %}
 
-![](ToolTip_images/ToolTip.png)
+![Tooltip in JavaScript pivot grid control](ToolTip_images/ToolTip.png)
 

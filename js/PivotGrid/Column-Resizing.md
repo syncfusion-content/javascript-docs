@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Column Resizing
+title:  Column Resizing with PivotGrid widget for Syncfusion Essential JS
 description: column resizing
 platform: js
 control: PivotGrid
@@ -21,7 +21,7 @@ The [`enableColumnResizing`](/api/js/ejpivotgrid#members:enablecolumnresizing) p
 <div id="PivotGrid1"></div>
 
 <script>
-    $(function() {    
+    $(function() {
         $("#PivotGrid1").ejPivotGrid({
             //...
             enableColumnResizing : true
@@ -29,7 +29,7 @@ The [`enableColumnResizing`](/api/js/ejpivotgrid#members:enablecolumnresizing) p
     });
 </script>
 
-{% endhighlight %} 
+{% endhighlight %}
 
 
 ## Column width based on text
@@ -41,7 +41,7 @@ The [`resizeColumnsToFit`](/api/js/ejpivotgrid#members:resizecolumnstofit) prope
 <div id="PivotGrid1"></div>
 
 <script>
-    $(function() {    
+    $(function() {
         $("#PivotGrid1").ejPivotGrid({
             //...
             resizeColumnsToFit: true
@@ -49,6 +49,7 @@ The [`resizeColumnsToFit`](/api/js/ejpivotgrid#members:resizecolumnstofit) prope
     });
 </script>
 
-![](Column-Resizing_images/columnresizing.png)
+{% endhighlight %}
 
-{% endhighlight %} 
+![Column resizing in JavaScript pivot grid control](Column-Resizing_images/columnresizing.png)
+
