@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple-Axes
+title: Multiple-Axes with PivotChart widget for Syncfusion Essential JS
 description: multiple axes
 platform: js
 control: PivotChart
@@ -59,7 +59,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/rowIndex_zero.png)
+![Axes customization at zeroth row index in JavaScript pivot chart control](Multiple_Axes_images/rowIndex_zero.png)
 
 ## Customizing axes at row index one
 
@@ -87,7 +87,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/rowIndex_one.png)
+![Axes customization at first row index in JavaScript pivot chart control](Multiple_Axes_images/rowIndex_one.png)
 
 ## Customizing axes at column index of zero
 
@@ -115,7 +115,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/columnindex_zero.png)
+![Axes customization at zeroth column index in JavaScript pivot chart control](Multiple_Axes_images/columnindex_zero.png)
 
 ## Customizing axes at column index of one
 
@@ -143,7 +143,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/columnindex_one.png)
+![Axes customization at first column index in JavaScript pivot chart control](Multiple_Axes_images/columnindex_one.png)
 
 ## Customizing series
 You can customize the series in multiple axes support with the help of **beforeSeriesRender** event. You can change the series type through the **onBeforeRender** event.
@@ -172,7 +172,7 @@ return args;
 
 **Note:** You have to use the same name in both name property of axes and xAxisName/yAxisName property of series in the above **beforeSeriesRender** event.
 
-![](Multiple_Axes_images/customize_series.png)
+![Series customization in JavaScript pivot chart control](Multiple_Axes_images/customize_series.png)
 
 To learn more about series properties, [`click here`](https://help.syncfusion.com/api/js/ejchart#members:series).
 
@@ -189,9 +189,9 @@ $("#PivotChart").ejPivotChart({
 axes: [
    {
      name:'y:0' // you can create separate y axes for the series which you want
-                  // y indicates(yAxisName) axis in which series needs to be added.
-                  // 0 indicates the series index of pivot chart.
-                  // you can also use pass multiple series index separated by comma(y:0,2)
+                // y indicates(yAxisName) axis in which series needs to be added.
+                // 0 indicates the series index of pivot chart.
+                // you can also use pass multiple series index separated by comma(y:0,2)
    },
    {
      name:'x:1'//you can create separate x axes for the series which you want
@@ -214,7 +214,7 @@ name:'y:0'
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/seriesindex_zero.png)
+![Series customization at zeroth index in JavaScript pivot chart control](Multiple_Axes_images/seriesindex_zero.png)
 
 ### For X-axes
 
@@ -227,7 +227,7 @@ name:'x:0'
 }]
 {% endhighlight %}
 
-![](Multiple_Axes_images/seriesindex_one.png)
+![Series customization at first index in JavaScript pivot chart control](Multiple_Axes_images/seriesindex_one.png)
 
 ## Customizing PrimaryYAxis and axes properties
 
@@ -246,7 +246,7 @@ primaryYAxis: { labelFormat: 'c1' }
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/label_formats.png)
+![Customization of label formats in JavaScript pivot chart control](Multiple_Axes_images/label_formats.png)
 
 ### title
 You can customize the title for axes by the **title** property.
@@ -263,7 +263,7 @@ primaryYAxis: { title: { text: "Customer Count" }}
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/title.png)
+![Customization of title in JavaScript pivot chart control](Multiple_Axes_images/title.png)
 
 
 

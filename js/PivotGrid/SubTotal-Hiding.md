@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SubTotal Hiding
+title:  SubTotal Hiding with PivotGrid widget for Syncfusion Essential JS
 description: SubTotal Hiding
 platform: js
 control: PivotGrid
@@ -12,7 +12,7 @@ api: /api/js/ejpivotgrid
 
 N> This feature is applicable only for the relational data source.
 
-You can hide the **Sub Total** for respective fields in rows and columns by setting the [`showSubTotal`](/api/js/ejpivotgrid#members:showSubTotal) property to `false`.
+You can hide the **Sub Total** for respective fields in rows and columns by setting the [`showSubTotal`](/api/js/ejpivotgrid#members:datasource-columns-showsubtotal) property to `false`.
 
 ## Client mode
 
@@ -20,7 +20,7 @@ You can hide the **Sub Total** for respective fields in rows and columns by sett
 
 <div id="PivotGrid1"></div>
 <script>
-    $(function() {    
+    $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
                 //...
@@ -54,4 +54,4 @@ private PivotReport BindDefaultData()
 
 {% endhighlight %}
 
-![](SubTotal-Hiding_images/SubTotal.png)
+![SubTotal hiding support in JavaScript pivot grid control](SubTotal-Hiding_images/SubTotal.png)

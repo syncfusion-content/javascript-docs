@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number format
+title: Number formatting with PivotGrid widget for Syncfusion Essential JS
 description: Number format
 platform: js
 control: PivotGrid
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Number Format 
+# Number Format
 
 I> This feature is applicable for all modes.
 
@@ -41,7 +41,7 @@ $(function() {
                     fieldName: "Amount",
                     fieldCaption: "Amount",
                     format: "currency" //Specify the format here
-                }, 
+                },
                 {
                     fieldName: "Quantity",
                     fieldCaption: "Quantity",
@@ -55,15 +55,17 @@ $(function() {
 
 {% endhighlight %}
 
-![](Number-Format_images/RelationalClient.png)
+![Number formatting in JavaScript pivot grid relational client mode](Number-Format_images/RelationalClient.png)
 
 ### Server mode
 
 You can set the number format through the `Format` property. You should specify the format to the property as per the MS standard notation.
- 
+
+{% highlight C# %}
+
 private PivotReport BindDefaultData()
     {
-        
+
         PivotReport pivotSetting = new PivotReport();
         pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
         pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
@@ -72,7 +74,9 @@ private PivotReport BindDefaultData()
         return pivotSetting;
     }
 
-![](Number-Format_images/RelationalServer.png)
+{% endhighlight %}
+
+![Number formatting in JavaScript pivot grid relational server mode](Number-Format_images/RelationalServer.png)
 
 ## OLAP
 
@@ -92,23 +96,25 @@ $("#PivotGrid1").ejPivotGrid({
             axis: "columns"
         }]
     }
-});     
+});
 </script>
 
 {% endhighlight %}
 
-![](Number-Format_images/OlapClient.png)
+![Number formatting in JavaScript pivot grid OLAP client mode](Number-Format_images/OlapClient.png)
 
 ### Server mode
 
  OLAP server mode supports the following number formats in addition to the above mentioned formats:
-  
+
 * General
 * RoundTrip
 * FixedPoint
 * HexaDecimal
 
 N> You can set the number format through the `Format` property.
+
+{% highlight C# %}
 
 private OlapReport CreateOlapReport()
 {
@@ -132,5 +138,6 @@ private OlapReport CreateOlapReport()
 
      return olapReport;
 }
+{% endhighlight %}
 
-![](Number-Format_images/OlapServer.png)  
+![Number formatting in JavaScript pivot grid OLAP server mode](Number-Format_images/OlapServer.png)

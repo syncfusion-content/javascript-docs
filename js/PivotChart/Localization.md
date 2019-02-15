@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: localization 
+title: Localization with PivotChart widget for Syncfusion Essential JS
+description: localization
 platform: js
 control: PivotChart
 documentation: ug
@@ -18,7 +18,7 @@ The following code example illustrates the steps to localize the pivot chart bas
 
 {% highlight javascript %}
 
-<html> 
+<html>
   //...
 
 <body>
@@ -60,31 +60,31 @@ Values</th>
 </tr>
 <tr><td>
 Measure</td><td>
-“Mesure”</td>    
+“Mesure”</td>
 </tr>
 <tr><td>
 Row</td><td>
-"Rangée "</td>  
+"Rangée "</td>
 </tr>
 <tr><td>
 Column</td><td>
-"Colonne”</td>    
+"Colonne”</td>
 </tr>
 <tr><td>
 Value</td><td>
-"Valeur "</td>    
+"Valeur "</td>
 </tr>
 <tr><td>
 Expand</td><td>
-"Développer "</td>    
+"Développer "</td>
 </tr>
 <tr><td>
 Collapse</td><td>
-"Effondrement "</td>    
+"Effondrement "</td>
 </tr>
 <tr><td>
 Exit</td><td>
-“Quitter "</td>    
+“Quitter "</td>
 </tr>
 </table>
 
@@ -94,15 +94,15 @@ The content displayed within the pivot chart control is obtained from the OLAP c
 
 * To get the localized data from the OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"dataSource"**.
 * To bind the globalized content in the pivot chart control, set the **"locale"** property to a specific culture and refer the specific culture file in the sample.
- 
-N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
- 
+
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".**
+
 {% highlight js %}
 
 //1036 refers to “fr-FR” culture.
  $("#PivotChart1").ejPivotChart({
       dataSource: {
-            data: "http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;",
+            data: "https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;",
             ......
             },
             locale: "fr-FR",
@@ -115,9 +115,9 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 The content displayed within the pivot chart control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content:
 
-* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. 
+* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube.
 * To bind the globalized content in the pivot chart control, you can set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
- 
+
 {% highlight c# %}
 
 //1036 refers to “fr-FR” culture.
@@ -128,7 +128,7 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
 
-![](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png) 
+![Localization support in JavaScript pivot chart control](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png)
 
 ## RTL
 
@@ -142,7 +142,7 @@ $("#PivotChart1").ejPivotChart({
 
 {% endhighlight %}
 
-![](Localization-and-Translation-support_images/Rtl.png)
+![Right to Left, aka RTL support in JavaScript pivot chart control](Localization-and-Translation-support_images/Rtl.png)
 
 N> RTL is applicable only for the tooltip of the pivot chart.
 

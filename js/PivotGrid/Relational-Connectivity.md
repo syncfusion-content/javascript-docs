@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relational-Connection-Types
+title: Relational-Connection for PivotGrid in Syncfusion Essential JS
 description: Relational Connection Types
 platform: js
 control: PivotGrid
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# DataBinding 
+# DataBinding
 
 ## Binding pivot grid to collection
 This section demonstrates binding of a collection to the pivot grid control as data source. For more information on this data source, refer to the following links:
@@ -22,7 +22,7 @@ If you use the WCF Service, then refer to the "Datasource Initialization" sectio
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it **“RelationalService.svc”**, and then click **Add**.
 
-Now, the WCF service is added to your application, which, in turn, comprise the following files. The utilization of these files will be explained in the immediate sections. 
+Now, the WCF service is added to your application, which, in turn, comprise the following files. The utilization of these files will be explained in the immediate sections.
 
 * RelationalService.svc
 * RelationalService.svc.cs
@@ -47,7 +47,7 @@ namespace PivotGridDemo
 **List of dependency libraries**
 
 You can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
+
 To add them to your web application, right-click the **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
@@ -106,7 +106,7 @@ namespace PivotGridDemo
     public class RelationalService : IRelationalService
     {
     ……
-    …… 
+    ……
     }
 
     internal class ProductSales
@@ -266,8 +266,6 @@ namespace PivotGridDemo
         PivotGrid htmlHelper = new PivotGrid();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         Dictionary<string, object> dict = new Dictionary<string, object>();
-        static int cultureIDInfoval = 1033;
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports            public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
 
         public Dictionary<string, object> InitializeGrid(string action)
@@ -442,9 +440,9 @@ You can expose services through the properties such as binding, contract, and ad
 1. Contract: This property indicates that the contract of the endpoint is exposed. Refer to `IRelationalService` contract, and thus it is `PivotGridDemo.IRelationalService`.
 2. Binding: In your application, you can use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
- 
+
 The endpointBehaviors are illustrated in the following:
- 
+
 {% highlight xaml %}
 
 <system.serviceModel>
@@ -460,7 +458,7 @@ The endpointBehaviors are illustrated in the following:
 </system.serviceModel>
 
 {% endhighlight %}
- 
+
 The endpointBehaviors contain all the behaviors for the endpoint. You can link each endpoint to the respective behavior only by using the name property.
 
 {% highlight xaml %}
