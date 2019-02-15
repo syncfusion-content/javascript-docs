@@ -16,9 +16,9 @@ Drill up, also called roll up, navigates from the inner most level (having detai
 
 Drill down, also called roll down, is the reverse of drill up. It navigates from the outer level to inner most level by climbing down the concept hierarchy for the dimension.
 
-![Drilldown option of JavaScript pivot chart control](Drill-Operation_images/Drill_img1.png)
+![Drill-down option of JavaScript pivot chart control](Drill-Operation_images/Drill_img1.png)
 
-![Drillup option of JavaScript pivot chart control](Drill-Operation_images/Drill_img2.png)
+![Drill-up option of JavaScript pivot chart control](Drill-Operation_images/Drill_img2.png)
 
 The "drillSuccess" event is triggered when you right-click the pivot chart and select any option available from the context menu to perform drill up or drill down operation.
 
