@@ -48,7 +48,7 @@ You can bind the named sets in the PivotGrid by setting it's unique name in the 
 
 {% endhighlight %}
 
-![Named sets in JavaScript pivot grid OLAP client mode](KPI_images/namedset.png)
+![NamedSet in JavaScript pivot grid OLAP client mode](KPI_images/namedset.png)
 
 
 ## Server mode
@@ -79,6 +79,6 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![Named sets in JavaScript pivot grid OLAP server mode](KPI_images/servernamedset.png)
+![NamedSset in JavaScript pivot grid OLAP server mode](KPI_images/servernamedset.png)
 
 
