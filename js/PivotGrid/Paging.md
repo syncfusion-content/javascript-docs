@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging with PivotGrid widget for Syncfusion Essential JS
 description: paging
 platform: js
 control: PivotGrid
@@ -36,7 +36,7 @@ Inside the **ejPivotPager** method, the enumeration property mode should be set 
                 categoricalCurrentPage: 1,
                 seriesCurrentPage: 1
             }
-        }, 
+        },
         enablePaging : true
     });
 
@@ -57,7 +57,7 @@ Following are the navigation options available in the pager:
 * Move next: Navigates to the next page from the current page.
 * Numeric box: Navigates to the desired page by entering an appropriate page number in the numeric value.
 
-![](Paging_images/paging.png)
+![Paging in JavaScript pivot grid control](Paging_images/paging.png)
 
 
 ## Virtual scrolling
@@ -75,13 +75,13 @@ $("#PivotGrid1").ejPivotGrid({
             categoricalCurrentPage: 1,
             seriesCurrentPage: 1
         }
-    }, 
+    },
     enableVirtualScrolling : true
 });
 
 {% endhighlight %}
 
-![](Paging_images/virtual-scrolling.png)
+![Virtual scrolling in JavaScript pivot grid control](Paging_images/virtual-scrolling.png)
 
 ## Page settings
 

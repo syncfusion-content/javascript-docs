@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relational-Getting-Started
+title: Relational-Getting-Started for PivotClient in Syncfusion JS
 description: relational-getting started
 platform: js
 control: PivotClient
@@ -103,7 +103,7 @@ Now, set the JSON data to the **"data"** property present in the **"dataSource"*
 
 <body>
     <div id="PivotClient1"></div>
-    
+
     <script type="text/javascript">
 
         //Datasource
@@ -153,9 +153,9 @@ Now, set the JSON data to the **"data"** property present in the **"dataSource"*
 
 Now, the pivot client is rendered with pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![](Getting-Started_images/purejs.png)
+![JavaScript pivot client control with relational client mode](Getting-Started_images/purejs.png)
 
-The following table will explain the [`relational`](/api/js/ejpivotclient#members:analysismode) and [`datasource`](/api/js/ejpivotclient#members:datasource) properties at [`client-side`](/api/js/ejpivotclient#members:operationalmode) in detail:
+The following table will explain the [`relational`](/api/js/ejpivotclient#members:analysisMode) and [`datasource`](/api/js/ejpivotclient#members:datasource) properties at [`client-side`](/api/js/ejpivotclient#members:operationalmode) in detail:
 
 <table>
     <tr>
@@ -432,7 +432,7 @@ N> This section illustrates creating a simple web application through Visual Stu
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotClientDemo”.**
 
 Next, you should add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it “GettingStarted.html,” and then click **Add.**
- 
+
 You can set the “GettingStarted.html” page as start-up page. To do so, right-click the “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS initialization
@@ -447,7 +447,7 @@ The scripts and style sheets that are mandatorily required to render a pivot cli
 The scripts and style sheets listed above can be found in any of the following locations:
 
 Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in the local machine.
- 
+
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
 NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package.
@@ -497,8 +497,8 @@ The [`url`](/api/js/ejpivotclient#members:url) property in the pivot client widg
 **Adding a WebAPI controller**
 
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it “RelationalController.cs,” and then click **Add**.
- 
-The WebAPI controller is added to your application, which, in turn, comprises the following file. The utilization of this file will be explained in the immediate sections. 
+
+The WebAPI controller is added to your application, which, in turn, comprises the following file. The utilization of this file will be explained in the immediate sections.
 
 * RelationalController.cs
 
@@ -512,7 +512,7 @@ namespace PivotClientDemo
 {
     public class RelationalController: ApiController
     {
-        
+
     }
 }
 
@@ -522,7 +522,7 @@ namespace PivotClientDemo
 
 Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
 
-To add them to your web application, right-click **References** in the solution Explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution Explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -541,7 +541,7 @@ N> If you have installed any version of Essential Studio, then the location of S
 **List of namespaces**
 
 The following are the list of namespaces to be added on top of the main class in the `RelationalController.cs` file.
- 
+
 {% highlight c# %}
 
 using Syncfusion.JavaScript;
@@ -686,7 +686,7 @@ internal class ProductSales
 **Service methods in WebAPI controller**
 
 You can define the service methods in the RelationalController class. To do this, found the `RelationalController.cs` file which was created while adding the WebAPI controller class to your web application.
- 
+
 {% highlight c# %}
 
 namespace PivotClientDemo
@@ -747,7 +747,7 @@ namespace PivotClientDemo
         {
             return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
         }
-        
+
         [System.Web.Http.ActionName("SaveReportToDB")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
@@ -911,7 +911,7 @@ N> The [`customObject`](../api/ejpivotclient#members:customobject) is utilized t
 **Configure routing in global application class**
 
 To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax,”** and then click **Add.**
- 
+
 After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then you can configure the routing as shown in the following code example:
 
 {% highlight c# %}
@@ -931,12 +931,12 @@ public class Global : System.Web.HttpApplication
 {% endhighlight %}
 
 Now, the pivot client is rendered with the pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
- 
-![](Getting-Started_images/relaionalwebapi.png)
+
+![JavaScript pivot client control with relational server mode](Getting-Started_images/relaionalwebapi.png)
 
 ### WCF
 
 This section demonstrates the utilization of WCF service as endpoint binding [`Relational`](/api/js/ejpivotclient#members:analysisMode) data source to a simple pivot client. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotclient/relational-connectivity#wcf-1).
-  
+
 
 

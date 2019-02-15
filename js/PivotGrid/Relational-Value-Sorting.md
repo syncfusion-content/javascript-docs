@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Value-Sorting
+title: Value-Sorting with PivotGrid widget for Syncfusion Essential JS
 description: value Sorting
 platform: js
 control: PivotGrid
@@ -22,7 +22,7 @@ Also, you can sort the column by clicking the column header. By clicking the sam
   <script type="text/javascript">
 
   // Datasource
-  
+
     $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
@@ -55,9 +55,11 @@ Also, you can sort the column by clicking the column header. By clicking the sam
 
 {% endhighlight %}
 
-![](Value-Sorting_images/Before.png) 
+The below screenshot shows pivot grid before applying value sorting.
 
-![](Value-Sorting_images/After.png) 
+![JavaScript pivot grid control before applying value sorting](Value-Sorting_images/Before.png)
 
+The below screenshot shows pivot grid after applying value sorting.
 
+![JavaScript pivot grid control after applying value sorting](Value-Sorting_images/After.png)
 

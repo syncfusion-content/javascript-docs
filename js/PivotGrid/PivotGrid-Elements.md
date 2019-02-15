@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotGrid-Elements
+title: PivotGrid-Elements with PivotGrid widget for Syncfusion Essential JS
 description: pivotGrid elements
 platform: js
 control: PivotGrid
@@ -19,7 +19,7 @@ The pivot grid control supports the hyperlink option to link data for each indiv
 * [`enableValueCellHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablevaluecellhyperlink): Enables hyperlink for the value cell.
 
 Also, the hyperlink option provides separate events for row header, column header, value, and summary cells as mentioned below:
- 
+
 * [`columnHeaderHyperlinkClick`](/api/js/ejpivotgrid#events:columnheaderhyperlinkclick): Returns column header information through event when clicking the hyperlink.
 * [`rowHeaderHyperlinkClick`](/api/js/ejpivotgrid#events:rowheaderhyperlinkclick): Returns row header information through event when clicking the hyperlink.
 * [`summaryCellHyperlinkClick`](/api/js/ejpivotgrid#events:summarycellhyperlinkclick): Returns summary cell information through event when clicking the hyperlink.
@@ -51,7 +51,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/hyperlink.png)
+![Hyperlink in JavaScript pivot grid control](PivotGrid-Elements_images/hyperlink.png)
 
 ## Header Settings
 The [`headerSettings`](/api/js/ejpivotgrid#members:headersettings) property allows you to enable/disable row/column header names in the pivot grid control. This feature can be enabled separately for row header and column header. The following are the respective properties:
@@ -67,13 +67,13 @@ $(function() {
     $("#PivotGrid1").ejPivotGrid({
         //...
         headerSettings: {
-                          showRowItems: true,
-                          showColumnItems: true
-                        }
+            showRowItems: true,
+            showColumnItems: true
+        }
     });
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/headerSettings.png)
+![Header settings in JavaScript pivot grid control](PivotGrid-Elements_images/headerSettings.png)
 
 ## Show unique name on pivot button
 The [`showUniqueNameOnPivotButton`](/api/js/ejpivotgrid#members:showUniqueNameOnPivotButton) property allows you to show the appropriate unique name in the pivot button.
@@ -89,7 +89,7 @@ $(function() {
     });
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/uniquNamePivotButton.png)
+![Unique name on pivot button in JavaScript pivot grid control](PivotGrid-Elements_images/uniquNamePivotButton.png)
 
 ## Selection
 You can select a particular range of value cells from the pivot grid and manipulate/display them. Cell selection is applicable only for value cells, and you can enable this functionality by setting the [`enableCellSelection`](/api/js/ejpivotgrid#members:enablecellselection) property to true.
@@ -116,7 +116,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/cellselection.png)
+![Cell selection in JavaScript pivot grid control](PivotGrid-Elements_images/cellselection.png)
 
 ## Cell context
 The cell context allows you to perform any custom operation by right-clicking the cell. For example, you can create and display the context menu by right-clicking the cell.
@@ -142,7 +142,7 @@ cell_RightClick = function(evt) {
 
 ## Conditional formatting
 The conditional formatting in the pivot grid allows you to highlight particular cells with certain color, font-style, font-family, etc., based on the applied condition.  Also, the condition can be applied for certain measure alone.
-  
+
 The conditional formatting is enabled by setting the [`enableConditionalFormatting`](/api/js/ejpivotgrid#members:enableconditionalformatting) property to true and the formatting dialog is launched when the **"createConditionalDialog"** method is invoked.
 
 {% highlight html %}
@@ -154,7 +154,7 @@ The conditional formatting is enabled by setting the [`enableConditionalFormatti
     <div id="PivotGrid1"> </div>
     <button id="Button1">Apply formatting</button>
 
-    <script type="text/javascript">
+   <script type="text/javascript">
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
                 //...
@@ -170,7 +170,7 @@ The conditional formatting is enabled by setting the [`enableConditionalFormatti
         function btnClick(e) {
             var pivotGridObj = $('#PivotGrid1').data("ejPivotGrid");
             if (pivotGridObj.model.enableConditionalFormatting) {
-                pivotGridObj.createConditionalDialog();
+                pivotGridObj.openConditionalFormattingDialog();
             }
         }
     </script>
@@ -180,9 +180,9 @@ The conditional formatting is enabled by setting the [`enableConditionalFormatti
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/FormatDialog.png)
+![Conditional formatting dialog in JavaScript pivot grid control](PivotGrid-Elements_images/FormatDialog.png)
 
-![](PivotGrid-Elements_images/FormattedGrid.png)
+![JavaScript pivot grid control with conditional formatting](PivotGrid-Elements_images/FormattedGrid.png)
 
 ### Export
 
@@ -210,4 +210,4 @@ The following border styles are alone supported:
 
 Also border size is not supported.
 
-![](PivotGrid-Elements_images/conditional_export.png)
+![Excel exporting with conditional formatting in JavaScript pivot grid control](PivotGrid-Elements_images/conditional_export.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relational-Connection-Types
+title: Relational-Connection for PivotClient in Syncfusion JavaScript
 description: Relational Connection Types
 platform: js
 control: PivotClient
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# DataBinding 
+# DataBinding
 
 ## Binding pivot client to collection
 This section demonstrates binding a collection to the pivot client control as the data source. For more information on this data source, refer to the following links:
@@ -22,7 +22,7 @@ If you are using the WCF service, refer to the data source initialization sectio
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it **“RelationalService.svc,”** and then click **Add**.
 
-The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
+The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * RelationalService.svc
 * RelationalService.svc.cs
@@ -48,8 +48,8 @@ namespace PivotClientDemo
 **List of dependency libraries**
 
 You can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -108,7 +108,7 @@ namespace PivotClientDemo
     public class RelationalService : IRelationalService
     {
     ……
-    …… 
+    ……
     }
 
     internal class ProductSales
@@ -268,7 +268,7 @@ namespace PivotClientDemo
         PivotClient pivotClient = new PivotClient();
         PivotChart pivotChart = new PivotChart();
         PivotGrid pivotGrid = new PivotGrid();
-        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports       
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
         JavaScriptSerializer serializer = new JavaScriptSerializer();
 
         public Dictionary<string, object> InitializeClient(string action)
@@ -307,7 +307,7 @@ namespace PivotClientDemo
         {
             return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), args);
         }
-        
+
         public Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
         {
             reportName = reportName + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
@@ -441,7 +441,7 @@ namespace PivotClientDemo
             con.Close();
             return dSet.Tables[0];
         }
-        
+
         public void Export(System.IO.Stream stream)
         {
             System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
@@ -475,9 +475,9 @@ You can expose services through the properties such as binding, contract, and ad
 1. Contract: This property indicates that the contract of the endpoint is exposed. Refer to `IRelationalService` contract, and thus it is `PivotClientDemo.IRelationalService`.
 2. Binding: In your application, you can use the `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
- 
+
 The endpointBehaviors are illustrated as follows:
- 
+
 {% highlight xaml %}
 
 <system.serviceModel>
@@ -493,7 +493,7 @@ The endpointBehaviors are illustrated as follows:
 </system.serviceModel>
 
 {% endhighlight %}
- 
+
 The endpointBehaviors contain all behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property.
 
 {% highlight xaml %}
@@ -516,5 +516,5 @@ N> In this example, **“PivotClientDemo”** indicates the name and root namesp
 
 Now, the pivot client is rendered with the pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![](Getting-Started_images/relaionalwebapi.png) 
+![JavaScript pivot client control with relational wcf](Getting-Started_images/relaionalwebapi.png)
 
