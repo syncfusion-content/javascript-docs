@@ -21,6 +21,8 @@ Gantt contains the following in-built schedule header types.
 * Week – Day
 * Month – Week
 * Year – Month
+* Year – Half Year
+* Year – Quarter Year
 
 Time scale mode in Gantt can be defined by using [`scheduleHeaderType`](/api/js/ejgantt#members:scheduleheadersettings-scheduleheadertype) property and 
 the following code example illustrates you on how to change the schedule mode.
@@ -53,7 +55,7 @@ The following screenshot illustrates the Week Schedule in Gantt control.
 
 ### Month schedule mode
 
-In the Week schedule mode the upper part of the schedule header displays the Months, whereas the bottom header of the schedule displays its corresponding Weeks. Refer to the following code example.
+In the Month schedule mode the upper part of the schedule header displays the Months, whereas the bottom header of the schedule displays its corresponding Weeks. Refer to the following code example.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -79,7 +81,7 @@ The following screenshot illustrates the Month Schedule in Gantt control.
 
 ### Year schedule mode
 
-In the Week schedule mode the upper schedule header displays the Years whereas, the bottom header displays its corresponding Months. Refer to the following code example.
+In the Year schedule mode the upper schedule header displays the Years whereas, the bottom header displays its corresponding Months. Refer to the following code example.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -103,9 +105,59 @@ The following screen shot shows the Year Schedule in Gantt control.
 
 ![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img3.png)
 
+### Half Year schedule mode
+
+In the Half Year mode the upper schedule header displays the Year whereas, the bottom schedule header displays two halves of the corresponding year named H1,H2. Each half is a six months period of the corresponding year.
+Refer the following code example to enable the half year schedule mode
+
+{% highlight javascript %}
+$("#GanttContainer").ejGantt({
+
+    // ... 
+
+   scheduleHeaderSettings: {
+
+        scheduleHeaderType : ej.Gantt.ScheduleHeaderType.HalfYear,
+       
+       },
+
+    // ...
+
+});
+{% endhighlight %}
+
+The following screenshot illustrates the Half Year Schedule in Gantt control.
+
+![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img10.png)
+
+### Quarter Year schedule mode
+
+In the Quarter Year mode the upper schedule header displays the Year whereas, the bottom schedule header displays the four quarters of the corresponding year named Q1,Q2,Q3 and Q4. Each Quarter is a three months period of the corresponding year.
+Refer the following code example to enable the quarter year schedule mode
+
+{% highlight javascript %}
+$("#GanttContainer").ejGantt({
+
+    // ... 
+
+   scheduleHeaderSettings: {
+
+        scheduleHeaderType : ej.Gantt.ScheduleHeaderType.QuarterYear,
+       
+       },
+
+    // ...
+
+});
+{% endhighlight %}
+
+The following screenshot illustrates the Quarter Year Schedule in Gantt control.
+
+![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img11.png)
+
 ### Day schedule mode
 
-In the Week schedule mode the upper part of the header displays the Days whereas, the bottom schedule header displays its corresponding Hours. Refer to the following code example.
+In the Day schedule mode the upper part of the header displays the Days whereas, the bottom schedule header displays its corresponding Hours. Refer to the following code example.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
