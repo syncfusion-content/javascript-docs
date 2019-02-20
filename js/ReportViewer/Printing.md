@@ -1,80 +1,81 @@
 ---
 layout: post
-title: Print Report | ReportViewer | JavaScript | Syncfusion
+title: Print Report | Report Viewer | JavaScript | Syncfusion
 description: Control and customize the report printing using properties and events. 
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 ---
 
 # Printing 
-Report Viewer provides Print button in the toolbar to print a copy of the report. The page setup dialog allows to set the paper size or other page setup properties, to see print margins, click Print Layout on the toolbar. 
+The Report Viewer provides print option in the toolbar to print a copy of the report. The page setup dialog allows you to set the paper size or other page setup properties. To see print margins, click Print Layout on the toolbar.
 
-N> The values you set in the Page Setup dialog box are for current session only. When you close the report and reopen it, it will have the default values again. The default values for page setup dialog come from the report properties, which are set in Design view.
+N> The values allow you to set in the Page Setup dialog box for current session only. When you close the report and reopen it, it will have the default values again. The default values for the page setup dialog come from the report properties, which are set in the design view.
 
 ## View report in print mode
-Print margins are displayed in Print Layout only, to view report in print mode by default, set the [`printMode`](../api/ejreportviewer#members:printmode) property to true. 
-  
+Print margins are displayed in the Print Layout only, to view report in print mode by default, set the [`printMode`](../api/ejreportviewer#members:printmode) property to true. 
+
 {% highlight javascript %}
         <script type="text/javascript">
             $(function () {
                 $("#viewer").ejReportViewer({
                     reportServiceUrl: "/api/ReportsApi",
                     reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    printMode:true
+                    printMode: true
                 });
             });
         </script>
-
-    </script>
 {% endhighlight %}
 
+N> By default, the Report Viewer renders report in normal layout in which the print margins are not displayed.
+
 ## Print in new page
-To open the print in new tab of the current browser set the property [`printOptions`](../api/ejreportviewer#members:printOptions) to NewTab. By default, it shows the print dialog in same page.
+To open the print in a new tab of the current browser, set the property [`printOptions`](../api/ejreportviewer#members:printOptions) to `NewTab`. By default, it shows the print dialog in the same page.
 
 {% highlight javascript %}
-    <script type="text/javascript">
+        <script type="text/javascript">
             $(function () {
-                $("#container").ejReportViewer({
+                $("#viewer").ejReportViewer({
                     reportServiceUrl: "/api/ReportsApi",
                     reportPath: '~/App_Data/Sales Order Detail.rdl',
+                    printMode: true,
                     printOption: ej.ReportViewer.PrintOptions.NewTab
                 });
             });
-    </script>
+        </script>
 {% endhighlight %}
 
 N> The pop-up blocker must be enabled for the page to open the print view in new tab.
 
 ## Set page orientation and paper size
-You can specify print page paper size, orientation at client side to change page setup properties by setting the [`pageSettings`](../api/ejreportviewer#members:pagesettings) property.
+You can specify the print page paper size, orientation at client-side to change page setup properties by setting the [`pageSettings`](../api/ejreportviewer#members:pagesettings) property.
 
 {% highlight javascript %}
-    <script type="text/javascript">
+        <script type="text/javascript">
             $(function () {
-                $("#container").ejReportViewer({
+                $("#viewer").ejReportViewer({
                     reportServiceUrl: "/api/ReportsApi",
                     reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    printMode:true,
+                    printMode: true,
                     pageSettings: {
                         orientation: ej.ReportViewer.Orientation.Landscape,
                         paperSize: ej.ReportViewer.PaperSize.Letter
                     }
                 });
             });
-    </script>
+        </script>
 {% endhighlight %}
 
 ## Set report margin
-To set margin values to the report page setup use the property [`margins`](../api/ejreportviewer#members:pagesettings-margins) and specify the value to top, right, bottom and left.
+To set margin values to the report page setup, use the property [`margins`](../api/ejreportviewer#members:pagesettings-margins) and specify the value to top, right, bottom, and left.
 
 {% highlight javascript %}
-    <script type="text/javascript">
+        <script type="text/javascript">
             $(function () {
-                $("#container").ejReportViewer({
+                $("#viewer").ejReportViewer({
                     reportServiceUrl: "/api/ReportsApi",
                     reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    printMode:true,
+                    printMode: true,
                     pageSettings: {
                         margins: {
                             top: 0.5,
@@ -85,130 +86,122 @@ To set margin values to the report page setup use the property [`margins`](../ap
                     }
                 });
             });
-    </script>
+        </script>
 {% endhighlight %}
 
-N> The values set in margin property is considered as inches input.
+N> The values set in the margin property is considered as inches input.
+
 
 ## Set page height and width
-To set height and width values to the report page setup use the property [`height`](../api/ejreportviewer#members:pagesettings-height), [`width`](../api/ejreportviewer#members:pagesettings-width) properties.
+To set height and width values to the report page setup, use the [`height`](../api/ejreportviewer#members:pagesettings-height), and [`width`](../api/ejreportviewer#members:pagesettings-width) properties.
 
 {% highlight javascript %}
-    <script type="text/javascript">
+        <script type="text/javascript">
             $(function () {
-                $("#container").ejReportViewer({
+                $("#viewer").ejReportViewer({
                     reportServiceUrl: "/api/ReportsApi",
                     reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    printMode:true,
+                    printMode: true,
                     pageSettings: {
-                        height: 10,
-                        width: 8.5
+                        height: 11.69,
+                        width: 8.27
                     }
                 });
             });
-    </script>
+        </script>
 {% endhighlight %}
 
-N> The values set in height and width property are considered as inches input.
+N> The values set in the height and width property is considered as inches input.
 
-## Print Delay
-When the report has more images, the browser will send the report stream to print dialog before the images are completely loaded. To load the stream with complete image, you need to increase the print delay in current print job. Report Viewer provides the event [`reportPrint`](../api/ejreportviewer#events:reportprint) in which you can increase the print delay as shown in below code.
+## Print report with images
+When the report has more images, the browser will send the report stream to the print dialog before the images are completely loaded. To load the print report stream with complete images, you should set the `EmbedImageData` property to true in `OnInitReportOptions` as shown in the following code.
+
+{% highlight c# %}
+    public void OnInitReportOptions(ReportViewerOptions reportOption)
+    {
+        reportOption.ReportModel.EmbedImageData = true;
+    }
+{% endhighlight %}
+
+Replace the following code sample in client side html file.
 
 {% highlight javascript %}
-    <script type="text/javascript">
-
-        $(function () {
-            $("#container").ejReportViewer(
-                {
-                    reportServiceUrl: "/api/ReportsApi",
-                    reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    reportPrint: "onReportPrint"
-                });
-        });
-
-        function onReportPrint(args) {
-            args.printWind.printDelay = 2000;
-        }
-    </script>
+        <script type="text/javascript">
+            $(function () {
+                $("#viewer").ejReportViewer(
+                    {
+                        reportServiceUrl: "/api/ReportsApi",
+                        reportPath: '~/App_Data/Product Details.rdl'
+                    });
+            });
+        </script>
 {% endhighlight %}
 
-You can also increase the print delay based in the number of pages in report print view and based on browser type, to do this use the below code.
-
-{% highlight javascript %}
-    <script type="text/javascript">
-        ....
-        function onReportPrint(args) {
-        var data = $("#container").data('ejReportViewer');
-
-        if (data._browserInfo.name != "msie") {
-                args.printWind.printDelay = 2000 * data._pageModel.TotalPages;
-            }
-        }
-    </script>
-{% endhighlight %}
+N> In this tutorial, the `Product Details.rdl` report is used, and it can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Product_Details-1522024720).
 
 ## External styles in report printing
-While printing report the external styles used in the application overrides and prints output with incorrect alignments. To avoid the external script overriding, you can set the `isStyleLoad` property to false which will print the page using only the Report Viewer styles.
+While printing report, the external styles are used in the application overrides printable page style and prints output with incorrect alignments. To avoid the external script overriding, set the `isStyleLoad` property to false, which will print the page using only the Report Viewer styles.
 
 {% highlight javascript %}
-    <script type="text/javascript">
+        <script type="text/javascript">
+            $(function () {
+                $("#viewer").ejReportViewer(
+                    {
+                        reportServiceUrl: "/api/ReportsApi",
+                        reportPath: '~/App_Data/Product Details.rdl',
+                        reportPrint: "onReportPrint"
+                    });
+            });
 
-        $(function () {
-            $("#container").ejReportViewer(
-                {
-                    reportServiceUrl: "/api/ReportsApi",
-                    reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    reportPrint: "onReportPrint"
-                });
-        });
-
-        function onReportPrint(args) {
-            args.isStyleLoad = false;
-        }
-    </script>
+            function onReportPrint(args) {
+                args.isStyleLoad = false;
+            }
+        </script>
 {% endhighlight %}
 
 ## Show print progress
-Report Viewer provides events that helps to show the progress information, when the printing takes long time to complete. 
+Report Viewer provides events that help you to show the progress information when the printing takes a long time to complete.
 
-1.Set the `printProgressChanged` in Report Viewer initialization.
-2.Implement the function and add code samples to show custom message based on the print progress stage. The follow code sample shows the progress message based on the print event status.  
+1.Set the [`printProgressChanged`](../api/ejreportviewer#events:printprogresschanged) in Report Viewer initialization.
+2.Implement the function and add code samples to show a custom message based on the print progress status as shown in the following code snippet. 
 
 {% highlight javascript %}
-    <script type="text/javascript">
-        $(function () {
-            $("#container").ejReportViewer({
-                reportServiceUrl: "/api/ReportsApi",
-                reportPath: '~/App_Data/Sales Order Detail.rdl',
-                printProgressChanged:"onPrintProgressChanged",
+        <script type="text/javascript">
+            $(function () {
+                $("#viewer").ejReportViewer({
+                    reportServiceUrl: "/api/ReportsApi",
+                    reportPath: '~/App_Data/Product Details.rdl',
+                    printProgressChanged: "onPrintProgressChanged",
+                });
             });
-        });
 
-        function onPrintProgressChanged(args) {
-            if (args.stage == "beginPrint") {
-                $('#reportviewer').ejWaitingPopup({ showOnInit: true, cssClass: "customStyle", text: "Preparing print data.. Please wait..." });
-            }
-            if (args.stage == "printStarted") {
-                var popupObj = $('#reportviewer').data('ejWaitingPopup');
-                popupObj.hide();
-            }
-            else if (args.stage == "preparation") {
-                console.log(args.stage);
-                if (args.preparationStage == "dataPreparation") {
-                    console.log(args.preparationStage);
-                    console.log(args.totalPages);
-                    console.log(args.currentPage);
-                    if (args.totalPages > 1 && args.currentPage > 1) {
-                        var progressPercentage = Math.floor((args.currentPage / args.totalPages) * 100);
-                        if (progressPercentage > 0) {
-                            var popupObj = $('#reportviewer').data('ejWaitingPopup');
-                            popupObj.setModel({ text: "Preparing print data.." + progressPercentage + " % completed.. Please wait..." });
+            function onPrintProgressChanged(args) {
+                if (args.stage == "beginPrint") {
+                    $('#viewer').ejWaitingPopup({ showOnInit: true, cssClass: "customStyle", text: "Preparing print data.. Please wait..." });
+                }
+                if (args.stage == "printStarted") {
+                    var popupObj = $('#viewer').data('ejWaitingPopup');
+                    popupObj.hide();
+                }
+                else if (args.stage == "preparation") {
+                    console.log(args.stage);
+                    if (args.preparationStage == "dataPreparation") {
+                        console.log(args.preparationStage);
+                        console.log(args.totalPages);
+                        console.log(args.currentPage);
+                        if (args.totalPages > 1 && args.currentPage > 1) {
+                            var progressPercentage = Math.floor((args.currentPage / args.totalPages) * 100);
+                            if (progressPercentage > 0) {
+                                var popupObj = $('#viewer').data('ejWaitingPopup');
+                                popupObj.setModel({ text: "Preparing print data.." + progressPercentage + " % completed.. Please wait..." });
+                            }
                         }
                     }
                 }
+
+                args.handled = true;
             }
-        }
-    </script>
+        </script>
 {% endhighlight %}
 
 ## Remove empty spaces in printing
@@ -216,5 +209,4 @@ The extra blank page is created when the Body of your report is too wide for you
 
 **Body Width <= Page Width - (Left Margin + Right Margin)**
 
-For more details on designing a report to remove the empty pages in report, you can refer to the knowledge base article of report page sizing.
-
+For more details on designing a report to remove the empty pages in the report, refer to the knowledge base article of [report page sizing](https://www.syncfusion.com/kb/8622/how-to-avoid-the-extra-blank-pages-in-print-and-print-preview).
