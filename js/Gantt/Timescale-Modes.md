@@ -116,15 +116,13 @@ Refer the following code example to enable the half year schedule mode
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
 
-    // ... 
+    //...
 
-   scheduleHeaderSettings: {
+    scheduleHeaderSettings: {
 
-        scheduleHeaderType : ej.Gantt.ScheduleHeaderType.HalfYear,
-       
-       },
-
-    // ...
+        scheduleHeaderType: ej.Gantt.ScheduleHeaderType.HalfYear,
+        
+    },
 
 });
 {% endhighlight %}
@@ -142,15 +140,13 @@ Refer the following code example to enable the quarter year schedule mode
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
 
-    // ... 
+    //...
 
-   scheduleHeaderSettings: {
+    scheduleHeaderSettings: {
 
-        scheduleHeaderType : ej.Gantt.ScheduleHeaderType.QuarterYear,
-       
-       },
-
-    // ...
+        scheduleHeaderType: ej.Gantt.ScheduleHeaderType.QuarterYear,
+        
+    },
 
 });
 {% endhighlight %}
