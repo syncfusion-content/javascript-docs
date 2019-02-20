@@ -3,7 +3,7 @@ layout: post
 title: Samples and demos | JavaScript Report Viewer | Syncfusion
 description: Syncfusion HTML5 JavaScript Report Viewer online or offline samples and demos.
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
@@ -13,7 +13,7 @@ Browse and explore our ready-to-use RDL, RDLC reports, samples, online and offli
 
 ## Locally installed reports
 You can obtain sample rdl and rdlc files from Syncfusion installed location 
-(%system drive%\Users\Public\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\ejservices\App_Data\Reports).
+`System drive:\Users\Public\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\ejservices\App_Data\Reports`.
 
 ## Offline demos
 The offline samples are provided in the Syncfusion Essential Studio setup. For more details refer to the [link](https://help.syncfusion.com/common/essential-studio/samples#offline-samples).
