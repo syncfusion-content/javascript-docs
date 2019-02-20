@@ -3,27 +3,26 @@ layout: post
 title: Create ASP.NET Web API Service | Report Viewer | Syncfusion
 description: Create ASP.NET Web API Service for Syncfusion HTML5 JavaScript Report Viewer to process and render reports.
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
 
 # Create ASP.NET Web API Service
-In this section, you will use the new ASP.NET web project templates to create a Web API for Report Viewer to process the report actions.
+In this section, you will learn how to create a Web API Service for Report Viewer using the new ASP.NET Empty Web Application template.
 
-1.Open Visual Studio 2012, from the File menu, select New Project. 
-2.Select the Visual C#, Web project type from the project type, then select the ASP.NET Empty Web Application project type. Set the project's Name to “ReportViewerWebAPIService” then click OK.
+1.Open Visual Studio 2012, from the **File** menu, select **New Project**. 
+2.Select the Visual C#, Web project type from the project type, then select the **ASP.NET Empty Web Application** project type. Set the project name and click OK.
 
-![Creating a new ASP.NET Empty Web Application Project](Report-Service_images/aspnet-empty-application.png)
+![Creating a new ASP.NET Empty Web Application Project](images/report-service/aspnet-empty-application.png)
 
 ## List of dependency libraries
 The Web API service configuration requires reporting server-side assembly references.
 
-1.In the Solution Explorer, right-click the References then click Add Reference.
-2.Add the below mentioned libraries to the application from installed location or GAC (Global Assembly Cache).
+1.In the Solution Explorer, right-click the **References** and click Add Reference.
+2.Add the following mentioned libraries to the application from the installed location or GAC (Global Assembly Cache).
 
-N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is 
-System drive:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\Assemblies.
+N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is `System drive:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\Assemblies`.
 
    * System.Web.Routing  
    * System.Web.Http
@@ -42,31 +41,52 @@ System drive:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf  
 
-N> If you have not installed any version of Essential Studio then you can add the above assemblies from Syncfusion NuGet package `Syncfusion.Web.ReportViewer`. The Syncfusion reporting NuGet packages are published in public NuGet.org so, no need any additional configurations to utilize the Syncfusion.Web.ReportViewer NuGet package.
+N> If you have not installed any version of Essential Studio, then you can add the above assemblies from the Syncfusion NuGet package `Syncfusion.Web.ReportViewer`. The Syncfusion reporting NuGet packages are published in public `NuGet.org`. So, any additional configurations are not required to utilize the `Syncfusion.Web.ReportViewer` NuGet package.
+
+I> Starting with `v16.2.0.x`, if you refer to the Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in the ASP.NET application to use our components.
+
+3.Install the `Newtonsoft.Json` NuGet package via the NuGet package manager console.
+
+{% highlight c# %}
+
+Install-Package Newtonsoft.Json -Version 9.0.1
+
+{% endhighlight %}
+
+N> It is a mandatory package for the report viewer to serialize and deserialize the JSON data and the package version should be  9.0.1 or higher.
+
+4.Make sure to add `<bindingRedirect>` for `Newtonsoft.Json` inside the &lt;configuration&gt; tag in the project's `web.config` file.
+
+{% highlight c# %}
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-9.0.0.0" newVersion="9.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+{% endhighlight %}
 
 ## Add Web API Service
-1.Right-click the project and select Add -> New Item from the context menu.
-2.In the Add New Item dialog, select Web API Controller class and name it as ReportsApiController then, click Add.
+1.Right-click the project and select **Add &gt; New Item** from the context menu.
+2.In the Add New Item dialog, select **Web API Controller** class and name it as `ReportsApiController`, and then click **Add**.
+![Adding a new controller to the project](images/report-service/add-web-api-controller.png)
 
-![Adding a new controller to the project](Report-Service_images/add-web-api-controller.png)
-
-N> While adding WebAPI Controller class, name it with the suffix “Controller” that is mandatory.
+N> While adding Web API Controller class, name it with the suffix `Controller` that is mandatory.
 
 ## Inherit IReportController
-The ‘IReportController’ interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that helps to process Post/Get request from control and return the response. Open the ReportsApiController, inherit the IReportController interface and implement its methods (you can use the following codes).
+The `IReportController` interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that help to process Post or Get request from the control and return the response.  
+
+1.Open the `ReportsApiController` and add the following using statement.
 
 {% highlight c# %}
 using Syncfusion.EJ.ReportViewer;
-using Syncfusion.EJ.ReportViewer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+{% endhighlight %}
 
-namespace ReportViewerWebAPIService
-{
+2.Inherit the `IReportController` interface, and implement its methods (replace the following code in newly created Web API controller).
+
+{% highlight c# %}
     public class ReportsApiController : ApiController, IReportController
     {
         //Post action for processing the rdl/rdlc report 
@@ -95,34 +115,27 @@ namespace ReportViewerWebAPIService
             //You can update report options here
         }
     }
-}
 
 {% endhighlight %}
 
-## Configure routing in global application class
-The following steps guides you to configure the routing to include action name in the URI.
+## Add Routing Information
+The following steps guide you to configure the routing to include an action name in the URI.
 
-1.Right-click the project in the solution explorer and select Add > New item.
-2.In the Add New Item window, select Global Application class and name it as “Global.asax”, and then click Add.
+1.Right-click the project in the solution explorer and select **Add > New item**.
+2.In the Add New Item window, select **Global Application class** and name it as `Global.asax`, and then click Add.
+![Adding Global.asax file](images/report-service/add-global-application-class.png)
 
-![Adding Global.asax file](Report-Service_images/add-global-application-class.png)
-
-3.In the Global.asax file, add namespace “using System.Web.Http;”, then configure the routing in Application_Start event as shown in the below code.
+3.Open the code-behind file `Global.asax.cs` and add the following using statement.
 
 {% highlight c# %}
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+
 using System.Web.Http;
-using System.Web.Security;
-using System.Web.SessionState;
 
-namespace ReportViewerWebAPIService
-{
-    public class Global : System.Web.HttpApplication
-    {
+{% endhighlight %}
 
+4.Then add the following code to the `Application_Start` method:
+
+{% highlight c# %}
         protected void Application_Start(object sender, EventArgs e)
         {
             System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
@@ -130,9 +143,8 @@ namespace ReportViewerWebAPIService
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional });
         }
-    }
-}
-
 {% endhighlight %}
 
-4.Compile and run the Web API service application.
+N> For more information about routing tables, see [Routing in ASP.NET Web API](https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/routing-in-aspnet-web-api).
+
+5.Compile and run the Web API service application.
