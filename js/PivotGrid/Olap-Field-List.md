@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Field-List
+title: Field-List with PivotGrid widget for Syncfusion Essential JS
 description: field list
 platform: js
 control: PivotGrid
@@ -37,7 +37,7 @@ To initialize the PivotTable field list, first you should define a “div” tag
         $(function() {
             $("#PivotGrid1").ejPivotGrid({
                 dataSource: {
-                    data: "http://bi.syncfusion.com/olap/msmdpump.dll", //data
+                    data: "https://bi.syncfusion.com/olap/msmdpump.dll", //data
                     catalog: "Adventure Works DW 2008 SE",
                     cube: "Adventure Works",
                     rows: [{
@@ -76,7 +76,7 @@ To initialize the PivotTable field list, first you should define a “div” tag
 {% endhighlight %}
 
 
-![](PivotTable-Field-List_images/olapclientfieldlsit.png)
+![Field list in JavaScript pivot grid OLAP client mode](PivotTable-Field-List_images/olapclientfieldlsit.png)
 
 
 ### Server mode
@@ -116,7 +116,7 @@ To initialize the PivotTable field list, first you should define a “div” tag
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/schema1.png)
+![Excel structure of field list in JavaScript pivot grid control](PivotTable-Field-List_images/schema1.png)
 
 N> The [`url`](/api/js/ejpivotschemadesigner#members:url) property is used to connect the service by using the specified URL for any server updates.
 
@@ -204,7 +204,7 @@ The [`layout`](/api/js/ejpivotschemadesigner#members:layout) property is used to
 
 You can alter the report on fly through the drag-and-drop operation. You can drag any item from the field list and drop it into column, row, value, or filter section available at the bottom of the field list.
 
-![](PivotTable-Field-List_images/ui-operartion.png)
+![Drag and drop in JavaScript field list](PivotTable-Field-List_images/ui-operartion.png)
 
 N> You can enable/disable the drag and drop operation by the [`enableDragDrop`](/api/js/ejpivotschemadesigner#members:enabledragdrop) property.
 
@@ -212,29 +212,29 @@ N> You can enable/disable the drag and drop operation by the [`enableDragDrop`](
 
 You can also alter the report on fly through the check and uncheck option as an alternate. By default, fields will be added to the row label when checked.
 
-![](PivotTable-Field-List_images/pivotfield.png)
+![Filtering in JavaScript field list](PivotTable-Field-List_images/pivotfield.png)
 
 ### By context menu
 
 You can also alter the report by using the context menu.
 
-![](PivotTable-Field-List_images/Olap_Pivotbutton_Context.png)
+![Context menu in pivot button of JavaScript field list](PivotTable-Field-List_images/Olap_Pivotbutton_Context.png)
 
-![](PivotTable-Field-List_images/Olap_Treeview_Context.png)
+![Context menu in tree view elements of JavaScript field list](PivotTable-Field-List_images/Olap_Treeview_Context.png)
 
 ## Searching values
 Search option in the field list allows you to search a specific value that needs to be filtered from the list of values in the filter pop-up window.
 
-![](PivotTable-Field-List_images/filterclick.png)
+![Tree drop icon in JavaScript field list](PivotTable-Field-List_images/filterclick.png)
 
-![](PivotTable-Field-List_images/search.png)
+![Searching in member editor dialog of JavaScript field list](PivotTable-Field-List_images/search.png)
 
 ## Filtering
 Values can be filtered by checking/unchecking the check box besides them, in the filter pop-up window. At least, one value should be present in the checked state while filtering. Otherwise “Ok” will be disabled.
 
-![](PivotTable-Field-List_images/filterclick.png)
+![Tree drop icon click in JavaScript field list](PivotTable-Field-List_images/filterclick.png)
 
-![](PivotTable-Field-List_images/filter.png)
+![Filtering in member editor dialog of JavaScript field list](PivotTable-Field-List_images/filter.png)
 
 ## Defer update
 Defer update in the field list allows you to refresh the control on-demand and not during every UI operation. This operation can be enabled/disabled through the [`enableDeferUpdate`](/api/js/ejpivotgrid#members:enabledeferupdate) property internally.
@@ -255,7 +255,7 @@ The [`showKpi`](/api/js/ejpivotschemadesigner#members:olap-showkpi) property is 
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/kpi.png)
+![Key Performance Indicator, aka KPI support in JavaScript pivot schema designer](PivotTable-Field-List_images/kpi.png)
 
 ### Showing NamedSets
 The [`showNamedSets `](/api/js/ejpivotschemadesigner#members:olap-shownamedsets) property is used to view the named sets in tree view of the pivot table field list. This property should be defined under [`olap`](/api/js/ejpivotschemadesigner#members:olap) object.

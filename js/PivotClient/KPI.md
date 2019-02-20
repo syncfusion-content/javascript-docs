@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key-Performance-Indicator-KPI
+title: KPI with PivotClient widget for Syncfusion Essential JS
 description: key performance indicator (KPI)
 platform: js
 control: PivotClient
@@ -29,12 +29,12 @@ To enable the KPI option, set the [`enableKPI`](/api/js/ejpivotclient#members:en
 
 <!--Create a tag which acts as a container for PivotClient-->
  <div id="PivotClient1"></div>
- 
+
 <script type="text/javascript">
     $(function() {
         $("#PivotClient1").ejPivotClient({
             dataSource: {
-                data: "http://bi.syncfusion.com/olap/msmdpump.dll",
+                data: "https://bi.syncfusion.com/olap/msmdpump.dll",
                 catalog: "Adventure Works DW 2008 SE",
                 cube: "Adventure Works",
                 rows: [{
@@ -61,7 +61,7 @@ To enable the KPI option, set the [`enableKPI`](/api/js/ejpivotclient#members:en
 
 {% endhighlight %}
 
-![](KPI_images/clientmode-kpi.png)
+![KPI in JavaScript pivot client with OLAP client mode](KPI_images/clientmode-kpi.png)
 
 ## Server mode
 
@@ -106,5 +106,5 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![](KPI_images/KPI.png)
+![KPI in JavaScript pivot client with OLAP server mode](KPI_images/KPI.png)
 

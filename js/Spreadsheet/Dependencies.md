@@ -1,5 +1,5 @@
 ---
-title: Essential JavaScript Spreadsheet dependencies
+title: Essential JavaScript Spreadsheet dependencies | Syncfusion
 description: Listed Spreadsheet internal and external dependencies
 platform: JS
 control: Spreadsheet
@@ -15,7 +15,6 @@ The Spreadsheet have the following list of external dependencies.
 * [`jsRender`](https://github.com/borismoore/jsrender "jsRender") - to render the templates.
 
 * [`jQuery.validate`](https://github.com/jzaefferer/jquery-validation "jQuery.validate") - to support validation in editing and dialog inputs.
-
 
 And the internal dependencies are tabulated below.
 
@@ -54,266 +53,10 @@ And the internal dependencies are tabulated below.
     </tr>
     <tr>
         <td>
-            ej.spreadsheet.common.min.js
+            ej.globalize.min.js
         </td>
         <td>
-            Spreadsheet's main file
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.selection.min.js
-        </td>
-        <td>
-            Should be referred when using selection in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.filter.min.js
-        </td>
-        <td>
-            Should be referred when using filtering in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.ribbon.min.js
-        </td>
-        <td>
-            Should be referred when ribbon is enabled in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.freezepane.min.js
-        </td>
-        <td>
-            Should be referred when using freeze pane options in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.math.min.js
-        </td>
-        <td>
-            Must be referred and used for Spreadsheet common calculation
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.resizing.min.js
-        </td>
-        <td>
-            Should be referred when using resizing in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.editing.min.js
-        </td>
-        <td>
-            Should be referred when using editing in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.validation.min.js
-        </td>
-        <td>
-            Should be referred when using data validation in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.comments.min.js
-        </td>
-        <td>
-            Should be referred when using comments in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.dragFill.min.js
-        </td>
-        <td>
-            Should be referred when using auto fill in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.cellNavigation.min.js
-        </td>
-        <td>
-            Should be referred when using keyboard navigation in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.cellFormatting.min.js
-        </td>
-        <td>
-            Should be referred when using cell formatting in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.cFormat.min.js
-        </td>
-        <td>
-            Should be referred when using conditional formatting in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.clipboard.min.js
-        </td>
-        <td>
-            Should be referred when using clipboard options in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.contextmenu.min.js
-        </td>
-        <td>
-            Should be referred when using context menu in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.sorting.min.js
-        </td>
-        <td>
-            Should be referred when using sorting in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.dragAndDrop.min.js
-        </td>
-        <td>
-            Should be referred when using drag and drop in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.findnreplace.min.js
-        </td>
-        <td>
-            Should be referred when using find and replace option in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.exporting.min.js
-        </td>
-        <td>
-            Should be referred when using exporting in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.shape.min.js
-        </td>
-        <td>
-            Should be referred when using picture and chart in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.chart.min.js
-        </td>
-        <td>
-            Should be referred when using chart in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.print.min.js
-        </td>
-        <td>
-            Should be referred when using print option in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.scroller.min.js
-        </td>
-        <td>
-            Should be referred when using scrolling in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.pivot.min.js
-        </td>
-        <td>
-            Should be referred when using pivot table in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.formatCellDlg.min.js
-        </td>
-        <td>
-            Should be referred when using format cell dialog in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.spreadsheet.cellType.min.js
-        </td>
-        <td>
-            Should be referred when using cell type in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.grid.min.js
-        </td>
-        <td>
-            Used this control for Name Manager option in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.pager.min.js
-        </td>
-        <td>
-            Must be referred and used for paging option in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.waitingpopup.min.js
-        </td>
-        <td>
-            Should be referred while importing files in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.autocomplete.min.js
-        </td>
-        <td>
-            Should be referred when editing is enabled in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.chart.min.js
-        </td>
-        <td>
-            Used this control for chart option is enabled in Spreadsheet
-        </td>
-    </tr>
-    <tr>
-        <td>
-            ej.ribbon.min.js
-        </td>
-        <td>
-            These files are used when ribbon option is enabled in Spreadsheet
+            It is referred when using localization in Spreadsheet
         </td>
     </tr>
     <tr>
@@ -403,7 +146,53 @@ And the internal dependencies are tabulated below.
         <td>
             ej.tooltip.min.js
         </td>
+    </tr>
+    <tr>
         <td>
+            ej.grid.min.js
+        </td>
+        <td>
+            Used this control for Name Manager option in Spreadsheet
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.pager.min.js
+        </td>
+        <td>
+            Must be referred and used for paging option in Spreadsheet
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.waitingpopup.min.js
+        </td>
+        <td>
+            Should be referred while importing files in Spreadsheet
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.autocomplete.min.js
+        </td>
+        <td>
+            Should be referred when editing is enabled in Spreadsheet
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.chart.min.js
+        </td>
+        <td>
+            Used this control for chart option is enabled in Spreadsheet
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.ribbon.min.js
+        </td>
+        <td>
+            These files are used when ribbon option is enabled in Spreadsheet
         </td>
     </tr>
     <tr>
@@ -440,23 +229,38 @@ And the internal dependencies are tabulated below.
     </tr>
     <tr>
         <td>
-            ej.pivotgrid.min.js
+            ej.pivot.common.min.js
         </td>
-        <td rowspan="2">
+        <td rowspan="5">
             Should be referred when pivot table is enabled in Spreadsheet
         </td>
     </tr>
     <tr>
         <td>
-            ej.pivotschemadesigner.min.js
-        </td>              
+            ej.olap.base.min.js
+        </td>
     </tr>
     <tr>
         <td>
-            ej.globalize.min.js
+            ej.pivotanalysis.base.min.js
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.pivotgrid.min.js
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.pivotschemadesigner.min.js
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ej.spreadsheet.min.js
         </td>
         <td>
-            It is referred when using localization in Spreadsheet
-        </td>        
+            Should be referred to render the Spreadsheet
+        </td>
     </tr>
 </table>

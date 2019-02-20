@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Connection-Types
+title: OLAP-Connection with PivotGrid for Syncfusion Essential JS
 description: OLAP Connection Types
 platform: js
 control: PivotGrid
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# DataBinding 
+# DataBinding
 
 ## Binding pivot grid to offline cube
 To connect to an OLAP cube available in the local machine, set the physical path of the cube in the connection string. The following code example illustrates the same.
@@ -25,7 +25,7 @@ To connect to an OLAP cube available in SQL Server Analysis Service in the local
 
 {% highlight c# %}
 
-string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -35,7 +35,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service in the o
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
+string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -45,7 +45,7 @@ To connect to an OLAP cube available in the Mondrian Server through **XML/A**, s
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
+string connectionString = @"Data Source = https://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
 
@@ -56,7 +56,7 @@ To connect to an OLAP cube available in the ActivePivot Server through **XML/A**
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
+string connectionString = @"Data Source = https://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -67,7 +67,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 **Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as **“OlapService.svc”**, and then click **Add**.
- 
+
 Now, the WCF service is added to your application, which, in turn, comprise of the following files. The utilization of these files will be explained in the immediate sections.
 
 * OlapService.svc
@@ -95,7 +95,7 @@ namespace PivotGridDemo
 **List of dependency libraries**
 
 Next, you should add the below mentioned dependency libraries to your Web Application. These libraries can be found in the GAC (Global Assembly Cache).
- 
+
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
@@ -157,7 +157,7 @@ namespace PivotGridDemo
     public class OlapService : IOlapService
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
         public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
@@ -184,7 +184,7 @@ namespace PivotGridDemo
 
         [OperationContract]
         Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject);
-        
+
         [OperationContract]
         Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject);
 
@@ -230,7 +230,7 @@ namespace PivotGridDemo
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         int cultureIDInfoval = 1033;
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
         public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
@@ -434,7 +434,7 @@ You can expose services through the properties such as binding, contract, and ad
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
 The endpointBehaviors are illustrated in the following:
- 
+
 {% highlight xaml %}
 
 <system.serviceModel>

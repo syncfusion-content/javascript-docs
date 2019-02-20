@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relational-Getting-Started
+title: Relational-Getting-Started for PivotGrid in Syncfusion JS
 description: relational-getting started
 platform: js
 control: PivotGrid
@@ -600,7 +600,7 @@ N> This section illustrates creating a simple Web Application through the Visual
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project as **“PivotGridDemo”.**
 
 Next, you should add a HTML page. To add a HTML page in the Web Application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”, and then click **Add.**
- 
+
 You can set “GettingStarted.html” as start-up page by right-clicking the “GettingStarted.html” page and selecting the **“Set As Start Page”**.
 
 ### Scripts and CSS initialization
@@ -613,7 +613,7 @@ The scripts and style sheets that are mandatorily required to render a PivotGrid
 The scripts and style sheets listed above could be found in any of the following locations:
 
 Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in the local machine.
- 
+
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
 NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
@@ -658,12 +658,12 @@ The “url” property in the PivotGrid widget, points the service endpoint wher
 **Adding a WebAPI controller**
 
 To add a WebAPI controller in your existing Web Application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as “RelationalController.cs”, and then click **Add**.
- 
-Now, WebAPI controller is added to your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the immediate sections. 
+
+Now, WebAPI controller is added to your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the immediate sections.
 
 * RelationalController.cs
 
-N> While adding WebAPI Controller class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “RelationalController”.
+N> While adding WebAPI Controller class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “RelationalController”. Also, the above "GettingStarted.html" contains WebAPI URL, which is "/Relational". If you are using the WCF service, then the URL will look like "RelationalService.svc".
 
 Remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” that are present inside the `RelationalController.cs` file.
 
@@ -673,7 +673,7 @@ namespace PivotGridDemo
 {
     public class RelationalController: ApiController
     {
-        
+
     }
 }
 
@@ -702,7 +702,7 @@ N> If you have installed any version of Essential Studio, then the location of S
 **List of namespaces**
 
 Following are the list of namespaces to be added on top of the main class inside the `RelationalController.cs` file.
- 
+
 {% highlight c# %}
 
 using Syncfusion.JavaScript;
@@ -846,7 +846,7 @@ internal class ProductSales
 **Service methods in WebAPI controller**
 
 You should define the service methods inside the RelationalController class. To define, found the `RelationalController.cs` file, which is created while adding the WebAPI Controller class from the Visual Studio to your Web Application.
- 
+
 {% highlight c# %}
 
 namespace PivotGridDemo
@@ -856,9 +856,7 @@ namespace PivotGridDemo
         PivotGrid htmlHelper = new PivotGrid();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         Dictionary<string, object> dict = new Dictionary<string, object>();
-        static int cultureIDInfoval = 1033;
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports            public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
 
         [System.Web.Http.ActionName("InitializeGrid")]
         [System.Web.Http.HttpPost]
@@ -1054,7 +1052,7 @@ namespace PivotGridDemo
 **Configure routing in global application class**
 
 To add a Global.asax in your existing Web Application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it as **“Global.asax”**, and then click **Add.**
- 
+
 After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then you can configure the routing as shown in the following code example.
 
 {% highlight c# %}
@@ -1074,7 +1072,7 @@ public class Global : System.Web.HttpApplication
 {% endhighlight %}
 
 Now, PivotGrid is rendered with sales amount over a set of products across different customer geographic locations.
- 
+
 {% include image.html url="/js/PivotGrid/Getting-Started_images/relaionalwebapi.png" %}
 
 N> Here, [`customObject`](/api/js/ejpivotgrid#members:customobject) is utilized to pass additional information between the client-end and the service-end.
@@ -1082,6 +1080,6 @@ N> Here, [`customObject`](/api/js/ejpivotgrid#members:customobject) is utilized 
 ### WCF
 
 This section demonstrates the utilization of WCF service as endpoint binding [`relational`](/api/js/ejpivotgrid#members:analysismode) datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/relational-connectivity#wcf-1).
-  
+
 
 

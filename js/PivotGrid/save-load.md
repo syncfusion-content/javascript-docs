@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save and Load Report
+title: Save and Load Report with PivotGrid widget for Syncfusion Essential JS
 description: save and load report
 platform: js
 control: PivotGrid

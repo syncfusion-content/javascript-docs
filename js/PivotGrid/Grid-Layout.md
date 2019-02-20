@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Layout
+title: Grid-Layout with PivotGrid widget for Syncfusion Essential JS
 description: Layouts
 platform: js
 control: PivotGrid
@@ -18,11 +18,11 @@ A layout in summary cells, which are positioned at the bottom of each parent mem
 	$("#PivotGrid1").ejPivotGrid({
       //...
      layout: ej.PivotGrid.Layout.Normal
-}); 
+});
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-normal.png)
+![Normal layout in JavaScript pivot grid control](Grid-Layout_images/layout-normal.png)
 
 ## No summaries layout
 
@@ -38,8 +38,8 @@ $("#PivotGrid1").ejPivotGrid({
 });
 
 {% endhighlight %}
- 
-![](Grid-Layout_images/layout-nosummary.png)
+
+![No summaries layout in JavaScript pivot grid control](Grid-Layout_images/layout-nosummary.png)
 
 ## Excel-like layout
 A layout in summary cells, which are positioned besides each parent member and their child members appear next to them. The enumeration property [`layout`](/api/js/ejpivotgrid#members:layout) should be set to **"ej.PivotGrid.Layout.ExcelLikeLayout"** to view the PivotGrid in excel-like layout.
@@ -53,7 +53,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-excel.png)
+![Excel like layout in JavaScript pivot grid control](Grid-Layout_images/layout-excel.png)
 
 ## Top summary layout
 
@@ -70,5 +70,5 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-top.png)
+![Top summary layout in JavaScript pivot grid control](Grid-Layout_images/layout-top.png)
 

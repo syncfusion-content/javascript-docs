@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State persistence 
-description: state persistence 
+title: State persistence with PivotGrid widget for Syncfusion Essential JS
+description: state persistence
 platform: js
 control: PivotGrid
 documentation: ug

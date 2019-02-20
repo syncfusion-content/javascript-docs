@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions
+title: Dimensions with PivotChart widget for Syncfusion Essential JS
 description: dimensions
 platform: js
 control: PivotChart
@@ -66,7 +66,7 @@ You can customize the pivot chart dimension under the [`size`](/api/js/ejpivotch
 
 {% endhighlight %}
 
-![](Dimensions_images/Dimensions.png) 
+![JavaScript pivot chart control with specified size](Dimensions_images/Dimensions.png)
 
 ## Responsive
 
@@ -85,7 +85,7 @@ The pivot chart widget supports responsive rendering based on the target device 
                 ....
                 ....
                 //Enable responsiveness to change the Chart size dynamically.
-                isResponsive: true,	
+                isResponsive: true,
                 size: {
                     height: "460px",
                     width: "950px"
@@ -97,10 +97,10 @@ The pivot chart widget supports responsive rendering based on the target device 
 
 {% endhighlight %}
 
-![](Dimensions_images/NormalView.png)
+![JavaScript pivot chart with normal layout](Dimensions_images/NormalView.png)
 
 _Normal View_
 
-![](Dimensions_images/ResponsiveView.png)
+![JavaScript pivot chart with responsive layout](Dimensions_images/ResponsiveView.png)
 
 _ResponsiveView_

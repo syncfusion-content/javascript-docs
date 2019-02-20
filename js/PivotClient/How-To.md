@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to
+title: How to section with PivotClient widget for Syncfusion Essential JS
 description: How To
 platform: js
 control: PivotClient
@@ -627,7 +627,7 @@ The [`showUniqueNameOnPivotButton`](/api/js/ejpivotclient#members:showuniquename
 
 {% endhighlight %}
 
-![Shows unique name on pivot button with JavaScript pivot client control](How-To_images/uniqueNamePivotButton.png)
+![Shows unique name on pivot button in JavaScript pivot client control](How-To_images/uniqueNamePivotButton.png)
 
 ### Showing report collection in toolbar
 The [`showReportCollection`](/api/js/ejpivotclient#members:showreportcollection) property allows you to load the saved report collection from the database and show it in the toolbar.
@@ -642,7 +642,7 @@ The [`showReportCollection`](/api/js/ejpivotclient#members:showreportcollection)
 
 {% endhighlight %}
 
-![Shows report collection in JavaScript pivot client control](How-To_images/reportCollection.png)
+![Report collection in JavaScript pivot client control](How-To_images/reportCollection.png)
 
 ### Getting JSON format by triggering cell click event
 Cell click on the pivot grid allows you to get JSON format of the cell which is clicked. To enable cell click event in the pivot client, you can use the [`enableCellClick`](/api/js/ejpivotclient#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotclient#events:cellclick) event.
@@ -718,8 +718,10 @@ You can render the pivot client with one of the built-in themes using the [`cssC
 {% endhighlight %}
 
 
-## Applying conditional formatting in pivot client
-The conditional formatting in the pivot client allows you to highlight the particular cells in the pivot grid with certain color, font-style, font-family, etc., based on the applied condition. Also, the condition can be applied for certain measure alone.
+## Customizing Pivot Grid properties in Pivot Client
+
+### Applying conditional formatting in Pivot Client
+The conditional formatting in the pivot client allows you to highlight the particular cells in the pivot grid with certain color, font-style, font-family, etc., based on the applied condition. Also, the condition can be applied for certain measure.
 The conditional formatting is enabled by setting the `enableConditionalFormatting` property to true in the `renderSuccess` event and the formatting dialog is launched when the `openConditionalFormattingDialog` method is invoked.
 
 {% highlight html %}
@@ -739,7 +741,7 @@ The conditional formatting is enabled by setting the `enableConditionalFormattin
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 
 $("#PivotClient").ejPivotClient({
 //Datasource bound to PivotClient control.
@@ -775,6 +777,198 @@ function Reset() {
 {% endhighlight %}
 
 ![Conditional formatting in PivotClient](How-To_images/conditional_formatting_pivotclient.png)
+
+### Enabling/Disabling Tooltip
+
+You can enable or disable the Tooltip in the pivot grid using the `renderSuccess` event of pivot client.
+
+{% highlight html %}
+
+<div id="PivotClient1"> </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+  //Datasource bound to PivotClient control.
+    renderSuccess: "successEvent"
+});
+function successEvent(args) {
+    this._pivotGrid.model.enableToolTip = false;
+}
+
+{% endhighlight %}
+
+N> The default value of the `enableToolTip` is true.
+
+### Enabling/Disabling frozen headers
+
+You can enable or disable the `frozenHeaderSettings` of the pivot grid through the `renderSuccess` event of pivot client.
+
+{% highlight html %}
+
+<div id="PivotClient1"> </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+  //Datasource bound to PivotClient control.
+    renderSuccess: "successEvent"
+});
+function successEvent(args) {
+    this._pivotGrid.model.frozenHeaderSettings = {
+            enableFrozenHeaders : true
+    }
+
+    //this._pivotGrid.model.frozenHeaderSettings: {
+    //        enableFrozenRowHeaders: true      //To Freeze the Row headers only
+    //}
+
+    //this._pivotGrid.model.frozenHeaderSettings: {
+    //        enableFrozenColumnHeaders: true  //To Freeze the Column headers only
+    //}
+
+    //this._pivotGrid.model.frozenHeaderSettings: {
+    //        scrollerSize: 18  // To set the scroller size
+    //}
+}
+
+{% endhighlight %}
+
+
+## Customizing Pivot Chart properties in Pivot Client
+
+### Enabling/Disabling legend
+
+You can enable or disable the legend of the pivot chart through the `renderSuccess` event of pivot client.
+
+{% highlight html %}
+
+<div id="PivotClient1"> </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+  //Datasource bound to PivotClient control.
+    renderSuccess: "successEvent"
+});
+function successEvent(args) {
+    this._pivotChart.model.legend.visible = false;
+}
+
+{% endhighlight %}
+
+N> Default value of the `legend.visible` is `true`.
+
+### Enabling/Disabling multilevel labels
+
+You can enable or disable the `enableMultiLevelLabels` property of the pivot chart through the `renderSuccess` event of the pivot client.
+
+{% highlight html %}
+
+<div id="PivotClient1"> </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+  //Datasource bound to PivotClient control.
+    renderSuccess: "successEvent"
+});
+function successEvent(args) {
+    this._pivotChart.model.enableMultiLevelLabels = true;
+}
+
+{% endhighlight %}
+
+For more details, [`click here`](https://help.syncfusion.com/js/pivotchart/multilevellabels)
+
+### Enabling/Disabling 3D Charts
+
+You can enable or disable the `enable3D` property of the pivot chart through the `renderSuccess` event of pivot client.
+
+{% highlight html %}
+
+<div id="PivotClient1"> </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+  //Datasource bound to PivotClient control.
+    renderSuccess: "successEvent"
+});
+function successEvent(args) {
+    this._pivotChart.model.enable3D = true;
+}
+
+{% endhighlight %}
+
+For more details, [`click here`](https://help.syncfusion.com/js/pivotchart/3d-visualization).
+
+### Series customization
+
+You can customize the series of the pivot chart by triggering the `seriesRendering` event in `renderSuccess` of pivot client.
+
+{% highlight html %}
+
+<div id="PivotClient1"> </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+  //Datasource bound to PivotClient control.
+    renderSuccess: "successEvent"
+});
+function successEvent(args) {
+    this._pivotChart.model.seriesRendering = "seriesRendering";
+}
+
+function seriesRendering(args) {
+    this.model.series[0].points[0].fill = "aqua";
+    this.model.series[0].points[0].border = {
+    color: "black",
+    width: 2
+    };
+}
+
+{% endhighlight %}
+
+![Series customization in JavaScript pivot client control](How-To_images/series_customization.png)
+
+### Changing chart type through code-behind
+
+You can change the chart type of the pivot chart in the `renderSuccess` event of pivot client.
+
+{% highlight html %}
+
+<div id="PivotClient1"> </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+  //Datasource bound to PivotClient control.
+    renderSuccess: "successEvent"
+});
+function successEvent(args) {
+    this._pivotChart.model.commonSeriesOptions.type = "line";
+}
+
+{% endhighlight %}
+
+![Line chart in JavaScript pivot client control](How-To_images/chart-types.png)
+
 
 ## Setting custom name to service methods
 The [`serviceMethodSettings`](/api/js/ejpivotclient#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post.

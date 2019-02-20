@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to
+title: How to section with PivotGrid widget for Syncfusion Essential JS
 description: How to
 platform: js
 control: PivotGrid
@@ -697,36 +697,36 @@ The following are the available customizations in Context Menu.
 
 * `Summary Customization` - Allows you to customize the row/column totals through dialog.
 
-![Summary customization in context menu of JavaScript pivot grid control](How-To_images/summaryCustomization.png)
+![Summary customization in JavaScript pivot grid control](How-To_images/summaryCustomization.png)
 
 * `Conditional Formatting` - Allows you to format a specific set of cells based on the condition by the conditional dialog.
 * `Calculated Field` - Supports to insert a new calculated field based on the existing pivot fields through the calculated field dialog.
 * `Number Formatting` - Allows you to specify the required number format that should be used in values of the PivotGrid by setting the `format` through Formatting dialog.
 
-![Number formatting in context menu of JavaScript pivot grid control](How-To_images/numberFormatting.png)
+![Number formatting in JavaScript pivot grid control](How-To_images/numberFormatting.png)
 
 * `Summary Types` - Allow you to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) that should be used in summary cells of the PivotGrid through Summary Types dialog.
 
-![Summary Types in context menu of JavaScript pivot grid control](How-To_images/summaryTypes.png)
+![Summary Types in JavaScript pivot grid control](How-To_images/summaryTypes.png)
 
 
 The following are the available features through sub context menu.
 
 * `Layouts` - Allows you to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) through sub menus.
 
-![Layouts in context menu of JavaScript pivot grid control](How-To_images/layouts.png)
+![Layouts in JavaScript pivot grid control](How-To_images/layouts.png)
 
 * `Hyper Link` - Allows you to enable/disable hyperlink for row header, column header, value, and summary cells.
 
-![Hyperlink types in context menu of JavaScript pivot grid control](How-To_images/hyperlink.png)
+![Hyperlink in JavaScript pivot grid control](How-To_images/hyperlink.png)
 
 * `Exporting` - Allows you to export PivotGrid in a desired format. You have to mention the export settings through [`beforeExport`](/api/js/ejpivotgrid#events:beforeExport) event.
 
-![Exporting in context menu of JavaScript pivot grid control ](How-To_images/exporting.png)
+![Exporting in JavaScript pivot grid control ](How-To_images/exporting.png)
 
 * `Frozen Headers` - Allows you to freeze the PivotGrid in a desired dimension row/column.
 
-![Freeze headers in context menu of JavaScript pivot grid control](How-To_images/frozenHeaders.png)
+![Frozen headers in JavaScript pivot grid control](How-To_images/frozenHeaders.png)
 
 
 ## Setting Custom Name to Service Methods
@@ -906,7 +906,7 @@ The [`mode`](/api/js/ejpivotpager#members:mode) property is used to set the page
 {% endhighlight %}
 
 
-# Pivot Schema Designer
+## Pivot Schema Designer
 
 ## Public Methods
 
@@ -922,38 +922,6 @@ The [`refreshControl`](/api/js/ejpivotschemadesigner#methods:refreshControl) met
     $("#PivotSchemaDesigner1").ejPivotSchemaDesigner();
     var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
     schemaObj.refreshControl();
-</script>
-
-{% endhighlight %}
-
-### Destroying the object of PivotSchemaDesigner
-
-The [`destroy`](/api/js/ejpivotschemadesigner#methods:destroy) method is used to destroy the **PivotSchemaDesigner** widget associated events that are bound using “this._on” and brings the control to pre-init state.
-
-{% highlight html %}
-
-<div id="PivotSchemaDesigner1"></div>
-
-<script>
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner();
-    var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
-    schemaObj.destroy();
-</script>
-
-{% endhighlight %}
-
-### Explicit asynchronous invoke
-
-The [`doAjaxPost`](/api/js/ejpivotschemadesigner#methods:doajaxpost) method is used to Perform an asynchronous HTTP (AJAX) request.
-
-{% highlight html %}
-
-<div id="PivotSchemaDesigner1"></div>
-
-<script>
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner();
-    var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
-    schemaObj.doAjaxPost("POST", "/PivotService/Initialize", { "key", "Hello World" }, successEvent, null);
 </script>
 
 {% endhighlight %}
@@ -1007,24 +975,6 @@ $("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")  ({
         // drag move event
         dragMove: function (args) {}
 });
-
-{% endhighlight %}
-
-### Triggering event before the PivotSchemaDesigner loaded
-
-The [`load`](/api/js/ejpivotschemadesigner#events:load) event is triggered when the PivotSchemaDesigner loading is initiated.
-
-{% highlight javascript %}
-
-$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
-
-            //load event
-            load: function(args) {
-
-            },
-
-            //...
-        });
 
 {% endhighlight %}
 

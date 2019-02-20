@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Exporting with PivotClient widget for Syncfusion Essential JS
 description: export
 platform: js
 control: PivotClient
@@ -12,7 +12,7 @@ api: /api/js/ejpivotclient
 
 The pivot chart and the pivot grid in the pivot client widget can be exported to Microsoft Excel, Microsoft Word, and PDF documents by clicking the respective toolbar icons.
 
-![](Export_images/exporting-icons.png) 
+![Exporting icons in JavaScript pivot client control](Export_images/exporting-icons.png)
 
 Exporting feature provides an option that allows you to export the pivot chart or pivot grid or both with the use of the [`clientExportMode`](/api/js/ejpivotclient#members:clientExportMode) property.
 
@@ -35,9 +35,9 @@ To perform exporting with the use of a custom service method, the service contai
             beforeExport:"Export",
             clientExportMode: ej.PivotClient.ClientExportMode.ChartAndGrid
         });
-        
+
         function Export(args) {
-            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";//Exporting url can be modified here
+            args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";//Exporting url can be modified here
         }
 {% endhighlight %}
 
@@ -52,9 +52,9 @@ The name of the document can be customized. The following code sample illustrate
             beforeExport:"Export",
             clientExportMode: ej.PivotClient.ClientExportMode.ChartAndGrid
         });
-        
+
         function Export(args) {
-            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
+            args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             args.fileName="File name is customized here";
         }
 {% endhighlight %}
@@ -71,11 +71,11 @@ To perform exporting with the use of the pivot engine available in server-side, 
             url: "/OlapService",
             beforeExport:"Export"
         });
-        
+
         function Export(args) {
             args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
         }
-        
+
  {% endhighlight %}
 
 For WebAPI controller, the following method should be added to perform exporting with the pivot engine:
@@ -122,12 +122,12 @@ N> By default, the excel document will be exported to ".xls" format using the pi
             url: "/OlapService",
             beforeExport:"Export"
         });
-        
+
         function Export(args) {
             args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
             args.fileFormat = ".xlsx"; //you can set the excel sheet format here
         }
-        
+
  {% endhighlight %}
 
 ### Customize the export document name
@@ -172,32 +172,32 @@ N> By default, the pivot chart will be exported to image format in the Excel doc
 {% highlight javascript %}
 
         $("#PivotClient1").ejPivotClient({
-            //..         
+            //..
             beforeExport:"Export",
             clientExportMode: ej.PivotClient.ClientExportMode.ChartOnly
         });
-        
+
         function Exporting(args) {
             args.exportChartAsImage = false; //You can set the chart format here
         }
-        
+
  {% endhighlight %}
 
 The following screenshot shows the control exported to an Excel document showing its own format (pivoting chart).
 
-![](Export_images/Export_ExcelChartClient.png)
+![Exporting format in JavaScript pivot client control](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting customization
 
 You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight html %}
-<html> 
+<html>
     //...
-<body> 
+<body>
     //...
     <div id="PivotClient1"></div>
-    
+
     <script type="text/javascript">
         $(function () {
              $("#PivotClient1").ejPivotClient({
@@ -207,8 +207,8 @@ You can add title and description to the exporting document by using the title a
              });
         });
         function Exporting(args) {
-            //ClientMode export    
-            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
+            //ClientMode export
+            args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             //PivotEngine Export
             args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
 
@@ -234,7 +234,7 @@ using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
 //Following service method needs to be added in WebAPI for JSON export.
- 
+
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
 public void Export()
@@ -320,7 +320,7 @@ When paging is enabled, you can export the complete data by enabling the [enable
                 enableCompleteDataExport: true
             });
         });
-    //...    
+    //...
     </script>
 </html>
 
@@ -328,12 +328,12 @@ When paging is enabled, you can export the complete data by enabling the [enable
 
 The following screenshot shows the pivot grid and pivot chart controls exported to an Excel document:
 
-![](Export_images/excel-export.png)
+![Excel exporting in JavaScript pivot client control](Export_images/excel-export.png)
 
 The following screenshot shows the pivot grid and pivot chart controls exported to a Word document:
 
-![](Export_images/Word-Export.png)
+![Word exporting in JavaScript pivot client control](Export_images/Word-Export.png)
 
 The following screenshot shows the pivot grid and pivot chart controls exported to a PDF document:
 
-![](Export_images/Pdf-Export.png)
+![PDF exporting in JavaScript pivot client control](Export_images/Pdf-Export.png)
