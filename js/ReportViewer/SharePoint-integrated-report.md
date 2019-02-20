@@ -3,7 +3,7 @@ layout: post
 title: SharePoint integrated reports | Report Viewer | Syncfusion
 description: Render SharePoint integrated SSRS reports using Syncfusion JavaScript Report Viewer.
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
@@ -58,5 +58,4 @@ public void OnInitReportOptions(ReportViewerOptions reportOption)
 N> Data source credentials must be added for shared data sources that do not have credentials in the connection strings.
 
 Build and run the application and you can see the Report Viewer on the page as displayed in the following screenshot.
-
 ![SharePoint integrated SSRS report preview in Report Viewer](images/getting-started/territory-sales-report.png)

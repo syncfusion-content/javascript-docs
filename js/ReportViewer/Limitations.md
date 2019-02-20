@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Limitations | ReportViewer | JavaScript | Syncfusion
+title: Limitations | Report Viewer | JavaScript | Syncfusion
 description: limitations
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 ---
 
 # Limitations
 
 ## RDL Specification
-The ReportViewer control does not support RDL Specification for SQL Server 2000 and SQL Server 2005.
+The Report Viewer control does not support RDL Specification for SQL Server 2000 and SQL Server 2005.
 
 ## Report Layout
 1.	Vertical alignment in the text box report item is not supported in web rendering.

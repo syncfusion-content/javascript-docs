@@ -3,7 +3,7 @@ layout: post
 title: Getting Started | JavaScript Report Viewer | Syncfusion
 description: Getting started with Syncfusion HTML5 JavaScript Report Viewer
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
@@ -21,17 +21,17 @@ I> The Report Viewer is only for rendering the reports. You must use a report ge
 This tutorial uses the same Web API service application created in [Create ASP.NET Web API Service](/js/reportviewer/create-aspnet-web-api-service) tutorial.
 
 ## Adding already created report
-Create a folder App_Data in your application for storage and add already created reports to it.
+Create a folder `App_Data` in your application for storage and add already created reports to it.
 
-N> In this tutorial, the Sales Order Detail.rdl report is used, and it can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686). You can add the reports from Syncfusion installation location. For more information, see [Samples and demos](/js/reportviewer/samples-and-demos).
+N> In this tutorial, the `Sales Order Detail.rdl` report is used, and it can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686). You can add the reports from Syncfusion installation location. For more information, see [Samples and demos](/js/reportviewer/samples-and-demos).
 
 ## Adding scripts and CSS references
 Create an HTML page in your application, then add scripts and style sheets that are mandatorily required to use the Report Viewer which are listed as follows in an appropriate order.
 
-1.	ej.web.all.min.css
-2.	jquery-1.10.2.min.js
-3.	jquery.easing.min.js
-4.	ej.web.all.min.js
+1.	`ej.web.all.min.css`
+2.	`jquery-1.10.2.min.js`
+3.	`jquery.easing.min.js`
+4.	`ej.web.all.min.js`
 
 You can use the following code in &lt;head&gt; tag of the Report Viewer HTML page.
 
@@ -61,21 +61,19 @@ Add the following code in the &lt;body&gt; tag in the Report Viewer HTML page. S
             });
         </script>
     </div>
-
 {% endhighlight %}
 
-N> The report path property is set to the RDL report that is added in the project App_Data folder.
+N> The report path property is set to the RDL report that is added in the project `App_Data` folder.
 In this tutorial the Report Viewer page and Web API service are in the same application.
 
 ## Run the application
 Build and run the application, the report rendered in the Report Viewer as shown in the following screenshot.
-
 ![Sales order detail report preview](images/getting-started/sales-order-detail-report.png)
 
 ## Render report in print mode
 By default, reports are rendered in normal layout in which the print margins are not displayed. To view the render the report as like printable output, set the [`printMode`](../api/ejreportviewer#members:printmode) property value as true as shown in the following code snippet. 
 
-{% highlight html %}
+{% highlight javascript %}
     <script type="text/javascript">
         $(function () {
             $("#viewer").ejReportViewer({
@@ -88,7 +86,7 @@ By default, reports are rendered in normal layout in which the print margins are
 {% endhighlight %}
 
 ## Set data source credential
-You can specify credentials in the Web API service for the report data sources that use Windows Authentication, database authentication, or custom authentication. Create a new DataSourceCredentials object with the data source name, username and password then add it to the `DataSourceCredentials` property in the `OnInitReportOptions` method as in the below code snippet.
+You can specify credentials in the Web API service for the report data sources that use Windows Authentication, database authentication, or custom authentication. Create a new `DataSourceCredentials` object with the data source name, username and password then add it to the `DataSourceCredentials` property in the `OnInitReportOptions` method as in the below code snippet.
 
 {% highlight c# %}
 public void OnInitReportOptions(ReportViewerOptions reportOption)
@@ -114,4 +112,4 @@ You can change the connection string of a report data source before it is loaded
     }
 {% endhighlight %}
 
-N> The previous code shows an option to change the connection string only, but the class provides multiple options to change data source informations. To learn more about this, refer to the  [`DataSourceCredentials`](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.EJ.ReportViewer~Syncfusion.Reports.EJ.DataSourceCredentials~_ctor.html) class.
+N> The previous code shows an option to change the connection string only, but the class provides multiple options to change data source information. To learn more about this, refer to the [`DataSourceCredentials`](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.EJ.ReportViewer~Syncfusion.Reports.EJ.DataSourceCredentials~_ctor.html) class.

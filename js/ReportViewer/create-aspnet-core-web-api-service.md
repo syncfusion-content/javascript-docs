@@ -3,7 +3,7 @@ layout: post
 title: Create ASP.NET Core Web API Service | Report Viewer | Syncfusion
 description: Create ASP.NET Core Web API Service for Syncfusion HTML5 JavaScript Report Viewer to process and render reports.
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
@@ -11,11 +11,11 @@ api: /api/js/ejreportviewer
 # Create ASP.NET Core Web API Service
 In this section, you will learn how to create a ASP.NET Core Web API for Report Viewer using the new ASP.NET Core Web Application template.
 
-1.	Open Visual Studio 2017, from the File menu, select New Project. 
-2.	Select the ASP.NET Core Web Application template. Name the project and click OK.
-3.	Choose the ASP.NET Core version. Select the Web Application(Model-View-Controller) template and click OK. Do not select Enable Docker Support.
+1.Open Visual Studio 2017, from the File menu, select New Project. 
+2.Select the ASP.NET Core Web Application template. Name the project and click OK.
+3.Choose the ASP.NET Core version. Select the Web Application(Model-View-Controller) template and click OK. Do not select Enable Docker Support.
 
-    ![Creating a new ASP.NET Core Application Project](images/report-service/aspnet-core-web-application-template.png)
+![Creating a new ASP.NET Core Application Project](images/report-service/aspnet-core-web-application-template.png)
 
 ## List of dependency libraries
 The Web API service configuration requires the following reporting server-side packages. In the Solution Explore, right-click the Dependencies, select Manage NuGet Packages and then search the package `Syncfusion.EJ.ReportViewer.ASPNET.Core` and install to the application. The following provides detail of the packages and its usage.
@@ -70,15 +70,15 @@ Purpose
 </tr>
 <tr>
 <td>System.Data.SqlClient</td>
-<td>This is an optional package for the report viewer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
+<td>This is an optional package for the report viewer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure data source. Also, the package version should be higher of 4.1.0 . </td>
 </tr>
 </table>
 
-I> Starting with v16.2.0.x, if you refer to the Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in the ASP.NET Core application to use our components.
+I> Starting with `v16.2.0.x`, if you refer to the Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in the ASP.NET Core application to use our components.
 
 ## Inherit IReportController
-The ‘IReportController’ interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that help to process Post or Get request from the control and return the response. 
-1.Open the HomeController, inherit the IReportController interface and implement its methods (replace the template code with the following code).
+The `IReportController` interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains methods that help to process Post or Get request from the control and return the response. 
+1.Open the `HomeController`, inherit the IReportController interface and implement its methods (replace the template code with the following code).
 
 {% highlight c# %}
     public class HomeController : Controller, IReportController
@@ -137,16 +137,14 @@ The ‘IReportController’ interface contains the required actions and helper m
 
 {% endhighlight %}
 
-N> You cannot load the application report with path information in ASP.NET Core service. So, you must load the report as Stream like an example provided above in `OnInitReportOptions`. The Sales Order Detail.rdl report can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686).
-
-Also, you can add the report from Syncfusion installation location. For more information on installed sample location, see [Samples and demos](/js/reportviewer/samples-and-demos).
+N> You cannot load the application report with path information in ASP.NET Core service. So, you must load the report as Stream like an example provided above in `OnInitReportOptions`. The `Sales Order Detail.rdl` report can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686). Also, you can add the report from Syncfusion installation location. For more information on installed sample location, see [Samples and demos](/js/reportviewer/samples-and-demos).
 
 2.Run the application and use the API URL (http://localhost:port number/Home) in the Report Viewer `reportServiceUrl` property.
 
 ## Enable Cross-Origin Requests
 Browser security prevents Report Viewer from making requests to your Web API Service when both runs in a different domain. To allow access to your Web API service from a different domain, you must enable cross-origin requests.
 
-Call AddCors in Startup.ConfigureServices to add CORS services to the app's service container. Replace the following code to allow any origin requests.
+Call `AddCors` in `Startup.ConfigureServices` to add CORS services to the app's service container. Replace the following code to allow any origin requests.
 
 {% highlight c# %}
     public void ConfigureServices(IServiceCollection services)
@@ -162,7 +160,7 @@ Call AddCors in Startup.ConfigureServices to add CORS services to the app's serv
 
 {% endhighlight %}
 
-To specify the CORS policy for Home controller, add the [EnableCors] attribute to the controller class. Specify the policy name.
+To specify the CORS policy for Home controller, add the `[EnableCors]` attribute to the controller class. Specify the policy name.
 
 {% highlight c# %}
     [Microsoft.AspNetCore.Cors.EnableCors("AllowAllOrigins")]

@@ -3,14 +3,16 @@ layout: post
 title: Report Parameters | Report Viewer | Syncfusion
 description: report parameters
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
 
 # Report Parameters
 
-Provides property options to pass or set report parameters default values at runtime using the [`parameters`](../api/ejreportviewer#members:parameters) property. You can set the report parameters while creating the Report Viewer control in a script or in the Web API Controller.
+Provides property options to pass or set report parameters default values at run-time using the [`parameters`](../api/ejreportviewer#members:parameters) property. You can set the report parameters while creating the Report Viewer control in a script or in the Web API Controller.
+
+N> In this tutorial, the `Sales Order Detail.rdl` report is used, and it can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686).
 
 ## Set parameter at client
 The [`parameters`](../api/ejreportviewer#members:parameters) property takes the JSON array value input with parameter details.
@@ -31,11 +33,9 @@ N> The parameter name is case sensitive, it should be same as available in the r
                 });
             });
     </script>
-
 {% endhighlight %}
 
 3.Run the application and the result shown as in the following screenshot.
-
 ![Sales order detail report preview](images/report-parameter/set-paramerter-at-client.png)
 
 ## Set parameters in Web API Controller
@@ -84,6 +84,7 @@ You can use the following code sample to get parameter names and set parameter d
             return ReportHelper.ProcessReport(jsonResult, this);
         }
 
+        ....
         public void OnReportLoaded(ReportViewerOptions reportOption)
         {
             var reportParameters = ReportHelper.GetParameters(jsonArray, this);

@@ -3,7 +3,7 @@ layout: post
 title: Report Server reports | Report Viewer | Syncfusion
 description: Render Syncfusion Report Server deployed RDL reports using JavaScript Report Viewer.
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
@@ -36,7 +36,7 @@ You can render the Syncfusion Report Server hosted reports in the Report Viewer 
 
 {% endhighlight %}
 
-2.Set the Syncfusion ReportServer built-in service URL to the `reportServiceUrl` property. Assign the created token to [`serviceAuthorizationToken`](../api/ejreportviewer#members:members:serviceauthorizationtoken) and `reportPath` to a report deployed on the server. You can use the following complete code in your HTML page.
+2.Set the Syncfusion Report Server built-in service URL to the `reportServiceUrl` property. Assign the created token to [`serviceAuthorizationToken`](../api/ejreportviewer#members:members:serviceauthorizationtoken) and `reportPath` to a report deployed on the server. You can use the following complete code in your HTML page.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -65,8 +65,7 @@ You can render the Syncfusion Report Server hosted reports in the Report Viewer 
     </script>
 {% endhighlight %}
 
-T> You can also load the report using guid instead of report location. Set the guid of the report in reportPath as like as “reportPath: ‘91f24bf1-e537-4488-b19f-b37f77481d00’”.
+T> You can also load the report using Guid instead of report location. Set the Guid of the report in `reportPath` as like as `reportPath: ‘91f24bf1-e537-4488-b19f-b37f77481d00’`.
 
 3.View the HTML file in a web browser and the report result shows as in the following screenshot.
-
 ![Renders company sales report from Syncfusion Report Server](images/getting-started/company-sales-report.png)
