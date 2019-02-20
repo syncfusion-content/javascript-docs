@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timescale-Modes
+title: Syncfusion GanttChart Timescale-Modes
 description: timescale modes
 platform: js
 control: Gantt
@@ -51,7 +51,7 @@ $("#GanttContainer").ejGantt({
 
 The following screenshot illustrates the Week Schedule in Gantt control.
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img1.png)
+![Week schedule mode](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img1.png)
 
 ### Month schedule mode
 
@@ -77,7 +77,7 @@ $("#GanttContainer").ejGantt({
 
 The following screenshot illustrates the Month Schedule in Gantt control.
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img2.png)
+![Month schedule mode](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img2.png)
 
 ### Year schedule mode
 
@@ -103,7 +103,7 @@ $("#GanttContainer").ejGantt({
 
 The following screen shot shows the Year Schedule in Gantt control.
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img3.png)
+![Year schedule mode](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img3.png)
 
 ### Half Year schedule mode
 
@@ -128,7 +128,7 @@ $("#GanttContainer").ejGantt({
 
 The following screenshot illustrates the Half Year Schedule in Gantt control.
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img10.png)
+![Half Year schedule mode](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img10.png)
 
 ### Quarter Year schedule mode
 
@@ -153,7 +153,7 @@ $("#GanttContainer").ejGantt({
 
 The following screenshot illustrates the Quarter Year Schedule in Gantt control.
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img11.png)
+![Quarter Year schedule mode](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img11.png)
 
 ### Day schedule mode
 
@@ -179,7 +179,7 @@ $("#GanttContainer").ejGantt({
 
 The following screenshot illustrates the Day Schedule in Gantt control.
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img4.png)
+![Day schedule mode](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img4.png)
 
 ### Hour schedule mode
 
@@ -217,7 +217,7 @@ $("#GanttContainer").ejGantt({
 });
 {% endhighlight %}
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img5.png)
+![Hour schedule mode](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img5.png)
 
 ## Week start day customization
 
@@ -268,7 +268,7 @@ $("#GanttContainer").ejGantt({
 });
 {% endhighlight %}
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img6.png)
+![Rounding off timescale](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img6.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/timescalemodes) here to view the timescale modes in Gantt.
 
@@ -291,14 +291,14 @@ $("#GanttContainer").ejGantt({
 
 The following screenshot illustrates the behavior of `updateTimescaleView` property.
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img7.png)
+![TimescaleView at initial load](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img7.png)
 At Initial load
 {:.caption}
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img8.png)
+![TimescaleView when updateTimescaleView property as `false`](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img8.png)
 `updateTimescaleView` property as `false`
 {:.caption}
 
-![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img9.png)
+![TimescaleView when updateTimescaleView property as `true`](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img9.png)
 `updateTimescaleView` property as `true`
 {:.caption}
