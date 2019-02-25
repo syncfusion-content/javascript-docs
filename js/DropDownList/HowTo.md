@@ -984,14 +984,14 @@ Refer to the following code
         $(function () {
             // declaration
             BikeList = [
-                { empid: "1", text: "Apache RTR" }, { empid: "2", text: "CBR 150-R" }, { empid: "3", text: "CBZ Xtreme" },
-                { empid: "4", text: "Discover" }, { empid: "5", text: "Dazzler" }, { empid: "6", text: "Flame" },
-                { empid: "7", text: "Fazzer" }, { empid: "8", text: "FZ-S" }, { empid: "9", text: "Pulsar" },
-                { empid: "10", text: "Shine" }, { empid: "11", text: "R15" }, { empid: "12", text: "Unicorn" }
+                { value: "1", text: "Apache RTR" }, { value: "2", text: "CBR 150-R" }, { value: "3", text: "CBZ Xtreme" },
+                { value: "4", text: "Discover" }, { value: "5", text: "Dazzler" }, { value: "6", text: "Flame" },
+                { value: "8", text: "FZ-S" }, { value: "9", text: "Pulsar" },
+                { value: "10", text: "Shine" }, { value: "11", text: "R15" }, { value: "12", text: "Unicorn" }
             ];
             $('#bikeList').ejDropDownList({
                 dataSource: BikeList,
-                fields: { text: "text", value: "empid" },
+                fields: { text: "text", value: "value" },
                 value:"1",
                 create:function(args){
                  PreviousVal=this.value();

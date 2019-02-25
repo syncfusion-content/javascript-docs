@@ -151,10 +151,6 @@ Uploaded file can be downloaded using another button through onclick event to in
 
  {% endhighlight %}
 
- Now the data will be passed to the server as shown below
-
- ![Data](/js/UploadBox/How-To_images/How-To_img_1.png)
-
 Refer to the sample [here](https://jsplayground.syncfusion.com/vbew2qvj)
 
 Refer to the below KB links for more details 
