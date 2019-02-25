@@ -124,3 +124,41 @@ Uploaded file can be downloaded using another button through onclick event to in
 {% endhighlight %}
 
  [Sample](http://www.syncfusion.com/downloads/support/directtrac/215167/ze/Upload145137776)         
+
+ ## Pass custom data to server action in Uploadbox
+
+ You can pass custom data to controller action through the begin event of Uploadbox. Refer to the following code.
+
+ {% highlight html %}
+          
+     <div class="control">
+        Select a file to upload
+               <div class="upload">
+                   <div id="UploadDefault"></div>
+               </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $("#UploadDefault").ejUploadbox({
+                saveUrl: "https://js.syncfusion.com/ejServices/api/uploadbox/Save",
+                removeUrl: "https://js.syncfusion.com/ejServices/api/uploadbox/Remove",
+                begin: function (args) {
+                    args.data = "Name";
+                }
+            });
+        });
+    </script>
+
+ {% endhighlight %}
+
+ Now the data will be passed to the server as shown below
+
+ ![Data](/js/UploadBox/How-To_images/How-To_img_1.png)
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/vbew2qvj)
+
+Refer to the below KB links for more details 
+
+[Pass additional data](https://www.syncfusion.com/kb/5150/how-to-pass-additional-data-to-save-handler-in-uploadbox)
+
+[Add request header](https://www.syncfusion.com/kb/10137/add-request-header-for-upload-action)

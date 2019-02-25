@@ -957,3 +957,54 @@ ContextMenu can be added for DropDownList items by setting the class name of  Dr
 [Sample](https://jsplayground.syncfusion.com/si4mex5s)
 
 ![contextmenu](HowTo_images/contextmenu.jpg) 
+
+## Get previously selected value in DropDownList
+
+The current selected value can be retrieved through the change event of DropDownList. In some cases, you may require the previously selected value of DropDownList; in these cases, declare a global variable and store initial value of DropDownList through the create event. Update this value on every value change using the change event of DropDownList. 
+
+Refer to the following code
+
+{% highlight javascript %}
+
+      <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <div class="ctrllabel">Select a bike</div>
+                        <input type="text" id="bikeList" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var target; var PreviousVal;
+        $(function () {
+            // declaration
+            BikeList = [
+                { empid: "1", text: "Apache RTR" }, { empid: "2", text: "CBR 150-R" }, { empid: "3", text: "CBZ Xtreme" },
+                { empid: "4", text: "Discover" }, { empid: "5", text: "Dazzler" }, { empid: "6", text: "Flame" },
+                { empid: "7", text: "Fazzer" }, { empid: "8", text: "FZ-S" }, { empid: "9", text: "Pulsar" },
+                { empid: "10", text: "Shine" }, { empid: "11", text: "R15" }, { empid: "12", text: "Unicorn" }
+            ];
+            $('#bikeList').ejDropDownList({
+                dataSource: BikeList,
+                fields: { text: "text", value: "empid" },
+                value:"1",
+                create:function(args){
+                 PreviousVal=this.value();
+                    },
+                change: function (args) {
+                    alert("Previous Value before change:" + PreviousVal);
+                    PreviousVal = args.value;
+                }
+            });
+
+        });
+    </script>
+
+ {% endhighlight %}
+
+ Refer to the sample [here](https://jsplayground.syncfusion.com/r40yhi23)
