@@ -131,7 +131,7 @@ Uploaded file can be downloaded using another button through onclick event to in
 
  {% highlight html %}
           
-     <div class="control">
+    <div class="control">
         Select a file to upload
                <div class="upload">
                    <div id="UploadDefault"></div>

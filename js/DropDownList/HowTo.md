@@ -966,7 +966,7 @@ Refer to the following code
 
 {% highlight javascript %}
 
-      <div class="content-container-fluid">
+        <div class="content-container-fluid">
         <div class="row">
             <div class="cols-sample-area">
                 <div class="frame">
@@ -992,10 +992,10 @@ Refer to the following code
             $('#bikeList').ejDropDownList({
                 dataSource: BikeList,
                 fields: { text: "text", value: "value" },
-                value:"1",
-                create:function(args){
-                 PreviousVal=this.value();
-                    },
+                value: "1",
+                create: function (args) {
+                    PreviousVal = this.value();
+                },
                 change: function (args) {
                     alert("Previous Value before change:" + PreviousVal);
                     PreviousVal = args.value;
