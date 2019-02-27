@@ -39,7 +39,7 @@ Create a basic HTML file as shown below and place it in a separate folder.
 {% endhighlight %}
 
 For example, if you have created a folder named **JS_Sample** and placed the above HTML file into it, then create two new folders **Scripts** and **Content** under that root folder **JS_Sample** to maintain the scripts and style sheets respectively as shown below,
-![](/js/Control-Initialization_images/Control-Initialization_img1.png) 
+![initialization](Control-Initialization_images/Control-Initialization_img1.png) 
 
 ### Adding the required style sheets into Content folder
 
@@ -134,7 +134,7 @@ Copy the **ej.web.all.min.js** file into the **Scripts\\ej** folder.
 
 <b>(installed location)</b>\ Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\web
 
-![](/js/Control-Initialization_images/Control-Initialization_img3.png)
+![jquery information](Control-Initialization_images/Control-Initialization_img3.png)
 
 Script files copied into the Sample Project
 {:.caption}
@@ -198,7 +198,7 @@ Add the `<input>` element within the `<body>` section, which acts as a container
 
 
 Open your HTML page in the web browser and the screen will display the DatePicker widget as shown below,
-![](/js/Control-Initialization_images/Control-Initialization_img4.png)
+![syncfusion widget](Control-Initialization_images/Control-Initialization_img4.png)
 
 ### Using different jquery versions into your HTML page
 
@@ -240,7 +240,7 @@ The following code example illustrates this for `ej controls` with different ver
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](/js/Control-Initialization_images/Control-Initialization_img4.png)
+![nuget configuration](Control-Initialization_images/Control-Initialization_img4.png)
 
 
 ## Using Syncfusion NuGet Package in Visual Studio for Scripts and style sheet reference
@@ -252,18 +252,18 @@ Using the NuGet Package method in Visual Studio automates the process of copying
 Configure the [Syncfusion NuGet Package for Essential JS](/js/installation-and-deployment#configuring-syncfusion-nuget-packages) in Visual Studio initially, before proceeding with the following installation procedure.
 
 Right click on your project (for ex, ASP.NET Empty Web application) in the Solution explorer and navigate to `Manage NuGet Packages|Online|Syncfusion NuGet Packages`, which will display the list of available packages in it, as shown below.
-![](/js/Control-Initialization_images/Control-Initialization_img6.png) 
+![nuget installation](Control-Initialization_images/Control-Initialization_img6.png) 
 
 Install the **SyncfusionJavaScript** package shown in the above image. 
 
 The below image depicts that the NuGet Packages for JavaScript has been successfully installed into your project.
-![](/js/Control-Initialization_images/Control-Initialization_img7.png) 
+![nuget installation](Control-Initialization_images/Control-Initialization_img7.png) 
 
 ### Adding HTML page in your application
 
 Right click on your Project in Solution Explorer. Select `Add|New Item|HTML Page` and add it to your application. The blank HTML page will be added.
 
-![](/js/Control-Initialization_images/Control-Initialization_img8.png) 
+![control rendering](Control-Initialization_images/Control-Initialization_img8.png) 
 
 ### Adding reference to the required style sheets
 
@@ -325,7 +325,7 @@ Create a basic HTML file and directly refer all the required CDN links for the [
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>My first HTML page</title>
-        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
@@ -370,7 +370,7 @@ Add the `<input>` element within the `<body>` section, which acts as a container
 {% endhighlight %}
 
 Open your HTML page in the web browser and the screen will display the DatePicker widget as shown below,
-![](/js/Control-Initialization_images/Control-Initialization_img9.png) 
+![control rendering](Control-Initialization_images/Control-Initialization_img9.png) 
 
 The DatePicker control is rendered with its default appearance now. You can then use its various available properties to set its value and also make use of its available events to trigger when necessary.
 
@@ -381,7 +381,7 @@ With this tool, you can create a single file that packs only the required script
 For more reference on usage of this tool, please click [here](/js/custom-script-generator).
 
 After downloading the necessary files from this tool, the folder structure will look like below and you need to create a HTML file inside it.
-![](/js/Control-Initialization_images/Control-Initialization_img1.png) 
+![folder structure](Control-Initialization_images/Control-Initialization_img1.png) 
 
 The folder will contain the scripts and content folder by default which will hold the required scripts and css respectively. Inside the HTML file, refer the scripts and css from the downloaded folders.
 
