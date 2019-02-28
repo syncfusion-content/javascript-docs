@@ -49,7 +49,8 @@ The uploaded file names can be displayed below the upload button through client 
 Uploaded file can be downloaded using another button through onclick event to invoke the download handler in the controller.  Also, you need to pass the filename to the controller for downloading the file. 
 
 {% highlight html %}
-  <script>
+  
+     <script>
         var filename;
         $(function () {
             $("#UploadDefault").ejUploadbox({
@@ -125,7 +126,7 @@ Uploaded file can be downloaded using another button through onclick event to in
 
  [Sample](http://www.syncfusion.com/downloads/support/directtrac/215167/ze/Upload145137776)         
 
- ## Pass custom data to server action in Uploadbox
+## Pass custom data to server action in Uploadbox
 
  You can pass custom data to controller action through the begin event of Uploadbox. Refer to the following code.
 
