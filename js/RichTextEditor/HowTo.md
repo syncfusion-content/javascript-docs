@@ -653,9 +653,9 @@ By default, the url entered in textbox for inserting hyperlink will be validated
 
     <script type="text/javascript">
         $(function () {
-            $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true, create: "oncreate" });
+            $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true, create: "create" });
         });
-        function oncreate() {
+        function create() {
             // You can customize the isUrl function based on your scenario.
             this._isUrl = function (url) {
                 return url != "";
