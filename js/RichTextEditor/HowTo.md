@@ -634,3 +634,35 @@ Refer to the following code.
 {% endhighlight %}
 
 Refer to the sample [link](http://jsplayground.syncfusion.com/jkycg2xq)
+
+## Remove the url validation when insert hyperlink in RichTextEditor
+
+By default, the url entered in textbox for inserting hyperlink will be validated in source to check whether it is valid. If you need to skip this validation and allow users to insert any type of url, override the `_isUrl` method of RichTextEditor. Refer to the following code. 
+
+{% highlight html %}
+
+    <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+                  &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
+         &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+         client side. Customer easy to edit the contents and get the HTML content for
+         the displayed content. A rich text editor control provides users with a toolbar
+         that helps them to apply rich text formats to the text entered in the text
+          area. &lt;/p&gt;
+         &lt;p&gt;&lt;b&gt;
+     </textarea>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true, create: "oncreate" });
+        });
+        function oncreate() {
+            // You can customize the isUrl function based on your scenario.
+            this._isUrl = function (url) {
+                return url != "";
+            }
+        }
+    </script>
+
+{% endhighlight %}
+
+Refer to the sample [link](https://jsplayground.syncfusion.com/o0phxjc2)
