@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Responsive
-description: Responsive
+title: Essential JS 1 Kanban Responsive
+description: This section explains the responsive behavior of the Syncfusion JavaScript Kanban component based on the client browser width and height.
 documentation: ug
 platform: js
 keywords: responsive,kanban responsive

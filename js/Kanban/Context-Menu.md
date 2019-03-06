@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  context menu 
-description: context menu 
+title: context menu 
+description: This section explains how to enable context menu and its functionalities using the Syncfusion JavaScript Kanban component. 
 documentation: ug
 platform: js
 keywords: context menu ,kanban context menu 

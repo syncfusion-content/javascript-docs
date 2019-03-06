@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Cards
-description: Cards
+title: Essential EJ1 Kanban Cards
+description: This section explains how to define the basic structure of cards and their features of the Syncfusion JavaSscript Kanban component.
 documentation: ug
 platform: js
 keywords: cards,kanban cards

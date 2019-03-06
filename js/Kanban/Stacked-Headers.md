@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Stacked Headers
-description: Stacked Headers
+title: Kanban Stacked Headers
+description: This section explains how to define the stacked headers in the Syncfusion JavaScript ejKanban component.
 documentation: ug
 platform: js
 keywords: stacked headers,kanban stacked headers

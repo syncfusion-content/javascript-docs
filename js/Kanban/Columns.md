@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Columns
-description: Columns
+title: Kanban Columns
+description: This section explains how to define the columns and their features of the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
 keywords: columns,kanban columns

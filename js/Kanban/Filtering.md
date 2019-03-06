@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Filtering
-description: Filtering
+title: Essential JS 1 Kanban Filtering
+description: This section explains how to enable filtering and its functionalities using the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
 keywords: filtering,kanban filtering

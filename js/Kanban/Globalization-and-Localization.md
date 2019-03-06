@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Globalization and Localization
-description: Globalization and Localization
+title: Essential JS 1 Kanban Globalization and Localization
+description: This section explains how to enable localization on the Syncfusion JavaScript Essential JS 1 Kanban component.
 documentation: ug
 platform: js
 keywords: globalization and localization,kanban globalization and localizationards

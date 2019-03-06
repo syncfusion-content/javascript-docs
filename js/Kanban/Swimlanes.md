@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Swimlanes
-description: Swimlanes
+title: Kanban Swimlanes
+description: This section explains the horizontal categorization of issues in the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
 keywords: swimlanes,kanban swimlanes
