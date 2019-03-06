@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Essential JS 1 Kanban Filtering
+title: Essential JS 1 Syncfusion Kanban Filtering
 description: This section explains how to enable filtering and its functionalities using the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
@@ -54,4 +54,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/filter_img1.png)
+![Filtering](Filtering_images/filter_img1.png)

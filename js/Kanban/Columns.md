@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kanban Columns
+title: Syncfusion Kanban Columns
 description: This section explains how to define the columns and their features of the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
@@ -75,7 +75,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img.png)
+![Key Mapping](Columns_images/column_img.png)
 
 ## Multiple Key Mapping
 
@@ -116,7 +116,7 @@ The following code example and screenshot which describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img9.png)
+![Multiple Key Mapping](Columns_images/column_img9.png)
 
 ## Headers
 
@@ -184,7 +184,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img1.png)
+![Header Template](Columns_images/column_img1.png)
 
 ## Width
 
@@ -225,7 +225,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img2.png)
+![Width](Columns_images/column_img2.png)
 
 ## Visibility 
 
@@ -266,7 +266,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img3.png)
+![Visibility](Columns_images/column_img3.png)
 
 ## Toggle 
 
@@ -307,7 +307,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img4.png)
+![Toggle](Columns_images/column_img4.png)
 
 ## Allow Dragging
 
@@ -347,7 +347,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img5.png)
+![Allow Dragging](Columns_images/column_img5.png)
 
 ## Allow Dropping
 
@@ -387,7 +387,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img6.png)
+![Allow Dropping](Columns_images/column_img6.png)
 
 ## Items Count
 
@@ -427,7 +427,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img7.png)
+![Items Count](Columns_images/column_img7.png)
 
 
 ## Customize Items Count Text
@@ -468,7 +468,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img8.png)
+![Customize Items Count Text](Columns_images/column_img8.png)
 
 ## Display Empty Column
 
@@ -520,4 +520,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img10.png)
+![Display Empty Column](Columns_images/column_img10.png)

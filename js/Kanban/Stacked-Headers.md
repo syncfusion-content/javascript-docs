@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kanban Stacked Headers
+title: Syncfusion Kanban Stacked Headers
 description: This section explains how to define the stacked headers in the Syncfusion JavaScript ejKanban component.
 documentation: ug
 platform: js
@@ -62,4 +62,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Stacked_Headers_images/stacked_header_img1.png)
+![Adding Stacked header columns](Stacked_Headers_images/stacked_header_img1.png)

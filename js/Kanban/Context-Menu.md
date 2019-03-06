@@ -1,6 +1,6 @@
 ---
 layout: post
-title: context menu 
+title: Syncfusion Kanban context menu 
 description: This section explains how to enable context menu and its functionalities using the Syncfusion JavaScript Kanban component. 
 documentation: ug
 platform: js
@@ -185,9 +185,9 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img1.png)
+![Default Context Menu items](Context_images/context_img1.png)
 
-![](Context_images/context_img2.png)
+![Default Context Menu](Context_images/context_img2.png)
 
 ## Custom Context Menu
 
@@ -249,7 +249,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img3.png)
+![Custom Context Menu](Context_images/context_img3.png)
 
 ## Sub Context Menu
 
@@ -314,4 +314,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img4.png)
+![Sub Context Menu](Context_images/context_img4.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kanban - Overview
+title: Syncfusion Kanban - Overview
 description: This section explains the short description of basic features on the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
