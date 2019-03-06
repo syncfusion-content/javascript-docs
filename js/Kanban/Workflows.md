@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Workflows
-description: Workflows
+title: Syncfusion Kanban Workflows
+description: This section explains the flow of cards between the Kanban columns in the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
 keywords: Workflows,kanban Workflows
@@ -52,4 +52,4 @@ The following code example describes the above Workflow functionality.
 
 The following output is displayed as a result of the above code example.
 
-![](WorkFlows_images/workflows1.png)
+![Workflows](WorkFlows_images/workflows1.png)

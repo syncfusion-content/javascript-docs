@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Data Binding 
-description: Data Binding 
+title: Essential JS 1 Syncfusion Kanban Data Binding 
+description: This section explains how to bind the data source key value mapping in the Syncfusion JavaScript Kanban component. 
 documentation: ug
 platform: js
 keywords: data binding ,kanban data binding
