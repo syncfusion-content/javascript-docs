@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Globalization and Localization
-description: Globalization and Localization
+title: Essential JS 1 Syncfusion Kanban Globalization and Localization
+description: This section explains how to enable localization on the Syncfusion JavaScript Essential JS 1 Kanban component.
 documentation: ug
 platform: js
 keywords: globalization and localization,kanban globalization and localizationards
@@ -236,7 +236,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img1.png)
+![Localization](Localization_images/localization_img1.png)
 
 ## Right to Left (RTL)
 
@@ -296,5 +296,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img2.png)
+![Right to Left](Localization_images/localization_img2.png)
 

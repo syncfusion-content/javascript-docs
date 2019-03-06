@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Responsive
-description: Responsive
+title: Essential JS 1 Syncfusion Kanban Responsive
+description: This section explains the responsive behavior of the Syncfusion JavaScript Kanban component based on the client browser width and height.
 documentation: ug
 platform: js
 keywords: responsive,kanban responsive
@@ -17,7 +17,7 @@ The Kanban control has support for responsive behavior based on client browserâ€
 
 You can check the image representation of touch actions from the below image.
 
-![](Responsive_images/KanbanOverlayImage.png)
+![Responsive](Responsive_images/KanbanOverlayImage.png)
 
 ## Mobile Layout
 
@@ -75,26 +75,26 @@ If client width is less than 480px, the Kanban will render in mobile mode. In wh
 
 {% endhighlight %}
 
-![](Responsive_images/Responsive_img2.png)
+![Mobile Layout](Responsive_images/Responsive_img2.png)
 
 
 W> IE8 and IE9 does not support responsive kanban. `ej.responsive.css` should be referred to display Responsive Kanban.
 
-![](Responsive_images/Responsive_img3.png)
+![Mobile Layout](Responsive_images/Responsive_img3.png)
 {:caption}
 CRUD in mobile layout
 
-![](Responsive_images/Responsive_img4.png)
+![Mobile Layout](Responsive_images/Responsive_img4.png)
 {:caption}
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img5.png)
+![Mobile Layout](Responsive_images/Responsive_img5.png)
 {:caption}
 Searching in mobile layout
 
-![](Responsive_images/Responsive_img6.png)
+![Mobile Layout](Responsive_images/Responsive_img6.png)
 
-![](Responsive_images/Responsive_img7.png)
+![Mobile Layout](Responsive_images/Responsive_img7.png)
 {:caption}
 Kanban with Swim-lane
 
@@ -180,4 +180,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Responsive_images/responsive_img1.png)
+![Min Width](Responsive_images/responsive_img1.png)

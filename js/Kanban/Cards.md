@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Cards
-description: Cards
+title: Essential EJ1 Syncfusion Kanban Cards
+description: This section explains how to define the basic structure of cards and their features of the Syncfusion JavaSscript Kanban component.
 documentation: ug
 platform: js
 keywords: cards,kanban cards
@@ -103,7 +103,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img1.png)
+![Customization](Cards_images/cards_img1.png)
 
 ## Template
 
@@ -217,7 +217,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img2.png)
+![Template](Cards_images/cards_img2.png)
 
 ## Tooltip
 
@@ -261,7 +261,7 @@ The following code example describes the above behavior.
  
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img3.png)
+![Tooltip](Cards_images/cards_img3.png)
 
 ### Template
 
@@ -374,7 +374,7 @@ The following code example describes the tooltip template.
  
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img4.png)
+![Template](Cards_images/cards_img4.png)
 
 ## Collapsible Cards
 
@@ -438,6 +438,6 @@ The following code example describes the collapsible cards.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img5.png)
+![Collapsible Cards](Cards_images/cards_img5.png)
 
 N> For cards event handling , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:cardclick).

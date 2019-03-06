@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection and Hovering
-description: Selection and Hovering
+title: Syncfusion Kanban Selection and Hovering
+description: This section explains how to select and hover the card on the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
 keywords: selection, hovering,kanban selection, hovering
@@ -84,4 +84,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Selection_images/selection_img1.png)
+![Multiple Selection](Selection_images/selection_img1.png)
