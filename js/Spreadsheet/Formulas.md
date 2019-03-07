@@ -16,7 +16,15 @@ Formulas are used for calculation of data in sheet. You can set formula for a `c
 
 ### Initial Load
 
-You can set formula for a cell by specifying [`value`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-value "value") property in cell data binding. The following code example describes the above behavior,
+You can set formula for a cell by specifying [`value`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-value "value") property in cell data binding. 
+
+You can refer the formula cell reference in following ways,
+
+1. Cell reference from same sheet
+
+2. Cell reference from different sheets
+
+The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -49,11 +57,21 @@ You can set formula for a cell by specifying [`value`](https://help.syncfusion.c
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img1.png)
+![](Formulas_images/Formula_img10.png)
+
+Cell Reference from Same sheet
+{:.caption}
+
+![](Formulas_images/Formula_img11.png)
+
+Cell Reference from different sheets
+{:.caption}
 
 ### Method
 
-You can set formula for a cell using [`updateCellValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatecellvalue "updateCellValue") method. The following code example describes the above behavior,
+You can set formula for a cell using [`updateCellValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatecellvalue "updateCellValue") method.
+
+The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -133,7 +151,6 @@ The list of formulas supported in Spreadsheet is sufficient for most of your cal
 1. Initial Load
 
 2. Method
-
 
 ### Initial Load
 
@@ -248,7 +265,9 @@ To understand the purpose of cell reference or table, you can define a meaningfu
 
 ### Initial Load
 
-To add named ranges at initial load by using [`nameManager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager "nameManager") API, and also you can specify the name and address of the range by using [`name`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-name "name") and [`refersto`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-refersto "refersto") API. The following code example describes the above behavior,
+To add named ranges at initial load by using [`nameManager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager "nameManager") API, and also you can specify the name and address of the range by using [`name`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-name "name") and [`refersto`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-refersto "refersto") API. 
+You can find the added named range list collection in Spreadsheet by accessing [`nameManager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager "nameManager") API.
+The following code example describes the above behavior,
 
 {% highlight html %}
 
