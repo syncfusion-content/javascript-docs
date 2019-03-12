@@ -69,9 +69,7 @@ Cell Reference from different sheets
 
 ### Method
 
-You can set formula for a cell using [`updateCellValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatecellvalue "updateCellValue") method.
-
-The following code example describes the above behavior,
+You can set formula for a cell using [`updateCellValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatecellvalue "updateCellValue") method. The following code example describes the above behavior,
 
 {% highlight html %}
 
