@@ -134,7 +134,33 @@ We can detect whether not there has been any input to the signature control sinc
 
 {% endhighlight %}
 
+## Pre-load signature image
+
+To pre-load signature image , use canvas to get the clear pixel of image and display this through Signature instance. 
   
+Refer to the following code
+
+{% highlight js %}
+
+     <script>
+        $(function () {
+            // declaration
+            $("#signature").ejSignature({ height: "400px", isResponsive: true, strokeWidth: 3, width: "300px" });
+            var obj = $("#signature").ejSignature("instance");  // Create object for signature control
+            canvas = obj._canvas[0];
+            ctx = canvas.getContext("2d");
+            var img = new Image;
+            img.src = "sample.png"; //specify image source
+            ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clear specified pixel
+
+            img.onload = function () {
+                ctx.drawImage(img, 0, 0);
+            }
+            obj.refresh();
+        });
+    </script>
+
+{% endhighlight %}
  
 
 
