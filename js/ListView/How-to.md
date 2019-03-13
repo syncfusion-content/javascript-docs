@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to section in Listview widget for Essential JS? 
+title: How to section in Syncfusion Listview widget for Essential JS? 
 description: How to section in Listview widget for Essential JS
 documentation: ug
 platform: js
