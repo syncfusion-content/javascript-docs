@@ -56,7 +56,7 @@ Add the following script to define the download format for the canvas
 
 The following screenshot illustrates the Signature with saving (downloading) the drawn image.
 
-![](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
+![save](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
 ### To clear the Signature
 
@@ -107,12 +107,12 @@ The following screenshot illustrates the Signature with responsiveness.
 
 Before Responsiveness:
 
-![](How_To_images\makesignatureasresponsive_img1.png)
+![responsive](How_To_images\makesignatureasresponsive_img1.png)
 
 
 After giving the Responsiveness:
 
-![](How_To_images\makesignatureasresponsive_img2.png)
+![responsive](How_To_images\makesignatureasresponsive_img2.png)
 
 
 ### To check whether any input to the signature control since render
@@ -148,13 +148,13 @@ Refer to the following code
             $("#signature").ejSignature({ height: "400px", isResponsive: true, strokeWidth: 3, width: "300px" });
             var obj = $("#signature").ejSignature("instance");  // Create object for signature control
             canvas = obj._canvas[0];
-            ctx = canvas.getContext("2d");
+            context = canvas.getContext("2d");
             var img = new Image;
             img.src = "sample.png"; //specify image source
-            ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clear specified pixel
+            context.clearRect(0, 0, canvas.width, canvas.height);  // Clear specified pixel
 
             img.onload = function () {
-                ctx.drawImage(img, 0, 0);
+                context.drawImage(img, 0, 0);
             }
             obj.refresh();
         });
