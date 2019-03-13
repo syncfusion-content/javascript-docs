@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  how to
+title:  how to | Signature | Syncfusion
 description:  how to
 platform: js
 control: Signature
