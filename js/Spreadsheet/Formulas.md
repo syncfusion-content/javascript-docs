@@ -8,7 +8,14 @@ api: /api/js/ejspreadsheet
 ---
 # Formulas
 
-Formulas are used for calculation of data in sheet. You can set formula for a `cell` in following ways,
+Formulas are used for calculation of data in sheet.
+
+You can refer the formula cell reference in following ways,
+
+1. Cell reference from same sheet
+2. Cell reference from different sheets
+
+You can set formula for a `cell` in following ways,
 
 1. Initial Load
 2. Method
@@ -17,12 +24,6 @@ Formulas are used for calculation of data in sheet. You can set formula for a `c
 ### Initial Load
 
 You can set formula for a cell by specifying [`value`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-value "value") property in cell data binding. 
-
-You can refer the formula cell reference in following ways,
-
-1. Cell reference from same sheet
-
-2. Cell reference from different sheets
 
 The following code example describes the above behavior,
 
@@ -37,7 +38,7 @@ The following code example describes the above behavior,
                 rows: [{
                     cells: [{
                         value: 1
-                    }]  
+                    }]
                 },
                 {
                     cells: [{
@@ -49,7 +50,14 @@ The following code example describes the above behavior,
                         value: "=SUM(A1,A2)"
                     }]
                 }]
-            }]
+            },
+            {
+                rows: [{
+                    cells: [{
+                        value: "=SUM(Sheet1!A1:A2)"
+                    }]
+                }]
+            }],
         });
     });
 </script>
@@ -57,12 +65,12 @@ The following code example describes the above behavior,
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img10.png)
+![Formula](Formulas_images/Formula_img10.png)
 
 Cell Reference from Same sheet
 {:.caption}
 
-![](Formulas_images/Formula_img11.png)
+![Formula](Formulas_images/Formula_img11.png)
 
 Cell Reference from different sheets
 {:.caption}
@@ -102,7 +110,7 @@ You can set formula for a cell using [`updateCellValue`](https://help.syncfusion
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img1.png)
+![Formula](Formulas_images/Formula_img1.png)
 
 ### User Interface
 
@@ -133,10 +141,10 @@ You can set formula for a cell by edit and save a cell through user interface us
 
 {% endhighlight %}
 
-![](Formulas_images/Formula_img2.png)
+![Formula](Formulas_images/Formula_img2.png)
 
 The following output is displayed while saving edited cell with above code example.
-![](Formulas_images/Formula_img1.png)
+![Formula](Formulas_images/Formula_img1.png)
 
 N> 1. The list of supported formulas can be find in following [`link`](https://help.syncfusion.com/js/calculate/supported-formulas/supported-formulas "link")
 N> 2. Constant values, cell references, formulas and named ranges can be passed as argument to formulas
@@ -197,7 +205,7 @@ You can add your own function to Spreadsheet at initial load with [`customFormul
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img5.png)
+![Custom Formula](Formulas_images/Formula_img5.png)
 
 ### Method
 
@@ -247,7 +255,7 @@ You can also calculate formulas in the specified sheet by using[`calcNow`](https
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img5.png)
+![Custom Formula](Formulas_images/Formula_img5.png)
 
 To remove user defined function from Spreadsheet use [`removeCustomFormula`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:removecustomformula "removeCustomFormula") method.
 
@@ -299,7 +307,7 @@ The following code example describes the above behavior,
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img3.png)
+![Named Ranges](Formulas_images/Formula_img3.png)
 
 ### Method
 
@@ -337,12 +345,12 @@ You can add named range to Spreadsheet with [`addNamedRange`](https://help.syncf
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formulas_images/Formula_img3.png)
+![Named Ranges](Formulas_images/Formula_img3.png)
 
 ### User Interface
 
 You can define name for range of cells through user interface using `Define Name` option in `OTHERS` tab. The following screenshot describes the above behavior,
-![](Formulas_images/Formula_img4.png)
+![Named Ranges](Formulas_images/Formula_img4.png)
 
 N> Defining name for cell reference or table will be accessible across all sheets.
 N> Named Ranges will be displayed in Name Manger dialog box.
@@ -399,7 +407,7 @@ You can achieve this by the following steps,
 4. This formula is applied to all the selected cells with Curly braces ({=A1:A3 * B1:B3}) and displayed the calculated results.
 
 Please find the output screen below.
-![](Formulas_images/Formula_img6.png)
+![Array Formula](Formulas_images/Formula_img6.png)
 
 ## Structured references with Table
 
@@ -436,7 +444,7 @@ You can create the structured reference with table by the following steps:
 * The formula should be “=SUM(Order[Amount])”, here Amount is the Column Specifier.
 
 Please find the Column Specifier output screen below,
-![](Formulas_images/Formula_img7.png)
+![Table Name](Formulas_images/Formula_img7.png)
 
 ### Item Specifier
 
@@ -447,11 +455,11 @@ Please find the Column Specifier output screen below,
 * The formula should be “=SUM(Order[#All])”, here All is the Item Specifier. In this formula calculates the sum of the entire table including Total row.
 
 Please find the Item Specifier output screen below,
-![](Formulas_images/Formula_img8.png)
+![Table Name](Formulas_images/Formula_img8.png)
 
 * The formula should be “=SUM(Order[#Data])”, here Data is the Item Specifier. In this formula calculates only the data of the table.
 
 Please find the Item Specifier output screen below,
-![](Formulas_images/Formula_img9.png)
+![Table Name](Formulas_images/Formula_img9.png)
 
 
