@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Essential JavaScript Spreadsheet
+title: Getting Started for Syncfusion Essential JavaScript Spreadsheet
 description: How to create a Spreadsheet with data source, apply format and export it as excel file.
 platform: JS
 control: Spreadsheet
@@ -79,7 +79,7 @@ The method[`showWaitingPopUp`](https://help.syncfusion.com/api/js/ejspreadsheet#
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with data
 
@@ -99,7 +99,7 @@ $("#Spreadsheet").ejSpreadsheet({
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img2.png)
 
 N> For more details about `data binding` refer following [`link`](https://help.syncfusion.com/js/spreadsheet/data-binding "link")
 
@@ -123,7 +123,7 @@ function loadComplete() {
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img3.png)
 
 N> For more details about `Conditional Formatting` refer following [`link`](https://help.syncfusion.com/js/spreadsheet/data-presentation#conditional-formatting "link")
 
