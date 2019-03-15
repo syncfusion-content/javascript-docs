@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  how to
+title:  how to | Signature | Syncfusion
 description:  how to
 platform: js
 control: Signature
@@ -56,7 +56,7 @@ Add the following script to define the download format for the canvas
 
 The following screenshot illustrates the Signature with saving (downloading) the drawn image.
 
-![](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
+![save](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
 ### To clear the Signature
 
@@ -107,12 +107,12 @@ The following screenshot illustrates the Signature with responsiveness.
 
 Before Responsiveness:
 
-![](How_To_images\makesignatureasresponsive_img1.png)
+![responsive](How_To_images\makesignatureasresponsive_img1.png)
 
 
 After giving the Responsiveness:
 
-![](How_To_images\makesignatureasresponsive_img2.png)
+![responsive](How_To_images\makesignatureasresponsive_img2.png)
 
 
 ### To check whether any input to the signature control since render
@@ -134,7 +134,33 @@ We can detect whether not there has been any input to the signature control sinc
 
 {% endhighlight %}
 
+## Pre-load signature image
+
+To pre-load signature image , use canvas to get the clear pixel of image and display this through Signature instance. 
   
+Refer to the following code
+
+{% highlight js %}
+
+     <script>
+        $(function () {
+            // declaration
+            $("#signature").ejSignature({ height: "400px", isResponsive: true, strokeWidth: 3, width: "300px" });
+            var obj = $("#signature").ejSignature("instance");  // Create object for signature control
+            canvas = obj._canvas[0];
+            context = canvas.getContext("2d");
+            var img = new Image;
+            img.src = "sample.png"; //specify image source
+            context.clearRect(0, 0, canvas.width, canvas.height);  // Clear specified pixel
+
+            img.onload = function () {
+                context.drawImage(img, 0, 0);
+            }
+            obj.refresh();
+        });
+    </script>
+
+{% endhighlight %}
  
 
 
