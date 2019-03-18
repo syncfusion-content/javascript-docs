@@ -551,3 +551,5 @@ The following screenshot shows the pivot grid control exported to the PDF docume
 The following screenshot shows the pivot grid control exported to the CSV document:
 
 ![CSV exporting in JavaScript pivot grid control](Export_images/ExportPivotCSV.png)
+
+N> Grand total and sub-totals can be hidden while exporting the document.
