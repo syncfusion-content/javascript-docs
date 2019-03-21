@@ -158,36 +158,56 @@ You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#m
 
 {% highlight javascript %}
 
-        $(function () {
-            var items = [
-              { text: "ListItem 1", value: "item1" },
-	          { text: "ListItem 2", value: "item2" },
-		      { text: "ListItem 3", value: "item3" },
-		      { text: "ListItem 4", value: "item4" },
-		      { text: "ListItem 5", value: "item5" }
-            ];
-            $('#dropdown1').ejDropDownList({
-                width: 300,
-                dataSource: items,
-                fields: { text: "text", value: "value" },
-                showCheckbox: true,
-                headerTemplate: "<div class='temp' ><input id ='check' type='checkbox'  />   </div>"
-            });
-            $("#check").ejCheckBox({ text: "Check All", change: "Change" });
+     var flag;
+     $(function () {
+        var items = [
+            { text: "ListItem 1", value: "item1" },
+            { text: "ListItem 2", value: "item2" },
+            { text: "ListItem 3", value: "item3" },
+            { text: "ListItem 4", value: "item4" },
+            { text: "ListItem 5", value: "item5" }
+        ];
+        $('#dropdown1').ejDropDownList({
+            width: 300,
+            dataSource: items,
+            fields: { text: "text", value: "value" },
+            showCheckbox: true,
+            change: "Check",
+            headerTemplate: "<div class='temp' ><input id ='check' type='checkbox'/></div>"
         });
-        function Change(args) {
-            window.flag = true;
-            var obj = $("#dropdown1").ejDropDownList("instance");
-            if (args.isChecked) obj.checkAll();
-            else obj.uncheckAll();
-            window.flag = false;
+        $("#check").ejCheckBox({ text: "Check All", change: "Change" });
+    });
+    function Change(args) {
+        if (!flag) {
+            var drop = $("#dropdown1").ejDropDownList("instance");
+            if (args.isChecked) drop.checkAll();
+            else drop.uncheckAll();
         }
+    }
+    function Check(args) {
+        var drop = $("#dropdown1").ejDropDownList("instance");
+        var instance = $("#check").data("ejCheckBox");
+
+        if (!args.isChecked) {
+            flag = true; //set flag variable to avoid triggering of checkbox change during check change.
+            instance.setModel({ checked: false }); //uncheck check All when any one of the item is unchecked.
+            flag = false;
+
+        }
+        if (drop.getSelectedItem().length == drop.getListData().length) //get selected items length
+        {
+            instance.setModel({ checked: true }); //check check All checkbox when all items in list are selected.
+        }
+
+    }
 
 {% endhighlight %}
 
 The following screenshot exhibits the output of the above code,
 
 ![checkall](HowTo_images/HowTo_img2.jpeg)
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/tm4z5vej)
 
 ## To Cascade DropDownLists with different field names
 By default cascading is performed based on the Value field, so that it needs to be same with cascaded DropDownList. If you need to cascade 2 DropDownLists with different field names and same values in it, you can achieve it using cascadeQuery and [cascade](https://help.syncfusion.com/api/js/ejdropdownlist#events:cascade "") event. Define the cascade event for the DropDownList from which you need to filter the datasource for the other DropDownList. 
