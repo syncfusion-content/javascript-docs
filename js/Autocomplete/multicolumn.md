@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple columns in AutoComplete widget for Essential JS
+title: Multiple columns in Syncfusion AutoComplete widget for Essential JS
 description: How to assign multiple column values into the AutoComplete suggestion items.
 platform: js
 control: AutoComplete
