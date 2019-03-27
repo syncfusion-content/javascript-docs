@@ -76,7 +76,7 @@ In AutoComplete Multiple Column searched value is updated to autocomplete input 
 
 {% endhighlight %}
 
-N> Here [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) is “{0} ({1}) ({2})” so the search will be based on column indices 0, 1 and 2. When using `MultiColumnSettings` in AutoComplete, the value will be returned in string format based on the multiple columns. You can retrieve any specific field like text or key field through ` e.item` in select event. 
+N> Here [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) is “{0} ({1}) ({2})” so the search will be based on column indices 0, 1 and 2. When using `MultiColumnSettings` in AutoComplete, the value will be returned in string format based on the multiple columns. You can retrieve any specific field like text or key field through `e.item` in the select event.
 
 
 ![AutoComplete-MultiColumn](multicolumn_images\multicolumn_img1.png)
