@@ -630,15 +630,17 @@ function onSelect(args){
              var target = $("#selectCar");
              $(target).css({display : "none"});
              var dateSpan = document.createElement('span');
-             dateSpan.innerHTML = '<img id="myImg" class="eimg" src=' + imgLocation + ' alt="employee"/>';
+             dateSpan.innerHTML = '<img id="myImg" class="eimg" src=' + imgLocation + ' alt="employee"/>' + '<span class="txt"> ' + args.text + '</span>'; // create a new span element with image and selected text.  
               $(dateSpan).insertBefore(target);
           }
           else{
 
               edit_save = document.getElementById("myImg");
-              edit_save.src = imgLocation;     
+              edit_save.src = imgLocation;   
+              document.getElementsByClassName("txt")[0].textContent = args.text  
           }
     }
+}
      
 {% endhighlight %}
 
@@ -666,6 +668,8 @@ Apply the following styles
     </style>
 
 {% endhighlight %}
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/010boe4k)
 
 ![customValue](HowTo_images/customValue.jpg)
 
