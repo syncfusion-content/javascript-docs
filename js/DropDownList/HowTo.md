@@ -1028,3 +1028,59 @@ Refer to the following code
  {% endhighlight %}
 
  Refer to the sample [here](https://jsplayground.syncfusion.com/r40yhi23)
+
+ ## Add tooltip for DropDownList based on selected value
+
+To show the selected value as tooltip on DropDownList's input, render the DropDownList container as ejTooltip, and modify its content dynamically based on the selected value using the open event of Tooltip. 
+
+ Refer to the following code
+
+ {% highlight javascript %}
+
+     <div class="content-container-fluid">
+       <div class="row">
+        <div class="cols-sample-area">
+            <div class="frame">
+                <div class="control">
+                    <div class="ctrllabel">Select a bike</div>
+                    <input type="text" id="bikeList" />
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var instance, tip;
+        $(function () {
+        // declaration
+        BikeList = [
+            { value: "1", text: "Apache RTR" }, { value: "2", text: "CBR 150-R" }, { value: "3", text: "CBZ Xtreme" },
+            { value: "4", text: "Discover" }, { value: "5", text: "Dazzler" }, { value: "6", text: "Flame" },
+            { value: "7", text: "FZ-S" }, { value: "8", text: "Pulsar" },
+            { value: "9", text: "Shine" }, { value: "10", text: "R15" }, { value: "11", text: "Unicorn" }
+        ];
+        $('#bikeList').ejDropDownList({
+            dataSource: BikeList,
+            width: "200px",
+            value: "Shine",
+            fields: { id: "value", text: "text", value: "text" },
+            create: "Create"
+        });
+    });
+
+     function Create() {
+        instance = $('#bikeList').data("ejDropDownList");
+        instance.container.ejTooltip({       //render container as ejTooltip
+            content: instance.model.value,
+            open: "onOpen"
+        });
+     }
+     function onOpen() {
+        tip = $('#bikeList_container').data("ejTooltip"); // attribute for dropdownlist's container
+        tip.setModel({ content: instance.model.value });
+     }
+    </script>
+
+ {% endhighlight %}
+
+Refer to the sample [here](http://jsplayground.syncfusion.com/2m1bd3t0)
