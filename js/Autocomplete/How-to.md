@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to
+title: How to | Syncfusion | Autocomplete
 description: The how to section explain more functionalities or informations about Essential Javascript autocomplete control. 
 platform: js
 control: AutoComplete
@@ -268,7 +268,7 @@ Find the output for the previously given code as follows.
 
 ## How to enable Autofill with filter type  `contains` in Autocomplete
 
-By default, the Autofill property works with filter type `StartsWith`. However,Autofill behaviour can be achieved with `contains` filter type using the open event of Autocomplete. 
+By default, the Autofill property works with filter type `StartsWith`. However,Autofill behavior can be achieved with `contains` filter type using the open event of Autocomplete. 
 
 Refer to the following code.
 
