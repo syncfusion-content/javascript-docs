@@ -1072,10 +1072,10 @@ To show the selected value as tooltip on DropDownList's input, render the DropDo
         instance = $('#bikeList').data("ejDropDownList");
         instance.container.ejTooltip({       //render container as ejTooltip
             content: instance.model.value,
-            open: "onOpen"
+            open: "Open"
         });
      }
-     function onOpen() {
+     function Open() {
         tip = $('#bikeList_container').data("ejTooltip"); // attribute for dropdownlist's container
         tip.setModel({ content: instance.model.value });
      }
