@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to
+title: How to | Syncfusion | Autocomplete
 description: The how to section explain more functionalities or informations about Essential Javascript autocomplete control. 
 platform: js
 control: AutoComplete
@@ -265,3 +265,65 @@ Find the following screenshot for the data manager where query.
 Find the output for the previously given code as follows.
 
 ![howto](how-to_images/howto9.png)
+
+## How to enable Autofill with filter type  `contains` in Autocomplete
+
+By default, the Autofill property works with filter type `StartsWith`. However,Autofill behavior can be achieved with `contains` filter type using the open event of Autocomplete. 
+
+Refer to the following code.
+
+{% highlight html %}
+
+     <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <input type="text" id="selectCar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" class="jsScript">
+        $(function () {
+            // declaration
+            var carList = [
+                "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",
+                "BMW 7","Chevrolet Camaro", "Cadillac",
+                "Duesenberg J", "Dodge Sprinter",
+                "Elantra", "Excavator",
+                "Ford Boss 302", "Ferrari 360", "Ford Thunderbird",
+                "GAZ Siber",
+                "Honda S2000", "Hyundai Santro",
+                "Isuzu Swift", "Infiniti Skyline",
+                "Jaguar XJS",
+                "Kia Sedona EX", "Koenigsegg Agera",
+                "Lotus Esprit", "Lamborghini Diablo",
+                "Mercedes-Benz", "Mercury Coupe", "Maruti Alto 800",
+                "Nissan Qashqai",
+                "Oldsmobile S98", "Opel Superboss",
+                "Porsche 356", "Pontiac Sunbird",
+                "Scion SRS/SC/SD", "Saab Sportcombi", "Subaru Sambar", "Suzuki Swift",
+                "Triumph Spitfire", "Toyota 2000GT",
+                "Volvo P1800", "Volkswagen Shirako"
+            ];
+
+             $('#selectCar').ejAutocomplete({
+                width: "100%",
+                watermarkText: "Select a car",
+                dataSource: carList, 
+                enableAutoFill : true, 
+                filterType: "contains", 
+                open: Open
+            });
+          
+           function Open(args){
+              	$('#selectCar').ejAutocomplete("option", "value", this.suggestionListItems[0])
+              }
+        });   
+    </script>
+
+{% endhighlight  %}
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/ys01ehax)
