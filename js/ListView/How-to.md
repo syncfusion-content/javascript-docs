@@ -93,7 +93,7 @@ Refer to the following code.
 
 {% highlight html %}
 
-     <div id="defaultlistbox" >
+     <div id="default" >
       </div>
 
 {% endhighlight %}
@@ -106,7 +106,7 @@ Refer to the following code.
             { text: "MP3 Albums" },
             {text: "More in Music" }];
         $(function () {
-          $("#defaultlistbox").ejListView({showHeader: true, headerTitle: "Favorite", width:400, dataSource: item, enableGroupList: false });
+          $("#default").ejListView({showHeader: true, headerTitle: "Favorite", width:400, dataSource: item, enableGroupList: false });
           $("[data-preventselection*=true]").addClass("e-disable"); 
        
         });
