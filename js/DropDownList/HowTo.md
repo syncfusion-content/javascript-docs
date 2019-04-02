@@ -1033,7 +1033,7 @@ Refer to the following code
 
  Refer to the sample [here](https://jsplayground.syncfusion.com/r40yhi23)
 
- ## Add tooltip for DropDownList based on selected value
+## Add tooltip for DropDownList based on selected value
 
 To show the selected value as tooltip on DropDownList's input, render the DropDownList container as ejTooltip, and modify its content dynamically based on the selected value using the open event of Tooltip. 
 
