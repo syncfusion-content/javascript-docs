@@ -40,15 +40,11 @@ By setting the `heightAdjustMode` property to `fill`, you can set the height of 
 
 {% highlight javascript %}
  
-       <script type="text/javascript">
+      <script type="text/javascript">
         $(function () {
             // declaration
-            $("#Tab").ejTab(
-                {
-                  	heightAdjustMode: "fill",
-                });
-          
-        });
+            $("#Tab").ejTab({ heightAdjustMode: "fill"});
+         });
       </script>
 
 {% endhighlight %}
