@@ -13,7 +13,7 @@ api: /api/js/ejtab
 
 ## Set 100% height to tab content.
 
-By setting the `heightAdjustMode` property to `fill`, you can set the height of tab content  to the parent element's height. So, make sure that the parent element has static height set for heightAdjusttMode to work.
+By setting the `heightAdjustMode` property to `fill`, you can set the height of tab content  to the parent element's height. So, make sure that the parent element has static height set for heightAdjustMode to work.
 
 {% highlight html %}
 
