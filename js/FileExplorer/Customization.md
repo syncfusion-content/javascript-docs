@@ -77,6 +77,8 @@ The content pane is the main part of the FileExplorer UI which displays all the 
 
 The **grid  view** displays the files and folders in a grid layout with the details in separate columns. By default the grid view having the four columns which displays the file name, type, date modified and size of the file. For more details about grid view customization, refer [here](https://help.syncfusion.com/js/fileexplorer/customization#customizing-the-grid-view).
 
+The [templateRefresh](https://help.syncfusion.com/api/js/ejfileexplorer#events:templaterefresh) event is used to refresh the template column elements in the grid view.
+
 The **tile view** display the files and folders like a small size icons. It allows the thumbnails for the image files so that you can view the tiny preview of all image files.
 
 ### Changing the Layout views	
@@ -116,7 +118,9 @@ Also the layout views can be changed through the [layout](https://help.syncfusio
 
 By default sorting is enabled in grid view of FileExplorer, it helps you to sort each columns in ascending or descending order by pressing the corresponding column header. The sorting functionality can be disabled by setting [allowSorting](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-allowsorting) property to false.
 
-The behavior of the columns can be customized through the [columns](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-columns) property. 
+The behavior of the columns can be customized through the [columns](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-columns) property.
+
+N> By default, We can customize the grid behavior in the FileExplorer control using [gridsettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings) property. And [allowResizing](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-allowresizing) allows to resize the width of the columns by simply click and move the particular column header line.
 
 {% highlight javascript %}
 

@@ -40,6 +40,10 @@ By default it having the value “*.*”, so it allows all the file types. In ca
 
 {% endhighlight %}
 
+N> We can enable the Checkbox in content of File Explorer control using [showCheckbox](https://help.syncfusion.com/api/js/ejfileexplorer#members:showcheckbox) property. And also, we can display the file explorer with rounded corner using [showRoundedCorner](https://help.syncfusion.com/api/js/ejfileexplorer#members:showroundedcorner) property.
+
+N> We can able to render the File Explorer component from right to left direction using [enableRTL](https://help.syncfusion.com/api/js/ejfileexplorer#members:enablertl) property. Also, We can able to persist the state of File Explorer using [enablePersistence](https://help.syncfusion.com/api/js/ejfileexplorer#members:enablepersistence) property
+
 ## Customize the AJAX request settings
 
 As you already know FileExplorer is a client – server based control and each action performed in the client sends an AJAX request to the server to perform the server side operations. While the AJAX request, the AJAX configurations can be customized through [ajaxSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxsettings) property.
@@ -130,3 +134,5 @@ Also its compulsory to add "{0}" in the end of "upload, download and getImage" U
 {% endhighlight %}
 
 N> **ajaxActionHandler** - prefix URL of AJAX handling method
+
+N> [create](https://help.syncfusion.com/api/js/ejfileexplorer#events:create) event is triggerred when the File Explorer control is created and [destroy](https://help.syncfusion.com/api/js/ejfileexplorer#events:destroy) event is triggerred when the File Explorer control is destroyed.
