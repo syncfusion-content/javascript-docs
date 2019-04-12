@@ -28,7 +28,7 @@ If your server is located in Intranet Zone, In IE Browser, confirmation dialog w
 
 To suppress this warning, you need to specify the "**Access data sources across domains**" setting to “**allow**”.
 
-![](How-To_images/How-To_img1.jpeg)
+![Enabling cross-origin](How-To_images/How-To_img1.jpeg)
 
 **Option 2: Using JSONP for cross-origin request**
 
@@ -397,7 +397,7 @@ It used to search all the matched files and sub-folders in the given folder path
 
 ## Customize the Root Folder name in FileExplorer
 
-You can set the alias name to the root folder of FileExplorer by using `rootFolderName` API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below sample to set the alias name for the root folder of FileExplorer.
+You can set the alias name to the root folder of FileExplorer by using [`rootFolderName`](https://help.syncfusion.com/api/js/ejfileexplorer#members:rootfoldername) API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below sample to set the alias name for the root folder of FileExplorer.
 
 Sample Link: [link](http://jsplayground.syncfusion.com/psx0vwle)
 
