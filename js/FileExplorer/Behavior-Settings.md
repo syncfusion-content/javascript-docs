@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior Settings FileExplorer widget for Essential JS
+title: Behavior Settings FileExplorer widget for Essential JS | Syncfusion
 description: Customize the behavior of FileExplorer control showcase all the files from the filesystem, here you can customize the file types.
 platform: js
 control: FileExplorer
@@ -135,4 +135,4 @@ Also its compulsory to add "{0}" in the end of "upload, download and getImage" U
 
 N> **ajaxActionHandler** - prefix URL of AJAX handling method
 
-N> [create](https://help.syncfusion.com/api/js/ejfileexplorer#events:create) event is triggerred when the File Explorer control is created and [destroy](https://help.syncfusion.com/api/js/ejfileexplorer#events:destroy) event is triggerred when the File Explorer control is destroyed.
+N> [create](https://help.syncfusion.com/api/js/ejfileexplorer#events:create) event is triggered when the File Explorer control is created and [destroy](https://help.syncfusion.com/api/js/ejfileexplorer#events:destroy) event is triggered when the File Explorer control is destroyed.

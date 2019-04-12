@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization
+title: Customization | FileExplorer | JavaScript | Syncfusion
 description: FileExplorer Customization.
 platform: js
 control: FileExplorer
@@ -85,7 +85,7 @@ The **tile view** display the files and folders like a small size icons. It allo
 
 You can change the layout of current view by the switcher which displays at right-bottom of footer in the FileExplorer. By clicking the grid and tile view buttons you can change the layout of current view.
 
-![](Customization_images/Customization_img1.png)
+![Changing the Layout Views](Customization_images/Customization_img1.png)
 
 
 Also the layout views can be changed through the [layout](https://help.syncfusion.com/api/js/ejfileexplorer#members:layout) property. The [layoutChange](https://help.syncfusion.com/api/js/ejfileexplorer#events:layoutchange) event will be triggered whenever the layout view type is changed.
@@ -120,7 +120,7 @@ By default sorting is enabled in grid view of FileExplorer, it helps you to sort
 
 The behavior of the columns can be customized through the [columns](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-columns) property.
 
-N> By default, We can customize the grid behavior in the FileExplorer control using [gridsettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings) property. And [allowResizing](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-allowresizing) allows to resize the width of the columns by simply click and move the particular column header line.
+N> By default, We can customize the grid behavior in the FileExplorer control using [`gridsettings`](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings) property. And [allowResizing](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-allowresizing) allows to resize the width of the columns by simply click and move the particular column header line.
 
 {% highlight javascript %}
 

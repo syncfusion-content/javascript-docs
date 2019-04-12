@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Selection
+title: Multiple Selection | FileExplorer | JavaScript | Syncfusion
 description: FileExplorer allows the user to select multiple files
 platform: js
 control: File Explorer

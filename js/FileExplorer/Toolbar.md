@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar
+title: Toolbar | FileExplorer | JavaScript | Syncfusion
 description: Toolbar support
 platform: js
 control: File Explorer
@@ -211,7 +211,7 @@ As you can see the available toolbar items from [here](#toolbar-items). From the
 
 The Search bar can be customize through the [filterSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings) property. By default the search doesn’t consider the case sensitivity, and the search works based on [filter type](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-filtertype).
 
-N> [allowSearchOnTyping](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-allowsearchontyping) allows to search the text given in search Textbox in every keyup event. When this property was set as false, searching will works only on Enter key and searchbar blur. Also [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-casesensitivesearch) is used to enables or disables to perform the filter operation with case sensitive.
+N> [allowSearchOnTyping](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-allowsearchontyping) allows to search the text given in search Textbox in every keyup event. When this property was set as false, searching will works only on Enter key and `searchbar` blur. Also [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-casesensitivesearch) is used to enables or disables to perform the filter operation with case sensitive.
 
 The FileExplorer allows the following filter types in the search functionality.
 
@@ -408,7 +408,7 @@ N> [cssClass](https://help.syncfusion.com/api/js/ejfileexplorer#members:cssclass
 
 ## Customizing the Upload Functionality
 
-FileExplorer helps you to upload the file using [Upload](https://help.syncfusion.com/js/uploadbox/overview#) component. File upload can be done through the toolbar item or context menu item. The [uploadSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings) property is used to configure the upload functionalities. The below options are avaliable in uploadsettings property.
+FileExplorer helps you to upload the file using [Upload](https://help.syncfusion.com/js/uploadbox/overview#) component. File upload can be done through the toolbar item or context menu item. The [uploadSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings) property is used to configure the upload functionalities. The below options are available in `uploadSettings` property.
 
 * [allowMultipleFile](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-allowmultiplefile)
 * [autoUpload](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-autoupload)

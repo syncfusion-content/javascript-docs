@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing
+title: Resizing | FileExplorer | Syncfusion 
 description: resize support
 platform: js
 control: File Explorer

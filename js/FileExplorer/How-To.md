@@ -28,7 +28,7 @@ If your server is located in Intranet Zone, In IE Browser, confirmation dialog w
 
 To suppress this warning, you need to specify the "**Access data sources across domains**" setting to “**allow**”.
 
-![](How-To_images/How-To_img1.jpeg)
+![Enabling cross-origin](How-To_images/How-To_img1.jpeg)
 
 **Option 2: Using JSONP for cross-origin request**
 
