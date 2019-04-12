@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Selection
+title: Multiple Selection | FileExplorer | JavaScript | Syncfusion
 description: FileExplorer allows the user to select multiple files
 platform: js
 control: File Explorer
@@ -15,6 +15,10 @@ The FileExplorer allows the user to select multiple files by enabling the [allow
 
 The [select](https://help.syncfusion.com/api/js/ejfileexplorer#events:select) event will be triggered when the items of FileExplorer control is selected.
 Also [unselect](https://help.syncfusion.com/api/js/ejfileexplorer#events:unselect) event will be triggered when the items of FileExplorer control is unselected.
+
+The [selectedItems](https://help.syncfusion.com/api/js/ejfileexplorer#members:selecteditems) is used to select the specified items (file, folder) of FileExplorer control.
+
+The [selectedFolder](https://help.syncfusion.com/api/js/ejfileexplorer#members:selectedfolder) is used to select the specified folder of FileExplorer control. Also [refresh](https://help.syncfusion.com/api/js/ejfileexplorer#methods:refresh) method is used to refresh the content of the selected folder in FileExplorer control.
 
 N>  For selecting files by mouse down and drag set `allowMultiSelection` property as true.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior Settings FileExplorer widget for Essential JS
+title: Behavior Settings FileExplorer widget for Essential JS | Syncfusion
 description: Customize the behavior of FileExplorer control showcase all the files from the filesystem, here you can customize the file types.
 platform: js
 control: FileExplorer
@@ -39,6 +39,10 @@ By default it having the value “*.*”, so it allows all the file types. In ca
     });
 
 {% endhighlight %}
+
+N> We can enable the Checkbox in content of File Explorer control using [showCheckbox](https://help.syncfusion.com/api/js/ejfileexplorer#members:showcheckbox) property. And also, we can display the file explorer with rounded corner using [showRoundedCorner](https://help.syncfusion.com/api/js/ejfileexplorer#members:showroundedcorner) property.
+
+N> We can able to render the File Explorer component from right to left direction using [enableRTL](https://help.syncfusion.com/api/js/ejfileexplorer#members:enablertl) property. Also, We can able to persist the state of File Explorer using [enablePersistence](https://help.syncfusion.com/api/js/ejfileexplorer#members:enablepersistence) property
 
 ## Customize the AJAX request settings
 
@@ -130,3 +134,5 @@ Also its compulsory to add "{0}" in the end of "upload, download and getImage" U
 {% endhighlight %}
 
 N> **ajaxActionHandler** - prefix URL of AJAX handling method
+
+N> [create](https://help.syncfusion.com/api/js/ejfileexplorer#events:create) event is triggered when the File Explorer control is created and [destroy](https://help.syncfusion.com/api/js/ejfileexplorer#events:destroy) event is triggered when the File Explorer control is destroyed.
