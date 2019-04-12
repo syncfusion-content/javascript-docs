@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing
+title: Resizing | FileExplorer | Syncfusion 
 description: resize support
 platform: js
 control: File Explorer
@@ -40,9 +40,13 @@ The resize behavior can be enabled through the [enableResize](https://help.syncf
 
 {% endhighlight %}
 
+N> When resizing the File explorer control, the [resize](https://help.syncfusion.com/api/js/ejfileexplorer#events:resize) event is triggered. The [resizeStart](https://help.syncfusion.com/api/js/ejfileexplorer#events:resizestart) event is triggered while starting stage of resize and [resizeStop](https://help.syncfusion.com/api/js/ejfileexplorer#events:resizestop) event is triggered in the end of resize.
+
 ## Responsiveness
 
-By enabling the [isResponsive](https://help.syncfusion.com/api/js/ejfileexplorer#members:isresponsive) property, you can make the FileExplorer as responsive. While resizing the FileExplorer component, the inner content and toolbar items are automatically adjusted to equalize the size. The toolbar items are displayed within Dropdown on enabling the responsive. Otherwise it floated to the next line to equalize the space. 
+By enabling the [isResponsive](https://help.syncfusion.com/api/js/ejfileexplorer#members:isresponsive) property, you can make the FileExplorer as responsive. While resizing the FileExplorer component, the inner content and toolbar items are automatically adjusted to equalize the size. The toolbar items are displayed within Dropdown on enabling the responsive. Otherwise it floated to the next line to equalize the space.
+
+N> We can use [adjustSize](https://help.syncfusion.com/api/js/ejfileexplorer#methods:adjustsize) method to refresh the size of FileExplorer control.
 
 {% highlight javascript %}
 
