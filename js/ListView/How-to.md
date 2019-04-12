@@ -85,4 +85,32 @@ Add the following script in your code.
 
 {% endhighlight %}
 
+## Disable an item while assigning dataSource
 
+Selection of a particular list item can be prevented using the `preventSelection` field of ejListView. To change the item to disable state, add the `e-disable` class for items (whose selection are prevented) during initial rendering.
+
+Refer to the following code.
+
+{% highlight html %}
+
+     <div id="default" >
+      </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+         window.item = [{ text: "Discover Music" , preventSelection: true},
+            { text: "Sales and Events" },
+            { text: "Categories" , preventSelection: true},
+            { text: "MP3 Albums" },
+            {text: "More in Music" }];
+        $(function () {
+          $("#default").ejListView({showHeader: true, headerTitle: "Favorite", width:400, dataSource: item, enableGroupList: false });
+          $("[data-preventselection*=true]").addClass("e-disable"); 
+       
+        });
+
+{% endhighlight %}
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/qkxmnsdr)
