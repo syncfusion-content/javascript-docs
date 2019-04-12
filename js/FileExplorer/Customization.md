@@ -120,7 +120,7 @@ By default sorting is enabled in grid view of FileExplorer, it helps you to sort
 
 The behavior of the columns can be customized through the [columns](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-columns) property.
 
-N> By default, We can customize the grid behavior in the FileExplorer control using [`gridsettings`](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings) property. And [allowResizing](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-allowresizing) allows to resize the width of the columns by simply click and move the particular column header line.
+N> By default, We can customize the grid behavior in the FileExplorer control using [`gridSettings`](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings) property. And [allowResizing](https://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-allowresizing) allows to resize the width of the columns by simply click and move the particular column header line.
 
 {% highlight javascript %}
 

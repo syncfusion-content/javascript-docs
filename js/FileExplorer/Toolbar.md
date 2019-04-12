@@ -211,7 +211,7 @@ As you can see the available toolbar items from [here](#toolbar-items). From the
 
 The Search bar can be customize through the [filterSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings) property. By default the search doesn’t consider the case sensitivity, and the search works based on [filter type](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-filtertype).
 
-N> [allowSearchOnTyping](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-allowsearchontyping) allows to search the text given in search Textbox in every keyup event. When this property was set as false, searching will works only on Enter key and `searchbar` blur. Also [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-casesensitivesearch) is used to enables or disables to perform the filter operation with case sensitive.
+N> [allowSearchOnTyping](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-allowsearchontyping) allows to search the text given in search Textbox in every keyup event. When this property was set as false, searching will works only on Enter key and search bar blur. Also [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-casesensitivesearch) is used to enables or disables to perform the filter operation with case sensitive.
 
 The FileExplorer allows the following filter types in the search functionality.
 
