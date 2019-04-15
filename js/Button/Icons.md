@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons
+title: Synfusion Icons
 description: icons
 platform: js
 control: Button

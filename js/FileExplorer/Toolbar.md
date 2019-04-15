@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar
+title: Toolbar | FileExplorer | JavaScript | Syncfusion
 description: Toolbar support
 platform: js
 control: File Explorer
@@ -211,6 +211,8 @@ As you can see the available toolbar items from [here](#toolbar-items). From the
 
 The Search bar can be customize through the [filterSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings) property. By default the search doesn’t consider the case sensitivity, and the search works based on [filter type](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-filtertype).
 
+N> [allowSearchOnTyping](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-allowsearchontyping) allows to search the text given in search Textbox in every keyup event. When this property was set as false, searching will works only on Enter key and search bar blur. Also [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-casesensitivesearch) is used to enables or disables to perform the filter operation with case sensitive.
+
 The FileExplorer allows the following filter types in the search functionality.
 
 * Starts with
@@ -385,6 +387,8 @@ These methods accepts the tool name as the parameter. It also allows the paramet
 
 If you want to enable / disable the custom added tool in toolbar, you need to pass the corresponding li elements of custom added tool in [enableToolbarItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:enabletoolbaritem) / [disableToolbarItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:disabletoolbaritem) method of FileExplorer. Since we have consider this custom tool as a object type.
 
+N> [cssClass](https://help.syncfusion.com/api/js/ejfileexplorer#members:cssclass) allows to use custom skinning option for File Explorer control.
+
 {% highlight javascript %}
         
         var fileExpObj = $("#fileExplorer").data("ejFileExplorer");
@@ -404,7 +408,14 @@ If you want to enable / disable the custom added tool in toolbar, you need to pa
 
 ## Customizing the Upload Functionality
 
-FileExplorer helps you to upload the file using [Upload](https://help.syncfusion.com/js/uploadbox/overview#) component. File upload can be done through the toolbar item or context menu item. The [uploadSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings) property is used to configure the upload functionalities.
+FileExplorer helps you to upload the file using [Upload](https://help.syncfusion.com/js/uploadbox/overview#) component. File upload can be done through the toolbar item or context menu item. The [uploadSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings) property is used to configure the upload functionalities. The below options are available in `uploadSettings` property.
+
+* [allowMultipleFile](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-allowmultiplefile)
+* [autoUpload](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-autoupload)
+* [dialogAction](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-dialogaction)
+* [dialogPosition](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-dialogposition)
+* [maxFileSize](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-maxfilesize)
+* [showFileDetails](https://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings-showfiledetails)
 
 This property has the below sub properties with the default values:
 
