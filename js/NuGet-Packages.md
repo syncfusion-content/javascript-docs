@@ -63,7 +63,7 @@ To reference the Syncfusion JavaScript component using the Package Manager Conso
 
 Add packages can be used to search and install NuGet packages to the Visual Studio project in macOS:
 
-1.	Right-click on the folder in the project, and then select **Add Packages…** 
+1.	Right-click the folder in the project, and then select **Add Packages…** 
 
     ![NuGet package manager add-in for macOS](NuGet_Packages_Images/img8.png)  
               
@@ -185,7 +185,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     #update all NuGet packages from config file
     nuget update <configPath> [options]
 
-    #update all NuGet packages from specified Packages Source
+    #update all NuGet packages
     nuget update 
     ~~~      
 
@@ -213,7 +213,7 @@ You should get the private Syncfusion JavaScript NuGet feed URL to install or up
 
     [https://nuget.syncfusion.com/nuget_javascript/nuget/getsyncfusionpackages/javascript](https://nuget.syncfusion.com/nuget_javascript/nuget/getsyncfusionpackages/javascript) 
 
-    ![Syncfusion Essential JS 2 ASP.NET Core NuGet feed URL](NuGet_Packages_Images/img1.png)
+    ![Syncfusion Essential JS 1 JavaScript NuGet feed URL](NuGet_Packages_Images/img1.png)
 
 3. Now, use this NuGet feed URL to access the Syncfusion NuGet Packages in Visual Studio. 
 
@@ -236,7 +236,7 @@ You should get the private Syncfusion JavaScript NuGet feed URL to install or up
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
-    ![NuGet Package Manager dialog with Syncfusion Essential JS 2 NuGet feed URL for reference](NuGet_Packages_Images/img2.png)
+    ![NuGet Package Manager dialog with Syncfusion Essential JS 1 NuGet feed URL for reference](NuGet_Packages_Images/img2.png)
 
 #### macOS 
 
