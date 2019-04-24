@@ -666,3 +666,30 @@ By default, the url entered in textbox for inserting hyperlink will be validated
 {% endhighlight %}
 
 Refer to the sample [link](https://jsplayground.syncfusion.com/o0phxjc2)
+
+## Paste large content into RTE
+
+By default , the maximum content length for RTE is 7000 characters. If the pasted content exceeds this limit, then the paste operation will be prevented.To paste large content inside RTE, specify the content length using  `maxLength` property of RTE. Refer to the following code.
+
+ {% highlight html %}
+
+    <textarea id="rteSample">
+                  &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
+         &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+         client side. Customer easy to edit the contents and get the HTML content for
+         the displayed content. A rich text editor control provides users with a toolbar
+         that helps them to apply rich text formats to the text entered in the text
+          area. &lt;/p&gt;
+         &lt;p&gt;&lt;b&gt;
+     </textarea>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true, maxLength: 140000 });
+        });
+       
+    </script>
+
+{% endhighlight %}
+
+Refer to the sample [link](https://jsplayground.syncfusion.com/g5acwr3h)
