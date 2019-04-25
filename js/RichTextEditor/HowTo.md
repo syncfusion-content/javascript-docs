@@ -702,7 +702,7 @@ In the following code, the `font-family` style is defined for body in external s
 
  {% highlight html %}
 
-      <textarea id="rteSample">
+     <textarea id="rteSample">
                   &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
          &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
          client side. Customer easy to edit the contents and get the HTML content for
@@ -710,16 +710,11 @@ In the following code, the `font-family` style is defined for body in external s
          that helps them to apply rich text formats to the text entered in the text
           area. &lt;/p&gt;
          &lt;p&gt;&lt;b&gt;
-     </textarea>
+    </textarea>
 
     <script type="text/javascript">
         $(function () {
-            $("#rteSample").ejRTE({
-			      width:"100%", 
-				  minWidth:"100px"
-			      isResponsive:true,
-			      externalCSS:"iframe.css"
-			  });
+            $("#rteSample").ejRTE({ width:"100%",minWidth:"100px",isResponsive:true,externalCSS:"iframe.css"});
         });
        
     </script>
