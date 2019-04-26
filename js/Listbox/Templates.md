@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates
+title: Templates in Syncfusion ListBox
 description: templates
 platform: js
 control: ListBox
@@ -86,7 +86,7 @@ Refer to the following code.
     <div class="row">
      <div class="cols-sample-area">
         <div class="ctrllabel">Select a List</div>
-        <div id="selectlist"></div>
+        <div id="list"></div>
         <div id="template">
         </div>
      </div>
@@ -107,7 +107,7 @@ Refer to the following code.
       $(function () {
           var list = [{ text: "Erik", ID: "1" }, { text: "John", ID: "2" }, { text: "Nancy", ID: "3" }, { text: "David", ID: "4" }, { text: "Martin", ID: "5" }, {text: "Louis",  ID: "6" }];
         $("#template").append($("#tableTemplate").render(list)); //append jsrender template to div element.
-        $("#selectlist").ejListBox({
+        $("#list").ejListBox({
             targetID: "template"
         });
       })
