@@ -97,11 +97,11 @@ Refer to the following code.
 {% highlight javascript %}
      
     <script id="tableTemplate" type="text/x-jsrender">
-      {{if ID < 4}}
+      {% raw %} {{if ID < 4}}  {% endraw %}
       <li><span class="e-icon e-user" style=" display: inline-block;"></span><span style=" display: inline-block;"><b>{{:text}}</b></span></li>
-      {{else}}
+      {% raw %} {{else}}
       <li>{{:text}}</li>
-     {{/if}}
+     {{/if}} {% endraw %}
     </script>
     <script>
       $(function () {
