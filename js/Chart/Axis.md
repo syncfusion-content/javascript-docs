@@ -1443,9 +1443,24 @@ The [`alignment`](../api/ejchart#members:primaryxaxis-alignment) property is use
 {% highlight javascript %}
 
 $("#container").ejChart({
-    primaryXAxis: { 
+    primaryXAxis: {
         alignment : "far" ,
         labelRotation : 90
+    }  
+});
+
+{% endhighlight %}
+
+### Axis Label Text Anchor
+
+ejChart provides an option to align the rotated x axis labels. The rotateOn property is used to rotate the labels from different positions. It takes string value as input. This property only works when [`labelRotation`](../api/ejchart#members:primaryxaxis-labelrotation) is available. The following code snippet illustrates an example,
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+    primaryXAxis: {
+        labelRotation : 45,
+        rotateOn: 'end'
     }  
 });
 
