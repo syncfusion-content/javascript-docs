@@ -42,7 +42,7 @@ $("#container").ejChart({
 
 
 
-![Category](/js/Chart/Axis_images/Axis_img1.png)
+![Category](Axis_images/Axis_img1.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/column) here to view our online demo sample that uses Category axis.
@@ -68,7 +68,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![Onticks](/js/Chart/Axis_images/Axis_img2.png)
+![Onticks](Axis_images/Axis_img2.png)
 
 
 ### Display labels after a fixed interval
@@ -91,7 +91,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![Interval](/js/Chart/Axis_images/Axis_img3.png)
+![Interval](Axis_images/Axis_img3.png)
 
 
 ### Indexed Category Axis
@@ -117,11 +117,11 @@ Category axis can also plot points based on index value of data points. Index ba
 {% endhighlight %}
 
 
-![Indexed](/js/Chart/Axis_images/Axis_img50.png)
+![Indexed](Axis_images/Axis_img50.png)
 
 **While Category axis isIndexed value false**
 
-![IndexedFalse](/js/Chart/Axis_images/Axis_img51.png)
+![IndexedFalse](Axis_images/Axis_img51.png)
 
 
 ## Numeric Axis 
@@ -143,7 +143,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![Double](/js/Chart/Axis_images/Axis_img4.png)
+![Double](Axis_images/Axis_img4.png)
 
 
 ### Customize numeric range
@@ -168,7 +168,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![Doublerange](/js/Chart/Axis_images/Axis_img5.png)
+![Doublerange](Axis_images/Axis_img5.png)
 
 
 #### Customizing numeric interval
@@ -193,7 +193,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![DInterval](/js/Chart/Axis_images/Axis_img6.png)
+![DInterval](Axis_images/Axis_img6.png)
 
 ### Apply padding to the range
 
@@ -226,7 +226,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% endhighlight %}
 
-![Doublepad](/js/Chart/Axis_images/Axis_img7.png)
+![Doublepad](Axis_images/Axis_img7.png)
 
 
 #### Round
@@ -252,13 +252,13 @@ When the value of [`rangePadding`](../api/ejchart#members:primaryxaxis-rangepadd
 
 **Chart before rounding axis range**
 
-![Rounddouble](/js/Chart/Axis_images/Axis_img8.png)
+![Rounddouble](Axis_images/Axis_img8.png)
 
 
 
 **Chart after rounding axis range**
 
-![AfterDouble](/js/Chart/Axis_images/Axis_img9.png)
+![AfterDouble](Axis_images/Axis_img9.png)
 
 **Additional**
 
@@ -282,7 +282,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% endhighlight %}
 
-![AdditionalDouble](/js/Chart/Axis_images/Axis_img10.png)
+![AdditionalDouble](Axis_images/Axis_img10.png)
 
 
 **Normal**
@@ -307,7 +307,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryyaxis-range
 
 {% endhighlight %}
 
-![NormalDouble](/js/Chart/Axis_images/Axis_img11.png)
+![NormalDouble](Axis_images/Axis_img11.png)
 
 
 #### Customizing the starting range of the axis
@@ -330,7 +330,7 @@ $("#container").ejChart(
 
 {% endhighlight %}
 
-![Startfalse](/js/Chart/Axis_images/Axis_img66.png)
+![Startfalse](Axis_images/Axis_img66.png)
 
 
 ## DateTime Axis
@@ -354,7 +354,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![Datetime](/js/Chart/Axis_images/Axis_img12.png)
+![Datetime](Axis_images/Axis_img12.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/datetimeaxis) here to view our online demo sample for date time axis.
@@ -384,7 +384,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![Datetimerange](/js/Chart/Axis_images/Axis_img13.png)
+![Datetimerange](Axis_images/Axis_img13.png)
 
 
 ### Date time intervals
@@ -421,7 +421,7 @@ Essential Chart supports the following types of interval for date time axis.
 {% endhighlight %}
 
 
-![Datetimeinterval](/js/Chart/Axis_images/Axis_img14.png)
+![Datetimeinterval](Axis_images/Axis_img14.png)
 
 
 ### Apply padding to the range
@@ -450,7 +450,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% endhighlight %} 
 
-![DatetimeRangepad](/js/Chart/Axis_images/Axis_img15.png)
+![DatetimeRangepad](Axis_images/Axis_img15.png)
 
 **Round**
 
@@ -472,12 +472,12 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 **Chart before rounding axis range**
 
-![Datetimeround](/js/Chart/Axis_images/Axis_img16.png)
+![Datetimeround](Axis_images/Axis_img16.png)
 
 
 **Chart after rounding axis range**
 
-![Afterdatetime](/js/Chart/Axis_images/Axis_img17.png)
+![Afterdatetime](Axis_images/Axis_img17.png)
 
 **Additional** 
 
@@ -497,7 +497,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% endhighlight %} 
 
-![Additionaldatetime](/js/Chart/Axis_images/Axis_img18.png)
+![Additionaldatetime](Axis_images/Axis_img18.png)
 
 
 ## DateTime Category Axis
@@ -516,7 +516,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![Datetimecategory](/js/Chart/Axis_images/Axis_img63.png)
+![Datetimecategory](Axis_images/Axis_img63.png)
 
  [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/ChartAxes/DateTimeCategoryAxis) here to view our online demo sample for date time axis.
 
@@ -541,7 +541,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![DateRange](/js/Chart/Axis_images/Axis_img64.png)
+![DateRange](Axis_images/Axis_img64.png)
 
 ### DateTime Category intervals
 
@@ -570,7 +570,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![Datemonths](/js/Chart/Axis_images/Axis_img65.png)
+![Datemonths](Axis_images/Axis_img65.png)
 
 
 ## Logarithmic Axis
@@ -594,7 +594,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 {% endhighlight %}
 
 
-![Log](/js/Chart/Axis_images/Axis_img19.png)
+![Log](Axis_images/Axis_img19.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/logaxis) here to view our online demo sample link for logarithmic axis.
@@ -618,7 +618,7 @@ Logarithmic range can be customized by using the [`range`](../api/ejchart#member
 
 {% endhighlight %}
 
-![LogInterval](/js/Chart/Axis_images/Axis_img20.png)
+![LogInterval](Axis_images/Axis_img20.png)
 
 ### Logarithmic base
 
@@ -639,7 +639,7 @@ Logarithmic base can be customized by using the [`logBase`](../api/ejchart#membe
 
 {% endhighlight %}
 
-![Logbase](/js/Chart/Axis_images/Axis_img21.png)
+![Logbase](Axis_images/Axis_img21.png)
 
 
 ### Logarithmic interval
@@ -661,7 +661,7 @@ Logarithmic axis interval can be customized by using the [`interval`](../api/ejc
 
 {% endhighlight %}
 
-![Logrange](/js/Chart/Axis_images/Axis_img22.png)
+![Logrange](Axis_images/Axis_img22.png)
 
 
 ## Label Format
@@ -686,7 +686,7 @@ Numeric labels can be formatted by using the [`labelFormat`](../api/ejchart#memb
 
 {% endhighlight %}
 
-![Loglabel](/js/Chart/Axis_images/Axis_img23.png)
+![Loglabel](Axis_images/Axis_img23.png)
 
 The following table describes the result of applying some commonly used label formats on numeric values. 
  
@@ -766,7 +766,7 @@ Date time labels can be formatted by using the [`labelFormat`](../api/ejchart#me
 
 {% endhighlight %}
 
-![Labelformat](/js/Chart/Axis_images/Axis_img24.png)
+![Labelformat](Axis_images/Axis_img24.png)
 
 
 The following table describes the result of applying some common date time formats to the labelFormat property
@@ -833,7 +833,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![Customlabel](/js/Chart/Axis_images/Axis_img25.png)
+![Customlabel](Axis_images/Axis_img25.png)
 
 
 ## Common axis features
@@ -860,7 +860,7 @@ Axis can be positioned anywhere in chart area using the [`crossesAt`](../api/ejc
 
 {% endhighlight %}
 
-![Crosses](/js/Chart/Axis_images/Axis_img52.png)
+![Crosses](Axis_images/Axis_img52.png)
 
 
 #### Crossing a specific Axis
@@ -894,7 +894,7 @@ The [`crossesInAxis`](../api/ejchart#members:primaryxaxis-crossesinaxis) propert
 
 {% endhighlight %}
 
-![Axes](/js/Chart/Axis_images/Axis_img53.png)
+![Axes](Axis_images/Axis_img53.png)
 
 Axis will be placed in the opposite side if value of [`crossesAt`](../api/ejchart#members:primaryxaxis-crossesat) property is greater than the maximum value of crossing axis (axis name provided through [`crossesInAxis`](../api/ejchart#members:primaryxaxis-crossesinaxis) property or primary Y axis for horizontal axis).
 
@@ -913,7 +913,7 @@ Axis will be placed in the opposite side if value of [`crossesAt`](../api/ejchar
 
 {% endhighlight %}
 
-![Ycrosses](/js/Chart/Axis_images/Axis_img54.png)
+![Ycrosses](Axis_images/Axis_img54.png)
 
 
 #### Crossing in DateTime Axis
@@ -936,7 +936,7 @@ For crossing in a date time horizontal axis, date object should be provided as v
 
 {% endhighlight %}
 
-![Datecrosses](/js/Chart/Axis_images/Axis_img55.png)
+![Datecrosses](Axis_images/Axis_img55.png)
 
 
 #### Crossing in Category Axis
@@ -962,7 +962,7 @@ W> String value provided for [`crossesAt`](../api/ejchart#members:primaryxaxis-c
 
 {% endhighlight %}
 
-![Stringcrosses](/js/Chart/Axis_images/Axis_img56.png)
+![Stringcrosses](Axis_images/Axis_img56.png)
 
 #### Positioning the axis elements while crossing
 The [`showNextToAxisLine`](../api/ejchart#members:primaryxaxis-shownexttoaxisline) property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set as false only the axis line and the tick lines are placed at the crossing Value and the axis elements will be placed outside the chart area. The default value of [`showNextToAxisLine`](../api/ejchart#members:primaryxaxis-shownexttoaxisline) is **true**.  
@@ -985,7 +985,7 @@ The [`showNextToAxisLine`](../api/ejchart#members:primaryxaxis-shownexttoaxislin
 
 The axis is placed at the crossing value without the axis elements 
 
-![NextAxis](/js/Chart/Axis_images/Axis_img67.png)
+![NextAxis](Axis_images/Axis_img67.png)
 
 ### Axis Visibility
 
@@ -1007,7 +1007,7 @@ Axis visibility can be controlled by using the [`visible`](../api/ejchart#member
 
 {% endhighlight %}
 
-![AxisVisibility](/js/Chart/Axis_images/Axis_img26.png)
+![AxisVisibility](Axis_images/Axis_img26.png)
 
 
 ### Axis title
@@ -1040,7 +1040,7 @@ The [`title`](../api/ejchart#members:primaryxaxis-title) property in the axis pr
 
 {% endhighlight %}
 
-![Maximumtitle](/js/Chart/Axis_images/Axis_img27.png)
+![Maximumtitle](Axis_images/Axis_img27.png)
 
 You can modify the position of the axis title either inside or outside the chart area using the property [`position`]. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far and center by [`alignment`] property, using [`offset`] property you can change the position with respect to pixels.
 
@@ -1065,7 +1065,7 @@ You can modify the position of the axis title either inside or outside the chart
 
 {% endhighlight %}
 
-![Offset](/js/Chart/Axis_images/Axis_img62.png)
+![Offset](Axis_images/Axis_img62.png)
 
 ### Label customization
 
@@ -1093,7 +1093,7 @@ The [`font`](../api/ejchart#members:primaryxaxis-font) property of the axis prov
 
 {% endhighlight %}
 
-![Labelcustom](/js/Chart/Axis_images/Axis_img28.png)
+![Labelcustom](Axis_images/Axis_img28.png)
 
 #### Axis Labels Line Break
 
@@ -1120,7 +1120,7 @@ For category value type, **<br>** can be specified in x value of data points.
 
 {% endhighlight %}
 
-![Linebreak](/js/Chart/Axis_images/Axis_img68.png)
+![Linebreak](Axis_images/Axis_img68.png)
 
 [JS Playground Sample](http://jsplayground.syncfusion.com/zsaomrq5)
 
@@ -1138,7 +1138,7 @@ For numeric, datetime and datetimeCategory value type, **<br>** can be specified
 
 {% endhighlight %}
 
-![Format](/js/Chart/Axis_images/Axis_img69.png)
+![Format](Axis_images/Axis_img69.png)
 
 [JS Playground Sample](http://jsplayground.syncfusion.com/fllsqowe)
 
@@ -1163,7 +1163,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 {% endhighlight %}
 
-![Textposition](/js/Chart/Axis_images/Axis_img29.png)
+![Textposition](Axis_images/Axis_img29.png)
 
 
 ### Edge labels placement
@@ -1187,12 +1187,12 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 **Chart before setting edge label placement to X-axis**
 
-![Xaxisplacement](/js/Chart/Axis_images/Axis_img30.png)
+![Xaxisplacement](Axis_images/Axis_img30.png)
 
 
 **Chart after setting edge label placement to X-axis**
 
-![Edgelabel](/js/Chart/Axis_images/Axis_img31.png)
+![Edgelabel](Axis_images/Axis_img31.png)
 
 
 ### Grid lines customization
@@ -1223,7 +1223,7 @@ The [`majorGridLines`](../api/ejchart#members:primaryxaxis-majorgridlines) and [
 
 {% endhighlight %}
 
-![Gridline](/js/Chart/Axis_images/Axis_img32.png)
+![Gridline](Axis_images/Axis_img32.png)
 
 
 ### Tick lines customization
@@ -1257,7 +1257,7 @@ The [`majorTickLines`](../api/ejchart#members:primaryxaxis-majorticklines) and [
 
 {% endhighlight %}
 
-![Tickline](/js/Chart/Axis_images/Axis_img33.png)
+![Tickline](Axis_images/Axis_img33.png)
 
   
 ### Inversing axis
@@ -1282,12 +1282,12 @@ Axis can be inversed by using the [`isInversed`](../api/ejchart#members:primaryx
 
 **Chart before inversing the axes**
 
-![BeforeInversed](/js/Chart/Axis_images/Axis_img34.png)
+![BeforeInversed](Axis_images/Axis_img34.png)
 
 
 **Chart after inversing the axes**
 
-![Afterinversed](/js/Chart/Axis_images/Axis_img35.png)
+![Afterinversed](Axis_images/Axis_img35.png)
 
    
 
@@ -1313,12 +1313,12 @@ The [`opposedPosition`](../api/ejchart#members:primaryxaxis-opposedposition) pro
 
 **Chart with X and Y axes at normal position**
 
-![Normalposition](/js/Chart/Axis_images/Axis_img36.png)
+![Normalposition](Axis_images/Axis_img36.png)
 
 
 **Chart with Y-axis at opposed position**
 
-![Opposed](/js/Chart/Axis_images/Axis_img37.png)
+![Opposed](Axis_images/Axis_img37.png)
 
 
 ### Maximum number of labels per 100 pixels
@@ -1343,12 +1343,12 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 **Chart before setting maximum labels per 100 pixels**
 
-![Maxlabelbefore](/js/Chart/Axis_images/Axis_img38.png)
+![Maxlabelbefore](Axis_images/Axis_img38.png)
 
 
 **Chart after setting maximum labels one per 100 pixels**
 
-![Maxlabelafter](/js/Chart/Axis_images/Axis_img39.png)
+![Maxlabelafter](Axis_images/Axis_img39.png)
 
 ### Alternate Grid Band
 
@@ -1577,7 +1577,7 @@ $("#container").ejChart({
 
 Multiple axes can be used in the Chart and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
-![Multipleimage1](/js/Chart/Axis_images/Axis_img40.png)
+![Multipleimage1](Axis_images/Axis_img40.png)
 
 An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **axes** collection and then you can associate it to a series by specifying the name of the axis to the [`xAxisName`](../api/ejchart#members:series-xaxisname) or [`yAxisName`](../api/ejchart#members:series-yaxisname) property of the series.
 
@@ -1615,7 +1615,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 
 
-![Multipleimage2](/js/Chart/Axis_images/Axis_img41.png)
+![Multipleimage2](Axis_images/Axis_img41.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/multipleaxes) here to view the multiple axis online demo sample.
 
@@ -1642,7 +1642,7 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 
 
-![Smartaxis](/js/Chart/Axis_images/Axis_img42.png)
+![Smartaxis](Axis_images/Axis_img42.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/smartaxislabels) here to view our online demo sample for smart axis labels.
@@ -1651,37 +1651,37 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **rotate45**.
 
-![Labelintersect45](/js/Chart/Axis_images/Axis_img43.png)
+![Labelintersect45](Axis_images/Axis_img43.png)
 
 
 The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **rotate90**.
 
-![Labelintersect90](/js/Chart/Axis_images/Axis_img44.png)
+![Labelintersect90](Axis_images/Axis_img44.png)
 
 
 The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **wrap**.
 
-![Labelintersectwrap](/js/Chart/Axis_images/Axis_img45.png)
+![Labelintersectwrap](Axis_images/Axis_img45.png)
 
 
 The following screenshot displays the result, when of setting the **trim** as value to the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property.
 
-![Labelintersecttrim](/js/Chart/Axis_images/Axis_img46.png)
+![Labelintersecttrim](Axis_images/Axis_img46.png)
 
 
 The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **hide**.
 
-![Labelintersecthide](/js/Chart/Axis_images/Axis_img47.png)
+![Labelintersecthide](Axis_images/Axis_img47.png)
 
 
 The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **multipleRows **.
 
-![Labelintersectmultiple](/js/Chart/Axis_images/Axis_img48.png)
+![Labelintersectmultiple](Axis_images/Axis_img48.png)
 
 
 The following screenshot displays the result, when the [`labelIntersectAction`](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **wrapByWord**.
 
-![Labelintersectword](/js/Chart/Axis_images/Axis_img49.png)
+![Labelintersectword](Axis_images/Axis_img49.png)
 
 ## Multi-level Labels
 Axis can be customized with multiple levels of labels using the [`multiLevelLabels`](../api/ejchart#members:primaryxaxis-multilevellabels) property. These labels are placed based on the [`start`](../api/ejchart#members:primaryxaxis-multilevellabels-start) and [`end`](../api/ejchart#members:primaryxaxis-multilevellabels-end) range values and we can add any number of labels to an axis. You can customize the [`text`](../api/ejchart#members:primaryxaxis-multilevellabels-text) for each level, visibility of multi level label by [`visible`](../api/ejchart#members:primaryxaxis-multilevellabels-visible) property, alignment of text using [`textAlignment`](../api/ejchart#members:primaryxaxis-multilevellabels-textalignment), [`level`](../api/ejchart#members:primaryxaxis-multilevellabels-level) of multi level labels, [`maximumTextWidth`](../api/ejchart#members:primaryxaxis-multilevellabels-maximumtextwidth) of multi level label text, overflow of text using [`textOverflow`](../api/ejchart#members:primaryxaxis-multilevellabels-textoverflow), [`font`](../api/ejchart#members:primaryxaxis-multilevellabels-font) [`color`](../api/ejchart#members:primaryxaxis-multilevellabels-font-color), [`fontFamily`](../api/ejchart#members:primaryxaxis-multilevellabels-font-fontfamily), [`fontStyle`](../api/ejchart#members:primaryxaxis-multilevellabels-font-fontstyle), [`fontWeight`](../api/ejchart#members:primaryxaxis-multilevellabels-font-fontweight), [`opacity`](../api/ejchart#members:primaryxaxis-multilevellabels-font-opacity), [`size`](../api/ejchart#members:primaryxaxis-multilevellabels-font-size), [`border`](../api/ejchart#members:primaryxaxis-multilevellabels-border) [`color`](../api/ejchart#members:primaryxaxis-multilevellabels-border-color), [`width`](../api/ejchart#members:primaryxaxis-multilevellabels-border-width) and [`type`](../api/ejchart#members:primaryxaxis-multilevellabels-border-type) of labels.
@@ -1703,7 +1703,7 @@ Axis can be customized with multiple levels of labels using the [`multiLevelLabe
 
 {% endhighlight %}
 
-![Multi-level](/js/Chart/Axis_images/Axis_img57.png)
+![Multi-level](Axis_images/Axis_img57.png)
 
 ### Customizing the multi-Level labels
 The color, width and type of the border can be customized. The default border type is [`Rectangle`]. And the other supported border types are namely brace, curly brace, without top/bottom border and none. 
@@ -1728,7 +1728,7 @@ The color, width and type of the border can be customized. The default border ty
 
 {% endhighlight %}
 
-![Multi-levelcustom](/js/Chart/Axis_images/Axis_img58.png)
+![Multi-levelcustom](Axis_images/Axis_img58.png)
 
 The text of the labels can be customized using the [`text`] and [`font`] properties 
 
@@ -1753,7 +1753,7 @@ The text of the labels can be customized using the [`text`] and [`font`] propert
 
 {% endhighlight %}
 
-![Multi-levelfont](/js/Chart/Axis_images/Axis_img59.png)
+![Multi-levelfont](Axis_images/Axis_img59.png)
 
 You can change the alignment of the text to far, near and center position using the [`textAlignment`] property. By default, the text will be center aligned. 
 
@@ -1773,7 +1773,7 @@ You can change the alignment of the text to far, near and center position using 
 
 {% endhighlight %}
 
-![Multi-levelalignment](/js/Chart/Axis_images/Axis_img60.png)
+![Multi-levelalignment](Axis_images/Axis_img60.png)
 
 You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property [`textOverflow`]
 
@@ -1796,7 +1796,7 @@ You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width 
 
 The below screenshot shows the trimmed multi-level labels
 
-![Multi-leveltrim](/js/Chart/Axis_images/Axis_img61.png)
+![Multi-leveltrim](Axis_images/Axis_img61.png)
 
 And these labels can be placed in various rows using the [`level`] property.
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/chartaxes/multi-levellabels) here to view the multi-level labels online demo sample.
