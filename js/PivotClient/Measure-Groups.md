@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Measure-Groups with PivotClient widget for Syncfusion Essential JS
-description: measure groups
+description: This document illustrates that how to define measure groups and functionalities in JavaScript PivotClient control
 platform: js
 control: PivotClient
 documentation: ug

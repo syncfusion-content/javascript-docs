@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview | JavaScript | PivotTreeMap | Syncfusion
+description: It is an overview of PivotTreeMap control in JavaScript platform. PivotTreeMap visualizes relational and OLAP data in the form of nested nodes
 platform: js
 control: PivotTreeMap
 documentation: ug

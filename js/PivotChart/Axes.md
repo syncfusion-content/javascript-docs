@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axes with PivotChart widget for Syncfusion Essential JS
-description: axes
+description: This document illustrates that how to define chart axes and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug

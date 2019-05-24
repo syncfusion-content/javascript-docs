@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save and Load Report with PivotGrid widget for Syncfusion Essential JS
-description: save and load report
+description: This document illustrates that how to save and load report to database in JavaScript PivotGrid control 
 platform: js
 control: PivotGrid
 documentation: ug

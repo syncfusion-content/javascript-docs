@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KPI with PivotClient widget for Syncfusion Essential JS
-description: key performance indicator (KPI)
+description: This document illustrates that how to enable key performance indicator (KPI) in JavaScript PivotClient control
 platform: js
 control: PivotClient
 documentation: ug

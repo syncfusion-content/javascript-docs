@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: localization
+title: Localization | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to define localization with respective to the modes in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -78,7 +78,7 @@ In server mode, you should set **"Culture"** and **"OverrideDefaultFormatStrings
 
 {% endhighlight %}
 
-![](Localization_images/Localization.png)
+![Localization in JavaScript pivot gauge control](Localization_images/Localization.png)
 
 ## RTL
 You can enable or disable the right to left alignment by using the [`enableRTL`](/api/js/ejpivotgauge#members:enablertl) property in the pivot gauge.
@@ -91,6 +91,6 @@ $("#PivotGauge1").ejPivotGauge({
 
 {% endhighlight %}
 
-![](Localization_images/RTL.png)
+![RTL in JavaScript pivot gauge control](Localization_images/RTL.png)
 
 N> RTL is applicable only for the tooltip of the pivot gauge.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom-Labels
-description: custom labels
+title: Custom-Labels | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to enable custom labels and its functionalities in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug

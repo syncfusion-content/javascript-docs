@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks
-description: ticks
+title: Ticks | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to enable ticks and its customization in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -60,5 +60,5 @@ The appearance of the tick can be customized through the following properties:
 
 {% endhighlight %}
 
-![](Ticks_images/TickCustomization.png) 
+![Ticks in JavaScript pivot gauge control](Ticks_images/TickCustomization.png) 
 

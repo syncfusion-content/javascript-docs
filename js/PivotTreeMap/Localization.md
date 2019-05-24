@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: localization 
+title: Localization| JavaScript | PivotTreeMap | Syncfusion
+description: This document illustrates that how to define localization with respective to the modes in JavaScript PivotTreeMap control 
 platform: js
 control: PivotTreeMap
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Filtering | Sorting | PivotClient | Syncfusion JS
-description: advanced filtering and sorting
+description: This document illustrates that how to define advance filtering and sorting with respective to the modes in JavaScript PivotClient control
 platform: js
 control: PivotClient
 documentation: ug

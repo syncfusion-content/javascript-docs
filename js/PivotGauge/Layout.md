@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout
-description: layout 
+title: Layout | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to define layouts and its functionalities in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -23,7 +23,7 @@ Gauges can be arranged in the specified number of rows by using the [`rowsCount`
 
 {% endhighlight %}
 
-![](Layout_images/Row-wiseLayout.png) 
+![Row-wise layout in JavaScript pivot gauge control](Layout_images/Row-wiseLayout.png) 
 
 ## Column-wise layout
 
@@ -38,5 +38,5 @@ Gauges can be arranged in the specified number of columns by using the [`columns
 
 {% endhighlight %}
 
-![](Layout_images/Column-wiseLayout.png)
+![Column-wise layout in JavaScript pivot gauge control](Layout_images/Column-wiseLayout.png)
 
