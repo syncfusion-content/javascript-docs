@@ -64,7 +64,7 @@ The appearance of the custom labels can be changed through the following propert
 
 {% endhighlight %}
 
-![](Custom-Labels_images/AppearanceCustomization.png) 
+![Custom label customization in JavaScript PivotGauge control](Custom-Labels_images/AppearanceCustomization.png) 
 
 ## Multiple custom labels
 
@@ -119,4 +119,4 @@ Multiple custom labels can be set to a pivot gauge widget by adding an array of 
 
 {% endhighlight %}
 
-![](Custom-Labels_images/MultipleCustomLabels.png) 
+![Multiple custom labels in JavaScript PivotGauge control](Custom-Labels_images/MultipleCustomLabels.png) 

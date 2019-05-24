@@ -48,5 +48,5 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
 
-![](Localization_images/localization.png) 
+![Localization in JavaScript PivotTreeMap control](Localization_images/localization.png) 
 
