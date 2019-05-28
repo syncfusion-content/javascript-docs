@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Repeat-Button
+title: Repeat-Button | Syncfusion
 description: repeat button
 platform: js
 control: Button
