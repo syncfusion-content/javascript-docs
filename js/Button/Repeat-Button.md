@@ -71,5 +71,5 @@ Configure the **CSS** styles to apply on button
 
 Execute the above code to render the following output.
 
-![](/js/Button/Repeat-Button_images/Repeat-Button_img1.png) 
+![HTML/JavaScript Repeat button](/js/Button/Repeat-Button_images/Repeat-Button_img1.png) 
 
