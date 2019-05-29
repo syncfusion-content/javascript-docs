@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web Accessibility
+title: Syncfusion Web Accessibility
 description: This section explains how to enable web accessibility support on the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
