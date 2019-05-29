@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series with PivotChart widget for Syncfusion Essential JS
-description: series
+description: This document illustrates that how to enable series and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive with PivotGrid widget for Syncfusion Essential JS
-description: responsive
+description: This document illustrates that how to enable responsive layout rendering in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug

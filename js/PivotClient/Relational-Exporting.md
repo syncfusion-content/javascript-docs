@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting with PivotClient widget for Syncfusion Essential JS
-description: export
+description: This document illustrates that how to define exporting and its customization in JavaScript PivotClient control with relational mode
 platform: js
 control: PivotClient
 documentation: ug

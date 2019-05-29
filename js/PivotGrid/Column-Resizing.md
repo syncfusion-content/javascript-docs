@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Column Resizing with PivotGrid widget for Syncfusion Essential JS
-description: column resizing
+description: This document illustrates that how to enable column resizing feature and its customization through API in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug

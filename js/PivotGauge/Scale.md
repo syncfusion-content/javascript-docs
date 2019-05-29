@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scale
-description: scale
+title: Scale | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to enable scales and its customization in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -26,7 +26,7 @@ The scale can be added within the pivot gauge widget as an array.
     });
 {% endhighlight %}
 
-![](Scale_images/AddingScale.png) 
+![Scale in JavaScript pivot gauge control](Scale_images/AddingScale.png) 
 
 ## Scale customization
 
@@ -57,7 +57,7 @@ The pointer cap is a circular shape element that is located at the center of the
 
 {% endhighlight %}
 
-![](Scale_images/PointerCap.png) 
+![Pointer cap in JavaScript pivot gauge control](Scale_images/PointerCap.png) 
 
 ### Appearance
 
@@ -99,4 +99,4 @@ The `showIndicators`, `showTicks`, `showRanges`, `showPointers`, and `showScaleB
 
 {% endhighlight %} 
 
-![](Scale_images/Appearance.png) 
+![Scale appearance in JavaScript pivot gauge control](Scale_images/Appearance.png) 

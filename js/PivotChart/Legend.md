@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend with PivotChart widget for Syncfusion Essential JS
-description: legend
+description: This document illustrates that how to define legend and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug
