@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3D-Visualization with PivotChart widget for Syncfusion Essential JS
-description: 3d visualization
+description: This document illustrates that how to define 3d visualization and its types in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug

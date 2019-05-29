@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Filtering | Sorting | PivotGrid |Syncfusion | JS
-description: advance filtering and sorting
+description: This document describes how to define advance filtering and sorting with respective to the modes in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview | JavaScript | PivotChart | Syncfusion
+description: It is an overview of PivotChart control in JavaScript platform. PivotChart visualizes relational and OLAP data sources in a graphical format
 platform: js
 control: PivotChart
 documentation: ug

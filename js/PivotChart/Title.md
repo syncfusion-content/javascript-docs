@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Title with PivotChart widget for Syncfusion Essential JS
-description: title
+description: This document illustrates that how to enable title and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug

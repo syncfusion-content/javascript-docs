@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Format String with PivotGrid widget for Syncfusion Essential JS
-description: Format String
+description: This document illustrates that how to define format string along with format in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-### Format Strings
+# Format Strings
 
 I> This feature is applicable only for the relational data source at client mode.
 

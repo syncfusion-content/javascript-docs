@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pointers
-description: pointers
+title: Pointers | JavaScript | PivotGauge | Syncfusion 
+description: This document illustrates that how to enable pointers and its customization in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -40,7 +40,7 @@ Needle type pointers are the default pointers that are always located at the cen
 
 {% endhighlight %}
 
-![](Pointers_images/NeedlePointer.png) 
+![Needle pointer in JavaScript pivot gauge control](Pointers_images/NeedlePointer.png) 
 
 For marker pointer, the available shapes are rectangle, triangle, ellipse, diamond, pentagon, circle, slider, pointer, wedge, trapezoid, rounded rectangle, and image.
 
@@ -59,7 +59,7 @@ For marker pointer, the available shapes are rectangle, triangle, ellipse, diamo
 
 {% endhighlight %}
 
-![](Pointers_images/MarkerPointer.png) 
+![Marker pointer in JavaScript pivot gauge control](Pointers_images/MarkerPointer.png) 
 
 ## Adding pointer collection
 
@@ -85,7 +85,7 @@ The pointer collection can be directly added to the scales option within the piv
     });
 {% endhighlight %}
 
-![](Pointers_images/AddingPointerCollection.png)
+![Collection of pointers in JavaScript pivot gauge control](Pointers_images/AddingPointerCollection.png)
 
 ## Appearance customization
 
@@ -135,7 +135,7 @@ The appearance of the pointer can be customized through the following properties
 
 {% endhighlight %}
 
-![](Pointers_images/AppearanceCustomization.png)
+![Custom appearance of JavaScript pivot gauge control](Pointers_images/AppearanceCustomization.png)
  
 ## Pointer position
 
@@ -163,7 +163,7 @@ N> Both the properties can be applied only if the pointer type is set to marker.
 
 {% endhighlight %}
 
-![](Pointers_images/PointerPosition.png) 
+![Pointer position in JavaScript pivot gauge control](Pointers_images/PointerPosition.png) 
  
 ## Pointer image
 
@@ -191,7 +191,7 @@ It is possible to replace the pointers with an image. To view the pointers as an
     });
 {% endhighlight %}
 
-![](Pointers_images/PointerImage.png) 
+![Pointer image in JavaScript pivot gauge control](Pointers_images/PointerImage.png) 
 
 ## Pointer value text
 
@@ -245,4 +245,4 @@ To display the current value of pointers in the pivot gauge widget, the `pointer
 
 {% endhighlight %}
 
-![](Pointers_images/PointerValueText.png)
+![Pointer value text in JavaScript pivot gauge control](Pointers_images/PointerValueText.png)

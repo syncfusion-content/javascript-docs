@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell-Editing with PivotGrid widget for Syncfusion Essential JS
-description: cell editing
+description: This document illustrates that how to enable cell editing feature through API in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug

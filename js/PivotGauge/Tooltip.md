@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip
-description: tooltip
+title: Tooltip | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to enable tooltip and its customization in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -40,5 +40,5 @@ The tooltip appearance can be customized by overriding its CSS class.
 
 {% endhighlight %}
     
-![](Tooltip_images/Tooltip.png) 
+![Tooltip in JavaScript pivot gauge control](Tooltip_images/Tooltip.png) 
 

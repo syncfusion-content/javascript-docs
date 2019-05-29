@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Value-Sorting with PivotGrid widget for Syncfusion Essential JS
-description: value Sorting
+description: This document illustrates that how to define value sorting and its functionalities in JavaScript Pivotgrid control
 platform: js
 control: PivotGrid
 documentation: ug

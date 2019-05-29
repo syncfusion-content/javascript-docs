@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frame-Type
-description: frame type
+title: Frame-Type | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to define frames and its types with respective to the angles and scales in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
