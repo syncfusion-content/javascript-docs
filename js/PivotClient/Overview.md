@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview | JavaScript | PivotClient | Syncfusion
+description: It is an overview of PivotClient control in JavaScript platform. PivotClient visualizes relational and OLAP data sources in a graphical and tabular formats
 platform: js
 control: PivotClient
 documentation: ug

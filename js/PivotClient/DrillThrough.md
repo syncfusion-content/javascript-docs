@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Drill Through with PivotClient widget for Syncfusion Essential JS
-description:  drill through
+description:  This document explains that how to define drill through feature with respective to the modes in JavaScript PivotClient control
 platform: js
 control: PivotClient
 documentation: ug

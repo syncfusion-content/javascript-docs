@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting with PivotGrid widget for Syncfusion Essential JS
-description: export
+description: This document illustrates that how to define exporting and its customization in JavaScript PivotGrid control with relational mode
 platform: js
 control: PivotGrid
 documentation: ug

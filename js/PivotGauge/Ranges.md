@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ranges
-description: ranges
+title: Ranges | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to enable ranges and its customization in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -81,7 +81,7 @@ N> By default, the placement takes the value "near", whereas other enumeration v
 
 {% endhighlight %}
 
-![](Ranges_images/AppearanceCustomization.png) 
+![Custom appearance of ranges in JavaScript pivot gauge control](Ranges_images/AppearanceCustomization.png) 
 
 N> When you set both the position properties - "distanceFromScale" and "placement" for a range, the preference is given to the value that is set in the "distanceFromScale" property.
 
@@ -120,4 +120,4 @@ Multiple ranges can be added by placing an array of objects in the `ranges` opti
 
 {% endhighlight %}
 
-![](Ranges_images/MultipleRanges.png) 
+![Multiple ranges in JavaScript pivot gauge control](Ranges_images/MultipleRanges.png) 

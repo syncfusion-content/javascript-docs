@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting with PivotChart widget for Syncfusion Essential JS
-description: export
+description: This document illustrates that how to define exporting and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug

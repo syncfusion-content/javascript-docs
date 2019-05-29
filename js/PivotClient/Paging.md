@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging with PivotClient widget for Syncfusion Essential JS
-description: paging
+description: This document illustrates that how to define paging with respective to the modes in JavaScript PivotClient control
 platform: js
 control: PivotClient
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization with PivotClient widget for Syncfusion Essential JS
-description: Localization and Globalization
+description: This document illustrates that how to define Localization and Globalization in JavaScript PivotClient control
 platform: js
 control: PivotClient
 documentation: ug

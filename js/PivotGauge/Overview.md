@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview | JavaScript | PivotGauge | Syncfusion
+description: It is an overview of PivotGauge control in JavaScript platform. PivotGauge visualizes relational and OLAP data sources in the form of circular gauge
 platform: js
 control: PivotGauge
 documentation: ug

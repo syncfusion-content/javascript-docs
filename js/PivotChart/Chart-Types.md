@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-Types with PivotChart widget for Syncfusion Essential JS
-description: chart types
+description: This document illustrates that how to define chart types and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug

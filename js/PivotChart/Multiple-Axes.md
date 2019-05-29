@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple-Axes with PivotChart widget for Syncfusion Essential JS
-description: multiple axes
+description: This document illustrates that how to define multiple-axes and its properties in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug

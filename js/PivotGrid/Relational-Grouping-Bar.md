@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping-Bar with PivotGrid widget for Syncfusion Essential JS
-description: grouping bar
+description: This document illustrates that how to enable grouping bar feature and its functionalities in JavaScript PivotGrid control with relational mode
 platform: js
 control: PivotGrid
 documentation: ug

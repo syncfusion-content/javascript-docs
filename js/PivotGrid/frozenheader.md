@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Frozen Header with PivotGrid widget for Syncfusion Essential JS
-description:  frozen header
+description:  This document illustrates that how to enable frozen header feature and its options in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug
