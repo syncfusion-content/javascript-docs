@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Prioritization of cards
-description: The priority property is used to reorder the cards position in any desired place by dropping the card in Kanban board.
+title:  Essential EJ1 Syncfusion Kanban Prioritization of cards
+description: The priority property is used to reorder the cards position in any desired place by dropping the card in Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
 keywords: card priority
