@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Kanban Editing
+title: Essential EJ1 Syncfusion Kanban Editing
 description: This section explains how to enable different editing mode on the Syncfusion JavaScript Essential JS 1 Kanban component.
 documentation: ug
 platform: js

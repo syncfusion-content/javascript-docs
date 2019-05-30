@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Print with Kanban widget for Syncfusion Essential JS
+title:  Essential EJ1 Syncfusion Kanban Print
 description: This section explains how to perform printing feature using the Syncfusion JavaScript ejKanban component.
 documentation: ug
 platform: js
