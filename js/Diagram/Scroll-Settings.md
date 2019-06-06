@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Read the current scroll status and programmatically pan Diagrams
-description: How to read/modify the scroll status of the Diagram?
+title: Scroll-Settings | Diagram | JavaScript | Syncfusion
+description: This section explains about how to read/modify the scroll status of the ejDiagram?
 platform: js
 control: Diagram
 documentation: ug

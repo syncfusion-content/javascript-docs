@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create a preview of the entire content of the Diagram
-description: How to see the preview of the large Diagrams and to ease navigations within that Diagram?
+title: Overview-Control | Diagram | Javascript | Syncfusion
+description: This section explains how to see a preview or an overall view of the entire content of a ejDiagram.
 platform: js
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate Diagram from external data sources
-description: How to populate the Diagram from the local data, remote data, or html tables?
+title: Data-Binding | Diagram | Javascript | Syncfusion
+description: This section explains how to populate the Diagram from the local data, remote data, or HTML tables in Diagram control.
 platform: js
 control: Diagram
 documentation: ug

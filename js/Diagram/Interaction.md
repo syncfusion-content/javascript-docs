@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactively edit nodes and connectors during runtime
-description: How to select and edit nodes and connectors during runtime?
+title: Interaction | Diagram | Javascript | Syncfusion
+description: This section explains about how to select and edit the nodes and connectors during runtime in ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug

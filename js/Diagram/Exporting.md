@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export Diagram content as image/svg files
-description: How to export the Diagram as image/svg?
+title: Exporting | Diagram | Javascript | Syncfusion
+description: This section explains about how to export the ejDiagram content as image or svg files.
 platform: js
 control: Diagram
 documentation: ug

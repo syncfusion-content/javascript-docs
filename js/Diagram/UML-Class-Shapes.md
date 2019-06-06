@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Visually represents a static view of an application
-description: How to visually represent the business logic as class diagram? 
+title:  UML-Class-Shapes | Diagram | Javascript | Syncfusion
+description: This section explains about how to visually represent the business logic as class ejDiagram.
 platform: js
 control: Diagram
 documentation: ug

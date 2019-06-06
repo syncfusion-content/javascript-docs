@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Visually represents a static view of an application
-description: How to visually represent the behavior process of a system? 
+title:  UML-Activity-Shapes | Diagram | Javascript | Syncfusion
+description: This section explains how to visually represent a business process and the relationships among its functional blocks.
 platform: js
 control: Diagram
 documentation: ug

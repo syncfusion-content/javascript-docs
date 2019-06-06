@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visually represents the internal business procedures and the communication among them
-description: How to graphically notate the internal business procedure? 
+title: BPMN-Shapes | Diagram | Javascript | Syncfusion
+description: This section explains about how to graphically notate the internal business procedure in ejDiagram control? 
 platform: js
 control: Diagram
 documentation: ug

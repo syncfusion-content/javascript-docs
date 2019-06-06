@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add text annotations to Diagram objects to textually describe them
-description: How to textually describe nodes and connectors?
+title: Label | Diagram | Javascript | Syncfusion
+description: This section explains how to use Essential ejDiagram control Label's functionality and its behavior.
 platform: js
 control: Diagram
 documentation: ug

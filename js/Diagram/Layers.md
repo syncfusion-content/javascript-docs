@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Organize related shapes on a diagram page.
-description: How to control the set of specific nodes on the diagram page?.
+title: Layers | Diagram | Javascript | Syncfusion
+description: This section explains about how to control the set of specific nodes on the diagram page.
 platform: js
 control: Diagram
 documentation: ug

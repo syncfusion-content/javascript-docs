@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add gridlines behind nodes and connectors to ease alignments
-description: How to add gridlines behind nodes and connectors?
+title: GridLines | Diagram | Javascript | Syncfusion
+description: This section explains how to add the functionalities of the gridlines behind nodes and connectors in ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug
@@ -113,9 +113,9 @@ $(function() {
 
 ![](/js/Diagram/Gridlines_images/Gridlines_img2.png)
 
-# Snapping
+## Snapping
 
-## Snap To Lines
+### Snap To Lines
 
 This feature allows the Diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
@@ -140,7 +140,7 @@ $(function() {
 
 To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/js/Diagram/Constraints#SnapConstraints "Constraints")
 
-## Customization of Snap Intervals
+### Customization of Snap Intervals
 
 By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, horizontalGridLines's [snapInterval](/api/js/ejdiagram#members:snapsettings-horizontalgridlines-snapinterval "snapInterval") and verticalGridLines's [snapInterval](/api/js/ejdiagram#members:snapsettings-verticalgridlines-snapinterval "snapInterval") property. 
 
@@ -167,7 +167,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-## Snap To Objects
+### Snap To Objects
 
 The snap-to-object provides visual cues to assist with aligning and spacing Diagram elements. A node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as smart guides.
 
