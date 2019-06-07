@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visually represent a business process with its functional blocks/departments
-description: How to visually represent a business process and the relationships among its functional blocks?
+title: Swimlane | Diagram | JavaScript | Syncfusion
+description: This section explains about how to visually represent a business process and the relationships among its functional blocks.
 platform: js
 control: Control Name undefined
 documentation: ug
@@ -68,7 +68,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Swim-lane_images/Swim-lane_img2.png)
+![Adding swimlane to diagram](Swim-lane_images/Swim-lane_img2.png)
 
 ## Headers
 
@@ -109,7 +109,7 @@ diagram.updateNode("swimlaneName", { header: {fontColor:"white"} })
 
 {% endhighlight %}
 
-![](/js/Diagram/Swim-lane_images/Swim-lane_img3.png)
+![Headers for Swimlane](Swim-lane_images/Swim-lane_img3.png)
 
 ### Update Header
 
@@ -304,7 +304,7 @@ var swimlane = {
 
 {% endhighlight %}
 
-![](/js/Diagram/Swim-lane_images/Swim-lane_img4.png)
+![Adding nodes to a lane](Swim-lane_images/Swim-lane_img4.png)
 
 ## Add lane at runtime
 
@@ -376,7 +376,7 @@ var swimlane = {
 
 {% endhighlight %}
 
-![](/js/Diagram/Swim-lane_images/Swim-lane_img5.png)
+![Adding new phase to the lane](Swim-lane_images/Swim-lane_img5.png)
 
 ### Add phase at runtime
 

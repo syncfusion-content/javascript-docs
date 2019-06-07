@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ruler is used to measure the distance of nodes and connectors from origin of the page.
-description: how to measure the distance of Nodes and Connectors?
+title: Rulers | Diagram | Javascript | Syncfusion
+description: This section explains how to use Diagram's Ruler to measure the distance of nodes and connectors from the origin of the page.
 platform: js
 control: Diagram
 documentation: ug
@@ -30,7 +30,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Rulers_images/Rulers_images1.png)
+![Diagram Rulers](Rulers_images/Rulers_images1.png)
 
 ## Customizing the Ruler
 
@@ -93,4 +93,4 @@ function arrangeTick(args) {
 
 {% endhighlight %}
 
-![](/js/Diagram/Rulers_images/Rulers_images2.png)
+![Customizing the Diagram Rulers](Rulers_images/Rulers_images2.png)
