@@ -89,7 +89,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![Hierarchical Layout](/Automatic-Layout_images/Automatic-Layout_img1.png)
+![Hierarchical Layout](/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its [excludeFromLayout](/api/js/ejdiagram#members:nodes-excludefromlayout "excludeFromLayout") property as true.
 
