@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export Diagram content as image/svg files
-description: How to export the Diagram as image/svg?
+title: Exporting | Diagram | Javascript | Syncfusion
+description: This section explains about how to export the ejDiagram content as image or svg files.
 platform: js
 control: Diagram
 documentation: ug
@@ -21,7 +21,7 @@ diagram.exportDiagram();
 
 {% endhighlight %}
 
-![](/js/Diagram/Exporting_images/Exporting_img1.png)
+![Mind-map diagram](Exporting_images/Exporting_img1.png)
 
 ## Exporting options
 
@@ -158,7 +158,7 @@ For more information about the various stretch options refer to [Stretch options
 
 {% endhighlight %}
 
-# Print
+## Print
 
 The client side method `print` helps to print the Diagram as image. Please refer to below link which shows how to print the Diagram as image and also you can view the several options which can be passed as a parameter in it.
 

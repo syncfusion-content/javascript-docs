@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show tooltips when mouse hovers over objects
-description: How to show/hide tooltips when mouse hovers over objects or during interaction?
+title: Tooltip | Diagram | Javascript | Syncfusion
+description: This section explains how to show/hide tooltips when mouse hovers over objects or during interaction.
 platform: js
 control: Diagram
 documentation: ug
@@ -17,7 +17,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 | Drag | Resize | Rotate |
 |---|---|---|
-| ![](/js/Diagram/Tooltip_images/Tooltip_img1.png) | ![](/js/Diagram/Tooltip_images/Tooltip_img2.png) | ![](/js/Diagram/Tooltip_images/Tooltip_img3.png) |
+| ![Dragging the node with tooltip](Tooltip_images/Tooltip_img1.png) | ![Resizing the node with tooltip](Tooltip_images/Tooltip_img2.png) | ![Rotating the node with tooltip](Tooltip_images/Tooltip_img3.png) |
 
 ### Disable default tooltip
 
@@ -83,7 +83,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %} 
 
-![](/js/Diagram/Tooltip_images/Tooltip_img4.png)
+![Common tooltip for all nodes and connectors](Tooltip_images/Tooltip_img4.png)
 
 ### Disable tooltip at runtime
 
@@ -175,7 +175,7 @@ var node = {
 
 {% endhighlight %}
 
-![](/js/Diagram/Tooltip_images/Tooltip_img5.png)
+![Tooltip relative to object](Tooltip_images/Tooltip_img5.png)
 
 ### Tooltip relative to mouse position
 
@@ -206,6 +206,6 @@ var node = {
 
 {% endhighlight %}
 
-![](/js/Diagram/Tooltip_images/Tooltip_img6.png)
+![Tooltip relative to mouse position](Tooltip_images/Tooltip_img6.png)
 
 

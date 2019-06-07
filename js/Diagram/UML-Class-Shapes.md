@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Visually represents a static view of an application
-description: How to visually represent the business logic as class diagram? 
+title:  UML-Class-Shapes | Diagram | Javascript | Syncfusion
+description: This section explains about how to visually represent the business logic as class ejDiagram.
 platform: js
 control: Diagram
 documentation: ug
@@ -76,7 +76,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}	
 
-![](/js/Diagram/Shapes_images/Shapes_img141.png)
+![Class shape](Shapes_images/Shapes_img141.png)
 
 N> The default value for the property `classifier` is "class".
 
@@ -136,7 +136,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}	
 
-![](/js/Diagram/Shapes_images/Shapes_img142.png)
+![Interface shape](Shapes_images/Shapes_img142.png)
 
 ###  Enumeration
 
@@ -183,7 +183,7 @@ The following code example illustrates how to create an enumeration.
 
 {% endhighlight %}	
 
-![](/js/Diagram/Shapes_images/Shapes_img143.png)
+![Enumeration shape](Shapes_images/Shapes_img143.png)
 
 ### Connector Shapes
 
@@ -199,11 +199,11 @@ The list of relationships are demonstrated as follows.
 
 | shape | Image |
 |---|---|
-| Association | ![](/js/Diagram/Shapes_images/Shapes_img144.png) |
-| Aggregation | ![](/js/Diagram/Shapes_images/Shapes_img145.png) |
-| Composition | ![](/js/Diagram/Shapes_images/Shapes_img146.png) |
-| Inheritance | ![](/js/Diagram/Shapes_images/Shapes_img147.png) |
-| Dependency  | ![](/js/Diagram/Shapes_images/Shapes_img148.png) |
+| Association | ![Association shape](Shapes_images/Shapes_img144.png) |
+| Aggregation | ![Aggregation shape](Shapes_images/Shapes_img145.png) |
+| Composition | ![Composition shape](Shapes_images/Shapes_img146.png) |
+| Inheritance | ![Inheritance shape](Shapes_images/Shapes_img147.png) |
+| Dependency  | ![Dependency shape](Shapes_images/Shapes_img148.png) |
 
 ### Association
 
@@ -248,7 +248,7 @@ The [association](/api/js/ejdiagram#members:connectors-shape-flow-association "a
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img144.png)
+![association shape](Shapes_images/Shapes_img144.png)
 
 N> The default value for the property `association` is "directional".
 
@@ -291,7 +291,7 @@ The following code example illustrates how to create an aggregation.
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img145.png)
+![Aggregation shape](Shapes_images/Shapes_img145.png)
 
 ### Composition
 
@@ -332,7 +332,7 @@ The following code example illustrates how to create a composition.
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img146.png)
+![Composition shape](Shapes_images/Shapes_img146.png)
 
 ### Dependency
 
@@ -373,7 +373,7 @@ To create a dependency, you need to define the [relationship](/api/js/ejdiagram#
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img147.png)
+![Dependency shape](Shapes_images/Shapes_img147.png)
 
 ### Inheritance
 
@@ -416,7 +416,7 @@ The following code example illustrates how to create an inheritance.
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img148.png)
+![Inheritance shape](Shapes_images/Shapes_img148.png)
 
 ### Multiplicity
 
@@ -490,7 +490,7 @@ The following code example illustrates how to customize the multiplicity.
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img149.png)
+![Multiplicity shape](Shapes_images/Shapes_img149.png)
 
 ### ActivityFlow shape
 
@@ -503,5 +503,5 @@ The string "---" acts as a splitter between the three sections.
 
 The following image illustrates how the text editor will be.
 
-![](/js/Diagram/Shapes_images/Shapes_img150.png)
+![Editing shape](Shapes_images/Shapes_img150.png)
   

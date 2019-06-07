@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalize and Localize the Diagram control
-description: How to globalize and localize the Diagram control?
+title: Localization | Diagram | Javascript | Syncfusion
+description: This section explains the process of providing controls in different cultures to help you set your own culture easily in ejDiagram.
 platform: js
 control: Diagram
 documentation: ug
@@ -83,6 +83,6 @@ $(function() {
 
 {% endhighlight %}
 
-![](/js/Diagram/Localization_images/Localization_img1.png)
+![Diagram Localization](Localization_images/Localization_img1.png)
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.

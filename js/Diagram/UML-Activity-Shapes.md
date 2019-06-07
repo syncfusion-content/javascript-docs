@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Visually represents a static view of an application
-description: How to visually represent the behavior process of a system? 
+title:  UML-Activity-Shapes | Diagram | Javascript | Syncfusion
+description: This section explains how to visually represent a business process and the relationships among its functional blocks.
 platform: js
 control: Diagram
 documentation: ug
@@ -39,8 +39,8 @@ The following code example illustrates how to create a simple behavior diagram.
 
 {% endhighlight %}	
 
-![](/js/Diagram/Shapes_images/Shapes_img152.png)
+![UML Activity Shape](Shapes_images/Shapes_img152.png)
 
 The list of flow shapes are as follows.
 
-![](/js/Diagram/Shapes_images/Shapes_img153.png)
+![List of available UML Activity Shapes](Shapes_images/Shapes_img153.png)

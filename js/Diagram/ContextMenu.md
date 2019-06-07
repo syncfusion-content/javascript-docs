@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add context menu items to ease the execution of frequently used commands
-description: How to execute frequently used commands by using context menu items?
+title: Context-Menu | Diagram | Javascript | Syncfusion
+description: This section explains how to use the ejDiagram's Context Menu items and their important key features in JavaScript.
 platform: js
 control: Diagram
 documentation: ug
@@ -29,7 +29,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/ContextMenu_images/Contextmenu_img1.png)
+![Default Context Menu](ContextMenu_images/Contextmenu_img1.png)
 
 ## Customize Context Menu
 
@@ -111,7 +111,7 @@ The following code example illustrates how to customize the icon of context menu
 
 {% endhighlight %}
 
-![](/js/Diagram/ContextMenu_images/Contextmenu_img2.png)
+![Custom context menu](ContextMenu_images/Contextmenu_img2.png)
 
 ## Context Menu Events
 
