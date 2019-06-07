@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Define and add the frequently used nodes/connectors to the symbol palette
-description: How to add shapes to the symbol palette and drag and drop them over the drawing area?
+title: Symbol Palette | Diagram | Javascript | Syncfusion
+description: This section explains about how to add shapes to the symbol palette and drag and drop them over the drawing area?
 platform: js
 control: Diagram
 documentation: ug
@@ -86,7 +86,7 @@ You can add any number of palettes to the [palettes](/api/js/ejsymbolpalette#mem
 
 The following image shows the symbol palette with multiple palette Items.
 
-![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
+![Adding palettes to SymbolPalette](Symbol-Palette_images/Symbol-Palette_img3.png)
 
 ### Customize the Palette Header
 
@@ -134,7 +134,7 @@ Also, you can embed any HTML element into a palette header by defining the Scri
 
 The following image shows the customized palette header
 
-![](/js/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+![Customizing the Palette Header](Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Add symbols to palette
 
@@ -266,9 +266,9 @@ The [enableScale](/api/js/ejdiagram#members:nodes-paletteitem-enablescale "enabl
 
 {% endhighlight %}
 
-![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
+![Adding the symbols into the palette](Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
+![Stretch the symbols into the palette](Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ## Symbol Previews
@@ -301,7 +301,7 @@ You can customize the preview size of the individual palette items. The [palette
 
 {% endhighlight %}
 
-![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
+![Symbol Previews in the palette](Symbol-Palette_images/Symbol-Palette_img4.png)
 
 You can also customize the preview size of the all palette items. The [previewWidth](/api/js/ejsymbolpalette#members:previewwidth "previewWidth") and [previewHeight](/api/js/ejsymbolpalette#members:previewheight "previewHeight") property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
@@ -330,7 +330,7 @@ You can also customize the preview size of the all palette items. The [previewWi
 
 {% endhighlight %}
 
-![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img5.png)
+![Symbol dragging from the palette](Symbol-Palette_images/Symbol-Palette_img5.png)
 
 Symbol palette allows to sets the [offset](/api/js/ejsymbolpalette#members:previewoffset "offset") of the dragging helper relative to the mouse cursor.
 
@@ -352,7 +352,7 @@ Symbol palette allows to sets the [offset](/api/js/ejsymbolpalette#members:previ
 
 {% endhighlight %}
 
-![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
+![Symbol dragging from the palette](Symbol-Palette_images/Symbol-Palette_img6.png)
 
 
 Symbol preview size will be set based on the following precedence.

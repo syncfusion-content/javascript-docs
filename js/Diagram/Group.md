@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group two or more relevant objects
-description: How to group two or more nodes and connectors?
+title: Group | Diagram | Javascript | Syncfusion
+description: This section explains how to use the Essential Diagram control Grouping functionality and its behavior in JavaScript.
 platform: js
 control: Diagram
 documentation: ug
@@ -190,7 +190,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Group_images/Group_img9.png)
+![Diagram Group node](Group_images/Group_img9.png)
 
 ### Stack
 
@@ -259,7 +259,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Group_images/Group_img10.png)
+![Group node stack](Group_images/Group_img10.png)
 
 ## Difference between a basic group and containers
 

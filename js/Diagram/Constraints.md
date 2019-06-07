@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable/Disable the optional features
-description: How to enable/disable the optional features?
+title: Constraints | Diagram | Javascript | Syncfusion
+description: This section explains how to use the Constraints to enable or disable certain behaviors of the diagram, node, and connector in ejDiagram.
 platform: js
 control: Diagram
 documentation: ug
