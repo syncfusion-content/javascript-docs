@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pick the type of node among the predefined nodes and shapes
-description: How to choose the type of the node with respect to the requirement? 
+title: Shapes | Diagram | Javascript | Syncfusion
+description: This section explains how to choose the type of the node with respect to the requirement in the ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug
@@ -45,7 +45,7 @@ var nodes = [{
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img59.png)
+![Text node](Shapes_images/Shapes_img59.png)
 
 ## Image
 Diagram allows to add images as image nodes. For image nodes, the [type](/api/js/ejdiagram#members:nodes-type "type") should be set as "image". In addition, the [source](/api/js/ejdiagram#members:nodes-source "source") property of node enables you to set the image source. 
@@ -69,7 +69,7 @@ var nodes = [{
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img60.png)
+![Image node](Shapes_images/Shapes_img60.png)
 
 N> Deploy your HTML file in the web Application and export the diagram (image node) or else the image node will not be exported in the chrome and Firefox due to security issues. Please refer to the link below.
 
@@ -112,10 +112,10 @@ The following tables illustrates all the possible scale options for the image no
 
 | Values| Image |
 |---|---|
-| None | ![](/js/Diagram/Shapes_images/Shapes_img128.png) |
-| Meet | ![](/js/Diagram/Shapes_images/Shapes_img129.png) |
-| Slice | ![](/js/Diagram/Shapes_images/Shapes_img130.png) |
-| Stretch | ![](/js/Diagram/Shapes_images/Shapes_img131.png) |
+| None | ![Image Alignment as None](Shapes_images/Shapes_img128.png) |
+| Meet | ![Image Alignment as Meet](Shapes_images/Shapes_img129.png) |
+| Slice | ![Image Alignment as Slice](Shapes_images/Shapes_img130.png) |
+| Stretch | ![Image Alignment as Stretch](Shapes_images/Shapes_img131.png) |
 
 
 ## HTML
@@ -152,7 +152,7 @@ var nodes = [{
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img61.png)
+![HTML button node](Shapes_images/Shapes_img61.png)
 
 N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. 
 
@@ -189,7 +189,7 @@ var nodes = [{
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img62.png)
+![Native node](Shapes_images/Shapes_img62.png)
 
 N> Like HTML node, Native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template. 
 
@@ -246,10 +246,10 @@ The following tables illustrates all the possible scale options for the node
 
 | Values| Image |
 |---|---|
-| None | ![](/js/Diagram/Shapes_images/Shapes_img124.png) |
-| Meet | ![](/js/Diagram/Shapes_images/Shapes_img125.png) |
-| Slice | ![](/js/Diagram/Shapes_images/Shapes_img126.png) |
-| Stretch | ![](/js/Diagram/Shapes_images/Shapes_img127.png) |
+| None | ![SVG content alignment as None](Shapes_images/Shapes_img124.png) |
+| Meet | ![SVG content alignment as Meet](Shapes_images/Shapes_img125.png) |
+| Slice | ![SVG content alignment as Slice](Shapes_images/Shapes_img126.png) |
+| Stretch | ![SVG content alignment as Stretch](Shapes_images/Shapes_img127.png) |
 
 ## Basic Shapes
 
@@ -289,7 +289,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img1.png)
+![Basic Shapes](Shapes_images/Shapes_img1.png)
 
 N> By default, the `type` property of node is set as "basic".
 
@@ -317,11 +317,11 @@ var nodes = [{
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img58.png)
+![Path shape](Shapes_images/Shapes_img58.png)
 
 The list of basic shapes are as follows.
 
-![](/js/Diagram/Shapes_images/Shapes_img2.png)
+![List of available Path shapes](Shapes_images/Shapes_img2.png)
 
 ## Flow Shapes
 
@@ -352,10 +352,10 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img3.png)
+![Flow Shape](Shapes_images/Shapes_img3.png)
 
 The list of flow shapes are as follows.
 
-![](/js/Diagram/Shapes_images/Shapes_img4.png)
+![List of available flow shapes](Shapes_images/Shapes_img4.png)
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Read the current scroll status and programmatically pan Diagrams
-description: How to read/modify the scroll status of the Diagram?
+title: Scroll-Settings | Diagram | JavaScript | Syncfusion
+description: This section explains about how to read/modify the scroll status of the ejDiagram?
 platform: js
 control: Diagram
 documentation: ug
@@ -42,7 +42,7 @@ $("#diagram").ejDiagram({
 
 In the example given below, the vertical scroll bar is scrolled down by 50px and horizontal scroll bar is scrolled to right by 100px. 
 
-![](/js/Diagram/Scroll-Settings_images/Scroll-Settings_img1.png)
+![Diagram Scroll Settings](Scroll-Settings_images/Scroll-Settings_img1.png)
 
 ## Update scroll status
 

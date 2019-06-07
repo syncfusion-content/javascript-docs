@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactively edit nodes and connectors during runtime
-description: How to select and edit nodes and connectors during runtime?
+title: Interaction | Diagram | Javascript | Syncfusion
+description: This section explains about how to select and edit the nodes and connectors during runtime in ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug
@@ -18,7 +18,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
-![](/js/Diagram/Interaction_images/Interaction_img1.png)
+![Diagram interaction](Interaction_images/Interaction_img1.png)
 
 * While selecting the diagram elements, you can use below events to do your customization.
 * When we select/unselect a diagram elements, the [selectionChange](/api/js/ejdiagram#events:selectionchange "selectionChange") event gets triggered.
@@ -43,7 +43,7 @@ Multiple elements can be selected with the following ways.
 
 Multiple selected elements are visually represented as shown.
 
-![](/js/Diagram/Interaction_images/Interaction_img2.png)
+![Select/Unselect elements](Interaction_images/Interaction_img2.png)
 
 ### Select/Unselect elements programmatically
 
@@ -108,7 +108,7 @@ The client side method selectAll used to select all the elements such as nodes/c
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines#snapping "Snapping").
 
-![](/js/Diagram/Interaction_images/Interaction_img3.png)
+![Drag the Selected elements](Interaction_images/Interaction_img3.png)
 
 * When you drag the elements in diagram, the [drag](/api/js/ejdiagram#events:drag "drag") event gets triggered and you can do your customization in this event.
 
@@ -165,9 +165,9 @@ The following code illustrates how to drag nodes over multiple diagrams.
 
 The following screen short illustrates how the nodes are dragged from one diagram to another.
  
-![](/js/Diagram/Interaction_images/Interaction_img12.png)
+![Working with multiple diagrams](Interaction_images/Interaction_img12.png)
 
-![](/js/Diagram/Interaction_images/Interaction_img13.png)
+![Working with multiple diagrams](Interaction_images/Interaction_img13.png)
  
 
 
@@ -177,7 +177,7 @@ The following screen short illustrates how the nodes are dragged from one diagra
 * When one corner of the selector is dragged, opposite corner is in a static position.
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines#snapping "Snapping").
 
-![](/js/Diagram/Interaction_images/Interaction_img4.png)
+![Resizing the nodes](Interaction_images/Interaction_img4.png)
 
 * When a node is resized, the [sizeChange](/api/js/ejdiagram#events:sizechange "sizeChange") event gets triggered. 
 
@@ -188,7 +188,7 @@ The following screen short illustrates how the nodes are dragged from one diagra
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
 * For more information about pivot, refer to [Position](/js/Diagram/Node#position "Position").
 
-![](/js/Diagram/Interaction_images/Interaction_img5.png)
+![Rotating the node](Interaction_images/Interaction_img5.png)
 
 * When the diagram elements are rotated, the [rotationChange](/api/js/ejdiagram#events:rotationchange "rotationChange") event gets triggered.
 
@@ -202,7 +202,7 @@ The following screen short illustrates how the nodes are dragged from one diagra
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](/js/Diagram/Interaction_images/Interaction_img6.png)
+![End point handles for connector](Interaction_images/Interaction_img6.png)
 
 * If you drag connector end points or updating connector end points, then you can use below events to do your customization.
 * When the connector source point is changed, the [connectorSourceChange](/api/js/ejdiagram#events:connectorsourcechange "connectorSourceChange") event gets triggered.
@@ -219,17 +219,17 @@ Source and target points of the selected connectors are represented with two han
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
-![](/js/Diagram/Interaction_images/Interaction_img7.png)
+![Orthogonal thumbs](Interaction_images/Interaction_img7.png)
 
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](/js/Diagram/Interaction_images/Interaction_img8.png)
+![Orthogonal thumbs dragging](Interaction_images/Interaction_img8.png)
 
 ### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](/js/Diagram/Interaction_images/Interaction_img9.png)
+![Bezier thumbs](Interaction_images/Interaction_img9.png)
 
 ## Drag and drop nodes over other elements
 
@@ -345,7 +345,7 @@ $("#DiagramContent").ejDiagram({
 });
 {% endhighlight %}
 
-![](/js/Diagram/Interaction_images/Interaction_img10.png)
+![User handles](Interaction_images/Interaction_img10.png)
 
 
 ### update user handles at runtime
@@ -415,7 +415,7 @@ $("#DiagramContent").ejDiagram({
 });
 {% endhighlight %}
 
-![](/js/Diagram/Interaction_images/Interaction_img11.png)
+![User handles](Interaction_images/Interaction_img11.png)
 
 ## Zoom pan
 

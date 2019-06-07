@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Represent the data to render the Diagram control
-description: How to represent the data to render the Diagram control?
+title: Model | Diagram | Javascript | Syncfusion
+description: This section explains how to represent the data to render the Diagram and manipulate the elements.
 platform: js
 control: Diagram
 documentation: ug
@@ -26,6 +26,6 @@ $("#Diagram").ejDiagram({
 });
 {% endhighlight %}
 
-![](/js/Diagram/Model_images/Model_img1.png)
+![Diagram Model](Model_images/Model_img1.png)
 
 To explore more model properties, refer to [Model Properties](/api/js/ejdiagram#members "Model Properties").

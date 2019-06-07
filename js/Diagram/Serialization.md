@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialize the Diagram as JSON and load Diagram from serialized JSON
-description: How to save and load the Diagram?
+title: Serialization | Diagram | JavaScript | Syncfusion
+description: This section explains how to process saving and loading for state persistence of the ejDiagram.
 platform: js
 control: Diagram
 documentation: ug
