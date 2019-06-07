@@ -191,7 +191,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![Label offset as (0, 0.5)](Label_images/Label_img12.png)
+![Label set as offset](Label_images/Label_img12.png)
 
 ### Label alignment with respect to Segments
 
@@ -251,7 +251,7 @@ $("#diagram").ejDiagram({
 		
 {% endhighlight %}
 
-![Label positioned in connector's end points](Label_images/Label_img31.png)
+![Label positioned in connector end points](Label_images/Label_img31.png)
 
 By default, connector labels will be aligned with respect to the segments. The [relativeMode](/api/js/ejdiagram#members:connectors-labels-relativemode "relativeMode")  property of label allows you to disable this segment specific label alignment. Following code example illustrates how to disable the segment specific label alignment.
 
