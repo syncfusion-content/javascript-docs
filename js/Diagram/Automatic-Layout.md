@@ -89,7 +89,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![Hierarchical Layout](/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
+![Hierarchical Layout](Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its [excludeFromLayout](/api/js/ejdiagram#members:nodes-excludefromlayout "excludeFromLayout") property as true.
 
@@ -175,7 +175,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png)
+![Radial Tree Layout](Automatic-Layout_images/Automatic-Layout_img2.png)
 
 ## Organizational Chart
 
@@ -259,7 +259,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png)
+![Organizational Chart Layout](Automatic-Layout_images/Automatic-Layout_img3.png)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -316,13 +316,13 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png) |
-| | Right | Arranges the child nodes horizontally at the right side of parent. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png) |
-| | Center | Arranges the children like standard tree layout orientation. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png) |
-| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img16.png) |
-| Vertical | Left | Vertically arranges the children at the left side of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png) |
-| | Right | Vertically arranges the children at the right side of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png) |
-| | Alternate | Vertically arranges the children at both left and right sides of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png) |
+| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](Automatic-Layout_images/Automatic-Layout_img4.png) |
+| | Right | Arranges the child nodes horizontally at the right side of parent. | ![](Automatic-Layout_images/Automatic-Layout_img5.png) |
+| | Center | Arranges the children like standard tree layout orientation. | ![](Automatic-Layout_images/Automatic-Layout_img6.png) |
+| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![](Automatic-Layout_images/Automatic-Layout_img16.png) |
+| Vertical | Left | Vertically arranges the children at the left side of parent | ![](Automatic-Layout_images/Automatic-Layout_img7.png) |
+| | Right | Vertically arranges the children at the right side of parent | ![](Automatic-Layout_images/Automatic-Layout_img8.png) |
+| | Alternate | Vertically arranges the children at both left and right sides of parent | ![](Automatic-Layout_images/Automatic-Layout_img9.png) |
 
 
 The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
@@ -400,7 +400,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png)
+![Organizational Chart Layout Info](Automatic-Layout_images/Automatic-Layout_img10.png)
 
 ### GetConnectorSegments
 
@@ -475,7 +475,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png)
+![Organizational Chart Layout Assitant](Automatic-Layout_images/Automatic-Layout_img11.png)
 
 ##  Symmetric Layout
 
@@ -549,7 +549,7 @@ The following code illustrates how to arrange the nodes in a radial tree structu
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img17.png)
+![Symmetric Layout](Automatic-Layout_images/Automatic-Layout_img17.png)
 
 
 ## Customize Layout
@@ -606,7 +606,7 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+![Symmetric Layout Alignment](Automatic-Layout_images/Automatic-Layout_img14.png)
 
 ### Layout Spacing
 
@@ -653,7 +653,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
+![Layout spacing and margin](Automatic-Layout_images/Automatic-Layout_img15.png)
 
 ### Layout Orientation
 
@@ -696,7 +696,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img12.png)
+![Layout orientation](Automatic-Layout_images/Automatic-Layout_img12.png)
 
 ### Fixed Node
 
@@ -760,7 +760,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img13.png)
+![Fixed node in Layout](Automatic-Layout_images/Automatic-Layout_img13.png)
 
 ### Expand and collapse
 
