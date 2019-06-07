@@ -26,6 +26,6 @@ $("#Diagram").ejDiagram({
 });
 {% endhighlight %}
 
-![](/js/Diagram/Model_images/Model_img1.png)
+![Diagram Model](Model_images/Model_img1.png)
 
 To explore more model properties, refer to [Model Properties](/api/js/ejdiagram#members "Model Properties").

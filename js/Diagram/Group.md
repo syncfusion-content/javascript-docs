@@ -190,7 +190,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Group_images/Group_img9.png)
+![Diagram Group node](Group_images/Group_img9.png)
 
 ### Stack
 
@@ -259,7 +259,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Group_images/Group_img10.png)
+![Group node stack](Group_images/Group_img10.png)
 
 ## Difference between a basic group and containers
 

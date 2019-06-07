@@ -54,7 +54,7 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 4\. This creates an empty diagram
 
-![](/js/Diagram/Getting-Started_images/Getting-Started_img1.png)
+![Diagram Appearance](Getting-Started_images/Getting-Started_img1.png)
 
 The [create](/api/js/ejdiagram#events:create "create") event gets triggered once the diagram is created.
 
@@ -95,7 +95,7 @@ N> `labels` property is an array, which indicates that more than one label can b
 
 Added node will be displayed in diagram as shown below.
 
-![](/js/Diagram/Getting-Started_images/Getting-Started_img2.png)
+![Diagram Node](Getting-Started_images/Getting-Started_img2.png)
 
 ### Connect nodes
 
@@ -144,7 +144,7 @@ $("#diagram").ejDiagram({
 
 * `Connector` connects the two nodes as shown below.
 
-![](/js/Diagram/Getting-Started_images/Getting-Started_img3.png)
+![Connector connects the two nodes](Getting-Started_images/Getting-Started_img3.png)
 
 * Default values for all nodes and connectors can be set using [defaultSettings](/api/js/ejdiagram#members:defaultsettings "defaultSettings") property. For example if all nodes have same `width` and `height`, we can move such properties into `defaultSettings`. 
 
@@ -244,7 +244,7 @@ $("#diagram").ejDiagram({
 
 Final flow chart will looks as shown below.
 
-![](/js/Diagram/Getting-Started_images/Getting-Started_img4.png)
+![flow chart diagram](Getting-Started_images/Getting-Started_img4.png)
 
 ## Automatic organization chart
 
@@ -376,4 +376,4 @@ $("#diagram").ejDiagram({
 
 * The Employee details are displayed in the Diagram as follows.
 
-![](/js/Diagram/Getting-Started_images/Getting-Started_img5.png)
+![org chart layout diagram](Getting-Started_images/Getting-Started_img5.png)

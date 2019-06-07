@@ -12,7 +12,7 @@ api: /api/js/ejdiagram
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
-![](/js/Diagram/Connector_images/Connector_img1.png)
+![Connector](Connector_images/Connector_img1.png)
 
 ## Create Connector
 
@@ -52,7 +52,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img2.png)
+![Add connectors](Connector_images/Connector_img2.png)
 
 
 ### Add connector at run time
@@ -87,7 +87,7 @@ diagram.add(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img3.png)
+![Add connector at run time](Connector_images/Connector_img3.png)
 
 When the connector is either added or removed in diagram, the [connectorCollectionChange](/api/js/ejdiagram#events:connectorcollectionchange "connectorCollectionChange") gets triggered.
 
@@ -177,7 +177,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img4.png)
+![Connecting nodes](Connector_images/Connector_img4.png)
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports.
 
@@ -235,7 +235,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img5.png)
+![Connections with ports](Connector_images/Connector_img5.png)
 
 ## Segments
 
@@ -267,7 +267,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/connector_img6.png)
+![Straight Segments](Connector_images/connector_img6.png)
 
 
 The [point](/api/js/ejdiagram#members:connectors-segments-point "point") property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
@@ -293,7 +293,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img7.png)
+![Multiple Segments](Connector_images/Connector_img7.png)
 
 ### Orthogonal
 
@@ -319,7 +319,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img8.png)
+![Orthogonal connector](Connector_images/Connector_img8.png)
 
 The [length](/api/js/ejdiagram#members:connectors-segments-length "length") and [direction](/api/js/ejdiagram#members:connectors-segments-direction "direction") properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
@@ -344,15 +344,15 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img9.png)
+![Orthogonal connection segment](Connector_images/Connector_img9.png)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes. The following images illustrate how orthogonal segments are re-routed.
 
-![](/js/Diagram/Connector_images/Connector_img10.png)
+![Avoid overlapping](Connector_images/Connector_img10.png)
 
-![](/js/Diagram/Connector_images/Connector_img11.png)
+![Avoid overlapping](Connector_images/Connector_img11.png)
 
 N> Overlapping with source and target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -380,7 +380,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img12.png)
+![Bezier](Connector_images/Connector_img12.png)
 
 The [point1](/api/js/ejdiagram#members:connectors-segments-point1 "point1")  and [point2](/api/js/ejdiagram#members:connectors-segments-point2 "point2") properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
@@ -407,7 +407,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img13.png)
+![Bezier segment](Connector_images/Connector_img13.png)
 
 
 The [vector1](/api/js/ejdiagram#members:connectors-segments-vector1 "vector1") and [vector2](/api/js/ejdiagram#members:connectors-segments-vector2 "vector2") properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
@@ -434,7 +434,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img14.png)
+![Bezier vector update](Connector_images/Connector_img14.png)
 
 ### Complex segments
 
@@ -467,7 +467,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img15.png)
+![Complex segments for connector](Connector_images/Connector_img15.png)
 
 ## Decorator
 
@@ -537,7 +537,7 @@ connectors.push(connector3);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img16.png)
+![Decorators](Connector_images/Connector_img16.png)
 
 ## Padding
 
@@ -569,7 +569,7 @@ var connectors = [{
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img17.png)
+![Padding for the connectors](Connector_images/Connector_img17.png)
 
 The [connectorPadding](/api/js/ejdiagram#members:nodes-connectorpadding "connectorPadding")  property of node defines the space to be left between the node bounds and its edges. The following code example illustrates how to leave the space between a node and its connections.
 
@@ -602,7 +602,7 @@ var connectors = [
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img18.png)
+![Padding for the connectors with ports](Connector_images/Connector_img18.png)
 
 The [connectorPadding](/api/js/ejdiagram#members:nodes-ports-connectorpadding "connectorPadding")  property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports and its connections.
 
@@ -640,7 +640,7 @@ var connectors = [
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img19.png)
+![Padding for the connectors with ports](Connector_images/Connector_img19.png)
 
 The [lineHitPadding](/api/js/ejdiagram#members:connectors-linehitpadding "lineHitPadding")  property of connector is used to defines the padding value which eases the interaction with connectors.
 
@@ -670,7 +670,7 @@ $("#DiagramContent").ejDiagram({
 });
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img20.png)
+![Bridging for the connectors](Connector_images/Connector_img20.png)
 
 The direction of the bridge can be customized with the property [bridgeDirection](/api/js/ejdiagram#members:bridgedirection "bridgeDirection"). BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
@@ -689,7 +689,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img21.png)
+![Bridging](Connector_images/Connector_img21.png)
 
 You can use [bridgeSpace](/api/js/ejdiagram#members:connectors-bridgespace "bridgeSpace") property of connectors to define the width for line bridging. 
 
@@ -723,7 +723,7 @@ var connectors = [
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img22.png)
+![Round Corner for the connector](Connector_images/Connector_img22.png)
 
 ## Appearance
 
@@ -787,7 +787,7 @@ var targetDecorator = {
 };
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img23.png)
+![Segment appearances](Connector_images/Connector_img23.png)
 
 ## Interaction
 Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction#connection-editing "Connection Editing").

@@ -39,8 +39,8 @@ The following code example illustrates how to create a simple behavior diagram.
 
 {% endhighlight %}	
 
-![](/js/Diagram/Shapes_images/Shapes_img152.png)
+![UML Activity Shape](Shapes_images/Shapes_img152.png)
 
 The list of flow shapes are as follows.
 
-![](/js/Diagram/Shapes_images/Shapes_img153.png)
+![List of available UML Activity Shapes](Shapes_images/Shapes_img153.png)

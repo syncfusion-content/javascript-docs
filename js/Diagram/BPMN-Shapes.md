@@ -42,7 +42,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img5.png)
+![BPMN Shapes](Shapes_images/Shapes_img5.png)
 
 N> The default value for the property `shape` is "event".
 
@@ -50,13 +50,13 @@ The list of BPMN shapes are as follows.
 
 | Shape | Image |
 |---|---|
-| Event | ![](/js/Diagram/Shapes_images/Shapes_img6.png) |
-| Gateway | ![](/js/Diagram/Shapes_images/Shapes_img7.png) |
-| Task | ![](/js/Diagram/Shapes_images/Shapes_img8.png) |
-| Message | ![](/js/Diagram/Shapes_images/Shapes_img9.png) |
-| DataSource | ![](/js/Diagram/Shapes_images/Shapes_img10.png) |
-| DataObject | ![](/js/Diagram/Shapes_images/Shapes_img11.png) |
-| Group | ![](/js/Diagram/Shapes_images/Shapes_img12.png) |
+| Event | ![BPMN Event Shape](Shapes_images/Shapes_img6.png) |
+| Gateway | ![BPMN Gateway Shape](Shapes_images/Shapes_img7.png) |
+| Task | ![BPMN Task Shape](Shapes_images/Shapes_img8.png) |
+| Message | ![BPMN Message Shape](Shapes_images/Shapes_img9.png) |
+| DataSource | ![BPMN DataSource Shape](Shapes_images/Shapes_img10.png) |
+| DataObject | ![BPMN DataObject Shape](Shapes_images/Shapes_img11.png) |
+| Group | ![BPMN Group Shape](Shapes_images/Shapes_img12.png) |
 
 The BPMN shapes and its types are explained as follows.
 
@@ -99,25 +99,25 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img13.png)
+![BPMN Event End Shapes](Shapes_images/Shapes_img13.png)
 
 Event triggers are notated as icons inside the circle and they represent the specific details of the process. The [trigger](/api/js/ejdiagram#members:nodes-trigger "trigger") property of node allows you to set the type of trigger and by default, it is set as "none". The following table illustrates the type of event triggers.
 
 | Triggers | Start | Non-Interrupting Start | Intermediate | Non-Interrupting Intermediate | Throwing Intermediate | End |
 | --- | --- | --- | --- | --- | --- | --- |
-| None | ![](/js/Diagram/Shapes_images/Shapes_img63.png) | ![](/js/Diagram/Shapes_images/Shapes_img64.png) | ![](/js/Diagram/Shapes_images/Shapes_img65.png) | ![](/js/Diagram/Shapes_images/Shapes_img66.png) |   | ![](/js/Diagram/Shapes_images/Shapes_img67.png) |
-| Message | ![](/js/Diagram/Shapes_images/Shapes_img68.png) | ![](/js/Diagram/Shapes_images/Shapes_img69.png) | ![](/js/Diagram/Shapes_images/Shapes_img70.png) | ![](/js/Diagram/Shapes_images/Shapes_img71.png) | ![](/js/Diagram/Shapes_images/Shapes_img72.png) | ![](/js/Diagram/Shapes_images/Shapes_img73.png) |
-| Timer | ![](/js/Diagram/Shapes_images/Shapes_img74.png) | ![](/js/Diagram/Shapes_images/Shapes_img75.png) | ![](/js/Diagram/Shapes_images/Shapes_img76.png) | ![](/js/Diagram/Shapes_images/Shapes_img77.png) |   |   |
-| Conditional | ![](/js/Diagram/Shapes_images/Shapes_img78.png) | ![](/js/Diagram/Shapes_images/Shapes_img79.png) | ![](/js/Diagram/Shapes_images/Shapes_img80.png) | ![](/js/Diagram/Shapes_images/Shapes_img81.png) |   |   |
-| Link |   |   | ![](/js/Diagram/Shapes_images/Shapes_img82.png) |   | ![](/js/Diagram/Shapes_images/Shapes_img83.png) |   |
-| Signal | ![](/js/Diagram/Shapes_images/Shapes_img84.png) | ![](/js/Diagram/Shapes_images/Shapes_img85.png) | ![](/js/Diagram/Shapes_images/Shapes_img86.png) | ![](/js/Diagram/Shapes_images/Shapes_img87.png) | ![](/js/Diagram/Shapes_images/Shapes_img88.png) | ![](/js/Diagram/Shapes_images/Shapes_img89.png) |
-| Error | ![](/js/Diagram/Shapes_images/Shapes_img90.png) |   | ![](/js/Diagram/Shapes_images/Shapes_img91.png) |   |   | ![](/js/Diagram/Shapes_images/Shapes_img92.png) |
-| Escalation | ![](/js/Diagram/Shapes_images/Shapes_img93.png) | ![](/js/Diagram/Shapes_images/Shapes_img94.png) | ![](/js/Diagram/Shapes_images/Shapes_img95.png) | ![](/js/Diagram/Shapes_images/Shapes_img96.png) | ![](/js/Diagram/Shapes_images/Shapes_img97.png) | ![](/js/Diagram/Shapes_images/Shapes_img98.png) |
-| Termination |   |   |   |   |   | ![](/js/Diagram/Shapes_images/Shapes_img99.png) |
-| Compensation | ![](/js/Diagram/Shapes_images/Shapes_img100.png) |   | ![](/js/Diagram/Shapes_images/Shapes_img101.png) |   | ![](/js/Diagram/Shapes_images/Shapes_img102.png) | ![](/js/Diagram/Shapes_images/Shapes_img103.png) |
-| Cancel |   |   | ![](/js/Diagram/Shapes_images/Shapes_img104.png) |   |   | ![](/js/Diagram/Shapes_images/Shapes_img105.png) |
-| Multiple | ![](/js/Diagram/Shapes_images/Shapes_img106.png) | ![](/js/Diagram/Shapes_images/Shapes_img107.png) | ![](/js/Diagram/Shapes_images/Shapes_img108.png) | ![](/js/Diagram/Shapes_images/Shapes_img109.png) | ![](/js/Diagram/Shapes_images/Shapes_img110.png) | ![](/js/Diagram/Shapes_images/Shapes_img111.png) |
-| Parallel | ![](/js/Diagram/Shapes_images/Shapes_img112.png) | ![](/js/Diagram/Shapes_images/Shapes_img113.png) | ![](/js/Diagram/Shapes_images/Shapes_img114.png) | ![](/js/Diagram/Shapes_images/Shapes_img115.png) |   |   |
+| None | ![Start](Shapes_images/Shapes_img63.png) | ![Non-Interrupting Start](Shapes_images/Shapes_img64.png) | ![Intermediate](Shapes_images/Shapes_img65.png) | ![Throwing Intermediate](Shapes_images/Shapes_img66.png) |   | ![End](Shapes_images/Shapes_img67.png) |
+| Message | ![Start Message](Shapes_images/Shapes_img68.png) | ![Non-Interrupting Start Message](Shapes_images/Shapes_img69.png) | ![Intermediate Message shape](Shapes_images/Shapes_img70.png) | ![Non-Interrupting message shape](Shapes_images/Shapes_img71.png) | ![Throwing Intermediate message shape](Shapes_images/Shapes_img72.png) | ![End Message shape](Shapes_images/Shapes_img73.png) |
+| Timer | ![Start timer shape](Shapes_images/Shapes_img74.png) | ![Non-Interrupting Start timer shape](Shapes_images/Shapes_img75.png) | ![Intermediate timer shape](Shapes_images/Shapes_img76.png) | ![Non-Interrupting Intermediate timer shape](Shapes_images/Shapes_img77.png) |   |   |
+| Conditional | ![Conditional Start shape](Shapes_images/Shapes_img78.png) | ![Conditional Non-Interrupting Start](Shapes_images/Shapes_img79.png) | ![Conditional Intermediate](Shapes_images/Shapes_img80.png) | ![Conditional Non-Interrupting Intermediate](Shapes_images/Shapes_img81.png) |   |   |
+| Link |   |   | ![Link Intermediate shape](Shapes_images/Shapes_img82.png) |   | ![Link Throwing Intermediate](Shapes_images/Shapes_img83.png) |   |
+| Signal | ![Start Signal shape](Shapes_images/Shapes_img84.png) | ![Non-Interrupting Start Signal shape](Shapes_images/Shapes_img85.png) | ![Intermediate Signal shape](Shapes_images/Shapes_img86.png) | ![Non-Interrupting Intermediate Signal shape](Shapes_images/Shapes_img87.png) | ![Throwing Intermediate Signal shape](Shapes_images/Shapes_img88.png) | ![End Signal shape](Shapes_images/Shapes_img89.png) |
+| Error | ![Start Error shape](Shapes_images/Shapes_img90.png) |   | ![Intermediate Error shape](Shapes_images/Shapes_img91.png) |   |   | ![End Error shape](Shapes_images/Shapes_img92.png) |
+| Escalation | ![Start Escalation shape](Shapes_images/Shapes_img93.png) | ![Non-Interrupting Start Escalation shape](Shapes_images/Shapes_img94.png) | ![Intermediate Escalation shape](Shapes_images/Shapes_img95.png) | ![Non-Interrupting Intermediate Escalation shape](Shapes_images/Shapes_img96.png) | ![Throwing Intermediate Escalation shape](Shapes_images/Shapes_img97.png) | ![End Escalation shape](Shapes_images/Shapes_img98.png) |
+| Termination |   |   |   |   |   | ![End Termination shape](Shapes_images/Shapes_img99.png) |
+| Compensation | ![Start Compensation shape](Shapes_images/Shapes_img100.png) |   | ![Intermediate Compensation shape](Shapes_images/Shapes_img101.png) |   | ![Throwing Intermediate Compensation shape](Shapes_images/Shapes_img102.png) | ![End Compensation shape](Shapes_images/Shapes_img103.png) |
+| Cancel |   |   | ![Intermediate Cancel shape](Shapes_images/Shapes_img104.png) |   |   | ![End Cancel shape](Shapes_images/Shapes_img105.png) |
+| Multiple | ![Start Multiple shape](Shapes_images/Shapes_img106.png) | ![Non-Interrupting Start Multiple shape](Shapes_images/Shapes_img107.png) | ![Intermediate Multiple shape](Shapes_images/Shapes_img108.png) | ![Non-Interrupting Intermediate Multiple shape](Shapes_images/Shapes_img109.png) | ![Throwing Intermediate Multiple shape](Shapes_images/Shapes_img110.png) | ![End Multiple shape](Shapes_images/Shapes_img111.png) |
+| Parallel | ![Start Parallel shape](Shapes_images/Shapes_img112.png) | ![Non-Interrupting Start Parallel shape](Shapes_images/Shapes_img113.png) | ![Intermediate Parallel shape](Shapes_images/Shapes_img114.png) | ![Non-Interrupting Intermediate Parallel shape](Shapes_images/Shapes_img115.png) |   |   |
 
 ### Gateway
 
@@ -149,7 +149,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img25.png)
+![Gateway](Shapes_images/Shapes_img25.png)
 
 N> By default, the `gateway` will be set as "none".
 
@@ -157,13 +157,13 @@ There are several types of gateways as tabulated
 
 | Gateways | Image |
 |---|---|
-| Exclusive | ![](/js/Diagram/Shapes_images/Shapes_img26.png) |
-| Parallel | ![](/js/Diagram/Shapes_images/Shapes_img27.png) |
-| Inclusive | ![](/js/Diagram/Shapes_images/Shapes_img28.png) |
-| Complex | ![](/js/Diagram/Shapes_images/Shapes_img29.png) |
-| EventBased | ![](/js/Diagram/Shapes_images/Shapes_img30.png) |
-| ExclusiveEventBased | ![](/js/Diagram/Shapes_images/Shapes_img31.png) |
-| ParallelEventBased | ![](/js/Diagram/Shapes_images/Shapes_img32.png) |
+| Exclusive | ![Exclusive shape](Shapes_images/Shapes_img26.png) |
+| Parallel | ![Parallel shape](Shapes_images/Shapes_img27.png) |
+| Inclusive | ![Inclusive shape](Shapes_images/Shapes_img28.png) |
+| Complex | ![Complex shape](Shapes_images/Shapes_img29.png) |
+| EventBased | ![EventBased shape](Shapes_images/Shapes_img30.png) |
+| ExclusiveEventBased | ![ExclusiveEventBased shape](Shapes_images/Shapes_img31.png) |
+| ParallelEventBased | ![ParallelEventBased shape](Shapes_images/Shapes_img32.png) |
 
 ### Activity
 
@@ -202,7 +202,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img33.png)
+![Activity shape](Shapes_images/Shapes_img33.png)
 
 The different activities of BPMN process are listed as follows.
 
@@ -241,20 +241,20 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img34.png)
+![Tasks shape](Shapes_images/Shapes_img34.png)
 
 The various types of BPMN tasks are tabulated as follows.
 
 | Task Type | Image |
 |---|---|
-| Service | ![](/js/Diagram/Shapes_images/Shapes_img35.png) |
-| Send | ![](/js/Diagram/Shapes_images/Shapes_img34.png) |
-| Receive | ![](/js/Diagram/Shapes_images/Shapes_img37.png) |
-| Instantiating Receive | ![](/js/Diagram/Shapes_images/Shapes_img38.png) |
-| Manual | ![](/js/Diagram/Shapes_images/Shapes_img39.png) |
-| Business Rule | ![](/js/Diagram/Shapes_images/Shapes_img40.png) |
-| User | ![](/js/Diagram/Shapes_images/Shapes_img41.png) |
-| Script | ![](/js/Diagram/Shapes_images/Shapes_img42.png) |
+| Service | ![Service shape](Shapes_images/Shapes_img35.png) |
+| Send | ![Send shape](Shapes_images/Shapes_img34.png) |
+| Receive | ![Receive shape](Shapes_images/Shapes_img37.png) |
+| Instantiating Receive | ![Instantiating Receive shape](Shapes_images/Shapes_img38.png) |
+| Manual | ![Manual shape](Shapes_images/Shapes_img39.png) |
+| Business Rule | ![Business Rule shape](Shapes_images/Shapes_img40.png) |
+| User | ![User shape](Shapes_images/Shapes_img41.png) |
+| Script | ![Script shape](Shapes_images/Shapes_img42.png) |
 
 #### Subprocess
 
@@ -290,7 +290,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img116.png)
+![Subprocess shape](Shapes_images/Shapes_img116.png)
 
 The different types of subprocess are as follows. 
 
@@ -331,7 +331,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img117.png)
+![Event Subprocess shape](Shapes_images/Shapes_img117.png)
 
 ##### Transaction Subprocess
 
@@ -379,7 +379,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img118.png)
+![Transaction Subprocess shape](Shapes_images/Shapes_img118.png)
 
 #### Processes 
 
@@ -417,7 +417,7 @@ $("#diagram").ejDiagram({
 </script>
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img151.png)
+![BPMN Processes diagram](Shapes_images/Shapes_img151.png)
 
 #### Loop
 
@@ -469,15 +469,15 @@ diagram.add(node);
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img43.png)
+![BPMN Loop diagram](Shapes_images/Shapes_img43.png)
 
 The following table contains various types of BPMN loops.
 
 | Loops | Task | SubProcess |
 |---|---|---|
-| Standard | ![](/js/Diagram/Shapes_images/Shapes_img44.png) | ![](/js/Diagram/Shapes_images/Shapes_img45.png) |
-| SequenceMultiInstance | ![](/js/Diagram/Shapes_images/Shapes_img46.png) | ![](/js/Diagram/Shapes_images/Shapes_img47.png) |
-| ParallelMultiInstance | ![](/js/Diagram/Shapes_images/Shapes_img48.png) | ![](/js/Diagram/Shapes_images/Shapes_img49.png) |
+| Standard | ![Standard task shape](Shapes_images/Shapes_img44.png) | ![Standard SubProcess shape](Shapes_images/Shapes_img45.png) |
+| SequenceMultiInstance | ![SequenceMultiInstance task shape](Shapes_images/Shapes_img46.png) | ![SequenceMultiInstance SubProcess shape](Shapes_images/Shapes_img47.png) |
+| ParallelMultiInstance | ![ParallelMultiInstance Task shape](Shapes_images/Shapes_img48.png) | ![ParallelMultiInstance SubProcess shape](Shapes_images/Shapes_img49.png) |
 
 #### Compensation
 
@@ -534,7 +534,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img50.png)
+![Compensation diagram](Shapes_images/Shapes_img50.png)
 
 #### Call
 
@@ -569,7 +569,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img51.png)
+![Call shape](Shapes_images/Shapes_img51.png)
 
 #### Ad-Hoc
 
@@ -603,7 +603,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img52.png)
+![Boundary shape](Shapes_images/Shapes_img52.png)
 
 #### Boundary
 
@@ -641,9 +641,9 @@ The following table contains various types of BPMN boundaries.
 
 | Boundary | Image |
 |---|---|
-| Call | ![](/js/Diagram/Shapes_images/Shapes_img53.png) |
-| Event | ![](/js/Diagram/Shapes_images/Shapes_img54.png) |
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img55.png) |
+| Call | ![Boundary call shape](Shapes_images/Shapes_img53.png) |
+| Event | ![Boundary event shape](Shapes_images/Shapes_img54.png) |
+| Default | ![Boundary default shape](Shapes_images/Shapes_img55.png) |
 
 ### Data
 
@@ -679,15 +679,15 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img56.png)
+![Data shape](Shapes_images/Shapes_img56.png)
 
 The following table contains various representation of BPMN Data Object.
 
 | Boundary | Image |
 |---|---|
-| Collection Data Object | ![](/js/Diagram/Shapes_images/Shapes_img119.png) |
-| Data Input | ![](/js/Diagram/Shapes_images/Shapes_img120.png) |
-| Data Ouptput | ![](/js/Diagram/Shapes_images/Shapes_img121.png) |
+| Collection Data Object | ![Boundary data object shape](Shapes_images/Shapes_img119.png) |
+| Data Input | ![Boundary data input shape](Shapes_images/Shapes_img120.png) |
+| Data Ouptput | ![Boundary data output shape](Shapes_images/Shapes_img121.png) |
 
 ### Datasource
 
@@ -718,7 +718,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img57.png)
+![Datasource shape](Shapes_images/Shapes_img57.png)
 
 ### Artifact
 
@@ -778,7 +778,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img122.png)
+![Text Annotation shape](Shapes_images/Shapes_img122.png)
 
 #### Group
 
@@ -809,7 +809,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img123.png)
+![Group shpae](Shapes_images/Shapes_img123.png)
 
 #### BPMN Flows
 
@@ -859,15 +859,15 @@ The [association](/api/js/ejdiagram#members:connectors-shape-flow-association "a
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img134.png)
+![Association shape](Shapes_images/Shapes_img134.png)
 
 The following table demonstrates the visual representation of assosiation flows.
 
 | Association | Image |
 |---|---|
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img133.png) |
-| Directional | ![](/js/Diagram/Shapes_images/Shapes_img134.png) |
-| BiDirectional | ![](/js/Diagram/Shapes_images/Shapes_img132.png) |
+| Default | ![Association Default shape](Shapes_images/Shapes_img133.png) |
+| Directional | ![Association Directional shape](Shapes_images/Shapes_img134.png) |
+| BiDirectional | ![Association BiDirectional shape](Shapes_images/Shapes_img132.png) |
 
 N> The default value for the property `association` is "default".
 
@@ -914,15 +914,15 @@ The [sequence](/api/js/ejdiagram#members:connectors-shape-sequence "sequence") p
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img135.png)
+![Sequence shape](Shapes_images/Shapes_img135.png)
 
 The following table contains various representation of sequence flows.
 
 | Sequence | Image |
 |---|---|
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img136.png) |
-| Conditional | ![](/js/Diagram/Shapes_images/Shapes_img135.png) |
-| Normal | ![](/js/Diagram/Shapes_images/Shapes_img137.png) |
+| Default | ![Default Sequence shape](Shapes_images/Shapes_img136.png) |
+| Conditional | ![Conditional Sequence shape](Shapes_images/Shapes_img135.png) |
+| Normal | ![Normal Sequence shape](Shapes_images/Shapes_img137.png) |
 
 N> The default value for the property `sequence` is "normal".
 
@@ -969,14 +969,14 @@ The [message](/api/js/ejdiagram#members:connectors-shape-message "message") prop
 
 {% endhighlight %}
 
-![](/js/Diagram/Shapes_images/Shapes_img138.png)
+![Message shape](Shapes_images/Shapes_img138.png)
 
 The following table contains various representation of message flows.
 
 | Message | Image |
 |---|---|
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img139.png) |
-| InitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img138.png) |
-| NonInitiatingMessage | ![](/js/Diagram/Shapes_images/Shapes_img140.png) |
+| Default | ![Default Message shape](Shapes_images/Shapes_img139.png) |
+| InitiatingMessage | ![InitiatingMessage Message shape](Shapes_images/Shapes_img138.png) |
+| NonInitiatingMessage | ![NonInitiatingMessage Message shape](Shapes_images/Shapes_img140.png) |
 
 N> The default value for the property `message` is "default".

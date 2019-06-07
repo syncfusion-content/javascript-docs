@@ -12,7 +12,7 @@ api: /api/js/ejdiagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](/js/Diagram/Node_images/Node_img1.png)
+![Diagram Node](Node_images/Node_img1.png)
 
 ## Create Node
 
@@ -53,7 +53,7 @@ $("#diagram").ejDiagram({
 });
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Node_img2.png)
+![Node appearances](Node_images/Node_img2.png)
 
 
 ### Add/Remove node at runtime
@@ -89,7 +89,7 @@ diagram.add(node);
 
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Node_img3.png)
+![Adding node at runtime](Node_images/Node_img3.png)
 
 When a node is either added or removed in diagram, the [nodeCollectionChange](/api/js/ejdiagram#events:nodecollectionchange "nodeCollectionChange") event raised.
 
@@ -164,7 +164,7 @@ var nodes = [{
 
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Node_img4.png)
+![Pivot position of the nodes](Node_images/Node_img4.png)
 
 ## Types
 
@@ -202,7 +202,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Node_img5.png)
+![Border appearance for the nodes](Node_images/Node_img5.png)
 
  
 ### Gradient
@@ -270,7 +270,7 @@ var nodes = [{
 }];
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Node_img6.png)
+![Gradient for the nodes](Node_images/Node_img6.png)
 
 ## Shadow
 
@@ -294,7 +294,7 @@ var nodes = [{
 {% endhighlight %}
 
 
-![](/js/Diagram/Node_images/Node_img7.png)
+![Shadow for the nodes](Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
@@ -328,7 +328,7 @@ var nodes = [{
 }];
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Node_img8.png)
+![Customizing Shadow for the nodes](Node_images/Node_img8.png)
 
 ## Icon
 
@@ -376,9 +376,9 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Node_img9.png)
+![Expand icon for the node](Node_images/Node_img9.png)
 
-![](/js/Diagram/Node_images/Node_img10.png)
+![Colllapse icon for the node](Node_images/Node_img10.png)
 
 ### Customizing Expand Icon
 

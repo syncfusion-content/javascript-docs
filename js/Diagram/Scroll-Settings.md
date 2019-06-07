@@ -42,7 +42,7 @@ $("#diagram").ejDiagram({
 
 In the example given below, the vertical scroll bar is scrolled down by 50px and horizontal scroll bar is scrolled to right by 100px. 
 
-![](/js/Diagram/Scroll-Settings_images/Scroll-Settings_img1.png)
+![Diagram Scroll Settings](Scroll-Settings_images/Scroll-Settings_img1.png)
 
 ## Update scroll status
 

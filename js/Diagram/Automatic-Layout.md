@@ -316,13 +316,13 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](Automatic-Layout_images/Automatic-Layout_img4.png) |
-| | Right | Arranges the child nodes horizontally at the right side of parent. | ![](Automatic-Layout_images/Automatic-Layout_img5.png) |
-| | Center | Arranges the children like standard tree layout orientation. | ![](Automatic-Layout_images/Automatic-Layout_img6.png) |
-| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![](Automatic-Layout_images/Automatic-Layout_img16.png) |
-| Vertical | Left | Vertically arranges the children at the left side of parent | ![](Automatic-Layout_images/Automatic-Layout_img7.png) |
-| | Right | Vertically arranges the children at the right side of parent | ![](Automatic-Layout_images/Automatic-Layout_img8.png) |
-| | Alternate | Vertically arranges the children at both left and right sides of parent | ![](Automatic-Layout_images/Automatic-Layout_img9.png) |
+| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![Horizontal orientation in left side of parent](Automatic-Layout_images/Automatic-Layout_img4.png) |
+| | Right | Arranges the child nodes horizontally at the right side of parent. | ![Horizontal orientation in right side of parent](Automatic-Layout_images/Automatic-Layout_img5.png) |
+| | Center | Arranges the children like standard tree layout orientation. | ![Horizontal orientation in center of parent](Automatic-Layout_images/Automatic-Layout_img6.png) |
+| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![Horizontal orientation in left balanced the parent](Automatic-Layout_images/Automatic-Layout_img16.png) |
+| Vertical | Left | Vertically arranges the children at the left side of parent | ![Vertical orientation in left side of parent](Automatic-Layout_images/Automatic-Layout_img7.png) |
+| | Right | Vertically arranges the children at the right side of parent | ![Vertical orientation in Right side of parent](Automatic-Layout_images/Automatic-Layout_img8.png) |
+| | Alternate | Vertically arranges the children at both left and right sides of parent | ![Vertical orientation in Alternate side of parent](Automatic-Layout_images/Automatic-Layout_img9.png) |
 
 
 The following code example illustrates how to set the vertical right arrangement to the leaf level trees.

@@ -46,7 +46,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/js/Diagram/Tools_images/Tools_img1.png)
+![Draw a Shapes](Tools_images/Tools_img1.png)
 
 The following code example illustrates how to draw a path.
 
@@ -70,7 +70,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/js/Diagram/Tools_images/Tools_img3.png)
+![Draw a Shapes](Tools_images/Tools_img3.png)
 
 ### Connectors
 
@@ -93,7 +93,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/js/Diagram/Tools_images/Tools_img2.png)
+![Draw a Connectors](Tools_images/Tools_img2.png)
 
 ### Text 
 

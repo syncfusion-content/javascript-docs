@@ -35,7 +35,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](/js/Diagram/Gridlines_images/Gridlines_img1.png)
+![Gridlines appearance](Gridlines_images/Gridlines_img1.png)
 
 To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/js/Diagram/Constraints#snapconstraints "Constraints")
 
@@ -76,7 +76,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](/js/Diagram/Gridlines_images/Gridlines_img4.png)
+![Custom Appearance for the Gridlines](Gridlines_images/Gridlines_img4.png)
 
 ### Line Intervals
 
@@ -111,7 +111,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](/js/Diagram/Gridlines_images/Gridlines_img2.png)
+![Line Intervals for Gridlines](Gridlines_images/Gridlines_img2.png)
 
 ## Snapping
 
@@ -190,5 +190,5 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Gridlines_images/Gridlines_img4.png)
+![Snap To Objects](Gridlines_images/Gridlines_img4.png)
 

@@ -21,7 +21,7 @@ diagram.exportDiagram();
 
 {% endhighlight %}
 
-![](/js/Diagram/Exporting_images/Exporting_img1.png)
+![Mind-map diagram](Exporting_images/Exporting_img1.png)
 
 ## Exporting options
 

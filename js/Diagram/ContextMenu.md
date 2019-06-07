@@ -29,7 +29,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/ContextMenu_images/Contextmenu_img1.png)
+![Default Context Menu](ContextMenu_images/Contextmenu_img1.png)
 
 ## Customize Context Menu
 
@@ -111,7 +111,7 @@ The following code example illustrates how to customize the icon of context menu
 
 {% endhighlight %}
 
-![](/js/Diagram/ContextMenu_images/Contextmenu_img2.png)
+![Custom context menu](ContextMenu_images/Contextmenu_img2.png)
 
 ## Context Menu Events
 
