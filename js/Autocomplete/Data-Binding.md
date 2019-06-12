@@ -174,7 +174,7 @@ Now, in the following code example the data is retrieved from **MVC****Controll
 
     $(function () {
             $("#autocomplete").ejAutocomplete({
-        datasource: dataManager,
+        dataSource: dataManager,
         fields: { "text": "text","key":"uniqueKey " },
         query: query,
         }); 
