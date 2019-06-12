@@ -112,3 +112,5 @@ The following code example demonstrates how to trigger spell check manually afte
 {% endhighlight %}
 
 [Sample](https://jsplayground.syncfusion.com/gq5nodrd)
+
+N> Online services used in dictionarySettings are for demo purpose and own service can be defined in WebApi controller without any connection with outside services. Refer to the [KB](https://www.syncfusion.com/kb/10518/how-to-use-ejspellchecker-in-your-application) for rendering SpellCheck with own WebApi controller 
