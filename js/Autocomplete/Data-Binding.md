@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Databinding in AutoComplete widget for Essential JS
+title: Databinding in Syncfusion AutoComplete widget for Essential JS
 description: How to populate data for the suggestion list.
 platform: js
 control: AutoComplete
