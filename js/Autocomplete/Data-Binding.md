@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Databinding in AutoComplete widget for Essential JS
+title: Databinding in Syncfusion AutoComplete widget for Essential JS
 description: How to populate data for the suggestion list.
 platform: js
 control: AutoComplete
@@ -174,7 +174,7 @@ Now, in the following code example the data is retrieved from **MVC****Controll
 
     $(function () {
             $("#autocomplete").ejAutocomplete({
-        datasource: dataManager,
+        dataSource: dataManager,
         fields: { "text": "text","key":"uniqueKey " },
         query: query,
         }); 
