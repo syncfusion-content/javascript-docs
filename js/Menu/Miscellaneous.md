@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | Syncfusion | Menu
 description: miscellaneous
 platform: js
 control: Menu
@@ -74,7 +74,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 Output screenshot for the above code example is as follows.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img1.png)
+![menu](Miscellaneous_images/Miscellaneous_img1.png)
 
 
 ## Animation
@@ -102,7 +102,7 @@ N> For animation, [enableAnimation](https://help.syncfusion.com/api/js/ejmenu#me
 
 Output screenshot for the above code sample is as follows.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img2.png)
+![animation](Miscellaneous_images/Miscellaneous_img2.png)
 
 
 ## Title text
@@ -130,7 +130,7 @@ You can specify the title of the **Menu** control in the script as follows.
 
 The following screenshot displays the output of the above code.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img3.png)
+![title](Miscellaneous_images/Miscellaneous_img3.png)
 
 
 ## Show root level arrows
@@ -160,7 +160,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 The following screenshot displays the output of the above code.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img4.png)
+![arrows](Miscellaneous_images/Miscellaneous_img4.png)
 
 
 ## Show sub level arrows
@@ -189,6 +189,23 @@ Add the following **&lt;script&gt;** in the sample code.
 
 The following screenshot displays the output of the above code.
 
-![](/js/Menu/Miscellaneous_images/Miscellaneous_img5.png)
+![sublevel](Miscellaneous_images/Miscellaneous_img5.png)
+
+## Show context menu on button click
+
+Context menu can be opened through button click using `show` method of Menu. Invoke the show method in the button click handler and pass the target element as well as its position by calculating the X position based on window width and element width as a parameter to display the context menu.
+
+Add the following **&lt;script&gt;** in the sample code.
+
+{% highlight javascript %}
+
+       $("#target").on("click", function(e){ 
+           var instance =  $("#context").data("ejMenu"); 
+           var locationX = (e.clientX + instance.element.width() < $(window).width()) ? e.pageX : e.pageX - instance.element.width(); 
+           instance.show(locationX,e.clientY,e.currentTarget,e); 
+       }); 
 
 
+{% endhighlight %}
+
+Refer [here](https://jsplayground.syncfusion.com/3vz0pyvz) for sample.
