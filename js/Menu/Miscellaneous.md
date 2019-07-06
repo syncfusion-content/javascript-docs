@@ -74,7 +74,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 Output screenshot for the above code example is as follows.
 
-![menu](/js/Menu/Miscellaneous_images/Miscellaneous_img1.png)
+![menu](Miscellaneous_images/Miscellaneous_img1.png)
 
 
 ## Animation
@@ -102,7 +102,7 @@ N> For animation, [enableAnimation](https://help.syncfusion.com/api/js/ejmenu#me
 
 Output screenshot for the above code sample is as follows.
 
-![animation](/js/Menu/Miscellaneous_images/Miscellaneous_img2.png)
+![animation](Miscellaneous_images/Miscellaneous_img2.png)
 
 
 ## Title text
@@ -130,7 +130,7 @@ You can specify the title of the **Menu** control in the script as follows.
 
 The following screenshot displays the output of the above code.
 
-![title](/js/Menu/Miscellaneous_images/Miscellaneous_img3.png)
+![title](Miscellaneous_images/Miscellaneous_img3.png)
 
 
 ## Show root level arrows
@@ -160,7 +160,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 The following screenshot displays the output of the above code.
 
-![arrows](/js/Menu/Miscellaneous_images/Miscellaneous_img4.png)
+![arrows](Miscellaneous_images/Miscellaneous_img4.png)
 
 
 ## Show sub level arrows
@@ -189,7 +189,7 @@ Add the following **&lt;script&gt;** in the sample code.
 
 The following screenshot displays the output of the above code.
 
-![sublevel](/js/Menu/Miscellaneous_images/Miscellaneous_img5.png)
+![sublevel](Miscellaneous_images/Miscellaneous_img5.png)
 
 ## Show context menu on button click
 
