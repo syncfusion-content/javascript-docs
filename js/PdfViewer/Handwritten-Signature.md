@@ -47,11 +47,11 @@ $(function () {
 
 The handwritten signature can be added by drawing the signature content in the signature panel and clicking the button labeled ADD. The following screenshots are the pictorial representation of this.
 
-![](Signature_images/Signature_img1.png){:width="624px"}
+![Signature panel](Signature_images/Signature_img1.png){:width="624px"}
 
-![](Signature_images/Signature_img2.png)
+![Signature draw](Signature_images/Signature_img2.png)
 
-![](Signature_images/Signature_img3.png)
+![Signature add](Signature_images/Signature_img3.png)
 
 When the handwritten signature is added in the PDF document, the signatureAdd event will be triggered in the control. The event method can be defined using the [signatureAdd](https://help.syncfusion.com/api/js/ejpdfviewer#signatureadd "signatureAdd Event") property of the control.
 
@@ -81,7 +81,7 @@ function signatureResize(args){
 
 The selected handwritten signature content can be deleted using the “Delete” option in the context menu or delete key. The following screenshots are the pictorial representation of this.
 
-![](Signature_images/Signature_img4.png)
+![Signature delete](Signature_images/Signature_img4.png)
 
 When the handwritten signature is deleted from the PDF document, the signatureDelete event will be triggered in the control. The event method can be defined using the [signatureDelete](https://help.syncfusion.com/api/js/ejpdfviewer#signaturedelete "signatureDelete Event") property of the control.
 
@@ -110,19 +110,19 @@ function redoChanges() {
 
 The properties that is opacity and color of a handwritten signature can be modified by color palate and opacity slider, which is available in the “Properties” option in context menu. The following screenshots are the pictorial representation of this.
 
-![](Signature_images/Signature_img5.png)      
+![Signature properties](Signature_images/Signature_img5.png)      
 
 Select the desired color from the color palette and then click OK button.
 
-![](Signature_images/Signature_img6.png)  
+![Signature color palette](Signature_images/Signature_img6.png)  
 
 The selected color will be updated on the signature.
 
-![](Signature_images/Signature_img7.png)  
+![Signature color](Signature_images/Signature_img7.png)  
 
 You can also change the opacity of the added signature in the "properties" option.
 
-![](Signature_images/Signature_img8.png)
+![Signature opacity](Signature_images/Signature_img8.png)
 
 When a property of the handwritten signature is changed in the ejPdfViewer control, the signaturePropertiesChange event will be triggered in the control. The event method can be defined using the [signaturePropertiesChange](https://help.syncfusion.com/api/js/ejpdfviewer#signaturepropertieschange "signaturePropertiesChange Event") property of the control.
 
@@ -139,7 +139,7 @@ function signaturePropertiesChanged(args){
 
 The added signature can be saved to the PDF document and can be downloaded by clicking the download button in the toolbar. This action will not affect the original document.
 
-![](Signature_images/Signature_img9.png) 
+![Signature save](Signature_images/Signature_img9.png) 
 
 **Printing the Signature**
 
