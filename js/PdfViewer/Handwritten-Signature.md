@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hand written signature in PDF viewer.
+title: Hand written signature | PDF viewer | Javascript | Syncfusion
 description: Hand written signature in PDF viewer.
 platform: js
 control: PDF viewer
