@@ -54,7 +54,7 @@ $("#MyDatePicker").ejDatePicker({
 ### Use of Built-in localized words in the DatePicker control
 
 The date formats, day names and month names are automatically translated into the specific culture based on the culture-code assigned to the **locale** property, as these dates related common conversions are processed as built-in within the source based on ej.globalize and the culture specific file. Here, the above code will render the DatePicker control in **German** culture, as shown below,
-![](/js/Localization_images/Localization_img1.png) 
+![Localization](Localization_images/Localization_img1.png) 
 
 #### Example 1: Defining locale property in the DatePicker control
 
@@ -93,7 +93,7 @@ Refer the **JavaScript Control Initialization** document for creating a HTML pag
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 Browse your HTML page in any of the web browser and now the screen will display the DatePicker widget with the localized texts as shown below,
-![](/js/Localization_images/Localization_img2.png) 
+![Locale property](Localization_images/Localization_img2.png) 
 
 #### To change the locale property dynamically in DatePicker control
 
@@ -318,7 +318,7 @@ Now define the **locale** property for the Grid control with the appropriate **c
 {% endhighlight %}
 
 Browse your HTML page in any of the web browser and now the screen will display the Grid control with the localized texts. Now double click on any of the row – the edit record dialog too pops-up with the localized words as shown below,
-![](/js/Localization_images/Localization_img3.png) 
+![Localization in Grid](Localization_images/Localization_img3.png)
 
 #### To change the locale property dynamically in Grid control
 
@@ -467,4 +467,4 @@ N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample ap
 
 The below screenshot displays the datepicker control from Right to left direction,
 
-![](/js/Localization_images/Localization_img4.png)
+![RTL Direction](Localization_images/Localization_img4.png)
