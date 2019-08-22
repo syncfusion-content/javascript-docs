@@ -30,7 +30,7 @@ Print margins are displayed in the Print Layout only, to view report in print mo
 N> By default, the Report Viewer renders report in normal layout in which the print margins are not displayed.
 
 ## Print in new page
-To open the print in a new tab of the current browser, set the property [`printOptions`](../api/ejreportviewer#members:printOptions) to `NewTab`. By default, it shows the print dialog in the same page.
+To open the print in a new tab of the current browser, set the property [`printOption`](../api/ejreportviewer#members:printOption) to `NewTab`. By default, it shows the print dialog in the same page.
 
 {% highlight javascript %}
         <script type="text/javascript">
