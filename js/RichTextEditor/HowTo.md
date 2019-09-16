@@ -585,6 +585,19 @@ N> We have prevent the spellcheck context menu using "contextBeforeOpen" event a
 
 {% endhighlight %}
 
+SpellCheck icon can be included by setting the required image as background through class name in default.CSS file. Refer to the following code
+
+{% highlight html %}
+
+         <style>
+        .e-rte-toolbar-icon.e-spell {
+            background: url(../content/images/rte/Icon_Spellchecker.svg) no-repeat;
+            background-position: 3px 5px;
+        }
+       </style>
+
+{% endhighlight %}
+
 ## RTE - Spellcheck Integration ContextMenu Mode
 
 ![contextmode](RTESpellcheck_images/spellcheck_contextmode.png)
