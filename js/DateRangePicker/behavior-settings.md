@@ -1,7 +1,7 @@
 ---
 layout: post
 title: behavior settings | Syncfusion
-description: behavior settings
+description: Behavior settings for Syncfusion DateRangePicker | JavaScript
 platform: js
 control: DateRangePicker
 documentation: ug
