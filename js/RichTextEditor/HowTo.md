@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of RichTextEditor widget for Syncfusion Essential JS
-description: Customization in RichTextEditor widget
+description: Customization for Essential Studio JavaScript Syncfusion RichTextEditor widget to perform custom operations
 platform: js
 control: RTE
 documentation: ug
