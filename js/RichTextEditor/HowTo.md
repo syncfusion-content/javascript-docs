@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of RichTextEditor widget for Syncfusion Essential JS
-description: Customization in RichTextEditor widget
+description: Customization for Essential Studio JavaScript Syncfusion RichTextEditor widget to perform custom operations
 platform: js
 control: RTE
 documentation: ug
@@ -528,11 +528,23 @@ Apply the following style and In the below sample, the sprite image has been use
 
 ## RTE - Spellcheck Integration
 
-We have integrated spellcheck with RTE component. This spellchecker will validate the text present in RTE and provide suggestion in both context menu and dialog mode. 
+We have integrated Spellcheck with RTE component. This spellchecker will validate the text present in RTE and provide suggestion in both context menu and dialog mode.
 
-This can be achieved application side using RTE custom tools. We have rendered spellcheck control in RTE iframe element and using custom tool spellcheck dialog mode rendered. 
+Spellcheck can be integrated with RTE in application side using RTE custom tools. Render RTE iframe element as Spellcheck control and set required SpellCheck properties for context menu and dialog mode. 
 
-N> We have prevent the spellcheck context menu using "contextBeforeOpen" event and get the spellcheck suggestion list merge to RTE context menu. 
+Refer [here](https://js.syncfusion.com/demos/web/#!/bootstrap/rte/spellcheck) for live demo of SpellCheck integration. 
+
+## RTE - Spellcheck Integration ContextMenu Mode
+
+By default , RTE has a context menu with few options which will be displayed during right click inside RTE editor area. After integrating spellcheck, suggestion list for error words will be shown along with the existing RTE context menu. 
+
+N> We have prevented the default Spellcheck context menu using "contextBeforeOpen" event and merged the Spellcheck suggestion list to RTE context menu. 
+
+![contextmode](RTESpellcheck_images/spellcheck_contextmode.png)
+
+## RTE - Spellcheck Integration Dialog Mode
+
+A custom tool can be included in toolbar of RTE for validating the text inside RTE. SpellCheck dialog will be opened on clicking this custom tool.Invoke showInDialog() method of SpellCheck in the custom tool action. Refer to the following code.
 
 {% highlight html %}
 
@@ -597,12 +609,6 @@ SpellCheck icon can be included by setting the required image as background thro
        </style>
 
 {% endhighlight %}
-
-## RTE - Spellcheck Integration ContextMenu Mode
-
-![contextmode](RTESpellcheck_images/spellcheck_contextmode.png)
-
-## RTE - Spellcheck Integration Dialog Mode
 
 ![dialogmode](RTESpellcheck_images/spellcheck_dialogmode.png)
 
