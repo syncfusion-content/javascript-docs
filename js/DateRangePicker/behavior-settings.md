@@ -1,7 +1,7 @@
 ---
 layout: post
 title: behavior settings | Syncfusion
-description: Behavior settings for Syncfusion DateRangePicker | JavaScript
+description: Default behavior settings for Essential Studio JavaScript Syncfusion DateRangePicker to perform required operation.
 platform: js
 control: DateRangePicker
 documentation: ug
