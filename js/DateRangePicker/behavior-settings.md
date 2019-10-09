@@ -1,6 +1,6 @@
 ---
 layout: post
-title: behavior settings
+title: behavior settings | Syncfusion
 description: behavior settings
 platform: js
 control: DateRangePicker
@@ -72,7 +72,7 @@ DateRangePicker provides an option to restrict the user to pick the date from sp
 
 {% endhighlight %}
 
-![](minmax_images\minmax_img.png)
+![minmax](minmax_images\minmax_img.png)
 
 #### Separator
 
@@ -100,7 +100,7 @@ The value of the DateRangePicker popup will presented with two date strings whic
 {% endhighlight %}
 
 
-![](separator_images\separator_img1.png)
+![separator](separator_images\separator_img1.png)
 
 #### Start Date
 
@@ -193,7 +193,7 @@ We can make use of preset range for easy selection on popup. The ranges provided
 {% endhighlight %}
 
 
-![](presetranges_images\presetranges_img1.png)
+![preset](presetranges_images\presetranges_img1.png)
 
 These ranges can be processed and updated to popup by using the **setRange** method also like below code example.
 
@@ -238,7 +238,7 @@ The ranges can be set with time value also by enable the TimePicker in popup usi
 
 {% endhighlight %}
 
-![](timepickeroption_images\timepickeroption_img1.png)
+![option](timepickeroption_images\timepickeroption_img1.png)
 
 ## Backward Date Selection
 
@@ -258,4 +258,46 @@ DateRangePicker value can be selected through picking two date values from right
 
 {% endhighlight %}
 
+## Validation
 
+DateRangePicker can be validated using name attribute through jQuery validation. Map the component name attribute with jQuery validation rule, and add required error message to be displayed during validation. Error message can be placed below the control using `setDefaults` of jQuery validator. Refer to the following code.
+
+ {% highlight html %}
+     
+        <form id="form">
+	       <input id="date" name="range" type="text" />  
+           <br/>
+           <input type="submit" value="post" />
+      </form>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+     
+            $.validator.setDefaults({
+                ignore: [],
+                errorClass: 'e-validation-error',
+                errorPlacement: function (error, element) {
+                    $(error).insertAfter(element.closest(".e-widget"));
+                }
+            });
+
+            $(function()
+              {
+                $("#form").validate({
+                    rules: {
+                        //need to map the rule with component name attribute
+                        range: "required",
+                },
+                messages: {
+                   "range": {
+                      required: "Required Date value"
+                 }
+                  }
+             });
+                 $("#date").ejDateRangePicker();
+              }) 
+
+{% endhighlight %}
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/dcot5m3b)
