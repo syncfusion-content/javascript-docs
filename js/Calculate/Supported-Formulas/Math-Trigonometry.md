@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential JS
-description: supported formulas
+description: This documentation explains the the behavior of Trigonometry formulas supported in Syncfusion Essential JS.
 platform: JS
 control: Calculate
 documentation: ug
@@ -1223,6 +1223,42 @@ _RAND()_
 
 
 _RAND()*(b-a)+a_
+
+
+
+## RANDBETWEEN
+
+The `RANDBETWEEN` function returns a new random number between the given numbers every time the worksheet is calculated.
+
+
+
+**Syntax:**
+
+
+
+_RANDBETWEEN(bottom_value , top_value)_
+
+
+
+**where**
+
+
+
+* bottom_value is the smallest possible number that this function will return.
+
+
+
+* top_value is the largest possible number that this function will return.
+
+**Remarks**
+
+
+
+* Returns `#NUM!` when bottom_value is greater than top_value.
+
+
+
+* Returns `#VALUE!` If anyone of the arguments is not a numeric value.
 
 
 
