@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential JS
-description: supported formulas
+description: This documentation explains the behavior of logical formulas  supported  in Syncfusion Essential JS.
 platform: JS
 control: Calculate
 documentation: ug
@@ -176,6 +176,50 @@ _IFNA (Formula_value, value_if_na)_
 
 
 * `value_if_na`: This value is required and the value returned when the formula evaluates to the #N/A error value. 
+
+
+
+## IFS
+
+
+
+`IFS` function evaluates one or more logical conditions and returns corresponding value of the first true condition.
+
+
+
+**Syntax:**
+
+
+
+_IFS(logical_test1, value_if_true1,[ logical_test2, value_if_true2, ….])_
+
+
+
+**where:**
+
+
+
+* `logical_test1` is any value or expression that can be evaluated to `True` or `False`.
+
+
+
+* `value_if_true` is the value returned if the corresponding condition is `True`.
+
+
+
+**Remarks:**
+
+
+
+* If no `True` condition is found, this function returns `#N/A` error string.
+
+
+
+* If a logical_test argument gives a value other than true or false, this function returns `#VALUE!` error.
+
+
+
+* If a logical_test argument does not have a corresponding value_if_true, the error message `Error: you have entered too few arguments in this function` is shown.
 
 
 
