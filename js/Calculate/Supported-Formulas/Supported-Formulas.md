@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential JS
-description: supported formulas
+description: This documentation showcases the list of supported formulas implemented  in Syncfusion Essential JS.
 platform: JS
 control: Calculate
 documentation: ug
@@ -224,6 +224,8 @@ The following are the list of formulas supported in Calculate library,
 
 [IFNA](/js/calculate/supported-formulas/logical-formulas#ifna)
 
+[IFS](/js/calculate/supported-formulas/logical-formulas#ifs)
+
 [INDEX](/js/calculate/supported-formulas/lookup-and-reference#index)
 
 [INDIRECT](/js/calculate/supported-formulas/lookup-and-reference#indirect)
@@ -361,6 +363,8 @@ The following are the list of formulas supported in Calculate library,
 [RADIANS](/js/calculate/supported-formulas/math-trigonometry#radians)
 
 [RAND](/js/calculate/supported-formulas/math-trigonometry#rand)
+
+[RANDBETWEEN](/js/calculate/supported-formulas/math-trigonometry#randbetween)
 
 [RANK.EQ](/js/calculate/supported-formulas/statistical#rankeq)
 
