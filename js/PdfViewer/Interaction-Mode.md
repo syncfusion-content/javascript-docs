@@ -16,7 +16,7 @@ The ejPdfViewer control provides interaction modes for easy interaction with the
 
 In this mode, the text selection can be performed in the PDF document loaded in the ejPdfViewer control. The panning and scrolling of the pages by touch cannot be performed in this mode.
 
-![](Interaction-Mode_images/InteractionMode_1.jpeg)
+![Interaction mode select](Interaction-Mode_images/InteractionMode_1.jpeg)
 
 **Enable or disable the Text selection**
 
@@ -32,7 +32,7 @@ $(function () {
 
 In this mode, the panning and scrolling of the pages by touch can be performed in the PDF document loaded in the ejPdfViewer control, but the text selection cannot be performed.
 
-![](Interaction-Mode_images/InteractionMode_2.jpeg)
+![Interaction mode pan](Interaction-Mode_images/InteractionMode_2.jpeg)
 
 **Changing the interaction mode**
 

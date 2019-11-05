@@ -41,5 +41,5 @@ By default, ‘flat-azure’ theme is applied to the ejPdfViewer. You can change
 <script src="https://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js"></script>
 {% endhighlight %}
 The following screenshot shows the PDF viewer in ‘gradient-saffron’ theme:
-![](Appearance_images/Appearance_img1.png)
+![PDF Viewer Appearance](Appearance_images/Appearance_img1.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 3D-Visualization
-description: 3d visualization
+title: 3D-Visualization with PivotChart widget for Syncfusion Essential JS
+description: This document illustrates that how to define 3d visualization and its types in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug
@@ -38,7 +38,7 @@ The 3D column chart is rendered by specifying the chart type as **“Column”**
     });
 {% endhighlight %}
 
-![](3D-Visualization_images/3DColumnChart.png)
+![JavaScript column chart control rendered in 3D](3D-Visualization_images/ColumnChart3D.png)
 
 ## 3D bar chart
 
@@ -60,7 +60,7 @@ The 3D bar chart is rendered by specifying the chart type as **“Bar”** in th
     });
 {% endhighlight %}
 
-![](3D-Visualization_images/3DBarChart.png)
+![JavaScript bar chart control rendered in 3D](3D-Visualization_images/BarChart3D.png)
 
 ## 3D stacking bar chart
 The 3D stacking bar chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
@@ -81,7 +81,7 @@ The 3D stacking bar chart is rendered by specifying the chart type as **“Stack
     });
 {% endhighlight %}
 
-![](3D-Visualization_images/3DStackingBarChart.png)
+![JavaScript stacking bar chart control rendered in 3D](3D-Visualization_images/StackingBarChart3D.png)
 
 ## 3D stacking column chart
 The 3D stacking column chart is rendered by specifying the chart type as **“Stacking Column”** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
@@ -102,7 +102,7 @@ The 3D stacking column chart is rendered by specifying the chart type as **“St
     });
 {% endhighlight %}
 
-![](3D-Visualization_images/3DStackingColumnChart.png)
+![JavaScript stacking column chart control rendered in 3D](3D-Visualization_images/StackingColumnChart3D.png)
 
 ## 3D pie chart
 Th 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
@@ -121,9 +121,9 @@ Th 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **�
             type: ej.PivotChart.ChartTypes.Pie
         }
     });
-{% endhighlight %}   
+{% endhighlight %}
 
-![](3D-Visualization_images/3DPieChart.png)
+![JavaScript pie chart control rendered in 3D](3D-Visualization_images/PieChart3D.png)
 
 ## Rotating 3D chart
 You can rotate the 3D chart towards left or right by setting an appropriate angle value to the [`rotation`](/api/js/ejpivotchart#members:rotation) property. The direction of the chart display depends on the positive or negative angle value.
@@ -140,6 +140,6 @@ You can rotate the 3D chart towards left or right by setting an appropriate angl
         rotation: 40
     });
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](3D-Visualization_images/Rotating3DChart.png)
+![JavaScript pivot chart control with 3D rotation](3D-Visualization_images/Rotating3DChart.png)

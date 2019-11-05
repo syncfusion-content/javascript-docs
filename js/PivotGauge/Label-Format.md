@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label Format
-description: label format
+title: Label Format | JavaScript | PivotGauge | Syncfusion
+description: This document illustrates that how to define label format feature and its functionalities in JavaScript PivotGauge control
 platform: js
 control: PivotGauge
 documentation: ug
@@ -40,4 +40,4 @@ $(function () {
 });
 {% endhighlight %}
 
-![](Label-Format_images/labelformat.png) 
+![Label formats in JavaScript pivot gauge control](Label-Format_images/labelformat.png) 

@@ -21,6 +21,8 @@ N> 2. Frozen Rows and Frozen Columns
 N> 3. Hierarchy
 N> 4. Detail template 
 
+I> `ejgrid.responsive.css` should be referred.
+
 ## Mobile Layout
 
 If client width is less than 321px, the grid will render in mobile mode. In which, you can see that grid user interface is customized and redesigned for best view in small screens. The customized features includes responsive row rendering, filtering, sorting, searching and editing.
@@ -61,7 +63,7 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Responsive_images/Responsive_img1.png)
+![ResponsiveRow](Responsive_images/Responsive_img1.png)
 
 
 W> IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should be referred to display Responsive Row.
@@ -70,31 +72,31 @@ W> IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should b
 
 The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen in the following screen shots.
 
-![](Responsive_images/Responsive_img2.png)
+![customized resposive](Responsive_images/Responsive_img2.png)
 {:caption}
 Responsive row with filtering , sorting and searching
 
-![](Responsive_images/Responsive_img3.png)
+![crud](Responsive_images/Responsive_img3.png)
 
 {:caption}
 CRUD in mobile layout
 
-![](Responsive_images/Responsive_img4.png)
+![filtering4](Responsive_images/Responsive_img4.png)
 
 {:caption}
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img5.png)
+![filtering5](Responsive_images/Responsive_img5.png)
 {:caption}
 
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img6.png)
+![sorting](Responsive_images/Responsive_img6.png)
 
 {:caption}
 Sorting in mobile layout
 
-![](Responsive_images/Responsive_img7.png)
+![searching](Responsive_images/Responsive_img7.png)
 {:caption}
 
 Searching in mobile layout
@@ -171,12 +173,12 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Responsive_images/Responsive_img8.png)
+![tab](Responsive_images/Responsive_img8.png)
 {:caption}
 
 Default tab layout
 
-![](Responsive_images/Responsive_img9.png)
+![filtertab](Responsive_images/Responsive_img9.png)
 
 {:caption}
 Filtering design in tab layout.
@@ -236,7 +238,7 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Responsive_images/Responsive_img10.png)
+![minwidth](Responsive_images/Responsive_img10.png)
 
 
 MinWidth set to Grid
@@ -271,5 +273,4 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-I> `ejgrid.responsive.css` should be referred.
 

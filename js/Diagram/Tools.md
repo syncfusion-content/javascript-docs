@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Draw shapes, selection rectangles, or Pan Diagram, when you click and drag over the Digram surface
-description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
+title: Tools | Diagram | Javascript | Syncfusion
+description: This section explains about how to draw shapes or pan Diagram by clicking and dragging over the Diagram surface.
 platform: js
 control: Diagram
 documentation: ug
@@ -46,7 +46,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/js/Diagram/Tools_images/Tools_img1.png)
+![Draw a Shapes](Tools_images/Tools_img1.png)
 
 The following code example illustrates how to draw a path.
 
@@ -70,7 +70,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/js/Diagram/Tools_images/Tools_img3.png)
+![Draw a Shapes](Tools_images/Tools_img3.png)
 
 ### Connectors
 
@@ -93,7 +93,7 @@ diagram.update({
 
 {% endhighlight %}
 
-![](/js/Diagram/Tools_images/Tools_img2.png)
+![Draw a Connectors](Tools_images/Tools_img2.png)
 
 ### Text 
 

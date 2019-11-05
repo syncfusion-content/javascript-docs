@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Customization
+title: Syncfusion SpellCheck - Customization
 description: SpellCheck Customization
 platform: js
 control: spellcheck
@@ -16,7 +16,7 @@ The Essential JavaScript SpellCheck provides option to customize for the followi
     
 ## Misspell Word Appearance
 
-The SpellCheck control provide the support([misspellWordCss](/js/api/ejspellcheck#members:misspellwordcss)) to display the error word in user defined style. By default displaying the error words with the red underline. 
+The SpellCheck control provide the support([misspellWordCss](/api/js/ejspellcheck#members:misspellwordcss)) to display the error word in user defined style. By default displaying the error words with the red underline. 
 
 The following code example depicts the way to customize the error word highlight (displaying error word with red color font and lightblue background).
 

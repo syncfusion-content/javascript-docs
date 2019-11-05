@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive
-description: responsive
+title: Responsive with PivotGrid widget for Syncfusion Essential JS
+description: This document illustrates that how to enable responsive layout rendering in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug
@@ -18,29 +18,29 @@ On resizing the browser, the PivotTable field list will get collapse and an icon
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-             url: "/OLAPService",
+        url: "/OLAPService",
         isResponsive: true
     });
 });
 
 {% endhighlight %}
 
-![](Responsive_images/normal.png)
+![JavaScript pivot grid control with normal layout](Responsive_images/normal.png)
 
 _Normal PivotGrid_
 {:.caption}
 
-![](Responsive_images/responsive.png)
+![JavaScript pivot grid control with responsive layout](Responsive_images/responsive.png)
 
 _Responsive PivotGrid_
 {:.caption}
 
-![](Responsive_images/res-schema.png)
+![JavaScript pivot table field list in collapsed state](Responsive_images/res-schema.png)
 
 _Responsive PivotTable Field List - Collapsed_
 {:.caption}
 
-![](Responsive_images/res-schema1.png)
+![JavaScript pivot table field list in expanded state](Responsive_images/res-schema1.png)
 
 _Responsive PivotTable Field List - Expanded_
 {:.caption}

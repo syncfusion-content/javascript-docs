@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | DatePicker | JavaScript | Syncfusion
 description: Configure start day of week, step month, and enable/disable
 platform: js
 control: DatePicker
 documentation: ug
 api: /api/js/ejdatepicker
 ---
-# Miscellaneous 
+# Miscellaneous
 
 ## Start Day
 
@@ -147,6 +147,28 @@ The **allowDrillDown** property of the DatePicker control allow or restrict the 
                allowDrillDown: true  
 
             });
+
+        });
+
+{% endhighlight %}
+
+## setValue
+
+The **setValue()** method in the DatePicker control allows the user to set any date value in DatePicker calendar.
+
+{% highlight javascript %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker();
+
+            // Create DatePicker instance
+
+            var dateObj = $("#datepicker").data("ejDatePicker");
+
+            dateObj.setValue(new Date()); // sets the date value
 
         });
 

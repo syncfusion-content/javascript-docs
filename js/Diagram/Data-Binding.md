@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate Diagram from external data sources
-description: How to populate the Diagram from the local data, remote data, or html tables?
+title: Data-Binding | Diagram | Javascript | Syncfusion
+description: This section explains how to populate the Diagram from the local data, remote data, or HTML tables in Diagram control.
 platform: js
 control: Diagram
 documentation: ug
@@ -112,7 +112,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](/js/Diagram/Data-Binding_images/Data-Binding_img1.png)
+![Local Data-binding](Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -186,7 +186,7 @@ function nodeTemplate(diagram, node) {
 
 {% endhighlight %}
 
-![](/js/Diagram/Data-Binding_images/Data-Binding_img2.png)
+![Remote Data-binding](Data-Binding_images/Data-Binding_img2.png)
 
 ## HTML Table Data
 
@@ -316,7 +316,7 @@ $(function() {
 
 {% endhighlight %}
 
-![](/js/Diagram/Data-Binding_images/Data-Binding_img4.png)
+![HTML Table Data-binding](Data-Binding_images/Data-Binding_img4.png)
 
 ## CRUD
 

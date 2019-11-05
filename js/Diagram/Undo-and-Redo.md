@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Track the history of changes and revert/restore them when required
-description: How to revert/restore the changes?
+title: Undo-Redo | Diagram | Javascript | Syncfusion
+description: This section explains how to revert/restore the changes using Undo and Redo commands in the ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug

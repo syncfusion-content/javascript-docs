@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates
+title: Templates in Syncfusion ListBox
 description: templates
 platform: js
 control: ListBox
@@ -74,4 +74,46 @@ Define the styles for the template as below.
 
 
 ![ALt text](Templates_images\Templates_img1.png)
+
+## Render template with conditional statements
+
+By default, [template](https://help.syncfusion.com/api/js/ejlistbox#members:template) property in ListBox control accepts only string values.To render ListBox items using jsrender script template, use the [targetID](https://help.syncfusion.com/api/js/ejlistbox#members:targetid) property and map the corresponding element id to this property.     
+
+Refer to the following code.
+
+{% highlight html %}
+
+    <div class="row">
+     <div class="cols-sample-area">
+        <div class="ctrllabel">Select a List</div>
+        <div id="list"></div>
+        <div id="template">
+        </div>
+     </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+     
+    <script id="tableTemplate" type="text/x-jsrender">
+      {% raw %} {{if ID < 4}}  {% endraw %}
+      <li><span class="e-icon e-user" style=" display: inline-block;"></span><span style=" display: inline-block;"><b>{{:text}}</b></span></li>
+      {% raw %} {{else}}
+      <li>{{:text}}</li>
+     {{/if}} {% endraw %}
+    </script>
+    <script>
+      $(function () {
+          var list = [{ text: "Erik", ID: "1" }, { text: "John", ID: "2" }, { text: "Nancy", ID: "3" }, { text: "David", ID: "4" }, { text: "Martin", ID: "5" }, {text: "Louis",  ID: "6" }];
+        $("#template").append($("#tableTemplate").render(list)); //append jsrender template to div element.
+        $("#list").ejListBox({
+            targetID: "template"
+        });
+      })
+    </script>
+
+{% endhighlight %}
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/4nfszgmf)
 

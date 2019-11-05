@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Defer-Update
-description: defer update
+title: Defer-Update with PivotGrid widget for Syncfusion Essential JS
+description: This document illustrates that how to enable defer-update in server mode of JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug
@@ -30,10 +30,10 @@ Defer update support allows you to refresh the control only on-demand and not du
               layout: ej.PivotSchemaDesigner.Layouts.Excel
           });
   }
-  
+
 {% endhighlight %}
 
-![](Defer-Update_images/relationaldeferupdate.png) 
+![Defer update support in JavaScript pivot grid control](Defer-Update_images/relationaldeferupdate.png)
 
 
 

@@ -158,36 +158,56 @@ You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#m
 
 {% highlight javascript %}
 
-        $(function () {
-            var items = [
-              { text: "ListItem 1", value: "item1" },
-	          { text: "ListItem 2", value: "item2" },
-		      { text: "ListItem 3", value: "item3" },
-		      { text: "ListItem 4", value: "item4" },
-		      { text: "ListItem 5", value: "item5" }
-            ];
-            $('#dropdown1').ejDropDownList({
-                width: 300,
-                dataSource: items,
-                fields: { text: "text", value: "value" },
-                showCheckbox: true,
-                headerTemplate: "<div class='temp' ><input id ='check' type='checkbox'  />   </div>"
-            });
-            $("#check").ejCheckBox({ text: "Check All", change: "Change" });
+     var flag;
+     $(function () {
+        var items = [
+            { text: "ListItem 1", value: "item1" },
+            { text: "ListItem 2", value: "item2" },
+            { text: "ListItem 3", value: "item3" },
+            { text: "ListItem 4", value: "item4" },
+            { text: "ListItem 5", value: "item5" }
+        ];
+        $('#dropdown1').ejDropDownList({
+            width: 300,
+            dataSource: items,
+            fields: { text: "text", value: "value" },
+            showCheckbox: true,
+            change: "Check",
+            headerTemplate: "<div class='temp' ><input id ='check' type='checkbox'/></div>"
         });
-        function Change(args) {
-            window.flag = true;
-            var obj = $("#dropdown1").ejDropDownList("instance");
-            if (args.isChecked) obj.checkAll();
-            else obj.uncheckAll();
-            window.flag = false;
+        $("#check").ejCheckBox({ text: "Check All", change: "Change" });
+    });
+    function Change(args) {
+        if (!flag) {
+            var drop = $("#dropdown1").ejDropDownList("instance");
+            if (args.isChecked) drop.checkAll();
+            else drop.uncheckAll();
         }
+    }
+    function Check(args) {
+        var drop = $("#dropdown1").ejDropDownList("instance");
+        var instance = $("#check").data("ejCheckBox");
+
+        if (!args.isChecked) {
+            flag = true; //set flag variable to avoid triggering of checkbox change during check change.
+            instance.setModel({ checked: false }); //uncheck check All when any one of the item is unchecked.
+            flag = false;
+
+        }
+        if (drop.getSelectedItem().length == drop.getListData().length) //get selected items length
+        {
+            instance.setModel({ checked: true }); //check check All checkbox when all items in list are selected.
+        }
+
+    }
 
 {% endhighlight %}
 
 The following screenshot exhibits the output of the above code,
 
 ![checkall](HowTo_images/HowTo_img2.jpeg)
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/tm4z5vej)
 
 ## To Cascade DropDownLists with different field names
 By default cascading is performed based on the Value field, so that it needs to be same with cascaded DropDownList. If you need to cascade 2 DropDownLists with different field names and same values in it, you can achieve it using cascadeQuery and [cascade](https://help.syncfusion.com/api/js/ejdropdownlist#events:cascade "") event. Define the cascade event for the DropDownList from which you need to filter the datasource for the other DropDownList. 
@@ -610,15 +630,17 @@ function onSelect(args){
              var target = $("#selectCar");
              $(target).css({display : "none"});
              var dateSpan = document.createElement('span');
-             dateSpan.innerHTML = '<img id="myImg" class="eimg" src=' + imgLocation + ' alt="employee"/>';
+             dateSpan.innerHTML = '<img id="myImg" class="eimg" src=' + imgLocation + ' alt="employee"/>' + '<span class="txt"> ' + args.text + '</span>'; // create a new span element with image and selected text.  
               $(dateSpan).insertBefore(target);
           }
           else{
 
               edit_save = document.getElementById("myImg");
-              edit_save.src = imgLocation;     
+              edit_save.src = imgLocation;   
+              document.getElementsByClassName("txt")[0].textContent = args.text  
           }
     }
+}
      
 {% endhighlight %}
 
@@ -646,6 +668,8 @@ Apply the following styles
     </style>
 
 {% endhighlight %}
+
+Refer to the sample [here](https://jsplayground.syncfusion.com/010boe4k)
 
 ![customValue](HowTo_images/customValue.jpg)
 
@@ -957,3 +981,110 @@ ContextMenu can be added for DropDownList items by setting the class name of  Dr
 [Sample](https://jsplayground.syncfusion.com/si4mex5s)
 
 ![contextmenu](HowTo_images/contextmenu.jpg) 
+
+## Get previously selected value in DropDownList
+
+The current selected value can be retrieved through the change event of DropDownList. In some cases, you may require the previously selected value of DropDownList; in these cases, declare a global variable and store initial value of DropDownList through the create event. Update this value on every value change using the change event of DropDownList. 
+
+Refer to the following code
+
+{% highlight javascript %}
+
+        <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <div class="ctrllabel">Select a bike</div>
+                        <input type="text" id="bikeList" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var target; var PreviousVal;
+        $(function () {
+            // declaration
+            BikeList = [
+                { value: "1", text: "Apache RTR" }, { value: "2", text: "CBR 150-R" }, { value: "3", text: "CBZ Xtreme" },
+                { value: "4", text: "Discover" }, { value: "5", text: "Dazzler" }, { value: "6", text: "Flame" },
+                { value: "8", text: "FZ-S" }, { value: "9", text: "Pulsar" },
+                { value: "10", text: "Shine" }, { value: "11", text: "R15" }, { value: "12", text: "Unicorn" }
+            ];
+            $('#bikeList').ejDropDownList({
+                dataSource: BikeList,
+                fields: { text: "text", value: "value" },
+                value: "1",
+                create: function (args) {
+                    PreviousVal = this.value();
+                },
+                change: function (args) {
+                    alert("Previous Value before change:" + PreviousVal);
+                    PreviousVal = args.value;
+                }
+            });
+
+        });
+    </script>
+
+ {% endhighlight %}
+
+ Refer to the sample [here](https://jsplayground.syncfusion.com/r40yhi23)
+
+## Add tooltip for DropDownList based on selected value
+
+To show the selected value as tooltip on DropDownList's input, render the DropDownList container as ejTooltip, and modify its content dynamically based on the selected value using the open event of Tooltip. 
+
+ Refer to the following code
+
+ {% highlight javascript %}
+
+     <div class="content-container-fluid">
+       <div class="row">
+        <div class="cols-sample-area">
+            <div class="frame">
+                <div class="control">
+                    <div class="ctrllabel">Select a bike</div>
+                    <input type="text" id="bikeList" />
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var instance, tip;
+        $(function () {
+        // declaration
+        BikeList = [
+            { value: "1", text: "Apache RTR" }, { value: "2", text: "CBR 150-R" }, { value: "3", text: "CBZ Xtreme" },
+            { value: "4", text: "Discover" }, { value: "5", text: "Dazzler" }, { value: "6", text: "Flame" },
+            { value: "7", text: "FZ-S" }, { value: "8", text: "Pulsar" },
+            { value: "9", text: "Shine" }, { value: "10", text: "R15" }, { value: "11", text: "Unicorn" }
+        ];
+        $('#bikeList').ejDropDownList({
+            dataSource: BikeList,
+            width: "200px",
+            value: "Shine",
+            fields: { id: "value", text: "text", value: "text" },
+            create: "Create"
+        });
+    });
+
+     function Create() {
+        instance = $('#bikeList').data("ejDropDownList");
+        instance.container.ejTooltip({       //render container as ejTooltip
+            content: instance.model.value,
+            open: "Open"
+        });
+     }
+     function Open() {
+        tip = $('#bikeList_container').data("ejTooltip"); // attribute for dropdownlist's container
+        tip.setModel({ content: instance.model.value });
+     }
+    </script>
+
+ {% endhighlight %}
+
+Refer to the sample [here](http://jsplayground.syncfusion.com/2m1bd3t0)

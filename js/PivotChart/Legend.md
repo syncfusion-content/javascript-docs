@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend
-description: legend
+title: Legend with PivotChart widget for Syncfusion Essential JS
+description: This document illustrates that how to define legend and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug
@@ -25,7 +25,7 @@ $(function()
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true
         },
         ....
@@ -34,7 +34,7 @@ $(function()
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img1.png) 
+![Legend visibility in JavaScript pivot chart control](Legend_images/Legend_img1.png)
 
 ## Legend shape
 You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in the pivot chart widget. The default value of legend shape is “Rectangle”. The following are the supported legend shapes:
@@ -56,7 +56,7 @@ You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in 
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true,
             //Applying Legend Shape
             shape: "Star"
@@ -66,7 +66,7 @@ You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png) 
+![Legend shape in JavaScript pivot chart control](Legend_images/Legend_img2.png)
 
 ## Legend position
 By using the [`position`](/api/js/ejchart#members:legend-position) property, you can place the legend at top, bottom, left, or right of the pivot chart.
@@ -80,7 +80,7 @@ N> The default value of the legend position is bottom in the pivot chart.
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true,
             //To place the legend at top of the Chart
             position: "top"
@@ -90,7 +90,7 @@ N> The default value of the legend position is bottom in the pivot chart.
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png) 
+![Legend position in JavaScript pivot chart control](Legend_images/Legend_img3.png)
 
 ## Legend title
 To add a legend title, you should specify the title text in the [`title.text`](/api/js/ejchart#members:legend-title-text) property.
@@ -102,7 +102,7 @@ To add a legend title, you should specify the title text in the [`title.text`](/
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true,
             //Add title to the Chart legend
             title:
@@ -115,11 +115,11 @@ To add a legend title, you should specify the title text in the [`title.text`](/
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png) 
+![Legend title in JavaScript pivot chart control](Legend_images/Legend_img4.png)
 
 ## Legend alignment
 You can align the legend to center, far, and near based on its position in the chart area by using the [`alignment`](/api/js/ejchart#members:legend-alignment) .
- 
+
 {% highlight javascript %}
 
     $("#PivotChart1").ejPivotChart(
@@ -127,7 +127,7 @@ You can align the legend to center, far, and near based on its position in the c
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true,
             //Aligning the legend near to the Chart
             alignment: "Near"
@@ -137,7 +137,7 @@ You can align the legend to center, far, and near based on its position in the c
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png)
+![Legend alignment in JavaScript pivot chart control](Legend_images/Legend_img5.png)
 
 ## Legend items - size and border
 By using the [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle-width), [`itemStyle.height`](/api/js/ejchart#members:legend-itemstyle-height), and [`itemStyle.border`](/api/js/ejchart#members:legend-itemstyle-border) properties of the legend, you can change the size and border of legend items.
@@ -149,7 +149,7 @@ By using the [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle-width)
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true,
             //Changing legend items border, height and width
             itemStyle:
@@ -168,8 +168,8 @@ By using the [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle-width)
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
- 
+![Size and border of legend in JavaScript pivot chart control](Legend_images/Legend_img6.png)
+
 ## Legend border
 By using the [`border`](/api/js/ejchart#members:legend-border) in the legend, you can customize the color and width of the border.
 
@@ -180,7 +180,7 @@ By using the [`border`](/api/js/ejchart#members:legend-border) in the legend, yo
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true,
             //Setting border color and width to legend
             border:
@@ -194,7 +194,7 @@ By using the [`border`](/api/js/ejchart#members:legend-border) in the legend, yo
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![Legend border in JavaScript pivot chart control](Legend_images/Legend_img7.png)
 
 ## Legend text
 By using the [`font`](/api/js/ejchart#members:legend-font), you can customize the font family, font style, font weight, and size of the legend text.
@@ -206,7 +206,7 @@ By using the [`font`](/api/js/ejchart#members:legend-font), you can customize th
         ....
         legend:
         {
-            //Legend Visibility 
+            //Legend Visibility
             visible: true,
             //Customizing the legend text
             font:
@@ -222,4 +222,4 @@ By using the [`font`](/api/js/ejchart#members:legend-font), you can customize th
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img8.png)
+![Legend text in JavaScript pivot chart control](Legend_images/Legend_img8.png)

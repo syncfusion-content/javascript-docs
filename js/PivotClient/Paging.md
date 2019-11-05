@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging
-description: paging
+title: Paging with PivotClient widget for Syncfusion Essential JS
+description: This document illustrates that how to define paging with respective to the modes in JavaScript PivotClient control
 platform: js
 control: PivotClient
 documentation: ug
@@ -14,7 +14,7 @@ I> This feature is applicable only for the OLAP data source.
 
 Paging helps to improve the rendering performance of the pivot client control by dividing the large amount of the data into several sections and displaying one section at a time.
 
-## Using pager 
+## Using pager
 
 You can enable the pager in the pivot client by setting the [`enablePaging`](/api/js/ejpivotclient#members:enablepaging) property to true. You can provide the page size and current page details for each axis through the [`pagerOptions`](/api/js/ejpivotclient#members:datasource-pageroptions) property.
 
@@ -34,7 +34,7 @@ You can enable the pager in the pivot client by setting the [`enablePaging`](/ap
                 categoricalCurrentPage: 1,
                 seriesCurrentPage: 1
             }
-        }, 
+        },
         enablePaging : true
     });
 </script>
@@ -46,7 +46,7 @@ You can enable the pager in the pivot client by setting the [`enablePaging`](/ap
 
 $("#PivotClient1").ejPivotClient({
     //...
-    url: "/OlapService",
+    url: "/OlapService.svc",
     enablePaging: true
 });
 
@@ -55,12 +55,12 @@ $("#PivotClient1").ejPivotClient({
 The following are the navigation option available in the pager:
 
 * Move first - Navigates to the first page.
-* Move last - Navigates to the last page. 
+* Move last - Navigates to the last page.
 * Move previous - Navigates to the previous page from the current page.
 * Move next - Navigates to the next page from the current page.
 * Numeric box - Navigates to the desired page by entering an appropriate page number in the numeric value.
 
-![](Paging_images/paging.png)
+![Paging in JavaScript pivot client control](Paging_images/paging.png)
 
 
 ## Using virtual scrolling
@@ -80,7 +80,7 @@ $("#PivotClient1").ejPivotClient({
             categoricalCurrentPage: 1,
             seriesCurrentPage: 1
         }
-    }, 
+    },
     enableVirtualScrolling : true
 });
 
@@ -92,13 +92,13 @@ $("#PivotClient1").ejPivotClient({
 
 $("#PivotClient1").ejPivotClient({
     //...
-    url: "/OlapService",
+    url: "/OlapService.svc",
     enableVirtualScrolling: true
 });
 
 {% endhighlight %}
 
-![](Paging_images/virtual-scrolling.png)
+![Virtual scrolling in JavaScript pivot client control](Paging_images/virtual-scrolling.png)
 
 ## Page settings
 
@@ -130,7 +130,7 @@ $("#PivotClient1").ejPivotClient({
             categoricalCurrentPage: 1,
             seriesCurrentPage: 1
         }
-    }, 
+    },
     enablePaging : true
 });
 

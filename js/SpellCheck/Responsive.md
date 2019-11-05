@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Responsive
+title: Syncfusion SpellCheck - Responsive
 description: How to set the spellcheck, responsive to screen resolutions
 platform: js
 control: spellcheck
@@ -9,7 +9,7 @@ api: /api/js/ejspellcheck
 ---
 # Responsive
 
-The SpellCheck control has support for responsive behavior based on client browser’s width and height. To enable responsive, [isResponsive](/api/js/ejspellcheck#members:isresponsive-isresponsive) property should be true.
+The SpellCheck control has support for responsive behavior based on client browser’s width and height. To enable responsive, [isResponsive](/api/js/ejspellcheck#members:isresponsive) property should be true.
 
 The following code example describes the above behavior.
 
@@ -71,4 +71,4 @@ The dialog of spell check control is rendering based on the client browser’s w
 
 Mobile Rendering Screenshot:
 
-![](Responsive_Images/Responsive_Image.png)
+![SpellCheck responsive image](Responsive_Images/Responsive_Image.png)

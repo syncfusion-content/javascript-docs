@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of RichTextEditor widget for Syncfusion Essential JS
-description: Customization in RichTextEditor widget
+description: Customization for Essential Studio JavaScript Syncfusion RichTextEditor widget to perform custom operations
 platform: js
 control: RTE
 documentation: ug
@@ -528,11 +528,23 @@ Apply the following style and In the below sample, the sprite image has been use
 
 ## RTE - Spellcheck Integration
 
-We have integrated spellcheck with RTE component. This spellchecker will validate the text present in RTE and provide suggestion in both context menu and dialog mode. 
+We have integrated Spellcheck with RTE component. This spellchecker will validate the text present in RTE and provide suggestion in both context menu and dialog mode.
 
-This can be achieved application side using RTE custom tools. We have rendered spellcheck control in RTE iframe element and using custom tool spellcheck dialog mode rendered. 
+Spellcheck can be integrated with RTE in application side using RTE custom tools. Render RTE iframe element as Spellcheck control and set required SpellCheck properties for context menu and dialog mode. 
 
-N> We have prevent the spellcheck context menu using "contextBeforeOpen" event and get the spellcheck suggestion list merge to RTE context menu. 
+Refer [here](https://js.syncfusion.com/demos/web/#!/bootstrap/rte/spellcheck) for live demo of SpellCheck integration. 
+
+## RTE - Spellcheck Integration ContextMenu Mode
+
+By default , RTE has a context menu with few options which will be displayed during right click inside RTE editor area. After integrating spellcheck, suggestion list for error words will be shown along with the existing RTE context menu. 
+
+N> We have prevented the default Spellcheck context menu using "contextBeforeOpen" event and merged the Spellcheck suggestion list to RTE context menu. 
+
+![contextmode](RTESpellcheck_images/spellcheck_contextmode.png)
+
+## RTE - Spellcheck Integration Dialog Mode
+
+A custom tool can be included in toolbar of RTE for validating the text inside RTE. SpellCheck dialog will be opened on clicking this custom tool.Invoke showInDialog() method of SpellCheck in the custom tool action. Refer to the following code.
 
 {% highlight html %}
 
@@ -585,10 +597,155 @@ N> We have prevent the spellcheck context menu using "contextBeforeOpen" event a
 
 {% endhighlight %}
 
-## RTE - Spellcheck Integration ContextMenu Mode
+SpellCheck icon can be included by setting the required image as background through class name in default.CSS file. Refer to the following code
 
-![](RTESpellcheck_images/spellcheck_contextmode.png)
+{% highlight html %}
 
-## RTE - Spellcheck Integration Dialog Mode
+         <style>
+        .e-rte-toolbar-icon.e-spell {
+            background: url(../content/images/rte/Icon_Spellchecker.svg) no-repeat;
+            background-position: 3px 5px;
+        }
+       </style>
 
-![](RTESpellcheck_images/spellcheck_dialogmode.png)
+{% endhighlight %}
+
+![dialogmode](RTESpellcheck_images/spellcheck_dialogmode.png)
+
+## Resolve content overflow issue with RichTextEditor in IE, Edge, and FireFox browsers
+
+While rendering RichTextEditor inside the bootstrap tab, the content of RichTextEditor may overflow outside iframe editor area in some browsers. To resolve this issue, invoke the refresh method of RichTextEditor using its instance inside the show method of the bootstrap tab.
+
+Refer to the following code.
+
+{% highlight html %}
+
+    <ul class="nav nav-tabs">
+     <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+     <li><a data-toggle="tab" href="#menu3">Rich Text Editor</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+        <h3>HOME</h3>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+        <h3>Rich Text Editor</h3>
+        <div style="padding:4%;">
+            <textarea id="editor"></textarea>
+        </div>
+      </div>
+     </div>
+    <script type="text/javascript">
+     $(function () {
+        $("#editor").ejRTE({
+            width: "100%"
+        });
+
+        var rteObj = $("#editor").ejRTE("instance");
+        rteObj.setHtml("The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for the displayed content. A rich text editor control provides users with a toolbar that helps them to apply rich text formats to the text entered in the text area.Provide the tool bar support, it’s also customizable.Options to get the HTML elements with styles.Support to insert image from a defined path.Footer elements and styles(tag / Element information , Action button (Upload, Cancel))Re-size the editor support.Provide efficient public methods and client side events.Keyboard navigation support.");
+
+        $("#tab a[href='#menu3']").on('shown.bs.tab', function () {
+            var rteObj = $("#editor").ejRTE("instance");
+            rteObj.refresh();
+        });
+     });
+    </script>
+{% endhighlight %}
+
+Refer to the sample [link](http://jsplayground.syncfusion.com/jkycg2xq)
+
+## Remove the url validation when insert hyperlink in RichTextEditor
+
+By default, the url entered in textbox for inserting hyperlink will be validated in source to check whether it is valid. If you need to skip this validation and allow users to insert any type of url, override the `_isUrl` method of RichTextEditor. Refer to the following code. 
+
+{% highlight html %}
+
+    <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+                  &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
+         &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+         client side. Customer easy to edit the contents and get the HTML content for
+         the displayed content. A rich text editor control provides users with a toolbar
+         that helps them to apply rich text formats to the text entered in the text
+          area. &lt;/p&gt;
+         &lt;p&gt;&lt;b&gt;
+     </textarea>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true, create: "create" });
+        });
+        function create() {
+            // You can customize the isUrl function based on your scenario.
+            this._isUrl = function (url) {
+                return url != "";
+            }
+        }
+    </script>
+
+{% endhighlight %}
+
+Refer to the sample [link](https://jsplayground.syncfusion.com/o0phxjc2)
+
+## Paste large content into RTE
+
+By default , the maximum content length for RTE is 7000 characters. If the pasted content exceeds this limit, then the paste operation will be prevented.To paste large content inside RTE, specify the content length using  `maxLength` property of RTE. Refer to the following code.
+
+ {% highlight html %}
+
+    <textarea id="rteSample">
+                  &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
+         &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+         client side. Customer easy to edit the contents and get the HTML content for
+         the displayed content. A rich text editor control provides users with a toolbar
+         that helps them to apply rich text formats to the text entered in the text
+          area. &lt;/p&gt;
+         &lt;p&gt;&lt;b&gt;
+     </textarea>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true, maxLength: 140000 });
+        });
+       
+    </script>
+
+{% endhighlight %}
+
+Refer to the sample [link](https://jsplayground.syncfusion.com/g5acwr3h)
+
+## Modify the default font in RTE
+
+By default, the RTE content will be rendered inside iframe, and styles defined in sample will not be loaded inside iframe. However, the required styles can be defined in external stylesheet, and this can be loaded into iframe using the `externalCSS` property. 
+
+In the following code, the `font-family` style is defined for body in external stylesheet and referred using the `externalCSS` property. 
+
+ {% highlight html %}
+
+     <textarea id="rteSample">
+                  &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
+         &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+         client side. Customer easy to edit the contents and get the HTML content for
+         the displayed content. A rich text editor control provides users with a toolbar
+         that helps them to apply rich text formats to the text entered in the text
+          area. &lt;/p&gt;
+         &lt;p&gt;&lt;b&gt;
+    </textarea>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#rteSample").ejRTE({ width:"100%",minWidth:"100px",isResponsive:true,externalCSS:"iframe.css"});
+        });
+       
+    </script>
+
+{% endhighlight %}
+
+Styles defined in external style sheet as shown below
+
+ {% highlight html %}
+   
+   body { 
+       font-family:Arial; 
+     } 
+
+ {% endhighlight %}

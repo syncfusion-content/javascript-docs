@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Frozen Header
-description:  frozen header
+title:  Frozen Header with PivotGrid widget for Syncfusion Essential JS
+description:  This document illustrates that how to enable frozen header feature and its options in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug
@@ -27,7 +27,7 @@ Allows you to freeze the header of the grid. so, it will be always visible while
 
 {% endhighlight %}
 
-![](FrozenHeader_images/row_col_freeze.png)
+![Frozen header, aka Freeze headers support in JavaScript pivot grid control](FrozenHeader_images/row_col_freeze.png)
 
 You can also freeze the row/column headers individually by setting [`enableFrozenRowHeaders`](/api/js/ejpivotgrid#members:frozenheadersettings-enablefrozenrowheaders)/[`enableFrozenColumnHeaders`](/api/js/ejpivotgrid#members:frozenheadersettings-enablefrozencolumnheaders) properties under the [`frozenHeaderSettings`](/api/js/ejpivotgrid#members:frozenheadersettings).
 
@@ -43,10 +43,10 @@ You can also freeze the row/column headers individually by setting [`enableFroze
         });
     });
 </script>
-    
+
 {% endhighlight %}
 
-![](FrozenHeader_images/row_freeze.png)
+![Frozen row headers in JavaScript pivot grid control](FrozenHeader_images/row_freeze.png)
 
 {% highlight html %}
 
@@ -63,7 +63,7 @@ You can also freeze the row/column headers individually by setting [`enableFroze
 
 {% endhighlight %}
 
-![](FrozenHeader_images/col_freeze.png)
+![Frozen column headers in JavaScript pivot grid control](FrozenHeader_images/col_freeze.png)
 
 You can also set the size of the scroller (horizontal and vertical) in the pivot grid by using the [`scrollerSize`](../api/ejpivotgrid#members:frozenheadersettings-scrollersize) property under the [`frozenHeaderSettings`](../api/ejpivotgrid#members:frozenheadersettings).
 
@@ -74,12 +74,12 @@ You can also set the size of the scroller (horizontal and vertical) in the pivot
         $("#PivotGrid1").ejPivotGrid({
             //...
             frozenHeaderSettings : {
-                scrollerSize : 18      
+                scrollerSize : 18
             }
         });
     });
 </script>
-    
+
 {% endhighlight %}
 
-![](FrozenHeader_images/scroll_size.png)
+![Scroller size in JavaScript pivot grid control](FrozenHeader_images/scroll_size.png)

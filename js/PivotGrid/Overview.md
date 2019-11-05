@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview 
+title: Overview | JavaScript | PivotGrid | Syncfusion
+description: It is an overview of PivotGrid control in JavaScript platform. PivotGrid component visualizes relational and OLAP data sources in tabular format
 platform: js
 control: PivotGrid
 documentation: ug

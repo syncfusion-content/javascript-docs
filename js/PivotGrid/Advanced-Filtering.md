@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Advanced Filtering and Sorting
-description: advance filtering and sorting
+title: Advanced Filtering | Sorting | PivotGrid |Syncfusion | JS
+description: This document describes how to define advance filtering and sorting with respective to the modes in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
 documentation: ug
@@ -48,21 +48,21 @@ In server mode, you can enable the advanced filtering and sorting option in the 
 
 Sorting provides an option to sort the members of a field either in ascending or descending order.
 
-![](AdvanceFiltering_images/sorting.png)
+![Sorting options in JavaScript pivot grid control](AdvanceFiltering_images/sorting.png)
 
 ## Label filtering
 
-Label filtering provides an option to filter the members of a field purely based on their caption. 
+Label filtering provides an option to filter the members of a field purely based on their caption.
 
-![](AdvanceFiltering_images/filtering.png)
+![Label filtering options in JavaScript pivot grid control](AdvanceFiltering_images/filtering.png)
 
-![](AdvanceFiltering_images/filtering_dialog.png)
+![Label filter dialog in JavaScript pivot grid control](AdvanceFiltering_images/filtering_dialog.png)
 
 
 ## Value filtering
 
 Value filtering provides an option to filter members based on total values of the appropriate measure between the members of the level.
 
-![](AdvanceFiltering_images/valuefilter.png)
+![Value filtering options in JavaScript pivot grid control](AdvanceFiltering_images/valuefilter.png)
 
-![](AdvanceFiltering_images/valuefilter_dialog.png)
+![Value filter dialog in JavaScript pivot grid control](AdvanceFiltering_images/valuefilter_dialog.png)

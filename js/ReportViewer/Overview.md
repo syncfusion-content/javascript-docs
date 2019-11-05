@@ -1,45 +1,17 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview | JavaScript Report Viewer | Syncfusion
+description: Overview of Syncfusion HTML5 JavaScript Report Viewer Component.
 platform: js
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
 
 # Overview
 
-The ReportViewer is a visualization control to view Microsoft SSRS RDL/RDLC files on a web page and it is powered by HTML5/JavaScript. It has support to bind DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
+The Report Viewer is a visualization control used to display SSRS, RDL, RDLC, and Syncfusion Report Server reports within web applications. It allows you to view RDL/RDLC reports with or without using SSRS or Syncfusion server. You can bind data sources, parameters, and render reports with all major capabilities of RDL reporting and export the report to PDF, Excel, CSV, Word, PowerPoint, and HTML formats. Some of the key features are,
 
-## Key Features
-
-The ReportViewer supports the following features.
-
-* DataSources (SQL Server, Oracle, MS Azure, XML, Business Object and SQL Server Compact Data Sources)
-* Filters and Parameters
-* Built-in Fields and Expressions
-* Grouping and Sorting
-* Report Items
-* Table
-* Matrix
-* List
-* Chart
-* Sparkline
-* DataBar
-* Map
-* Gauge
-* Indicator
-* Image
-* Textbox
-* Line
-* Rectangle
-* Subreport
-* Actions: Drilldown, Drill through, Toggle and Document Map
-* Printing, Exporting, Paging, FitToPage and Zooming
-* Report Processing Events
-* KnockOut/AngularJS Support
-* Toolbar Customization
-
-
-
+* Renders interactive reports with drill down, drill through, hyperlinks, and interactive sorting. 
+* Easily customize each element of report viewer and provide events for report processing customization.
+* Supports jQuery, Angular, React, Ember, Aurelia, PHP, and JSP.

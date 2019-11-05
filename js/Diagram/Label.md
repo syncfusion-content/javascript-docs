@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add text annotations to Diagram objects to textually describe them
-description: How to textually describe nodes and connectors?
+title: Label | Diagram | Javascript | Syncfusion
+description: This section explains how to use Essential ejDiagram control Label's functionality and its behavior.
 platform: js
 control: Diagram
 documentation: ug
@@ -74,7 +74,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img1.png)
+![Diagram label](Label_images/Label_img1.png)
 
 To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#members:nodes-labels "Label Properties").
 
@@ -98,7 +98,7 @@ To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/addlabelatruntime_img1.png)
+![Adding Labels at runtime](Label_images/addlabelatruntime_img1.png)
 
 ### Remove Labels at runtime
 
@@ -133,7 +133,7 @@ To set size for a nodes label, use [width](/api/js/ejdiagram#members:nodes-label
 
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
-![](/js/Diagram/Label_images/Label_img2.png)
+![Label Offset](Label_images/Label_img2.png)
 
 ### Horizontal and vertical alignments
 
@@ -143,15 +143,15 @@ The following tables illustrates all the possible alignments visually with **off
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![](/js/Diagram/Label_images/Label_img3.png) |
-| Center | | ![](/js/Diagram/Label_images/Label_img4.png) |
-| Right | | ![](/js/Diagram/Label_images/Label_img5.png) |
-| Left | Center | ![](/js/Diagram/Label_images/Label_img6.png) |
-| Center | | ![](/js/Diagram/Label_images/Label_img7.png) |
-| Right | | ![](/js/Diagram/Label_images/Label_img8.png) |
-| Left | Bottom | ![](/js/Diagram/Label_images/Label_img9.png) |
-| Center | | ![](/js/Diagram/Label_images/Label_img10.png) |
-| Right | | ![](/js/Diagram/Label_images/Label_img11.png) |
+| Left | Top | ![Label positioned in left and top of the node](Label_images/Label_img3.png) |
+| Center | | ![Label positioned in Center and top of the node](Label_images/Label_img4.png) |
+| Right | | ![Label positioned in Right and top of the node](Label_images/Label_img5.png) |
+| Left | Center | ![Label positioned in left and Center of the node](Label_images/Label_img6.png) |
+| Center | | ![Label positioned in Center and Center of the node](Label_images/Label_img7.png) |
+| Right | | ![Label positioned in Right and Center of the node](Label_images/Label_img8.png) |
+| Left | Bottom | ![Label positioned in left and Bottom of the node](Label_images/Label_img9.png) |
+| Center | | ![Label positioned in Center and Bottom of the node](Label_images/Label_img10.png) |
+| Right | | ![Label positioned in Right and Bottom of the node](Label_images/Label_img11.png) |
 
 The following codes illustrates how to align labels.
 
@@ -191,13 +191,13 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img12.png)
+![Label set as offset](Label_images/Label_img12.png)
 
 ### Label alignment with respect to Segments
 
  [segmentOffset](/api/js/ejdiagram#members:connectors-labels-segmentoffset "segmentOffset") and [alignment](/api/js/ejdiagram#members:connectors-labels-alignment "alignment") properties of label allows you to align the connector labels with respect to the segments. In the following image, the labels are placed exactly over the segments regardless of its rectangular bounds.
  
- ![](/js/Diagram/Label_images/Label_img32.png)
+ ![Connector Label](Label_images/Label_img32.png)
  
  Following code example illustrates how to align connector labels.
  
@@ -251,7 +251,7 @@ $("#diagram").ejDiagram({
 		
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img31.png)
+![Label positioned in connector end points](Label_images/Label_img31.png)
 
 By default, connector labels will be aligned with respect to the segments. The [relativeMode](/api/js/ejdiagram#members:connectors-labels-relativemode "relativeMode")  property of label allows you to disable this segment specific label alignment. Following code example illustrates how to disable the segment specific label alignment.
 
@@ -326,7 +326,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img13.png)
+![Label Margin](Label_images/Label_img13.png)
 
 ### Text Alignment
 
@@ -359,14 +359,14 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img14.png)
+![Text Alignment for the label](Label_images/Label_img14.png)
 
 | TextAlign | Image |
 |---|---|
-| Left | ![](/js/Diagram/Label_images/Label_img15.png) |
-| Right | ![](/js/Diagram/Label_images/Label_img16.png) |
-| Center | ![](/js/Diagram/Label_images/Label_img17.png) |
-| Justify | ![](/js/Diagram/Label_images/Label_img18.png) |
+| Left | ![Left alignment](Label_images/Label_img15.png) |
+| Right | ![Right alignment](Label_images/Label_img16.png) |
+| Center | ![Center alignment](Label_images/Label_img17.png) |
+| Justify | ![Justify alignment](Label_images/Label_img18.png) |
 
 ## Hyperlink
 
@@ -393,7 +393,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img33.png)
+![label with Hyperlink](Label_images/Label_img33.png)
 
 ## Template support for Label
 
@@ -429,13 +429,13 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img19.png)
+![Label Wrapping](Label_images/Label_img19.png)
 
 | Values | Description | Image |
 |---|---|---|
-| NoWrap | Text will not be wrapped | ![](/js/Diagram/Label_images/Label_img20.png) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/js/Diagram/Label_images/Label_img21.png) |
-| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/js/Diagram/Label_images/Label_img22.png) |
+| NoWrap | Text will not be wrapped | ![NoWrap](Label_images/Label_img20.png) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![Wrap](Label_images/Label_img21.png) |
+| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![WrapWithOverflow](Label_images/Label_img22.png) |
 
 ## TextOverflow
 
@@ -486,7 +486,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img23.png)
+![Label Appearance](Label_images/Label_img23.png)
 
 The fill, border and opacity appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background, opacity and border of a label.
 
@@ -521,7 +521,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img24.png)
+![Label Appearance](Label_images/Label_img24.png)
 
 ## Drag
 
@@ -580,7 +580,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img25.png)
+![Draging the label](Label_images/Label_img25.png)
  
 ## Rotate
 
@@ -613,7 +613,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img26.png)
+![Rotating the label](Label_images/Label_img26.png)
 
 N> There is no built-in support to rotate labels interactively.
 
@@ -643,7 +643,7 @@ diagram.startLabelEdit(node,node.labels[0]);
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img27.png)
+![Editing the label](Label_images/Label_img27.png)
 
 * Once the text editing is ended and text editor is focused, you can use the below events to do your customization.
 * The diagram client side event [editorFocusChange](/api/js/ejdiagram#events:editorfocuschange "editorFocusChange") gets triggered when editor got focus at the time of node’s label or text node editing.
@@ -756,7 +756,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Label_images/Label_img28.png)
+![Multiple labels](Label_images/Label_img28.png)
 
 ## LabelRendering Mode
 
@@ -788,7 +788,7 @@ The [constraints](/api/js/ejdiagram#members:nodes-labels-constraints "constraint
 
 | Expected behavior | Current behavior |
 |---|---|
-| ![](/js/Diagram/Label_images/Label_img29.png) | ![](/js/Diagram/Label_images/Label_img30.png) |
+| ![Limitation of label](Label_images/Label_img29.png) | ![Limitation of label](Label_images/Label_img30.png) |
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Types
-description: chart types
+title: Chart-Types with PivotChart widget for Syncfusion Essential JS
+description: This document illustrates that how to define chart types and its customization in JavaScript PivotChart control
 platform: js
 control: PivotChart
 documentation: ug
@@ -10,7 +10,7 @@ api: /api/js/ejpivotchart
 
 # Chart types
 
-Essential **PivotChart JS** supports 17 different types of charts as follows:
+Essential **PivotChart JS** supports 18 different types of charts as follows:
 
    * Column
    * Stacking column
@@ -29,13 +29,14 @@ Essential **PivotChart JS** supports 17 different types of charts as follows:
    * Funnel
    * Scatter
    * Bubble
+   * WaterFall
 
 ## Column chart
 
 The **column chart** is the most commonly used chart type. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total, or average of the data in different categories. It is ideal to show the variations in the value of an item over a period of time.
 
 {% highlight javascript %}
-    
+
     $("#PivotChart1").ejPivotChart({
         //...
         commonSeriesOptions: {
@@ -46,7 +47,7 @@ The **column chart** is the most commonly used chart type. It uses vertical bars
 
 The following screenshot displays the **column chart**.
 
-![](Chart-Types_images/ColumnChart.png)
+![JavaScript column chart control](Chart-Types_images/ColumnChart.png)
 
 ## Stacking column chart
 
@@ -64,7 +65,7 @@ The **stacking column** chart is similar to column chart except the Y-values. Th
 
 The following screenshot displays the **stacking column chart**.
 
-![](Chart-Types_images/StackingColumnChart.png)
+![JavaScript stacking column chart control](Chart-Types_images/StackingColumnChart.png)
 
 ## Bar chart
 
@@ -82,7 +83,7 @@ The **bar chart** displays horizontal bars for each point in the series and poin
 
 The following screenshot displays a **bar chart**.
 
-![](Chart-Types_images/BarChart.png)
+![JavaScript bar chart control](Chart-Types_images/BarChart.png)
 
 ## Stacking bar chart
 
@@ -94,13 +95,13 @@ The **stacking bar chart** is a regular **bar** chart with the X-values stacked 
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.StackingBar
-        }    
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **stacking bar chart.**
 
-![](Chart-Types_images/StackingBarChart.png) 
+![JavaScript bar chart control](Chart-Types_images/StackingBarChart.png)
 
 ## Line chart
 
@@ -112,13 +113,13 @@ The **line chart** joins the data points on a plot by using straight lines that 
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.Line
-        }  
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **line chart**.
 
-![](Chart-Types_images/LineChart.png)
+![JavaScript line chart control](Chart-Types_images/LineChart.png)
 
 ## Step line chart
 
@@ -136,7 +137,7 @@ The following screenshot displays the **line chart**.
 
 The following screenshot displays the **step line chart.**
 
-![](Chart-Types_images/StepLineChart.png)
+![JavaScript step line chart control](Chart-Types_images/StepLineChart.png)
 
 ## Spline chart
 
@@ -148,13 +149,13 @@ The **spline chart** is similar to line chart whereas it connects different data
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.Spline
-        }   
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **spline chart**.
 
-![](Chart-Types_images/SplineChart.png)
+![JavaScript spline chart control](Chart-Types_images/SplineChart.png)
 
 ## Area chart
 
@@ -166,13 +167,13 @@ The **area chart** emphasizes the degree of change of values over a period of ti
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.Area
-        }   
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **area chart**.
 
-![](Chart-Types_images/AreaChart.png)
+![JavaScript area chart control](Chart-Types_images/AreaChart.png)
 
 ## Step area chart
 
@@ -184,13 +185,13 @@ The **step area** chart is similar to the regular area chart except a straight l
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.StepArea
-        }   
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **step area chart.**
 
-![](Chart-Types_images/StepAreaChart.png)
+![JavaScript step area chart control](Chart-Types_images/StepAreaChart.png)
 
 ## Spline area chart
 
@@ -202,13 +203,13 @@ The **spline area** chart is similar to area chart which differs by connecting t
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.SplineArea
-        }    
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **spline area chart.**
 
-![](Chart-Types_images/SplineAreaChart.png)
+![JavaScript spline area chart control](Chart-Types_images/SplineAreaChart.png)
 
 ## Stacking area chart
 
@@ -220,13 +221,13 @@ The **stacking area** chart is similar to regular area chart except the “Y-val
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.StackingArea
-        }  
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **Stacking Area Chart.**
 
-![](Chart-Types_images/StackingAreaChart.png)
+![JavaScript stacking area chart control](Chart-Types_images/StackingAreaChart.png)
 
 ## Pie chart
 
@@ -244,7 +245,7 @@ The **pie chart** is used to summarize a set of categorical data or displaying d
 
 The following screenshot displays the **pie chart**.
 
-![](Chart-Types_images/PieChart.png)
+![JavaScript pie chart control](Chart-Types_images/PieChart.png)
 
 ## Doughnut chart
 
@@ -262,7 +263,7 @@ The **doughnut chart** is used to summarize a set of categorical data which poss
 
 The following screenshot displays the **doughnut chart**.
 
-![](Chart-Types_images/DoughnutChart.png)
+![JavaScript doughnut chart control](Chart-Types_images/DoughnutChart.png)
 
 ## Pyramid chart
 
@@ -274,13 +275,13 @@ The **pyramid chart** type displays the data in the form of a triangle. It helps
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.Pyramid
-        }    
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **pyramid chart.**
 
-![](Chart-Types_images/PyramidChart.png)
+![JavaScript pyramid chart control](Chart-Types_images/PyramidChart.png)
 
 ## Funnel chart
 
@@ -292,13 +293,13 @@ The **funnel chart** type displays the data in the form of an inverted triangle.
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.Funnel
-        }   
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **funnel chart:**
 
-![](Chart-Types_images/FunnelChart.png)
+![JavaScript funnel chart control](Chart-Types_images/FunnelChart.png)
 
 ## Scatter chart
 
@@ -310,13 +311,13 @@ The **scatter chart** type displays the data as a collection of points correspon
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.Scatter
-        }   
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **scatter chart:**
 
-![](Chart-Types_images/ScatterChart.png) 
+![JavaScript scatter chart control](Chart-Types_images/ScatterChart.png)
 
 ## Bubble chart
 
@@ -328,13 +329,31 @@ The **bubble chart** type displays the data as a collection of bubbles.
         //...
         commonSeriesOptions: {
             type: ej.PivotChart.ChartTypes.Bubble
-        }   
+        }
     });
 {% endhighlight %}
 
 The following screenshot displays the **bubble chart:**
 
-![](Chart-Types_images/BubbleChart.png)
+![JavaScript bubble chart control](Chart-Types_images/BubbleChart.png)
+
+## WaterFall chart
+
+The **waterfall chart** type is used to show how an initial value is increased and decreased by a series of intermediate values, leading to a final value.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        //...
+        commonSeriesOptions: {
+            type: ej.PivotChart.ChartTypes.WaterFall
+        }
+    });
+{% endhighlight %}
+
+The following screenshot displays the **waterfall chart:**
+
+![JavaScript waterfall chart control](Chart-Types_images/WaterFall.png)
 
 ## Combination chart
 
@@ -363,4 +382,4 @@ A **combination chart** combines two or more series types in a single chart. But
 {% endhighlight %}
 
 
-![](Chart-Types_images/CombinationChart.png)
+![JavaScript combinations of charts](Chart-Types_images/CombinationChart.png)

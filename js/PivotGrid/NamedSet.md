@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Named Set
+title: Named Set with PivotGrid widget for Syncfusion Essential JS
 description: named set
 platform: js
 control: PivotGrid
@@ -14,18 +14,18 @@ Named sets is a multidimensional expression (MDX) that returns a set of dimensio
 
 ## Client mode
 
-You can bind the named sets in the PivotGrid by setting it's unique name in the [`fieldName`](/api/js/ejpivotgrid#members:datasource-rows-fieldname) property either in row or column axis and the [`isNamedSets`](/api/js/ejpivotgrid#members:datasource-columns-isnamedsets) boolean property to "true".
+You can bind the named sets in the PivotGrid by setting it's unique name in the [`fieldName`](/api/js/ejpivotclient#members:datasource-columns-fieldname) property either in row or column axis and the [`isNamedSets`](/api/js/ejpivotclient#members:datasource-columns-isnamedsets) boolean property to "true".
 
 {% highlight js %}
 
 <!--Create a tag which acts as a container for PivotGrid-->
  <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
- 
+
 <script type="text/javascript">
     $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
-                data: "http://bi.syncfusion.com/olap/msmdpump.dll", //data
+                data: "https://bi.syncfusion.com/olap/msmdpump.dll", //data
                 catalog: "Adventure Works DW 2008 SE",
                 cube: "Adventure Works",
                 rows: [{
@@ -48,12 +48,12 @@ You can bind the named sets in the PivotGrid by setting it's unique name in the 
 
 {% endhighlight %}
 
-![](KPI_images/namedset.png)
+![NamedSet in JavaScript pivot grid OLAP client mode](KPI_images/namedset.png)
 
 
 ## Server mode
 
-You can add named sets in the PivotGrid by using NamedSetElement Class in the OlapReport. 
+You can add named sets in the PivotGrid by using NamedSetElement Class in the OlapReport.
 
 {% highlight C# %}
 
@@ -79,6 +79,6 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![](KPI_images/servernamedset.png)
+![NamedSset in JavaScript pivot grid OLAP server mode](KPI_images/servernamedset.png)
 
 

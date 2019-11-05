@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create custom connection points to draw connections with any specific point of node
-description: How to draw connections with specific points of node?
+title: Ports | Diagram | JavaScript | Syncfusion
+description: This section explains how to draw/create connections between the nodes with specific points in ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug
@@ -12,15 +12,15 @@ api: /api/js/ejdiagram
 
 Essential Diagram for JS provides support to define custom ports for making connections.
 
-![](/js/Diagram/Port_images/Port_img3.png)
+![Ports](Port_images/Port_img3.png)
 
 When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
 
-![](/js/Diagram/Port_images/Port_img4.png)
+![Ports](Port_images/Port_img4.png)
 
 Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
 
-![](/js/Diagram/Port_images/Port_img5.png)
+![Ports appearances](Port_images/Port_img5.png)
 
 ## Create Port
 
@@ -86,7 +86,7 @@ diagram.addPorts("node", ports)
 
 {% endhighlight %}
 
-![](/js/Diagram/Port_images/Port_img1.png)
+![Adding ports at runtime](Port_images/Port_img1.png)
 
 To explore the set of properties for defining a port, refer to [Port Properties](/api/js/ejdiagram#members:nodes-ports "Port Properties")
 
@@ -152,7 +152,7 @@ var nodes = [{ name: "node", ports: ports }];
 
 {% endhighlight %}
 
-![](/js/Diagram/Port_images/Port_img2.png)
+![customizing the ports appearances](Port_images/Port_img2.png)
 
 ## Offset
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary-Type
+title: Summary-Type with PivotGrid widget for Syncfusion Essential JS
 description: summary type
 platform: js
 control: PivotGrid
