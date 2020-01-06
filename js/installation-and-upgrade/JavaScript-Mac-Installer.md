@@ -12,7 +12,7 @@ documentation: ug
 
 The following procedure illustrates how to install JavaScript Mac installer. 
 
-1. Double-click the Syncfusion JavaScript Mac Setup(.pkg) file. The Setup Wizard opens. Click Continue.
+1. Double-click the Syncfusion JavaScript Mac installer(.pkg) file. The installer Wizard opens. Click Continue.
 
    ![](Mac-Installer_images/Mac_Installer1.png)
    
