@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrade from major version to service pack version| common | Syncfusion
-description: upgrade from major version to service pack version
+title: Major Version to Service Pack Version| JavaScript | Syncfusion
+description: this section provides the information about upgrading JavaScript from major version to service pack version
 platform: js
 control: Essential Studio
 documentation: ug

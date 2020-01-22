@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio JavaScript products
-description: Learn how to install and deploy the Syncfusion JavaScript component
+title: System Requirements | JavaScript | Syncfusion
+description: this section provides the information about the system requirements for JavaScript platform with supported browsers
 platform: js
 control: Installation and Deployment
 documentation: ug
