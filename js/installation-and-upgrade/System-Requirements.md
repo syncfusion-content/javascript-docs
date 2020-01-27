@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio JavaScript products
-description: Learn how to install and deploy the Syncfusion JavaScript component
+title: System Requirements | JavaScript | Syncfusion
+description: this section provides the information about the system requirements for JavaScript platform with supported browsers
 platform: js
 control: Installation and Deployment
 documentation: ug
@@ -28,7 +28,7 @@ The following topic describes the system requirements for Syncfusion JavaScript 
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 4 GB of available space may be required. However, 350 MB free space is required in boot drive even if you are installing the setup in other drive.
+* Hard disk: up to 4 GB of available space may be required. However, 350 MB free space is required in boot drive even if you are installing in other drive.
 
 ## Web browsers
 
