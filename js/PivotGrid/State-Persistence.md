@@ -8,9 +8,9 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# State persistence
+# State Persistence
 
-Expand and collapse state of row and column headers are maintained during every UI interaction. State persistence are maintained for following feature combinations.
+Expand and collapse state of row and column headers are maintained during every UI interaction. State persistence are maintained for following feature combinations:
 
 * Value Sorting
 * Filtering
