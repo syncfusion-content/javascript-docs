@@ -30,11 +30,11 @@ Expand and collapse state of row and column headers are maintained during every 
 * Hyperlink
 * Advanced Filtering
 
-The following screenshot displays all members in expanded state.
+PivotGrid with collapsed "Canada".
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/expandall.png" %}
 
 
-The following screenshot displays the state persistence after removed "date" field from filter axis, sort "product" field from column axis and drag & dropped "state" field from row axis to column axis.
+PivotGrid maintaining collapsed state of "Canada" after Schema change
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/expandall_img1.png" %}
