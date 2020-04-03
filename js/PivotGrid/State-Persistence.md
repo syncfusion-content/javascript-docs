@@ -32,7 +32,7 @@ State persistence are maintained for following feature combinations.
 * Hyperlink
 * Advanced Filtering
 
-The following screenshot displays all members in expanded state
+The following screenshot displays all members in expanded state.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/expandall.png" %}
 
