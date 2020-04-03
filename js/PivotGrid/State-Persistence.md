@@ -1,14 +1,14 @@
 ---
 layout: post
 title: State persistence with PivotGrid widget for Syncfusion Essential JS
-description: state persistence
+description: state persistence maintained feature combinators are included like soring, filtering and drillthrough.
 platform: js
 control: PivotGrid
 documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# State Persistence
+## State Persistence
 
 Expand and collapse state of row and column headers are maintained during every UI interaction. State persistence are maintained for following feature combinations:
 
