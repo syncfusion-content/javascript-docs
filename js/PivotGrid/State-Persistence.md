@@ -10,25 +10,7 @@ api: /api/js/ejpivotgrid
 
 ## State Persistence
 
-Expand and collapse state of row and column headers are maintained during every UI interaction. State persistence are maintained for following feature combinations:
-
-* Value Sorting
-* Filtering
-* Remove fields
-* Drag and Drop 
-* Cell Editing
-* Formatting
-* Exporting
-* Save and Load
-* Paging
-* Drillthrough
-* Column Resizing
-* Responsive
-* Summary Types
-* Number Formats
-* Calculated Fields
-* Hyperlink
-* Advanced Filtering
+Expand and collapse state of row and column headers are maintained during every UI interaction.
 
 PivotGrid with collapsed "Canada".
 
