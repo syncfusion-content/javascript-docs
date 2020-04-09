@@ -17,6 +17,6 @@ PivotGrid with collapsed "Canada".
 {% include image.html url="/js/PivotGrid/Getting-Started_images/expandall.png" %}
 
 
-PivotGrid maintaining collapsed state of "Canada" after Schema change
+"Canada" member maintained its collapsed state even drag and dropped the "country" field from column to row axis.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/expandall_img1.png" %}
