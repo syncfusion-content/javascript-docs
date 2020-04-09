@@ -10,7 +10,13 @@ api: /api/js/ejpivotgrid
 
 ## State Persistence
 
-Expand and collapse state of row and column headers are maintained during every UI interaction.
+During each UI interaction, the row and column headers are maintained the same expand and collapse state. The Following UI interactions are below:
+
+* By drag and drop
+* By drag and drop to grid headers
+* By tree view selection
+* By context menu
+
 
 PivotGrid with collapsed "Canada".
 
