@@ -268,82 +268,82 @@ Based on selected column from [`columnSelected`] (https://help.syncfusion.com/ap
 {% endhighlight %}
 
 {% highlight javascript %}
- <script type="text/javascript">
-	    var column,columnSelected, index, cell;
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(300)),
-                allowGrouping: true,
-                allowPaging: true,
-	            allowSorting: true,
-       	        allowFiltering:true,
-	            allowReordering:true,
-	            filterSettings: {filterType:"Excel"},
-                allowKeyboardNavigation: true,
-	            allowSelection : true,
-             	selectionType : "multiple",
-                selectionSettings: {selectionMode: ["column"] },
-	            columnSelected: "columnSelected",
-                columns: [
-                         { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
-                         { field: "CustomerID", headerText: "Customer ID", width: 120 },
-                         { field: "EmployeeID", headerText: "Emp ID", textAlign: ej.TextAlign.Right, width: 80 },
-                         { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ],
-				
-            });
-    
+  <script type="text/javascript">
+            var column,columnSelected, index, cell;
+           $(function () {
+                $("#Grid").ejGrid({
+                    // the datasource "window.gridData" is referred from jsondata.min.js
+                    dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(300)),
+                    allowGrouping: true,
+                    allowPaging: true,
+                    allowSorting: true,
+                    allowFiltering: true,
+                    allowReordering: true,
+                    filterSettings: { filterType: "Excel" },
+                    allowKeyboardNavigation: true,
+                    allowSelection: true,
+                    selectionType: "multiple",
+                    selectionSettings: { selectionMode: ["column"] },
+                    columnSelected: "columnSelected",
+                    columns: [
+                        { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
+                        { field: "CustomerID", headerText: "Customer ID", width: 120 },
+                        { field: "EmployeeID", headerText: "Emp ID", textAlign: ej.TextAlign.Right, width: 80 },
+                        { field: "ShipCity", headerText: "Ship City", width: 110 }
+                    ],
+
+                });
+
             $(document).on("keyup", function (e) {
-			  var gridObj = $("#Grid").ejGrid('instance'), getele;
-              if (e.altKey && e.keyCode === 74) { // j- key code.
-                    $("#Grid").focus();
-              }
-			  if(columnSelected){
-				 getele = $(gridObj.element.find(".e-headercell"))[index];
-				 $(getele).focus();
-			     if($(getele).is(":focus")){
-				   if(e.keyCode == 13){  // Enter key-- Sort
-				      gridObj.sortColumn(column.field, "ascending");
-				   }
-				  if (e.keyCode == 18) {  // Alt key--open filter dialog
-				    gridObj.element.find(".e-filtericon").eq(index).trigger("tap");
-				  }
-				  if(e.ctrlKey && e.keyCode == 39 ){  //ctrl+ rightarrow Reorder next column 
-				     var col = gridObj.getColumnByIndex(index + 1);
-				     if(!ej.isNullOrUndefined(col))
-				        gridObj.reorderColumns(column.field, col.field); 
-				  }
-				 if(e.ctrlKey && e.keyCode == 37){   //ctrl+ rightarrow Reorder previous column
-				    var col = gridObj.getColumnByIndex(index - 1);
-				     if(!ej.isNullOrUndefined(col))
-				       gridObj.reorderColumns(column.field, col.field); 
-				 }
+              var gridObj = $("#Grid").ejGrid('instance'), getele;
+               if (e.altKey && e.keyCode === 74) { // j- key code.
+                   $("#Grid").focus();
+               }
+               if(columnSelected){
+                  getele = $(gridObj.element.find(".e-headercell"))[index];
+                  $(getele).focus();
+                if($(getele).is(":focus")){
+                  if(e.keyCode == 13){  // Enter key-- Sort
+                       gridObj.sortColumn(column.field, "ascending");
+                  }
+                  if (e.keyCode == 18) {  // Alt key--open filter dialog
+                       gridObj.element.find(".e-filtericon").eq(index).trigger("tap");
+                  }
+                  if(e.ctrlKey && e.keyCode == 39 ){  //ctrl+ rightarrow Reorder next column
+                     var col = gridObj.getColumnByIndex(index + 1);
+                     if(!ej.isNullOrUndefined(col))
+                         gridObj.reorderColumns(column.field, col.field);
+                 }
+                 if(e.ctrlKey && e.keyCode == 37){   //ctrl+ rightarrow Reorder previous column
+                    var col = gridObj.getColumnByIndex(index - 1);
+                    if(!ej.isNullOrUndefined(col))
+                         gridObj.reorderColumns(column.field, col.field);
+                 }
                  if(e.ctrlKey && e.keyCode == 32){   //ctrl + space Group/ungroup column
-				       if(!gridObj.model.groupSettings.groupedColumns.length)
-				             gridObj.groupColumn(column.field);
-				         else 
-                             gridObj.ungroupColumn(column.field);				   
-	                  }
-				  }
-				}
-			    if(e.keyCode == 27){    // Esc to close the filter menu
-				 if(gridObj.element.closest("body").find(".e-excelfilter").is(":visible"))
-				    gridObj.element.closest("body").find(".e-excelfilter").hide();
-				 }
-			    if(e.ctrlKey && e.keyCode == 38){   // Ctrl+ UpArrow to expand collapse Grouped row
-			      var gridObj = $(".e-grid").ejGrid('instance');
-				  ele = gridObj.element.find("tr td >div").first();
-				  gridObj.expandCollapse(ele)
-			    }
-            });        
-			
-        });
-        function columnSelected(args){
-           columnSelected = true;
-		   column = args.column;
-		   cell = args.headerCell;
-		   index = args.columnIndex;
-        }
-    </script>
+                       if(!gridObj.model.groupSettings.groupedColumns.length)
+                          gridObj.groupColumn(column.field);
+                       else
+                          gridObj.ungroupColumn(column.field);
+                  }
+                 }
+                }
+                 if(e.keyCode == 27){    // Esc to close the filter menu
+                   if(gridObj.element.closest("body").find(".e-excelfilter").is(":visible"))
+                     gridObj.element.closest("body").find(".e-excelfilter").hide();
+                  }
+                 if(e.ctrlKey && e.keyCode == 38){   // Ctrl+ UpArrow to expand collapse Grouped row
+                   var gridObj = $(".e-grid").ejGrid('instance');
+                   ele = gridObj.element.find("tr td >div").first();
+                   gridObj.expandCollapse(ele)
+                 }
+               });
+
+             });
+         function columnSelected(args){
+            columnSelected = true;
+            column = args.column;
+            cell = args.headerCell;
+            index = args.columnIndex;
+         }
+  </script>
 {% endhighlight %}
