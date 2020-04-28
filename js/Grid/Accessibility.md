@@ -339,11 +339,11 @@ Based on selected column from [`columnSelected`] (https://help.syncfusion.com/ap
                });
 
              });
-         function columnSelected(args){
+          function columnSelected(args){
             columnSelected = true;
             column = args.column;
             cell = args.headerCell;
             index = args.columnIndex;
          }
-  </script>
+    </script>
 {% endhighlight %}
