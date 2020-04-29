@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Web Accessibility with Grid widget for Syncfusion Essential JS
-description: Web accessibilties standard used in ejGrid
+description: Web accessibilties standard used in ejGrid and also explained about keyboard interaction customizations.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Web Accessibility
+## Web Accessibility
 
 Web Accessibility is achieved in the Grid control through Keyboard Navigation and WAI-ARIA Standard. 
 
@@ -209,3 +209,140 @@ This helps in enabling better user interaction in ejGrid and uses the W3C's Widg
 * gridcell (role)
 * aria-selected (attribute)
 
+## Grid Actions through keyboard Navigation
+
+In addition to the built-in actions in Keyboard, we can also perform Grid actions like Sorting, Filtering, Grouping and Reordering externally through keyboard Navigation. In order to achieve that we have used grid methods on keypress event handler.
+Here is the list of actions and the corresponding key for performing the operation
+
+<table>
+<tr>
+<th>
+Interaction Keys</th><th>
+Description</th></tr>
+<tr>
+<td>
+Enter</td><td>
+Sort the Selected column</td></tr>
+<tr>
+<td>
+Alt</td><td>
+Opens the Filter Dialog</td></tr>
+<tr>
+<td>
+Esc</td><td>
+Closes the Filter Dialog</td></tr>
+<tr>
+<td>
+Tab</td><td>
+navigates through the elements in the filter menu(default browser behavior)</td></tr>
+<tr>
+<td>
+Shift + Tab </td><td>
+same as Tab, but in reverse order </td></tr>
+<tr>
+<td>
+Ctrl + LeftArrow</td><td>
+Reorder the column with the previous one</td></tr>
+<tr>
+<td>
+Ctrl + RightArrow</td><td>
+Reorder the column with the next one</td></tr>
+<tr>
+<td>
+Enter</td><td>
+Expand/Collapse the Grouped row</td></tr>
+<tr>
+<td>
+Ctrl + Space</td><td>
+Group/Ungroup the selected column</td></tr>
+<tr>
+<td>
+Ctrl + upArrow</td><td>
+Expand/Collapse the Grouped row</td></tr>
+</table>
+
+Based on selected column from [`columnSelected`] (https://help.syncfusion.com/api/js/ejgrid#events:columnselected "columnSelected") event, we can perform Sorting, Grouping, Filtering, Reorder actions. 
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+  <script type="text/javascript">
+            var column,columnSelected, index, cell;
+           $(function () {
+                $("#Grid").ejGrid({
+                    // the datasource "window.gridData" is referred from jsondata.min.js
+                    dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(300)),
+                    allowGrouping: true,
+                    allowPaging: true,
+                    allowSorting: true,
+                    allowFiltering: true,
+                    allowReordering: true,
+                    filterSettings: { filterType: "Excel" },
+                    allowKeyboardNavigation: true,
+                    allowSelection: true,
+                    selectionType: "multiple",
+                    selectionSettings: { selectionMode: ["column"] },
+                    columnSelected: "columnSelected",
+                    columns: [
+                        { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
+                        { field: "CustomerID", headerText: "Customer ID", width: 120 },
+                        { field: "EmployeeID", headerText: "Emp ID", textAlign: ej.TextAlign.Right, width: 80 },
+                        { field: "ShipCity", headerText: "Ship City", width: 110 }
+                    ],
+
+                });
+
+            $(document).on("keyup", function (e) {
+              var gridObj = $("#Grid").ejGrid('instance'), getele;
+               if (e.altKey && e.keyCode === 74) { // j- key code.
+                   $("#Grid").focus();
+               }
+               if(columnSelected){
+                  getele = $(gridObj.element.find(".e-headercell"))[index];
+                  $(getele).focus();
+                if($(getele).is(":focus")){
+                  if(e.keyCode == 13){  // Enter key-- Sort
+                       gridObj.sortColumn(column.field, "ascending");
+                  }
+                  if (e.keyCode == 18) {  // Alt key--open filter dialog
+                       gridObj.element.find(".e-filtericon").eq(index).trigger("tap");
+                  }
+                  if(e.ctrlKey && e.keyCode == 39 ){  //ctrl+ rightarrow Reorder next column
+                     var col = gridObj.getColumnByIndex(index + 1);
+                     if(!ej.isNullOrUndefined(col))
+                         gridObj.reorderColumns(column.field, col.field);
+                 }
+                 if(e.ctrlKey && e.keyCode == 37){   //ctrl+ rightarrow Reorder previous column
+                    var col = gridObj.getColumnByIndex(index - 1);
+                    if(!ej.isNullOrUndefined(col))
+                         gridObj.reorderColumns(column.field, col.field);
+                 }
+                 if(e.ctrlKey && e.keyCode == 32){   //ctrl + space Group/ungroup column
+                       if(!gridObj.model.groupSettings.groupedColumns.length)
+                          gridObj.groupColumn(column.field);
+                       else
+                          gridObj.ungroupColumn(column.field);
+                  }
+                 }
+                }
+                 if(e.keyCode == 27){    // Esc to close the filter menu
+                   if(gridObj.element.closest("body").find(".e-excelfilter").is(":visible"))
+                     gridObj.element.closest("body").find(".e-excelfilter").hide();
+                  }
+                 if(e.ctrlKey && e.keyCode == 38){   // Ctrl+ UpArrow to expand collapse Grouped row
+                   ele = gridObj.element.find("tr td >div").first();
+                   gridObj.expandCollapse(ele)
+                 }
+               });
+
+             });
+          function columnSelected(args){
+            columnSelected = true;
+            column = args.column;
+            cell = args.headerCell;
+            index = args.columnIndex;
+         }
+    </script>
+{% endhighlight %}
