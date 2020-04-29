@@ -332,7 +332,6 @@ Based on selected column from [`columnSelected`] (https://help.syncfusion.com/ap
                      gridObj.element.closest("body").find(".e-excelfilter").hide();
                   }
                  if(e.ctrlKey && e.keyCode == 38){   // Ctrl+ UpArrow to expand collapse Grouped row
-                   var gridObj = $(".e-grid").ejGrid('instance');
                    ele = gridObj.element.find("tr td >div").first();
                    gridObj.expandCollapse(ele)
                  }
