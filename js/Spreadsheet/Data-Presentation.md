@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Data presentation with Spreadsheet widget for Syncfusion Essential JS.
-description: How to perform Spreadsheet Data presentation.
+description: How to perform the Data presentation with Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 --- 
 
-# Data Presentation
+# Spreadsheet Data Presentation
 
 Data presentation is helpful for proper representation of data in Spreadsheet. You have following features in Data Presentation.
 

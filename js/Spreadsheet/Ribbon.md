@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon
-description: ribbon
+title: Ribbon integration with Spreadsheet.
+description: How to perform ribbon customization with Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Ribbon
+# Spreadsheet Ribbon
 
 A ribbon is a command bar that organizes a Spreadsheet's features into a series of tabs at the top of the control.
 
@@ -26,7 +26,7 @@ You can perform the Ribbon customization in the following two ways.
 The Ribbon customization can be done at Initial load by using [`ribbonSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:ribbonsettings "ribbonSettings") API. In ribbonSettings `applicationTab` options is available for ribbon customization.
 
 
-# Application Tab
+## Application Tab
 
 To set application tab in Spreadsheet, [`applicationTab`](https://help.syncfusion.com/api/js/ejspreadsheet#members:ribbonsettings-applicationtab  "applicationTab") property is used. The following options are available in `applicationTab` settings.
    
