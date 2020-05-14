@@ -70,7 +70,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img1.png)
+![Cell Type](Data-Presentation_images/Data-Presentation_img1.png)
 
 ## Chart
 
@@ -137,7 +137,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img2.png)
+![Chart](Data-Presentation_images/Data-Presentation_img2.png)
 
 ## Conditional Formatting
 
@@ -192,7 +192,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img3.png)
+![Conditional Formatting](Data-Presentation_images/Data-Presentation_img3.png)
 
 ### Clear Rules
 
@@ -231,7 +231,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img4.png)
+![Clear Rules](Data-Presentation_images/Data-Presentation_img4.png)
 
 ## Filtering
 
@@ -285,7 +285,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img5.png)
+![Filtering](Data-Presentation_images/Data-Presentation_img5.png)
 
 ### Filter by Color
 
@@ -332,7 +332,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img6.png)
+![Clear Filter](Data-Presentation_images/Data-Presentation_img6.png)
 
 ## Picture
 
@@ -404,7 +404,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img7.png)
+![Picture](Data-Presentation_images/Data-Presentation_img7.png)
 
 ## Sorting
 
@@ -453,7 +453,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img8.png)
+![Sorting](Data-Presentation_images/Data-Presentation_img8.png)
 
 ### Sort by Color
 
@@ -518,4 +518,4 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img9.png)
+![Table](Data-Presentation_images/Data-Presentation_img9.png)
