@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Sparkline with Spreadsheet widget for Syncfusion Essential JS
-description: How to Create the sparkline chart in Syncfusion Essential Javascript Spreadsheet widget.
+description: How to perform the sparkline chart customization in Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Sparkline Support
+# Spreadsheet Sparkline Chart
 
 Sparkline are easy to interpret and it conveys much more information to the user by visualizing the data in a small amount of space. Here sparkline were placed inside the cell. It creates the Sparkline based on the selected cell range’s data. You can use [`allowSparkline`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowsparkline "allowSparkline") property to enable/disable Sparkline.
 

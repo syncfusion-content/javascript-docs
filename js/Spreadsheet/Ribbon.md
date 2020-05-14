@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon integration with Spreadsheet.
-description: How to perform ribbon customization with Syncfusion Essential Javascript Spreadsheet widget.
+title: Ribbon customization with Syncfusion Essential JS Spreadsheet widget.
+description: How to perform the ribbon control customization with Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Spreadsheet Ribbon
+# Javascript Spreadsheet Ribbon
 
 A ribbon is a command bar that organizes a Spreadsheet's features into a series of tabs at the top of the control.
 
