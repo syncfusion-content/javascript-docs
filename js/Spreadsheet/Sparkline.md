@@ -34,10 +34,10 @@ You can perform the following customizations for Sparkline. These options are av
 
 <table>
     <colgroup><col width="180px" /></colgroup>
-    <tr><th>Feature</br></th><th>API</br></th><th>Description</br></th></tr>
-    <tr><td>Edit Data & Location Range</br></td><td>{{'[`createSparkline`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsparkline-createsparkline  "createSparkline")'| markdownify }}</br></td><td>You can modify the data range, location range of Sparkline </br></td></tr>
-    <tr><td>Sparkline Type</br></td><td>{{'[`changeType`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsparkline-changetype  "changeType")'| markdownify }}</br></td><td>You can change the type of sparkline by using sparkline type button.</br></td></tr>
-    <tr><td>High Point, First Point, Last Point, Low Point, Negative Point, Sparkline Color and Marker Color</br></td><td>{{'[`changePointColor`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsparkline-changepointcolor  "changePointColor")'| markdownify }}</br></td><td>You can high light the high point, low point, first point, last point, negative point and Marker Color of sparkline .</br></td></tr>
+    <tr><th>Feature</th><th>API</th><th>Description</th></tr>
+    <tr><td>Edit Data & Location Range</td><td>{{'[`createSparkline`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsparkline-createsparkline  "createSparkline")'| markdownify }}</td><td>You can modify the data range, location range of Sparkline </td></tr>
+    <tr><td>Sparkline Type</td><td>{{'[`changeType`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsparkline-changetype  "changeType")'| markdownify }}</td><td>You can change the type of sparkline by using sparkline type button.</td></tr>
+    <tr><td>High Point, First Point, Last Point, Low Point, Negative Point, Sparkline Color and Marker Color</td><td>{{'[`changePointColor`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsparkline-changepointcolor  "changePointColor")'| markdownify }}</td><td>You can high light the high point, low point, first point, last point, negative point and Marker Color of sparkline .</td></tr>
 </table>
 
 The following code example describes the above behavior,
