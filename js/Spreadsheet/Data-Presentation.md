@@ -404,7 +404,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![Picture](Data-Presentation_images/Data-Presentation_img7.png)
+![Spreadsheet Picture](Data-Presentation_images/Data-Presentation_img7.png)
 
 ## Sorting
 

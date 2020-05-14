@@ -77,5 +77,5 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Sparkline_images/Sparkline.png)
+![Sparkline](Sparkline_images/Sparkline.png)
 
