@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Data presentation with Spreadsheet widget for Syncfusion Essential JS.
-description: How to perform Spreadsheet Data presentation.
+description: How to perform the proper representation of data with Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 --- 
 
-# Data Presentation
+# Spreadsheet Data Presentation
 
 Data presentation is helpful for proper representation of data in Spreadsheet. You have following features in Data Presentation.
 
@@ -70,7 +70,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img1.png)
+![Cell Type](Data-Presentation_images/Data-Presentation_img1.png)
 
 ## Chart
 
@@ -99,15 +99,15 @@ You can perform the following customizations for chart. These are available in D
 
 <table>
     <colgroup><col width="180px" /></colgroup>
-    <tr><th>Feature</br></th><th>API</br></th><th>Description</br></th></tr>
-    <tr><td>Add Chart Elements</br></td><td>{{'[`updateChartElement`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-updatechartelement  "updateChartElement")'| markdownify }}</br></td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</br></td></tr>
-    <tr><td>Switch Row/Column</br></td><td>{{'[`switchRowColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-switchrowcolumn  "switchRowColumn")'| markdownify }}</br></td><td>You can switch the row of the chart to column of the chart and vice versa.</br></td></tr>
-    <tr><td>Select Data</br></td><td>{{'[`changeDataRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changedatarange  "changeDataRange")'| markdownify }}</br></td><td>You can modify the data source of Chart.</br></td></tr>
-    <tr><td>Chart Type</br></td><td>{{'[`changeType`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetype  "changeType")'| markdownify }}</br></td><td>You can change the type of the chart using Chart Type dialog.</br></td></tr>
-    <tr><td>Height and Width</br></td><td>{{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-width  "width")'| markdownify }}</br></td><td>You can change the height and width of the chart.</br></td></tr>
-    <tr><td>Chart Themes</br></td><td>{{'[`changeTheme`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetheme "changeTheme")'| markdownify }}</br></td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</br></td></tr>
-    <tr><td>Refresh Chart</br></td><td>{{'[`refreshChart`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-refreshchart  "refreshChart")'| markdownify }}</br></td><td>To refresh the chart in the Spreadsheet.</br></td></tr>
-    <tr><td>Resize Chart</br></td><td>{{'[`resizeChart`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-resizechart  "resizeChart")'| markdownify }}</br></td><td>To resize the chart of specified id in the Spreadsheet.</br></td></tr>
+    <tr><th>Feature</th><th>API</th><th>Description</th></tr>
+    <tr><td>Add Chart Elements</td><td>{{'[`updateChartElement`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-updatechartelement  "updateChartElement")'| markdownify }}</td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</td></tr>
+    <tr><td>Switch Row/Column</td><td>{{'[`switchRowColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-switchrowcolumn  "switchRowColumn")'| markdownify }}</td><td>You can switch the row of the chart to column of the chart and vice versa.</td></tr>
+    <tr><td>Select Data</td><td>{{'[`changeDataRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changedatarange  "changeDataRange")'| markdownify }}</td><td>You can modify the data source of Chart.</td></tr>
+    <tr><td>Chart Type</td><td>{{'[`changeType`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetype  "changeType")'| markdownify }}</td><td>You can change the type of the chart using Chart Type dialog.</td></tr>
+    <tr><td>Height and Width</td><td>{{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-width  "width")'| markdownify }}</td><td>You can change the height and width of the chart.</td></tr>
+    <tr><td>Chart Themes</td><td>{{'[`changeTheme`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetheme "changeTheme")'| markdownify }}</td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</td></tr>
+    <tr><td>Refresh Chart</td><td>{{'[`refreshChart`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-refreshchart  "refreshChart")'| markdownify }}</td><td>To refresh the chart in the Spreadsheet.</td></tr>
+    <tr><td>Resize Chart</td><td>{{'[`resizeChart`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-resizechart  "resizeChart")'| markdownify }}</td><td>To resize the chart of specified id in the Spreadsheet.</td></tr>
 </table>
 
 The following code example describes the above behavior.
@@ -137,7 +137,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img2.png)
+![Chart](Data-Presentation_images/Data-Presentation_img2.png)
 
 ## Conditional Formatting
 
@@ -167,7 +167,7 @@ The following code example describes the above behavior.
 
 {% highlight javascript %}
 $(function () {
-`   $("#Spreadsheet").ejSpreadsheet({
+   $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData}],                               
@@ -182,16 +182,17 @@ function loadComplete() {
         excelFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
         excelFormat.setCFRule({ "action": "lessthan", "inputs": ["20"], "color": "yellowft", "range": "E1:E11" });
         excelFormat.setCFRule({ "action": "between", "inputs": ["300", "600"], "color": "greenft", "range": "F2:F11" });
-        excelFormat.setCFRule({ "action": "equalto", "inputs": ["20"], "color": "redf", "range": "D2:D11" });
         excelFormat.setCFRule({ "action": "textcontains", "inputs": ["loafers"], "color": "redt", "range": "A1:A11" });
         excelFormat.setCFRule({ "action": "dateoccur", "inputs": ["02/04/2014"], "color": "redft", "range": "B1:B11" });
+		excelFormat.setCFRule({ "action": "databar", "color": "redft", "range": "H1:H11" });
+		excelFormat.setCFRule({action: ej.Spreadsheet.CFormatRule.ColorScale, color: ej.Spreadsheet.ColorScale.GreenYellowRed, range: "D2:D11"});
     }
 }
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img3.png)
+![Conditional Formatting](Data-Presentation_images/Data-Presentation_img3.png)
 
 ### Clear Rules
 
@@ -230,7 +231,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img4.png)
+![Clear Rules](Data-Presentation_images/Data-Presentation_img4.png)
 
 ## Filtering
 
@@ -284,7 +285,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img5.png)
+![Filtering](Data-Presentation_images/Data-Presentation_img5.png)
 
 ### Filter by Color
 
@@ -331,7 +332,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img6.png)
+![Clear Filter](Data-Presentation_images/Data-Presentation_img6.png)
 
 ## Picture
 
@@ -346,11 +347,11 @@ You can perform the following customizations for picture. These are available in
 
 <table>
     <colgroup><col width="150px" /></colgroup>
-    <tr><th>Feature</br></th><th>API</br></th><th>Description</br></th></tr>
-    <tr><td>Change Picture</br></td><td> {{'[`changePicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepicture  "changePicture")'| markdownify }}</br></td><td>You can change the picture with existing picture.</br></td></tr>
-    <tr><td>Reset Picture</br></td><td> {{'[`resetPicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-resetpicture  "resetPicture")'| markdownify }}</br></td><td>You can reset the changes done in the picture such as border changes, height and width changes.</br></td></tr>
-    <tr><td>Picture Border</br></td><td> {{'[`changePictureBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepictureborder  "changePictureBorder")'| markdownify }}</br></td><td>You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border.</br></td></tr>
-    <tr><td>Height and Width</br></td><td> {{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-width  "width")'| markdownify }}</br></td><td>You can change the height and width of the picture.</br></td></tr>
+    <tr><th>Feature</th><th>API</th><th>Description</th></tr>
+    <tr><td>Change Picture</td><td> {{'[`changePicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepicture  "changePicture")'| markdownify }}</td><td>You can change the picture with existing picture.</td></tr>
+    <tr><td>Reset Picture</td><td> {{'[`resetPicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-resetpicture  "resetPicture")'| markdownify }}</td><td>You can reset the changes done in the picture such as border changes, height and width changes.</td></tr>
+    <tr><td>Picture Border</td><td> {{'[`changePictureBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepictureborder  "changePictureBorder")'| markdownify }}</td><td>You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border.</td></tr>
+    <tr><td>Height and Width</td><td> {{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-width  "width")'| markdownify }}</td><td>You can change the height and width of the picture.</td></tr>
 </table>
 
 ## Pivot Table
@@ -403,7 +404,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img7.png)
+![Pivot Table](Data-Presentation_images/Data-Presentation_img7.png)
 
 ## Sorting
 
@@ -452,7 +453,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img8.png)
+![Sorting](Data-Presentation_images/Data-Presentation_img8.png)
 
 ### Sort by Color
 
@@ -481,13 +482,13 @@ You can perform the following customizations for table. These are available in D
 
 <table>
     <colgroup><col width="150px" /></colgroup>
-    <tr><th>Feature</br></th><th>Description</br></th></tr>
-    <tr><td>Resize Table</br></td><td>You can resize the table only to increase row count.</br></td></tr>
-    <tr><td>Convert to Range</br></td><td>You can remove the table using this option.</br></td></tr>
-    <tr><td>First Column</br></td><td>You can highlight the first column of the table.</br></td></tr>
-    <tr><td>Last Column</br></td><td>You can highlight the last column of the table.</br></td></tr>
-    <tr><td>Total Row</br></td><td>You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.</br></td></tr>
-    <tr><td>Filter Button</br></td><td>You can able to hide or unhide the filter icons in the filter header of a table.</br></td></tr>
+    <tr><th>Feature</th><th>Description</th></tr>
+    <tr><td>Resize Table</td><td>You can resize the table only to increase row count.</td></tr>
+    <tr><td>Convert to Range</td><td>You can remove the table using this option.</td></tr>
+    <tr><td>First Column</td><td>You can highlight the first column of the table.</td></tr>
+    <tr><td>Last Column</td><td>You can highlight the last column of the table.</td></tr>
+    <tr><td>Total Row</td><td>You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.</td></tr>
+    <tr><td>Filter Button</td><td>You can able to hide or unhide the filter icons in the filter header of a table.</td></tr>
 </table>
 
 The following code example describes the above behavior.
@@ -517,4 +518,4 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img9.png)
+![Table](Data-Presentation_images/Data-Presentation_img9.png)
