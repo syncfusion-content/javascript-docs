@@ -1,18 +1,46 @@
 ---
 layout: post
-title: Events
-description: events
+title: Events with Spreadsheet widget for Syncfusion Essential JS.
+description: How to customize the action events available in the Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Events
+# Javascript Spreadsheet Events
 
 ### Action Begin
 
-The [`actionBegin`](../api/ejspreadsheet#events:actionbegin) event is triggered before every action starts. 
+The [`actionBegin`](../api/ejspreadsheet#events:actionbegin) event is triggered before every action starts.
+
+List of actions that triggered for actionBegin event.
+
+<table>
+    <colgroup><col width="30px" /><col width="250px" /></colgroup>
+    <tr><th>S.NO</th><th>Actions</th></tr>
+    <tr><td>1</td><td>Cell Formatting.</td></tr>
+     <tr><td>2</td><td>Clipboard Actions.</td></tr>
+    <tr><td>3</td><td>Merge Cells</td></tr>
+    <tr><td>4</td><td>Wrap text.</td></tr>
+    <tr><td>5</td><td>Number formatting.</td></tr>
+    <tr><td>6</td><td>Conditional Formatting.</td></tr>
+    <tr><td>7</td><td>Cell Styles.</td></tr>
+    <tr><td>8</td><td>Clear Functionalities</td></tr>
+    <tr><td>9</td><td>Chart</td></tr>
+     <tr><td>10</td><td>Picture.</td></tr>
+    <tr><td>11</td><td>Sorting.</td></tr>
+    <tr><td>12</td><td>Comments.</td></tr>
+    <tr><td>13</td><td>Goto Actions.</td></tr>
+    <tr><td>14</td><td>Sheet Updation.</td></tr>
+    <tr><td>15</td><td>Hyperlinks.</td></tr>
+    <tr><td>16</td><td>Lock cells and Protect sheet.</td></tr>
+    <tr><td>17</td><td>Filtering.</td></tr>
+    <tr><td>18</td><td>Format as Table.</td></tr>
+    <tr><td>19</td><td>Find and Replace Actions.</td></tr>
+    <tr><td>20</td><td>Named Range Actions.</td></tr>
+    <tr><td>21</td><td>Data validation.</td></tr> 
+</table>
 
 {% highlight html %}
 
@@ -34,6 +62,34 @@ $("#Spreadsheet").ejSpreadsheet({
 ### Action Complete
 
 The [`actionComplete`](../api/ejspreadsheet#events:actioncomplete) event is triggered after every action completes. 
+
+List of actions that triggered for actionComplete event.
+
+<table>
+    <colgroup><col width="30px" /><col width="250px" /></colgroup>
+    <tr><th>S.NO</th><th>Actions</th></tr>
+    <tr><td>1</td><td>Cell Formatting.</td></tr>
+     <tr><td>2</td><td>Clipboard Actions.</td></tr>
+    <tr><td>3</td><td>Merge Cells</td></tr>
+    <tr><td>4</td><td>Wrap text.</td></tr>
+    <tr><td>5</td><td>Number formatting.</td></tr>
+    <tr><td>6</td><td>Conditional Formatting.</td></tr>
+    <tr><td>7</td><td>Cell Styles.</td></tr>
+    <tr><td>8</td><td>Clear Functionalities</td></tr>
+    <tr><td>9</td><td>Chart</td></tr>
+     <tr><td>10</td><td>Picture.</td></tr>
+    <tr><td>11</td><td>Sorting.</td></tr>
+    <tr><td>12</td><td>Comments.</td></tr>
+    <tr><td>13</td><td>Goto Actions.</td></tr>
+    <tr><td>14</td><td>Sheet Updation.</td></tr>
+    <tr><td>15</td><td>Hyperlinks.</td></tr>
+    <tr><td>16</td><td>Lock cells and Protect sheet.</td></tr>
+    <tr><td>17</td><td>Filtering.</td></tr>
+    <tr><td>18</td><td>Format as Table.</td></tr>
+    <tr><td>19</td><td>Find and Replace Actions.</td></tr>
+    <tr><td>20</td><td>Named Range Actions.</td></tr>
+    <tr><td>21</td><td>Data validation.</td></tr> 
+</table>
 
 {% highlight html %}
 
