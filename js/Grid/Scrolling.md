@@ -1,13 +1,13 @@
 ---
 layout: post
 title: scrolling with Grid widget for Syncfusion Essential JS
-description: How to enable scrolling and its functionalities
+description: This section explains about the scrolling and its functionalities like Frozen Rows and Columns, Touch Scroll, Virtual Scroll and the types of Virtual Scroll.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Scrolling
+# Enable Scrolling in Grid
 
 Scrolling can be enabled by setting the [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively.
 
@@ -37,7 +37,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img1.png)
+![Scrolling](scrolling_images/scrolling_img1.png)
 
 # Scroller appearance customization
 
@@ -71,7 +71,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img12.png)
+![Appearance](scrolling_images/scrolling_img12.png)
 
 
 
@@ -100,7 +100,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img2.png)
+![In pixel](scrolling_images/scrolling_img2.png)
 
 
 ## Set width and height in percentage
@@ -127,7 +127,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img3.png)
+![In percentage](scrolling_images/scrolling_img3.png)
 
 
 ## Set width as auto
@@ -154,7 +154,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img4.png)
+![Auto Width](scrolling_images/scrolling_img4.png)
 
 
 ## Frozen columns
@@ -183,7 +183,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img5.png)
+![Frozen Columns](scrolling_images/scrolling_img5.png)
 
 
 ### Freeze particular columns:
@@ -220,7 +220,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img6.png)
+![Frozen Column](scrolling_images/scrolling_img6.png)
 
 
 ### Frozen Columns alert Messages:
@@ -263,7 +263,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img7.png)
+![Frozen Rows](scrolling_images/scrolling_img7.png)
 
 
 N> By using [`rowHeightRefresh`](https://help.syncfusion.com/api/js/ejgrid#methods:rowheightrefresh "rowHeightRefresh") method resolves row height issue when movable and frozen content height mismatch.
@@ -304,7 +304,7 @@ We also have an enhanced virtual scrolling feature with an improvised performanc
 It supports two mode of virtualization. They are,
 
 1. Normal Mode
-2. Continuous Mode
+2. Infinite or Continuous Mode
 
 N> Enhanced Virtual Scrolling supports only Normal mode
 N> The following features are not supported by virtual scrolling 
@@ -338,7 +338,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img8.png)
+![Normal Mode](scrolling_images/scrolling_img8.png)
 
 #### Enhanced Virtual Scrolling:
 
@@ -363,12 +363,12 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img10.png)
+![Enhanced VirtualScroll](scrolling_images/scrolling_img10.png)
 
 
-### Continuous Mode:
+### Infinite or Continuous mode:
 
-In Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
+In Infinite or Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
 
 The following code example describes the above behavior.
 
@@ -389,4 +389,4 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img9.png)
+![Infinite Mode](scrolling_images/scrolling_img9.png)
