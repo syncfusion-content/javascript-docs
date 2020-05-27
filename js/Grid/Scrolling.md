@@ -366,7 +366,7 @@ The following output is displayed as a result of the above code example.
 ![Enhanced VirtualScroll](scrolling_images/scrolling_img10.png)
 
 
-### Infinite or Continuous mode:
+### Infinite or Continuous Mode:
 
 In Infinite or Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
 
