@@ -39,7 +39,7 @@ The following output is displayed as a result of the above code example.
 
 ![Scrolling](scrolling_images/scrolling_img1.png)
 
-# Scroller appearance customization
+## Scroller appearance customization
 
 We can show or hide the scrollbar while focus in or focus out of the Grid using  [`autoHide`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-autohide "autoHide") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
 
