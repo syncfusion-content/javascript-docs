@@ -170,7 +170,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img3.png)
 
-# Column header customization by external action
+## Column header customization by external action
 
 We can customize the columns header element by external action using the following methods,
 
@@ -360,7 +360,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img7.png)
 
-# Column width customization by external action
+## Column width customization by external action
 
 To change the columns width by external action use  [`setWidthToColumns`](https://help.syncfusion.com/api/js/ejGrid#methods:setwidthtocolumns "setWidthToColumns") method.
 
@@ -520,7 +520,7 @@ N> While reordering the columns following events are triggered.
 1. [`columnDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:columndragstart "columnDragStart")
 2. [`columnDrop`](https://help.syncfusion.com/api/js/ejgrid#events:columndrop "columnDrop") 
 
-# Column reorder customization by external action
+## Column reorder customization by external action
 
 To reorder the column by external action use  [`reorderColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:reordercolumns "reorderColumns") method.
 
@@ -589,7 +589,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img11.png)
 
-# Column visibility customization by external action
+## Column visibility customization by external action
 
 We can show or hide the grid columns externally by using the following methods,
 
@@ -771,7 +771,7 @@ $(function () {
 });
 {% endhighlight %}
 
-# Column resize customization by external action
+## Column resize customization by external action
 
 To resize the columns by external action use [`resizeColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:resizecolumns "resizeColumns") method.
 
@@ -1423,7 +1423,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img25.png)
 
-# Columns customization by external action
+## Columns customization by external action
 
 To control the grid column actions externally use the following methods,
 

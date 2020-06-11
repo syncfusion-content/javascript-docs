@@ -276,7 +276,7 @@ $(function () {
 });
 {% endhighlight %}
 
-# Selection customization by external action
+## Selection customization by external action
 
 To control the grid selection by external action use the following methods:
 
