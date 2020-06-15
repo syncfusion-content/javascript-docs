@@ -211,7 +211,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Columns](columns_images/columns_img32.png)
+![](columns_images/columns_img32.png)
 
 ## Header Template
 
@@ -396,7 +396,7 @@ function methods(){
 
 The following output is displayed as a result of the above code example.
 
-![Columns](columns_images/columns_img31.png)
+![](columns_images/columns_img31.png)
 
 ## Resizing
 
@@ -654,7 +654,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Columns](columns_images/columns_img34.png)          
+![](columns_images/columns_img34.png)          
 
 ## Unbound Column
 
@@ -1279,7 +1279,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Columns](columns_images/columns_img40.png)
+![](columns_images/columns_img40.png)
 
 We can modify the visibility of grid lines by using [`gridLines`](https://help.syncfusion.com/api/js/ejgrid#members:gridlines "gridLines") property.
 

@@ -833,7 +833,7 @@ $(".buttons").ejButton({
 
 Here we have set the default value to the EmployeeID Column based on index using setCellValue method and also we edit particular cell based on index using editCell method. Refer the below screenshot
 
-![Editing](Editing_images/Editing_img31.png)
+![](Editing_images/Editing_img31.png)
 
 N> While editing action the following events are triggered,
 
@@ -903,7 +903,7 @@ $(".buttons").ejButton({
 
 The following output is displayed as a result of the above code example.
 
-![Editing](Editing_images/Editing_img33.png)
+![](Editing_images/Editing_img33.png)
 
 ## Confirmation messages
 
@@ -1163,7 +1163,7 @@ function actionComplete(args){
  
  The following output is displayed as a result of the above code example.
 
-![Editing](Editing_images/Editing_img30.png)
+![](Editing_images/Editing_img30.png)
 
 ### Custom Validation
 
