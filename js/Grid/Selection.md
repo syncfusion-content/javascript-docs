@@ -343,7 +343,7 @@ $(".buttons").ejButton({click:function(args){
 
 The following output is displayed as a result of the previous code example.
 
-![](selection_images/selection_img10.png)
+![Selection](selection_images/selection_img10.png)
 
 
 ## Drag selection
