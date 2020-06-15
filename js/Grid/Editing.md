@@ -772,7 +772,7 @@ The following output is displayed as a result of the above code example.
 N> During batch editing, you can do any custom actions in-between, using the corresponding events [`batchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:batchadd "batchAdd"), [`batchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:batchdelete "batchDelete"), [`beforeBatchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchadd "beforeBatchAdd"), [`beforeBatchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchdelete "beforeBatchDelete"), [`beforeBatchSave`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchsave "beforeBatchSave") .
 N> Using [`getCurrentEditCellData`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrenteditcelldata "getCurrentEditCellData") method, we can get the current edit cell data.
 
-# Batch operations by external action
+## Batch operations by external action
 
 We can do the batch operations externally by using the following methods,
 
@@ -843,7 +843,7 @@ N> While editing action the following events are triggered,
 4. [`endDelete`](https://help.syncfusion.com/api/js/ejgrid#events:enddelete "endDelete")
 5. [`endEdit`](https://help.syncfusion.com/api/js/ejgrid#events:endedit "endEdit") 
 
-# Editing customization by external action
+## Editing customization by external action
 
 To perform the editing actions like delete, update or insert by external action use the following methods,
 
@@ -1122,7 +1122,7 @@ N> 1. Refer this [Knowledge Base link](https://www.syncfusion.com/kb/6817/how-to
 
 N> 2. Use [`editFormValidate`](https://help.syncfusion.com/api/js/ejgrid#methods:editFormValidate "editFormValidate") to programmatically trigger validation of edit form.
 
-# Column-validation customization by external action
+## Column-validation customization by external action
 
 Set validation to edit form in the grid by external action use [`setValidation`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidation") method and Set validation to a particular input field in a edit form dynamically use  [`setValidationToField`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidationToField") method.
 
