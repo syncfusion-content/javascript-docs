@@ -946,7 +946,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Confirmation messages of  editing(save) in Javascript grid](Editing_images/Editing_img16.png)
+![Confirmation messages for save option of  editing in Javascript grid](Editing_images/Editing_img16.png)
 
 
 To show delete confirm dialog while deleting a record, set [`showDeleteConfirmDialog`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") as true.
@@ -988,7 +988,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Confirmation messages of  editing(delete) in Javascript grid](Editing_images/Editing_img17.png)
+![Confirmation messages for delete option of editing in Javascript grid](Editing_images/Editing_img17.png)
 
 
 ## Column Validation
