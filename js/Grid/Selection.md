@@ -68,7 +68,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img1.png)
+![Row selection in Javascript grid](selection_images/selection_img1.png)
 
 N> We can get the selected row elements in grid by using the [`getSelectedRows`](https://help.syncfusion.com/api/js/ejgrid#methods:getselectedrows "getSelectedRows") method.
 
@@ -104,7 +104,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img6.png)
+![Multiple row selection in Javascript grid](selection_images/selection_img6.png)
 
 ## Cell selection
 
@@ -143,7 +143,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img2.png)
+![Cell selection in Javascript grid](selection_images/selection_img2.png)
 
 ### Cell selection mode
 
@@ -180,7 +180,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img3.png)
+![Cell selection mode in Javascript grid](selection_images/selection_img3.png)
 
 
 ## Column selection
@@ -219,7 +219,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img4.png)
+![Column selection in Javascript grid](selection_images/selection_img4.png)
 
 ## Touch options
 
@@ -248,7 +248,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img5.png)
+![Touch options of selection in Javascript grid](selection_images/selection_img5.png)
 
 
 ## Toggle selection
@@ -343,7 +343,7 @@ $(".buttons").ejButton({click:function(args){
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img10.png)
+![Selection customization in Javascript grid](selection_images/selection_img10.png)
 
 
 ## Drag selection
@@ -373,4 +373,4 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![Selection](selection_images/selection_img11.png)
+![Drag selection in Javascript grid](selection_images/selection_img11.png)

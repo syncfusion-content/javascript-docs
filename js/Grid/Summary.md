@@ -44,7 +44,7 @@ Summary rows visibility can be controlled by the [`showSummary`](https://help.sy
 N> The [`dataMember`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-datamember "dataMember") denotes the aggregation column whereas the [`displayColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-displaycolumn "displayColumn") denotes the column in which aggregation value will be displayed.
 
 
-![Summary Grid](Summary_images/summaryGrid_img1.png)
+![Summary in JavaScript Grid](Summary_images/summaryGrid_img1.png)
 
 
 ## Supported aggregates 
@@ -119,7 +119,7 @@ Summaries with the [`Sum`](https://help.syncfusion.com/js/datamanager/summary#su
 
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img2.png)
+![Sum, average, maximum and minimum aggregate of summary in Javascript grid](Summary_images/summaryGrid_img2.png)
 
 
 ### True and False count 
@@ -165,7 +165,7 @@ Summaries with the `True` and `False` count aggregate can be defined by using th
 
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img3.png)
+![True and False count aggregate  of summary in Javascript grid](Summary_images/summaryGrid_img3.png)
 
 ## Column footer customization by external action
 
@@ -217,7 +217,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Summary](Summary_images/summaryGrid_img11.png)
+![Column footer customization of summary in Javascript grid](Summary_images/summaryGrid_img11.png)
 
 ## Custom summary
 
@@ -259,7 +259,7 @@ Custom summary can be used to create summary values based on your required custo
 
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img4.png)
+![Custom summary in Javascript grid](Summary_images/summaryGrid_img4.png)
 
 ## Summary values with prefix and suffix
 
@@ -297,7 +297,7 @@ Summaries with prefix and suffix can be added using the [`summaryColumns.prefix`
 </script>
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img9.png)
+![Summary values with prefix and suffix in Javascript grid](Summary_images/summaryGrid_img9.png)
 
 ## Title for summary
 
@@ -334,7 +334,7 @@ Title name of any summary value can be change using the [`title`](https://help.s
 </script>
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img10.png)
+![Title for summary in Javascript grid](Summary_images/summaryGrid_img10.png)
 
 ## Group summary
 
@@ -378,7 +378,7 @@ Group summary is used to summarize values of a particular column based on group 
 
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img5.png)
+![Group summary in Javascript grid](Summary_images/summaryGrid_img5.png)
 
 
 W> Minimum one column should be grouped to show summary details.
@@ -424,7 +424,7 @@ To show summaries in each group's caption row, the particular [summary row](http
 
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img6.png)
+![Group caption summary in Javascript grid](Summary_images/summaryGrid_img6.png)
 
 
 W> Minimum one column should be grouped to show the summary details.
@@ -465,7 +465,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Summary Grid](Summary_images/summaryGrid_img8.png)
+![Summary template in Javascript grid](Summary_images/summaryGrid_img8.png)
 
 ## Format
 
@@ -503,7 +503,7 @@ To format summary values, the [`format`](https://help.syncfusion.com/api/js/ejgr
 
 {% endhighlight %}
 
-![Summary Grid](Summary_images/summaryGrid_img7.png)
+![Format summary in Javascript grid](Summary_images/summaryGrid_img7.png)
 
 
 

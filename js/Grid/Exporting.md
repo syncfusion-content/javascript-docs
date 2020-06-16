@@ -46,7 +46,7 @@ $(function () {
 
 {% endhighlight %}
 
-![Exporting](Exporting_images/Exporting_img1.png) 
+![Export in JavaScript Grid](Exporting_images/Exporting_img1.png) 
 
 ## External Export in Grid
 
