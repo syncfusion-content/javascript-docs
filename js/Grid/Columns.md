@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Columns with Grid widget for Syncfusion Essential JS
-description: How to define the columns and its features
+description: Learn about How to define the columns and its features in Syncfusion JavaScript Grid control and more details.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Columns
+# Columns in JavaScript Grid
 
 Column definitions are used as the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") schema in Grid and it plays a vital role in rendering column values in the required format. Grid operations such as sorting, filtering, editing would be performed based on the column definitions. The [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") property of the [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") is necessary to map the datasource values in Grid columns.
 
@@ -37,7 +37,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img1.png)
+![Auto-generate columns in Javascript grid](columns_images/columns_img1.png)
 
 
 ### How to set isPrimaryKey for auto generated columns when editing is enabled:
@@ -129,7 +129,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img2.png)
+![Header text of columns in Javascript grid](columns_images/columns_img2.png)
 
 
 ### Header Text alignment
@@ -168,9 +168,9 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img3.png)
+![Header text alignment of columns in Javascript grid](columns_images/columns_img3.png)
 
-# Column header customization by external action
+## Column header customization by external action
 
 We can customize the columns header element by external action using the following methods,
 
@@ -211,7 +211,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img32.png)
+![Header customization of columns in Javascript grid](columns_images/columns_img32.png)
 
 ## Header Template
 
@@ -249,7 +249,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img4.png)
+![Header Template of columns in Javascript grid](columns_images/columns_img4.png)
 
 
 ## Text alignment
@@ -290,7 +290,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img5.png)
+![Text alignment  of columns in Javascript grid](columns_images/columns_img5.png)
 
 
 ## Format
@@ -324,7 +324,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img6.png)
+![Format process of columns in Javascript grid](columns_images/columns_img6.png)
 
 
 ## Width
@@ -358,9 +358,9 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img7.png)
+![Width property of columns in Javascript grid](columns_images/columns_img7.png)
 
-# Column width customization by external action
+## Column width customization by external action
 
 To change the columns width by external action use  [`setWidthToColumns`](https://help.syncfusion.com/api/js/ejGrid#methods:setwidthtocolumns "setWidthToColumns") method.
 
@@ -396,7 +396,7 @@ function methods(){
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img31.png)
+![Width customization of columns in Javascript grid](columns_images/columns_img31.png)
 
 ## Resizing
 
@@ -485,7 +485,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img8.png)
+![Resize to fit property of columns in Javascript grid](columns_images/columns_img8.png)
 
 
 
@@ -513,14 +513,14 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img10.png)
+![Reorder property of columns in Javascript grid](columns_images/columns_img10.png)
 
 N> While reordering the columns following events are triggered. 
 
 1. [`columnDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:columndragstart "columnDragStart")
 2. [`columnDrop`](https://help.syncfusion.com/api/js/ejgrid#events:columndrop "columnDrop") 
 
-# Column reorder customization by external action
+## Column reorder customization by external action
 
 To reorder the column by external action use  [`reorderColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:reordercolumns "reorderColumns") method.
 
@@ -555,7 +555,7 @@ function methods(){
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img36.png)
+![Reorder customization of columns in Javascript grid](columns_images/columns_img36.png)
 
 
 ## Visibility
@@ -587,9 +587,9 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img11.png)
+![Visibility property of columns in Javascript grid](columns_images/columns_img11.png)
 
-# Column visibility customization by external action
+## Column visibility customization by external action
 
 We can show or hide the grid columns externally by using the following methods,
 
@@ -654,7 +654,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img34.png)          
+![Visibility customization of columns in Javascript grid](columns_images/columns_img34.png)          
 
 ## Unbound Column
 
@@ -695,7 +695,7 @@ function click(e) {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img13.png)
+![Unbound Column in Javascript grid](columns_images/columns_img13.png)
 
 
 ## Column Template
@@ -736,7 +736,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img14.png)
+![Template property of columns in Javascript grid](columns_images/columns_img14.png)
 
 
 ## Controlling Grid actions
@@ -771,7 +771,7 @@ $(function () {
 });
 {% endhighlight %}
 
-# Column resize customization by external action
+## Column resize customization by external action
 
 To resize the columns by external action use [`resizeColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:resizecolumns "resizeColumns") method.
 
@@ -806,7 +806,7 @@ function methods(){
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img35.png)
+![Column resize customization in Javascript grid](columns_images/columns_img35.png)
 
 N> 1. While resizing, the following events are triggered [`resized`](https://help.syncfusion.com/api/js/ejgrid#events:resized "resized"), [`resizeStart`](https://help.syncfusion.com/api/js/ejgrid#events:resizestart "resizeStart"), [`resizeEnd`](https://help.syncfusion.com/api/js/ejgrid#events:resizeend "resizeEnd")
 
@@ -842,7 +842,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img15.png)
+![Read only property  of columns in Javascript grid](columns_images/columns_img15.png)
 
 
 ## Expression Column
@@ -878,7 +878,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img16.png)
+![Expression Column in Javascript grid](columns_images/columns_img16.png)
 
 
 ## Command Column
@@ -933,7 +933,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img17.png)
+![Default action buttons of columns in Javascript grid](columns_images/columns_img17.png)
 
 
 ### Custom buttons
@@ -978,7 +978,7 @@ function onClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img18.png)
+![Custom buttons of columns in Javascript grid](columns_images/columns_img18.png)
 
 
 ## Column Chooser
@@ -1015,7 +1015,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img19.png)
+![Column chooser in Javascript grid](columns_images/columns_img19.png)
 
 
 ## Foreign Key Column
@@ -1062,7 +1062,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img20.png)
+![Foreign key column in Javascript grid](columns_images/columns_img20.png)
 
 ## Foreign Key Adaptor
 
@@ -1125,7 +1125,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img42.png)
+![Foreign key adaptor of columns in Javascript grid](columns_images/columns_img42.png)
 
 ### foreignKeyField name differs with Grid field name
 
@@ -1189,7 +1189,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img43.png)
+![Foreign key adaptor of columns in Javascript grid](columns_images/columns_img43.png)
 
 ## Customize column
 
@@ -1235,7 +1235,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img23.png)
+![Column customization in Javascript grid](columns_images/columns_img23.png)
 
 
 ## Grid content customization
@@ -1279,7 +1279,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img40.png)
+![Grid content customization of columns in Javascript grid](columns_images/columns_img40.png)
 
 We can modify the visibility of grid lines by using [`gridLines`](https://help.syncfusion.com/api/js/ejgrid#members:gridlines "gridLines") property.
 
@@ -1303,7 +1303,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img41.png)
+![Columns](columns_images/columns_img41.png)
 
 ## Type
 
@@ -1381,7 +1381,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img24.png)
+![Type property of columns in Javascript grid](columns_images/columns_img24.png)
 
 ## Column Layout
 
@@ -1421,9 +1421,9 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img25.png)
+![Column Layout in Javascript grid](columns_images/columns_img25.png)
 
-# Columns customization by external action
+## Columns customization by external action
 
 To control the grid column actions externally use the following methods,
 
@@ -1489,5 +1489,5 @@ function methods(){
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img30.png)
+![Columns customization in Javascript grid](columns_images/columns_img30.png)
 
