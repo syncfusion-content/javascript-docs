@@ -9,7 +9,7 @@ keywords: ejPdfViewer
 api: /api/js/ejpdfviewer
 ---
 
-## Toolbar Customization
+# Toolbar Customization
 
 **Customizing default toolbar**
 
