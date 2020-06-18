@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell Range with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Cell Range
+title: Cell Range in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about Cell Range support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 --- 
 
-# Cell Range
+# Cell Range with JavaScript Spreadsheet
 
 A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected, they are surrounded by border. 
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Datalabel Customization
-description: Learn how to customize datalabels in Sunburst Chart.
+title: Data Labels in JavaScript SunburstChart widget | Syncfusion
+description: You can learn here about Data Labels support in Syncfusion JavaScript SunburstChart control and more details.
 platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart
 ---
 
-# Data Labels 
+# Data Labels with JavaScript SunburstChart
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users.
 You can enable or disable the data labels by setting the [`visible`](../api/ejsunburstchart#members:datalabelSettings-visible) property of the [`dataLabelSettings`](../api/ejsunburstchart#members:datalabelSettings) to true as shown in the below code

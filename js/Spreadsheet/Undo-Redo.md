@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo Redo with Spreadsheet widget for Syncfusion Essential JS
-description: How to enable Undo Redo and its functionalities
+title: Undo and Redo in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about Undo and Redo support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 --- 
 
-# Undo and Redo
+# Undo and Redo with JavaScript Spreadsheet
 
 Spreadsheet provides the support to perform undo and redo operations. You can set [`allowUndoRedo`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowundoredo "allowUndoRedo") as true to enable undo redo feature. You can also use [`undoRedoStep`](https://help.syncfusion.com/api/js/ejspreadsheet#members:undoredostep "undoRedoStep") property to limit the undo redo action.
 

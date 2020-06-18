@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Segment-Settings
-description: segment settings
+title: Segment Setting in JavaScript DigitalGauge widget | Syncfusion
+description: You can learn here about Segment setting support in Syncfusion JavaScript DigitalGauge control and more details.
 platform: js
 control: Digital Gauge
 documentation: ug
 api : /api/js/ejdigitalgauge
 ---
 
-# Segment Settings
+# Segment Settings with JavaScript DigitalGauge
 
 ## Appearance
 

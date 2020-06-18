@@ -1,7 +1,7 @@
 ---
 layout: post
-title: legend
-description: Learn how to add and customize the legnds in Sunburst Chart.
+title: Legend in JavaScript SunburstChart widget | Syncfusion
+description: You can learn here about Legend support in Syncfusion JavaScript SunburstChart control and more details.
 platform: js
 control: SunburstChart
 documentation: ug

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview in JavaScript DigitalGauge widget | Syncfusion
+description: You can learn here about the overview of Syncfusion JavaScript DigitalGauge control and more details.
 platform: js
 control: Digital Gauge
 documentation: ug
 api : /api/js/ejdigitalgauge
 ---
 
-# Overview
+# Overview with JavaScript DigitalGauge
 
 Digital Gauge for Essential Studio encompasses the visualization of the segmented display of both the 7-segment numeric values and the 14-segment alphanumeric characters. It can display the following five kinds of character types:
 

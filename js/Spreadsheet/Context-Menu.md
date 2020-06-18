@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context Menu with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Context Menu
+title: Context Menu in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about Context Menu support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Context Menu
+# Context Menu with JavaScript Spreadsheet
 
 Context Menu is used to improve user interaction with Spreadsheet using popup menu. This will open when right clicking on Cell/Column Header/Row Header/ Pager in Spreadsheet. You can use [`enableContextMenu`](https://help.syncfusion.com/api/js/ejspreadsheet#members:enablecontextmenu "enableContextMenu") property to enable/disable context menu. 
 

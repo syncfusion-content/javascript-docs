@@ -1,13 +1,13 @@
 ---
-title: Formatting with Spreadsheet widget for Syncfusion Essential JS
-description: How to use different types of formatting in Spreadsheet and configure its properties.
+title: Formatting in JavaScript Spreadsheet widget | Syncfusion 
+description: You can learn here about Formatting support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: JS
 control: Spreadsheet
 documentation: UG
 api: /api/js/ejspreadsheet
 ---
 
-# Formatting
+# Formatting with JavaScript Spreadsheet
 
 Spreadsheet supports many formatting options to make your data easier to view and understand. Use [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") API to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     

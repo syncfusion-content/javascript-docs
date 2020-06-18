@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Query
-description: query
+title: Query in JavaScript DataManager widget | Syncfusion
+description: You can learn here about Query support in Syncfusion JavaScript DataManager control and more details.
 platform: js
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: select, clone, expand, from
 api: /api/js/ejdatamanager
 ---
 
-# Query
+# Query with JavaScript DataManager
 
 **DataManager** provides support for multiple queries in order to perform various operations like filtering, sorting, cloning, expanding, searching, grouping etc., in the data source. Here, you can learn the query options in detail.
 

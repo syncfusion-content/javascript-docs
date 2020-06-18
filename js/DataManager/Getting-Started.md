@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started 
+title: Getting Started in JavaScript BulletGraph widget | Syncfusion
+description: You can learn here about getting started with Syncfusion JavaScript DataManager control and more details. 
 platform: js
 control: DataManager
 documentation: ug
 api: /api/js/ejdatamanager
 ---
 
-# Getting Started 
+# Getting Started with JavaScript DataManager
 
 ## Create your DataManager in JavaScript
 

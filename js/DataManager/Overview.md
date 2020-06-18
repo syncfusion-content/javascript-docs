@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview
-description: overview 
+title: Overview in JavaScript DataManager widget | Syncfusion
+description: You can learn here about the overview of Syncfusion JavaScript DataManager control and more details. 
 platform: js
 control: DataManager
 documentation: ug
 api: /api/js/ejdatamanager
 ---
 
-# Overview  
+# Overview with JavaScript DataManager  
 
 The Syncfusion **DataManager** plays a central role in practically all web applications built with Syncfusion UI. It is an abstraction for using local data—arrays of JavaScript objects—or remote data—web services returning **JSON**, **JSONP**, **oData** or **XML**.
 

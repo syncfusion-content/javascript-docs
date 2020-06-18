@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data-Adaptors
-description: data adaptors
+title: Data Adaptors in JavaScript DataManager widget | Syncfusion
+description: You can learn here about Data Adaptors support in Syncfusion JavaScript DataManager control and more details.
 platform: js
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adapt
 api: /api/js/ejdatamanager
 ---
 
-# Data Adaptors
+# Data Adaptors with JavaScript DataManager
 
 **DataManger** uses adaptors to process data. There are three types of adaptors in **DataManger**. They are
 
