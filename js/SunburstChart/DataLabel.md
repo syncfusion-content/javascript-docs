@@ -21,7 +21,7 @@ $("#chart"). ejSunburstChart ({
    });
  {% endhighlight %}
 
-![Visual representation of DataLabel SunburstChart using JavaScript](/js/SunburstChart/DataLabel_images/DataLabel_img1.png)
+![Visual representation of DataLabel SunburstChart using JavaScript](DataLabel_images/DataLabel_img1.png)
 
 ## Label Overflow mode
 
@@ -41,7 +41,7 @@ $("#chart"). ejSunburstChart ({
 
  {% endhighlight %}
 
-![Label Overflow mode - Hide using SunburstChart in JavaScript](/js/SunburstChart/DataLabel_images/DataLabel_img2.png) 
+![Label Overflow mode - Hide using SunburstChart in JavaScript](DataLabel_images/DataLabel_img2.png) 
 
 {% highlight js %}
 
@@ -53,7 +53,7 @@ $("#chart"). ejSunburstChart ({
 
  {% endhighlight %}
 
-![Label Overflow mode - Trim using SunburstChart in JavaScript](/js/SunburstChart/DataLabel_images/DataLabel_img3.png)
+![Label Overflow mode - Trim using SunburstChart in JavaScript](DataLabel_images/DataLabel_img3.png)
 
 ## Label Rotation Mode
 You can rotate the data label by using [`labelRotationMode`](../api/ejsunburstchart#members:datalabelsettings-labelrotationmode) property. By default, the labelRotationMode is set as **angle**. 
@@ -68,7 +68,7 @@ $("#chart"). ejSunburstChart ({
 
  {% endhighlight %}
 
-![Label Rotation Mode - Normal using SunburstChart in JavaScript](/js/SunburstChart/DataLabel_images/DataLabel_img4.png)
+![Label Rotation Mode - Normal using SunburstChart in JavaScript](DataLabel_images/DataLabel_img4.png)
 
 {% highlight js %}
 $("#chart"). ejSunburstChart ({
@@ -78,7 +78,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![Label Rotation Mode - Angle using SunburstChart in JavaScript](/js/SunburstChart/DataLabel_images/DataLabel_img5.png)
+![Label Rotation Mode - Angle using SunburstChart in JavaScript](DataLabel_images/DataLabel_img5.png)
  
 ## Customizing the data labels
 
@@ -95,7 +95,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![Customizing the data labels using SunburstChart in JavaScript](/js/SunburstChart/DataLabel_images/DataLabel_img6.png)
+![Customizing the data labels using SunburstChart in JavaScript](DataLabel_images/DataLabel_img6.png)
 
 ## Data Label Template
 
