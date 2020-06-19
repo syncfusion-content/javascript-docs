@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejspreadsheet
 --- 
 
-# Undo and Redo with JavaScript Spreadsheet
+# Undo and Redo in JavaScript Spreadsheet
 
 Spreadsheet provides the support to perform undo and redo operations. You can set [`allowUndoRedo`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowundoredo "allowUndoRedo") as true to enable undo redo feature. You can also use [`undoRedoStep`](https://help.syncfusion.com/api/js/ejspreadsheet#members:undoredostep "undoRedoStep") property to limit the undo redo action.
 

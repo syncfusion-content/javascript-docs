@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Clipboard with JavaScript Spreadsheet
+# Clipboard in JavaScript Spreadsheet
 
 The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property in Spreadsheet.
 By default [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property is `true`.  

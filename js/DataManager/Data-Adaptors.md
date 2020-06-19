@@ -9,7 +9,7 @@ keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adapt
 api: /api/js/ejdatamanager
 ---
 
-# Data Adaptors with JavaScript DataManager
+# Data Adaptors in JavaScript DataManager
 
 **DataManger** uses adaptors to process data. There are three types of adaptors in **DataManger**. They are
 

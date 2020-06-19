@@ -7,7 +7,7 @@ documentation: UG
 api: /api/js/ejspreadsheet
 ---
 
-# Formatting with JavaScript Spreadsheet
+# Formatting in JavaScript Spreadsheet
 
 Spreadsheet supports many formatting options to make your data easier to view and understand. Use [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") API to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     

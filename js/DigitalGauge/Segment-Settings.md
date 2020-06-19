@@ -8,7 +8,7 @@ documentation: ug
 api : /api/js/ejdigitalgauge
 ---
 
-# Segment Settings with JavaScript DigitalGauge
+# Segment Settings in JavaScript DigitalGauge
 
 ## Appearance
 

@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejspreadsheet
 --- 
 
-# Cell Range with JavaScript Spreadsheet
+# Cell Range in JavaScript Spreadsheet
 
 A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected, they are surrounded by border. 
 

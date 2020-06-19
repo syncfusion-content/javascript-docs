@@ -6,7 +6,7 @@ control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
-# Data Binding with JavaScript Spreadsheet
+# Data Binding in JavaScript Spreadsheet
 
 Spreadsheet can be populated with external datasource using [`dataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property. The [`dataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property can be assigned either with the instance of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager") or JSON data array collection. Spreadsheet supports three different kinds of Data binding.
 

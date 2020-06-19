@@ -8,7 +8,7 @@ documentation: ug
 api : /api/js/ejdigitalgauge
 ---
 
-# Overview with JavaScript DigitalGauge
+# JavaScript DigitalGauge Overview
 
 Digital Gauge for Essential Studio encompasses the visualization of the segmented display of both the 7-segment numeric values and the 14-segment alphanumeric characters. It can display the following five kinds of character types:
 

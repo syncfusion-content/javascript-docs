@@ -9,7 +9,7 @@ keywords: select, clone, expand, from
 api: /api/js/ejdatamanager
 ---
 
-# Query with JavaScript DataManager
+# Query in JavaScript DataManager
 
 **DataManager** provides support for multiple queries in order to perform various operations like filtering, sorting, cloning, expanding, searching, grouping etc., in the data source. Here, you can learn the query options in detail.
 

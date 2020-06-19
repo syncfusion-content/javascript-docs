@@ -8,7 +8,7 @@ documentation: ug
 api : /api/js/ejdigitalgauge
 ---
 
-# Character Settings with JavaScript DigitalGauge
+# Character Settings in JavaScript DigitalGauge
 
 ## Appearance
 

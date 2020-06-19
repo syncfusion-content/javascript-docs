@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejsunburstchart
 ---
 
-# Data Labels with JavaScript SunburstChart
+# Data Labels in JavaScript SunburstChart
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users.
 You can enable or disable the data labels by setting the [`visible`](../api/ejsunburstchart#members:datalabelSettings-visible) property of the [`dataLabelSettings`](../api/ejsunburstchart#members:datalabelSettings) to true as shown in the below code
