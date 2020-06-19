@@ -857,4 +857,4 @@ To bind remote data to Grid Control, you can assign a service data as an instanc
 
 {% endhighlight %}
 
-![](GettingStarted_images/Binding1.png)
+![Widget Binding using DataManager in JavaScript](GettingStarted_images/Binding1.png)

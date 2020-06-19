@@ -101,23 +101,23 @@ To hide the items in the context menu. Use [`hideItem`](https://help.syncfusion.
 To show the items in the context menu. Use [`showItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-showitem "showItem") method to show the items in context menu via code.
 
 
-![](Context-Menu_images/context-menu_img1.png)
+![Contextmenu at Cell using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img1.png)
 
 Contextmenu at Cell
 {:.caption}
 
 
-![](Context-Menu_images/context-menu_img2.png)
+![Contextmenu at Column Header using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img2.png)
 
 Contextmenu at Column Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img3.png)
+![Contextmenu at Row Header using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img3.png)
 
 Contextmenu at Row Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img4.png)
+![Contextmenu at Pager using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img4.png)
 
 Contextmenu at Pager
 {:.caption}

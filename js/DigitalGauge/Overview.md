@@ -14,23 +14,23 @@ Digital Gauge for Essential Studio encompasses the visualization of the segmente
 
 * Seven Segment
 
-![](/js/DigitalGauge/Overview_images/Overview_img2.png)
+![Seven Segment using DigitalGauge in JavaScript](/js/DigitalGauge/Overview_images/Overview_img2.png)
 
 * Fourteen Segment
 
-![](/js/DigitalGauge/Overview_images/Overview_img3.png)
+![Fourteen Segment using DigitalGauge in JavaScript](/js/DigitalGauge/Overview_images/Overview_img3.png)
 
 * Sixteen Segment
 
-![](/js/DigitalGauge/Overview_images/Overview_img4.png)
+![Sixteen Segment using DigitalGauge in JavaScript](/js/DigitalGauge/Overview_images/Overview_img4.png)
 
 * EightCrossEightDotMatrix
 
-![](/js/DigitalGauge/Overview_images/Overview_img5.png)
+![EightCrossEightDotMatrix using DigitalGauge in JavaScript](/js/DigitalGauge/Overview_images/Overview_img5.png)
 
 * EightCrossEightSquareMatrix
 
-![](/js/DigitalGauge/Overview_images/Overview_img6.png)
+![EightCrossEightSquareMatrix using DigitalGauge in JavaScript](/js/DigitalGauge/Overview_images/Overview_img6.png)
 
 
 There are several other properties available in Digital Gauge which enable you to perform various customizations such as changing the space between the characters, segment width, segment length, spacing between the segments, and other customizations.

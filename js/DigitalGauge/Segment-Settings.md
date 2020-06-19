@@ -58,7 +58,7 @@ api : /api/js/ejdigitalgauge
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![](/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img1.png)
+![Appearance using DigitalGauge in JavaScript](/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img1.png)
 
 ## Dimension Modification
 
@@ -99,5 +99,5 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![](/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img2.png)
+![Dimension Modification using DigitalGauge in JavaScript](/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img2.png)
 

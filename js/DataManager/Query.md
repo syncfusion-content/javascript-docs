@@ -62,7 +62,7 @@ The `select` query of the data manager is used to select only some particular fi
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img1.png)
+![Select Query using DataManager in JavaScript](Query_images/Query_img1.png)
 
 ## From
 
@@ -113,7 +113,7 @@ The [from](https://help.syncfusion.com/api/js/ejquery#methods:from) query of the
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img2.png)
+![From Query using DataManager in JavaScript](Query_images/Query_img2.png)
 
 ## Clone
 
@@ -166,7 +166,7 @@ The [clone](https://help.syncfusion.com/api/js/ejquery#methods:clone) query of t
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img3.png)
+![Clone Query using DataManager in JavaScript](Query_images/Query_img3.png)
 
 ## Expand
 
@@ -218,4 +218,4 @@ The [expand](https://help.syncfusion.com/api/js/ejquery#methods:expand) query of
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img4.png)
+![Expand Query using DataManager in JavaScript](Query_images/Query_img4.png)

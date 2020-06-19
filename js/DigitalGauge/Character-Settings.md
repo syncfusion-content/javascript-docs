@@ -42,7 +42,7 @@ You can customize the character using [`character settings`](../api/ejdigitalgau
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![](/js/DigitalGauge/Character-Settings_images/Character-Settings_img1.png)
+![Appearance using DigitalGauge in JavaScript](/js/DigitalGauge/Character-Settings_images/Character-Settings_img1.png)
 
 ## Count and Type
 
@@ -98,7 +98,7 @@ The number of text to be displayed can be limited by the attribute called [`coun
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![](/js/DigitalGauge/Character-Settings_images/Character-Settings_img2.png)
+![Count and Type using DigitalGauge in JavaScript](/js/DigitalGauge/Character-Settings_images/Character-Settings_img2.png)
 
 ## Text Positioning
 
@@ -141,7 +141,7 @@ The text in the **Digital****Gauge** is positioned with [`position`](../api/ejdi
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
 
-![](/js/DigitalGauge/Character-Settings_images/Character-Settings_img3.png)
+![Text Positioning using DigitalGauge in JavaScript](/js/DigitalGauge/Character-Settings_images/Character-Settings_img3.png)
 
 ## Shadow Effects
 
@@ -191,7 +191,7 @@ You can add the shadow effects for text using following properties.
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![](/js/DigitalGauge/Character-Settings_images/Character-Settings_img4.png)
+![Shadow Effects using DigitalGauge in JavaScript](/js/DigitalGauge/Character-Settings_images/Character-Settings_img4.png)
 
 ## Font Customization
 

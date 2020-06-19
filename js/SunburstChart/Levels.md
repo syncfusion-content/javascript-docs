@@ -46,4 +46,4 @@ The following screenshot illustrates the Sunburst Chart with different levels
 
 
 
-![](/js/SunburstChart/Levels_images/Levels_img1.png)
+![GroupMemberPath using SunburstChart in JavaScript](/js/SunburstChart/Levels_images/Levels_img1.png)

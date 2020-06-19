@@ -36,7 +36,7 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img1.png)
+![Bind Local data using Spreadsheet in JavaScript](Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -61,7 +61,7 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![Bind Remote data using Spreadsheet in JavaScript](Data-Binding_images/Data-Binding_img2.png)
 
 ### Offline Mode
 
@@ -91,7 +91,7 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![Offline Mode Data Binding using Spreadsheet in JavaScript](Data-Binding_images/Data-Binding_img2.png)
 
 N> For further reference about `offline` property in [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager") refer following [`link`](https://help.syncfusion.com/js/datamanager/data-binding#offline-mode "link")
 
@@ -171,7 +171,7 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img3.png)
+![HTML Table Data binding using Spreadsheet in JavaScript](Data-Binding_images/Data-Binding_img3.png)
 
 ## Ways to bind data in Spreadsheet
 
@@ -438,7 +438,7 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img4.png)
+![Cell Binding using Spreadsheet in JavaScript](Data-Binding_images/Data-Binding_img4.png)
 
 N> To get the active sheet index and data settings in Spreadsheet, use [`getActiveSheetIndex`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivesheetindex "getActiveSheetIndex") and [`getDataSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getdatasettings "getDataSettings") methods.
 
@@ -530,7 +530,7 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img5.png)
+![Range Binding using Spreadsheet in JavaScript](Data-Binding_images/Data-Binding_img5.png)
 
 ### Sheet Binding
 
@@ -657,5 +657,5 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets. 
-![](Data-Binding_images/Data-Binding_img6.png)
+![Sheet Binding using Spreadsheet in JavaScript](Data-Binding_images/Data-Binding_img6.png)
 

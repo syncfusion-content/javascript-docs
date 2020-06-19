@@ -62,7 +62,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.png)
+![Save cell content using Spreadsheet in JavaScript](Editing_images/Editing_img1.png)
 
 ## Read-Only cells
 
@@ -103,7 +103,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of editing in Spreadsheet which is rendered with above code example.
 
-![](Editing_images/Editing_img2.png)
+![Read-Only cells using Spreadsheet in JavaScript](Editing_images/Editing_img2.png)
 
 ## Events
 
