@@ -133,7 +133,7 @@ The following code example illustrates on how to use **JSONAdaptor**.
 
 The result of above code example is illustrated as follows.
 
-![JSON Adaptor using DataManager in JavaScript](/Data-Adaptors_images/Data-Adaptors_img1.png) 
+![JSON Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img1.png) 
 
 ## URL Adaptor
 
