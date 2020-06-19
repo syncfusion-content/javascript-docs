@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Datalabel Customization
-description: Learn how to customize datalabels in Sunburst Chart.
+title: Data Labels in JavaScript SunburstChart widget | Syncfusion
+description: You can learn here about Data Labels support in Syncfusion JavaScript SunburstChart control and more details.
 platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart
 ---
 
-# Data Labels 
+# Data Labels in JavaScript SunburstChart
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users.
 You can enable or disable the data labels by setting the [`visible`](../api/ejsunburstchart#members:datalabelSettings-visible) property of the [`dataLabelSettings`](../api/ejsunburstchart#members:datalabelSettings) to true as shown in the below code
@@ -21,7 +21,7 @@ $("#chart"). ejSunburstChart ({
    });
  {% endhighlight %}
 
-![](/js/SunburstChart/DataLabel_images/DataLabel_img1.png)
+![Visual representation of DataLabel SunburstChart using JavaScript](DataLabel_images/DataLabel_img1.png)
 
 ## Label Overflow mode
 
@@ -41,7 +41,7 @@ $("#chart"). ejSunburstChart ({
 
  {% endhighlight %}
 
-![](/js/SunburstChart/DataLabel_images/DataLabel_img2.png) 
+![Label Overflow mode - Hide using SunburstChart in JavaScript](DataLabel_images/DataLabel_img2.png) 
 
 {% highlight js %}
 
@@ -53,7 +53,7 @@ $("#chart"). ejSunburstChart ({
 
  {% endhighlight %}
 
-![](/js/SunburstChart/DataLabel_images/DataLabel_img3.png)
+![Label Overflow mode - Trim using SunburstChart in JavaScript](DataLabel_images/DataLabel_img3.png)
 
 ## Label Rotation Mode
 You can rotate the data label by using [`labelRotationMode`](../api/ejsunburstchart#members:datalabelsettings-labelrotationmode) property. By default, the labelRotationMode is set as **angle**. 
@@ -68,7 +68,7 @@ $("#chart"). ejSunburstChart ({
 
  {% endhighlight %}
 
-![](/js/SunburstChart/DataLabel_images/DataLabel_img4.png)
+![Label Rotation Mode - Normal using SunburstChart in JavaScript](DataLabel_images/DataLabel_img4.png)
 
 {% highlight js %}
 $("#chart"). ejSunburstChart ({
@@ -78,7 +78,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/DataLabel_images/DataLabel_img5.png)
+![Label Rotation Mode - Angle using SunburstChart in JavaScript](DataLabel_images/DataLabel_img5.png)
  
 ## Customizing the data labels
 
@@ -95,7 +95,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/DataLabel_images/DataLabel_img6.png)
+![Customizing the data labels using SunburstChart in JavaScript](DataLabel_images/DataLabel_img6.png)
 
 ## Data Label Template
 

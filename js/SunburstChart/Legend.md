@@ -1,7 +1,7 @@
 ---
 layout: post
-title: legend
-description: Learn how to add and customize the legnds in Sunburst Chart.
+title: Legend in JavaScript SunburstChart widget | Syncfusion
+description: You can learn here about Legend support in Syncfusion JavaScript SunburstChart control and more details.
 platform: js
 control: SunburstChart
 documentation: ug
@@ -21,7 +21,7 @@ $("#chart"). ejSunburstChart ({
 
  {% endhighlight %}
 
-![](/js/SunburstChart/Legend_images/Legend_img1.png)
+![Visual representation of Legend SunburstChart using JavaScript](Legend_images/Legend_img1.png)
 
 ## Legend Icon 
 
@@ -42,7 +42,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/Legend_images/Legend_img2.png)
+![Legend Icon using SunburstChart in JavaScript](Legend_images/Legend_img2.png)
  
 ## Positioning the Legend
 
@@ -57,7 +57,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/Legend_images/Legend_img3.png)
+![Positioning the Legend using SunburstChart in JavaScript](Legend_images/Legend_img3.png)
 
 ## Legend title
 
@@ -100,7 +100,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/Legend_images/Legend_img4.png)
+![Legend Item Size and border using Sunburstchart in JavaScript](Legend_images/Legend_img4.png)
 
 ## Legend Size
 
@@ -115,7 +115,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/Legend_images/Legend_img5.png)
+![Legend Size using Sunburstchart in JavaScript](Legend_images/Legend_img5.png)
 
 ## Legend Item Padding
 
@@ -152,7 +152,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/Legend_images/Legend_img6.png)
+![Legend Row and Columns using Sunburstchart in JavaScript](Legend_images/Legend_img6.png)
  
 ## LegendInteractivity
 
@@ -176,7 +176,7 @@ $("#chart").ejSunburstChart ({
    
 {% endhighlight %}
 
-![](/js/SunburstChart/Legend_images/Legend_img7.png)
+![ToggleSegmentSelection using Sunburstchart in JavaScript](Legend_images/Legend_img7.png)
  
 ## Toggle Segment Visibility
 
@@ -192,7 +192,7 @@ $("#chart").ejSunburstChart ({
 {% endhighlight %}
 
 
-![](/js/SunburstChart/Legend_images/Legend_img8.png)
+![Toggle Segment Visibility using Sunburstchart in JavaScript](Legend_images/Legend_img8.png)
 
 ## Customize the legend text
 

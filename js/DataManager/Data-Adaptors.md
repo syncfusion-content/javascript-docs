@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data-Adaptors
-description: data adaptors
+title: Data Adaptors in JavaScript DataManager widget | Syncfusion
+description: You can learn here about Data Adaptors support in Syncfusion JavaScript DataManager control and more details.
 platform: js
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adapt
 api: /api/js/ejdatamanager
 ---
 
-# Data Adaptors
+# Data Adaptors in JavaScript DataManager
 
 **DataManger** uses adaptors to process data. There are three types of adaptors in **DataManger**. They are
 
@@ -133,7 +133,7 @@ The following code example illustrates on how to use **JSONAdaptor**.
 
 The result of above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img1.png) 
+![JSON Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img1.png) 
 
 ## URL Adaptor
 
@@ -272,7 +272,7 @@ Now, in the following code example the data is retrieved from **MVC** **Controll
 The result of the above code example is illustrated as follows.
 
 
-![](Data-Adaptors_images/Data-Adaptors_img2.png) 
+![URL Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img2.png) 
 
 ## OData Adaptor
 
@@ -384,7 +384,7 @@ The result of the above code example is illustrated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img3.png) 
+![OData Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img3.png) 
 
 ## WebAPI Adaptor
 
@@ -491,7 +491,7 @@ Refer to the following code example.
 
 Result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img4.png) 
+![WebAPI Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img4.png) 
 
 ## RemoteSave Adaptor
 
@@ -705,7 +705,7 @@ Refer to the following code example.
 
 Result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img5.png) 
+![RemoteSave Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img5.png) 
 
 ## Custom Adaptor
 
@@ -769,7 +769,7 @@ The following code example illustrates you on how to create custom adaptor.
 
 Result of above code example is as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img6.png) 
+![Custom Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img6.png) 
 
 Using Custom Adaptor, you can override the existing method of Extended Adaptor, 
 
@@ -903,7 +903,7 @@ Cache Adaptor is used to cache the data of the visited pages. It prevents new re
 
 {% endhighlight %}
 
-![](Data-Adaptors_images/Data-Adaptors_img7.png)
+![Cache Adaptor using DataManager in JavaScript](Data-Adaptors_images/Data-Adaptors_img7.png)
 
 Cache Adaptor has the following unique properties, 
 
