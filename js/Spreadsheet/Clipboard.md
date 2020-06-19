@@ -82,6 +82,6 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![clipboard operations (cut, copy, and paste) using Spreadsheet in JavaScript](Clipboard_images/Clipboard_img1.png)
+![clipboard operations - cut, copy, and paste using Spreadsheet in JavaScript](Clipboard_images/Clipboard_img1.png)
 
 N> Similarly you can perform clipboard operations for shapes (Chart and Image).
