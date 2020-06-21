@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio JavaScript products
-description: Learn how to install and deploy the Syncfusion JavaScript component
+title: Trial version to license version | jQuery | Syncfusion
+description: Learn here how to upgrade Syncfusion JavaScript (Essential JS 1) / jQuery controls from trial to license and more details.
 platform: js
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-## Upgrade from trial version to license version
+# Upgrade from trial version to license version
 
 To upgrade from trial version, there are two possible solutions.
 
