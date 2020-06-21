@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar customization of Syncfusion Essential JS PDF viewer.
-description: Toolbar customization of Syncfusion Essential JS PDF viewer.
+description: Learn here about Toolbar customization in Syncfusion Essential JS 1 / jQuery PDF Viewer and more details.
 platform: js
 control: PDF viewer
 documentation: ug
