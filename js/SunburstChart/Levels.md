@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Levels
-description: Learn how to customize various levels in SunburstChart
+title: Levels in JavaScript SunburstChart widget | Syncfusion
+description: You can learn here about Data Levels support in Syncfusion JavaScript SunburstChart control and more details.
 platform: js
 control: SunburstChart
 documentation: ug
@@ -46,4 +46,4 @@ The following screenshot illustrates the Sunburst Chart with different levels
 
 
 
-![](/js/SunburstChart/Levels_images/Levels_img1.png)
+![GroupMemberPath using SunburstChart in JavaScript](Levels_images/Levels_img1.png)

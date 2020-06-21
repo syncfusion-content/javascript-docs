@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell Range with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Cell Range
+title: Cell Range in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about Cell Range support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 --- 
 
-# Cell Range
+# Cell Range in JavaScript Spreadsheet
 
 A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected, they are surrounded by border. 
 
@@ -68,7 +68,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img1.png)
+![Comment using Spreadsheet in JavaScript](Cell-Ranges_images/Cell-Ranges_img1.png)
 
 You have following Comment options in Spreadsheet.
 
@@ -241,7 +241,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img2.png)
+![Cell Navigation using Spreadsheet in JavaScript](Cell-Ranges_images/Cell-Ranges_img2.png)
 
 #### To clear formatted invalid data
 
@@ -281,7 +281,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img3.png)
+![Drag and Drop using Spreadsheet in JavaScript](Cell-Ranges_images/Cell-Ranges_img3.png)
 
 ## Auto Fill
 
@@ -390,7 +390,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img5.png)
+![Auto Fill Using Spreadsheet in JavaScript](Cell-Ranges_images/Cell-Ranges_img5.png)
 
 N> 1. To get the active cell object in Spreadsheet, use[`getActiveCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivecell "getActiveCell")method.
 N> 2. To get the cell element based on specified row and column index in the Spreadsheet, use[`getCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getcell "getCell")method.
@@ -444,7 +444,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img6.png)
+![Hyperlink using Spreadsheet in JavaScript](Cell-Ranges_images/Cell-Ranges_img6.png)
 
 ## Merge Cell
 
@@ -509,7 +509,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img7.png)
+![Merge Cell using Spreadsheet in JavaScript](Cell-Ranges_images/Cell-Ranges_img7.png)
 
 ### Unmerge Cells
 
@@ -542,4 +542,4 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img8.png)
+![UnMerge Cell using Spreadsheet in JavaScript](Cell-Ranges_images/Cell-Ranges_img8.png)

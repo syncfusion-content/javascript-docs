@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context Menu with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Context Menu
+title: Context Menu in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about Context Menu support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Context Menu
+# Context Menu in JavaScript Spreadsheet
 
 Context Menu is used to improve user interaction with Spreadsheet using popup menu. This will open when right clicking on Cell/Column Header/Row Header/ Pager in Spreadsheet. You can use [`enableContextMenu`](https://help.syncfusion.com/api/js/ejspreadsheet#members:enablecontextmenu "enableContextMenu") property to enable/disable context menu. 
 
@@ -101,23 +101,23 @@ To hide the items in the context menu. Use [`hideItem`](https://help.syncfusion.
 To show the items in the context menu. Use [`showItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-showitem "showItem") method to show the items in context menu via code.
 
 
-![](Context-Menu_images/context-menu_img1.png)
+![Contextmenu at Cell using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img1.png)
 
 Contextmenu at Cell
 {:.caption}
 
 
-![](Context-Menu_images/context-menu_img2.png)
+![Contextmenu at Column Header using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img2.png)
 
 Contextmenu at Column Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img3.png)
+![Contextmenu at Row Header using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img3.png)
 
 Contextmenu at Row Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img4.png)
+![Contextmenu at Pager using Spreadsheet in JavaScript](Context-Menu_images/context-menu_img4.png)
 
 Contextmenu at Pager
 {:.caption}

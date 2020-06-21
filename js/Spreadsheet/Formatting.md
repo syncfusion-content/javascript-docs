@@ -1,13 +1,13 @@
 ---
-title: Formatting with Spreadsheet widget for Syncfusion Essential JS
-description: How to use different types of formatting in Spreadsheet and configure its properties.
+title: Formatting in JavaScript Spreadsheet widget | Syncfusion 
+description: You can learn here about Formatting support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: JS
 control: Spreadsheet
 documentation: UG
 api: /api/js/ejspreadsheet
 ---
 
-# Formatting
+# Formatting in JavaScript Spreadsheet
 
 Spreadsheet supports many formatting options to make your data easier to view and understand. Use [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") API to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     
@@ -75,7 +75,7 @@ You can set number format for a cell by specifying [`format`](https://help.syncf
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img1.png)
+![Initial Load - Number Formatting using Spreadsheet in JavaScript](Formatting_images/Formatting_img1.png)
 
 ### Method
 
@@ -107,7 +107,7 @@ You can set number format for a cell using [`format`](https://help.syncfusion.co
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img2.png)
+![Method - Number Formatting using Spreadsheet in JavaScript](Formatting_images/Formatting_img2.png)
 
 ### User Interface
 
@@ -116,7 +116,7 @@ You can set number format for a cell through number formatting options in ribbon
 ### Custom Number Format
 
 Spreadsheet supports many number format to display your data as currency, date, percentage and so on. If these pre-defined number formats do not meet your needs you can create and apply your own number formats using format cell dialog and [`addCustomFormatSpecifier`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-addcustomformatspecifier "addCustomFormatSpecifier") method. The following screenshot illustrate this,
-![](Formatting_images/Formatting_img3.png)
+![Custom Number Format using Spreadsheet in JavaScript](Formatting_images/Formatting_img3.png)
 
 N> Spreadsheet supports basic number format customization and it doesn't have all functionality similar to excel   
 
@@ -178,7 +178,7 @@ You can apply text format for a cell by specifying [`style`](https://help.syncfu
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img4.png)
+![Initial Load - Text Formatting using Spreadsheet in JavaScript](Formatting_images/Formatting_img4.png)
 
 #### Method
 
@@ -210,7 +210,7 @@ You can apply text format for a cell or range of cells using [`format`](https://
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img5.png)
+![Method - Text Formatting using Spreadsheet in JavaScript](Formatting_images/Formatting_img5.png)
 
 #### User Interface
 
@@ -255,7 +255,7 @@ You can wrap, text in a cell using [`wrapText`](https://help.syncfusion.com/api/
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img6.png)
+![Method - Wrap Text Using Spreadsheet in JavaScript](Formatting_images/Formatting_img6.png)
 
 #### User Interface
 
@@ -334,7 +334,7 @@ To highlight cell or range of cells from whole workbook you can apply background
 ### Cell Styles
 
 Cell styles is a collection of pre-defined styles with multiple formatting characteristics to apply several formats in one step. You can apply cell style for a cell using `cell style` option in ribbon `HOME` tab. The following screenshot illustrate this,
-![](Formatting_images/Formatting_img7.png)
+![Cell styles Formatting using Spreadsheet in JavaScript](Formatting_images/Formatting_img7.png)
 
 ### Custom Cell Style
 
