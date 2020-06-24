@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing with Spreadsheet widget for Syncfusion Essential JS
-description: How to Edit the Spreadsheet 
+title: Editing in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about editing support in Syncfusion JavaScript Spreadsheet control and more details. 
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Editing 
+# Editing in JavaScript Spreadsheet 
 
 You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use [`allowEditing`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "allowEditing") property to enable/disable editing feature.
 
@@ -62,7 +62,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.png)
+![Save cell content using Spreadsheet in JavaScript](Editing_images/Editing_img1.png)
 
 ## Read-Only cells
 
@@ -103,7 +103,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of editing in Spreadsheet which is rendered with above code example.
 
-![](Editing_images/Editing_img2.png)
+![Read-Only cells using Spreadsheet in JavaScript](Editing_images/Editing_img2.png)
 
 ## Events
 

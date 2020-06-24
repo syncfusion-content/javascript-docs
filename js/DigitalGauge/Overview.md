@@ -1,36 +1,36 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview in JavaScript DigitalGauge widget | Syncfusion
+description: You can learn here about the overview of Syncfusion JavaScript DigitalGauge control and more details.
 platform: js
 control: Digital Gauge
 documentation: ug
 api : /api/js/ejdigitalgauge
 ---
 
-# Overview
+# JavaScript DigitalGauge Overview
 
 Digital Gauge for Essential Studio encompasses the visualization of the segmented display of both the 7-segment numeric values and the 14-segment alphanumeric characters. It can display the following five kinds of character types:
 
 * Seven Segment
 
-![](/js/DigitalGauge/Overview_images/Overview_img2.png)
+![Seven Segment using DigitalGauge in JavaScript](Overview_images/Overview_img2.png)
 
 * Fourteen Segment
 
-![](/js/DigitalGauge/Overview_images/Overview_img3.png)
+![Fourteen Segment using DigitalGauge in JavaScript](Overview_images/Overview_img3.png)
 
 * Sixteen Segment
 
-![](/js/DigitalGauge/Overview_images/Overview_img4.png)
+![Sixteen Segment using DigitalGauge in JavaScript](Overview_images/Overview_img4.png)
 
 * EightCrossEightDotMatrix
 
-![](/js/DigitalGauge/Overview_images/Overview_img5.png)
+![EightCrossEightDotMatrix using DigitalGauge in JavaScript](Overview_images/Overview_img5.png)
 
 * EightCrossEightSquareMatrix
 
-![](/js/DigitalGauge/Overview_images/Overview_img6.png)
+![EightCrossEightSquareMatrix using DigitalGauge in JavaScript](Overview_images/Overview_img6.png)
 
 
 There are several other properties available in Digital Gauge which enable you to perform various customizations such as changing the space between the characters, segment width, segment length, spacing between the segments, and other customizations.
