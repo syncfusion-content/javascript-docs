@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar customization of Syncfusion Essential JS PDF viewer.
-description: Learn here about Toolbar customization in Syncfusion Essential JS 1 / jQuery PDF Viewer and more details.
+description: Learn here about toolbar customization in Syncfusion Essential JS PDF Viewer control and more details.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer
 api: /api/js/ejpdfviewer
 ---
 
-# Toolbar Customization
+# Toolbar Customization in Javascript PdfViewer
 
 **Customizing default toolbar**
 
