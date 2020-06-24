@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Trial version to license version | jQuery | Syncfusion
-description: Learn here how to upgrade Syncfusion JavaScript (Essential JS 1) / jQuery controls from trial to license and more details.
+title: Upgrade from trial version to license version| JavaScript | Syncfusion
+description: Learn here about how to upgrade from trial version to license version of Syncfusion Essential Studio JavaScript products.
 platform: js
 control: Installation and Deployment
 documentation: ug
