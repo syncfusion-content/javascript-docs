@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pdfium rendering engine in Syncfusion Essential JS PDF viewer.
-description: Syncfusion Essential JS PDF viewer uses Pdfium rendering engine to render and print PDF files.
+description: Learn here about how Syncfusion Essential JS PDF viewer uses Pdfium rendering engine to render and print PDF files.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer, PDF Viewer
 api: /api/js/ejpdfviewer
 ---
 
-## How to use pdfium rendering engine in PDF viewer
+# How to use pdfium rendering engine in PDF viewer
 
 From the **Essential Studio 2018 Volume 4 release(16.4.0.42)**, the PDF Viewer provides a robust rendering of PDF document using the Pdfium rendering engine.
 
