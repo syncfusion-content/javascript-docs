@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Levels in JavaScript SunburstChart widget | Syncfusion
-description: You can learn here about Data Levels support in Syncfusion JavaScript SunburstChart control and more details.
+description: You can learn here about levels support in Syncfusion JavaScript SunburstChart control and more details.
 platform: js
 control: SunburstChart
 documentation: ug

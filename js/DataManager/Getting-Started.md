@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdatamanager
 ---
 
-# Getting Started with JavaScript DataManager
+# Getting Started with JavaScript DataManager 
 
 ## Create your DataManager in JavaScript
 

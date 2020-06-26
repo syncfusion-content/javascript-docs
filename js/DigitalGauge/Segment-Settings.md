@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment Setting in JavaScript DigitalGauge widget | Syncfusion
-description: You can learn here about Segment setting support in Syncfusion JavaScript DigitalGauge control and more details.
+description: You can learn here about segment setting support in Syncfusion JavaScript DigitalGauge control and more details.
 platform: js
 control: Digital Gauge
 documentation: ug

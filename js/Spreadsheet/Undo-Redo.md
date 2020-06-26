@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Undo and Redo in JavaScript Spreadsheet widget | Syncfusion
-description: You can learn here about Undo and Redo support in Syncfusion JavaScript Spreadsheet control and more details.
+description: You can learn here about undo and redo support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug

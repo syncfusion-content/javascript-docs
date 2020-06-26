@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Adaptors in JavaScript DataManager widget | Syncfusion
-description: You can learn here about Data Adaptors support in Syncfusion JavaScript DataManager control and more details.
+description: You can learn here about data adaptors support in Syncfusion JavaScript DataManager control and more details.
 platform: js
 control: DataManager
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Character Setting in JavaScript DigitalGauge widget | Syncfusion
-description: You can learn here about Character setting support in Syncfusion JavaScript DigitalGauge control and more details.
+description: You can learn here about character setting support in Syncfusion JavaScript DigitalGauge control and more details.
 platform: js
 control: Digital Gauge
 documentation: ug

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Qualitative Range in JavaScript BulletGraph widget | Syncfusion
-description: You can learn here about Qualitative Range support in Syncfusion JavaScript BulletGraph control and more details.
+description: You can learn here about qualitative range support in Syncfusion JavaScript BulletGraph control and more details.
 platform: js
-control: BulletGraph	
+control: BulletGraph
 documentation: ug
 api: /api/js/ejbulletgraph
 ---

@@ -1,5 +1,5 @@
 ---
-title: Open and Save in JavaScript Spreadsheet widget | Syncfusion 
+title: Open and Save in JavaScript Spreadsheet widget | Syncfusion
 description: You can learn here about open and save support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
