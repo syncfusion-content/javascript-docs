@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Range in JavaScript Spreadsheet widget | Syncfusion
-description: You can learn here about Cell Range support in Syncfusion JavaScript Spreadsheet control and more details.
+description: You can learn here about cell range support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug

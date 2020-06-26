@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in JavaScript SunburstChart widget | Syncfusion
-description: You can learn here about Legend support in Syncfusion JavaScript SunburstChart control and more details.
+description: You can learn here about legend support in Syncfusion JavaScript SunburstChart control and more details.
 platform: js
 control: SunburstChart
 documentation: ug
@@ -163,7 +163,7 @@ It has three types of action
 *	ToggleSegmentVisibility
 *	None
 
-## ToggleSegmentSelection
+## Toggle Segment Selection
 
 Used to highlight specific category while clicking on legend item
 

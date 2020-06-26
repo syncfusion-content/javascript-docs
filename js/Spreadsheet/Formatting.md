@@ -1,6 +1,6 @@
 ---
-title: Formatting in JavaScript Spreadsheet widget | Syncfusion 
-description: You can learn here about Formatting support in Syncfusion JavaScript Spreadsheet control and more details.
+title: Formatting in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about formatting support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: JS
 control: Spreadsheet
 documentation: UG

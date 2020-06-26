@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Query in JavaScript DataManager widget | Syncfusion
-description: You can learn here about Query support in Syncfusion JavaScript DataManager control and more details.
+description: You can learn here about query support in Syncfusion JavaScript DataManager control and more details.
 platform: js
 control: DataManager
 documentation: ug

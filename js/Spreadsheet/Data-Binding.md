@@ -1,6 +1,6 @@
 ---
 title: Data Binding in JavaScript Spreadsheet widget | Syncfusion
-description: You can learn here about Data Binding support in Syncfusion JavaScript Spreadsheet control and more details.
+description: You can learn here about data binding support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
