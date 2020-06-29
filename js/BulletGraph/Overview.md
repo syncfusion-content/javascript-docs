@@ -3,7 +3,7 @@ layout: post
 title: Overview in JavaScript BulletGraph widget | Syncfusion
 description: You can learn here about the overview of Syncfusion JavaScript BulletGraph control and more details.
 platform: js
-control: BulletGraph	
+control: BulletGraph
 documentation: ug
 api: /api/js/ejbulletgraph
 ---
