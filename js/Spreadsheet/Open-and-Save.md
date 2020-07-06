@@ -1,13 +1,13 @@
 ---
-title: Open and Save with Spreadsheet widget for Syncfusion Essential JS
-description: How to perform Open and Save and configure its functionalities like server mapper, import URL etc.
+title: Open and Save in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about open and save support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Open and Save
+# Open and Save in JavaScript Spreadsheet
 
 The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
 

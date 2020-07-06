@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Editing
+# Editing in JavaScript Grid
 
 The grid control has support for the dynamic insertion, updating and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call [`addRecord`](https://help.syncfusion.com/api/js/ejgrid#methods:addrecord "addRecord") method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
 
@@ -60,7 +60,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.png)
+![Toolbar with edit option in Javascript grid](Editing_images/Editing_img1.png)
 
 
 ## Cell edit type and its params
@@ -152,7 +152,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img2.png)
+![Cell edit type and its params in Javascript grid](Editing_images/Editing_img2.png)
 
 
 ## Cell Edit Template
@@ -206,7 +206,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img3.png)
+![Cell edit template in Javascript grid](Editing_images/Editing_img3.png)
 
 
 ## Edit Modes
@@ -252,7 +252,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img4.png)
+![Editing](Editing_images/Editing_img4.png)
 
 
 ### Inline Form
@@ -295,7 +295,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img5.png)
+![Inline Form  of editing in Javascript grid](Editing_images/Editing_img5.png)
 
 
 ### Inline Template Form
@@ -387,13 +387,13 @@ function complete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img6.png)
+![Inline Template Form  of editing before conversion in Javascript grid](Editing_images/Editing_img6.png)
 
 {:caption}
 Before the template elements are converted to JS controls
 
 
-![](Editing_images/Editing_img7.png)
+![Inline Template Form  of editing after conversion in Javascript grid](Editing_images/Editing_img7.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event 
 
@@ -437,7 +437,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img8.png)
+![Dialog edit mode in Javascript grid](Editing_images/Editing_img8.png)
 
 N> Use [`titleColumn`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-titleColumn "titleColumn") property of editSettings to change the the title for edit form apart from the primarykey column value.
 
@@ -527,11 +527,11 @@ function complete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img9.png)
+![Dialog Template Form of editing before conversion in Javascript grid](Editing_images/Editing_img9.png)
 {:caption}
 Before the template elements are converted to JS controls
 
-![](Editing_images/Editing_img10.png)
+![Dialog Template Form of editing after conversion in Javascript grid](Editing_images/Editing_img10.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event 
 
@@ -577,7 +577,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img11.png)
+![External Form of editing in Javascript grid](Editing_images/Editing_img11.png)
 
 
 Form Position:
@@ -624,7 +624,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img12.png)
+![Form Position of editing in Javascript grid](Editing_images/Editing_img12.png)
 
 
 ### External Template Form
@@ -716,11 +716,11 @@ function complete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img13.png)
+![External Template Form of editing before conversion in Javascript grid ](Editing_images/Editing_img13.png)
 {:caption}
 Before the template elements are converted to JS controls
 
-![](Editing_images/Editing_img14.png)
+![External Template Form of editing after conversion in Javascript grid](Editing_images/Editing_img14.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event
 
@@ -767,12 +767,12 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img15.png)
+![Batch / Excel-like of editing in Javascript grid](Editing_images/Editing_img15.png)
 
 N> During batch editing, you can do any custom actions in-between, using the corresponding events [`batchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:batchadd "batchAdd"), [`batchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:batchdelete "batchDelete"), [`beforeBatchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchadd "beforeBatchAdd"), [`beforeBatchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchdelete "beforeBatchDelete"), [`beforeBatchSave`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchsave "beforeBatchSave") .
 N> Using [`getCurrentEditCellData`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrenteditcelldata "getCurrentEditCellData") method, we can get the current edit cell data.
 
-# Batch operations by external action
+## Batch operations by external action
 
 We can do the batch operations externally by using the following methods,
 
@@ -833,7 +833,7 @@ $(".buttons").ejButton({
 
 Here we have set the default value to the EmployeeID Column based on index using setCellValue method and also we edit particular cell based on index using editCell method. Refer the below screenshot
 
-![](Editing_images/Editing_img31.png)
+![Batch operations of editing in Javascript grid](Editing_images/Editing_img31.png)
 
 N> While editing action the following events are triggered,
 
@@ -843,7 +843,7 @@ N> While editing action the following events are triggered,
 4. [`endDelete`](https://help.syncfusion.com/api/js/ejgrid#events:enddelete "endDelete")
 5. [`endEdit`](https://help.syncfusion.com/api/js/ejgrid#events:endedit "endEdit") 
 
-# Editing customization by external action
+## Editing customization by external action
 
 To perform the editing actions like delete, update or insert by external action use the following methods,
 
@@ -903,7 +903,7 @@ $(".buttons").ejButton({
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img33.png)
+![Editing customization in Javascript grid](Editing_images/Editing_img33.png)
 
 ## Confirmation messages
 
@@ -946,7 +946,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img16.png)
+![Confirmation messages for save option of  editing in Javascript grid](Editing_images/Editing_img16.png)
 
 
 To show delete confirm dialog while deleting a record, set [`showDeleteConfirmDialog`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") as true.
@@ -988,7 +988,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img17.png)
+![Confirmation messages for delete option of editing in Javascript grid](Editing_images/Editing_img17.png)
 
 
 ## Column Validation
@@ -1116,13 +1116,13 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img18.png)
+![jQuery validation of editing in Javascript grid](Editing_images/Editing_img18.png)
 
 N> 1. Refer this [Knowledge Base link](https://www.syncfusion.com/kb/6817/how-to-perform-server-side-validation-in-grid) to perform server side validation in Grid.
 
 N> 2. Use [`editFormValidate`](https://help.syncfusion.com/api/js/ejgrid#methods:editFormValidate "editFormValidate") to programmatically trigger validation of edit form.
 
-# Column-validation customization by external action
+## Column-validation customization by external action
 
 Set validation to edit form in the grid by external action use [`setValidation`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidation") method and Set validation to a particular input field in a edit form dynamically use  [`setValidationToField`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidationToField") method.
 
@@ -1163,7 +1163,7 @@ function actionComplete(args){
  
  The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img30.png)
+![Column-validation customization of editing in Javascript grid](Editing_images/Editing_img30.png)
 
 ### Custom Validation
 
@@ -1216,7 +1216,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img19.png)
+![Custom validation of editing in Javascript grid](Editing_images/Editing_img19.png)
 
 
 ## Persisting data in Server
@@ -1300,7 +1300,7 @@ The grid actions (sorting, filtering, paging, searching, and aggregates) details
 
 Please refer the below screen shot.
 
-![](Editing_images/Editing_img20.png)
+![Editing](Editing_images/Editing_img20.png)
 
 
 Also, using 'DataOperations' helper class you can perform grid action at server side. The built-in methods that we have provided in the DataOperations class are listed below.
@@ -1488,7 +1488,7 @@ public ActionResult Insert(EditableOrder value)
 The newly added record details are bound to the 'value' parameter. Please refer to the below image.
 
 
-![](Editing_images/Editing_img21.png)
+![Insert Record of editing in Javascript grid](Editing_images/Editing_img21.png)
 
 
 ### Update Record:
@@ -1508,7 +1508,7 @@ public ActionResult Update(EditableOrder value)
 
 The updated record details are bound to the 'value' parameter. Please refer to the below image.
 
-![](Editing_images/Editing_img22.png)
+![Update Record of editing in Javascript grid](Editing_images/Editing_img22.png)
 
 
 ### Delete Record:
@@ -1528,7 +1528,7 @@ public ActionResult Remove(int key)
 
 The deleted record primary key value is bound to the 'key' parameter. Please refer the below image.
 
-![](Editing_images/Editing_img23.png)
+![Delete Record of editing in Javascript grid](Editing_images/Editing_img23.png)
 
 
 ### CRUD URL:
@@ -1588,7 +1588,7 @@ public ActionResult CrudUpdate(EditableOrder value, string action,int Key)
 
 Please refer to the below image to know about the action parameter
 
-![](Editing_images/Editing_img24.png)
+![Editing](Editing_images/Editing_img24.png)
 
 
 N> If you specify `insertUrl` along with `CrudUrl` then while adding `insertUrl` only called.
@@ -1654,7 +1654,7 @@ public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<E
 
 Please refer to the below image for more information about batch parameters
 
-![](Editing_images/Editing_img25.png)
+![CRUD URL of editing in Javascript grid](Editing_images/Editing_img25.png)
 
 
 ## Adding New Row Position
@@ -1697,7 +1697,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img26.png)
+![Adding new row position of editing in Javascript grid](Editing_images/Editing_img26.png)
 
 
 ## Render with blank row for easy add new
@@ -1741,7 +1741,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img27.png)
+![Render with blank row for add new row option of editing in Javascript grid](Editing_images/Editing_img27.png)
 
 
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
@@ -1788,6 +1788,6 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img28.png)
+![Default column values on add new of editing in Javascript grid](Editing_images/Editing_img28.png)
 
 

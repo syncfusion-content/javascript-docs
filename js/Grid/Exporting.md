@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Export with Grid widget for Syncfusion Essential JS
-description: How to export the Grid to Microsoft Word,Microsoft Excel and PDF file format
+description: Learn about How to export the Grid to Microsoft Word,Microsoft Excel and PDF file format in Syncfusion JavaScript Grid control and more details.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Export
+# Export in JavaScript Grid
 
 To export the grid, `export` method should  be called with export mapper as a parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in [`exportToExcelAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttoexcelaction "exportToExcelAction "), [`exportToWordAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttowordaction "exportToWordAction "), and [`exportToPdfAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttopdfaction "exportToPdfAction ") properties. The code snippet for this is
 
@@ -46,9 +46,9 @@ $(function () {
 
 {% endhighlight %}
 
-![](Exporting_images/Exporting_img1.png) 
+![Export in JavaScript Grid](Exporting_images/Exporting_img1.png) 
 
-# External Export in Grid
+## External Export in Grid
 
 To export the grid by external action use [`export `](https://help.syncfusion.com/api/js/ejgrid#methods:export "export ") method, refer the KB  [`link `](https://www.syncfusion.com/kb/4335/how-to-export-grid-data-to-excel-word-and-pdf-formats-on-external-action "link ").
 

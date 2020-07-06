@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio JavaScript products
-description: Learn how to install and deploy the Syncfusion JavaScript component
+title: Upgrade from trial version to license version| JavaScript | Syncfusion
+description: Learn here about how to upgrade from trial version to license version of Syncfusion Essential Studio JavaScript products.
 platform: js
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-## Upgrade from trial version to license version
+# Upgrade from trial version to license version
 
 To upgrade from trial version, there are two possible solutions.
 

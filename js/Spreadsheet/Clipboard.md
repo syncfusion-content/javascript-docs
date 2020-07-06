@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Clipboard
+title: Cilpboard in JavaScript Spreadsheet widget | Syncfusion
+description: You can learn here about cilpboard support in Syncfusion JavaScript Spreadsheet control and more details.
 platform: js
 control: Spreadsheet
 documentation: ug
 api: /api/js/ejspreadsheet
 ---
 
-# Clipboard
+# Clipboard in JavaScript Spreadsheet
 
 The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property in Spreadsheet.
 By default [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property is `true`.  
@@ -82,6 +82,6 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Clipboard_images/Clipboard_img1.png)
+![clipboard operations - cut, copy, and paste using Spreadsheet in JavaScript](Clipboard_images/Clipboard_img1.png)
 
 N> Similarly you can perform clipboard operations for shapes (Chart and Image).
