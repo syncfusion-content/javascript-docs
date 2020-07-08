@@ -9,7 +9,7 @@ keywords: ejPdfViewer, PDF Viewer
 api: /api/js/ejpdfviewer
 ---
 
-## Getting Started
+# Getting Started
 
 This section explains how to create the PDF viewer in your web application using JavaScript.
 
