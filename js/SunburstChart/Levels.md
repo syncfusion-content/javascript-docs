@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejsunburstchart
 ---
 
-# Levels
+# Levels for Sunburst Chart
 
 Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data by using the [`levels`](../api/ejsunburstchart#members:levels) property of Sunburst chart. Each level of the hierarchy is represented by circle.
 The following code snippet illustrates 
