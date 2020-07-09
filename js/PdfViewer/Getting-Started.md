@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential JS PDF viewer.
-description: Getting started with Syncfusion Essential JS PDF viewer.
+description: This section explains how to getting started with syncfusion essential PDF viewer in your web application using JavaScript.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer, PDF Viewer
 api: /api/js/ejpdfviewer
 ---
 
-## Getting Started
+# Getting Started with Javascript PDF viewer
 
 This section explains how to create the PDF viewer in your web application using JavaScript.
 
