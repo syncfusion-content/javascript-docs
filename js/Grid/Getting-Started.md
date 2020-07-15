@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with Grid widget for Syncfusion Essential JS
-description: How to create the Grid, data bind, enable paging, grouping, filtering and add summaries
+description: How to create the Syncfusion Essestial JS Grid, data bind, enable paging, grouping, filtering and add summaries
 platform: JS
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Getting started
+# Getting started with Javascript Grid
 
 ## Preparing HTML document
 
@@ -177,7 +177,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 {% endhighlight %}
 
 
-![](Getting-started_images/Getting-started_img1.png)
+![Getting started](Getting-started_images/Getting-started_img1.png)
 {:.image }
 
 
@@ -200,7 +200,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img2.png)
+![Data binding](Getting-started_images/Getting-started_img2.png)
 {:.image }
 
 
@@ -228,7 +228,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 N> Pager settings can be customized by using the [`pageSettings.pageSize`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize) property. When it is not given by default the values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 
-![](Getting-started_images/Getting-started_img3.png)
+![Paging](Getting-started_images/Getting-started_img3.png)
 {:.image }
 
 
@@ -254,7 +254,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](https
     </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img4.png)
+![Filtering](Getting-started_images/Getting-started_img4.png)
 {:.image }
 
 
@@ -279,7 +279,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](https
 </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img5.png)
+![Grouping](Getting-started_images/Getting-started_img5.png)
 {:.image }
 
 
@@ -304,7 +304,7 @@ Refer to the following code example for initial grouping.
 </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img6.png)
+![Initial Grouping](Getting-started_images/Getting-started_img6.png)
 {:.image }
 
 
@@ -340,7 +340,7 @@ Refer to the following code example for initial grouping.
 </script>
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img7.png)
+![Summaries](Getting-started_images/Getting-started_img7.png)
 {:.image }
 
 
