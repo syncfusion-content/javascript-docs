@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with Grid widget for Syncfusion Essential JS
-description: How to create the Grid, data bind, enable paging, grouping, filtering and add summaries
+description: How to create the Syncfusion Essestial JS Grid, data bind, enable paging, grouping, filtering and add summaries
 platform: JS
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Getting started
+# Getting started with Javascript Grid
 
 ## Preparing HTML document
 
@@ -177,7 +177,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 {% endhighlight %}
 
 
-![](Getting-started_images/Getting-started_img1.png)
+![Getting started](Getting-started_images/Getting-started_img1.png)
 {:.image }
 
 
@@ -200,7 +200,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started_img2.png)
+![Data binding](Getting-started_images/Getting-started_img2.png)
 {:.image }
 
 
