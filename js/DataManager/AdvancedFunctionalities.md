@@ -61,7 +61,7 @@ In the following code example, the offline property of the DataManager is set as
 
 {% endhighlight %}
 
-![](Advanced_images/offline1.png) 
+![offline](Advanced_images/offline1.png) 
 
 ## Load on demand
 
@@ -145,14 +145,14 @@ You can use the following code example for implementing load on demand using Dat
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img10.png) 
+![databinding](Data-Binding_images/Data-Binding_img10.png) 
 
 Load on demand {:.caption}
 
 The request and the response for the above code is send as follows.
 
 
-![](Data-Binding_images/Data-Binding_img11.png) 
+![databinding](Data-Binding_images/Data-Binding_img11.png) 
 
 Demanded data {:.caption}
 
@@ -205,7 +205,7 @@ You can add custom request headers to every request made by the **DataManager** 
 
 The above method generates the request header with custom header as follows.
 
-![](Advanced_images/headers1.png) 
+![custom requestheaders](Advanced_images/headers1.png) 
 
 ### Adding Custom Request Headers to every Request using pre-request callback **beforeSend**
 
@@ -248,7 +248,7 @@ You can set the custom headers using pre-request callback [beforeSend](https://h
 
 The above method generates the request header with custom header as follows.
 
-![](Advanced_images/headers3.png)
+![customrequestheadersprerequest-call back ](Advanced_images/headers3.png)
 
 ### Adding Custom Request Headers using **addParams** method
 
@@ -294,7 +294,7 @@ You can use the [addParams](https://help.syncfusion.com/api/js/ejquery#methods:a
 
 The custom parameter will be passed along with the data request of the grid as follows.
 
-![](Advanced_images/headers2.png) 
+![custom requestheaders using addparams](Advanced_images/headers2.png) 
 
 ## Cross domain & JSONP
 
@@ -340,7 +340,7 @@ The **DataManager** contains support for creating cross domain request, you can 
 
 Result of above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img13.png) 
+![cross domain request](Data-Binding_images/Data-Binding_img13.png) 
 
 ## HTML Table
 
@@ -422,5 +422,5 @@ Refer to the following code example for the **HTML** element binding using **Dat
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img14.png) 
+![html element](Data-Binding_images/Data-Binding_img14.png) 
 	
