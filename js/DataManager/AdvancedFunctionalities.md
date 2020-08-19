@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Functionalities in Syncfusion ejDataManager
+title: Advanced Functionalities in Syncfusion DataManager
 description: Advanced Functionalities includes offline support, Load on demand, Custom request headers, cross domain and JSOn, HTML table
 platform: js
 control: DataManager
