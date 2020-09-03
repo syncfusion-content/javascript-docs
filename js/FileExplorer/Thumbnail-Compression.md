@@ -38,4 +38,4 @@ Refer following code block that will be helpful to you.
 
 
 
-N> In server side, don’t forget to add “[GetImage](https://help.syncfusion.com/cr/cref_files/aspnetmvc/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations~GetImage.html)” handling operation that helps to reduce the image size before loading.
+N> In server side, don’t forget to add “[GetImage](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.JavaScript.FileExplorerOperations.html#Syncfusion_JavaScript_FileExplorerOperations_GetImage )” handling operation that helps to reduce the image size before loading.
