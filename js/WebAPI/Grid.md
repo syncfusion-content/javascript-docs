@@ -7,7 +7,7 @@ platform: js
 keywords: grid, ejGrid, syncfusion, grid webapi
 ---
        
-## ExcelExport
+# ExcelExport
 
  [POST] [/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
 

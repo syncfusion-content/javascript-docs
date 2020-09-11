@@ -7,7 +7,7 @@ platform: js
 keywords: XlsIO, syncfusion, excel webapi
 ---
 
-## CreateDocument
+# CreateDocument
 
 [POST] [/Api/XlsIO/CreateDocument](http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument)
 
