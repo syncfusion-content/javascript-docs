@@ -122,13 +122,13 @@ Full list of assemblies needed for RTE Import are as follows
     4.  Syncfusion.Compression.Base
     5.  Syncfusion.DocIO.Base
 
-![](ImportAndExport_images/import_images.png)
+![Import Images](ImportAndExport_images/import_images.png)
 
 ### Import Limitations
 
 Import feature utilizes the DocIO’s assembly which converts Word Document to the HTML string. The generated string is then appended to the RTE control. DocIO supports only the conversion of Word Documents that are Web Compatible. You can check the compatibility of the any Word document while saving the document. For Example, refer to the following Screenshot.
 
-![](ImportAndExport_images/web_compatibility_checker.png)
+![Web Compatibility Checker](ImportAndExport_images/web_compatibility_checker.png)
 
 In the above screenshot, there is a compatibility issue with the word document. The text box is preserved with absolute position. While saving the Word document with absolute positioned textbox as HTML, it will be aligned to left or right of the HTML page. So the original format will be altered to support web. Refer to the [DocIO's Word to HTML conversion](https://help.syncfusion.com/file-formats/docio/conversion#customizing-the-word-to-html-conversion) for more information on the supported formats and limitations.
 
@@ -241,7 +241,7 @@ Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, wh
     6.  Syncfusion.PDF.Base
 
 ### Word Export
-![](ImportAndExport_images/export_word_images.png)
+![Export Word Images](ImportAndExport_images/export_word_images.png)
 
 ### PDF Export
-![](ImportAndExport_images/export_pdf_images.png)
+![Export PDF Images](ImportAndExport_images/export_pdf_images.png)
