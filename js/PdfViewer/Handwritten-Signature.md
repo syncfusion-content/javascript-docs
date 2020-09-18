@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hand written signature | PDF viewer | Javascript | Syncfusion
-description: Hand written signature in PDF viewer.
+description: Learn about adding handwritten signatures to the Syncfusion jQuery PDF viewer widget to reduce paper work and more.
 platform: js
 control: PDF viewer
 documentation: ug
