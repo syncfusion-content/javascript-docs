@@ -102,7 +102,7 @@ editParams: { decimalPlaces: 2, value:5  }</td></tr>
 <tr>
 <td>
 InputTextBox </td><td>
--</td><td>
+String</td><td>
 -</td><td>
 -</td></tr>
 <tr>
