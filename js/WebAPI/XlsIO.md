@@ -7,13 +7,15 @@ platform: js
 keywords: XlsIO, syncfusion, excel webapi
 ---
 
-# CreateDocument WebAPI for XlsIO
+# Create Excel document using WebAPI
+
+## CreateDocument
 
 [POST] [/Api/XlsIO/CreateDocument](http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument)
 
 To generate an Excel document format like XLS, XLSX, CSV, Excel Template, Excel Macro Enabled Template.
 
-### URL parameters
+## URL parameters
 
 |  Parameter | DataType |  Description | 
 |---|---|---|
@@ -21,13 +23,13 @@ To generate an Excel document format like XLS, XLSX, CSV, Excel Template, Excel 
 |ImportType (Optional)|string|Represents import data objects. For example: DataTable, BusinessObjects.|
 |MarkerType (Optional)|string|Represents template marker types. For example: ImageOnly, ImageWithSize, ImageWithPosition, ImageWithSizeAndPosition, ImageFitToCell.|
 
-### Response information 
+## Response information 
 
 Code: 200
 
 Content-Type: Application/x-msexcel
 
-### Code example 
+## Code example 
 
 {% highlight js %}
 
@@ -55,13 +57,13 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument
 
 Formulas are entries in Excel that have an equation that calculates the value to be displayed. This method will generate an Excel document with different formulae.  
 
-### Response information 
+## Response information 
 
 Code: 200
 
 Content-Type: Application/x-msexcel
 
-### Code example 
+## Code example 
 
 {% highlight js %}
 
@@ -86,7 +88,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/WriteFormula
 
 To read the formula string as well as value from the Excel document.
 
-### Response information 
+## Response information 
 
 Code: 200
 
@@ -94,7 +96,7 @@ Content-Type: String
 
 Response:  Returns the string combination of value and formula with comma.
 
-### Code example 
+## Code example 
 
 {% highlight js %}
 
@@ -123,7 +125,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ReadFormula
 
 To generate an embedded chart Excel document with different formats.
 
-### URL parameters
+## URL parameters
 
 |  Parameter | DataType |  Description | 
 |---|---|---|
@@ -131,13 +133,13 @@ To generate an embedded chart Excel document with different formats.
 |ImportType (Optional)|string|Represents import data objects. For example: DataTable, BusinessObjects.|
 |MarkerType (Optional)|string|Represents template marker types. For example: ImageOnly, ImageWithSize, ImageWithPosition, ImageWithSizeAndPosition, ImageFitToCell.|
 
-### Response information 
+## Response information 
 
 Code: 200
 
 Content-Type: Application/x-msexcel
 
-### Code example 
+## Code example 
 
 {% highlight js %}
 
@@ -165,7 +167,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateChart
 
 To import data directly from various objects like DataTable, Business Objects, etc to an Excel document.
 
-### URL parameters
+## URL parameters
 
 |  Parameter | DataType |  Description | 
 |---|---|---|
@@ -173,13 +175,13 @@ To import data directly from various objects like DataTable, Business Objects, e
 |ImportType (Mandatory)|string|Represents import data objects. For example: DataTable, BusinessObjects.|
 |MarkerType (Optional)|string|Represents template marker types. For example: ImageOnly, ImageWithSize, ImageWithPosition, ImageWithSizeAndPosition, ImageFitToCell.|
 
-### Response information 
+## Response information 
 
 Code: 200
 
 Content-Type: Application/x-msexcel
 
-### Code example 
+## Code example 
 
 {% highlight js %}
 
@@ -207,7 +209,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ImportDataObject
 
 Import data to an Excel document using [template marker](https://help.syncfusion.com/file-formats/xlsio/working-with-template-markers).
 
-### URL parameters
+## URL parameters
 
 |  Parameter | DataType |  Description | 
 |---|---|---|
@@ -215,13 +217,13 @@ Import data to an Excel document using [template marker](https://help.syncfusion
 |ImportType (Mandatory)|string|Represents import data objects. For example: DataTable, BusinessObjects.|
 |MarkerType (Mandatory)|string|Represents template marker types. For example: ImageOnly, ImageWithSize, ImageWithPosition, ImageWithSizeAndPosition, ImageFitToCell.|
 
-### Response information 
+## Response information 
 
 Code: 200
 
 Content-Type: Application/x-msexcel
 
-### Code example 
+## Code example 
 
 {% highlight js %}
 
@@ -253,7 +255,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker
 
 To get an Excel template document used for various template marker types.
 
-### URL parameters
+## URL parameters
 
 |  Parameter | DataType |  Description | 
 |---|---|---|
@@ -261,13 +263,13 @@ To get an Excel template document used for various template marker types.
 |ImportType (Optional)|string|Represents import data objects. For example: DataTable, BusinessObjects.|
 |MarkerType (Mandatory)|string|Represents template marker types. For example: ImageOnly, ImageWithSize, ImageWithPosition, ImageWithSizeAndPosition, ImageFitToCell.|
 
-### Response information 
+## Response information 
 
 Code: 200
 
 Content-Type: Application/x-msexcel
 
-### Code example 
+## Code example 
 
 {% highlight js %}
 

@@ -7,7 +7,9 @@ platform: js
 keywords: Chart, ejChart, syncfusion, ejChart webapi
 ---
 
-# Chart Export using WebAPI
+# Various Chart Export using WebAPI
+
+## Export
 
 [POST] [/Api/Chart/Export](http://js.syncfusion.com/demos/ejServices/api/Chart/Export)
 

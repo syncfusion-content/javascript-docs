@@ -9,6 +9,8 @@ keywords: grid, ejGrid, syncfusion, grid webapi
        
 # Grid ExcelExport using WebAPI
 
+## ExcelExport
+
  [POST] [/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
 
 It is used to export the Grid data in Excel.
