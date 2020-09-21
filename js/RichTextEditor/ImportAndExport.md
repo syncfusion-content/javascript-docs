@@ -43,7 +43,7 @@ Import feature provides support to import a word document into the editor `texta
 
 {% endhighlight  %}
 
-## Import Server configuration
+### Import Server configuration
 
 Currently word document can be imported in server-side only, through **EJ's** helper functions in .NET. So, to use RTE import in your projects, it is required to create a server with any of the following web services. 
 
@@ -173,7 +173,7 @@ Export feature provides support to export editor `textarea` content into word an
 
 {% endhighlight  %}
 
-## Export Server configuration
+### Export Server configuration
 
 Currently RTE content can be converted to word or PDF file formats in server-side only, through **EJ's** helper functions in .NET. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
 
