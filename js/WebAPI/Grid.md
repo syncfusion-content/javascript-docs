@@ -1,12 +1,14 @@
 ---
 layout: post
-title: webAPI reference for ejGrid
-description: webAPI reference for ejGrid
+title: Syncfusion webAPI reference for ejGrid
+description: Learn about the webAPI references available for the Syncfusion Essential Studio ejGrid control to export Grid data in Excel.
 documentation: ug
 platform: js
 keywords: grid, ejGrid, syncfusion, grid webapi
 ---
        
+# Grid ExcelExport using WebAPI
+
 ## ExcelExport
 
  [POST] [/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
