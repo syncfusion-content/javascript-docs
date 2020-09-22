@@ -1,11 +1,13 @@
 ---
 layout: post
-title: webAPI reference for XlsIO
-description: webAPI reference for XlsIO
+title: Syncfusion webAPI reference for XlsIO
+description: Learn about the Syncfusion Essential Studio XlsIO control's webAPI references to generate Excel document formats like XLS, Excel Template, etc.
 documentation: ug
 platform: js
 keywords: XlsIO, syncfusion, excel webapi
 ---
+
+# Create Excel document using WebAPI
 
 ## CreateDocument
 
