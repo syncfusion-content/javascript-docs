@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Calculated Field
+# Calculated Field in PivotGrid
 
 N> This feature is applicable only for the relational data source.
 

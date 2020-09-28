@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Measure groups
+# Measure Groups in PivotClient
 
 I> This feature is applicable only for the OLAP data source bound from the server-side.
 

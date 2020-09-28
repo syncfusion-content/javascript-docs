@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# PivotGrid: Elements
+# Essential JS PivotGrid: Elements
 
 ## Hyperlink
 The pivot grid control supports the hyperlink option to link data for each individual cell. The hyperlink can be enabled separately for row header, column header, value, and summary cells. The following are the respective properties and they should be declared under the property [`hyperlinkSettings`](/api/js/ejpivotgrid#members:hyperlinksettings).

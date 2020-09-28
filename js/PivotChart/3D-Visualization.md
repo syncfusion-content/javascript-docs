@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotchart
 ---
 
-# 3D visualization
+# 3D visualization in PivotChart
 
 The pivot chart control allows you to view the data in a 3D view. The following are the chart types that are supported:
 

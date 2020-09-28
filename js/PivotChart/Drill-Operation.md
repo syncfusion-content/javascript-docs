@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotchart
 ---
 
-# Drill operation
+# Drill operation in PivotChart
 
 This is a basic feature of the pivot chart control through which the amount of information can be limited for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the context menu present in the pivot chart.
 
