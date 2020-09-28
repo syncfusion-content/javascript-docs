@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill-Operation with PivotChart widget for Syncfusion Essential JS
+title: Drill-Operation | Essential JS PivotChart widget | Syncfusion
 description: This document illustrates drill operation with respective to the modes of JavaScript PivotChart control
 platform: js
 control: PivotChart

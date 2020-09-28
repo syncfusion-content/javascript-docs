@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Field with PivotGrid widget for Syncfusion Essential JS
+title: Calculated Field | Essential JS PivotGrid widget | Syncfusion
 description: This document illustrates that how to define calculated field through code-behind/UI in JavaScript PivotGrid control 
 platform: js
 control: PivotGrid

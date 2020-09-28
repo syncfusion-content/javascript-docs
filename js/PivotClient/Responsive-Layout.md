@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive-Layout with PivotClient widget for Syncfusion Essential JS
+title: Responsive-Layout | Essential JS PivotClient widget | Syncfusion
 description: This document illustrates that how to enable responsive layout rendering in JavaScript PivotClient control
 platform: js
 control: PivotClient
