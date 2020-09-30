@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measure-Groups with PivotClient widget for Syncfusion Essential JS
+title: Measure-Groups | Essential JS PivotClient widget | Syncfusion
 description: This document illustrates that how to define measure groups and functionalities in JavaScript PivotClient control
 platform: js
 control: PivotClient
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Measure groups
+# Measure Groups in PivotClient
 
 I> This feature is applicable only for the OLAP data source bound from the server-side.
 

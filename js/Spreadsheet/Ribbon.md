@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon customization with Syncfusion Essential JS Spreadsheet widget.
+title: Ribbon customization in Syncfusion Essential JS Spreadsheet
 description: How to perform the ribbon control customization with Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet

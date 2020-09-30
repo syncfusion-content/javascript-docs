@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Syncfusion Essential JS
-description: Overview of Syncfusion Essential JS widgets based on HTML5 and jQuery.
+description: Overview of Syncfusion Essential JS widgets based on HTML5 and jQuery for building modern web applications.
 platform: js
 control: Introduction
 documentation: ug
