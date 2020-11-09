@@ -83,37 +83,44 @@ The following table describes [`editType`](https://help.syncfusion.com/api/js/ej
 <table>
 <tr>
 <th>
+EditControl</th><th>
 EditType</th><th>
 EditParams</th><th>
 Example</th></tr>
 <tr>
 <td>
 CheckBox</td><td>
+Boolean</td><td>
 {{ '[ejCheckBox](https://help.syncfusion.com/api/js/ejcheckbox)' | markdownify }} </td><td>
 editParams: { checked: true }</td></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
+Numeric</td><td>
 {{ '[ejTextBoxes](https://help.syncfusion.com/api/js/ejtextboxes)' | markdownify }} </td><td>
 editParams: { decimalPlaces: 2, value:5  }</td></tr>
 <tr>
 <td>
 InputTextBox </td><td>
+String</td><td>
 -</td><td>
 -</td></tr>
 <tr>
 <td>
 DatePicker </td><td>
+DatePicker</td><td>
 {{ '[ejDatePicker](https://help.syncfusion.com/api/js/ejdatepicker)' | markdownify }} </td><td>
 editParams: {  buttonText : "Now" }</td></tr>
 <tr>
 <td>
+DateTimePicker</td><td>
 DateTimePicker</td><td>
 {{ '[ejDateTimePicker](https://help.syncfusion.com/api/js/ejdatetimepicker)' | markdownify }} </td><td>
 editParams: {  enabled: true }</td></tr>
 <tr>
 <td>
 DropDownList</td><td>
+Dropdown</td><td>
 {{ '[ejDropDownList](https://help.syncfusion.com/api/js/ejdropdownlist)' | markdownify }} </td><td>
 editParams: {  allowGrouping: true }</td></tr>
 
