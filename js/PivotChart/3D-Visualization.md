@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D-Visualization with PivotChart widget for Syncfusion Essential JS
+title: 3D-Visualization | Essential JS PivotChart widget | Syncfusion
 description: This document illustrates that how to define 3d visualization and its types in JavaScript PivotChart control
 platform: js
 control: PivotChart
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotchart
 ---
 
-# 3D visualization
+# 3D visualization in PivotChart
 
 The pivot chart control allows you to view the data in a 3D view. The following are the chart types that are supported:
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data presentation with Spreadsheet widget for Syncfusion Essential JS.
+title: Data presentation in Essential JS Spreadsheet widget | Syncfusion
 description: How to perform the proper representation of data with Syncfusion Essential Javascript Spreadsheet widget.
 platform: js
 control: Spreadsheet

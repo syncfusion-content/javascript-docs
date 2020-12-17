@@ -1,11 +1,13 @@
 ---
 layout: post
-title: webAPI reference for ejChart
-description: webAPI reference for ejChart
+title: Syncfusion webAPI reference for ejChart 
+description: Know more about the webAPI references available for the Syncfusion Essential Studio ejChart control to export the Chart control to specified formats.
 documentation: ug
 platform: js
 keywords: Chart, ejChart, syncfusion, ejChart webapi
 ---
+
+# Various Chart Export using WebAPI
 
 ## Export
 
