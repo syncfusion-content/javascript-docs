@@ -9,7 +9,7 @@ keywords: ejPdfViewer
 api: /api/js/ejpdfviewer
 ---
 
-## Localization
+# Localization
 
 The text labels provided in the ejPdfViewer control can be localized using the collection of localized strings using ej.PdfViewer.Locale for different cultures. By default, ejPdfViewer is localized in “**en-US**” culture.
 
