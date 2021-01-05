@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Populate-Data
-description: Populate Data
+title: Populate Data in JQuery RangeNavigator widget | Syncfusion
+description: Learn about Populate Data support in Syncfusion JQuery RangeNavigator control and more details. It produces limited set of data.
 platform: js
 control: RangeNavigator
 documentation: ug
 api: /api/js/ejrangenavigator
 ---
 
-# Populate Data
+# Populate Data in JQuery RangeNavigator widget
 
 When you provide data to **RangeNavigator**, it produces limited set of data. You can populate the **RangeNavigator** with data using the [`dataSource`](../api/ejrangenavigator#members:datasource) and [`series`](../api/ejrangenavigator#members:series) properties.
 
@@ -58,4 +58,4 @@ $("#container").ejRangeNavigator({
 
 The following screenshot illustrates the **RangeNavigator** that is populated with data using **dataSource** property in series.
 
-![](/js/RangeNavigator/Populate-Data_images/Populate-Data_img1.png) 
+![Populate-Data_img1](/js/RangeNavigator/Populate-Data_images/Populate-Data_img1.png) 
