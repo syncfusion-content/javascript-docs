@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# BPMN Shapes
+# BPMN Shapes in Diagram Control
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the [type](/api/js/ejdiagram#members:nodes-type "type") of the node should be set as "bpmn" and its [shape](/api/js/ejdiagram#members:nodes-shape "shape") should be set as any one of the built-in shape. [BPMN Shapes](/api/js/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 

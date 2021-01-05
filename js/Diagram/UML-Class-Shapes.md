@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  UML-Class-Shapes | Diagram | Javascript | Syncfusion
-description: This section explains about how to visually represent the business logic as class ejDiagram.
+description: This section explains about how to visually represent the business logic as class ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug
