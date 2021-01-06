@@ -58,4 +58,4 @@ $("#container").ejRangeNavigator({
 
 The following screenshot illustrates the **RangeNavigator** that is populated with data using **dataSource** property in series.
 
-![Populate-Data_img1](/js/RangeNavigator/Populate-Data_images/Populate-Data_img1.png) 
+![Populate-Data_img1](Populate-Data_images/Populate-Data_img1.png) 
