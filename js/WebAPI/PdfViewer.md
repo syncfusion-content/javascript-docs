@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WebAPI reference for PdfViewer | Syncfusion
-description: Learn about WebAPI reference for PdfViewer in Syncfusion Javascript and more details. This document explains the features such as load, file upload and download
+title: WebAPI reference for JQuery PDF Viewer | Syncfusion
+description: Learn about WebAPI reference for JQuery PDF Viewer and more details. This document explains the features such as load, file upload and download
 documentation: ug
 platform: js
 keywords: pdfviewer,ejpdfviewer, syncfusion, pdfviewer webapi
