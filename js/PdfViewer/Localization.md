@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of Syncfusion Essential JS PDF viewer.
-description: Localization of Syncfusion Essential JS PDF viewer.
+title: Localization of JQuery PDF Viewer | Syncfusion
+description: Learn about Localization support of JQuery PDF Viewer control and more details.Text labels provided in the ejPdfViewer control can be localized.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer
 api: /api/js/ejpdfviewer
 ---
 
-## Localization
+# Localization in JQuery PDF Viewer
 
 The text labels provided in the ejPdfViewer control can be localized using the collection of localized strings using ej.PdfViewer.Locale for different cultures. By default, ejPdfViewer is localized in “**en-US**” culture.
 
