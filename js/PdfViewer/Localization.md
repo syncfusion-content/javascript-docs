@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization of JQuery PDF Viewer | Syncfusion
-description: Learn about the Localization support of Syncfusion JQuery PDF Viewer control and more details.
+description: Learn about Localization support of JQuery PDF Viewer control and more details.Text labels provided in the ejPdfViewer control can be localized.
 platform: js
 control: PDF viewer
 documentation: ug
