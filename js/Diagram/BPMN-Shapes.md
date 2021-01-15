@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-### BPMN Shapes
+# BPMN Shapes in Diagram Control
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the [type](/api/js/ejdiagram#members:nodes-type "type") of the node should be set as "bpmn" and its [shape](/api/js/ejdiagram#members:nodes-shape "shape") should be set as any one of the built-in shape. [BPMN Shapes](/api/js/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
@@ -60,7 +60,7 @@ The list of BPMN shapes are as follows.
 
 The BPMN shapes and its types are explained as follows.
 
-### Event 
+## Event 
 
 An event is notated with a circle and it represents an event in a business process. The type of events are as follows.
 
@@ -119,7 +119,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 | Multiple | ![Start Multiple shape](Shapes_images/Shapes_img106.png) | ![Non-Interrupting Start Multiple shape](Shapes_images/Shapes_img107.png) | ![Intermediate Multiple shape](Shapes_images/Shapes_img108.png) | ![Non-Interrupting Intermediate Multiple shape](Shapes_images/Shapes_img109.png) | ![Throwing Intermediate Multiple shape](Shapes_images/Shapes_img110.png) | ![End Multiple shape](Shapes_images/Shapes_img111.png) |
 | Parallel | ![Start Parallel shape](Shapes_images/Shapes_img112.png) | ![Non-Interrupting Start Parallel shape](Shapes_images/Shapes_img113.png) | ![Intermediate Parallel shape](Shapes_images/Shapes_img114.png) | ![Non-Interrupting Intermediate Parallel shape](Shapes_images/Shapes_img115.png) |   |   |
 
-### Gateway
+## Gateway
 
 Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the [shape](/api/js/ejdiagram#members:nodes-shape "shape") property of node should be set as "gateway" and the [gateway](/api/js/ejdiagram#members:nodes-gateway "gateway") property can be set with any of the appropriate [Gateways](/api/js/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
 
@@ -165,7 +165,7 @@ There are several types of gateways as tabulated
 | ExclusiveEventBased | ![ExclusiveEventBased shape](Shapes_images/Shapes_img31.png) |
 | ParallelEventBased | ![ParallelEventBased shape](Shapes_images/Shapes_img32.png) |
 
-### Activity
+## Activity
 
 The activity is the task that is performed in a business process. It is represented by a rounded rectangle.
 
@@ -206,7 +206,7 @@ $("#diagram").ejDiagram({
 
 The different activities of BPMN process are listed as follows.
 
-#### Tasks
+### Tasks
 
 The [task](/api/js/ejdiagram#members:nodes-task "task") property of node allows you to define the [type](/api/js/ejdiagram#members:nodes-tasks-type "type") of task such as sending, receiving, user based task etc… By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
 The [events](/api/js/ejdiagram#members:nodes-tasks-events "events") property of tasks allows to represent these results as an event attached to the task.
@@ -256,7 +256,7 @@ The various types of BPMN tasks are tabulated as follows.
 | User | ![User shape](Shapes_images/Shapes_img41.png) |
 | Script | ![Script shape](Shapes_images/Shapes_img42.png) |
 
-#### Subprocess
+### Subprocess
 
 A [sub-process](/api/js/ejdiagram#members:nodes-subprocess "sub-process") is a group of tasks which is used to hide or reveal details of additional levels which can be done using [collapsed](/api/js/ejdiagram#members:nodes-subprocess-collapsed "collapsed") property .
 
@@ -297,7 +297,7 @@ The different types of subprocess are as follows.
 * Event Subprocess
 * Transaction 
 
-##### Event Subprocess
+#### Event Subprocess
 
 A Sub-process is defined as an Event Sub-process when it is triggered by an event. An event-subprocess is placed within another subprocess which is not part of the normal flow of its parent process . You can set event to a sub-process with the [event](/api/js/ejdiagram#members:nodes-subprocess-event "event") and [trigger](/api/js/ejdiagram#members:nodes-subprocess-trigger "trigger") property of subprocess. The [type](/api/js/ejdiagram#members:nodes-subprocess-type "type") property of sub-process allows you to define type of sub-process whether it should be event sub-process or transaction sub-process.
 
@@ -333,7 +333,7 @@ $("#diagram").ejDiagram({
 
 ![Event Subprocess shape](Shapes_images/Shapes_img117.png)
 
-##### Transaction Subprocess
+#### Transaction Subprocess
 
 * An transaction is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [events](/api/js/ejdiagram#members:nodes-subprocess-events "events") property of subprocess allows to represent these results as an event attached to the subprocess. 
 
@@ -381,7 +381,7 @@ $("#diagram").ejDiagram({
 
 ![Transaction Subprocess shape](Shapes_images/Shapes_img118.png)
 
-#### Processes 
+### Processes 
 
 [processes](/api/js/ejdiagram#members:nodes-subprocess-processes "processes") is a array collection that defines the children values for BPMN subprocess.
 
@@ -419,7 +419,7 @@ $("#diagram").ejDiagram({
 
 ![BPMN Processes diagram](Shapes_images/Shapes_img151.png)
 
-#### Loop
+### Loop
 
 Loop is a task that is internally being looped. The [loop](/api/js/ejdiagram#members:nodes-tasks-loop "loop") property of task allows you to define the type of loop. The default value for `loop` is "none". 
 You can define the [loop](/api/js/ejdiagram#members:nodes-subprocess-loop "loop") property in subprocess BPMN shape as shown in the below code.
@@ -479,7 +479,7 @@ The following table contains various types of BPMN loops.
 | SequenceMultiInstance | ![SequenceMultiInstance task shape](Shapes_images/Shapes_img46.png) | ![SequenceMultiInstance SubProcess shape](Shapes_images/Shapes_img47.png) |
 | ParallelMultiInstance | ![ParallelMultiInstance Task shape](Shapes_images/Shapes_img48.png) | ![ParallelMultiInstance SubProcess shape](Shapes_images/Shapes_img49.png) |
 
-#### Compensation
+### Compensation
 
 Compensation is triggered when operation is partially failed and you can enable it with the [compensation](/api/js/ejdiagram#members:nodes-tasks-compensation "compensation") property of task and [compensation](/api/js/ejdiagram#members:nodes-subprocess-compensation "compensation") property of subprocess.
 
@@ -536,7 +536,7 @@ $("#diagram").ejDiagram({
 
 ![Compensation diagram](Shapes_images/Shapes_img50.png)
 
-#### Call
+### Call
 
 A call activity is a global sub-process that is reused at various points of the business flow and you can set it with the [call](/api/js/ejdiagram#members:nodes-tasks-call "call") property of task.
 
@@ -571,7 +571,7 @@ $("#diagram").ejDiagram({
 
 ![Call shape](Shapes_images/Shapes_img51.png)
 
-#### Ad-Hoc
+### Ad-Hoc
 
 An ad hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and you can set it with the [adhoc](/api/js/ejdiagram#members:nodes-subprocess-adhoc "adhoc") property of subprocess. 
 
@@ -605,7 +605,7 @@ $("#diagram").ejDiagram({
 
 ![Boundary shape](Shapes_images/Shapes_img52.png)
 
-#### Boundary
+### Boundary
 
 Boundary represents the type of task that is being processed. The [boundary](/api/js/ejdiagram#members:nodes-subprocess-boundary "boundary") property of sub process allows you to define the type of boundary. By default, it is set as "default".
 
@@ -645,7 +645,7 @@ The following table contains various types of BPMN boundaries.
 | Event | ![Boundary event shape](Shapes_images/Shapes_img54.png) |
 | Default | ![Boundary default shape](Shapes_images/Shapes_img55.png) |
 
-### Data
+## Data
 
 A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [data](/api/js/ejdiagram#members:nodes-data "data") object, set the [shape](/api/js/ejdiagram#members:nodes-shape "shape")  as "dataobject" and [type](/api/js/ejdiagram#members:nodes-data-type "type") property defines whether data is an input or a output. You can create multiple instances of data object with the [collection](/api/js/ejdiagram#members:nodes-data-collection "collection") property of data.
 
@@ -689,7 +689,7 @@ The following table contains various representation of BPMN Data Object.
 | Data Input | ![Boundary data input shape](Shapes_images/Shapes_img120.png) |
 | Data Ouptput | ![Boundary data output shape](Shapes_images/Shapes_img121.png) |
 
-### Datasource
+## Datasource
 
 DataSource is used to store or access data associated with a business process. To create a data source, set the [shape](/api/js/ejdiagram#members:nodes-shape "shape") as "datasource". The following code example illustrate how to create data source.
 
@@ -720,14 +720,14 @@ $("#diagram").ejDiagram({
 
 ![Datasource shape](Shapes_images/Shapes_img57.png)
 
-### Artifact
+## Artifact
 
 Artifact is used to show additional information about a Process in order to make it easier to understand. There are 2 types of artifacts in BPMN.
 
 * Text Annotation
 * Group
 
-#### Text Annotation
+### Text Annotation
 
 * A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The [annotation](/api/js/ejdiagram#members:nodes-annotation "annotation") property of the node is used to connect an annotation element to the BPNN node.
 
@@ -780,7 +780,7 @@ $("#diagram").ejDiagram({
 
 ![Text Annotation shape](Shapes_images/Shapes_img122.png)
 
-#### Group
+### Group
 
 A group is used to frame a part of the diagram, shows that elements included in it are logically belong together and don't have any other semantics other than organizing elements. To create a Group, the [shape](/api/js/ejdiagram#members:nodes-shape "shape") property of node should be set as "group". The following code example illustrates how to create a BPMN Group.
 
@@ -811,11 +811,11 @@ $("#diagram").ejDiagram({
 
 ![Group shpae](Shapes_images/Shapes_img123.png)
 
-#### BPMN Flows
+### BPMN Flows
 
 BPMN Flows are lines that connects BPMN flow objects.
 
-### Association
+## Association
 
 BPMN Association flow is used to link flow objects with its corresponding text or artifact. An association is represented as a dotted graphical line with opened arrow. The type of association are as follows.
 
@@ -871,7 +871,7 @@ The following table demonstrates the visual representation of assosiation flows.
 
 N> The default value for the property `association` is "default".
 
-### Sequence
+## Sequence
 
 A Sequence flow shows the order in which the activities are performed in a BPMN Process and is represented with a solid graphical line.The type of sequence are as follows.
 
@@ -926,7 +926,7 @@ The following table contains various representation of sequence flows.
 
 N> The default value for the property `sequence` is "normal".
 
-### Message
+## Message
 
 A Message flow shows the flow of messages between two Participents.A message flow is represented by dashed line.The type of message are as follows.
 
