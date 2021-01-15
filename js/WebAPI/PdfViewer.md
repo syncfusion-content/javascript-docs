@@ -7,7 +7,7 @@ platform: js
 keywords: pdfviewer,ejpdfviewer, syncfusion, pdfviewer webapi
 ---
 
-# WebAPI reference for PdfViewer
+# WebAPI reference for JQuery PDF Viewer
 
 ## Load
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of Essential JS PDF viewer | Syncfusion
-description: Learn about the Localization support of Syncfusion Essential JS PDF viewer control and more details.
+title: Localization of JQuery PDF Viewer | Syncfusion
+description: Learn about the Localization support of Syncfusion JQuery PDF Viewer control and more details.
 platform: js
 control: PDF viewer
 documentation: ug
