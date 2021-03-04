@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Compatibility with Syncfusion Essential JS1 and JS2 widgets
-description: Learn how to show Compatibility with Syncfusion Essential JS1 and JS2 widgets with js platform.
+description: Learn how to show Compatibility with Syncfusion Essential JS1 and JS2 widgets with Javascript platform.
 platform: js
 control: Introduction
 documentation: ug
