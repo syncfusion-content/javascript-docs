@@ -309,7 +309,7 @@ calcObj.setValueRowCol = function (sheetID, value, row, col) {
 
 ### Evaluating formula
 
-The given formula in the text box can be evaluated using `parseAndComputeFormula` by click on the `compute` button.
+The given formula in the text box can be evaluated using `parseAndComputeFormula` by clicking on the `compute` button.
 
 {% highlight javascript %}
 
