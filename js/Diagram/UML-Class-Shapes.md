@@ -1,21 +1,21 @@
 ---
 layout: post
 title:  UML-Class-Shapes | Diagram | Javascript | Syncfusion
-description: This section explains about how to visually represent the business logic as class ejDiagram.
+description: This section explains about how to visually represent the business logic as class ejDiagram control.
 platform: js
 control: Diagram
 documentation: ug
 api: /api/js/ejdiagram
 ---
 
-### UML Class Diagram Shapes
+# UML Class Diagram Shapes
 
 Class diagram is used to represent the static view of an application. The class diagrams are widely used in the modelling of object oriented systems because they are the only UML diagrams which can be mapped directly with object oriented languages. 
 Diagram supports to generate the class diagram shapes from business logic. 
 
 The UML class diagram shapes are explained as follows.
 
-### Class
+## Class
 
 * A Class describes a set of objects that shares the same specifications of features,constraints and semantics.To define a class object, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") as "class".
 
@@ -80,7 +80,7 @@ $("#diagram").ejDiagram({
 
 N> The default value for the property `classifier` is "class".
 
-### Interface
+## Interface
 
 * An Interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. To create an interface, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") property as "interface". 
 
@@ -138,7 +138,7 @@ $("#diagram").ejDiagram({
 
 ![Interface shape](Shapes_images/Shapes_img142.png)
 
-###  Enumeration
+##  Enumeration
 
 * To define an enumeration, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") property of node as "enumeration".  Also you need to define the [name](/api/js/ejdiagram#members:nodes-enumeration-name "name") and [members](/api/js/ejdiagram#members:nodes-enumeration-members "members") of the enumeration using the [enumeration](/api/js/ejdiagram#members:nodes-enumeration "enumeration") property of node.
 
@@ -185,13 +185,13 @@ The following code example illustrates how to create an enumeration.
 
 ![Enumeration shape](Shapes_images/Shapes_img143.png)
 
-### Connector Shapes
+## Connector Shapes
 
 * The connector [shape](/api/js/ejdiagram#members:connectors-shape "shape") property defines the role/meaning of the connector.
 * The different types of connector shapes are BPMN, UMLClassifier and UMLActivity and can render these Shapes by setting connector shape [type](/api/js/ejdiagram#members:connectors-shape-type "type") property.
 * The type of [flow](/api/js/ejdiagram#members:connectors-shape-flow "flow") shapes in a BPMN process are [sequence](/api/js/ejdiagram#members:connectors-shape-sequence "sequence"), [association](/api/js/ejdiagram#members:connectors-shape-flow-association "association") and [message](/api/js/ejdiagram#members:connectors-shape-relationship "message").
 
-### Relationships
+## Relationships
 
 A [relationship](/api/js/ejdiagram#members:connectors-shape-flow "relationship") is a general term covering the specific types of logical connections found on class diagrams.
 
@@ -205,7 +205,7 @@ The list of relationships are demonstrated as follows.
 | Inheritance | ![Inheritance shape](Shapes_images/Shapes_img147.png) |
 | Dependency  | ![Dependency shape](Shapes_images/Shapes_img148.png) |
 
-### Association
+## Association
 
 Association is basically a set of links that connects elements of an UML model. The type of association are as follows.
 
@@ -252,7 +252,7 @@ The [association](/api/js/ejdiagram#members:connectors-shape-flow-association "a
 
 N> The default value for the property `association` is "directional".
 
-### Aggregation
+## Aggregation
 
 Aggregation is a binary association between a property and one or more composite objects which group together a set of instances.
 Aggregation is decorated with a hollow diamond. To create an aggregation shape, you need to define the [relationship](/api/js/ejdiagram#members:connectors-shape-relationship "relationship") as "aggregation".
@@ -293,7 +293,7 @@ The following code example illustrates how to create an aggregation.
 
 ![Aggregation shape](Shapes_images/Shapes_img145.png)
 
-### Composition
+## Composition
 
 Composition is a "strong" form of "aggregation". Composition is decorated with a black diamond.
 To create a composition shape, define the [relationship](/api/js/ejdiagram#members:connectors-shape-relationship "relationship") property of connector as "composition".
@@ -334,7 +334,7 @@ The following code example illustrates how to create a composition.
 
 ![Composition shape](Shapes_images/Shapes_img146.png)
 
-### Dependency
+## Dependency
 
 Dependency is a directed relationship which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency  is shown as dashed line with opened arrow.
 To create a dependency, you need to define the [relationship](/api/js/ejdiagram#members:connectors-shape-relationship "relationship") property of connector as "dependency".
@@ -375,7 +375,7 @@ To create a dependency, you need to define the [relationship](/api/js/ejdiagram#
 
 ![Dependency shape](Shapes_images/Shapes_img147.png)
 
-### Inheritance
+## Inheritance
 
 Inheritance is also called as "generalization". Inheritance is a binary taxonomic directed relationship between a more general classifier(super class) and a more specific classifier(subclass).
 Inheritance is shown as a line with hollow triangle.
@@ -418,7 +418,7 @@ The following code example illustrates how to create an inheritance.
 
 ![Inheritance shape](Shapes_images/Shapes_img148.png)
 
-### Multiplicity
+## Multiplicity
 
 Multiplicity is a definition of an inclusive interval of non-negative integers to specify the allowable number of instances of described element. The [type](/api/js/ejdiagram#members:connectors-shape-multiplicity-type "type") of multiplicity are as follows.
 
@@ -492,11 +492,11 @@ The following code example illustrates how to customize the multiplicity.
 
 ![Multiplicity shape](Shapes_images/Shapes_img149.png)
 
-### ActivityFlow shape
+## ActivityFlow shape
 
 [ActivityFlow](/api/js/ejdiagram#members:connectors-shape-activityflow "ActivityFlow") shape used to Defines the shape of UMLActivity to connector. Applicable, if the connector is of type UMLActivity.
 
-### Editing
+## Editing
 
 You can edit the name, attributes and methods of the class diagram shapes just with a double click. When you double click a class diagram shape, a text editor with three different sections(name, members, methods) will be generated.
 The string "---" acts as a splitter between the three sections. 

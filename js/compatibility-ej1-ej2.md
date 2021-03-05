@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Compatibility with Syncfusion Essential JS1 and JS2 widgets
-description: Learn how to Compatibible with Syncfusion Essential JS1 and JS2 widgets.
+description: Learn how to show Compatibility with Syncfusion Essential JS1 and JS2 widgets with Javascript platform.
 platform: js
 control: Introduction
 documentation: ug
@@ -139,4 +139,4 @@ Please find the below Javascript code.
 
 Now run the html page which contains Essential JS 1 Button and Essential JS 2 Button and the output look like below,
 
-![](compatibility_images/compatibility.png)
+![Compatibility](compatibility_images/compatibility.png)
