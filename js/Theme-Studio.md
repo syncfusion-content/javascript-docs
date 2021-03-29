@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Essential Theme Studio for JavaScript
-description: Essential Theme Studio for JavaScript
+title: Essential Theme Studio for JavaScript | Syncfusion
+description: Essential Theme Studio for JavaScript platform and explains about it's control customization.
 platform: js
 control: General Topics 
 documentation: ug
 ---
 
-# Overview
+# Overview of Essential Theme Studio for JavaScript platform
 
 Essential [Theme Studio](http://js.syncfusion.com/themestudio/) for JavaScript allows us to build a new theme based on an existing themes for Syncfusion Essential JavaScript controls except Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Barcode, Maps. Also, you can import your customized theme into the Theme studio and customize the colors and download.
 
