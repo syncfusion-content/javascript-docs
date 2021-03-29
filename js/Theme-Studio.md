@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Essential Theme Studio for JavaScript | Syncfusion
-description: Essential Theme Studio for JavaScript platform and explains about it's control customization.
+description: Essential Theme Studio for JavaScript platform and explains about it's control customization and Overview of Essential Theme Studio for JavaScript.
 platform: js
 control: General Topics 
 documentation: ug
