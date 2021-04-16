@@ -141,3 +141,64 @@ $("#DiagramContent").ejDiagram({
 });
 
 {% endhighlight %}
+
+## Show/Hide custom context menu
+
+You can make context menu to show or hide by the [contextMenuBeforeOpen](/api/js/ejdiagram#events:contextmenubeforeopen "contextMenuBeforeOpen") by this event you can set display propety for the context menu. The following code example illustrates how to define those in events.
+
+{% highlight javascript %}
+
+	$("#DiagramContent").ejDiagram({
+	width: "700px",
+	height: "600px",
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 70,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+
+		//Specifies the radius of rounded corner
+		cornerRadius:10,
+
+		//Sets the type of shape
+		type: ej.datavisualization.Diagram.Shapes.Basic,
+
+		//Sets the type of basic shape
+		//shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
+	}],
+	//Enables the context menu
+	enableContextMenu: true,
+	contextMenu: {
+		// Defines the custom context menu items
+		items: [{
+			name: "zoom",
+			// Text to be displayed
+			text: "Zoom",
+			// Defines the sub items
+			subItems: [{
+				name: "zoomIn",
+				text: "ZoomIn",
+				// Sets the image src for the item
+				imageUrl: "Images/zoom.png",
+				// Sets the cssClass for the item
+				 cssClass:"menuBackgroundSize",
+			},{
+				name: "zoomOut",
+				text: "Zoom Out",
+				imageUrl: "Images/zoomOut.png"
+			}]
+		}],
+		// Hides the default context menu items
+		showCustomMenuItemsOnly: true
+    },
+    contextMenuBeforeOpen: function(args) {
+		if(args.diagram.selectionList[0].name == "node"){
+			document.getElementById("DiagramContent_contextMenu_zoom").style.display="block";
+		}
+		},
+});
+
+{% endhighlight %}
