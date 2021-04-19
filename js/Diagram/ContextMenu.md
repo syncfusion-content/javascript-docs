@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Context Menu
+# Javascript Context Menu
 
 In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
 Diagram provides some in-built context menu items and allows to define custom menu items through [contextMenu](/api/js/ejdiagram#members:contextmenu "contextMenu") property.
@@ -138,6 +138,93 @@ $("#DiagramContent").ejDiagram({
 			}
 		}
 	}
+});
+
+{% endhighlight %}
+
+## Conditionally show or hide context menu items at run time
+
+You can conditionally show or hide context menu items at run time by using [contextMenuBeforeOpen](/api/js/ejdiagram#events:contextmenubeforeopen "contextMenuBeforeOpen") event. This event will trigger before opening the context menu and you can control the visibility of the context menu items here. The following code example illustrates how to control the visibility of the context menu item based on diagram elements selection.
+
+{% highlight javascript %}
+
+	$("#DiagramContent").ejDiagram({
+	width: "700px",
+	height: "600px",
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 70,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+
+		//Specifies the radius of rounded corner
+		cornerRadius:10,
+
+		//Sets the type of shape
+		type: ej.datavisualization.Diagram.Shapes.Basic,
+
+		//Sets the type of basic shape
+		//shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
+	}],
+	connectors: [
+	// Defines JSON
+	{
+		//Name of the connector
+		name: "connector",
+		//Sets source and target points
+		sourcePoint: {
+			x: 200,
+			y: 100
+		},
+		targetPoint: {
+			x: 400,
+			y: 200
+		}
+	}
+],
+	//Enables the context menu
+	enableContextMenu: true,
+	contextMenu: {
+		// Defines the custom context menu items
+		items: [{
+			name: "zoom",
+			// Text to be displayed
+			text: "Zoom",
+			// Defines the sub items
+			subItems: [{
+				name: "zoomIn",
+				text: "ZoomIn",
+				// Sets the image src for the item
+				imageUrl: "Images/zoom.png",
+				// Sets the cssClass for the item
+				 cssClass:"menuBackgroundSize",
+			},{
+				name: "zoomOut",
+				text: "Zoom Out",
+				imageUrl: "Images/zoomOut.png"
+			}]
+		},
+	{
+		name: "select",
+			// Text to be displayed
+			text: "select",
+	}
+	],
+		// Hides the default context menu items
+		showCustomMenuItemsOnly: true
+    },
+    contextMenuBeforeOpen: function(args) {
+		if(args.diagram.selectionList.length > 0 && args.diagram.selectionList[0].name == "node"){			
+			document.getElementById("DiagramContent_contextMenu_zoom").style.display="block";
+			
+		}
+		else{
+			document.getElementById("DiagramContent_contextMenu_zoom").style.display="none";
+    }
+		},
 });
 
 {% endhighlight %}
