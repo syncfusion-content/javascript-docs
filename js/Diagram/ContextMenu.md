@@ -169,6 +169,22 @@ You can make a context menu to show or hide by the [contextMenuBeforeOpen](/api/
 		//Sets the type of basic shape
 		//shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
 	}],
+	connectors: [
+	// Defines JSON
+	{
+		//Name of the connector
+		name: "connector",
+		//Sets source and target points
+		sourcePoint: {
+			x: 200,
+			y: 100
+		},
+		targetPoint: {
+			x: 400,
+			y: 200
+		}
+	}
+],
 	//Enables the context menu
 	enableContextMenu: true,
 	contextMenu: {
@@ -190,14 +206,24 @@ You can make a context menu to show or hide by the [contextMenuBeforeOpen](/api/
 				text: "Zoom Out",
 				imageUrl: "Images/zoomOut.png"
 			}]
-		}],
+		},
+	{
+		name: "select",
+			// Text to be displayed
+			text: "select",
+	}
+	],
 		// Hides the default context menu items
 		showCustomMenuItemsOnly: true
     },
     contextMenuBeforeOpen: function(args) {
-		if(args.diagram.selectionList[0].name == "node"){
+		if(args.diagram.selectionList.length > 0 && args.diagram.selectionList[0].name == "node"){			
 			document.getElementById("DiagramContent_contextMenu_zoom").style.display="block";
+			
 		}
+		else{
+			document.getElementById("DiagramContent_contextMenu_zoom").style.display="none";
+    }
 		},
 });
 
