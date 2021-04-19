@@ -142,9 +142,9 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-## Show or Hide Custom Context Menu
+## Conditionally show or hide context menu items at run time
 
-You can make a context menu to show or hide by the [contextMenuBeforeOpen](/api/js/ejdiagram#events:contextmenubeforeopen "contextMenuBeforeOpen") by this event you can set display property for the context menu. The following code example illustrates how to define those in events.
+You can conditionally show or hide context menu items at run time by using [contextMenuBeforeOpen](/api/js/ejdiagram#events:contextmenubeforeopen "contextMenuBeforeOpen") event. This event will trigger before opening the context menu and you can control the visibility of the context menu items here. The following code example illustrates how to control the visibility of the context menu item based on diagram elements selection.
 
 {% highlight javascript %}
 
