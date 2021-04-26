@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Mac Installation
+# JavaScript Mac Installation
 
 The steps below show how to install the JavaScript Mac installer.
 

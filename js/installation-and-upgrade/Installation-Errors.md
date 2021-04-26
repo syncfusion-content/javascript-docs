@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio JavaScript products
-description: Learn how to install and deploy the Syncfusion JavaScript component
-platform: javascript
+title: Installation Syncfusion Essential Studio JavaScript products
+description: Learn how to install Syncfusion JavaScript installer and deploy the Syncfusion JavaScript component.
+platform: js
 control: Installation and Deployment
 documentation: ug
 
