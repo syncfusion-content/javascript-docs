@@ -2,7 +2,7 @@
 layout: post
 title: Major Version to Service Pack Version| JavaScript | Syncfusion
 description: this section provides the information about upgrading the JavaScript projects from major version to service pack version
-platform: JavaScript
+platform: js
 control: Essential Studio
 documentation: ug
 ---
