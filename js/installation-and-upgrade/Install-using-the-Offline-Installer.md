@@ -20,7 +20,7 @@ The steps below show how to install the Essential Studio JavaScript installer.
 
     ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
-    N> The Installer wizard extracts the syncfusionejs1_(version).exe dialog, which displays the package's unzip operation.
+    N> The Installer wizard extracts the syncfusionjavascript-js1_(version).exe dialog, which displays the package's unzip operation.
 
 2.	To unlock the Syncfusion offline installer, you have two options:
 
@@ -109,9 +109,9 @@ The Syncfusion Essential Studio JavaScript Installer supports installation and u
 To install through the Command Line in Silent mode, follow the steps below.
 
 1.	Run the Syncfusion JavaScript installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
-2.	The file syncfusionejs1_(version).exe file will be extracted into the Temp directory.
-3.	Run %temp%. The Temp folder will be opened. The syncfusionejs1_(version).exe file will be located in one of the folders.
-4.	Copy the extracted syncfusionejs1_(version).exe file in local drive.
+2.	The file syncfusionjavascript-js1_(version).exe file will be extracted into the Temp directory.
+3.	Run %temp%. The Temp folder will be opened. The syncfusionjavascript-js1_(version).exe file will be located in one of the folders.
+4.	Copy the extracted syncfusionjavascript-js1_(version).exe file in local drive.
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
@@ -134,15 +134,15 @@ To install through the Command Line in Silent mode, follow the steps below.
 Syncfusion Essential JavaScript can be uninstalled silently using the Command Line.
 
 1.	Run the Syncfusion JavaScript installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
-2.	The file syncfusionejs1_(version).exe file will be extracted into the Temp directory.
-3.	Run %temp%. The Temp folder will be opened. The syncfusionejs1_(version).exe file will be located in one of the folders.
-4.	Copy the extracted syncfusionejs1_(version).exe file in local drive.
+2.	The file syncfusionjavascript-js1_(version).exe file will be extracted into the Temp directory.
+3.	Run %temp%. The Temp folder will be opened. The syncfusionjavascript-js1_(version).exe file will be located in one of the folders.
+4.	Copy the extracted syncfusionjavascript-js1_(version).exe file in local drive.
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
    
-   **Arguments:** “Copied installer file path\syncfusionejs1_(version).exe” /uninstall silent 
+   **Arguments:** “Copied installer file path\syncfusionjavascript-js1_(version).exe” /uninstall silent 
 
-   **Example:** “D:\Temp\syncfusionejs1_x.x.x.x.exe" /uninstall silent
+   **Example:** “D:\Temp\syncfusionjavascript-js1_x.x.x.x.exe" /uninstall silent
 
 
 7.  Essential Studio for JavaScript (Essential JS1)  is uninstalled.

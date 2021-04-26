@@ -26,7 +26,7 @@ The steps below show how to install Essential Studio JavaScript Web Installer.
     ![Installer Extraction Wizard](WebInstaller/Step-by-Step-Installation_img1.png)
 
     
-    N> The installer wizard extracts the syncfusiones1webinstaller_{version}.exe dialog, which displays the package's unzip operation.
+    N> The installer wizard extracts the syncfusionjavascript-js1webinstaller_{version}.exe dialog, which displays the package's unzip operation.
     
 2. 	The Syncfusion JavaScript Web Installer's welcome wizard will be displayed. Click the Next button.
 
