@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements for JavaScript
 
-The following topic describes the system requirements for Syncfusion JavaScript platform.
+The system requirements for using our Syncfusion JavaScript platform are as follows
 
 ### Operating Systems
 
