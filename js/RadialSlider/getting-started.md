@@ -1,14 +1,14 @@
 ---
 layout: post
-title: getting-started
-description: getting started
+title: Getting started with JavaScript Radial Slider Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript Radial Slider control, its elements, and more.
 platform: js
 control: Radial Slider
 documentation: ug
 api: /api/js/ejradialslider
 ---
 
-# Getting Started
+# Getting Started with JavaScript Radial Slider
 
 In this section, you can learn how to create a simple **Radial Slider**.      
 
@@ -89,7 +89,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
+ N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
 
 ## Create your first Radial Slider control in JavaScript
 

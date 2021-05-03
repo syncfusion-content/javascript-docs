@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with DropDownTree widget for Syncfusion Essential JS
-description: To get start with DropDownTree by adding references.
+title: Getting started with JavaScript DropDownTree Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript DropDownTree control, its elements, and more.
 platform: js
 control: DropDownTree
 documentation: ug
@@ -9,7 +9,7 @@ keywords: DropDownTree, dropdown, Populating data
 api: /api/js/ejDropDownTree
 ---
 
-# Getting Started
+# Getting Started with JavaScript DropDownTree
 
 The external script dependencies of the DropDownTree widget are,
 
@@ -92,7 +92,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
- N>   In production,  using Syncfusion [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) is highly recommended to create custom script file with the required controls and its dependencies only. To reduce the file size further, use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server.
+ N>   In production,  using Syncfusion [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) is highly recommended to create custom script file with the required controls and its dependencies only. To reduce the file size further, use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server.
 
  ## Creating DropDownTree
 
