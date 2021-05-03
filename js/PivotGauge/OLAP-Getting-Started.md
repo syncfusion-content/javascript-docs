@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP-Getting-Started
-description: olap-getting started
+title: Getting started with JavaScript PivotGauge Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript PivotGauge control, its elements, and more.
 platform: js
 control: PivotGauge
 documentation: ug
 api: /api/js/ejpivotgauge
 ---
 
-# Getting started
+# Getting started with JavaScript PivotGauge
 
 ## Creating a simple application with pivot gauge and OLAP data sources (client mode)
 
@@ -177,7 +177,7 @@ Initialize the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data source f
 
 The above code will generate a series of gauges for all countries as shown below:
 
-![](OLAP-Getting-Started_images/ClientMode.png)
+![OLAP-Getting-Started_images](OLAP-Getting-Started_images/ClientMode.png)
 
 The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
 
@@ -343,11 +343,11 @@ The scripts and style sheets that are required to render a pivot gauge widget in
 
 The scripts and style sheets listed above can be found in any of the following locations:
 
-Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed on the local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer) to know more about script and style sheets installed on the local machine.
 
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package. 
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package. 
 
 ### Control initialization
 To initialize a pivot gauge widget, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the pivot gauge widget. Then, you can initialize the widget by using the `ejPivotGauge` method.
@@ -614,7 +614,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the pivot gauge will be rendered with the provided data as shown below:
 
-![](Olap-Getting-Started_images/ServerMode.png)
+![OLAP-Getting-Started_images](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
 This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP-Getting-Started with PivotGrid for Syncfusion JavaScript
-description: olap-getting started
+title: Getting started with JavaScript PivotGrid Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript PivotGrid control, its elements, and more.
 platform: js
 control: PivotGrid
 documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Getting started
+# Getting started with JavaScript PivotGrid
 
 ## Creating a simple application with pivot grid and OLAP datasource (client mode)
 
@@ -389,11 +389,11 @@ The scripts and style sheets that are required to render the pivot grid widget i
 
 The scripts and style sheets listed above can be found in any of the following locations:
 
-Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in the local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer) to know more about script and style sheets installed in the local machine.
 
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
 ### Control initialization
 To initialize a pivot grid widget, you can define a “div” tag with an appropriate “ID” attribute which acts as a container for the pivot grid widget. Then, you can initialize the widget by using the `ejPivotGrid` method.

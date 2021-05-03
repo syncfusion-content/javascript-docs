@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Web Report Designer
-description: How to start with Syncfusion Web Report Designer
+title: Getting started with JavaScript ReportDesigner Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript ReportDesigner control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Getting Started with JavaScript Application
+# Getting Started with JavaScript ReportDesigner
 
 This section explains briefly about how to create a **ReportDesigner** in your web application with **JavaScript**.
 
@@ -18,13 +18,13 @@ The following steps displays the Project Creation Wizard in Visual Studio 2013.
 
 Create a new `ASP.NET Empty Web application` project by selecting the **WEB** category from the listed project template in Microsoft Visual Studio IDE.     
 
-![](Images/JS-Sample-Img1.png) 
+![Getting-Started_images1](Images/JS-Sample-Img1.png) 
 
 ### Add References
 
 1. In the Solution Explorer, right-click the `References` folder and then click `Add Reference`.
 
-    ![](Images/JS-Sample-Img4.png) 
+    ![Getting-Started_images4](Images/JS-Sample-Img4.png) 
 
 2. Add the following Syncfusion assemblies to the project that are necessary for using the report designer control and click OK.
 
@@ -55,15 +55,15 @@ Create a new `ASP.NET Empty Web application` project by selecting the **WEB** ca
 
 1. Right-Click on the project and select `Add` then click `New Item`. 
 
-    ![](Images/JS-Sample-Img2.png)
+    ![Getting-Started_images2](Images/JS-Sample-Img2.png)
 
 2. Select `HTML Page` from the listed templates and name the page as **Default.html**.
 
-    ![](Images/JS-Sample-Img3.png) 
+    ![Getting-Started_images3](Images/JS-Sample-Img3.png) 
 
 3. Click Add.
 
-    ![](Images/JS-Sample-Img7.png)
+    ![Getting-Started_images7](Images/JS-Sample-Img7.png)
 
 ### Add Scripts and Styles
 
@@ -121,7 +121,7 @@ To edit the SQL queries with syntax highlighter need to refer the below code mir
 
 Use the above code example while adding scripts and styles.
 
-> [Click here](https://help.syncfusion.com/js/installation-and-deployment# "Installation and deployment") to know more about script and style sheets installed in local machine.
+> [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer# "Installation and deployment") to know more about script and style sheets installed in local machine.
 
 ### Control Initialization
 
@@ -148,15 +148,15 @@ The JavaScript Report Designer uses WebApi services to process the report file a
 
 1. Right-Click on the project and select `Add` then click `New Item`. 
 
-    ![](Images/JS-Sample-Img2.png)
+    ![Getting-Started_images2](Images/JS-Sample-Img2.png)
 
 2. Select `Web API Controller Class` from the listed templates and name the controller as **ReportDesignerController.cs**. 
 
-    ![](Images/JS-Sample-Img5.png)
+    ![Getting-Started_images5](Images/JS-Sample-Img5.png)
 
 3. Click Add.
 
-    ![](Images/JS-Sample-Img8.png)
+    ![Getting-Started_images8](Images/JS-Sample-Img8.png)
 
 #### Inherit IReportDesignerController
  
@@ -278,15 +278,15 @@ If `Global Application Class` file already exists in your application skip the b
 
 1. Right-Click on the project and select `Add` then click `New Item`. 
 
-    ![](Images/JS-Sample-Img2.png) 
+    ![Getting-Started_images2](Images/JS-Sample-Img2.png) 
 
 2. Select `Global Application Class` from the listed templates and name it as `Global.asax`.
 
-    ![](images/JS-Sample-img6.png)
+    ![Getting-Started_images6](images/JS-Sample-img6.png)
 
 3. Click Add.
 
-    ![](Images/JS-Sample-Img9.png)
+    ![Getting-Started_images9](Images/JS-Sample-Img9.png)
  
 #### Route WebAPI
 
@@ -321,7 +321,7 @@ namespace ReportDesignerSample
 
 On running the application, Report Designer will be rendered like below.
 
-   ![](Images/Getting-Started-img7.png)
+   ![Getting-Started_images7](Images/Getting-Started-img7.png)
 
 ## Integrate the component with Report Server
 
