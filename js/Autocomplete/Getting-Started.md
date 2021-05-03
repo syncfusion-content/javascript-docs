@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with AutoComplete widget for Essential JS
-description: How to create Autocomplete widget with the step-by-step instructions.
+title: Getting Started with JavaScript AutoComplete Control | Syncfusion
+description: Learn here about getting started with Syncfusion JavaScript AutoComplete control, its elements, and more.
 platform: js
 control: AutoComplete
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 api: /api/js/ejautocomplete
 ---
 
-# Getting Started
+# Getting Started with JavaScript AutoComplete
 
 This section helps to understand the getting started of the AutoComplete widget with the step-by-step instructions.
 
@@ -68,7 +68,7 @@ Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dep
 
 
 
-N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
+N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
 
 
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Tooltip widget for Syncfusion Essential JS
-description: How to create the Tooltip
+title: Getting started with JavaScript Tooltip Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript Tooltip control, its elements, and more.
 platform: JS
 control: Tooltip
 documentation: ug
 keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
 api: /api/js/ejtooltip
 ---
-# Getting started
+# Getting started with JavaScript Tooltip
 
 ## Preparing HTML document
 
@@ -65,7 +65,7 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 {% endhighlight %}
 
 
-N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
 For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
@@ -118,7 +118,7 @@ Apply the following style sheet
     
 {% endhighlight %}
 
-![](Getteing-Started_images/Getteing-Started_img1.jpeg)
+![Getting_Started_Image1](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
 ## Setting Dimensions
 
@@ -192,5 +192,5 @@ Apply the following styles to show the Tooltip.
     
 {% endhighlight %}
 
-![](Getteing-Started_images/Getteing-Started_img2.jpeg)
+![Getting_Started_Image2](Getteing-Started_images/Getteing-Started_img2.jpeg)
 

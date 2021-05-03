@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with DropDownList widget for Syncfusion Essential JS
-description: To get start with DropDownList by adding references.
+title: Getting started with JavaScript DropDownList control | Syncfusion
+description: Learn here about getting started with Syncfusion JavaScript DropDownList control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: DropDownList, dropdown, Populating data
 api: /api/js/ejdropdownlist
 ---
 
-# Getting Started
+# Getting Started with JavaScript DropDownList
 
 The external script dependencies of the DropDownList widget are,
 
@@ -99,7 +99,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+ N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
 ## Creating DropDownList
 
@@ -134,7 +134,7 @@ The DropDownList can be created from a HTML ‘select’ element with the HTML '
 			
 	{% endhighlight %}
 
-![](Getteing-Started_images/Getteing-Started_img1.jpeg)
+![Getting_Started_Image1](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
 ## Populating data
 
@@ -166,7 +166,7 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 
 	{% endhighlight %}
 	
-![](Getteing-Started_images/Getteing-Started_img2.jpeg)
+![Getting_Started_Image2](Getteing-Started_images/Getteing-Started_img2.jpeg)
 
 ## Setting Dimensions
 

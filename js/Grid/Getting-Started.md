@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Grid widget for Syncfusion Essential JS
-description: How to create the Syncfusion Essestial JS Grid, data bind, enable paging, grouping, filtering and add summaries
+title: Getting started with JavaScript Grid Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript Grid control, its elements, and more.
 platform: JS
 control: Grid
 documentation: ug
@@ -145,7 +145,7 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 
 
 
-N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also, to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also, to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
 For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
 

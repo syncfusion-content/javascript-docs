@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Relational-Getting-Started for PivotGrid in Syncfusion JS
-description: relational-getting started
+title: Getting started with JavaScript PivotGrid Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript PivotGrid control, its elements, and more.
 platform: js
 control: PivotGrid
 documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Getting Started
+# Getting Started with JavaScript PivotGrid
 
 ## Creating a simple application with PivotGrid and Relational datasource (Client Mode)
 
@@ -612,11 +612,11 @@ The scripts and style sheets that are mandatorily required to render a PivotGrid
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
-Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in the local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer) to know more about script and style sheets installed in the local machine.
 
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
 ### Control initialization
 
