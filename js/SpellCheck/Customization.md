@@ -1,13 +1,13 @@
 ---
-title: Syncfusion SpellCheck - Customization
-description: SpellCheck Customization
+title: Syncfusion SpellCheck - Customization | JavaScript
+description: Customization in Syncfusion Essential Studio JavaScript spellcheck control, its elements and more details.
 platform: js
 control: spellcheck
 documentation: ug
 keywords: customization, spellcheck customization, misspell word appearance, restrict suggestion count
 api: /api/js/ejspellcheck 
 ---
-# SpellCheck Customization
+# SpellCheck Customization in JavaScript
 
 The Essential JavaScript SpellCheck provides option to customize for the following scenarios.
 
@@ -45,7 +45,7 @@ The following code example depicts the way to customize the error word highlight
 
 ## Restrict Suggestion Count
 
-The SpellCheck control provides option ([maxSuggestionCount](/js/api/ejspellcheck#members:maxsuggestioncount)) to restrict the count that the number of items displayed in the suggestion list.
+The SpellCheck control provides option ([maxSuggestionCount](/ejspellcheck#members:maxsuggestioncount)) to restrict the count that the number of items displayed in the suggestion list.
 
 The following code example describes the way to control the suggestion count.
 
