@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Web Report Designer
-description: How to start with Syncfusion Web Report Designer
+title: Getting started with JavaScript ReportDesigner Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript ReportDesigner control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Getting Started with JavaScript Application
+# Getting Started with JavaScript ReportDesigner
 
 This section explains briefly about how to create a **ReportDesigner** in your web application with **JavaScript**.
 
@@ -121,7 +121,7 @@ To edit the SQL queries with syntax highlighter need to refer the below code mir
 
 Use the above code example while adding scripts and styles.
 
-> [Click here](https://help.syncfusion.com/js/installation-and-deployment# "Installation and deployment") to know more about script and style sheets installed in local machine.
+> [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer# "Installation and deployment") to know more about script and style sheets installed in local machine.
 
 ### Control Initialization
 

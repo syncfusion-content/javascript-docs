@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting started with JavaScript PivotTreeMap Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript PivotTreeMap control, its elements, and more.
 platform: js
 control: PivotTreeMap
 documentation: ug
 api: /api/js/ejpivottreemap
 ---
 
-# Getting started
+# Getting started with JavaScript PivotTreeMap
 
 ## Creating a simple application with pivot tree map and OLAP data source (client mode)
 
@@ -359,11 +359,11 @@ The scripts and style sheets that are required to render a pivot tree map widget
 
 The scripts and style sheets listed above can be found in any of the following locations:
 
-Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed on the local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer) to know more about script and style sheets installed on the local machine.
 
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
 ### Control initialization
 To initialize a pivot tree map widget, first you can define a "div" tag with an appropriate “id” attribute which acts as a container for the pivot tree map widget. Then, you can initialize the widget by using `ejPivotTreeMap` method.
