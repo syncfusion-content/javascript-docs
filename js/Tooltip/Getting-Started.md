@@ -118,7 +118,7 @@ Apply the following style sheet
     
 {% endhighlight %}
 
-![](Getteing-Started_images/Getteing-Started_img1.jpeg)
+![Getting_Started_Image1](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
 ## Setting Dimensions
 
@@ -192,5 +192,5 @@ Apply the following styles to show the Tooltip.
     
 {% endhighlight %}
 
-![](Getteing-Started_images/Getteing-Started_img2.jpeg)
+![Getting_Started_Image2](Getteing-Started_images/Getteing-Started_img2.jpeg)
 

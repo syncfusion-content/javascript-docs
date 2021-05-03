@@ -157,11 +157,11 @@ Output of the above code will be as shown below:
 
 Before Resize:
 
-![](Getting-Started_images/Resize.png)
+![Getting_Started_Image1](Getting-Started_images/Resize.png)
 
 During Resize:
 
-![](Getting-Started_images/Resizing.png)
+![Getting_Started_Image2](Getting-Started_images/Resizing.png)
 
 ### Helper
 

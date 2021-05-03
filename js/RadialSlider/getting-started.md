@@ -12,7 +12,7 @@ api: /api/js/ejradialslider
 
 In this section, you can learn how to create a simple **Radial Slider**.      
 
-![](getting-started_images\getting-started_img1.png)
+![Getting_Started_Image1](getting-started_images\getting-started_img1.png)
 
 The external script dependencies of the RadialSlider component are,
 
@@ -115,5 +115,5 @@ Initialize the "RadialSlider" widgets by adding the script section as below.
 The following screenshot shows the output for the above code example.
 
 
-![](getting-started_images\getting-started_img2.png)
+![Getting_Started_Image2](getting-started_images\getting-started_img2.png)
 

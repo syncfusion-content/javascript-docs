@@ -187,15 +187,15 @@ Output of the above code will be as shown below:
 
 Before Dragging:
 
-![](Getting-Started_images/Getting-Started-img1.png)
+![Getting_Started_Image1](Getting-Started_images/Getting-Started-img1.png)
 
 During Drag:
 
-![](Getting-Started_images/Getting-Started-img2.png)
+![Getting_Started_Image2](Getting-Started_images/Getting-Started-img2.png)
 
 After Dragging:
 
-![](Getting-Started_images/Getting-Started-img3.png)
+![Getting_Started_Image13](Getting-Started_images/Getting-Started-img3.png)
 
 ## Helper
 
@@ -263,4 +263,4 @@ The below code explains how to make the movement constrained to the container bo
 
 The drag element cannot be moved outside this boundary.
 
-![](Getting-Started_images/Container.png)
+![Getting_Started_Image](Getting-Started_images/Container.png)

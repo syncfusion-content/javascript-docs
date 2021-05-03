@@ -137,7 +137,7 @@ $(function () {
 
 After completing the configuration required to render a basic ComboBox, run the above sample to display the output in your default browser.
 	
-![](Getteing-Started_images/Getteing-Started_img1.png)
+![Getting_Started_Image1](Getteing-Started_images/Getteing-Started_img1.png)
 
 ## Custom Values
 

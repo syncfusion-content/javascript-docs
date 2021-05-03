@@ -139,7 +139,7 @@ $('#selectItem').ejDropDownTree();
 
 	{% endhighlight %}
 
-![](Getteing-Started_images/getting_started_images.png)
+![Getting_Started_Image](Getteing-Started_images/getting_started_images.png)
 
 ## Populating data
 
@@ -298,7 +298,7 @@ N> The ODataAdaptor is the default adaptor for DataManager. On binding to other 
 
 	{% endhighlight %}
 	
-![](Getteing-Started_images/Getteing-Started_img2.png)
+![Getting_Started_Image2](Getteing-Started_images/Getteing-Started_img2.png)
 
 ## Setting Dimensions
 
