@@ -177,7 +177,7 @@ Initialize the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data source f
 
 The above code will generate a series of gauges for all countries as shown below:
 
-![](OLAP-Getting-Started_images/ClientMode.png)
+![OLAP-Getting-Started_images](OLAP-Getting-Started_images/ClientMode.png)
 
 The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
 
@@ -614,7 +614,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the pivot gauge will be rendered with the provided data as shown below:
 
-![](Olap-Getting-Started_images/ServerMode.png)
+![OLAP-Getting-Started_images](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
 This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).

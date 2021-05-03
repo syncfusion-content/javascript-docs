@@ -191,7 +191,7 @@ Now, set the JSON data to the **"data"** property available in the **"dataSource
 
 The above code will generate a simple pivot gauge as shown in the below image:
 
-![](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
+![Relational-Getting-Started_images](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
 
 The following table will explain the [`relational`](/api/js/ejpivotgauge#members:analysisMode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
 
@@ -751,7 +751,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the pivot gauge is rendered with sales amount as shown in the below image:
  
-![](Relational-Getting-Started_images/ServerMode.png)
+![Relational-Getting-Started_images](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 

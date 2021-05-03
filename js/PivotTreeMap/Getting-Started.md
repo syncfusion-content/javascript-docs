@@ -101,7 +101,7 @@ Initialize the OLAP data source for the pivot tree map widget as shown below:
 
 The above code will generate a simple pivot tree map showing customer count over different customer geographic locations across a period of fiscal years.
 
-![](Getting-Started_images/OlapClientside.png) 
+![Getting-Started_images](Getting-Started_images/OlapClientside.png) 
 
 The following table will explain the OLAP [`dataSource`](/api/js/ejpivottreemap#members:datasource) properties at [`client-side`](/api/js/ejpivottreemap#members:operationalmode) in detail:
 
@@ -618,7 +618,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the pivot tree map is rendered with customer count over different customer geographic locations across a period of fiscal years.
 
-![](Getting-Started_images/olapwebapi.png) 
+![Getting-Started_images](Getting-Started_images/olapwebapi.png) 
 
 ### WCF
 This section demonstrates the utilization of the WCF service as endpoint binding the OLAP data source to a simple pivot tree map. For more details on this topic, [click here](https://help.syncfusion.com/js/pivottreemap/olap-connectivity#wcf).
