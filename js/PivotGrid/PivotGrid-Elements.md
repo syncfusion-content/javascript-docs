@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotGrid-Elements | Essential JS PivotGrid widget | Syncfusion
+title: About PivotGrid-Elements in JQuery PivotGrid Widget | Syncfusion
 description: This document illustrates that how to customize cells with an interactive way in JavaScript PivotGrid control
 platform: js
 control: PivotGrid

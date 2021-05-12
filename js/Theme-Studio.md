@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Essential Theme Studio for JavaScript | Syncfusion
-description: Essential Theme Studio for JavaScript and to know how to create a new theme based on existing built-in themes and etc.
+description: Essential Theme Studio for JavaScript platform and explains about it's control customization and Overview of Essential Theme Studio for JavaScript.
 platform: js
 control: General Topics 
 documentation: ug
 ---
 
-# Overview of Essential Theme Studio
+# Overview of Essential Theme Studio for JavaScript platform
 
 Essential [Theme Studio](http://js.syncfusion.com/themestudio/) for JavaScript allows us to build a new theme based on an existing themes for Syncfusion Essential JavaScript controls except Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Barcode, Maps. Also, you can import your customized theme into the Theme studio and customize the colors and download.
 
@@ -19,7 +19,7 @@ Essential [Theme Studio](http://js.syncfusion.com/themestudio/) for JavaScript a
 
 You can apply Flat-Azure theme as shown below,
 
-![JavaScript ThemeStudio Built-In-Themes Image](ThemeStudio_images/Built-In-Themes.png)
+![JavaScript General Topics ThemeStudioImage](ThemeStudio_images/Built-In-Themes.png)
 
 
 **Step 2:**
@@ -38,7 +38,7 @@ The following options of the control can be customized.
 
 * Miscellaneous
 
-![JavaScript ThemeStudio Customization Image](ThemeStudio_images/Customization.png)
+![JavaScript General Topics ThemeStudio CustomizationImage](ThemeStudio_images/Customization.png)
 
 **Step 3:**
 
@@ -46,11 +46,11 @@ Essential Theme Studio for JavaScript provides a `Filter` option to customize th
 
 You can find the filter option in theme studio as shown below:
 
-![JavaScript ThemeStudio Filter Image1](ThemeStudio_images/Filter-01.png)
+![JavaScript General Topics ThemeStudio FilterImage1](ThemeStudio_images/Filter-01.png)
 
-![JavaScript ThemeStudio Filter Image2](ThemeStudio_images/Filter-02.png)
+![JavaScript General Topics ThemeStudio FilterImage2](ThemeStudio_images/Filter-02.png)
 
-![JavaScript ThemeStudio Filter Image3](ThemeStudio_images/Filter-03.png)
+![JavaScript General Topics ThemeStudio FilterImage3](ThemeStudio_images/Filter-03.png)
 
 **Step 4:**
 
@@ -58,9 +58,9 @@ Once you customize the theme for the Dialog control, then you can download the c
  
 You can find the Download option in theme studio as shown below:
 
-![JavaScript ThemeStudio Download Image1](ThemeStudio_images/Download-01.png)
+![JavaScript General Topics ThemeStudio DownloadImage1](ThemeStudio_images/Download-01.png)
 
-![JavaScript ThemeStudio Download Image2](ThemeStudio_images/Download-02.png)
+![JavaScript General Topics ThemeStudio DownloadImage2](ThemeStudio_images/Download-02.png)
 
 ### 15.4 and below version
 
@@ -94,7 +94,7 @@ You can manually change the color code in this less file and generate the CSS by
 
 Downloaded theme file is in the below structure:
 
-![JavaScript ThemeStudio Download Image3](ThemeStudio_images/Download-03.png)
+![JavaScript General Topics ThemeStudio DownloadImage](ThemeStudio_images/Download-03.png)
 
 You can refer these customized unminified/minified theme files to display the Dialog control in your application.
 
@@ -108,37 +108,37 @@ Our own customized theme of the Dialog control can be again customized by using 
 
 You can find the import option in theme studio as shown below:
 
-![JavaScript ThemeStudio Import Image01](ThemeStudio_images/Import-01.png)
+![JavaScript General Topics ThemeStudio ImportImage1](ThemeStudio_images/Import-01.png)
 
-![JavaScript ThemeStudio Import Image02](ThemeStudio_images/Import-02.png)
+![JavaScript General Topics ThemeStudio ImportImage2](ThemeStudio_images/Import-02.png)
 
 **Step 2:**
 
 Import **properties.json** file which is customized theme of Dialog control earlier as shown below:
 
-![JavaScript ThemeStudio Import Image03](ThemeStudio_images/Import-03.png)
+![JavaScript General Topics ThemeStudio ImportImage3](ThemeStudio_images/Import-03.png)
 
 **Step 3:**
 
 You can display the Dialog control which is applied the customized theme of Dialog control by importing the properties.json file.
 
-![JavaScript ThemeStudio Import Image04](ThemeStudio_images/Import-04.png)
+![JavaScript General Topics ThemeStudio ImportImage4](ThemeStudio_images/Import-04.png)
 
 Now, you can customize the Dialog control with your desired theme as shown below:
 
-![JavaScript ThemeStudio Import Image05](ThemeStudio_images/Import-05.png)
+![JavaScript General Topics ThemeStudio ImportImage5](ThemeStudio_images/Import-05.png)
 
 **Step 4:**
 
 After customizing theme, you can export or download the customized theme files.
 
-![JavaScript ThemeStudio Import Image06](ThemeStudio_images/Import-06.png)
+![JavaScript General Topics ThemeStudio ImportImage6](ThemeStudio_images/Import-06.png)
 
 ## How to use the generated CSS in your web application?
 
 Once download the customized theme from the theme studio, you can find the customized unminified/minified theme files in the downloaded folder as like below structure.
 
-![JavaScript ThemeStudio Generated Image1](ThemeStudio_images/Generated-01.png)
+![JavaScript General Topics ThemeStudio GeneratedImage1](ThemeStudio_images/Generated-01.png)
  
 Refer these customized unminified/minified theme files into your application. The below section explains what are all the files required to refer and the steps to apply the customized theme in your application.
 
@@ -176,11 +176,11 @@ It is used for refer both ej.theme.min.css,ej.widgets.core.min.css CSS files in 
 
 Downloaded theme file is in the below structure:
 
-![JavaScript ThemeStudio Download Image03](ThemeStudio_images/Download-03-15.4.png)
+![JavaScript General Topics ThemeStudio DownloadImage](ThemeStudio_images/Download-03-15.4.png)
 
 How to use the generated CSS in your web application?
 
-![JavaScript ThemeStudio Generated Image01](ThemeStudio_images/Generated-01-15.4.png)
+![JavaScript General Topics ThemeStudio GeneratedImage](ThemeStudio_images/Generated-01-15.4.png)
 
 **Step 1:** 
 
@@ -216,15 +216,15 @@ Since, we have used same classes in styles for Essential JS 1 and Essential JS 2
 
 * Using these compatibility theme files, you can render both EJ1 and EJ2 components in a single page
 
-![JavaScript ThemeStudio compatibility Image1](ThemeStudio_images/compatibility-1.png)
+![JavaScript General Topics ThemeStudio compatibilityImage1](ThemeStudio_images/compatibility-1.png)
 
 * Downloaded theme with compatibility file is in the below structure
 
-![JavaScript ThemeStudio compatibility Image2](ThemeStudio_images/compatibility-2.png)
+![JavaScript General Topics ThemeStudio compatibilityImage2](ThemeStudio_images/compatibility-2.png)
 
 * You can find the customized unminified/minified theme compatibility files in the downloaded folder as like below structure.
 
-![JavaScript ThemeStudio compatibility Image3](ThemeStudio_images/compatibility-3.png)
+![JavaScript General Topics ThemeStudio compatibilityImage3](ThemeStudio_images/compatibility-3.png)
 
 For more information, Please refer to the [Compatibility](https://help.syncfusion.com/js/compatibility) Section. 
 
@@ -232,7 +232,7 @@ For more information, Please refer to the [Compatibility](https://help.syncfusio
 
 You can find the customized theme less files in the downloaded folder under below location. 
 
-![JavaScript ThemeStudio Less Image01](ThemeStudio_images/Less-01.png)
+![JavaScript General Topics ThemeStudio LessImage1](ThemeStudio_images/Less-01.png)
 
 You can choose any compiler which is available in local/online to generate the CSS from LESS such as dotless compiler, less2css etc. The below section explains how to generate the CSS from LESS using less2css compiler.
 
@@ -243,7 +243,7 @@ Install less with global access using npm
    **npm install -g less**
 
 
-![JavaScript ThemeStudio Less Image02](ThemeStudio_images/Less-02.png)
+![JavaScript General Topics ThemeStudio LessImage2](ThemeStudio_images/Less-02.png)
  
 **Step 2:**
 
@@ -258,12 +258,12 @@ Open command prompt and run the below command.
    ** For example: lessc ej.theme.less output.css **
    
    
-![JavaScript ThemeStudio Less Image03](ThemeStudio_images/Less-03.png)
+![JavaScript General Topics ThemeStudio LessImage3](ThemeStudio_images/Less-03.png)
 
 **Step 4:**
 
 This will generate the CSS file with the given name “output.css”.
 
-![JavaScript ThemeStudio Less Image04](ThemeStudio_images/Less-04.png)
+![JavaScript General Topics ThemeStudio LessImage4](ThemeStudio_images/Less-04.png)
 
 You can manually edit the color code variables in this less (ej.theme.less) file to add more styling and compiled to CSS files.

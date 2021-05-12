@@ -8,9 +8,9 @@ documentation: ug
 
 ---
 
-# System Requirements
+# System Requirements for JavaScript
 
-The following topic describes the system requirements for Syncfusion JavaScript platform.
+The system requirements for using our Syncfusion JavaScript platform are as follows
 
 ### Operating Systems
 
@@ -28,21 +28,35 @@ The following topic describes the system requirements for Syncfusion JavaScript 
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 4 GB of available space may be required. However, 350 MB free space is required in boot drive even if you are installing in other drive.
+* Hard disc: up to 3 GB of free space may be required
 
 ## Web browsers
 
 Syncfusion JavaScript components are compatible with all the major browsers which includes the following - 
 
-* Internet Explorer 8 +
-* Microsoft Edge
-* Mozilla Firefox 22 +
-* Chrome 17 +
-* Opera 12 +
-* Safari 5 +
+
+<table>
+<tr>
+<th>Internet Explorer</th>
+<th>Microsoft Edge</th>
+<th>Mozilla Firefox</th>
+<th>Chrome</th>
+<th>Opera</th>
+<th>Safari</th>
+</tr>
+<tr>
+<td>8 +</td>
+<td>Latest</td>
+<td>Latest</td>
+<td>22 +</td>
+<td>17 +</td>
+<td>12 +</td>
+<td>5 +</td>
+</tr></table>
 
 ### Development Environment
 
 * Any text editors such as **Notepad** or **Notepad++**.  
+* Visual Studio Code (optional text-editor)
 * Web browsers with [JavaScript enabled](https://support.microsoft.com/en-in/gp/howtoscript) in it.
 * If you want to use Reporting or Business Intelligence controls, it is necessary to have one of the IDE – **Visual Studio 2010+** in the machine.
