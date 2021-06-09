@@ -93,7 +93,7 @@ Add the `<input>` element within the `<body>` section, which acts as a container
 Create a sample using the command `cat > sample.html` and edit the sample in the terminal window itself by pressing `enter`key. To Add the Syncfusion widget into your HTML page, refer the [`link`](https://help.syncfusion.com/js/control-initialization)
 and press `ctrl + D` to save and exit.
 
-![Getting-Started-on-Linux_images](/js/Getting-Started on Linux_images/terminal.png)
+![Getting-Started-on-Linux_images](/Getting-Started on Linux_images/terminal.png)
 
 To run the sample, execute the below command.
 
@@ -104,6 +104,6 @@ firefox sample.html
  {% endhighlight %}
 
 The web browser and the screen will display the DatePicker widget as shown below,
-![Control-Initialization_images9](/js/Control-Initialization_images/Control-Initialization_img9.png) 
+![Control-Initialization_images9](Control-Initialization_images/Control-Initialization_img9.png) 
 
 The DatePicker control is rendered with its default appearance now. You can then use its various available properties to set its value and also make use of its available events to trigger when necessary.

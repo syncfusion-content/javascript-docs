@@ -91,5 +91,5 @@ Required field and min value validation is demonstrated in the below given examp
 	
 {% endhighlight %}
 
-![](Validation_images\validation_img1.png)
+![Validation_images1](Validation_images\validation_img1.png)
 
