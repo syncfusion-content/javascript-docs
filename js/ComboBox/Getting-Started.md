@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with ComboBox widget for Syncfusion Essential JS
-description: To get start with ComboBox by adding references.
+title: Getting started with JavaScript ComboBox Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript ComboBox control, its elements, and more.
 platform: js
 control: ComboBox
 documentation: ug
 keywords: ComboBox, ComboBox, Populating data
 ---
 
-# Getting Started
+# Getting Started with JavaScript ComboBox
 
 The external script dependencies of the ComboBox widget are,
 
@@ -89,7 +89,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+ N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
 ## Creating ComboBox
 
@@ -137,7 +137,7 @@ $(function () {
 
 After completing the configuration required to render a basic ComboBox, run the above sample to display the output in your default browser.
 	
-![](Getteing-Started_images/Getteing-Started_img1.png)
+![Getting_Started_Image1](Getteing-Started_images/Getteing-Started_img1.png)
 
 ## Custom Values
 

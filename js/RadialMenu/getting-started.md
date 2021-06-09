@@ -1,14 +1,14 @@
 ---
 layout: post
-title: getting-started
-description: getting started
+title: Getting started with JavaScript Radial Menu Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript Radial Menu control, its elements, and more.
 platform: js
 control: Radial Menu
 documentation: ug
 api: /api/js/ejradialmenu
 ---
 
-# Getting Started
+# Getting Started with JavaScript Radial Menu
 
 The external script dependencies of the RadialMenu component are,
 
@@ -89,13 +89,13 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
+ N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
 
 ## Create your first Radial Menu control in JavaScript
 
 **RadialMenu** can be rendered using ul li element or div element      
 
-![](getting-started_images\getting-started_img1.png)
+![Getting_Started_Image1](getting-started_images\getting-started_img1.png)
 
 **Create a simple Radial Menu**
 
@@ -202,5 +202,5 @@ Run the above code and select any text inside the target. The settings icon is d
 
 
 
-![](getting-started_images\getting-started_img2.png)
+![Getting_Started_Image2](getting-started_images\getting-started_img2.png)
 

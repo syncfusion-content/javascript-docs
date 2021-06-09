@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Relational-Getting-Started
-description: relational-getting started
+title: Getting started with JavaScript PivotGauge Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript PivotGauge control, its elements, and more.
 platform: js
 control: PivotGauge
 documentation: ug
 api: /api/js/ejpivotgauge
 ---
 
-# Getting started
+# Getting started with JavaScript PivotGauge
 
 ## Creating a simple application with pivot gauge and relational data source (client mode)
 
@@ -191,7 +191,7 @@ Now, set the JSON data to the **"data"** property available in the **"dataSource
 
 The above code will generate a simple pivot gauge as shown in the below image:
 
-![](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
+![Relational-Getting-Started_images](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
 
 The following table will explain the [`relational`](/api/js/ejpivotgauge#members:analysisMode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
 
@@ -406,11 +406,11 @@ The scripts and style sheets that are required to render a pivot gauge widget in
 
 The scripts and style sheets listed above can be found in any of the following locations:
 
-Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed on the local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer) to know more about script and style sheets installed on the local machine.
  
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
 ### Control initialization
 
@@ -751,7 +751,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the pivot gauge is rendered with sales amount as shown in the below image:
  
-![](Relational-Getting-Started_images/ServerMode.png)
+![Relational-Getting-Started_images](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 

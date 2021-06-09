@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting started with JavaScript PivotTreeMap Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript PivotTreeMap control, its elements, and more.
 platform: js
 control: PivotTreeMap
 documentation: ug
 api: /api/js/ejpivottreemap
 ---
 
-# Getting started
+# Getting started with JavaScript PivotTreeMap
 
 ## Creating a simple application with pivot tree map and OLAP data source (client mode)
 
@@ -101,7 +101,7 @@ Initialize the OLAP data source for the pivot tree map widget as shown below:
 
 The above code will generate a simple pivot tree map showing customer count over different customer geographic locations across a period of fiscal years.
 
-![](Getting-Started_images/OlapClientside.png) 
+![Getting-Started_images](Getting-Started_images/OlapClientside.png) 
 
 The following table will explain the OLAP [`dataSource`](/api/js/ejpivottreemap#members:datasource) properties at [`client-side`](/api/js/ejpivottreemap#members:operationalmode) in detail:
 
@@ -359,11 +359,11 @@ The scripts and style sheets that are required to render a pivot tree map widget
 
 The scripts and style sheets listed above can be found in any of the following locations:
 
-Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed on the local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer) to know more about script and style sheets installed on the local machine.
 
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
 ### Control initialization
 To initialize a pivot tree map widget, first you can define a "div" tag with an appropriate “id” attribute which acts as a container for the pivot tree map widget. Then, you can initialize the widget by using `ejPivotTreeMap` method.
@@ -618,7 +618,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the pivot tree map is rendered with customer count over different customer geographic locations across a period of fiscal years.
 
-![](Getting-Started_images/olapwebapi.png) 
+![Getting-Started_images](Getting-Started_images/olapwebapi.png) 
 
 ### WCF
 This section demonstrates the utilization of the WCF service as endpoint binding the OLAP data source to a simple pivot tree map. For more details on this topic, [click here](https://help.syncfusion.com/js/pivottreemap/olap-connectivity#wcf).
