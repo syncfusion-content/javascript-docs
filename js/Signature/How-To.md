@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  how to | Signature | Syncfusion
-description:  how to
+description: This section provides details about all events and their arguments in Syncfusion JavaScript Signature control. 
 platform: js
 control: Signature
 documentation: ug
 api: /api/js/ejsignature
 ---
 
-##  How To
+# Events in JavaScript Signature
 
 ### Save signature image with user defined format
 
