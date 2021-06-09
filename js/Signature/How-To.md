@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  how to | Signature | Syncfusion
-description:  how to
+description: This section provides details about all events and their arguments in Syncfusion JavaScript Signature control. 
 platform: js
 control: Signature
 documentation: ug
 api: /api/js/ejsignature
 ---
 
-##  How To
+# Events in JavaScript Signature
 
-### Save signature image with user defined format
+## Save signature image with user defined format
 
 By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with [saveImageFormat](https://help.syncfusion.com/api/js/ejsignature#members:saveimageformat) property. And we can also save the image along with the background by using the [saveWithBackground](https://help.syncfusion.com/api/js/ejsignature#members:savewithbackground) property.
 
@@ -58,7 +58,7 @@ The following screenshot illustrates the Signature with saving (downloading) the
 
 ![save](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
-### To clear the Signature
+## To clear the Signature
 
 To clear the signature, you can simply use the [clear()](https://help.syncfusion.com/api/js/ejsignature#methods:clear) method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
@@ -87,7 +87,7 @@ To clear the signature, you can simply use the [clear()](https://help.syncfusion
     
 {% endhighlight %}
 
-### Make signature as responsive
+## Make signature as responsive
 
 When the signature control is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the [isResponsive](https://help.syncfusion.com/api/js/ejsignature#members:isresponsive) property as true.
 
@@ -115,7 +115,7 @@ After giving the Responsiveness:
 ![responsive](How_To_images\makesignatureasresponsive_img2.png)
 
 
-### To check whether any input to the signature control since render
+## To check whether any input to the signature control since render
 
 We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drawn strokes.
 

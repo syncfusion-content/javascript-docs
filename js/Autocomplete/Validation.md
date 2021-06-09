@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in AutoComplete widget for Essential JS
-description: How to use jQuery validation for the AutoComplete.
+title: Validation in JS AutoComplete widget | Syncfusion
+description: Learn here about How to use jQuery validation for the Syncfusion Essential JS AutoComplete control and more.
 platform: js
 control: AutoComplete
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 api: /api/js/ejautocomplete
 ---
 
-## Validation
+# Validation in JS AutoComplete
 
 You can validate the Autocomplete [value](https://help.syncfusion.com/api/js/ejautocomplete#members:value) on form submission by applying [validationRules](https://help.syncfusion.com/api/js/ejautocomplete#members:validationrules) and [validationMessage](https://help.syncfusion.com/api/js/ejautocomplete#members:validationmessage) to the Autocomplete. 
 
@@ -91,5 +91,5 @@ Required field and min value validation is demonstrated in the below given examp
 	
 {% endhighlight %}
 
-![](Validation_images\validation_img1.png)
+![Validation_images1](Validation_images\validation_img1.png)
 

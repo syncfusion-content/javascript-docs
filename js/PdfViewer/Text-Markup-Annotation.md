@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text markup annotation of Syncfusion Essential JS PDF viewer.
-description: Text markup annotation of Syncfusion Essential JS PDF viewer.
+title: Text markup annotation in JS PDF viewer | Syncfusion
+description: Learn here about Text markup annotation of Syncfusion Essential Studio JS PDF viewer control and more.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer
 api: /api/js/ejpdfviewer
 ---
 
-## Text Markup Annotation
+# Text Markup Annotation in JS PDF viewer
 
 The ejPdfViewer control supports adding text markup annotations in the PDF documents. The control also renders the existing text markup annotations from the PDF document when the document is loaded in it.
 
