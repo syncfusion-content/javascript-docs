@@ -93,7 +93,7 @@ Add the `<input>` element within the `<body>` section, which acts as a container
 Create a sample using the command `cat > sample.html` and edit the sample in the terminal window itself by pressing `enter`key. To Add the Syncfusion widget into your HTML page, refer the [`link`](https://help.syncfusion.com/js/control-initialization)
 and press `ctrl + D` to save and exit.
 
-![Getting-Started-on-Linux_images](/Getting-Started on Linux_images/terminal.png)
+![Getting-Started-on-Linux_images](Getting-Started on Linux_images/terminal.png)
 
 To run the sample, execute the below command.
 
