@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Relational-Connection for PivotGrid in Syncfusion Essential JS
-description: Relational Connection Types
+title: Relational Connection for JS PivotGrid Control | Syncfusion
+description: Learn here about Relational Connection Types in Syncfusion Essential JavaScript PivotGrid Control, and more.
 platform: js
 control: PivotGrid
 documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# DataBinding
+# Relational Connection for JS PivotGrid
 
 ## Binding pivot grid to collection
 This section demonstrates binding of a collection to the pivot grid control as data source. For more information on this data source, refer to the following links:
