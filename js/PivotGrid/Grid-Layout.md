@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Grid-Layout with PivotGrid widget for Syncfusion Essential JS
-description: Layouts
+description: Learn here all about Grid Layouts support in Syncfusion Essential JavaScript PivotGrid Control, and more.
 platform: js
 control: PivotGrid
 documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Grid Layout
+# Grid Layout in JavaScript PivotGrid
 
 ## Normal layout
 

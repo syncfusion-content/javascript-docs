@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Resizable widget for Syncfusion Essential JS
-description: To get start with Resizable by adding references.
+title: Getting started with JavaScript Resizable Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript Resizable control, its elements, and more.
 platform: js
 control: Resizable
 documentation: ug
@@ -10,7 +10,7 @@ api: /api/js/ejresizable
 
 ---
 
-# Getting Started
+# Getting Started with JavaScript Resizable
 
 The external script dependencies of  Resizable widget are,
 
@@ -81,7 +81,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
-N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
 ## Initialize Resize
 
@@ -157,11 +157,11 @@ Output of the above code will be as shown below:
 
 Before Resize:
 
-![](Getting-Started_images/Resize.png)
+![Getting_Started_Image1](Getting-Started_images/Resize.png)
 
 During Resize:
 
-![](Getting-Started_images/Resizing.png)
+![Getting_Started_Image2](Getting-Started_images/Resizing.png)
 
 ### Helper
 
