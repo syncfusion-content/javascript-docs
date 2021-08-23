@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System Requirements | JavaScript | Syncfusion
-description: this section provides the information about the system requirements for JavaScript platform with supported browsers
+title: System Requirements for JavaScript | Syncfusion
+description: This section provides the information about the system requirements for JavaScript platform with supported browsers.
 platform: js
 control: Installation and Deployment
 documentation: ug

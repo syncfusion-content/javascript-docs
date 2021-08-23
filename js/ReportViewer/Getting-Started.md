@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started | JavaScript Report Viewer | Syncfusion
-description: Getting started with Syncfusion HTML5 JavaScript Report Viewer
+description: Learn here all about getting started with Syncfusion HTML5 JavaScript Report Viewer Control, its elements, and more.
 platform: js
 control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
 
-# Getting Started
+# Getting Started with JavaScript Report Viewer
 This section explains you the steps required to display a report which is already created and added to your application. The Report Viewer requires a Web API service to process the report files, so you must create any one of the following Web API service.
 
 * [ASP.NET Web API Service](/js/reportviewer/create-aspnet-web-api-service)
