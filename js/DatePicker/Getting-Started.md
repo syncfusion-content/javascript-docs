@@ -11,7 +11,7 @@ api: /api/js/ejdatepicker
 
 ## A new HTML document and required codes
 
-To get start with DatePicker, create a new HTML file and refer the below specified dependent CSS file as well as scripts files.
+To get start with [DatePicker](https://www.syncfusion.com/javascript-ui-controls/js-datepicker), create a new HTML file and refer the below specified dependent CSS file as well as scripts files.
 
 CSS file
 
