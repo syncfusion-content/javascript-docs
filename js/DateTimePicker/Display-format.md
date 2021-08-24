@@ -112,7 +112,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-![Display-format_images1](/Display-format_images/Display-format_img1.png)
+![Display-format_images1](Display-format_images/Display-format_img1.png)
 
 
 ## Day Header format
@@ -191,7 +191,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
   
 
-![Display-format_images2](/Display-format_images/Display-format_img2.png)
+![Display-format_images2](Display-format_images/Display-format_img2.png)
 
 ## Drilldown and Meridian
 
@@ -225,6 +225,6 @@ We can drill down up to time interval on selected date with meridian details.you
 
 Execute the above code to render the following outputs.
 
-![Display-format_images3](/Display-format_images/Display-format_img3.png)
+![Display-format_images3](Display-format_images/Display-format_img3.png)
 
-![Display-format_images4](/Display-format_images/Display-format_img4.png)
+![Display-format_images4](Display-format_images/Display-format_img4.png)
