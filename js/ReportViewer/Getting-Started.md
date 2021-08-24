@@ -112,4 +112,4 @@ You can change the connection string of a report data source before it is loaded
     }
 {% endhighlight %}
 
-N> The previous code shows an option to change the connection string only, but the class provides multiple options to change data source information. To learn more about this, refer to the [`DataSourceCredentials`](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.Reports.EJ.DataSourceCredentials.html#Syncfusion_EJ_ReportViewer__ctor) class.
+N> The previous code shows an option to change the connection string only, but the class provides multiple options to change data source information. To learn more about this, refer to the [`DataSourceCredentials`](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.JavaScript.DataSources.html) class.
