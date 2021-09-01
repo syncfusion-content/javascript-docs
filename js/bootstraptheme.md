@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bootstrap Theme supports all Essential JavaScript Web components
-description: bootstrap theme
+title: Bootstrap Theme for Essential JavaScript components | Syncfusion
+description: Learn here all about bootstrap theme support in Syncfusion Essential JavaScript platform, its elements, and more.
 platform: js
 control: General Topics
 documentation: ug
 ---
 
-# Bootstrap theme
+# Bootstrap Theme for Essential JavaScript components
 
 **Essential JavaScript** supports all its web components to be used more easily under the bootstrap environment. Usually the bootstrap applies its own CSS styles to the HTML elements globally – so that when the third party vendor components used under that environment will get affected with its appearance – due to the overriding of its CSS styles. With this bootstrap theme support available for all the components, it is very easy to create a more responsive application with no fear of overriding.
 
@@ -104,7 +104,7 @@ Initialize the RTE and button controls within the &lt;script&gt; section as show
 
 Running the above code will display the output similar to the below screenshot,
 
-![](bootstraptheme_images\bootstraptheme_img1.png)
+![bootstraptheme_images1](bootstraptheme_images\bootstraptheme_img1.png)
 
 
 N> Apart from the default bootstrap theme, All the Essential JavaScript components are provided with built-in **responsive support**, so that it will adjust automatically based on the browser viewport.  
