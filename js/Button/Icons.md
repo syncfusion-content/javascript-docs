@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons support in JavaScript Button Control | Syncfusion
-description: Learn here all about icons support in Syncfusion Essential JavaScript Button Control, its elements, and more.
+title: JavaScript Icons Library | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential JavaScript Icons Library, its elements, and more.
 platform: js
 control: Button
 documentation: ug
 api : /api/js/ejbutton
 ---
 
-# Icons support in JavaScript Button
+# JavaScript Icons Library
 
 The **Essential Studio for JavaScript** provide icons library that contains the number of in-built icons that can be applied for CSS class names to elements and refer “ej.widgets.all.core.min.css” file. Use the following syntax to apply class names.
 
