@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Display-format
-description: display format
+title: Display format in JQuery DateTimePicker widget | Syncfusion
+description: Learn here all about display format support in Syncfusion JQuery DateTimePicker Control, its elements, and more.
 platform: js
 control: DateTimePicker
 documentation: ug
 api: /api/js/ejdatetimepicker
 ---
 
-# Display format
+# Display format in JQuery DateTimePicker widget
 
-## DateTime format
-
-**DateTimePicker** allows you to define the text representation of a date and time value to be displayed in the **DateTimePicker** control. The format specified is achieved by the **dateTimeFormat** property. Default value of this property is **M/d/yyyy h: mm tt**. To change the “Time Popup” display format, “timeDisplayFormat” is used here. The default value of this property is “**h:mm t**”. 
+**DateTimePicker** allows you to define the text representation of a date and time value to be displayed in the [DateTimePicker](https://www.syncfusion.com/javascript-ui-controls/js-datetime-picker) control. The format specified is achieved by the **dateTimeFormat** property. Default value of this property is **M/d/yyyy h: mm tt**. To change the “Time Popup” display format, “timeDisplayFormat” is used here. The default value of this property is “**h:mm t**”. 
 
 If your company’s website is going to be used all over the world, following the **UTC** time is better. Main benefit of UTC Time is that the time is always guaranteed to be _consistent_. In other words, whenever the time zone of customer is changed you don't have to go back or forth in time from the logging time of the customer to your time zone.
 
@@ -114,7 +112,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-![](/js/DateTimePicker/Display-format_images/Display-format_img1.png)
+![Display-format_images1](Display-format_images/Display-format_img1.png)
 
 
 ## Day Header format
@@ -193,7 +191,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
   
 
-![](/js/DateTimePicker/Display-format_images/Display-format_img2.png)
+![Display-format_images2](Display-format_images/Display-format_img2.png)
 
 ## Drilldown and Meridian
 
@@ -227,6 +225,6 @@ We can drill down up to time interval on selected date with meridian details.you
 
 Execute the above code to render the following outputs.
 
-![](/js/DateTimePicker/Display-format_images/Display-format_img3.png)
+![Display-format_images3](Display-format_images/Display-format_img3.png)
 
-![](/js/DateTimePicker/Display-format_images/Display-format_img3.png)
+![Display-format_images4](Display-format_images/Display-format_img4.png)
