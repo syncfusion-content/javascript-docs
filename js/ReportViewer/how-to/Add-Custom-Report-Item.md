@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Report Item 
-description: Creating a custom report item run-time component in report viewer
+title: Custom Report Item in JavaScript ReportViewer | Syncfusion
+description: Creating a custom report item run-time component in JavaScript ReportViewer Control, its elements, and more.
 platform: js
 control: ReportViewer
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in report viewer.
 
-## Creating a custom report item run-time component
+# Creating a custom report item run-time component
 
 The run-time component of the custom report item is implemented using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component with the bar code custom report item in report viewer.
 
-### Create report item assembly
+## Create report item assembly
 
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
     ![](Custom-Report-Item-images/Custom-Report-Item-2.png)
