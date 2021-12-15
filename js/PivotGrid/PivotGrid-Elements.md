@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About PivotGrid-Elements in JQuery PivotGrid Widget | Syncfusion
+title: About PivotGrid Elements in JQuery PivotGrid Widget | Syncfusion
 description: This document illustrates that how to customize cells with an interactive way in JavaScript PivotGrid control
 platform: js
 control: PivotGrid
@@ -8,9 +8,8 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Essential JS PivotGrid: Elements
+# Essential JS PivotGrid Elements
 
-## Hyperlink
 The pivot grid control supports the hyperlink option to link data for each individual cell. The hyperlink can be enabled separately for row header, column header, value, and summary cells. The following are the respective properties and they should be declared under the property [`hyperlinkSettings`](/api/js/ejpivotgrid#members:hyperlinksettings).
 
 * [`enableColumnHeaderHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablecolumnheaderhyperlink): Enables hyperlink for column headers.
