@@ -10,7 +10,7 @@ documentation: ug
 
 # Download JavaScript Installer
 
-The Syncfusion JavaScript installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/javascript-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
+The Syncfusion JavaScript installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/jquery-ui-widgets) website. You can either download the licensed installer or try our trial installer depending on your license.
 
    -	Trial Installer
    -	Licensed Installer
