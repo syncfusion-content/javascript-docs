@@ -1,6 +1,6 @@
 ---
 layout: post
-title: behavior settings | Syncfusion
+title: Behavior settings in JavaScript DateRangePicker Control | Syncfusion
 description: Default behavior settings for Essential Studio JavaScript Syncfusion DateRangePicker to perform required operation.
 platform: js
 control: DateRangePicker
@@ -8,13 +8,11 @@ documentation: ug
 api: /api/js/ejdaterangepicker
 ---
 
-## Behavior Settings
+# Behavior Settings in JavaScript DateRangePicker
 
 DateRangePicker has some default behavior settings which helps you to perform more operation by Built-in.
 
-### Selected Date Range
-
-#### Value
+## Value
 
 DateRangePicker value can be selected through picking two date values from available two DatePicker calendar or you can set it by using **value** property.
 
@@ -74,7 +72,7 @@ DateRangePicker provides an option to restrict the user to pick the date from sp
 
 ![minmax](minmax_images\minmax_img.png)
 
-#### Separator
+### Separator
 
 The value of the DateRangePicker popup will presented with two date strings which is separated by **separator** (e.g. “"11/1/2016 - 11/2/2017"”). Separator will be “- “by default and this can be changed using API called **separator**. Please check with below code example to setting/changing the separator using **separator** API.
 
@@ -133,7 +131,7 @@ Start Date of range, can be set using API called **startDate** also please refer
 
 
 
-#### End Date
+##### End Date
 
 End Date of the date range can be selected from popup directly. Else this can be also updated by using the API called “**endDate**”.
 
@@ -160,7 +158,7 @@ Below code will explain to use the **endDate** API to set the end Date in popup.
 End Date can be set to popup by entering the date into the second input box in popup
 
 
-### Preset Ranges
+###### Preset Ranges
 
 We can make use of preset range for easy selection on popup. The ranges provided with this API **presetRanges**, will be processed and corresponding label will be added to popup in right side with given label name. By clicking on these labels the associated ranges will be updated in popup. The below code will explain to use **presetRanges** API.
 
@@ -223,7 +221,7 @@ These ranges can be processed and updated to popup by using the **setRange** met
 {% endhighlight %}
 
 
-### TimePicker Option
+###### TimePicker Option
 
 The ranges can be set with time value also by enable the TimePicker in popup using **enableTimePicker** API. Each start date and end date, have separate Time Pickers. Please check with the below code example to enable the time picker.
 

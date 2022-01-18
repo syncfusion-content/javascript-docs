@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential JS PDF viewer.
-description: Overview of Syncfusion Essential JS PDF viewer.
+description: Learn here about Overview of Syncfusion Essential Studio JavaScript PDF viewer Control, its elements, and more.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer, PDF Viewer
 api: /api/js/ejpdfviewer
 ---
 
-## Overview
+# Overview of Syncfusion Essential JS PDF viewer
 
 PDF viewer for JavaScript is a visualization component for viewing and printing the PDF documents in web pages. It is powered by HTML5 or JavaScript and provides various customizations.
 
