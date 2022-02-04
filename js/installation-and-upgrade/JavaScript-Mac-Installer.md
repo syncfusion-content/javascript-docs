@@ -10,18 +10,18 @@ documentation: ug
 
 # JavaScript Mac Installation
 
-## How to download Mac installer?
+## How to download JavaScript Mac installer?
 
-1. Mac installers can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
+1. JavaScript Mac installer can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
 
-2. In the downloads page, click the "Mac" button and download the required Mac installer.
+2. In the downloads page, click the "Mac" button and download the required JavaScript Mac installer.
 
    ![Download Page](Mac-Installer_images/Mac_Download.png)  
 
 
 ## How to resolve the warning message in Catalina OS? 
 
-   While running Syncfusion Mac Installers on Catalina MacOS or later, the below alert will be displayed.
+   While running Syncfusion JavaScript Mac Installer on Catalina MacOS or later, the below alert will be displayed.
 
    ![Alert Image](Mac-Installer_images/Mac_Catalina_MacOS_Alert.png)  
      
