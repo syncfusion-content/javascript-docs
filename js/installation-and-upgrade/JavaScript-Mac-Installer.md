@@ -34,7 +34,7 @@ documentation: ug
 
 The steps below show how to install the Essential Studio JavaScript Mac installer.
 
-1. Open Syncfusion JavaScript Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
+1. Open Syncfusion Essential Studio JavaScript Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
 
    ![Welcome wizard](Mac-Installer_images/Mac_Installer1.png)
    
@@ -48,14 +48,14 @@ The steps below show how to install the Essential Studio JavaScript Mac installe
 
    ![License Agree Confirmation](Mac-Installer_images/Mac_Installer3.png)
    
-   N> Unlock key is not required for installing the Mac installer. Syncfusion Mac installer can be used for developing purposes without registering the Unlock key.
+   N> Unlock key is not required for installing the Mac installer. Syncfusion Essential Studio JavaScript Mac installer can be used for developing purposes without registering the Unlock key.
 
 
 4. The Destination select wizard will appear. You can choose which disc to install the Syncfusion Essential Studio for JavaScript installer on here.
 
    ![Destination](Mac-Installer_images/Mac_Installer5.png)
 
-5. The Installation Type wizard will appear. Click Install to begin the standard installation of the Syncfusion JavaScript Mac installer.
+5. The Installation Type wizard will appear. Click Install to begin the standard installation of the Syncfusion Essential Studio JavaScript Mac installer.
 
    ![Install Location](Mac-Installer_images/Mac_Installer6.png)
 
