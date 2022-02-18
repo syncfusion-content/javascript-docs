@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Report Item 
-description: Creating a custom report item run-time component in report viewer
+title: Custom Report Item in JS ReportViewer Control | Syncfusion
+description: Creating a custom report item run-time component in Syncfusion JS ReportViewer Control, its elements, and more.
 platform: js
 control: ReportViewer
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in report viewer.
 
-## Creating a custom report item run-time component
+# Creating a custom report item run-time component
 
 The run-time component of the custom report item is implemented using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component with the bar code custom report item in report viewer.
 
-### Create report item assembly
+## Create report item assembly
 
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
-    ![](Custom-Report-Item-images/Custom-Report-Item-2.png)
+    ![JS ReportViewer Create report item assembly](Custom-Report-Item-images/Custom-Report-Item-2.png)
 2.	Add the reference "Syncfusion.EJ.ReportViewer", "Syncfusion.SfBarcode.WPF" and "Syncfusion.Shared.WPF" for the extension project.
-    ![](Custom-Report-Item-images/Custom-Report-Item-3.png)  
+    ![JS ReportViewer Create report item](Custom-Report-Item-images/Custom-Report-Item-3.png)  
 
     N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies   
 3.  Add a class "BarcodeCustomReportItem" by inheriting the `ICustomReportItem` interface.
@@ -206,7 +206,7 @@ You must add the `ReportItem` tag for all newly added custom report item with th
 
 After creating the config file, add it to the report viewer application. Run the application, output with the bar code custom report item is rendered as below.
 
-![](Custom-Report-Item-images/Custom-Report-Item-1.png)
+![JS ReportViewer Deploy a custom report item](Custom-Report-Item-images/Custom-Report-Item-1.png)
 
 Shows the invoice report rendered with the bar code custom report item.
    {:.caption}	
