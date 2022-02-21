@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Hierarchical binding with Grid widget for Syncfusion Essential JS
-description: How to bind the hierarchical data
+description: How to bind the hierarchical data in Syncfusion JavaScript Grid Control, its elements, features, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Hierarchical Bindings
+# Hierarchical Bindings in JS Grid
 
 Hierarchical binding can be used to create the Grid with parent and child relation, this facilitate you to view the child records for a particular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining [`childGrid`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. [`childGrid`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid "childGrid") is to define options of child and `childGrid.queryString` is to define the relation between parent and child grid.
 
@@ -60,7 +60,7 @@ N> The Grid's responsive and exporting support is not applicable for Hierarchica
 
 {% endhighlight %}
 
-![](Hierarchy-Grid_images/HierarchyGrid_img1.png)
+![JavaScript Grid Hierarchy Grid](Hierarchy-Grid_images/HierarchyGrid_img1.png)
 
 
 ## Expand or Collapse All Child
@@ -106,7 +106,7 @@ N> 1. while  detail template row is clicked to expand [`detailsExpand`](https://
 N> 2. while  detail template row is clicked to collapse [`detailsCollapse`](https://help.syncfusion.com/api/js/ejgrid#events:detailscollapse "detailsCollapse") event is triggered.
 
 
-# Expand or Collapse by external action
+### Expand or Collapse by external action
 
 To expand or collapse the row by external action use  [`expandCollapse`](https://help.syncfusion.com/api/js/ejgrid#methods:expandcollapse "expandCollapse") method by passing the target object of the row. Refer the below code snippet,
 
