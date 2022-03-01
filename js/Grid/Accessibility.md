@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-## Web Accessibility
+# Web Accessibility in JavaScript Grid
 
 Web Accessibility is achieved in the Grid control through Keyboard Navigation and WAI-ARIA Standard. 
 
