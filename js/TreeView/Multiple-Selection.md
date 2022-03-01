@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple-Selection
-description: multiple selection
+title: Multiple Selection in JavaScript TreeView Control | Syncfusion
+description: Learn here about multiple selection in Syncfusion Essential JavaScript TreeView Control, its elements, and more.
 platform: js
 control: TreeView
 documentation: ug
@@ -9,7 +9,7 @@ api: /api/js/ejtreeview
 ---
 
 
-# Multiple Selection
+# Multiple Selection in JavaScript TreeView
 
 TreeView supports to select the multiple nodes by specifying [allowMultiSelection](https://help.syncfusion.com/api/js/ejtreeview#members:allowmultiselection) as true. It allows you to select more than one nodes in TreeView.
 
