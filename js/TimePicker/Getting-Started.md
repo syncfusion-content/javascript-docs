@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JavaScript TimePicker Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JavaScript TimePicker Control, its elements, and more.
 platform: js
 control: TimePicker
 documentation: ug
 api: /api/js/ejtimepicker
 ---
 
-# Getting Started
+# Getting Started with JavaScript TimePicker
 
 This section explains briefly about how to create a **TimePicker** in your application with **JavaScript.** The **Essential JavaScript** **TimePicker** provides support to display a **TimePicker** in your web page and allows you to pick a time from the given **TimePicker**. Here, you can learn how to customize two dates and **TimePickers** in a real-time hotel table booking application. 
 
 The following screenshot illustrates the functionality of a **TimePicker** with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
-![](/js/TimePicker/Getting-Started_images/Getting-Started_img1.png) 
+![JavaScript TimePicker Getting Started](/js/TimePicker/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a TimePicker 
 
@@ -136,7 +136,7 @@ Add the following styles to show **Time Picker** control.
 
 The following screenshot displays a **TimePicker** control.
 
-![](/js/TimePicker/Getting-Started_images/Getting-Started_img2.png) 
+![JavaScript TimePicker Create a TimePicker](/js/TimePicker/Getting-Started_images/Getting-Started_img2.png) 
 
 ## Set the Min and Max Values
 
@@ -169,7 +169,7 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
 
 The above code example displays the following output.
 
-![](/js/TimePicker/Getting-Started_images/Getting-Started_img3.png) 
+![JavaScript TimePicker Set the Min and Max Values](/js/TimePicker/Getting-Started_images/Getting-Started_img3.png) 
 
 ## Set Time Interval
 
@@ -206,7 +206,7 @@ Execute the above code to achieve the desired result. You can select the date an
 
 
 
-![](/js/TimePicker/Getting-Started_images/Getting-Started_img4.png) 
+![JavaScript TimePicker Set Time Interval](/js/TimePicker/Getting-Started_images/Getting-Started_img4.png) 
 
 ## Display the Acknowledgment Message
 
@@ -248,7 +248,7 @@ The following code example shows how to display the **acknowledgment message**.
 
 The following screenshot displays the **acknowledgment message**.
 
-![](/js/TimePicker/Getting-Started_images/Getting-Started_img5.png) 
+![JavaScript TimePicker Display the Acknowledgment Message](/js/TimePicker/Getting-Started_images/Getting-Started_img5.png) 
 
 ## Create Two TimePickers
 
@@ -356,7 +356,7 @@ Initialize **Two TimePickers** using the following code example.
 
 Execute the above code to achieve the desired result. By selecting the **Start Time** in the first **TimePicker**, you can select the End Time within the given range. This restricts you from selecting false time. This scenario is illustrated in the following screenshot.
 
-![](/js/TimePicker/Getting-Started_images/Getting-Started_img6.png) 
+![JavaScript TimePicker Create Two TimePickers](/js/TimePicker/Getting-Started_images/Getting-Started_img6.png) 
 
 
 
