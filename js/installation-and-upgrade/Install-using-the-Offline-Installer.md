@@ -10,7 +10,7 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/js/installation-and-upgrade/download) section to learn how to get the JavaScript trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/js/installation-and-upgrade/download) section to learn how to get the JavaScript installer.
 
 ## Installing with UI   
 
