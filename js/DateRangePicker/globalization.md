@@ -1,14 +1,14 @@
 ---
 layout: post
-title: globalization
-description: globalization
+title: Globalization in JavaScript DateRangePicker Control | Syncfusion
+description: Learn here about globalization in Syncfusion Essential JavaScript DateRangePicker Control, its elements, and more.
 platform: js
 control: DateRangePicker
 documentation: ug
 api: /api/js/ejdaterangepicker
 ---
 
-## Globalization
+# Globalization in JavaScript DateRangePicker
 
 DateRangePicker, has built in support with Localization so that you can make use of culture specified DateRangePicker component with your application using **locale** API, 
 
@@ -20,7 +20,7 @@ Also we have added Localized text files to DateRangePicker for 28 standard cultu
 
 [https://github.com/syncfusion/ej-global](https://github.com/syncfusion/ej-global)
 
-### Setting different culture to control
+## Setting different culture to control
 
 By setting another culture other than English we need to set using **locale** API like below code example.
 
@@ -68,6 +68,3 @@ To get the localized text, it is necessary to add localized text file, else you 
         };
 
 {% endhighlight %}
-
-
-

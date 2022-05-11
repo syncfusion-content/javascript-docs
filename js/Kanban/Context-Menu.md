@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Kanban context menu 
+title: Context menu support in JavaScript Kanban Control | Syncfusion
 description: This section explains how to enable context menu and its functionalities using the Syncfusion JavaScript Kanban component. 
 documentation: ug
 platform: js
@@ -8,7 +8,7 @@ keywords: context menu ,kanban context menu
 api : /api/js/ejkanban
 ---
 
-# Context Menu  
+# Context Menu in JavaScript Kanban
 
 Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [contextMenuSettings](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings) property of [enable](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-enable) set as true. Context menu has option to add default items in [`contextMenuSettings.menuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-menuitems) and customized items in [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems).
 
