@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential JS PDF Viewer
+title: JavaScript PDF Viewer Overview | Syncfusion
 description: Learn here about Overview of Syncfusion Essential JavaScript PDF Viewer Control, its elements, and more.
 platform: js
 control: PDF viewer
