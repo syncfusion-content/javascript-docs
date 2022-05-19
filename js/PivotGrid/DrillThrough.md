@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Drill Through
+# Drill Through in JavaScript PivotGrid
 
 The drill-through retrieves raw items that are used to create a specific cell. To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enabledrillthrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event by which you can bind them to an external widget for a precise view.
 
