@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Kanban Swimlanes
+title: Swimlanes in JavaScript Kanban Control | Syncfusion
 description: This section explains the horizontal categorization of issues in the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
@@ -8,7 +8,7 @@ keywords: swimlanes,kanban swimlanes
 api : /api/js/ejkanban
 ---
 
-# Swim lanes
+# Swimlanes in JavaScript Kanban
 
 Swim lanes are a horizontal categorization of issues in the Kanban control which brings transparency to the workflow. This can be enabled by mapping the [swimlaneKey](https://help.syncfusion.com/api/js/ejkanban#members:fields-swimlanekey) to appropriate column name in the [`dataSource`](https://help.syncfusion.com/api/js/ejkanban#members:datasource).
 
