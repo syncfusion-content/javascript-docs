@@ -9,7 +9,7 @@ keywords: ejPdfViewer, PDF Viewer
 api: /api/js/ejpdfviewer
 ---
 
-# Overview of JavaScript PDF Viewer
+# JavaScript PDF Viewer Overview
 
 PDF viewer for JavaScript is a visualization component for viewing and printing the PDF documents in web pages. It is powered by HTML5 or JavaScript and provides various customizations.
 
