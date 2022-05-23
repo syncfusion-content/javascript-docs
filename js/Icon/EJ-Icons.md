@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Essential Studio for JavaScript:Icon Package
-description: Learn here about getting started with Syncfusion Essential Studio for JavaScript:Icon Package, its elements and more.
+description: Learn here about getting started with Syncfusion Essential Studio for JavaScript:Icon Package, its elements, and more.
 platform: js
 control: General Topics 
 documentation: ug
