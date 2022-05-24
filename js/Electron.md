@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started for Electron
-description: How to use Essential JS with Electron.
+title: Getting Started | Electron | JS | Syncfusion
+description: Learn here more about getting started with Syncfusion JS platform Electron control, its elements, and more.
 platform: js
 control: Introduction
 documentation: ug
 ---
 
 
-# Electron 
+# Getting started with JS Electron
 
 
 ## Introduction
@@ -75,7 +75,7 @@ N> For Mac OS run the command in administrator mode with $sudo as prefix
 
         {% endhighlight %}
 
-![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img1.png)
+![JS Electron Steps to add the sample and run the application](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img1.png)
 
 
 
@@ -89,7 +89,7 @@ N> For Mac OS run the command in administrator mode with $sudo as prefix
 
 
 
-![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img2.png)
+![JS Electron Repository](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img2.png)
 
 
 
@@ -103,7 +103,7 @@ N> For Mac OS run the command in administrator mode with $sudo as prefix
 
 
 
-![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img3.png)
+![JS Electron Install dependencies](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img3.png)
 
 
 N> Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs).
@@ -116,7 +116,7 @@ Add the Syncfusion JS and CSS file reference in index.html file as mentioned on 
 
 
 
-![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img4.png)
+![JS Electron Index html location](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img4.png)
 
 N> When refer jQuery reference add the below_ [code](http://electron.atom.io/docs/faq/) _in head tag._
 
@@ -178,7 +178,7 @@ $ npm start 
 
 
 
-![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img5.png)
+![JS Electron Application](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img5.png)
 
 
 
@@ -187,7 +187,7 @@ Now see the created Electron Application as below.
 
 
 
-![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img6.png)
+![JS Electron Created Application](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img6.png)
 
 
 
