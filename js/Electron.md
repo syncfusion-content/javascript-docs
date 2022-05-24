@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Electron | JS | Syncfusion
-description: Learn here about getting started with Syncfusion JS with Electron control, its elements, and more.
+description: Learn here more about getting started with Syncfusion JS platform Electron control, its elements, and more.
 platform: js
 control: Introduction
 documentation: ug
