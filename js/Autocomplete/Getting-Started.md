@@ -147,3 +147,4 @@ The [showPopupButton](https://help.syncfusion.com/api/js/ejautocomplete#members:
 
 ![Autocomplete-PopupButton](getting-started_images\getting-started_img2.png)
 
+> You can refer to our [JavaScript AutoComplete](https://www.syncfusion.com/javascript-ui-controls/js-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript AutoComplete example](https://ej2.syncfusion.com/demos/#/material/auto-complete/default) to understand how to render and configure the AutoComplete in JavaScript.
