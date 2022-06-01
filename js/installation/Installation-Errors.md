@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Syncfusion Essential Studio JavaScript products
-description: Learn how to install Syncfusion JavaScript installer and deploy the Syncfusion JavaScript component.
+title: Installation Errors in JavaScript - Syncfusion
+description: Learn here about the common installation errors and solution to those errors in Syncfusion JavaScript Components installation.
 platform: js
 control: Installation and Deployment
 documentation: ug
