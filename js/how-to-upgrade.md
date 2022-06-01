@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrading Syncfusion JavaScript installer to a latest version
+title: Upgrading Syncfusion JavaScript installer to the latest version
 description: Learn here about the how upgrade Syncfusion JavaScript installer to a latest version from website and control panel.
 platform: js
 control: Essential Studio
