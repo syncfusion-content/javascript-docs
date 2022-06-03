@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# System requirements for JavaScript Components
+# System Requirements for JavaScript Components
 
 The system requirements for using our Syncfusion JavaScript platform are as follows
 
