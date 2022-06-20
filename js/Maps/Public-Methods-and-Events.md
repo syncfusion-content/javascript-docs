@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Public Methods and Events
-description: Public methods and events
+title: Public Methods and Events in JavaScript Maps | Syncfusion
+description: Learn about Easy Customization support in Syncfusion JavaScript Maps control, its elements, and more
 platform: js
 control: Maps
 documentation: ug
@@ -9,7 +9,7 @@ api: /api/js/ejmap
 ---
 
 
-## Methods
+# Methods in JavaScript Maps 
 
 ### navigateTo(latitude, longitude, level)
 
