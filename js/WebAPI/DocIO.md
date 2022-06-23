@@ -1,13 +1,13 @@
 ---
 layout: post
-title: webAPI reference for DocIO
-description: webAPI reference for DocIO
+title: webAPI reference for DocIO in js webAPI
+description: Learn about Easy Customization support in Syncfusion js webAPI control, its elements, and more.
 documentation: ug
 platform: js
 keywords: DocIO, syncfusion, DocIO webapi
 ---
 
-## GenerateWordDocument
+# Generate Word Document in js webAPI
 
 [POST] [/Api/DocIO/GenerateWordDocument](http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateWordDocument)
 
