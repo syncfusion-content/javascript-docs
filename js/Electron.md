@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for JavaScript Electron | Syncfusion
+title: Introduction of JavaScript Electron | Syncfusion
 description: Learn here about introduction of Syncfusion Essential JavaScript Electron Control, its elements, and more.
 platform: js
 control: Introduction
