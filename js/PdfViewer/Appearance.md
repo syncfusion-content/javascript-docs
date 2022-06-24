@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Altering apperance of Syncfusion Essential JS PDF viewer.
-description: Altering apperance of Syncfusion Essential JS PDF viewer.
+description: Learn here about apperance support in Syncfusion Essential JavaScript PDF Viewer Control, its elements, and more.
 platform: js
 control: PDF viewer
 documentation: ug
 api: /api/js/ejpdfviewer
 ---
 
-## Appearance
+# Appearance in JavaScript PDF Viewer
 
 You can apply themes to the ejPdfViewer to match the themes of your application.
 
