@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Essential Studio JavaScript Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio JavaScript license key, how to generate the license key, how to register the license key, and more details.
+title: Overview of Syncfusion license and unlock keys - Syncfusion
+description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
 platform: js
 control: Essential Studio
 documentation: ug
 ---
 
 
-# License Key Registration
+# Syncfusion Licensing Overview
 
 You must have an active Syncfusion Essential JS license to use Syncfusion Essential JS2 or Essential JS1 (.js files). However, if you only use the Syncfusion Essential JavaScript product, you do not need to register the Syncfusion License keys in your scripts (.js files).
 
