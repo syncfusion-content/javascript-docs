@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Downloading Syncfusion JavaScript web installer - Syncfusion
-description: TLearn here about the how to download Syncfusion JavaScript web installer from our syncfusion website with license.
+description: Learn here about how to download Syncfusion JavaScript web installer from our syncfusion website with license.
 platform: js
 control: Installation and Deployment
 documentation: ug
