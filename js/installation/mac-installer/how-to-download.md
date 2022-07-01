@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Downloading Syncfusion JavaScript Mac installer - Syncfusion
-description: Learn here about the how to download Syncfusion JavaScript mac installer packages from syncfusion website.
+description: Learn here about how to download Syncfusion JavaScript mac installer packages from syncfusion website.
 platform: js
 control: Installation and Deployment
 documentation: ug
