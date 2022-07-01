@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Downloading Syncfusion JavaScript installer - Syncfusion
-description: Learn here about the how to download Syncfusion JavaScript offline installer from our syncfusion website.
+description: Learn here about how to download Syncfusion JavaScript offline installer from our syncfusion website.
 platform: js
 control: Installation and Deployment
 documentation: ug
