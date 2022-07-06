@@ -318,6 +318,22 @@ We can add a lane at runtime width client side API method addLane. please refer 
 
 * The lanes [cssClass](/api/js/ejdiagram#members:nodes-lanes-cssclass "cssClass") property is used to customize the style of lanes using user defined CSS class.
 
+## Get a lane collection at runtime
+This method returns the lane collection at runtime.
+
+The following code example illustrates how to get the phase collection at runtime.
+
+{% highlight javascript %}
+
+// Diagram instances returns the diagram object
+var diagram = $("#diagram").ejDiagram("instance");
+
+// Getting swimlane object
+var swimlane = diagram.selectionList[0];
+
+// The variable returns the lane collection by passing both diagram and swimlane object
+var lanes= ej.datavisualization.Diagram.SwimLaneContainerHelper.getLanes(diagram,swimlane);
+
 ## Custom Properties
 
 The [addInfo](/api/js/ejdiagram#members:nodes-lanes-addinfo "addInfo") property of lane allows to maintain additional information to lane.
@@ -418,3 +434,22 @@ N> A default phase is added, when the phase collection of the swimlane is empty.
 ## Limitations
 
 * You cannot add connectors as the children of lanes.
+
+## Get a phase collection at runtime
+This method returns the phase collection at runtime.
+
+The following code example illustrates how to get the phase collection at runtime.
+
+{% highlight javascript %}
+
+// Diagram instances returns the diagram object
+var diagram = $("#diagram").ejDiagram("instance");
+
+// Getting swimlane object
+var swimlane = diagram.selectionList[0];
+
+// The variable returns the phase collection by passing both diagram and swimlane object
+var phases=ej.datavisualization.Diagram.SwimLaneContainerHelper.getPhases(diagram,swimlane);
+
+ 
+      
