@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Public Methods and Events
-description: Public methods and events
+title: Public Methods and Events in JavaScript Maps Control | Syncfusion
+description: Learn here about Public methods and events in Syncfusion Essential JavaScript Maps Control, its elements, and more.
 platform: js
 control: Maps
 documentation: ug
@@ -9,9 +9,9 @@ api: /api/js/ejmap
 ---
 
 
-## Methods
+# Methods and Events in JavaScript Maps
 
-### navigateTo(latitude, longitude, level)
+## navigateTo(latitude, longitude, level)
 
 Method for navigating to specific shape based on latitude, longitude and zoom level, you can use [`navigateTo`](../api/ejmap#methods:navigateto) method.
 
