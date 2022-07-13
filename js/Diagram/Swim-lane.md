@@ -321,7 +321,7 @@ We can add a lane at runtime width client side API method addLane. please refer 
 ## Get a lane collection at runtime
 This method returns the lane collection at runtime.
 
-The following code example illustrates how to get the phase collection at runtime.
+The following code example illustrates how to get the lane collection at runtime.
 
 {% highlight javascript %}
 
@@ -331,7 +331,7 @@ var diagram = $("#diagram").ejDiagram("instance");
 // Getting swimlane object
 var swimlane = diagram.selectionList[0];
 
-// The variable returns the lane collection by passing both diagram and swimlane object
+// This method returns the lane collection by passing both diagram and swimlane object as a argument
 var lanes= ej.datavisualization.Diagram.SwimLaneContainerHelper.getLanes(diagram,swimlane);
 
 ## Custom Properties
@@ -448,7 +448,7 @@ var diagram = $("#diagram").ejDiagram("instance");
 // Getting swimlane object
 var swimlane = diagram.selectionList[0];
 
-// The variable returns the phase collection by passing both diagram and swimlane object
+// This method returns the phase collection by passing both diagram and swimlane object as a argument
 var phases=ej.datavisualization.Diagram.SwimLaneContainerHelper.getPhases(diagram,swimlane);
 
  
