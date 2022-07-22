@@ -1,13 +1,13 @@
 ---
-title: Getting started with Schedule component	
-description: Rendering a basic Scheduler with remote data
+title: Getting started with JavaScript Schedule Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JavaScript Schedule Control, its elements, and more.
 platform: js
 control: schedule
 documentation: ug
 keywords: ejschedule, schedule, schedule widget, js schedule
 api: /api/js/ejschedule 
 ---
-# Getting Started
+# Getting Started with JavaScript Schedule
 
 To render the Schedule control, the following list of external dependencies are needed, 
 
@@ -193,6 +193,6 @@ $(function() { // Document is ready
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![JavaScript Schedule Mapper Fields](Getting-Started_images/Getting-Started_img1.png)
 
 

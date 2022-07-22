@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential JS
-description: How to enable filtering and its functionalities
+description: Learn here about filtering and its functionalities in Syncfusion JavaScript Grid Control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Filtering
+# Filtering in JavaScript Grid
 
 Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set  [`allowFiltering`](https://help.syncfusion.com/api/js/ejgrid#members:allowfiltering "allowFiltering")  as `true`. 
 
@@ -61,7 +61,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img1.png)
+![JavaScript Grid filtering Menu filter](filtering_images/filtering_img1.png)
 
 
 ## Menu filter
@@ -103,19 +103,19 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img2.png)
+![JavaScript Grid Numeric Filter](filtering_images/filtering_img2.png)
 {:caption}
 Numeric Filter
 
-![](filtering_images/filtering_img3.png)
+![JavaScript Grid String Filter](filtering_images/filtering_img3.png)
 {:caption}
 String Filter
 
-![](filtering_images/filtering_img4.png)
+![JavaScript Grid Date Filter](filtering_images/filtering_img4.png)
 {:caption}
 Date Filter
 
-![](filtering_images/filtering_img5.png)
+![JavaScript Grid Boolean Filter](filtering_images/filtering_img5.png)
 
 Boolean Filter
 
@@ -149,7 +149,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img6.png)
+![JavaScript Grid Checkbox list](filtering_images/filtering_img6.png)
 
 
 ### Checkbox list generation:
@@ -183,7 +183,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img7.png)
+![JavaScript Grid Add current selection](filtering_images/filtering_img7.png)
 
 
 ### Add current selection to filter checkbox:
@@ -192,7 +192,7 @@ When filtering is done multiple times on the same column then the previously fil
 
 The following image describes the above mentioned behavior.
 
-![](filtering_images/filtering_img12.png)
+![JavaScript Grid Case Sensitivity](filtering_images/filtering_img12.png)
 
 
 ### Case Sensitivity
@@ -220,7 +220,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img8.png)
+![JavaScript Grid External Filtering](filtering_images/filtering_img8.png)
 
 ### External Filtering 
 
@@ -255,7 +255,7 @@ $("#filter").click(function(args){
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img13.png)
+![JavaScript Grid Filter bar](filtering_images/filtering_img13.png)
 
 ## Filter bar
 
@@ -420,7 +420,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img9.png)
+![JavaScript Grid Filter bar modes](filtering_images/filtering_img9.png)
 
 
 Filter bar modes:
@@ -459,7 +459,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img10.png)
+![JavaScript Grid Filter Operators](filtering_images/filtering_img10.png)
 
 
 ## Filter Operators
@@ -681,6 +681,6 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img11.png)
+![JavaScript Grid After Filtering](filtering_images/filtering_img11.png)
 {:caption}
 After Filtering
