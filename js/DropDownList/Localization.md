@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in DropDownList widget for Syncfusion Essential JS
-description: Localization in DropDownList widget for Syncfusion Essential JS
+title: Localization in JavaScript DropDownList Control | Syncfusion
+description: Learn here about Localization in Syncfusion Essential JavaScript DropDownList Control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
 keywords: Localization, DropDownList, dropdown
 api: /api/js/ejdropdownlist
 ---
-# Localization
+# Localization in JavaScript DropDownList
 
 The DropDownList provides option to localize its strings, it is used to adapting the DropDownList to a particular local language. By default, the DropDownList will use the US English (en-US) as its language.
 
