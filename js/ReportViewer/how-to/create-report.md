@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Create or design SSRS RDL, RDLC report | Report Viewer | Syncfusion
-description: Create or design SSRS RDL, and RDLC report to render in Syncfusion HTML5 JavaScript Report Viewer.
+description: Create or design SSRS RDL, and RDLC report to render in Syncfusion HTML5 JavaScript Report Viewer Control, its elements, and more.
 platform: js
 control: Report Viewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
 
-# Create report
+# Create report in JavaScript Report Viewer
 This topic describes how to create a RDL and RDLC reports to use in Report Viewer.
 
 ## Create RDL report
