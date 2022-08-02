@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CheckBox with DropDownList widget for Syncfusion Essential JS
-description: Describes about Checkbox functionalities in DropDownList widget for Syncfusion Essential JS
+description: Describes about Checkbox functionalities in DropDownList widget for Syncfusion Essential JavaScript DropDownList Control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: Checkbox, dropdown, Selection Modes, Visual Mode, Delimiter
 api: /api/js/ejdropdownlist
 ---
 
-# Checkbox
+# Checkbox in JavaScript DropDownList
 
 DropDownList displays checkboxes to the left of each item when you set [showCheckbox](https://help.syncfusion.com/api/js/ejdropdownlist#members:showcheckbox) property to true. It allows you to select more than one item at a time from DropDownList. Popup list stays open until the user finishes selection. When you click on an item’s text or checkbox then the checkbox checked status get change.
 
@@ -50,7 +50,7 @@ DropDownList displays checkboxes to the left of each item when you set [showChec
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img1.jpeg)
+![JavaScript DropDownList Checkbox](Checkbox_images/Checkbox_img1.jpeg)
 
 N> if you want to showcase the DropDownList with default checked items on data binding, specify selected field with Boolean values.
 
@@ -98,7 +98,7 @@ N> if you want to showcase the DropDownList with default checked items on data b
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img2.jpeg)
+![JavaScript DropDownList Selection Modes](Checkbox_images/Checkbox_img2.jpeg)
 
 ## Selection Modes
 
@@ -154,7 +154,7 @@ Each checked item’s text is appended to the textbox with delimiter “,” by 
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img3.jpeg)
+![JavaScript DropDownList Delimiter](Checkbox_images/Checkbox_img3.jpeg)
 
 ### Visual Mode
 
@@ -199,7 +199,7 @@ When you enable this option in DropDownList widget, each checked item’s text i
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img4.jpeg)
+![JavaScript DropDownList Visual Mode](Checkbox_images/Checkbox_img4.jpeg)
 
 ## Check/Uncheck All
 
