@@ -334,6 +334,8 @@ var swimlane = diagram.selectionList[0];
 // This method returns the lane collection by passing both diagram and swimlane object as a argument
 var lanes= ej.datavisualization.Diagram.SwimLaneContainerHelper.getLanes(diagram,swimlane);
 
+{% endhighlight %}
+
 ## Custom Properties
 
 The [addInfo](/api/js/ejdiagram#members:nodes-lanes-addinfo "addInfo") property of lane allows to maintain additional information to lane.
@@ -450,6 +452,5 @@ var swimlane = diagram.selectionList[0];
 
 // This method returns the phase collection by passing both diagram and swimlane object as a argument
 var phases=ej.datavisualization.Diagram.SwimLaneContainerHelper.getPhases(diagram,swimlane);
-
- 
       
+{% endhighlight %}
