@@ -8,7 +8,7 @@ documentation: ug
 keywords: ComboBox, combobox, data binding, REStFul Binding, WebAPI, Web Method, OData, OData4
 ---
 
-# Data Binding
+# Data Binding in JavaScript ComboBox
 
 The ComboBox loads the data either from local data sources or remote data services using the dataSource property. It supports the data type of array or DataManager.
 
@@ -129,4 +129,4 @@ In the following sample, displayed first 6 contacts from the `customer` table of
 		
 {% endhighlight %}
 
-![](DataBinding_images/DataBinding_image1.png)
+![JavaScript ComboBox databinding](DataBinding_images/DataBinding_image1.png)
