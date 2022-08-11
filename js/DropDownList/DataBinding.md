@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding in DropDownList widget for Syncfusion Essential JS
-description: Describes about the data binding in DropDownList widget for Syncfusion Essential JS
+description: Learn here about Data binding support in Syncfusion Essential JavaScript DropDownList Control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: DropDownList, dropdown, data binding, REStFul Binding, WebAPI, Web Met
 api: /api/js/ejdropdownlist
 ---
 
-# Data Binding
+# Data Binding in JavaScript DropDownList
 
 To populate data in the DropDownList widget, define [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property with associated fields. In DropDownList, can bind either local array or OData, WebApi and other [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) services.
 
@@ -236,7 +236,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 
 {% endhighlight %}
 
-![](DataBinding_images/DataBinding_img1.jpeg)
+![JavaScript DropDownList data binding](DataBinding_images/DataBinding_img1.jpeg)
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
 I> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](http://jsplayground.syncfusion.com/Sync_px3jew3i) 
@@ -339,7 +339,7 @@ By using URL property of “ej.DataManager” bind OData Version 4 Service link 
 {% endhighlight %}
            
            
-![](DataBinding_images/DataBinding_img2.jpeg)
+![JavaScript DropDownList WebAPI binding](DataBinding_images/DataBinding_img2.jpeg)
 
 N> Events associated with remote data bind is listed [here](https://help.syncfusion.com/api/js/ejdropdownlist#events). 
 
@@ -387,7 +387,7 @@ Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptor
 
 {% endhighlight %}
 
-![](DataBinding_images/DataBinding_img3.jpeg)
+![JavaScript DropDownList Method binding](DataBinding_images/DataBinding_img3.jpeg)
 
 ## ASP.NET Web Method Binding
 
@@ -609,7 +609,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
 
 {% endhighlight %}
 
-![](DataBinding_images/DataBinding_img4.jpeg)
+![JavaScript DropDownList virtual scrolling](DataBinding_images/DataBinding_img4.jpeg)
 
 
 ## Virtual Scrolling 

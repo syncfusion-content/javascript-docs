@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling and appearance with Grid widget for Syncfusion Essential JS
-description: How to apply styling and appearance
+title: Styling and appearance in JavaScript Grid Control | Syncfusion
+description: Learn here about Styling and appearance in Syncfusion Essential JavaScript Grid Control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Styling
+# Styling and appearance in JavaScript Grid
 
 ## List of classes and its purposes
 
