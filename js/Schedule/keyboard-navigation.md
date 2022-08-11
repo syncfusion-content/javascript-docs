@@ -1,13 +1,13 @@
 ---
-title: Keyboard support with shortcut keys
-description: Accessing Scheduler actions through Keyboard shortcuts 
+title: Keyboard Navigation in JavaScript Schedule Control | Syncfusion
+description: Learn here about Keyboard Navigation in Syncfusion Essential JavaScript Schedule Control, its elements, and more.
 platform: js
 control: schedule
 documentation: ug
 keywords: keyboard, shortcuts
 api: /api/js/ejschedule 
 ---
-# Keyboard Navigation
+# Keyboard Navigation in JavaScript Schedule
 
 The shortcut keys for accessing the sub-elements of the scheduler and other Scheduler actions are tabulated in the following table.
 
