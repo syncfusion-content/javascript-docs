@@ -1,8 +1,7 @@
 ---
 layout: post
-title: RichTextEditor Widgets in JavaScript | Syncfusion
-description: Learn here all more about RichTextEditor Widgets support in Syncfusion Essential JavaScript control, its elements, and more.
-platform: js
+title: User-Interface in JavaScript RichTextEditor Control | Syncfusion
+description: Learn here all more about user-interface support in Syncfusion JavaScript RichTextEditor control, its elements, and more.
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Toolbar Configuration, Custom Tool, Tool items
