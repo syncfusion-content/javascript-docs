@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ComboBox widget in JavaScript | Syncfusion
-description: Learn here all more about ComboBox widgets support in Syncfusion Essential JavaScript control, its elements, and more.
+title: DataBinding in JavaScript ComboBox Control | Syncfusion
+description: Learn here all more about DataBinding support in Syncfusion Essential JavaScript ComboBox control, its elements, and more.
 platform: js
 control: ComboBox
 documentation: ug
