@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataBinding in JavaScript ComboBox Control | Syncfusion
-description: Learn here all more about DataBinding support in Syncfusion Essential JavaScript ComboBox control, its elements, and more.
+description: Learn here all about DataBinding support in Syncfusion Essential JavaScript ComboBox control, its elements, and more.
 platform: js
 control: ComboBox
 documentation: ug
