@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Preventing cross-site scripting
-description: How to prevent the cross-site scripting in syncfusion essential js widgets during application loading or dynamically.
+title: XXS Security in ReactJS Chart Control | Syncfusion
+description: Learn here all about XSS Security support in Syncfusion Essential JavaScript Introduction control, its elements, and more.
 platform: js
 control: Introduction
 documentation: ug
 ---
 
-# Preventing Cross-Site Scripting
+# Preventing Cross-Site Scripting in JavaScript Introduction
 
 ## XSS Attack
 
@@ -72,7 +72,7 @@ The following code example from response.html page illustrates this,
 The above code example validated the query string values from request.html page by using the html sanitizer. It produce the trusted data which is given as the value for the ejRTE control.
 
 The following output is displayed as a result of the above code example.
-![](XSS-Security_images/rte.png)
+![JavaScript Introduction XXS protection](XSS-Security_images/rte.png)
 
 ## XSS protection for MVC platform
 
