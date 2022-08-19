@@ -592,12 +592,12 @@ $(function () {
 
 The following screenshot displays the load on demand for local data source in TreeView control.
 
-![JavaScript Treeview local data source](/js/TreeView/Populate-Data_images/Populate-Data_img1.png)
+![JavaScript Treeview local data source](Populate-Data_images/Populate-Data_img1.png)
 
 While expanding the parent node
 {:.caption}
 
-![JavaScript Treeview load on demand](/js/TreeView/Populate-Data_images/Populate-Data_img2.png)
+![JavaScript Treeview load on demand](Populate-Data_images/Populate-Data_img2.png)
 
 After expanding the parent node
 {:.caption}

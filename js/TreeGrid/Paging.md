@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in JavaScript Treeview Control | Syncfusion
+title: Paging in JavaScript TreeGrid Control | Syncfusion
 description: Learn here all about pagging support in Syncfusion Essential JavaScript TreeGrid control, its elements, and more. 
 platform: js
 control: TreeGrid
