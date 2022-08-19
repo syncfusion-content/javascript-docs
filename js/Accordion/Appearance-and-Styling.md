@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance-and-Styling | Syncfusion
-description: appearance and styling
+title: Appearance and Styling in JavaScript Accordion Control | Syncfusion
+description: Learn here about appearance and styling support in Syncfusion Essential JavaScript Accordion Control, its elements, and more.
 platform: js
 control: Accordion 
 documentation: ug
 api: /api/js/ejaccordion
 ---
 
-# Appearance and Styling
+# Appearance and Styling in JavaScript Accordion
 
 ## Adjusting Accordion size
 
