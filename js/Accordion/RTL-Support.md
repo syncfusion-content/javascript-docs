@@ -1,14 +1,14 @@
 ---
 layout: post
-title: RTL-Support
-description: rtl support
+title: RTL Support in JavaScript Accordion Control | Syncfusion
+description: Learn here about rtl support in Syncfusion Essential JavaScript Accordion Control, its elements, and more.
 platform: js
 control: Accordion 
 documentation: ug
 api: /api/js/ejaccordion
 ---
 
-# RTL Support
+# RTL Support in JavaScript Accordion
 
 This feature supports to change the left-to-right alignment of the **Accordion** widget to right-to-left (**RTL**). 
 
@@ -60,5 +60,5 @@ In an HTML page, define a div element that is a container for  Accordion widg
 
 Output for accordion when “enableRTL” is set to “true” is as follows,
 
-![](/js/Accordion/RTL-Support_images/RTL-Support_img1.png) 
+![JavaScript Accordion RTL Support](RTL-Support_images/RTL-Support_img1.png) 
 

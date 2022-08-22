@@ -1,14 +1,14 @@
 ---
 layout: post
-title: View-multiple-contents
-description: view multiple contents
+title: View multiple contents in JavaScript Accordion Control | Syncfusion
+description: Learn here about view multiple contents in Syncfusion Essential JavaScript Accordion Control, its elements, and more.
 platform: js
 control: Accordion 
 documentation: ug
 api: /api/js/ejaccordion
 ---
 
-# View multiple contents
+# View multiple contents in JavaScript Accordion
 
 By default **Accordion** allows only one panel to be in expanded state. You can enable multiple panels in expand state by setting [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) to **true.**
 
@@ -61,5 +61,5 @@ In an HTML page, define a div element that is a container for  Accordion wi
 Following screenshot is the output for Accordion control on enableMultipleOpen set to true.
 
 
-![](/js/Accordion/View-multiple-contents_images/View-multiple-contents_img1.png)
+![JavaScript Accordion View multiple contents](View-multiple-contents_images/View-multiple-contents_img1.png)
 
