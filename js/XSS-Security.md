@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Preventing Cross-Site Scripting in JavaScript Introduction
+# Preventing Cross-Site Scripting
 
 ## XSS Attack
 
@@ -72,7 +72,7 @@ The following code example from response.html page illustrates this,
 The above code example validated the query string values from request.html page by using the html sanitizer. It produce the trusted data which is given as the value for the ejRTE control.
 
 The following output is displayed as a result of the above code example.
-![JavaScript Introduction XXS protection](XSS-Security_images/rte.png)
+![JavaScript XXS protection](XSS-Security_images/rte.png)
 
 ## XSS protection for MVC platform
 

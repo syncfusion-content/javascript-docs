@@ -27,7 +27,7 @@ $("#TreeGridContainer").ejTreeGrid({
 
 The output of the TreeGrid with paging enabled is displayed below.
 
-![JavaScript TreeGrid pagging](Paging_images/Paging_img1.png)
+![JavaScript TreeGrid paging](Paging_images/Paging_img1.png)
 
 ## Paging settings
 
