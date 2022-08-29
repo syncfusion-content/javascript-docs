@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load on deamand in JS DropDownList | Syncfusion 
-description: Learn here about getting started with Syncfusion JS DropDownList control, its elements, and more functions.
+title: Load on deamand in JS DropDownList Control | Syncfusion 
+description: Learn here about getting started with Syncfusion JavaScript DropDownList control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
