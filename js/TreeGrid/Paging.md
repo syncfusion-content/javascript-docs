@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging
-description: paging
+title: Paging in JavaScript TreeGrid Control | Syncfusion
+description: Learn here all about pagging support in Syncfusion Essential JavaScript TreeGrid control, its elements, and more. 
 platform: js
 control: TreeGrid
 documentation: ug
 api: /api/js/ejtreegrid
 ---
 
-# Paging
+# Paging in JavaScript TreeGrid
 
 The TreeGrid control provides support for displaying records in paginated view. Paging can be enabled in TreeGrid by setting the [`allowPaging`](/api/js/ejtreegrid#members:allowpaging) property as `true`.
 
@@ -27,7 +27,7 @@ $("#TreeGridContainer").ejTreeGrid({
 
 The output of the TreeGrid with paging enabled is displayed below.
 
-![](/js/TreeGrid/Paging_images/Paging_img1.png)
+![JavaScript TreeGrid paging](Paging_images/Paging_img1.png)
 
 ## Paging settings
 
@@ -130,7 +130,7 @@ $("#currentPage").keydown(function(e) {
 You can also find the demo for TreeGrid with pager template [here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagertemplate).
 
 The below image displays TreeGrid with paging template.
-![](/js/TreeGrid/Paging_images/Paging_img2.png)
+![JavaScript TreeGrid pager template](Paging_images/Paging_img2.png)
 
 It is possible to navigate to a specific page with a custom action instead from pager button click action, using the [`gotoPage`]( /api/js/ejtreegrid#methods:gotopage "gotoPage") method.
 

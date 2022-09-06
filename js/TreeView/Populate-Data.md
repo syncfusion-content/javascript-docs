@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate-Data
-description: populate data 
+title: Populate-Data in JavaScript Treeview Control | Syncfusion
+description: Learn here all about populate data support in Syncfusion Essential JavaScript Treeview control, its elements, and more. 
 platform: js
 control: TreeView
 documentation: ug
@@ -9,7 +9,7 @@ api: /api/js/ejtreeview
 ---
 
 
-# Populate Data
+# Populate Data in JavaScript Treeview
 
 TreeView can be populated with local or remote data source by using a property [dataSource](https://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource), which is the member of [fields](https://help.syncfusion.com/api/js/ejtreeview#members:fields) property.
 
@@ -592,12 +592,12 @@ $(function () {
 
 The following screenshot displays the load on demand for local data source in TreeView control.
 
-![](/js/TreeView/Populate-Data_images/Populate-Data_img1.png)
+![JavaScript Treeview local data source](Populate-Data_images/Populate-Data_img1.png)
 
 While expanding the parent node
 {:.caption}
 
-![](/js/TreeView/Populate-Data_images/Populate-Data_img2.png)
+![JavaScript Treeview load on demand](Populate-Data_images/Populate-Data_img2.png)
 
 After expanding the parent node
 {:.caption}
@@ -743,12 +743,12 @@ public class loadOnDemand
 
 The following screenshot displays the load on demand for URL Adaptor in TreeView control.
 
-![](/js/TreeView/Populate-Data_images/Populate-Data_img1.png)
+![JavaScript Treeview while expanding the parent node](Populate-Data_images/Populate-Data_img1.png)
 
 While expanding the parent node
 {:.caption}
 
-![](/js/TreeView/Populate-Data_images/Populate-Data_img2.png)
+![JavaScript Treeview after expanding the parent node](Populate-Data_images/Populate-Data_img2.png)
 
 After expanding the parent node
 {:.caption}
