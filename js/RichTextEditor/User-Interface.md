@@ -1,15 +1,14 @@
 ---
 layout: post
-title: User Interface for the RichTextEditor widget for Syncfusion Essential JS
-description: User Interface for RichTextEditor widget (toolbar, content area, and footer)
-platform: js
+title: User Interface in JavaScript RichTextEditor Control | Syncfusion
+description: Learn here all about user interface support in Syncfusion JavaScript RichTextEditor control, its elements, and more.
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Toolbar Configuration, Custom Tool, Tool items
 api: /api/js/ejrte
 ---
 
-# Toolbar Configuration
+# Toolbar Configuration in JavaScript RichTextEditor
 
 The editor’s toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content.
 However, in most integrations, it's desirable to change the toolbar configuration to suit needs. Fortunately, that's quite easy to do too.
@@ -315,7 +314,7 @@ Define the CSS that will be applied to the custom tool.
 
 N> The CSS class that defined for custom tool is directly applies to the newly added toolbar item - {{'[Demo](http://jsplayground.syncfusion.com/Sync_o1rxw2yj)'| markdownify }}
 
-![](UserInterface_images/CustomTool.png)
+![JavaScript RichTextEditor specify custom tools](UserInterface_images/CustomTool.png)
 
 I> The custom buttons get a `insert-special-character` CSS class to allow styling, where name is the name specified in the custom tool configuration.
 
