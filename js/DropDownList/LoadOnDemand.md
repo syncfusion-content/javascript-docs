@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load on deamand in DropDownList widget for Syncfusion Essential JS
-description: Learn here about Load on deamand in Syncfusion Essential JavaScript DropDownList widget, its elements, and more.
+title: Load on deamand in JS DropDownList Control | Syncfusion 
+description: Learn here about getting started with Syncfusion JavaScript DropDownList control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: loadOnDemand, dropdown
 api: /api/js/ejdropdownlist
 ---
 
-# Load On Demand in JavaScript DropDownList
+# Getting started with JS DropDownList
 
 Load on demand feature allows the DropDownList items load on request from the service/database, during only on click the DropDown icon or DropDownList. This functionality helps to improve performance on control initial rendering time. Because data items load on request. 
 
@@ -55,4 +55,4 @@ The [loadOnDemand](https://help.syncfusion.com/api/js/ejdropdownlist#members:loa
 
 {% endhighlight %}
 
-![JavaScript DropDownList load on deamand](LoadOnDemand_images/loadondemand.png)
+![JS DropDownList LoadOnDemand](LoadOnDemand_images/loadondemand.png)

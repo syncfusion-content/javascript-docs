@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Preventing cross-site scripting
-description: How to prevent the cross-site scripting in syncfusion essential js widgets during application loading or dynamically.
+title: XXS Security in JavaScript Introduction Control | Syncfusion
+description: Learn here all about XSS Security support in Syncfusion Essential JavaScript Introduction control, its elements, and more.
 platform: js
 control: Introduction
 documentation: ug
@@ -36,7 +36,7 @@ The below code snippet injects the malicious script in to the user's browser thr
 
 ## XSS protection
 
-`EJ Controls` does not have built-in support for the XSS protection. So before giving data into `ej controls`,the user can check whether the malicious script is present in the request or not by using [`HTML Sanitizer`](https://www.npmjs.com/package/sanitize-html "HTML Sanitizer").
+`EJ Controls` does not have built-in support for the XSS protection. So before giving data into `ej controls`,the user can check whether the malicious script is present in the request or not by using [`HTML Sanitizer`](https://www.npmjs.com/package/sanitize-html).
 
 The following code example from response.html page illustrates this,
 
@@ -72,7 +72,7 @@ The following code example from response.html page illustrates this,
 The above code example validated the query string values from request.html page by using the html sanitizer. It produce the trusted data which is given as the value for the ejRTE control.
 
 The following output is displayed as a result of the above code example.
-![](XSS-Security_images/rte.png)
+![JavaScript XXS protection](XSS-Security_images/rte.png)
 
 ## XSS protection for MVC platform
 
