@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Essential Studio for JavaScript:Icon Package
-description: Essential Studio for JavaScript:Icon Package
+title: Essential Studio for JavaScript Icon in Javascript Gereral Topics
+description: Learn here all about Essential Studio for JavaScript Icon support in Syncfusion Essential Javascript Gereral Topics control, its elements, and more.
 platform: js
 control: General Topics 
 documentation: ug
 api : /api/js/
 ---
 
-# EJ Icon Package
+#Essential Studio for JavaScript Icon in Javascript Gereral Topics
 
 The **Essential Studio for JavaScript** provides a set of icons that can be utilized in your application by applying the Unicode Content in element. To make it simple and standard, you have to create the custom icon class by defining the unicode content and refer that class with prefix of `e-icon`. 
 
@@ -24,7 +24,7 @@ You have to include the common-images folder in the specified theme folder for d
 
 “default-theme” folder CSS which contains the “ej.widgets.all.min.css/ej.web.all.min.css” and “ej.theme.min.css” file. The “ej.widgets.core.min.css” file is in the outside of the default theme folder as shown below:
 
-![](/js/Icon/IconLibrary_images/themefolder.png)
+![Javascript Gereral Topics themes](/js/Icon/IconLibrary_images/themefolder.png)
 
 Theme files are available in the following location:
 
@@ -131,7 +131,7 @@ N>  Make sure the CSS file (ej.widgets.all.min.css/ej.web.all.min.css) is referr
 
 Execute the above code to render the following output.
 
-![](/js/Icon/IconLibrary_images/output.png)
+![Javascript Gereral Topics diasplay](/js/Icon/IconLibrary_images/output.png)
 
 **Step 3:**
 

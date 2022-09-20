@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Task-scheduling-modes
-description: Task scheduling modes
+title: Task-scheduling-modes in Javascript Gantt | Syncfusion 
+description: Learn here all about Task-scheduling-modes support in Syncfusion Essential Javascript Gantt control, its elements, and more.
 platform: js
 control: Gantt
 documentation: ug
 api: /api/js/ejgantt
 ---
 
-# Task Scheduling Modes
+# Task Scheduling Modes in  Javascript Gantt 
 
 The Gantt provides support for automatic and manual task scheduling modes. Scheduling mode of a task is used to indicate whether the start and end dates of a task will be automatically validated or not. Using the property [`taskSchedulingMode`](/api/js/ejgantt#members:taskschedulingmode) we can able to change the scheduling mode of a task. The following are the enumeration values that can be set to the property [`taskSchedulingMode`](/api/js/ejgantt#members:taskschedulingmode).
 
@@ -104,4 +104,4 @@ $("#GanttContainer").ejGantt({
 
 The following screen shot depicts a project with custom scheduling mode, where both automatic and manual scheduling modes are mapped to the tasks.
 
-![](/js/Gantt/Task-Scheduling-modes_images/Task-Scheduling-modes_img1.png)
+![Javascript Gantt custom](/js/Gantt/Task-Scheduling-modes_images/Task-Scheduling-modes_img1.png)

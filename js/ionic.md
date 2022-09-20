@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ionic
-description: Ionic getting started
+title: Getting started withJavascript  Ionic Control | Syncfusion 
+description: Learn here all about getting started with  Essential Javascript Ionic control, its elements, and more.
 platform: js
 control: Ionic
 documentation: ug
 ---
 
-# Ionic
+# Getting started with Ionic Javascript Control
 
 
 ## Introduction
@@ -49,7 +49,7 @@ Steps to add the sample and run the application
 
 Get Syncfusion blank ionic project from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BlankSyncfusionApplication-982410597.zip) Then extract the project, folder holds following files
 
-![](ionic_images/getblankapplication_img1.png)
+![Javascript Ionic getting started](ionic_images/getblankapplication_img1.png)
 
 Now open command prompt and navigate to this ionic project location, then type npm command for installing node_modules in project
 
@@ -217,7 +217,7 @@ ionic serve
 
 {% endhighlight %}
 
-![](ionic_images/browser_img1.png)
+![Javascript Ionic run application in browser](ionic_images/browser_img1.png)
 
 ## Deploy application in device
 
@@ -267,4 +267,4 @@ $ ionic emulate ios
 
 {% endhighlight %}
 
-![](ionic_images/device_img1.png)
+![Javascript Ionic commands](ionic_images/device_img1.png)
