@@ -8,7 +8,7 @@ documentation: ug
 api : /api/js/ejchart
 ---
 
-# Appearance in JavaScript Chart
+# Appearance in Essential JavaScript Chart
 
 ## Custom Color Palette
 
