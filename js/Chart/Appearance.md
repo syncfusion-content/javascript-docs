@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customizing the appearance of Essential JavaScript Chart
-description: Learn how to customize the appearance of Chart using palettes, themes, color, background and animation. 
+title: Appearance in JavaScript Chart Control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion Essential JavaScript Chart control, its elements, and more.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Appearance
+# Appearance in Essential JavaScript Chart
 
 ## Custom Color Palette
 
@@ -27,7 +27,7 @@ The Chart displays different series in different colors by default. You can cust
 
 {% endhighlight %}
 
-![](/js/Chart/Appearance_images/Appearance_img1.png)
+![JavaScript Chart custom color palette](Appearance_images/Appearance_img1.png)
 
 
 N> The Color palette is applied to the points in accumulation type series
@@ -69,7 +69,7 @@ You can set your desired theme by using the [`theme`](../api/ejchart#members:the
 
 {% endhighlight %}
 
-![](/js/Chart/Appearance_images/Appearance_img2.png)
+![JavaScript Chart built in theme](Appearance_images/Appearance_img2.png)
 
 
 ## Point level customization
@@ -105,7 +105,7 @@ The color of marker shape can be specified using [`fill`](../api/ejchart#members
 
 {% endhighlight %}
 
-![](/js/Chart/Appearance_images/Appearance_img3.png)
+![JavaScript Chart point level customization](Appearance_images/Appearance_img3.png)
 
 The [`border`](../api/ejchart#members:series-points-border) [`color`](../api/ejchart#members:series-points-border-color) and [`width`](../api/ejchart#members:series-points-border-width) property is used to customize the point border. This is applicable only for column type series and accumulation type series. The visibility of legend items can be enabled or disabled using [`visibleOnLegend`](../api/ejchart#members:series-points-visibleonlegend). 
 
@@ -165,7 +165,7 @@ N> Series border can be applied to all the series (except Line, Spline, HiLo, Hi
 
 {% endhighlight %}
 
-![](/js/Chart/Appearance_images/Appearance_img4.png)
+![JavaScript Chart series border customization](Appearance_images/Appearance_img4.png)
 
 ## Series font customization
 
@@ -253,7 +253,7 @@ The Chart border can be customized by using the [`color`](../api/ejchart#members
 
 {% endhighlight %} 
 
-![](/js/Chart/Appearance_images/Appearance_img5.png)
+![JavaScript Chart customize background](Appearance_images/Appearance_img5.png)
 
 
 **Chart Margin**
@@ -278,7 +278,7 @@ The [`left`](../api/ejchart#members:margin-left),[`right`](../api/ejchart#member
 
 {% endhighlight %} 
 
-![](/js/Chart/Appearance_images/Appearance_img6.png)
+![JavaScript Chart margin](Appearance_images/Appearance_img6.png)
 
 **Setting background image**
 
@@ -300,7 +300,7 @@ Background image can be added to the chart by using the [`backGroundImageUrl`](.
 
 {% endhighlight %} 
 
-![](/js/Chart/Appearance_images/Appearance_img7.png)
+![JavaScript Chart setting background](Appearance_images/Appearance_img7.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/tooltiptemplate) here to view our online demo sample for setting Chart background image.
 
@@ -327,7 +327,7 @@ The Chart area background can be customized by using the [`background`](../api/e
 
 {% endhighlight %} 
 
-![](/js/Chart/Appearance_images/Appearance_img8.png)
+![JavaScript Chart area background](Appearance_images/Appearance_img8.png)
 
 
 **Chart area border**
@@ -382,7 +382,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 {% endhighlight %} 
 
-![](/js/Chart/Appearance_images/Appearance_img9.png)
+![JavaScript Chart customize area grid bands](Appearance_images/Appearance_img9.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/alternategridband) here to view the alternate grid band online demo sample.
 
