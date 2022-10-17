@@ -1,13 +1,13 @@
 ---
-title: Syncfusion SpellCheck - Functionalities
-description: SpellCheck Functionalities
+title: Functionalities in JavaScript SpellCheck Control | Syncfusion
+description: Learn here about Functionalities in Syncfusion Essential JavaScript SpellCheck  Control, its elements and more.
 platform: js
 control: spellcheck
 documentation: ug
 keywords: spellcheck functionalities, check spelling, ignore words, change words, change, ignore, ignore settings, SpellCheck on typing,
 api: /api/js/ejspellcheck
 ---
-# Functionalities
+# Functionalities in JavaScript SpellCheck
 
 ## Check Spelling
 
