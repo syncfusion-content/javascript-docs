@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Connector
+# Connector in JavaScript Diagram
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 

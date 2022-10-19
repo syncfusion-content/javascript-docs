@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Node
+# Node in Javascript Diagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
