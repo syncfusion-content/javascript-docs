@@ -1,7 +1,7 @@
 ---
 layout: post
-title: EJ Icons in JavaScript Control | Syncfusion
-description: Learn here all about EJ Icons support in Syncfusion Essential JavaScript control, its elements, and more.
+title: EJ Icons in JavaScript Platform | Syncfusion
+description: Learn here all about EJ Icons support in Syncfusion Essential JavaScript platform, its elements, and more.
 platform: js
 control: General Topics 
 documentation: ug
