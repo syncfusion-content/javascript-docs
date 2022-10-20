@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Connector
+# Connector in JavaScript Diagram
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
@@ -790,7 +790,7 @@ var targetDecorator = {
 ![Segment appearances](Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/diagram/interaction#connection-editing "Connection Editing").
 
 ## Constraints
 The [constraints](/api/js/ejdiagram#members:connectors-constraints "constraints") property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/js/Diagram/Constraints#connectorconstraints "Connector Constraints").

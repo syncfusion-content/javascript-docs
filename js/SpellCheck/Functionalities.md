@@ -1,13 +1,13 @@
 ---
-title: Syncfusion SpellCheck - Functionalities
-description: SpellCheck Functionalities
+title: Functionalities in JavaScript SpellCheck Control | Syncfusion
+description: Learn here about Functionalities in Syncfusion Essential JavaScript SpellCheck  Control, its elements and more.
 platform: js
 control: spellcheck
 documentation: ug
 keywords: spellcheck functionalities, check spelling, ignore words, change words, change, ignore, ignore settings, SpellCheck on typing,
 api: /api/js/ejspellcheck
 ---
-# Functionalities
+# Functionalities in JavaScript SpellCheck
 
 ## Check Spelling
 
@@ -254,7 +254,7 @@ The following screenshot displays the output for the above code
 
 
 You can also validate the content within the IFrame element or IFrame element target text, by passing the IFrame element id or class name value to the `controlsToValidate` property. 
-Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/multiple-target)
+Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/target-elements#multiple-target)
 
 ## Suggestion Words
 
