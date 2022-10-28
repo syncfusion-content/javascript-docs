@@ -106,7 +106,7 @@ The client side method selectAll used to select all the elements such as nodes/c
 ## Drag
 
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines#snapping "Snapping").
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/diagram/gridlines#snapping "Snapping").
 
 ![Drag the Selected elements](Interaction_images/Interaction_img3.png)
 
@@ -175,7 +175,7 @@ The following screen short illustrates how the nodes are dragged from one diagra
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines#snapping "Snapping").
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/diagram/gridlines#snapping "Snapping").
 
 ![Resizing the nodes](Interaction_images/Interaction_img4.png)
 
