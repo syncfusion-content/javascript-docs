@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Interaction
+# Interaction in JavaScript Diagram
 
 ## Selection
 
