@@ -36,10 +36,10 @@ Create an HTML page in your application, then add scripts and style sheets that 
 You can use the following code in &lt;head&gt; tag of the Report Viewer HTML page.
 
 {% highlight html %}
-<link href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/19.1.0.63/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
-<script src="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/19.1.0.63/js/web/ej.web.all.min.js" type="text/javascript"></script>
 
 {% endhighlight %}
 
