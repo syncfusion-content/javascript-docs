@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Web Accessibility with Grid widget for Syncfusion Essential JS
-description: Web accessibilties standard used in ejGrid and also explained about keyboard interaction customizations.
+description: Web accessibilties standard used in ejGrid and also explained about keyboard interaction customizations, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-## Web Accessibility
+# Web Accessibility with Grid widget for Syncfusion Essential JS
 
 Web Accessibility is achieved in the Grid control through Keyboard Navigation and WAI-ARIA Standard. 
 

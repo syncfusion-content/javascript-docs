@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Essential Studio for JavaScript:Icon Package
-description: Essential Studio for JavaScript:Icon Package
+title: Icon Package in Essential Studio for JavaScript | Syncfusion
+description: Learn here about Icon Package in Essential Studio for JavaScript, its elements, features, and more. 
 platform: js
 control: General Topics 
 documentation: ug
 api : /api/js/
 ---
 
-# EJ Icon Package
+# Icon Package in Essential Studio for JavaScript
 
 The **Essential Studio for JavaScript** provides a set of icons that can be utilized in your application by applying the Unicode Content in element. To make it simple and standard, you have to create the custom icon class by defining the unicode content and refer that class with prefix of `e-icon`. 
 
