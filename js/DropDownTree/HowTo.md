@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to - DropDownTree widget for Syncfusion Essential JS
-description: How To Section in DropDownTree widget for Syncfusion Essential JS
+title: How to Section in JavaScript DropDown Tree | Syncfusion
+description: Learn here all about How to Section in Syncfusion Essential JavaScript Grid, its elements, and more.
 platform: js
 control: DropDownTree
 documentation: ug
@@ -9,7 +9,7 @@ keywords: DropDownTree, dropdown, Adding Items, Set Focus, custommization
 api: /api/js/ejdropdowntree
 ---
 
-# How To
+# How To Scetion in JavaScript DropDown Tree
 
 ## Set focus to control initially?
 
@@ -598,7 +598,7 @@ function Change(args) {
 
 The following screenshot exhibits the output of the above code,
 
-![](HowTo_images/howto_checkboxtemplate.png)
+![Check Box Template in JavaScript DropDown Tree](HowTo_images/howto_checkboxtemplate.png)
 
 ## Add tooltip on hovering the DropDownTree’s items?
  
@@ -1088,4 +1088,4 @@ $(function() {
 
 {% endhighlight %}
 
-![](HowTo_images/validation.png)
+![Validation in JavaScript DropDown Tree](HowTo_images/validation.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Searching in the DropDownList widget for Syncfusion Essential JS
-description: Description about searching in the DropDownList widget for Syncfusion Essential JS
+title: Searching in JavaScript DropDown List Control | Syncfusion
+description: Learn here all about Searching support in Syncfusion Essential JavaScript DropDown List, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: DropDownList, dropdown, Search, Incremental Search, Filter Search, Ser
 api: /api/js/ejdropdownlist
 ---
 
-# Search
+# Search in Essential JavaScript DropDown List
 
 Items are searched based on the keyed in values to the textbox. There are two types of searches,
 
@@ -58,7 +58,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
 	
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img8.jpeg)
+![Incremental Search in JavaScript Grid](Functionalities_images/Functionalities_img8.jpeg)
 
 ## Filter search
 
@@ -108,7 +108,7 @@ N> Items are filtered based on “contains” filter type by default.
     
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img9.jpeg)
+![Filter Search in JavaScript Grid](Functionalities_images/Functionalities_img9.jpeg)
 
 ## Server Filtering
 
@@ -146,9 +146,9 @@ Server filtering for displaying only a fixed amount of dataset from the whole da
 
 {% endhighlight %}
 
-![](ServerFiltering_images/ServerFiltering_image2.png)
+![Filtering in JavaScript Grid](ServerFiltering_images/ServerFiltering_image2.png)
 
 This sample raises the query on Customer service. Returns ContactName records for customers with ContactName containing the string “d”.
 
-![](ServerFiltering_images/ServerFiltering_image1.png)
+![Server in JavaScript Grid](ServerFiltering_images/ServerFiltering_image1.png)
 

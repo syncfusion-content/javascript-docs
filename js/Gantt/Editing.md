@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing
-description: editing
+title: Editing in JavaScript Gantt Control | Syncfusion
+description: Learn here all about Editing support in Syncfusion Essential JavaScript Gantt, its elements, and more.
 platform: js
 control: Gantt
 documentation: ug
 api: /api/js/ejgantt
 ---
 
-# Editing
+# Editing in Essential JavaScript Gantt
 
 The Gantt control provides in-built support to add, insert and update the tasks. The following are the types of editing available in Gantt.
 
@@ -39,7 +39,7 @@ The following code example shows you how to enable the `cellEditing` in Gantt co
 
 The output of Gantt with cellEditing is as follows.
 
-![](/js/Gantt/Editing_images/Editing_img1.png)
+![Cell Editing in JavaScript Gantt](Editing_images/Editing_img1.png)
 
 ### Save editing cell
 
@@ -109,7 +109,7 @@ The following code example shows you how to enable normal editing in Gantt contr
 
 The following screenshot shows the output of `normal` editing.
 
-![](/js/Gantt/Editing_images/Editing_img2.png)
+![Normal Editing in JavaScript Gantt](Editing_images/Editing_img2.png)
 
 ### Define required fields in add/edit dialog
 
@@ -135,7 +135,7 @@ In Gantt we can define the editing fields available in add and edit dialogs by u
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![](/js/Gantt/Editing_images/Editing_img4.png)
+![Edit Dialog in JavaScript Gantt](Editing_images/Editing_img4.png)
 
 N> Similarly we can define the required fields in add dialog with [`field`](/api/js/ejgantt#members:adddialogfields-field "addDialogFields.field") and [`editType`](/api/js/ejgantt#members:adddialogfields-edittype "addDialogFields.editType") properties.
 
@@ -168,7 +168,7 @@ By default custom column fields are included in add/edit dialog's custom field t
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![](/js/Gantt/Editing_images/Editing_img5.png)
+![Add Custom Column Fields in JavaScript Gantt](Editing_images/Editing_img5.png)
 
 N> Similarly we can include custom fields in add dialog's General tab by setting [`displayInGeneralTab`](/api/js/ejgantt#members:adddialogfields-displayingeneraltab "addDialogFields.displayInGeneralTab") as `true` in [`addDialogFields`](/api/js/ejgantt#members:adddialogfields) collection.
 
@@ -267,7 +267,7 @@ In Gantt, we can add, edit, update the task dependencies by mouse interactions, 
 
 Task dependency can be added by mouse interactions by connecting connector points in predecessor and successor tasks. The following screen shot shows the add dependency action.
 
-![](/js/Gantt/Editing_images/Editing_img3.png)
+![Add Dependency in JavaScript Gantt](Editing_images/Editing_img3.png)
 
 ### Edit Dependency
 
@@ -294,7 +294,7 @@ function actionBegin(args) {
 {% endhighlight %}
 
 The following screen shot shows the dependency edit dialog.
-![](/js/Gantt/Editing_images/Predecessor_Editing_Dialog.png)
+![Edit Dependency in JavaScript Gantt](Editing_images/Predecessor_Editing_Dialog.png)
 
 You can find the JS playground sample for dependency editing methods and events [here](http://jsplayground.syncfusion.com/Sync_5eyi0dgr).
 
@@ -302,7 +302,7 @@ You can find the JS playground sample for dependency editing methods and events 
 
 Task dependency can be deleted by using edit dialog and [`deleteDependency`](/api/js/ejgantt#methods:deletedependency) method. The following screen shot shows the dependency edit dialog with delete option.
 
-![](/js/Gantt/Editing_images/Predecessor_Editing_Dialog.png)
+![Delete Dependency in JavaScript Gantt](Editing_images/Predecessor_Editing_Dialog.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/editing) here to view the online demo sample for editing in Gantt.
 
@@ -370,7 +370,7 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
-![](/js/Gantt/Editing_images/deleteConfirmation.png)
+![Delete Confirmation Message in JavaScript Gantt](Editing_images/deleteConfirmation.png)
 
 The above screen shot shows the appearance of delete confirmation message in Gantt.
 
@@ -404,12 +404,12 @@ $("#indentTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![](/js/Gantt/Editing_images/Editing_img6.png)
+![Before Indent in JavaScript Gantt](Editing_images/Editing_img6.png)
 
 Before Indent
 {:.caption}
 
-![](/js/Gantt/Editing_images/Editing_img7.png)
+![Aster Indent in JavaScript Gantt](Editing_images/Editing_img7.png)
 
 After Indent
 {:.caption}
@@ -446,12 +446,12 @@ $("#outdentTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![](/js/Gantt/Editing_images/Editing_img6.png)
+![Before Outdent in JavaScript Gantt](Editing_images/Editing_img6.png)
 
 Before Outdent
 {:.caption}
 
-![](/js/Gantt/Editing_images/Editing_img8.png)
+![After Outdent in JavaScript Gantt](Editing_images/Editing_img8.png)
 
 After Outdent
 {:.caption}
@@ -488,11 +488,11 @@ $("#deleteTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![](/js/Gantt/Editing_images/Editing_img6.png)
+![Before Delete in JavaScript Gantt](Editing_images/Editing_img6.png)
 Before Delete
 {:.caption}
 
-![](/js/Gantt/Editing_images/Editing_img9.png)
+![After Delete in JavaScript Gantt](Editing_images/Editing_img9.png)
 After Delete
 {:.caption}
 

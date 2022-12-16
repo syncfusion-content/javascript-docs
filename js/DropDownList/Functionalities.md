@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Functionalities in the DropDownList widget for Syncfusion Essential JS
-description: Functionalities in the DropDownList widget for Syncfusion Essential JS
+title: Functionalities in JavaScript DropDownList | Syncfusion
+description: Learn here all about Functionalities support in Syncfusion Essential JavaScript DropDown List, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Selection, Grouping, Sorting
 api: /api/js/ejdropdownlist
 ---
-# Functionalities
+# Functionalities in Essential JavaScript DropDown List
 
 ## Selection
 
@@ -204,7 +204,7 @@ To select an item initially you can pass the item’s value via [value](https://
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img1.jpeg)
+![Functionalities in JavaScript DropDown List](Functionalities_images/Functionalities_img1.jpeg)
 
 N> To retrieve the selected item’s LI elements and value you can use [getSelectedItem](https://help.syncfusion.com/api/js/ejdropdownlist#methods:getselecteditem), [getSelectedValue](https://help.syncfusion.com/api/js/ejdropdownlist#methods:getselectedvalue) methods respectively.
 
@@ -291,7 +291,7 @@ You can select a single or more than one item by passing index values to the pro
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img2.jpeg)
+![Using Indices JavaScript DropDown List](Functionalities_images/Functionalities_img2.jpeg)
 
 I> To use "selectedIndices" property, you should enable either showCheckbox or multiSelectMode property First.
 
@@ -487,7 +487,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img3.jpeg)
+![Grouping in JavaScript DropDown List](Functionalities_images/Functionalities_img3.jpeg)
 
 N> Grouping has restrictions in the following scenarios,<BR>
 1.  It is not supported on using HTML "select" element with predefined set of options<BR>
@@ -521,7 +521,7 @@ N> Grouping has restrictions in the following scenarios,<BR>
     
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img4.jpeg)
+![Sorting in JavaScript DropDown List](Functionalities_images/Functionalities_img4.jpeg)
 
 I> Virtual scrolling is not supported with Grouping.
 
@@ -693,9 +693,9 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img5.jpeg)
+![Cascading in JavaScript DropDown List](Functionalities_images/Functionalities_img5.jpeg)
 
-![](Functionalities_images/Functionalities_img6.jpeg)
+![Cascade Event in JavaScript DropDown List](Functionalities_images/Functionalities_img6.jpeg)
 
 ### Binding the data source to the cascading DropDownList using cascade event
 
@@ -800,7 +800,7 @@ Bind the data source to the cascading DropDownList dynamically using [cascade](h
 		
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img7.jpeg)
+![Binding Data Source in JavaScript DropDown List](Functionalities_images/Functionalities_img7.jpeg)
 
 ### Multi-Level Cascading
 
@@ -896,7 +896,7 @@ The below scenario can be explained with three DropDownList for the multi-level 
 
 First two DropDownList cascaded based on the parentId, and then from second to third, cascading performed based on the value field.
 
-![](Functionalities_images/multipCascade.png)
+![Multi-Level Cascading in JavaScript DropDown List](Functionalities_images/multipCascade.png)
 
 ## Validation
 
@@ -981,5 +981,5 @@ Required field and min value validation is demonstrated in the below given examp
 	
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img10.jpeg)
+![Validation Messages in JavaScript DropDown List](Functionalities_images/Functionalities_img10.jpeg)
 
