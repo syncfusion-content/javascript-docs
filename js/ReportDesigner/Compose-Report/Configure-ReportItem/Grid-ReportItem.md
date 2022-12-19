@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visualize Data using grid report item with Syncfusion Web Report Designer
-description: How to visualize data using grid report item with Syncfusion Web Report Designer
+title: Grid Report Item in JS Report Designer Control | Syncfusion
+description: Learn here about Grid Report Item support in Syncfusion Essential JS Report Designer Control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Visualize Data using chart report item with Syncfusion Web Report Designer
-description: How to visualize data using chart report item with Syncfusion Web Report Designer
+title: Chart Report Item in JS Report Designer Control | Syncfusion
+description: Learn here about Chart Report Item support in Syncfusion Essential JS Report Designer Control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Chart Report Item in JS ReportDesigner
+# Chart Report Item in Essential JS Report Designer
 
 Chart data region is used when the data needs to be presented in a visual format in the report. To present the data, choose the appropriate chart type; it will determine how well the data can be interpreted while visualizing it in chart form.
 
@@ -54,7 +54,7 @@ Web Designer supports the following chart types:
 
    * **Doughnut** - A pie chart with an open space in the center and it displays data as a proportion of the whole.
 
-# To add and configure a chart
+## To add and configure a chart
 
 * Create a report and define a dataset. For more information refer [Create Dataset](/js/ReportDesigner/create-Data/Create-New-Data).
 
@@ -244,7 +244,7 @@ Click on the icon in the right corner and select **Expression** to edit the expr
 ![Visibility in JS ReportDesigner](chart-images/Visibility.png)
 
 
-# Adding Data to the Chart
+### Adding Data to the Chart
 
 Create a report and define a dataset. 
 
@@ -262,7 +262,7 @@ The data pane will be opened with available measures and dimensions in the conne
 
 ![Assign Data Pane in JS ReportDesigner](chart-images/Assign-Data-Pane.png)
 
-# Assign value(s)
+### Assign value(s)
 
 Drag and drop the `Measure` into `Value`.
 
