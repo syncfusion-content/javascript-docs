@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in JavaScript DropDown List  Control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Essential JavaScript DropDown List, its elements, and more.
+description: Learn here all about Customization support in Syncfusion Essential JavaScript DropDown List control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug

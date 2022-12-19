@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row in JavaScript Grid Control | Syncfusion
-description: Learn here all about Row support in Syncfusion Essential JavaScript Grid, its elements, and more.
+description: Learn here all about Row support in Syncfusion Essential JavaScript Grid control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in JavaScript DropDown List Control | Syncfusion
-description: Learn here all about Searching support in Syncfusion Essential JavaScript DropDown List, its elements, and more.
+description: Learn here all about Searching support in Syncfusion Essential JavaScript DropDown List control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug

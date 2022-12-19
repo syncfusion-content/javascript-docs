@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Functionalities in JavaScript DropDownList | Syncfusion
-description: Learn here all about Functionalities support in Syncfusion Essential JavaScript DropDown List, its elements, and more.
+description: Learn here all about Functionalities support in Syncfusion Essential JavaScript DropDown List control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug

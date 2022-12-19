@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Section in JavaScript DropDown Tree | Syncfusion
-description: Learn here all about How to Section in Syncfusion Essential JavaScript Grid, its elements, and more.
+description: Learn here all about How to Section in Syncfusion Essential JavaScript Grid control, its elements, and more.
 platform: js
 control: DropDownTree
 documentation: ug

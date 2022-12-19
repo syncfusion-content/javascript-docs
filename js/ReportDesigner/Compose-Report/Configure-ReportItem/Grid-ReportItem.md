@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Report Item in JavaScript Report Designer Control | Syncfusion
-description: Learn here all about Grid Report Item support in Syncfusion Essential JavaScript Report Designer, its elements, and more.
+description: Learn here all about Grid Report Item support in Syncfusion Essential JavaScript Report Designer control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug
@@ -12,7 +12,7 @@ api: /api/js/ejreportdesigner
 
 The grid data region report item displays report data in cells that are organized into rows and columns. Report data can be a data which is retrieved from the data source.
 
-# To add a grid to a report
+## To add a grid to a report
 
 * Create a report and define a dataset. For more information refer [Create Dataset](/js/ReportDesigner/Create-Data/Create-New-Data).
 

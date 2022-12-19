@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in JavaScript Gantt Control | Syncfusion
-description: Learn here all about Editing support in Syncfusion Essential JavaScript Gantt, its elements, and more.
+description: Learn here all about Editing support in Syncfusion Essential JavaScript Gantt control, its elements, and more.
 platform: js
 control: Gantt
 documentation: ug

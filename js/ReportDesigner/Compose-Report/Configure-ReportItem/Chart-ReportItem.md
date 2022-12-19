@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Report Item in JavaScript Report Designer Control | Syncfusion
-description: Learn here all about Chart Report Item support in Syncfusion Essential JavaScript Report Designer, its elements, and more.
+description: Learn here all about Chart Report Item support in Syncfusion Essential JavaScript Report Designer control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug
@@ -54,7 +54,7 @@ Web Designer supports the following chart types:
 
    * **Doughnut** - A pie chart with an open space in the center and it displays data as a proportion of the whole.
 
-# To add and configure a chart
+## To add and configure a chart
 
 * Create a report and define a dataset. For more information refer [Create Dataset](/js/ReportDesigner/create-Data/Create-New-Data).
 
@@ -244,7 +244,7 @@ Click on the icon in the right corner and select **Expression** to edit the expr
 ![Visibility in JavaScript Report Designer](chart-images/Visibility.png)
 
 
-# Adding Data to the Chart
+## Adding Data to the Chart
 
 Create a report and define a dataset. 
 
@@ -260,9 +260,9 @@ In the chart `Properties` pane, click the `Data`.
 
 The data pane will be opened with available measures and dimensions in the connected data source.
 
-![](chart-images/Assign-Data-Pane.png)
+![Assign Data Pane in JavaScript Report Designer](chart-images/Assign-Data-Pane.png)
 
-# Assign value(s)
+## Assign value(s)
 
 Drag and drop the `Measure` into `Value`.
 
