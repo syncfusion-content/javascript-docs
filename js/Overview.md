@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learn here about getting started with Syncfusion Essential JavaScript Introduction, its elements, and more
+title: Learn here about getting started with JavaScript, its elements, and more
 description: Overview of Syncfusion Essential JS widgets based on HTML5 and jQuery for building modern web applications.
 platform: js
 control: Introduction
