@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with JavaScript Platform | Syncfusion
+title: Overview of JavaScript Platform | Syncfusion
 description: Overview of Syncfusion Essential JS widgets based on HTML5 and jQuery for building modern web applications.
 platform: js
 control: Introduction
 documentation: ug
 ---
 
-# Getting started with JavaScript Introduction
+# Overview of JavaScript Introduction
 
 Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, Gantt, scheduler, diagram and much more.   
 
@@ -29,5 +29,5 @@ Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 Jav
 
 ## Create a support incident
 
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://support.syncfusion.com/support/tickets) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.syncfusion.com/company/contact-us) by creating a support ticket.
 
