@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in DropDownList widget for Syncfusion Essential JS
-description: Customization in DropDownList widget for Syncfusion Essential JS
+title: Customization in JavaScript DropDown List  Control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Essential JavaScript DropDown List control, its elements, and more.
 platform: js
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: Customization, DropDownList, dropdown, watermark text
 api: /api/js/ejdropdownlist
 ---
 
-# Customization
+# Customization in JavaScript DropDown List
 
 ## Adding watermark text
 
@@ -52,9 +52,9 @@ It provides the short description of the expected value in dropdown and will dis
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img1.jpeg)
+![Customization in JavaScript DropDown List](Customization_images/Customization_img1.jpeg)
 
-![](Customization_images/Customization_img2.jpeg)
+![Adding Watermark Text in JavaScript DropDown List](Customization_images/Customization_img2.jpeg)
 
 ## Applying Rounded Corner
 
@@ -97,7 +97,7 @@ You can use [showRoundedCorner](https://help.syncfusion.com/api/js/ejdropdownlis
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img3.jpeg)
+![Applying Rounded Corner in JavaScript DropDown List](Customization_images/Customization_img3.jpeg)
 
 I> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
@@ -144,7 +144,7 @@ N> you can also use [enable()](https://help.syncfusion.com/api/js/ejdropdownlist
 	
 {% endhighlight %}
 
-![](Customization_images/Customization_img4.jpeg)
+![Enable the Widgets in JavaScript DropDown List](Customization_images/Customization_img4.jpeg)
 
 N> you can disable/enable the single or multiple list items by using [disableItemsByIndices](https://help.syncfusion.com/api/js/ejdropdownlist#methods:disableitemsbyindices) and [enableItemsByIndices](https://help.syncfusion.com/api/js/ejdropdownlist#methods:enableitemsbyindices) property.
 
@@ -193,5 +193,5 @@ N>when you add an item dynamically to the widget, you can specify the HTML attri
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img5.jpeg)
+![Applying HTML Attributes in JavaScript DropDown List](Customization_images/Customization_img5.jpeg)
 
