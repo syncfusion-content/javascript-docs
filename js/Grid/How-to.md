@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to
-description: How to
+title: How to Section in JavaScript Grid Control | Syncfusion
+description: Learn here all about How to Section in Syncfusion Essential JavaScript Grid control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# How to
+# How to Section in JavaScript Grid
 
 ## Binding SignalR endpoint
 
@@ -196,7 +196,7 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/externalsearch_img1.png)
+![External Search in JavaScript Grid](externalsearch_images/externalsearch_img1.png)
 
 ## Reset Model Collections
 
@@ -277,7 +277,7 @@ Grid provides different Methods such as [`clearSorting`](https://help.syncfusion
 
 
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/ResetModel.png)
+![Reset Model Collections in JavaScript Grid](externalsearch_images/ResetModel.png)
 
 ## Hierarchy Grid with different foreignKeyField in parent and child table
 
@@ -327,7 +327,7 @@ The following code example explains the above behavior.
   {% endhighlight %}   
   
 The following output is displayed as a result of the above code example.
-![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
+![Hierarchy in JavaScript Grid](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
 
 ## Display other Syncfusion controls in Grid columns
 
@@ -389,7 +389,7 @@ We can display the other Syncfusion controls using [`template`](https://help.syn
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](Display_Other_controls_images/Display_Other_controls_img1.png)
+![Display in JavaScript Grid](Display_Other_controls_images/Display_Other_controls_img1.png)
 
 ## Perform Grid Actions on External button click
 
@@ -567,7 +567,7 @@ The following code example explains the above behavior.
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/Actionswithexternalbutton_img1.png)
+![Actions with External Button in JavaScript Grid](externalsearch_images/Actionswithexternalbutton_img1.png)
 
 
 ## Getting Datasource of Grid in Sorted Order
