@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row with Grid widget for Syncfusion Essential JS
-description: How to use and customize the grid row
+title: Row in JavaScript Grid Control | Syncfusion
+description: Learn here all about Row support in Syncfusion Essential JavaScript Grid control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Row
+# Row in Essential JavaScript Grid
 
 It represents the record details that are fetched from the datasource.
 
@@ -35,7 +35,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img1.png)
+![Row Hover in JavaScript Grid](Row_images/Row_img1.png)
 
 By using the following methods, you can get the rows(tr element)of the Grid.
 
@@ -100,7 +100,7 @@ function detailGridData(e) {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img2.png)
+![Details Template in JavaScript Grid](Row_images/Row_img2.png)
 
 By using [`getIndexByRow`](https://help.syncfusion.com/api/js/ejgrid#methods:getindexbyrow "getIndexByRow") you can get the row index of provided tr element and index value would not have considered detail row elements in grid content.
 
@@ -182,7 +182,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img3.png)
+![Row Template in JavaScript Grid](Row_images/Row_img3.png)
 
 
 ## Alternate row styling
@@ -209,7 +209,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img4.png)
+![Alternate row styling in JavaScript Grid](Row_images/Row_img4.png)
 
 
 ## Drag-and-Drop
@@ -249,12 +249,12 @@ $(function () {
 
 The following output is displayed before reordering rows. 
 
-![](Row_images/Row_img5.png)
+![Before Drop in JavaScript Grid](Row_images/Row_img5.png)
 {:Before Drop}
 
 The following output is displayed after reordering rows.
 
-![](Row_images/Row_img6.png)
+![After Drop in JavaScript Grid](Row_images/Row_img6.png)
 {:After Drop}
 
 ### Grid-to-Grid
@@ -303,12 +303,12 @@ $(function () {
 
 The following output is displayed before dropping Grid rows.
 
-![](Row_images/Row_img7.png)
+![Before Drag and Drop in JavaScript Grid](Row_images/Row_img7.png)
 {:Before Drop}
 
 The following output is displayed after dropping Grid rows.
 
-![](Row_images/Row_img8.png)
+![After Drag and Drop in JavaScript Grid](Row_images/Row_img8.png)
 {:After Drop}
 
 You can re-order the rows in the Grid dynamically by using [`reorderRows`](https://help.syncfusion.com/api/js/ejgrid#methods:reorderrows "reorderRows") method.
@@ -380,12 +380,12 @@ $(function () {
 
 The following output is displayed before dropping the rows on Form.
 
-![](Row_images/Row_img9.png)
+![Custom in JavaScript Grid](Row_images/Row_img9.png)
 {:Before Drop}
 
 The following output is displayed after dropping the rows on Form.
 
-![](Row_images/Row_img10.png)
+![Drop Mapper in JavaScript Grid](Row_images/Row_img10.png)
 {:After Drop}
 
 N>  Also [`dragMapper`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragmapper "dragMapper") and [`dropMapper`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dropmapper "dropMapper") property of the [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings") helps in mapping server-side action when rows are dragged and dropped into the Grid.

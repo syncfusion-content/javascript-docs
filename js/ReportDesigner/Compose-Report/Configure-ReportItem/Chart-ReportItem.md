@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Visualize Data using chart report item with Syncfusion Web Report Designer
-description: How to visualize data using chart report item with Syncfusion Web Report Designer
+title: Chart Report Item in JavaScript Report Designer Control | Syncfusion
+description: Learn here all about Chart Report Item support in Syncfusion Essential JavaScript Report Designer control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Chart Report Item
+# Chart Report Item in JavaScript Report Designer
 
 Chart data region is used when the data needs to be presented in a visual format in the report. To present the data, choose the appropriate chart type; it will determine how well the data can be interpreted while visualizing it in chart form.
 
@@ -54,7 +54,7 @@ Web Designer supports the following chart types:
 
    * **Doughnut** - A pie chart with an open space in the center and it displays data as a proportion of the whole.
 
-# To add and configure a chart
+## To add and configure a chart
 
 * Create a report and define a dataset. For more information refer [Create Dataset](/js/ReportDesigner/create-Data/Create-New-Data).
 
@@ -62,21 +62,21 @@ Web Designer supports the following chart types:
 
 * To add a **Chart** data region to the report, drag and drop the chart type of your choice from the item panel. The wizard offers column, line, pie, bar and area charts.
 
-    ![](chart-images/itempanel.png)
+    ![Item Panel in JavaScript Report Designer](chart-images/itempanel.png)
 
     > Note: Here **Column** chart is used to demonstrate. 
 
-    ![](chart-images/Column-Chart.png)
+    ![Column Chart in JavaScript Report Designer](chart-images/Column-Chart.png)
 
 ## Designing a chart
 
 After adding a chart data region to the design surface, click the properties icon in the configuration panel to display the chart properties panel.
 
- ![](chart-images/Properties-Icon.png)
+ ![Properties Icon in JavaScript Report Designer](chart-images/Properties-Icon.png)
 
 In the chart `Properties` pane, the visual effects of the charts can be designed using the **Properties** tab.
 
- ![](chart-images/Properties-Tab.png)
+ ![Properties Tab in JavaScript Report Designer](chart-images/Properties-Tab.png)
 
 In the `Properties` pane, we have an icon in the right corner of each property which has expression or advanced options. We need to click the icon to load below context menu options:
 
@@ -85,7 +85,7 @@ In the `Properties` pane, we have an icon in the right corner of each property w
 
 > Note: The above context menu options will vary based on properties. If there is no sub level properties available for respective main property, then `Advanced` option will not be visible. Similarly, if there is no expression support for that property, then `Expression` option will not be visible.
 
- ![](chart-images/Expression.png)
+ ![Expression in JavaScript Report Designer](chart-images/Expression.png)
 
 > Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
@@ -99,48 +99,48 @@ You can see the list of properties available for the chart report item with defa
 
  Title for the column chart report item can be set using this property.
 
- ![](chart-images/Basic-Properties.png)
+ ![Basic Properties in JavaScript Report Designer](chart-images/Basic-Properties.png)
 
 The below properties in basic setting will be visible in the properties window, after assigning the data to the chart.
 
  * **Show legend**
    Legends are symbols and text used to provide additional information about the chart. This allows you to enable/disable the visibility of chart legend. By default, the chart legend visibility will be enabled.
 
-     ![](chart-images/Legend.png)
+     ![Legend in JavaScript Report Designer](chart-images/Legend.png)
 
  * **Show data label**
    This allows you to enable/disable the visibility of data labels for chart.
 
-     ![](chart-images/Data-Label.png)
+     ![Data Label in JavaScript Report Designer](chart-images/Data-Label.png)
 
    Using the above properties in the above image, you can design the data label for better presentation of data.
 
-     ![](chart-images/Data-Label-Chart.png)
+     ![Data Label Chart in JavaScript Report Designer](chart-images/Data-Label-Chart.png)
 
  * **Enable smart label**
    Smart labels manage overlapping of labels even when a large number of labels are placed in close vicinity. This allows you to enable/disable smart label option for chart. 
 
-     ![](chart-images/SmartLabel.png)
+     ![Smart Label in JavaScript Report Designer](chart-images/SmartLabel.png)
 
    Using the advanced option, set the label style and smart label position.
 
    * **Label style**
      Choose the label style based on the type of chart that are used to present the data.
 
-      ![](chart-images/SmartLabel-Style.png)
+      ![Smart Label Style in JavaScript Report Designer](chart-images/SmartLabel-Style.png)
 
    * **Value**
      Choose the position of data label to be displayed in the chart columns.
 
-      ![](chart-images/Smart-Label-Value.png)
+      ![Smart Label Value in JavaScript Report Designer](chart-images/Smart-Label-Value.png)
 
       **Inside**: 
 
-        ![](chart-images/Inside-SmartLabel.png)
+        ![Inside Smart Label in JavaScript Report Designer](chart-images/Inside-SmartLabel.png)
 
       **Outside**:
 
-        ![](chart-images/Outside-SmartLabel.png)
+        ![Outside Smart Label in JavaScript Report Designer](chart-images/Outside-SmartLabel.png)
 
   Enable/disable smart label by enabling/disabling the `Show Smart Label` check box.
 
@@ -148,11 +148,11 @@ The below properties in basic setting will be visible in the properties window, 
 
 In the appearance category, set the border style, border width, border color, and background color of the chart to enhance the chart effects.
 
-![](chart-images/Chart-Appearance.png)
+![Chart Appearance in JavaScript Report Designer](chart-images/Chart-Appearance.png)
 
 The border style, border width, border color for top, left, bottom, and right side can be set using the advanced option in the appearance category.
 
-![](chart-images/Appearance-Properties.png)
+![Appearance Properties in JavaScript Report Designer](chart-images/Appearance-Properties.png)
 
 **Chart area**
 
@@ -166,7 +166,7 @@ The chart title can be customized by editing the **Title Text** property of the 
 
 To enable the chart title, check the **Show Chart Title** checkbox.
 
-![](chart-images/Title-Properties.png)
+![Title Properties in JavaScript Report Designer](chart-images/Title-Properties.png)
 
 > Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
@@ -199,7 +199,7 @@ The chart has two primary axes: the `value` axis and the `category` axis.
 
 **Tick** - To set the style, width, color, and length of the axis tick, and to set the visibility of the major and minor tick marks.
 
-![](chart-images/Axis-Properties.png)
+![Axis Properties in JavaScript Report Designer](chart-images/Axis-Properties.png)
 
 **Grid line** - The `Grid line` properties can be set to category and value axis.
  
@@ -209,9 +209,9 @@ The chart has two primary axes: the `value` axis and the `category` axis.
 
     Open the `Advanced` option to set the grid line style and color.
 
-  ![](chart-images/Grid-Properties.png)
+  ![Grid Properties in JavaScript Report Designer](chart-images/Grid-Properties.png)
 
-  ![](chart-images/Grid-Line.png)
+  ![Grid Line in JavaScript Report Designer](chart-images/Grid-Line.png)
 
 
 **Page break** - Add a page break to control the amount of information on each page.
@@ -227,7 +227,7 @@ To remove the page break select **None**.
 
 **Position and size** - The position and size of the chart can be changed using position and size property.
 
-![](chart-images/Position-Size.png)
+![Position Size in JavaScript Report Designer](chart-images/Position-Size.png)
 
 **Visibility** - Select an option to indicate how the report item is initially displayed in the report.
 
@@ -241,52 +241,52 @@ Type an expression that evaluates to a boolean value of true to hide the item or
 
 Click on the icon in the right corner and select **Expression** to edit the expression.
 
-![](chart-images/Visibility.png)
+![Visibility in JavaScript Report Designer](chart-images/Visibility.png)
 
 
-# Adding Data to the Chart
+## Adding Data to the Chart
 
 Create a report and define a dataset. 
 
 Drag and drop the doughnut chart report item into the design area.
 
-![](chart-images/Assign-Drag.png)
+![Assign Drag in JavaScript Report Designer](chart-images/Assign-Drag.png)
 
 > Note: **Doughnut** chart is used for demonstration.
 
-![](chart-images/Doughnut-Chart.png)
+![Doughnut Chart in JavaScript Report Designer](chart-images/Doughnut-Chart.png)
 
 In the chart `Properties` pane, click the `Data`.
 
 The data pane will be opened with available measures and dimensions in the connected data source.
 
-![](chart-images/Assign-Data-Pane.png)
+![Assign Data Pane in JavaScript Report Designer](chart-images/Assign-Data-Pane.png)
 
-# Assign value(s)
+## Assign value(s)
 
 Drag and drop the `Measure` into `Value`.
 
-![](chart-images/Measures-Drag.png)
+![Measures Drag in JavaScript Report Designer](chart-images/Measures-Drag.png)
 
 Now, the chart will be rendered like this.
 
-![](chart-images/first-View-Measures.png)
+![First View Measures in JavaScript Report Designer](chart-images/first-View-Measures.png)
 
 You can change the aggregate type of the value by clicking the `Settings` icon.
 
-![](chart-images/Settings-Icon.png)
+![Settings Icon in JavaScript Report Designer](chart-images/Settings-Icon.png)
 
 Select the required aggregate type from the list.
 
-![](chart-images/Aggregation-Type.png)
+![Aggregation Type in JavaScript Report Designer](chart-images/Aggregation-Type.png)
 
 You can set `Expression` by clicking the `Settings` icon.
 
-![](chart-images/Expression.png)
+![Expression in JavaScript Report Designer](chart-images/Expression.png)
 
 You can add more number of values by drag and drop the `Measures` into `Value` field. 
 
-![](chart-images/Measures-Drag2.png)
+![Measures Drop in JavaScript Report Designer](chart-images/Measures-Drag2.png)
 
 You can also add `Dimensions` and `Columns` to `Value(s)`.
 
@@ -294,19 +294,19 @@ You can also add `Dimensions` and `Columns` to `Value(s)`.
 
 You can add the `Dimension` to `Column` field by drag and drop.
 
-![](chart-images/Dimension-Drag1.png)
+![Dimension Drag in JavaScript Report Designer](chart-images/Dimension-Drag1.png)
 
 You can add `Measures` to `Column(s)` field.
 
 **Filters**: You can limit the data to be displayed by choosing the filters option.
 
-![](chart-images/Filters-Column.png)
+![Filters Column in JavaScript Report Designer](chart-images/Filters-Column.png)
 
 To filter data refer [Filters](/js/ReportDesigner/Compose-Report/Filter-Data).
 
 **Sorting**: You can control the order in which the data appears in a data region by representing sort expressions.
 
-![](chart-images/Sort-Menu.png)
+![Sort Menu in JavaScript Report Designer](chart-images/Sort-Menu.png)
 
 To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
@@ -314,18 +314,18 @@ To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
 You can add a dimension level or hierarchy to `Row` section for series rendering of the chart.
 
-![](chart-images/Assign-Row-Drag.png)
+![Assign Row Drag in JavaScript Report Designer](chart-images/Assign-Row-Drag.png)
 
 The chart will be rendered in series as shown in the image below.
  
-![](chart-images/Row-Chart.png)
+![Row Chart in JavaScript Report Designer](chart-images/Row-Chart.png)
 
 You have settings options similar to column(s).
 
-![](chart-images/Row-Filter-Menu.png)
+![Row Filter Menu in JavaScript Report Designer](chart-images/Row-Filter-Menu.png)
 
 You can add more number of values by drag and drop the `Dimension` into `Row` field.
 
 Now, the chart **Preview** will look like below.
 
-![](chart-images/Preview-Chart.png)
+![Preview Chart in JavaScript Report Designer](chart-images/Preview-Chart.png)
