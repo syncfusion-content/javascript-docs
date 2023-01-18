@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Port
+# Port in JavaScript Diagram
 
 Essential Diagram for JS provides support to define custom ports for making connections.
 
@@ -160,4 +160,4 @@ The [offset](/api/js/ejdiagram#members:nodes-ports-offset "offset") property of 
 
 ## Constraints
 
-The [constraints](/api/js/ejdiagram#members:nodes-ports-constraints "constraints") property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/js/Diagram/Constraints#portconstraints)
+The [constraints](/api/js/ejdiagram#members:nodes-ports-constraints "constraints") property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/js/diagram/constraints#portconstraints)
