@@ -55,7 +55,7 @@ Add a *div* container to render the chart.
 
 {% endhighlight %}
 
-Initialize the chart by using the ejChart method. The chart is rendered to the size of its container, by default. You can also customize the chart dimension either by setting the width and height of the container element as in the above code example or by using the [`size`](../api/ejchart.html#members:size) option of the Chart. Refer to the [`Chart Dimensions`](chart-dimensions.html) to know more about setting the [`size`]() of the chart.
+Initialize the chart by using the ejChart method. The chart is rendered to the size of its container, by default. You can also customize the chart dimension either by setting the width and height of the container element as in the above code example or by using the [`size`](../api/js/ejchart#members:size) option of the Chart. Refer to the [`Chart Dimensions`](chart-dimensions.html) to know more about setting the [`size`]() of the chart.
 
 {% highlight html %}
 
@@ -103,7 +103,7 @@ Now, this section explains how to plot JSON data to the Chart. First, let us pre
 
 {% endhighlight %}
 
-Add a series object to the chart by using the [`series`](../api/ejchart.html#members:series) option and set the chart type as *line* by using the [`type`](../api/ejchart#members:series-type) option. 
+Add a series object to the chart by using the [`series`](../api/js/ejchart#members:series) option and set the chart type as *line* by using the [`type`](../api/ejchart#members:series-type) option. 
 
 {% highlight javascript %}
 
@@ -123,7 +123,7 @@ Add a series object to the chart by using the [`series`](../api/ejchart.html#mem
 
 You can also add multiple series objects based on your requirement. Refer to the [`Chart Types`](Chart-Types.html) and [`Chart Series`](Chart-Series.html) sections to know more about chart types, how to add multiple series and customize series appearance.
 
-Now, map the month and sales values in the data source to the line series by setting the [`xName`](../api/ejchart.html#members:series-xname) and [`yName`](../api/ejchart#members:series-yname) with the field names respectively and then set the actual data by using the *dataSource* option. Refer to the [`Data Binding`](working-with-data.html) section to know more about binding the local and remote data to the chart.
+Now, map the month and sales values in the data source to the line series by setting the [`xName`](../api/js/ejchart#members:series-xname) and [`yName`](../api/js/ejchart#members:series-yname) with the field names respectively and then set the actual data by using the *dataSource* option. Refer to the [`Data Binding`](working-with-data.html) section to know more about binding the local and remote data to the chart.
 
 {% highlight javascript %}
 
