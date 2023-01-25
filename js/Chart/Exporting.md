@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting options in Essential JavaScript Chart
+title: Exporting options in Essential JavaScript Chart | Syncfusion
 description: Learn how to export Chart as excel file or image.
 platform: js
 control: Chart
@@ -201,7 +201,7 @@ public void ExportChart(string Data, string ChartModel)
 
 Excel exporting is a server-side operation. In addition have to refer Syncfusion.XlsIO assembly to export as excel.
 
-![](/js/Chart/Exporting_images/Exporting_img1.png)
+![Excel Exporting in JavaScript Chart](/js/Chart/Exporting_images/Exporting_img1.png)
 
 #### Multiple chart excel exporting
 
@@ -265,7 +265,7 @@ Export multiple chart to excel at server-side
 
 {% endhighlight %}
 
-![](/js/Chart/Exporting_images/Exporting_img2.png)
+![Multiple Chart Excel Exporting in JavaScript Chart](/js/Chart/Exporting_images/Exporting_img2.png)
 
 ## Naming the exported file
 
@@ -285,7 +285,7 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
 
 {% endhighlight %}
 
-![](/js/Chart/Exporting_images/Exporting_img3.png)
+![Rotating Chart in JavaScript Chart](/js/Chart/Exporting_images/Exporting_img3.png)
 
 ## Setting orientation for the document
 
