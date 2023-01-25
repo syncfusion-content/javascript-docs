@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart types
+title: Chart types | Syncfusion
 description: What are the different types of Charts available in Essential JavaScript Chart.
 platform: js
 control: Chart

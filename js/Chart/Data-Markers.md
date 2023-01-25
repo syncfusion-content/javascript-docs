@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers and data labels in Essential JavaScript Chart
+title: Markers and data labels in Essential JavaScript Chart | Syncfusion
 description: Learn how to add markers and data point labels to a Chart series.
 platform: js
 control: Chart
