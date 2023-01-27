@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Line Report Item | ReportDesigner | JS | Syncfusion
-description: Draw a Line Item
+description: This guide is written for you to learn how to draw a Line Report Item in Report Designer in Syncfusion
 platform: js
 control: ReportDesigner
 documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Line
+# Line Report Item ReportDesigner
 To insert the line element into report area to separate the report sections.
 
 ## To add Line

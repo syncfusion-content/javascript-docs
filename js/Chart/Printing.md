@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print  in Essential JavaScript Chart | Syncfusion
-description: Learn how to print the chart.
+title: Print in Essential JavaScript Chart | Syncfusion
+description: This guide is written for you to learn how to print the chart in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Printing Chart
+# Print  in Essential JavaScript Chart
 The rendered chart can be printed directly from the browser by calling the public method [`print`](../api/ejchart#methods:print). ID of the chart div element must be passed as argument to that method.
 
 {% highlight html %}

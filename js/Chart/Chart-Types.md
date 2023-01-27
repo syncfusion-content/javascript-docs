@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart types | Syncfusion
-description: What are the different types of Charts available in Essential JavaScript Chart.
+title: JavaScript Chart types | Syncfusion
+description: This guide is written for you to learn what are the different types of Charts available in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# ChartTypes
+# ChartTypes in JavaScript
 
 ## Line Chart
 
@@ -857,7 +857,7 @@ To render a 100% Stacked Column Chart, set the [`type`](../api/ejchart#members:s
 
 {% endhighlight %}
 
-![100% Stacked Column Chart in JavaScript](/js/Chart/Chart-Types_images/Chart-Types_img24.png)
+![Stacked Column Chart in JavaScript](/js/Chart/Chart-Types_images/Chart-Types_img24.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedcolumn) here to view our 100% Stacked Column Chart online demo.
@@ -891,7 +891,7 @@ By using the [`stackingGroup`](../api/ejchart#members:series-stackinggroup) prop
 
 {% endhighlight %}
 
-![Group 100% stacked columns in JavaScript Chart](/js/Chart/Chart-Types_images/Chart-Types_img25.png)
+![Group stacked columns in JavaScript Chart](/js/Chart/Chart-Types_images/Chart-Types_img25.png)
 
 
 ### Change a point color
@@ -1080,7 +1080,7 @@ To render a 100% Stacked Bar Chart, set the [`type`](../api/ejchart#members:seri
 
 {% endhighlight %}
 
-![100% Stacked Bar Chart in JavaScript](/js/Chart/Chart-Types_images/Chart-Types_img32.png)
+![Stacked Bar Chart in JavaScript](/js/Chart/Chart-Types_images/Chart-Types_img32.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedbar) here to view our 100% Stacked Bar Chart online demo.

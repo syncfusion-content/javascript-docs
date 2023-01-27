@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping with Grid widget for Syncfusion Essential JS | Syncfusion
-description: How to enable grouping and its functionalities
+description: This guide is written for you to learn how to enable grouping and its functionalities with Grid widget for Syncfusion Essential JS
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Grouping
+# Grouping with Grid widget for Syncfusion Essential JS
 
 The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 

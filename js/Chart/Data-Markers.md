@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Markers and data labels in Essential JavaScript Chart | Syncfusion
-description: Learn how to add markers and data point labels to a Chart series.
+description: This guide is written for you to learn how to add markers and data point labels to the Chart series.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Data Markers
+# Markers and data labels in Essential JavaScript Chart
 
 Data markers are used to provide information about the data point to the user. You can add a shape and label to adorn each data point.
 

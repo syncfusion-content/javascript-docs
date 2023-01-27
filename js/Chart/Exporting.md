@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Exporting options in Essential JavaScript Chart | Syncfusion
-description: Learn how to export Chart as excel file or image.
+description: This guide is written for you to learn how to export Chart as excel file or image in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Exporting Chart
+# Exporting options in Essential JavaScript Chart
 
 The exporting of the chart is done using the [`exportSettings`](../api/ejchart#members:exportsettings) property. The chart  export can be done in both client-side and in server-side.This can be modified by setting values to the property [`mode`](../api/ejchart#members:exportsettings-mode) in exporting. Default value for mode is client. 
 
