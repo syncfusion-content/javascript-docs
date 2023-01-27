@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting-Started | Diagram | Javascript | Syncfusion
-description: Getting started walk through to create your first Flow Diagram and Organizational Chart ejDiagram.
+description: Learn here about getting started with Syncfusion Essential JavaScript Diagram Control, its elements, and more.
 platform: js
 control: Diagram
 documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Getting Started
+# Getting Started with JavaScript Diagram
 
 Getting started with your Essential JavaScript Diagram is easy. You can start by creating a simple Flow Diagram.
 
