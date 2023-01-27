@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdaterangepicker
 ---
 
-## Display Format in Essential JavaScript DateRangePicker
+# Display Format in Essential JavaScript DateRangePicker
 
 Text representation of date and time in their corresponding text box in a control, can be changed using the available API called **dateFormat**, **timeFormat**.  By default those values will be set based on culture. 
 
