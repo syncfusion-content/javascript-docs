@@ -450,5 +450,5 @@ The following table illustrates those commands with the associated key values.
 | Shift + Tab | focusToPreviousItem | Focus the previous node/connector based on z-order |
 | Enter | selectFocusedItem | Select the focussed node/connector |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/commands#command-manager "Command Manager").
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/diagram/commands#command-manager "Command Manager").
  
