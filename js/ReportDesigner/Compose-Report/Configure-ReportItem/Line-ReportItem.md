@@ -15,10 +15,10 @@ To insert the line element into report area to separate the report sections.
 
 Drag and drop the `Line` from the item panel. You can add Line item in header, footer, and body area.
 
-![](Line-images/Line-Drag.png)
+![line Drag in JavaScript ReportDesigner](Line-images/Line-Drag.png)
 
 You can customize the line thickness, color and type through property panel.
 
-![](Line-images/Line-Properties.png)
+![Line Properties in JavaScript ReportDesigner](Line-images/Line-Properties.png)
 
 
