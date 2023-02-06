@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion JavaScript controls
+title: Overview of Syncfusion JavaScript Platform
 description: Overview of Syncfusion Essential JS widgets based on HTML5 and jQuery for building modern web applications.
 platform: js
 control: Introduction
