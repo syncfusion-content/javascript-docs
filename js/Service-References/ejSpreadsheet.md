@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Service reference for ejSpreadsheet widget | Syncfusion
-description: Default behavior settings for Essential Studio JavaScript on the services used in Essential JavaScript Spreadsheet.
-documentation: ug
+title: Service reference for JavaSCript Spreadsheet | Syncfusion
+description: Learn here about service reference in Syncfusion JavaScript Spreadsheet Control, its elements, and more.
+documentation: api
 platform: js
 keywords: ejSpreadsheet, Services, Essential JS Spreadsheet, Spreadsheet,Importing Service, Spreadsheet Importing,Spreadsheet Importing Service, Excel Exporting Service, Spreadsheet Exporting, PDF Exporting Service, CSV Exporting Service
 metaname: 
@@ -10,7 +10,7 @@ metacontent:
 control: ejSpreadsheet
 ---
 
-# Service reference for ejSpreadsheet widget
+# Service reference for JavaScript Spreadsheet 
 
 ## Importing Service
 
