@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential JS
+title: Introduction of Syncfusion JavaScript controls
 description: Overview of Syncfusion Essential JS widgets based on HTML5 and jQuery for building modern web applications.
 platform: js
 control: Introduction
@@ -29,5 +29,5 @@ Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 Jav
 
 ## Create a support incident
 
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://support.syncfusion.com/support/tickets/) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://internalsupport.bolddesk.com/agent/tickets/create) by creating a support ticket.
 
