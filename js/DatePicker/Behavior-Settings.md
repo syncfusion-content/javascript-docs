@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behaviour Settings
-description: Configure DatePicker Behaviour settings
+title: Behaviour Settings in JavaScript DatePicker control | Syncfusion
+description: Learn here more about Configure DatePicker Behaviour settings support in Syncfusion Essential JavaScript Schedule Control, its elements, and more.
 platform: js
 control: DatePicker
 documentation: ug
 api: /api/js/ejdatepicker
 ---
-# Behavior Settings
+# Behavior Settings in JavaScript DatePicker
 
 DatePicker has some default behavior settings which helps you to perform more operation by Built-in.
 
