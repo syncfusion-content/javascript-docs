@@ -2,7 +2,7 @@
 layout: post
 title: Service reference for JavaSCript Spreadsheet | Syncfusion
 description: Learn here about service reference in Syncfusion JavaScript Spreadsheet Control, its elements, and more.
-documentation: api
+documentation: Service
 platform: js
 keywords: ejSpreadsheet, Services, Essential JS Spreadsheet, Spreadsheet,Importing Service, Spreadsheet Importing,Spreadsheet Importing Service, Excel Exporting Service, Spreadsheet Exporting, PDF Exporting Service, CSV Exporting Service
 metaname: 
