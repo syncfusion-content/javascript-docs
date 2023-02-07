@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Report Item | ReportDesigner | JS | Syncfusion
-description: Learn here more about Draw a Line Item support in Syncfusion Essential JavaScript ReportDesigner Control, its elements, and more
+title: Line Report Item in JavaScript ReportDesigner control | Syncfusion
+description: Learn here more about Draw a Line Item support in Syncfusion Essential JavaScript ReportDesigner Control, its elements, and more.
 platform: js
 control: ReportDesigner
 documentation: ug

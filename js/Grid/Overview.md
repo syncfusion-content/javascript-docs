@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Grid widget for Syncfusion Essential JS
-description: Learn here more about Overview in Syncfusion Essential JavaScript Grid Control, its elements, and more
+description: Learn here more about Overview in Syncfusion Essential JavaScript Grid Control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | DateTimePicker | JS | Syncfusion
-description: Learn here more about Overview in Syncfusion Essential JavaScript DateTimePicker Control, its elements, and more
+title: Overview in JavaScript DateTimePicker control | Syncfusion
+description: Learn here more about Overview in Syncfusion Essential JavaScript DateTimePicker Control, its elements, and more.
 platform: js
 control: DateTimePicker
 documentation: ug

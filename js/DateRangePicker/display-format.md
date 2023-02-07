@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Format | DateRangePicker | JS | Syncfusion
-description: Learn here more about display format support in Syncfusion Essential JavaScript DateRangePicker Control, its elements, and more
+title: Display Format in JavaScript DateRangePicker control | Syncfusion
+description: Learn here more about display format support in Syncfusion Essential JavaScript DateRangePicker Control, its elements, and more.
 platform: js
 control: DateRangePicker
 documentation: ug
