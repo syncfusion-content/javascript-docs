@@ -128,7 +128,7 @@ The following table provides jQuery compatibility information.
 
 Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script and globalize library packed together in a minified format.
 
-N> Syncfusion recommends not to use this file in the production environment as it contains all the controls and size will be huge. Please use our [Custom Script Generator](/js/include-only-the-needed-widgets) to generate only the needed scripts for the controls you have used in your application before going into production.
+N> Syncfusion recommends not to use this file in the production environment as it contains all the controls and size will be huge. Please use our [Custom Script Generator](https://help.syncfusion.com/js/custom-script-generator) to generate only the needed scripts for the controls you have used in your application before going into production.
 
 Copy the **ej.web.all.min.js** file into the **Scripts\\ej** folder.
 
@@ -249,7 +249,7 @@ Using the NuGet Package method in Visual Studio automates the process of copying
 
 ### Configuring and Installing NuGet into your project
 
-Configure the [Syncfusion NuGet Package for Essential JS](/js/installation-and-deployment#configuring-syncfusion-nuget-packages) in Visual Studio initially, before proceeding with the following installation procedure.
+Configure the [Syncfusion NuGet Package for Essential JS](https://help.syncfusion.com/js/nuget-packages) in Visual Studio initially, before proceeding with the following installation procedure.
 
 Right click on your project (for ex, ASP.NET Empty Web application) in the Solution explorer and navigate to `Manage NuGet Packages|Online|Syncfusion NuGet Packages`, which will display the list of available packages in it, as shown below.
 ![nuget installation](Control-Initialization_images/Control-Initialization_img6.png) 
@@ -308,7 +308,7 @@ Include the reference to the required JavaScript files in your HTML page as show
 
 ### Adding Syncfusion Widget into your HTML page
 
-Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the [manual method](/js/control-initialization#adding-syncfusion-widget-into-your-html-page). 
+Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the [manual method](https://help.syncfusion.com/js/control-initialization#adding-syncfusion-widget-into-your-html-page). 
 
 ## Using CDN link for script and style sheet reference 
 
@@ -316,7 +316,7 @@ With this method, you can skip the process of copying and pasting the required s
 
 ### HTML file creation
 
-Create a basic HTML file and directly refer all the required CDN links for the [scripts](/js/cdn#cdn-script-links) and [style sheets](/js/cdn#cdn-stylesheet-links) within the `<head>` section as shown below, 
+Create a basic HTML file and directly refer all the required CDN links for the [scripts](https://help.syncfusion.com/js/cdn#cdn-script-links) and [style sheets](https://help.syncfusion.com/js/cdn#cdn-stylesheet-links) within the `<head>` section as shown below, 
 
 {% highlight html %}
 
@@ -378,12 +378,12 @@ The DatePicker control is rendered with its default appearance now. You can then
 
 With this tool, you can create a single file that packs only the required scripts and css files. Both minified and unminified versions of the scripts and css can be downloaded from this tool.
 
-For more reference on usage of this tool, please click [here](/js/custom-script-generator).
+For more reference on usage of this tool, please click [here](https://help.syncfusion.com/js/custom-script-generator).
 
 After downloading the necessary files from this tool, the folder structure will look like below and you need to create a HTML file inside it.
 ![folder structure](Control-Initialization_images/Control-Initialization_img1.png) 
 
 The folder will contain the scripts and content folder by default which will hold the required scripts and css respectively. Inside the HTML file, refer the scripts and css from the downloaded folders.
 
-Refer this [section](/js/control-initialization#adding-reference-to-the-required-style-sheets) for css reference inside the HTML file and this [section](/js/control-initialization#adding-reference-to-the-required-javascript-files) for script reference inside the HTML file. After referring the scripts and css files, refer this [section](/js/control-initialization#adding-syncfusion-widget-into-your-html-page) to create the Syncfusion widget.
+Refer this [section](https://help.syncfusion.com/js/control-initialization#adding-reference-to-the-required-style-sheets) for css reference inside the HTML file and this [section](/js/control-initialization#adding-reference-to-the-required-javascript-files) for script reference inside the HTML file. After referring the scripts and css files, refer this [section](https://help.syncfusion.com/js/control-initialization#adding-syncfusion-widget-into-your-html-page) to create the Syncfusion widget.
 
