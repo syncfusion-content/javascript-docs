@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accordion-Panel-enabler
-description: accordion panel enabler
+title: Accordion-Panel-enabler in JavaScript | Syncfusion
+description: Learn here about service reference in Syncfusion JavaScript Accordion Control, its elements, and more
 platform: js
 control: Accordion 
 documentation: ug
 api: /api/js/ejaccordion
 ---
 
-# Accordion Panel enabler
+# Accordion Panel enabler in JavaScript
 
 ## Enable/Disable widget
 
@@ -59,7 +59,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 Output for disabled Accordion control is as follows.
 
 
-![](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) 
+![Enable/Disable widget in JAvaScript Accordion](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) 
 
 ## Enable panel items
 
@@ -117,5 +117,5 @@ Output for Accordion control with some enabled and disabled items, where first p
 
 
 
-![](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png) 
+![Enabling accordion panel items in JavaScript Accordion](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png) 
 

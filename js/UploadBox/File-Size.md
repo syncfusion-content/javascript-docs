@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File-Size
-description: file size 
+title: File-Size for JavaScript Uploadbox | Syncfusion
+description: Learn here about service reference in Syncfusion JavaScript Uploadbox Control, its elements, and more
 platform: js
 control: Uploadbox
 documentation: ug
 api: /js/ejuploadbox
 ---
 
-# File Size 
+# File-Size for JavaScript Uploadbox
 
 ## Maximum File Size for Uploadbox
 
@@ -60,13 +60,13 @@ When you want to browse the file within the fileSize, you can browse and upload 
 
 
 
-![](/js/UploadBox/File-Size_images/File-Size_img1.png) 
+![File-Size for JavaScript Uploadbox](/js/UploadBox/File-Size_images/File-Size_img1.png) 
 
 When you try to browse the file with exceeded fileSize, we cannot browse and upload the files.
 
 
 
-![](/js/UploadBox/File-Size_images/File-Size_img2.png) 
+![Maximum File Size for JavaScript Uploadbox](/js/UploadBox/File-Size_images/File-Size_img2.png) 
 
 ## Maximum File Upload Size in IIS
 
@@ -158,7 +158,7 @@ You can add the following code to your **web.config** file in order to set that 
 N> maxAllowedContentLength is measured in bytes.
 
 
-![](/js/UploadBox/File-Size_images/File-Size_img4.png) 
+![Maximum File Upload Size in IIS in javaScript Uploadbox](/js/UploadBox/File-Size_images/File-Size_img4.png) 
                        
 
 N> * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.

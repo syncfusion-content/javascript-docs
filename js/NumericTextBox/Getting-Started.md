@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JavaScript NumericTextbox | Syncfusion
+description: Learn here more about getting started with Syncfusion Essential JavaScript NumericTextbox Control, its elements, and more.
 platform: js
 control: NumericTextbox
 documentation: ug
 api: /api/js/
 ---
 
-# Getting Started
+# Getting Started with JavaScript NumericTextbox
 
 This section explains briefly about how to create a **NumericTextBox** control in your application with **JavaScript**. From the following steps you can learn how to create and use **NumericTextBox** in your application.You will learn how to use our JavaScript textboxes widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Getting Started with JavaScript NumericTextbox](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create Textboxes Widgets
 
@@ -154,7 +154,7 @@ Initialize the **Textboxes widget** as shown in the following section.
 
 The following screenshot displays the output when the above code is executed. 
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Create Textboxes Widgets with JavaScript NumericTextBox](Getting-Started_images/Getting-Started_img2.png) 
 
 
 ## Set the MinValue, MaxValue and value in NumericTextBox
@@ -205,7 +205,7 @@ You can set the **“minValue”**,**“maxValue”** and **“value”** in Num
 
 The following screenshot illustrates the output of the above code examples.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![Set the MinValue, MaxValue and value in JavaScript NumericTextBox](Getting-Started_images/Getting-Started_img3.png) 
 
 
 ## Set the Strict Mode Option
@@ -290,4 +290,4 @@ You can use events to calculate the total and display the value. You can achieve
 
 Run the above code example, fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator. 
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+![Set Calculation process in JavaScript NumericTextBox](Getting-Started_images/Getting-Started_img4.png) 
