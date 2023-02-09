@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accordion-Panel-enabler in JavaScript | Syncfusion
-description: Learn here about service reference in Syncfusion JavaScript Accordion Control, its elements, and more
+description: Learn here about post in Syncfusion JavaScript Accordion Control, its elements, and more
 platform: js
 control: Accordion 
 documentation: ug
