@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Print with Grid widget for Syncfusion Essential JS
-description: How to enable print option in Grid
+title: Print with Grid widget for Essential JS | Syncfusion
+description: Learn here about introduction reference in Syncfusion JavaScript Grid Control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Print
+# Print with Grid widget for Essential JS
 
 You need to use [`print()`](https://help.syncfusion.com/api/js/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems).
 
@@ -33,14 +33,14 @@ You need to use [`print()`](https://help.syncfusion.com/api/js/ejgrid#methods:pr
 	
 {% endhighlight %}
 
-![](Print-Grid_images/Print_img1.png)
+![Print with JavaScript Grid](Print-Grid_images/Print_img1.png)
 
 
 ## Page Setup
 
 Some of the print options are not configurable through the JavaScript code. You need to customize layout, paper size, and margins options through browser's page setup dialog. Please find the following guidelines link to browser page setup.
 
-* [Chrome](https://support.google.com/chrome/answer/1379552?hl=en)
+* [Chrome](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=638114310002759193-3723343458&rd=1)
 * [Firefox](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
 * [Safari](http://www.mintprintables.com/print-tips/adjust-margins-osx/)
 * [IE](http://www.helpteaching.com/help/print/index.htm) 
@@ -89,12 +89,12 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Print-Grid_images/Print_img2.png)
+![Print on external Button Click in JavaScript Grid](Print-Grid_images/Print_img2.png)
 
 {:caption}
 Grid with external button for Print
 
-![](Print-Grid_images/Print_img3.png)
+![Grid with external button for Print in JavaScript Grid](Print-Grid_images/Print_img3.png)
 {:caption}
 
 Print dialog in Chrome browser
