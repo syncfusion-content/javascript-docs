@@ -1,13 +1,13 @@
 ---
-title: Schedule - Customization	
-description: Customization of working hours, date, and appointment window
+title: Customization in JavaScript Schedule control | Syncfusion	
+description: Learn here more about Customization support in Syncfusion Essential JavaScript Schedule Control, its elements, and more.
 platform: js
 control: schedule
 documentation: ug
 keywords: customization, work hours, appointment window, display hours, Query cell info
 api: /api/js/ejschedule
 ---
-# Customization
+# Customization in JavaScript Schedule
 
 The Scheduler can be customized in various aspects like - 
 

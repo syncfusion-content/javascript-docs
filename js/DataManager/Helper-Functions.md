@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Helper-Functions
-description: helper functions
+title: Helper-Functions in JavaScript DataManager control | Syncfusion
+description: Learn here more about helper functions support in Syncfusion Essential JavaScript DataManager Control, its elements, and more.
 platform: js
 control: DataManager
 documentation: ug
 api: /api/js/ejdatamanager
 ---
 
-# Helper Functions
+# Helper Functions in JavaScript DataManager
 
 **ej.parseJSON**
 
