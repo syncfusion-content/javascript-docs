@@ -13,12 +13,12 @@ The Scheduler can be customized in various aspects like -
 
 * Setting different Start/end hour limits
 * Highlighting the working hours 
-* Setting different [date format](https://help.syncfusion.com/js/schedule/globalization-and-localization#date-format)
+* Setting different [date format](/js/schedule/globalization-and-localization#date-format)
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
 * Setting different time Slot duration
 * Complete Scheduler customization using queryCellInfo event
-* Setting different [first day of week](https://help.syncfusion.com/js/schedule/globalization-and-localization#first-day-of-week)
+* Setting different [first day of week](/js/schedule/globalization-and-localization#first-day-of-week)
 
 ## Hour Customization
 
@@ -26,7 +26,7 @@ It includes customization of displaying Scheduler with specific Start/End hours 
 
 ### Schedule Display Hours
 
-It denotes the start and end hour time limits to be displayed on the Scheduler. To set this time limit, two properties namely [startHour](https://help.syncfusion.com/api/js/ejschedule#members:starthour) and [endHour](https://help.syncfusion.com/api/js/ejschedule#members:endhour) can be used. 
+It denotes the start and end hour time limits to be displayed on the Scheduler. To set this time limit, two properties namely [startHour](/api/js/ejschedule#members:starthour) and [endHour](/api/js/ejschedule#members:endhour) can be used. 
 
 * **startHour** - The hour from which the Scheduler time display actually starts.
 * **endHour** - The hour on which the Scheduler time display should end.
@@ -61,11 +61,11 @@ $(function() {
 
 ### Working Hours
 
-Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. [workHour](https://help.syncfusion.com/api/js/ejschedule#members:workhours) is a object property which contains the below specified options,
+Working hours indicates the work hour limit within the Scheduler, which is highlighted visually with white colored work cells. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. [workHour](/api/js/ejschedule#members:workhours) is a object property which contains the below specified options,
 
-* **[highlight](https://help.syncfusion.com/api/js/ejschedule#members:workhours-highlight)** – enables/disables the highlighting of work hours.
-* **[start](https://help.syncfusion.com/api/js/ejschedule#members:workhours-start)** - sets the start time of the working/business hour in a day. 
-* **[end](https://help.syncfusion.com/api/js/ejschedule#members:workhours-end)** - sets the end time limit of the working/business hour in a day. 
+* **[highlight](/api/js/ejschedule#members:workhours-highlight)** – enables/disables the highlighting of work hours.
+* **[start](/api/js/ejschedule#members:workhours-start)** - sets the start time of the working/business hour in a day. 
+* **[end](/api/js/ejschedule#members:workhours-end)** - sets the end time limit of the working/business hour in a day. 
 
 
 {% highlight html %}
@@ -100,12 +100,12 @@ N> By default, work hour **start** is set to **9** and **end** is set to **18**.
 
 ## TimeScale
 
-The [TimeScale](https://help.syncfusion.com/api/js/ejschedule#members:timeScale) allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
+The [TimeScale](/api/js/ejschedule#members:timeScale) allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
 
-* [enable](https://help.syncfusion.com/api/js/ejschedule#members:timeScale-enable) - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
-* [majorSlot](https://help.syncfusion.com/api/js/ejschedule#members:timeScale-majorSlot) – Specifies the major time slot duration.
-* [minorSlotCount](https://help.syncfusion.com/api/js/ejschedule#members:timeScale-minorSlotCount) – Specifies the value, based on which the minor time slots are divided into appropriate count.
-* [TimeScale templates](https://help.syncfusion.com/js/schedule/templates#timescale-templates) - 2 template options available for customizing timeScales namely `minorSlotTemplateId` and `majorSlotTemplateId`. 
+* [enable](/api/js/ejschedule#members:timeScale-enable) - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
+* [majorSlot](/api/js/ejschedule#members:timeScale-majorSlot) – Specifies the major time slot duration.
+* [minorSlotCount](/api/js/ejschedule#members:timeScale-minorSlotCount) – Specifies the value, based on which the minor time slots are divided into appropriate count.
+* [TimeScale templates](/js/schedule/templates#timescale-templates) - 2 template options available for customizing timeScales namely `minorSlotTemplateId` and `majorSlotTemplateId`. 
 
 The majorSlot and minorSlot can be set on the Scheduler with the following code example.
 
@@ -140,7 +140,7 @@ $(function() {
 
 ## Hide Weekend days
 
-The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the [workWeek](https://help.syncfusion.com/api/js/ejschedule#members:workweek) property. The days that are not mentioned in the `workWeek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the [showWeekend](https://help.syncfusion.com/api/js/ejschedule#members:showweekend) property.
+The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the [workWeek](/api/js/ejschedule#members:workweek) property. The days that are not mentioned in the `workWeek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the [showWeekend](/api/js/ejschedule#members:showweekend) property.
 
 The following code example renders the Scheduler by hiding the weekend days.
 
@@ -204,7 +204,7 @@ N> By default, the System current date will be taken as Scheduler’s current da
 
 ### MinDate and MaxDate
 
-Providing the [minDate](https://help.syncfusion.com/api/js/ejschedule#members:mindate) and [maxDate](https://help.syncfusion.com/api/js/ejschedule#members:maxdate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that lies beyond these date ranges will not be displayed on the Scheduler.  
+Providing the [minDate](/api/js/ejschedule#members:mindate) and [maxDate](/api/js/ejschedule#members:maxdate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that lies beyond these date ranges will not be displayed on the Scheduler.  
 
 The following code example shows how to set the minDate and maxDate properties of the Scheduler.
 
@@ -236,7 +236,7 @@ N> The **maxDate** value provided should always be greater than that of **minDat
 
 ## Appointment Window Customization
 
-It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the [appointmentWindowOpen](https://help.syncfusion.com/api/js/ejschedule#events:appointmentwindowopen) event within which the display of default appointment window is prevented.
+It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the [appointmentWindowOpen](/api/js/ejschedule#events:appointmentwindowopen) event within which the display of default appointment window is prevented.
 
 The following code example lets you create the custom appointment window (using recurrence editor feature) with a single extra field for defining the appointment type.
 
@@ -632,7 +632,7 @@ function save() {
 
 ## Scheduler Customization using queryCellInfo
 
-It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using [queryCellInfo ](https://help.syncfusion.com/api/js/ejschedule#events:appointmentwindowopen) event.
+It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using [queryCellInfo ](/api/js/ejschedule#events:appointmentwindowopen) event.
 
 The following code snippet shows how to customize the appointment and work cells based on the query cell info event.
 

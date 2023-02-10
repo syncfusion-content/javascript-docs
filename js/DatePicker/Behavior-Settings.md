@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behaviour Settings in JavaScript DatePicker control | Syncfusion
-description: Learn here more about Configure DatePicker Behaviour settings support in Syncfusion Essential JavaScript Schedule Control, its elements, and more.
+description: Learn here more about Configure DatePicker Behaviour settings support in Syncfusion Essential JavaScript DatePicker Control, its elements, and more.
 platform: js
 control: DatePicker
 documentation: ug
