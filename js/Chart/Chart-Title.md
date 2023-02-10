@@ -55,7 +55,7 @@ $("#container").ejChart({
 [Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
 
 
-We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](..https://help.syncfusion.com/api/js/ejchart#members:title-textoverflow) property. 
+We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](https://help.syncfusion.com/api/js/ejchart#members:title-textoverflow) property. 
 To perform trim operation [`enableTrim`](https://help.syncfusion.com/api/js/ejchart#members:title-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](https://help.syncfusion.com/api/js/ejchart#members:title-maximumwidth) property.
 The original text will be displayed as tooltip on mouse hover.
 
@@ -150,7 +150,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 
 ### title border opacity
 
-[`opacity`] (../api/ejchart#members:title-border-opacity)of the title border.
+[`opacity`] (https://help.syncfusion.com/api/js/ejchart#members:title-border-opacity) of the title border.
 
 {% highlight javascript %}
 
@@ -166,7 +166,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 {% endhighlight %} 
 
 ### title border cornerRadius
-[`cornerRadius`](https://help.syncfusion.com/api/js/ejchart#members:title-border-opacity)  of the title border.
+[`cornerRadius`](https://help.syncfusion.com/api/js/ejchart#members:title-border-cornerradius) of the title border.
 
 {% highlight javascript %}
 
@@ -302,7 +302,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle font fontStyle
 
-[`FontStyle`](..https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-fontstyle)for sub title.
+[`FontStyle`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-fontstyle) for sub title.
 
 {% highlight javascript %}
 
@@ -317,7 +317,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle font fontWeight
 
-[`FontWeight`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-fontweight)for sub title.
+[`FontWeight`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-fontweight) for sub title.
 
 {% highlight javascript %}
 
