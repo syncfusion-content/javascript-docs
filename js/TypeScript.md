@@ -30,7 +30,7 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 Start Visual Studio 2013 and Create a new TypeScript Application from `File|New|Project` and `save` it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
 ![TypeScript_images1](TypeScript_images/TypeScript_img1.png) 
 
-Now, you need to add the required Scripts and style sheets into your Project, as shown below – Copy the required Scripts and Content/ejthemes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the [manual reference](https://help.syncfusion.com/js/control-initialization#manual-reference-of-scripts-and-stylesheets-in-a-html-page) section of the Control Initialization topic),
+Now, you need to add the required Scripts and style sheets into your Project, as shown below – Copy the required Scripts and Content/ejthemes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the [manual reference](/js/control-initialization#manual-reference-of-scripts-and-stylesheets-in-a-html-page) section of the Control Initialization topic),
 ![TypeScript_images2](TypeScript_images/TypeScript_img2.png)
 
 Scripts & Content folder copied into current project

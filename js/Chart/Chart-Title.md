@@ -12,8 +12,8 @@ api : /api/js/ejchart
 
 ## Title
 
-By using the title option, you can add the [`text`](https://help.syncfusion.com/api/js/ejchart#members:title-text) as well as customize its [`border`](https://help.syncfusion.com/api/js/ejchart#members:title-border),  [`background`](https://help.syncfusion.com/api/js/ejchart#members:title-background) color and [`font`](https://help.syncfusion.com/api/js/ejchart#members:title-font).
-The visibility of the title is controlled by using the [`visible`](https://help.syncfusion.com/api/js/ejchart#members:title-visible)property.
+By using the title option, you can add the [`text`](../api/ejchart#members:title-text) as well as customize its [`border`](../api/ejchart#members:title-border),  [`background`](../api/ejchart#members:title-background) color and [`font`](../api/ejchart#members:title-font).
+The visibility of the title is controlled by using the [`visible`](../api/ejchart#members:title-visible)property.
 
 {% highlight javascript %}
 
@@ -52,12 +52,11 @@ $("#container").ejChart({
 ![Title](Chart-Title_images/Chart-Title_img1.png)
 
 
-[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
 
 
-We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](https://help.syncfusion.com/api/js/ejchart#members:title-textoverflow) property. 
-To perform trim operation [`enableTrim`](https://help.syncfusion.com/api/js/ejchart#members:title-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](https://help.syncfusion.com/api/js/ejchart#members:title-maximumwidth) property.
-The original text will be displayed as tooltip on mouse hover.
+We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-textoverflow) property. 
+To perform trim operation [`enableTrim`](../api/ejchart#members:title-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](../api/ejchart#members:title-maximumwidth) property.
 
 
 {% highlight javascript %}
@@ -88,7 +87,7 @@ The original text will be displayed as tooltip on mouse hover.
 
 ### Title Alignment
 
-You can change the title alignment to *center*, *far* and *near* by using the [`textAlignment`](https://help.syncfusion.com/api/js/ejchart#members:title-textalignment) property of the chart title. 
+You can change the title alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart#members:title-textalignment) property of the chart title. 
 
 {% highlight javascript %}
 
@@ -113,10 +112,10 @@ You can change the title alignment to *center*, *far* and *near* by using the [`
 
 ### title border
 
-Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#members:title-border) of the title.
+Options to customize the [`border`](../api/ejchart#members:title-border) of the title.
 
 ### title border width 
-[`Width`](https://help.syncfusion.com/api/js/ejchart#members:title-border-width) of the title border.
+[`Width`](../api/ejchart#members:title-border-width) of the title border.
 
 {% highlight javascript %}
 
@@ -133,7 +132,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 
 ### title border color
 
-[`color`] (https://help.syncfusion.com/api/js/ejchart#members:title-border-color)of the title border.
+[`color`] (../api/ejchart#members:title-border-color)of the title border.
 
 {% highlight javascript %}
 
@@ -150,7 +149,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 
 ### title border opacity
 
-[`opacity`] (https://help.syncfusion.com/api/js/ejchart#members:title-border-opacity) of the title border.
+[`opacity`] (..api/ejchart#members:title-border-opacity) of the title border.
 
 {% highlight javascript %}
 
@@ -166,7 +165,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 {% endhighlight %} 
 
 ### title border cornerRadius
-[`cornerRadius`](https://help.syncfusion.com/api/js/ejchart#members:title-border-cornerradius) of the title border.
+[`cornerRadius`](..api/ejchart#members:title-border-cornerradius) of the title border.
 
 {% highlight javascript %}
 
@@ -183,7 +182,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 
 ### title fontFamily
 
-[`Font family`](https://help.syncfusion.com/api/js/ejchart#members:title-font-fontfamily) for Chart title.
+[`Font family`](..api/ejchart#members:title-font-fontfamily) for Chart title.
 
 {% highlight javascript %}
 
@@ -199,7 +198,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 
 ### title fontStyle
 
-[`Font style`](https://help.syncfusion.com/api/js/ejchart#members:title-font-fontstyle) for Chart title.
+[`Font style`](..api/ejchart#members:title-font-fontstyle) for Chart title.
 
 {% highlight javascript %}
 
@@ -214,7 +213,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 
 ### title fontWeight
 
-[`Font weight`](https://help.syncfusion.com/api/js/ejchart#members:title-font-fontweight) for Chart title.
+[`Font weight`](..api/ejchart#members:title-font-fontweight) for Chart title.
 
 {% highlight javascript %}
 
@@ -229,7 +228,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 
 ### title font opacity
 
-[`Opacity`] (https://help.syncfusion.com/api/js/ejchart#members:title-font-opacity)of the Chart title.
+[`Opacity`] (..api/ejchart#members:title-font-opacity)of the Chart title.
 
 {% highlight javascript %}
 
@@ -243,7 +242,7 @@ Options to customize the [`border`](https://help.syncfusion.com/api/js/ejchart#m
 {% endhighlight %} 
 
 ### title font size
-Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size) for Chart title.
+Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 
 {% highlight javascript %}
 
@@ -258,7 +257,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 
 ### title maximum width
-[`MaximumWidth`](https://help.syncfusion.com/api/js/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
+[`MaximumWidth`](..api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
 
 {% highlight javascript %}
 
@@ -272,7 +271,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 {% endhighlight %} 
 
 ### title text overflow
- [`TextOverflow`](https://help.syncfusion.com/api/js/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
+ [`TextOverflow`](..api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
 
  {% highlight javascript %}
 
@@ -287,7 +286,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle font fontFamily
 
-[`FontFamily`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-fontfamily) of sub title.
+[`FontFamily`](..api/ejchart#members:title-subtitle-font-fontfamily) of sub title.
 
  {% highlight javascript %}
 
@@ -302,7 +301,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle font fontStyle
 
-[`FontStyle`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-fontstyle) for sub title.
+[`FontStyle`](..api/ejchart#members:title-subtitle-font-fontstyle) for sub title.
 
 {% highlight javascript %}
 
@@ -317,7 +316,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle font fontWeight
 
-[`FontWeight`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-fontweight) for sub title.
+[`FontWeight`](..api/ejchart#members:title-subtitle-font-fontweight) for sub title.
 
 {% highlight javascript %}
 
@@ -332,7 +331,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
  
  ### title subtitle font opacity
 
- [`Opacity`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-opacity) of the sub title.
+ [`Opacity`](..api/ejchart#members:title-subtitle-font-opacity) of the sub title.
 
  {% highlight javascript %}
 
@@ -347,7 +346,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle font size
 
-[`Font size`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font-size) for sub title.
+[`Font size`](..api/ejchart#members:title-subtitle-font-size) for sub title.
 
 {% highlight javascript %}
 
@@ -362,7 +361,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle background
 
-[`Background`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-background) color for the chart subtitle.
+[`Background`](..api/ejchart#members:title-subtitle-background) color for the chart subtitle.
 
 {% highlight javascript %}
 
@@ -377,7 +376,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle border width
 
-[`Width`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-border-width) of the subtitle border.
+[`Width`](../api/ejchart#members:title-subtitle-border-width) of the subtitle border.
 
 {% highlight javascript %}
 
@@ -394,7 +393,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle border color
 
-[`color`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-border-color) of the subtitle border.
+[`color`](../api/ejchart#members:title-subtitle-border-color) of the subtitle border.
 
 {% highlight javascript %}
 
@@ -411,7 +410,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 {% endhighlight %} 
 
 ### title subtitle border opacity
-[`opacity`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-border-opacity) of the subtitle border.
+[`opacity`](../api/ejchart#members:title-subtitle-border-opacity) of the subtitle border.
 
 {% highlight javascript %}
 
@@ -428,7 +427,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 {% endhighlight %} 
 
 ### title subtitle border opacity
-[`opacity`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-border-opacity) of the subtitle border.
+[`opacity`](../api/ejchart#members:title-subtitle-border-opacity) of the subtitle border.
 
 {% highlight javascript %}
 
@@ -446,7 +445,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 
 ### title subtitle border cornerRadius
-[`cornerRadius`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-border-cornerradius) of the subtitle border.
+[`cornerRadius`](../api/ejchart#members:title-subtitle-border-cornerradius) of the subtitle border.
 
 {% highlight javascript %}
 
@@ -464,7 +463,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 
 ### title subtitle text
 
-[`Text`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-text) to be displayed in sub title.
+[`Text`](../api/ejchart#members:title-subtitle-text) to be displayed in sub title.
 
 {% highlight javascript %}
 
@@ -481,7 +480,7 @@ Font [`size`](https://help.syncfusion.com/api/js/ejchart#members:title-font-size
 {% endhighlight %} 
 
 ### title subtitle visible
-Controls the [`visibility`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-visible) of the Chart SubTitle
+Controls the [`visibility`](../api/ejchart#members:title-subtitle-visible) of the Chart SubTitl
 
 {% highlight javascript %}
 
@@ -498,7 +497,7 @@ Controls the [`visibility`](https://help.syncfusion.com/api/js/ejchart#members:t
 {% endhighlight %} 
 
 ### title subtitle maximum width
-[`Maximum width`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-maximumwidth) of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true.
+[`Maximum width`](../api/ejchart#members:title-subtitle-maximumwidth) of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true.
 
 {% highlight javascript %}
 
@@ -515,7 +514,7 @@ Controls the [`visibility`](https://help.syncfusion.com/api/js/ejchart#members:t
 {% endhighlight %} 
 
 ### title subtitle text overflow
-[`text overflow`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-textoverflow) specifies the action taken when the Chart width is more than the SubTitleWidth.
+[`text overflow`](../api/ejchart#members:title-subtitle-textOverflow) specifies the action taken when the Chart width is more than the SubTitleWidth.
 
 {% highlight javascript %}
 
@@ -534,7 +533,7 @@ Controls the [`visibility`](https://help.syncfusion.com/api/js/ejchart#members:t
 
 ## Add Subtitle to the chart
 
-By using the subTitle option, you can add the [`subTitle`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle) to the chart title and customize its [`border`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-border-color),  [`background`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-background) color and [`font`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-font). 
+By using the subTitle option, you can add the [`subTitle`](../api/ejchart#members:title-subtitle) to the chart title and customize its [`border`](../api/ejchart#members:title-subtitle-border),  [`background`](../api/ejchart#members:title-subtitle-background) color and [`font`](../api/ejchart#members:title-subtitle-font). 
 
 {% highlight javascript %}
 
@@ -575,8 +574,8 @@ $("#container").ejChart({
 ![SubTitle](Chart-Title_images/Chart-Title_img3.png)
 
 
-We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-textoverflow) property. 
-To perform trim operation [`enableTrim`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-maximumwidth) property.
+We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-subtitle-textoverflow) property. 
+To perform trim operation [`enableTrim`](../api/ejchart#members:title-subtitle-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](../api/ejchart#members:title-subtitle-maximumwidth) property.
 The original text will be displayed as tooltip on mouse hover.
 
 {% highlight javascript %}
@@ -610,7 +609,7 @@ The original text will be displayed as tooltip on mouse hover.
 
 ### Subtitle Alignment
 
-You can change the subtitle alignment to *center*, *far* and *near* by using the [`textAlignment`](https://help.syncfusion.com/api/js/ejchart#members:title-subtitle-textalignment) property of the subTitle.
+You can change the subtitle alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart#members:title-subtitle-textalignment) property of the subTitle.
 
 {% highlight javascript %}
 
