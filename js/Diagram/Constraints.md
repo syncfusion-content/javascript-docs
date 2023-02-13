@@ -22,7 +22,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Crisp Edges
 * Resizing
 
-For more information about Diagram constraints, refer to [Diagram Constraints](#members:constraints "Diagram Constraints").
+For more information about Diagram constraints, refer to [Diagram Constraints](/api/js/ejdiagram#members:constraints "Diagram Constraints").
 
 **Example**
 
@@ -147,7 +147,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * User handles
 
-For more information about Selector constraints, refer to [Selector Constraints](api/js/ejdiagram#members:selecteditems-constraints "Selector Constraints")
+For more information about Selector constraints, refer to [Selector Constraints](/api/js/ejdiagram#members:selecteditems-constraints "Selector Constraints")
 
 **Example**
 

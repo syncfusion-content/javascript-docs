@@ -316,7 +316,7 @@ With this method, you can skip the process of copying and pasting the required s
 
 ### HTML file creation
 
-Create a basic HTML file and directly refer all the required CDN links for the [scripts](/js/cdn#cdn-stylesheet-links) and [style sheets](https://help.syncfusion.com/js/cdn#cdn-stylesheet-links) within the `<head>` section as shown below, 
+Create a basic HTML file and directly refer all the required CDN links for the [scripts](/js/cdn#cdn-script-links) and [style sheets](/js/cdn#cdn-stylesheet-links) within the `<head>` section as shown below, 
 
 {% highlight html %}
 

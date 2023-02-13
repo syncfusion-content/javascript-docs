@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Title and Subtitle in JavaScript Chart Control | Syncfusion
 description: Learn here more about Title and Subtitle support in Syncfusion Essential JavaScript Chart Control, its elements, and more.
+title: Syncfusion EJ1 Chart - Title
+description: How to customize the chart title.
 platform: js
 control: Chart
 documentation: ug
@@ -57,6 +58,7 @@ $("#container").ejChart({
 
 We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-textoverflow) property. 
 To perform trim operation [`enableTrim`](../api/ejchart#members:title-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](../api/ejchart#members:title-maximumwidth) property.
+The original text will be displayed as tooltip on mouse hover.
 
 
 {% highlight javascript %}
@@ -149,7 +151,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title border opacity
 
-[`opacity`] (..api/ejchart#members:title-border-opacity) of the title border.
+[`opacity`] (../api/ejchart#members:title-border-opacity)of the title border.
 
 {% highlight javascript %}
 
@@ -165,7 +167,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 {% endhighlight %} 
 
 ### title border cornerRadius
-[`cornerRadius`](..api/ejchart#members:title-border-cornerradius) of the title border.
+[`cornerRadius`](../api/ejchart#members:title-border-cornerradius)  of the title border.
 
 {% highlight javascript %}
 
@@ -182,7 +184,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title fontFamily
 
-[`Font family`](..api/ejchart#members:title-font-fontfamily) for Chart title.
+[`Font family`](../api/ejchart#members:title-font-fontfamily) for Chart title.
 
 {% highlight javascript %}
 
@@ -198,7 +200,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title fontStyle
 
-[`Font style`](..api/ejchart#members:title-font-fontstyle) for Chart title.
+[`Font style`](../api/ejchart#members:title-font-fontstyle) for Chart title.
 
 {% highlight javascript %}
 
@@ -213,7 +215,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title fontWeight
 
-[`Font weight`](..api/ejchart#members:title-font-fontweight) for Chart title.
+[`Font weight`](../api/ejchart#members:title-font-fontweight) for Chart title.
 
 {% highlight javascript %}
 
@@ -228,7 +230,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title font opacity
 
-[`Opacity`] (..api/ejchart#members:title-font-opacity)of the Chart title.
+[`Opacity`] (../api/ejchart#members:title-font-opacity)of the Chart title.
 
 {% highlight javascript %}
 
@@ -242,7 +244,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 {% endhighlight %} 
 
 ### title font size
-Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
+Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 {% highlight javascript %}
 
@@ -257,7 +259,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 
 
 ### title maximum width
-[`MaximumWidth`](..api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
+[`MaximumWidth`](../api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
 
 {% highlight javascript %}
 
@@ -271,7 +273,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 {% endhighlight %} 
 
 ### title text overflow
- [`TextOverflow`](..api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
+ [`TextOverflow`](../api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
 
  {% highlight javascript %}
 
@@ -286,7 +288,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontFamily
 
-[`FontFamily`](..api/ejchart#members:title-subtitle-font-fontfamily) of sub title.
+[`FontFamily`](../api/ejchart#members:title-subtitle-font-fontfamily) of sub title.
 
  {% highlight javascript %}
 
@@ -301,7 +303,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontStyle
 
-[`FontStyle`](..api/ejchart#members:title-subtitle-font-fontstyle) for sub title.
+[`FontStyle`](../api/ejchart#members:title-subtitle-font-fontstyle)for sub title.
 
 {% highlight javascript %}
 
@@ -316,7 +318,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontWeight
 
-[`FontWeight`](..api/ejchart#members:title-subtitle-font-fontweight) for sub title.
+[`FontWeight`](../api/ejchart#members:title-subtitle-font-fontweight)for sub title.
 
 {% highlight javascript %}
 
@@ -331,7 +333,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
  
  ### title subtitle font opacity
 
- [`Opacity`](..api/ejchart#members:title-subtitle-font-opacity) of the sub title.
+ [`Opacity`](../api/ejchart#members:title-subtitle-font-opacity) of the sub title.
 
  {% highlight javascript %}
 
@@ -346,7 +348,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font size
 
-[`Font size`](..api/ejchart#members:title-subtitle-font-size) for sub title.
+[`Font size`](../api/ejchart#members:title-subtitle-font-size) for sub title.
 
 {% highlight javascript %}
 
@@ -361,7 +363,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle background
 
-[`Background`](..api/ejchart#members:title-subtitle-background) color for the chart subtitle.
+[`Background`](../api/ejchart#members:title-subtitle-background) color for the chart subtitle.
 
 {% highlight javascript %}
 
@@ -480,7 +482,7 @@ Font [`size`](..api/ejchart#members:title-font-size) for Chart title.
 {% endhighlight %} 
 
 ### title subtitle visible
-Controls the [`visibility`](../api/ejchart#members:title-subtitle-visible) of the Chart SubTitl
+Controls the [`visibility`](../api/ejchart#members:title-subtitle-visible) of the Chart SubTitle
 
 {% highlight javascript %}
 
