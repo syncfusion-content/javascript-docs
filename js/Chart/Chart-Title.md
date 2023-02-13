@@ -1,4 +1,6 @@
 ---
+title: Syncfusion EJ1 Chart - Title
+description: How to customize the chart title.
 title: Title and Subtitle in JavaScript Chart Control | Syncfusion
 description: Learn here more about Title and Subtitle support in Syncfusion Essential JavaScript Chart Control, its elements, and more.
 platform: js
