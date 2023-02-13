@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data-Binding
-description: data binding
+title: Data-Binding in JavaScript DataManager | Syncfusion
+description: Learn here about getting started with Syncfusion JavaScript DataManager control, its elements, and more.
 platform: js
 control: DataManager
 documentation: ug
 api: /api/js/ejdatamanager
 ---
 
-# Data Binding
+# Data Binding in JavaScript DataManager
 
 ## JSON
 
