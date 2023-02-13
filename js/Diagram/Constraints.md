@@ -10,7 +10,7 @@ api: /api/js/ejdiagram
 
 # Constraints in JavaScript Diagram
 Constraints are used to enable/disable certain behaviors of the diagram, node and connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (`&`, `|`, `~`, `<<`, etc.).
-To know more about bitwise operators, refer to [Bitwise Operations](https://help.syncfusion.com/api/js/ejdiagram#bitwise-operations) 
+To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations) 
 
 ## DiagramConstraints
 Diagram constraints allow to enable or disable the following behaviors.
@@ -22,7 +22,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Crisp Edges
 * Resizing
 
-For more information about Diagram constraints, refer to [Diagram Constraints](https://help.syncfusion.com/api/js/ejdiagram#members:constraints "Diagram Constraints").
+For more information about Diagram constraints, refer to [Diagram Constraints](#members:constraints "Diagram Constraints").
 
 **Example**
 
@@ -89,7 +89,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Crisp Edges
 * Interaction
 
-For more information about connector constraints, refer to [Connector Constraints](https://help.syncfusion.com/api/js/ejdiagram#members:connectors-constraints "Connector Constraints")
+For more information about connector constraints, refer to [Connector Constraints](/api/js/ejdiagram#members:connectors-constraints "Connector Constraints")
 
 **Example**
 
@@ -147,7 +147,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * User handles
 
-For more information about Selector constraints, refer to [Selector Constraints](https://help.syncfusion.com/api/js/ejdiagram#members:selecteditems-constraints "Selector Constraints")
+For more information about Selector constraints, refer to [Selector Constraints](api/js/ejdiagram#members:selecteditems-constraints "Selector Constraints")
 
 **Example**
 
