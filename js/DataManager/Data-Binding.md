@@ -61,7 +61,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img1.png) 
+![JavaScript DataManager](/js/DataManager/Data-Binding_images/Data-Binding_img1.png) 
 
 ## REST Services
 
@@ -120,7 +120,7 @@ The result of the above code example is illustrated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img2.png) 
+![JavaScript DataManager OData binding](/js/DataManager/Data-Binding_images/Data-Binding_img2.png) 
 
 ## OData V4
 
@@ -170,7 +170,7 @@ The request and response to the service from the **DataManager** is illustrated 
 
 
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img3.png) 
+![JavaScript DataManager OData V4](/js/DataManager/Data-Binding_images/Data-Binding_img3.png) 
 
  _OData v4 request and response_
 
@@ -178,7 +178,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img4.png) 
+![JavaScript DataManager OData v4 request and response](/js/DataManager/Data-Binding_images/Data-Binding_img4.png) 
 
  _OData v4 binding_
 
@@ -229,7 +229,7 @@ Refer to the following code example for consuming Web API data using ej.DataMana
 
 The request to the Web API and response is illustrated as follows.
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img5.png) 
+![JavaScript DataManager Web API and response](/js/DataManager/Data-Binding_images/Data-Binding_img5.png) 
 
 _Web API adaptor request and response_
 
@@ -237,7 +237,7 @@ The result for the above code example is illustrated as follows.
 
 
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img6.png) 
+![JavaScript DataManager Web API adaptor](/js/DataManager/Data-Binding_images/Data-Binding_img6.png) 
 
 _Web API data binding_
 
@@ -288,7 +288,7 @@ Refer to the following code example to know how the **DataManager** can be used 
 {% endhighlight %}
 
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img7.png) 
+![JavaScript DataManager consuming data](/js/DataManager/Data-Binding_images/Data-Binding_img7.png) 
 
 Consuming data from the MVC controller`s action is as follows. Now the data from the action is handled by the UrlAdaptor.
 
@@ -354,4 +354,4 @@ Consuming data from the MVC controller`s action is as follows. Now the data from
 
 The result and the request-response to the controller is illustrated as follows.
 
-![](/js/DataManager/Data-Binding_images/Data-Binding_img8.png) 
+![JavaScript DataManager request response](/js/DataManager/Data-Binding_images/Data-Binding_img8.png) 
