@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data-Binding in JavaScript DataManager | Syncfusion
-description: Learn here about getting started with Syncfusion JavaScript DataManager control, its elements, and more.
+description: Learn here about data binding with Syncfusion JavaScript DataManager control, its elements, and more.
 platform: js
 control: DataManager
 documentation: ug
@@ -61,7 +61,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![JavaScript DataManager](Data-Binding_images/Data-Binding_img1.png) 
+![JavaScript DataManager Web application](Data-Binding_images/Data-Binding_img1.png) 
 
 ## REST Services
 
