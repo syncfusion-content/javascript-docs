@@ -8,13 +8,13 @@ documentation: ug
 api: /api/js/ejdaterangepicker
 ---
 
-## Behavior Settings
+# Behavior Settings in JavaScript DateRangePicker
 
 DateRangePicker has some default behavior settings which helps you to perform more operation by Built-in.
 
-### Selected Date Range
+## Selected Date Range
 
-#### Value
+### Value
 
 DateRangePicker value can be selected through picking two date values from available two DatePicker calendar or you can set it by using **value** property.
 
@@ -72,7 +72,7 @@ DateRangePicker provides an option to restrict the user to pick the date from sp
 
 {% endhighlight %}
 
-![minmax](minmax_images\minmax_img.png)
+![minmax in JavaScript DateRangePicker](minmax_images\minmax_img.png)
 
 #### Separator
 
@@ -100,7 +100,7 @@ The value of the DateRangePicker popup will presented with two date strings whic
 {% endhighlight %}
 
 
-![separator](separator_images\separator_img1.png)
+![separator in JavaScript DateRangePicker](separator_images\separator_img1.png)
 
 #### Start Date
 
@@ -193,7 +193,7 @@ We can make use of preset range for easy selection on popup. The ranges provided
 {% endhighlight %}
 
 
-![preset](presetranges_images\presetranges_img1.png)
+![preset in JavaScript DateRangePicker](presetranges_images\presetranges_img1.png)
 
 These ranges can be processed and updated to popup by using the **setRange** method also like below code example.
 
@@ -238,7 +238,7 @@ The ranges can be set with time value also by enable the TimePicker in popup usi
 
 {% endhighlight %}
 
-![option](timepickeroption_images\timepickeroption_img1.png)
+![option in JavaScript DateRangePicker](timepickeroption_images\timepickeroption_img1.png)
 
 ## Backward Date Selection
 

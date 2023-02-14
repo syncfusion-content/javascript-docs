@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Service reference for ejSpreadsheet widget
-description: What are the services used in Essential JavaScript Spreadsheet.
-documentation: api
+title: Service reference for JavaSCript Spreadsheet | Syncfusion
+description: Learn here about service reference in Syncfusion JavaScript Spreadsheet Control, its elements, and more.
+documentation: Service
 platform: js
 keywords: ejSpreadsheet, Services, Essential JS Spreadsheet, Spreadsheet,Importing Service, Spreadsheet Importing,Spreadsheet Importing Service, Excel Exporting Service, Spreadsheet Exporting, PDF Exporting Service, CSV Exporting Service
 metaname: 
-metacontent:
+metacontent: 
 control: ejSpreadsheet
 ---
 
-#ejSpreadsheet Services
+# Service reference for JavaScript Spreadsheet 
 
-##Importing Service
+## Importing Service
 
 ### Description
 
@@ -22,7 +22,7 @@ Note: allowImport must be true while using this property.
 
 ### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import](http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import)
+[https://ej2.syncfusion.com/home/index.html#platform](https://ej2.syncfusion.com/home/index.html#platform)
 
 
 ### Parameter
@@ -94,7 +94,7 @@ To export spreadsheet data as Excel document.
 
 ### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel](http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel)
+[https://ej2.syncfusion.com/home/index.html#platform](https://ej2.syncfusion.com/home/index.html#platform)
 
 
 ### Parameter
@@ -151,7 +151,7 @@ To export spreadsheet data as CSV document.
 
 ### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv](http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv)
+[https://ej2.syncfusion.com/home/index.html#platform](https://ej2.syncfusion.com/home/index.html#platform)
 
 
 ### Parameter
@@ -209,7 +209,7 @@ To export spreadsheet data as PDF document.
 
 ### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf](http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf)
+[https://ej2.syncfusion.com/home/index.html#platform](https://ej2.syncfusion.com/home/index.html#platform)
 
 
 ### Parameter
@@ -248,12 +248,12 @@ Spreadsheet.XLExport.export("Pdf");
 
 {% endhighlight %}
 
-###Response
+### Response
 
-####Code: 200
+#### Code: 200
 
-####Content-Type: application/octet-stream
+#### Content-Type: application/octet-stream
 
-####Response (PDF):
+#### Response (PDF):
 
 Browser will prompt a dialog box to save the file (document).
