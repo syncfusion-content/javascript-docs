@@ -61,7 +61,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![JavaScript DataManager Web application](Data-Binding_images/Data-Binding_img1.png) 
+![JavaScript DataManager Data Binding](Data-Binding_images/Data-Binding_img1.png) 
 
 ## REST Services
 
