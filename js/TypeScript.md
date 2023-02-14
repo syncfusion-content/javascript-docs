@@ -15,7 +15,7 @@ You can find the ej.web.all.d.ts file in the following location,
 
 <b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\typescript
 
-Apart from ej.web.all.d.ts file, it is also necessary to make use of the jquery.d.ts file in your TypeScript application, which can be downloaded from [here](https://github.com/borisyankov/DefinitelyTyped).
+Apart from ej.web.all.d.ts file, it is also necessary to make use of the jquery.d.ts file in your TypeScript application, which can be downloaded from [here](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
 ## Prerequisites
 

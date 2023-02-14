@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Constraints
+# Constraints in JavaScript Diagram
 Constraints are used to enable/disable certain behaviors of the diagram, node and connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (`&`, `|`, `~`, `<<`, etc.).
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations) 
 
