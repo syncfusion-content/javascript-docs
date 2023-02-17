@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Line in Essential JavaScript ReportDesigner
+# Line in JavaScript ReportDesigner
 To insert the line element into report area to separate the report sections.
 
 ## To add Line

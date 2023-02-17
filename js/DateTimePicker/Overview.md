@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdatetimepicker
 ---
 
-# Overview in Essential JavaScript DateTimePicker
+# Overview in JavaScript DateTimePicker
 
 The **Essential JavaScript DateTimePicker** control is used to input the date and time with a specific format. The **DateTimePicker** control combines the **DatePicker** and **TimePicker** controls so that users can select the date and time with their desired format.
 
