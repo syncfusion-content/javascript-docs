@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization and Localization  with Javascript Grid widget | Syncfusion
+title: Globalization  with Javascript Grid widget | Syncfusion
 description: Learn here about how to use globalization and localization in Syncfusion Essential Javascript Grid Control, its elements, and more.
 platform: js
 control: Grid

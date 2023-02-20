@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Including only the needed Syncfusion Essential JS widgets in your application 
+title: Including only the needed widgets | JavaScript | Syncfusion  
 description: Learn here about how include only the needed widgets in Syncfusion Essential JavaScript Introduction Control, its elements, and more.
 platform: js
 control: Introduction
