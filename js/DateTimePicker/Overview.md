@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview in JavaScript DateTimePicker control | Syncfusion
+description: Learn here more about Overview in Syncfusion Essential JavaScript DateTimePicker Control, its elements, and more.
 platform: js
 control: DateTimePicker
 documentation: ug
 api: /api/js/ejdatetimepicker
 ---
 
-# Overview
+# Overview in JavaScript DateTimePicker
 
 The **Essential JavaScript DateTimePicker** control is used to input the date and time with a specific format. The **DateTimePicker** control combines the **DatePicker** and **TimePicker** controls so that users can select the date and time with their desired format.
 
