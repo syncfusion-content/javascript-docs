@@ -1,14 +1,14 @@
 ---
 layout: post
-title: display format
-description: display format
+title: Display Format in JavaScript DateRangePicker control | Syncfusion
+description: Learn here more about display format support in Syncfusion Essential JavaScript DateRangePicker Control, its elements, and more.
 platform: js
 control: DateRangePicker
 documentation: ug
 api: /api/js/ejdaterangepicker
 ---
 
-## Display Format
+# Display Format in JavaScript DateRangePicker
 
 Text representation of date and time in their corresponding text box in a control, can be changed using the available API called **dateFormat**, **timeFormat**.  By default those values will be set based on culture. 
 
