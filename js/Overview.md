@@ -1,13 +1,15 @@
 ---
 layout: post
-title: About Essential JavaScript Platform | Syncfusion
+title: Welcome to Syncfusion Essential JS
 description: Overview of Syncfusion Essential JS widgets based on HTML5 and jQuery for building modern web applications.
 platform: js
 control: Introduction
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential JS
+> The Syncfusion Essential JavaScript 1 library, which is composed of jQuery-based widgets, is no longer being actively developed, and the 2022 Volume 4 will be its final release. We suggest that users move to the Syncfusion Essential JS 2 library, which was designed to be lightweight and modular. To learn more about this migration, please refer to the [documentation](https://ej2.syncfusion.com/javascript/documentation/introduction/) and [demo](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/grid/grid-overview.html) for the Syncfusion Essential JS 2 library.
+
+# Welcome to Syncfusion JavaScript controlS
 
 Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, Gantt, scheduler, diagram and much more.   
 
