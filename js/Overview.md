@@ -7,7 +7,9 @@ control: Introduction
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential JS
+> The Syncfusion Essential JavaScript 1 library, which is composed of jQuery-based widgets, is no longer being actively developed, and the 2022 Volume 4 will be its final release. We suggest that users move to the Syncfusion Essential JS 2 library, which was designed to be lightweight and modular. To learn more about this migration, please refer to the [documentation](https://ej2.syncfusion.com/javascript/documentation/introduction/) and [demo](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/grid/grid-overview.html) for the Syncfusion Essential JS 2 library.
+
+# Welcome to Syncfusion JavaScript controlS
 
 Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, Gantt, scheduler, diagram and much more.   
 
@@ -25,9 +27,9 @@ Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 Jav
 
 * The [Knowledge Base](https://www.syncfusion.com/kb/javascript) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
 
-* Similar to the [Knowledge Base](http://www.syncfusion.com/kb/javascript), the [forum](https://www.syncfusion.com/forums/javascript) section also contains responses to questions that other customers have asked us in the past.
+* Similar to the [Knowledge Base](https://www.syncfusion.com/kb/javascript), the [forum](https://www.syncfusion.com/forums/javascript) section also contains responses to questions that other customers have asked us in the past.
 
 ## Create a support incident
 
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.syncfusion.com/support/) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://internalsupport.bolddesk.com/agent/tickets/create) by creating a support ticket.
 
