@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JavaScript Maps Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JavaScript Maps Control, its elements, and more.
 platform: js
 control: Maps
 documentation: ug
 api: /api/js/ejmap
 ---
 
-# Getting Started
+# Getting Started with JavaScript Maps
 
 This section explains briefly about how to create **Maps** in your application with **JavaScript.**
 
@@ -16,7 +16,7 @@ This section explains briefly about how to create **Maps** in your application w
 
 You can configure an **Essential JavaScript** Map in simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 
-![](/js/Maps/Getting-Started_images/Getting-Started_img1.png)
+![JavaScript Maps Add Libraries](Getting-Started_images/Getting-Started_img1.png)
 
 ## Add Libraries
 
@@ -214,7 +214,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 The above code renders a map, with default properties and shape input provided through data in layers.
 
-![](/js/Maps/Getting-Started_images/Getting-Started_img2.png)
+![JavaScript Maps data binding](Getting-Started_images/Getting-Started_img2.png)
 
 ## Data Binding in Map
 
@@ -326,7 +326,7 @@ The following code example illustrates setting the map in the given width and he
     
 {% endhighlight %}
 
-![](/js/Maps/Getting-Started_images/Getting-Started_img7.png)
+![JavaScript Maps Appearance](Getting-Started_images/Getting-Started_img7.png)
 
 In the above screenshot, you can see some space in the map, because it is not stretched to use the entire width.
 If you stretch the map as per width, projection of shapes will not be proper, and also you cannot get proper latitude and longitude.
@@ -367,7 +367,7 @@ You can customize the shape’s color by using [`fill`](../api/ejmap#members:lay
 
 
 
-![](/js/Maps/Getting-Started_images/Getting-Started_img3.png)
+![JavaScript Maps Customize Map Appearance by Range](Getting-Started_images/Getting-Started_img3.png)
 
 ### Customize Map Appearance by Range
 
@@ -435,7 +435,7 @@ N> The [`enableGradient`](../api/ejmap#members:layers-shapesettings-enablegradie
 
 The following screenshot illustrates a map with gradient color property enabled.
 
-![](/js/Maps/Getting-Started_images/Getting-Started_img4.png)
+![JavaScript Maps Enable Tooltip](Getting-Started_images/Getting-Started_img4.png)
 
 ## Enable Tooltip
 
@@ -465,7 +465,7 @@ The tooltip is displayed only when the [`showTooltip`](../api/ejmap#members:laye
 
 The following screenshot illustrates a map control displaying a Tooltip.
 
-![](/js/Maps/Getting-Started_images/Getting-Started_img5.png)
+![JavaScript Maps Legend](Getting-Started_images/Getting-Started_img5.png)
 
 ## Legend
 
@@ -571,6 +571,6 @@ Enables or Disables the [`showLabels`](../api/ejmap#members:layers-legendsetting
 
 The following screenshot illustrates a map displaying an interactive legend.
 
-![](/js/Maps/Getting-Started_images/Getting-Started_img6.png)
+![JavaScript Maps interactive](Getting-Started_images/Getting-Started_img6.png)
 
 The complete code sample can be found [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EssentialStudioforJavaScript_HeatMap1627882807).
