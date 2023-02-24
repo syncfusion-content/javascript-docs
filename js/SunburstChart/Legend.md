@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejsunburstchart
 ---
 
-## Legend
+# Legend in JavaScript SunburstChart
 The legend is used to represent the first level of items in the Sunburst Chart.The [`legend`](../api/ejsunburstchart#members:legend) can be initialized using the below code snippet,
 You can enable or disable it by using the [`visible`](../api/ejsunburstchart#members:legend-visible) option of the legend.
 

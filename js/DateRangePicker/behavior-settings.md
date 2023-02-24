@@ -8,13 +8,13 @@ documentation: ug
 api: /api/js/ejdaterangepicker
 ---
 
-## Behavior Settings
+# Behavior Settings in JavaScript DateRangePicker
 
 DateRangePicker has some default behavior settings which helps you to perform more operation by Built-in.
 
-### Selected Date Range
+## Selected Date Range
 
-#### Value
+### Value
 
 DateRangePicker value can be selected through picking two date values from available two DatePicker calendar or you can set it by using **value** property.
 
