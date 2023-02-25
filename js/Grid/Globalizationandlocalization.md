@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalization and Localization  with Grid widget for Syncfusion Essential JS
-description: How to use globalization and localization 
+title: Globalization and Localization in JavaScript Grid Control | Syncfusion
+description: Learn here about globalization and localization in Syncfusion JavaScript Grid Control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Globalization and Localization
+# Globalization and Localization in JavaScript Grid
 
 ## Localization
 
@@ -350,7 +350,7 @@ Go to previous Pager</td></tr>
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img1.png)
+![javascript grid Excel-Filter Localization](Globalizationandlocalization._images/Globalizationandlocalization._img1.png)
 
 
 I> You need to change pager locale in `ej.Pager.Locale` object.
@@ -586,7 +586,7 @@ Please find the code
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img2.png)
+![javascript grid upload file](Globalizationandlocalization._images/Globalizationandlocalization._img2.png)
 
 
 I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/l10n) GitHub location. Refer to GitHub location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
@@ -619,7 +619,7 @@ The `ej.globalize` library is used to globalize numeric values in Grid control u
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img3.png)
+![javascript grid localization](Globalizationandlocalization._images/Globalizationandlocalization._img3.png)
 
 I> To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file. For all culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
 
@@ -653,6 +653,6 @@ By default, Grid render its text and layout from left to right. To customize Gri
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img4.png)
+![javascript grid globalization](Globalizationandlocalization._images/Globalizationandlocalization._img4.png)
 
 
