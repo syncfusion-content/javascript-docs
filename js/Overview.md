@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-> The Syncfusion Essential JavaScript 1 library, which is composed of jQuery-based widgets, is no longer being actively developed, and the 2022 Volume 4 will be its final release. We suggest that users move to the Syncfusion Essential JS 2 library, which was designed to be lightweight and modular. To learn more about this migration, please refer to the [documentation](https://ej2.syncfusion.com/javascript/documentation/introduction/) and [demo](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/grid/grid-overview.html) for the Syncfusion Essential JS 2 library.
+> The Syncfusion Essential JavaScript 1 library, which is composed of jQuery-based widgets, is no longer being actively developed, and 2022 Volume 4 will be its final release. We suggest that users move to the Syncfusion Essential JS 2 library, which was designed to be lightweight and modular. To learn more about this migration, please refer to the [documentation](https://ej2.syncfusion.com/javascript/documentation/introduction/) and [demo](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/grid/grid-overview.html) for the Syncfusion Essential JS 2 library.
 
 # Welcome to Syncfusion JavaScript controlS
 
