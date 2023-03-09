@@ -72,7 +72,7 @@ N>   The order of the reference to the script files made in the above section sh
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![Data role in JavaScript Application](/js/Unobtrusive-Support_images/Unobtrusive-Support_img1.png) 
+![Data role in JavaScript Application](Unobtrusive-Support_images/Unobtrusive-Support_img1.png) 
 
 ## EJ role
 
@@ -104,7 +104,7 @@ N>   In the above code, **value** is one of the DatePicker property to set the d
 N>   Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![EJ role in JavaScript Application](/js/Unobtrusive-Support_images/Unobtrusive-Support_img2.png) 
+![EJ role in JavaScript Application](Unobtrusive-Support_images/Unobtrusive-Support_img2.png) 
 
 ## Directives
 
@@ -136,7 +136,7 @@ N>   In the above code, **value** is one of the available DatePicker property to
 N>   Also, you can notice here that the HTML tag name is replaced by the control name to be created.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![Directives in JavaScript Application](/js/Unobtrusive-Support_images/Unobtrusive-Support_img3.png) 
+![Directives in JavaScript Application](Unobtrusive-Support_images/Unobtrusive-Support_img3.png) 
 
 The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and CSS references separately.
 

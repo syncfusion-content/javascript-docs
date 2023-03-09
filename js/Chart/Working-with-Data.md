@@ -43,7 +43,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 {% endhighlight %}
 
-![Local data in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img1.png)
+![Local data in JavaScript Chart](Working-with-Data_images/Working-with-Data_img1.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
 
@@ -70,7 +70,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 {% endhighlight %}
 
-![Plot data in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img2.png)
+![Plot data in JavaScript Chart](Working-with-Data_images/Working-with-Data_img2.png)
 
 ## Remote Data
 
@@ -97,7 +97,7 @@ You can bind the remote data to the chart by using the DataManager and you can u
 
 {% endhighlight %}
 
-![Remote data in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img3.png)
+![Remote data in JavaScript Chart](Working-with-Data_images/Working-with-Data_img3.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/remotedata) here to view the remote data binding online demo sample.	
 
@@ -163,6 +163,6 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 {% endhighlight %}
 
 
-![Data Binding in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img4.png)
+![Data Binding in JavaScript Chart](Working-with-Data_images/Working-with-Data_img4.png)
 
 [Click](https://ej2.syncfusion.com/home/angular.html#platform/) here to view the AngularJS data binding online demo sample.	
