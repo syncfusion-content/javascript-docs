@@ -109,7 +109,7 @@ Typically, you will assign data directly to chart using [`dataSource`](../api/ej
 
 I> Essential JS includes AngularJS directives for all controls in the **ej.widget.angular.min.js** script file. 
 
-N> All the properties in EjChart supports one way AngularJS binding except inner array properties like **series.points[]**, **series.trendlines[]**. [Click](https://help.syncfusion.com/js/angularjs) here to know more about Essential AngularJS and the properties which support two way AngularJS binding in chart.  
+N> All the properties in EjChart supports one way AngularJS binding except inner array properties like **series.points[Points]**, **series.trendlines[Trendlines]**. [Click](https://help.syncfusion.com/js/angularjs) here to know more about Essential AngularJS and the properties which support two way AngularJS binding in chart.  
 
 {% highlight html %}
 
@@ -165,4 +165,4 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 
 ![Data Binding in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img4.png)
 
-[Click](http://ngjq.syncfusion.com/#/chart/line) here to view the AngularJS data binding online demo sample.	
+[Click](https://ej2.syncfusion.com/home/angular.html#platform/) here to view the AngularJS data binding online demo sample.	
