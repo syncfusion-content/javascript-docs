@@ -477,7 +477,7 @@ The legends can be made interactive with an arrow mark indicating the exact rang
 
 #### Title
 
-Use the [`title`](/api/maps/#member:layers-legendsettings-title) property to provide title for interactive legend.
+Use the [`title`](/api/ejmap#members:layers-legendsettings-title) property to provide title for interactive legend.
 
 #### Label
 
