@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding
-description: Learn how to bind Chart with JSON data from a remote server or locally in client browser.
+title: Working with Data in JavaScript Chart Control | Syncfusion
+description: Learn here about working with data support in Syncfusion Essential JavaScript Chart Control, its elements, and more.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Working with Data
+# Working with Data in Essential JavaScript Chart
 
 ## Local Data
 
@@ -43,7 +43,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 {% endhighlight %}
 
-![](/js/Chart/Working-with-Data_images/Working-with-Data_img1.png)
+![Local data in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img1.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
 
@@ -70,7 +70,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 {% endhighlight %}
 
-![](/js/Chart/Working-with-Data_images/Working-with-Data_img2.png)
+![Plot data in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img2.png)
 
 ## Remote Data
 
@@ -97,7 +97,7 @@ You can bind the remote data to the chart by using the DataManager and you can u
 
 {% endhighlight %}
 
-![](/js/Chart/Working-with-Data_images/Working-with-Data_img3.png)
+![Remote data in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img3.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/remotedata) here to view the remote data binding online demo sample.	
 
@@ -163,6 +163,6 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 {% endhighlight %}
 
 
-![](/js/Chart/Working-with-Data_images/Working-with-Data_img4.png)
+![Data Binding in JavaScript Chart](/js/Chart/Working-with-Data_images/Working-with-Data_img4.png)
 
 [Click](http://ngjq.syncfusion.com/#/chart/line) here to view the AngularJS data binding online demo sample.	
