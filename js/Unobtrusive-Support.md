@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using Syncfusion Essential JS in unobtrusive mode
-description: How to use syncfusion essential js widgets in unobtrusive to achieve the clear separation of both HTML content and behavior.
+title: Unobtrusive mode in JavaScript Platform | Syncfusion
+description: Learn here about unobtrusive mode support in Syncfusion Essential JavaScript Application Platform, its elements, and more.
 platform: js
 control: Introduction
 documentation: ug
 ---
 
-# Unobtrusive
+# Unobtrusive mode in JavaScript Application
 
 Many uncertainties and difficulties are involved in a usual **JavaScript programming** environment like - some of the browsers may ignore the javascript codes under the scripts section completely or partially due to its complexity and so on. To overcome all such inconveniences, [Unobtrusive JavaScript](http://www.w3.org/wiki/The_principles_of_unobtrusive_JavaScript) support has been introduced in order to make it easier for the users to create all our Syncfusion components with basic level HTML tag-like structure. 
 
@@ -72,7 +72,7 @@ N>   The order of the reference to the script files made in the above section sh
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![](/js/Unobtrusive-Support_images/Unobtrusive-Support_img1.png) 
+![Data role in JavaScript Application](Unobtrusive-Support_images/Unobtrusive-Support_img1.png) 
 
 ## EJ role
 
@@ -104,7 +104,7 @@ N>   In the above code, **value** is one of the DatePicker property to set the d
 N>   Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![](/js/Unobtrusive-Support_images/Unobtrusive-Support_img2.png) 
+![EJ role in JavaScript Application](Unobtrusive-Support_images/Unobtrusive-Support_img2.png) 
 
 ## Directives
 
@@ -136,7 +136,7 @@ N>   In the above code, **value** is one of the available DatePicker property to
 N>   Also, you can notice here that the HTML tag name is replaced by the control name to be created.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![](/js/Unobtrusive-Support_images/Unobtrusive-Support_img3.png) 
+![Directives in JavaScript Application](Unobtrusive-Support_images/Unobtrusive-Support_img3.png) 
 
 The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and CSS references separately.
 
