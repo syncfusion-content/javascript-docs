@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting
-description: sorting
+title: Sorting in JavaScript DataManager Control | Syncfusion
+description: Learn here more about sorting support in Syncfusion Essential JavaScript DataManager Control, its elements, and more.
 platform: js
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: sorting, multi sorting, dynamic sorting, SortBy
 api: /api/js/ejdatamanager
 ---
 
-# Sorting
+# Sorting in JavaScript DataManager
 
 ## Default
 
@@ -64,7 +64,7 @@ Sorting is basic query in **DataManager**. It enables you to view the items or r
 
 Result of the above code example is illustrated as follows.
 
-![](Sorting_images/Sorting_img1.png) 
+![Default in JavaScript DataManager](Sorting_images/Sorting_img1.png) 
 
 ## SortByDesc
 
@@ -111,7 +111,7 @@ The [sortByDesc](https://help.syncfusion.com/api/js/ejquery#methods:sortbydesc) 
 
 Result of the above code example is illustrated as follows.
 
-![](Sorting_images/Sorting_img2.png) 
+![SortByDesc in JavaScript DataManager](Sorting_images/Sorting_img2.png) 
 
 ## Dynamic sorting
 
@@ -178,7 +178,7 @@ The table can be dynamically sorted using an external button click event. The va
 
 Result of above code example is illustrated as follows.
 
-![](Sorting_images/Sorting_img3.png) 
+![Dynamic sorting in JavaScript DataManager](Sorting_images/Sorting_img3.png) 
 
 ## Multi sorting
 
@@ -224,4 +224,4 @@ Multi sorting is a special technique, where you can sort multiple fields by addi
 
 Result of above code example is illustrated as follows.
 
-![](Sorting_images/Sorting_img4.png) 
+![Multi sorting in JavaScript DataManager](Sorting_images/Sorting_img4.png) 

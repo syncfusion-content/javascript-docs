@@ -1,14 +1,14 @@
 ---
 layout: post
 title: OLAP-Connection with PivotGrid for Syncfusion Essential JS
-description: OLAP Connection Types
+description: Learn here more about oLAP connection types support in Syncfusion Essential JavaScript PivotGrid Control, its elements, and more.
 platform: js
 control: PivotGrid
 documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# DataBinding
+# DataBinding in JavaScript PivotGrid
 
 ## Binding pivot grid to offline cube
 To connect to an OLAP cube available in the local machine, set the physical path of the cube in the connection string. The following code example illustrates the same.

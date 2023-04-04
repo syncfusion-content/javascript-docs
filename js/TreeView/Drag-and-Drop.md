@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag-and-Drop
-description: drag and drop
+title: Drag-and-Drop in JavaScript Treeview Control | Syncfusion
+description: Learn here more about drag and drop support in Syncfusion Essential JavaScript TreeView Control, its elements, and more.
 platform: js
 control: TreeView
 documentation: ug
 api: /api/js/ejtreeview
 ---
 
-# Drag and drop 
+# Drag and drop in JavaScript TreeView
 
 To perform drag and drop operation in TreeView, specify [allowDragAndDrop](https://help.syncfusion.com/api/js/ejtreeview#members:allowdraganddrop) as true. It allows you to drag and drop node in all level of same TreeView.
 

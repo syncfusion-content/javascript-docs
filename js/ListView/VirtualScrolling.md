@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtual Scrolling
-description: virtual scrolling
+title: Virtual Scrolling in JavaScript ListView Control | Syncfusion
+description: Learn here more about virtual scrolling support in Syncfusion Essential JavaScript ListView Control, its elements, and more.
 platform: js
 control: ListView
 documentation: ug
 api: /api/js/ejlistview
 ---
 
-# Virtual Scrolling
+# Virtual Scrolling in JavaScript ListView
 
 We can load large data on demand using [allowVirtualScrolling](https://help.syncfusion.com/api/js/ejlistview#members:allowvirtualscrolling) property. By default, "allowVirtualScrolling" set as boolean value of **"false"**. When it is set true, list items will be loaded on every scroll action. The number of items to be loaded per request can be specified using the [itemRequestCount](https://help.syncfusion.com/api/js/ejlistview#members:itemrequestcount)  property. By default “itemRequestCount” value will be 5. We have provided two type of option for virtualScrolling,
  

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping
-description: grouping
+title: Grouping in JavaScript ListBox Control | Syncfusion
+description: Learn here more about grouping support in Syncfusion Essential JavaScript ListBox Control, its elements, and more.
 platform: js
 control: ListBox
 documentation: ug
 api: /api/js/ejlistbox
 ---
 
-# Grouping
+# Grouping in JavaScript ListBox
 
 ListBox items can be grouped by providing a heading (header) for each set of items. It can be done in two ways.
 
@@ -64,7 +64,7 @@ The header for each group can be defined using the “span” element”.
 {% endtabs %}
 
 
-![Alt text](Grouping_images\Grouping_img1.png)
+![Using span tag in JavaScript ListBox](Grouping_images\Grouping_img1.png)
 
 ## Data binding
 
@@ -114,6 +114,6 @@ The grouping will be defined based on the [groupBy](https://help.syncfusion.com/
 
 
 
-![](Grouping_images\Grouping_img2.png)
+![Data binding in JavaScript ListBox](Grouping_images\Grouping_img2.png)
 
 I> Virtual scrolling is not supported with Grouping.
