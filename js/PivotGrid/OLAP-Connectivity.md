@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OLAP-Connection with PivotGrid for Syncfusion Essential JS
-description: Learn here more about oLAP connection types support in Syncfusion Essential JavaScript PivotGrid Control, its elements, and more.
+description: Learn here more about OLAP connection types support in Syncfusion Essential JavaScript PivotGrid Control, its elements, and more.
 platform: js
 control: PivotGrid
 documentation: ug
