@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in DropDownTree widget for Syncfusion Essential JS
-description: Describes about the data binding in DropDownTree widget for Syncfusion Essential JS
+title: Data binding in JavaScript DropDownTree Control | Syncfusion
+description: Learn here about Data binding in Syncfusion Essential JavaScript DropDownTree Control, its elements, and more.
 platform: js
 control: DropDownTree
 documentation: ug
@@ -9,7 +9,7 @@ keywords: DropDownTree, dropdown, data binding, REStFul Binding, WebAPI, Web Met
 api: /api/js/ejDropDownTree
 ---
 
-## Local Data
+# Data binding in JavaScript DropDownTree
 
 Define a JSON array and initialize the widget with the [treeViewSettings](https://help.syncfusion.com/api/js/ejdropdowntree#members:treeViewSettings) property. Specify the column names in the `fields` property of the `treeViewSettings`.
 
@@ -167,7 +167,7 @@ $(function() {
  });
 {% endhighlight %}
 
-![](DataBinding_images/databinding_local.png)
+![JavaScript DropDownTree data binding](DataBinding_images/databinding_local.png)
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
 I> The htmlAttributes and imageAttributes should have JSON type values and samples for spriteCSSClass field available  [here](http://jsplayground.syncfusion.com/Sync_px3jew3i).
@@ -459,7 +459,7 @@ Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptor
 
 {% endhighlight %}
 
-![](DataBinding_images/databinding_webapi.png)
+![JavaScript DropDownTree data binding webapi](DataBinding_images/databinding_webapi.png)
 
 
 ## Other Restful web services
@@ -631,7 +631,7 @@ $(function() {
 });
 {% endhighlight %}
 
-![](DataBinding_images/databinding_custom.png)
+![JavaScript DropDownTree data binding custom](DataBinding_images/databinding_custom.png)
 
 
 
