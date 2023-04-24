@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns
-description: columns
+title: Columns in JavaScript Gantt Control | Syncfusion
+description: Learn here about columns support in Syncfusion Essential JavaScript Gantt Control, its elements, and more.
 platform: js
 control: Gantt
 documentation: ug
 api: /api/js/ejgantt
 ---
-# Columns
+# Columns in JavaScript Gantt
 
 The column displays the information from a bounded data source and it will be editable to update the task details through TreeGrid.
 
@@ -159,7 +159,7 @@ $(function() {
 
 The following screenshot displays the customized column in Gantt control.
 
-![](/js/Gantt/Columns_images/Columns_img7.png)
+![JavaScript Gantt column menu](Columns_images/Columns_img7.png)
 
 ## Column menu
 
@@ -167,7 +167,7 @@ The following screenshot displays the customized column in Gantt control.
 
 Gantt supports enabling and disabling the visibility of the columns dynamically with the [`showColumnChooser`](/api/js/ejgantt#members:showcolumnchooser "showColumnChooser") property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
 
-![](/js/Gantt/Columns_images/Columns_img2.png)
+![JavaScript Gantt column chooser](Columns_images/Columns_img2.png)
 
 The column menu is enabled with the [`showColumnChooser`](/api/js/ejgantt#members:showcolumnchooser "showColumnChooser") property, where the default value for this property is `false`.
 
@@ -192,12 +192,12 @@ $("#Gantt").ejGantt({
 
 The following screenshot displays the column chooser in the Gantt control.
 
-![](/js/Gantt/Columns_images/Columns_img3.png)
+![JavaScript Gantt column options](Columns_images/Columns_img3.png)
 
 ### Show column options
 
 You can customize the column with some more options with the [`showColumnOptions`](/api/js/ejgantt#members:showcolumnoptions "showColumnOptions") property. Use this property to insert a new column, delete a column and to update the header text of the column.
-![](/js/Gantt/Columns_images/Columns_img4.png)
+![JavaScript Gantt column](Columns_images/Columns_img4.png)
 
 The column options can be enabled or disabled with the [`showColumnOptions`](/api/js/ejgantt#members:showcolumnoptions "showColumnOptions") property, where the default value for this property is `false`.
 
@@ -210,7 +210,7 @@ The column options provide the following options:
 
 Inserting column provides the dialog to enter the details for the column.
 
-![](/js/Gantt/Columns_images/Columns_img5.png)
+![JavaScript Gantt dialog](Columns_images/Columns_img5.png)
 
 These fields can be customized with the [`columnDialogFields`](/api/js/ejgantt#members:columndialogfields "columnDialogFields") property. The following code sample shows you how to customize these fields.
 
@@ -226,7 +226,7 @@ $("#Gantt").ejGantt({
 
 {% endhighlight %}
 
-![](/js/Gantt/Columns_images/Columns_img6.png)
+![JavaScript Gantt change visibility](Columns_images/Columns_img6.png)
 
 ## Change visibility of the columns dynamically
 
@@ -267,4 +267,4 @@ $("#Gantt").ejGantt({
 
 The below screenshot shows the output of above code example.
 
-![](/js/Gantt/Columns_images/Columns_img8.png)
+![JavaScript Gantt change tree expander column](Columns_images/Columns_img8.png)
