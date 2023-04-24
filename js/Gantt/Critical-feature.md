@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Critical-feature
-description: Critical-feature
+title: Critical feature in JavaScript Gantt Control | Syncfusion
+description: Learn here about Critical feature in Syncfusion Essential JavaScript Gantt Control, its elements, and more.
 platform: js
 control: Gantt
 documentation: ug
 api: /api/js/ejgantt
 ---
-# Critical Path
+# Critical Path in JavaScript Gantt
 
 The critical path in a project is indicated by a single task or a series of tasks in a project, critical path describes the calculated start date or end date of a project. If a task in a critical path is delayed, then the entire project will be delayed.
 
@@ -36,7 +36,7 @@ You can enable/disable the critical path in Gantt by using toolbar button, and t
 
 {% endhighlight %}
 
-![](/js/Gantt/criticalfeature_images/criticalfeature_img1.jpeg)
+![JavaScript Gantt toolbar icons](criticalfeature_images/criticalfeature_img1.jpeg)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/criticalpath) here to view the online demo sample for critical path in Gantt.
 
@@ -60,7 +60,7 @@ $("#buttonOff").click(function (args) {
 
 {% endhighlight %}
 
-![](/js/Gantt/criticalfeature_images/criticalfeature_img2.jpeg)
+![JavaScript Gantt method](criticalfeature_images/criticalfeature_img2.jpeg)
 
 
 ## Customizing critical path background
@@ -102,6 +102,6 @@ Connector line right arrow–  .e-ganttchart .e-criticalconnectorlinerightarrow
 
 {% endhighlight %}
 
-![](/js/Gantt/criticalfeature_images/criticalfeature_img3.jpeg)
+![JavaScript Gantt critical path](criticalfeature_images/criticalfeature_img3.jpeg)
 
 

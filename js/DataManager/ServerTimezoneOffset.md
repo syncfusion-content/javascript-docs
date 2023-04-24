@@ -1,18 +1,18 @@
 ---
 layout: post
-title: ServerTimezoneOffset
-description: ej.serverTimezoneOffset
+title: Server Timezone Offset in JavaScript DataManager Control | Syncfusion
+description: Learn here about Server Timezone Offset in Syncfusion Essential JavaScript DataManager Control, its elements, and more.
 platform: js
 control: DataManager
 documentation: ug
 api: /api/js/ejdatamanager
 ---
 
-# ej.serverTimezoneOffset
+# Server Timezone Offset in JavaScript DataManager
 
 This property is used to set the time-zone offset from UTC, in hours
 
-### Property
+## Property
 <table>
     <tr> 
         <td>Name:</td> <td> ej.serverTimezoneOffset</td> 
