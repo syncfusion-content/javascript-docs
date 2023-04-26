@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid widget for Syncfusion Essential JS
-description: Learn here more about Overview in Syncfusion Essential JavaScript Grid Control, its elements, and more.
+title: Overview of JavaScript Grid Control | Syncfusion
+description: Learn here more about Overview of Syncfusion Essential JavaScript Grid Control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Overview in JavaScript Grid
+# Overview of JavaScript Grid
 
 The Grid control for JavaScript is an efficient display engine for tabular data. It will pull data from a datasource such as array of JSON objects, OData web services, or ej.DataManager; binding data fields to columns and displaying a column header to identify the field. It is a feature-rich control that provides extensive appearance customization options with support for grouped records. This Grid is very useful for generating complex grid-based reports with rich formatting. The most important features available in the Grid control for JavaScript are paging, sorting, filtering, searching, grouping, and editing
 
