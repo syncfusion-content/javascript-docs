@@ -407,7 +407,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ham4a1b2)
+Try it: [JS Playground Sample](https://jsplayground.syncfusion.com/ham4a1b2)
 
 
 ## Contrast Color for the data label
