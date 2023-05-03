@@ -13,7 +13,7 @@ api: /api/js/ejgrid
 
 The grid control has the following list of external JavaScript dependencies. 
 
-* [jQuery](http://jquery.com/) 1.7.1 and later versions
+* [jQuery](https://jquery.com/) 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 
 Refer to the internal dependencies in the following table.
