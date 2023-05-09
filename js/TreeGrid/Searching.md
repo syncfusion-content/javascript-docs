@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejtreegrid
 ---
 
-## Searching in JavaScript TreeGrid
+# Searching in JavaScript TreeGrid
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the [`toolbarSettings.toolbarItems`](/api/js/ejtreegrid#members:toolbarsettings-toolbaritems) property. The following code example explains how to integrate search textbox in toolbar.
 
