@@ -11,9 +11,9 @@ api: /api/js/ejschedule
 
 To render the Schedule control, the following list of external dependencies are needed, 
 
-* [jQuery](http://jquery.com) - 1.7.1 and later versions
+* [jQuery](https://jquery.com/) - 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing) - to support animation effects in the components
+* [jQuery.easing](https://gsgd.co.uk/sandbox/jquery/easing/) - to support animation effects in the components
 
 The other required internal dependencies are tabulated below,
 
@@ -95,7 +95,7 @@ Add links to the [CDN](/js/cdn) Script files with other required external depend
 
 {% endhighlight %}
 
-N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
+N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](https://csg.syncfusion.com/).
 
 
 ## Control Initialization
