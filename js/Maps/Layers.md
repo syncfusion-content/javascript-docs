@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Layers
-description: layers
+title: Layers in JavaScript Maps Control | Syncfusion
+description: Learn here about layers in Syncfusion Essential JavaScript Maps control, its elements, and more.
 platform: js
 control: Maps
 documentation: ug
 api: /api/js/ejmap
 ---
 
-# Layers
+# Layers in JavaScript Maps
 
 Map is maintained through [`layers`](../api/ejmap#members:layers) and it can accommodate one or more layers.
 
@@ -66,7 +66,7 @@ You can assign the complete contents in “**WorldMap.json**” file to new JSON
 {% endhighlight %}
 
 
-![](/js/Maps/Layers_images/Layers_img1.png)
+![Layers in JavaScript Maps](/js/Maps/Layers_images/Layers_img1.png)
 
 
 
