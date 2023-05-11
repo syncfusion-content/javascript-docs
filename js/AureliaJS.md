@@ -251,8 +251,8 @@ gulp watch
 
 * Browse to [`http://localhost:9000`](http://localhost:9000)  to see the application. You can make changes in the code found under `src` folder and the browser should auto-refresh itself while you save files. The Grid component is rendered as like the below screenshot.
 
-![](/js/Aurelia_images/skeleton_navigation.png)
+![Getting Started with JavaScript Application](Aurelia_images/javascript-skeleton-navigation.png)
 
-# Catalog application
+## Catalog application
 
 We have developed Catalog application for Aurelia-Syncfusion-Bridge [demo](http://aurelia-ui-toolkits.github.io/demo-syncfusion/) which is fully built on Aurelia framework.
