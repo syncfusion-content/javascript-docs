@@ -8,7 +8,7 @@ keywords: documenteditor,syncfusion,documenteditor webapi
 api: /api/js/ejdocumenteditor
 ---
 
-## Import
+# Import
 
  [POST] [/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
 
