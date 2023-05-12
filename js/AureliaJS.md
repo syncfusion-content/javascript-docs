@@ -251,7 +251,7 @@ gulp watch
 
 * Browse to [`http://localhost:9000`](http://localhost:9000)  to see the application. You can make changes in the code found under `src` folder and the browser should auto-refresh itself while you save files. The Grid component is rendered as like the below screenshot.
 
-![Getting Started with JavaScript Application](Aurelia_images/javascript-skeleton-navigation.png)
+![Getting Started with JavaScript Skeleton](Aurelia_images/javascript-skeleton-navigation.png)
 
 ## Catalog application
 
