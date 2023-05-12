@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in JavaScript Grid Control | Syncfusion
-description: Learn about grouping support in Syncfusion Essential JS Grip control, its elements and more.
+description: Learn about grouping support in Syncfusion Essential JavaScript Grid Control, its elements and more.
 platform: js
 control: Grid
 documentation: ug
