@@ -61,7 +61,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Initial grouping in Angular Grid](Grouping_images/javascript-grid-initial.png)
+![Initial grouping in JavaScript Grid](Grouping_images/javascript-grid-initial.png)
 
 
 ## Multi-Column Grouping
