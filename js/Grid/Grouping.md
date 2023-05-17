@@ -61,7 +61,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Initial grouping in JavaScript Grid](Grouping_images/javascript-grid-initial.png)
+![Initial grouping in JavaScript Grid](Grouping_images/javascript-grid-initial-grouping.png)
 
 
 ## Multi-Column Grouping
@@ -90,7 +90,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Multi column in JavaScript Grid](Grouping_images/javascript-grid-multi-column.png)
+![Multi column grouping in JavaScript Grid](Grouping_images/javascript-grid-multi-column-grouping.png)
 
 
 ## Group buttons
@@ -278,10 +278,10 @@ function btnClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![Group caption format in JavaScript Grid](Grouping_images/javascript-grid-caption-format.png)
+![Group caption format in JavaScript Grid](Grouping_images/javascript-grid-group-caption-format.png)
 
 
-![Group caption template in JavaScript Grid](Grouping_images/javascript-grid-caption-template.png)
+![Group caption template in JavaScript Grid](Grouping_images/javascript-grid-group-caption-template.png)
 
 
 ### Perform Grouping by External Action:-
