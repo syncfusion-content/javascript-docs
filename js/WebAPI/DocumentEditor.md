@@ -1,14 +1,14 @@
 ---
 layout: post
-title: webAPI reference for DocumentEditor
-description: webAPI reference for 
+title: WebAPI Reference in JavaScript DocumentEditor Control | Syncfusion
+description: Learn here about WebAPI reference support in Syncfusion Essential JavaScript DocumentEditor Control, its elements, and more.
 documentation: ug
 platform: js
 keywords: documenteditor,syncfusion,documenteditor webapi
 api: /api/js/ejdocumenteditor
 ---
 
-## Import
+# Import in JavaScript DocumentEditor
 
  [POST] [/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
 
