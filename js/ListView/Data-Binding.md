@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data-Binding
-description: data binding
+title: Data Binding in JavaScript ListView Control | Syncfusion
+description: Learn here about data binding support in Syncfusion Essential JavaScript ListView control, its elements, and more.
 platform: js
 control: ListView
 documentation: ug
 api: /api/js/ejlistview
 ---
 
-# Data Binding
+# Data Binding in JavaScript ListView
 
 ## Local Data Binding
 
