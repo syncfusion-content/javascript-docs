@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Table-Model
-description: table model
+title: Table Model in JavaScript DataManager Control | Syncfusion
+description: Learn here about table model support in Syncfusion Essential JavaScript DataManager Control, its elements, and more.
 platform: js
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords : Table Model, getTableModel
 api: /api/js/ejdatamanager
 ---
 
-# Table Model
+# Table Model in JavaScript DataManager
 
 The **DataManager** contains a default support to bind a TableModel to the element. You can make the data observable using the **getTableModel** method. The **getTableModel** method also accept extra properties or properties with computed value that can be added to the TableModel. In the view, you can create a simple view by using the bindings **getTableModel**
 
