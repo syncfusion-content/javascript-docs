@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in JavaScript Grid control | Syncfusion
-description: Learn about paging support in Syncfusion Essential JavaScript Grid control, its elements and more.
+description: Learn here about paging support in Syncfusion Essential JavaScript Grid control, its elements and more.
 platform: js
 control: Grid
 documentation: ug
