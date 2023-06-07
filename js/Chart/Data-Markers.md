@@ -377,7 +377,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vkziijnc)
+Try it: [JS Playground Sample](https://jsplayground.syncfusion.com/vkziijnc)
 
 
 

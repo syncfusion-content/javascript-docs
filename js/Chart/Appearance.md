@@ -302,7 +302,7 @@ Background image can be added to the chart by using the [`backGroundImageUrl`](.
 
 ![JavaScript Chart setting background](Appearance_images/Appearance_img7.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/tooltiptemplate) here to view our online demo sample for setting Chart background image.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartcustomization/tooltiptemplate) here to view our online demo sample for setting Chart background image.
 
 
 **Chart area background**
@@ -384,7 +384,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 ![JavaScript Chart customize area grid bands](Appearance_images/Appearance_img9.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/alternategridband) here to view the alternate grid band online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartaxes/alternategridband) here to view the alternate grid band online demo sample.
 
 
 ### Animation

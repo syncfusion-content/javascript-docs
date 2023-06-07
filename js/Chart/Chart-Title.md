@@ -52,7 +52,7 @@ $("#container").ejChart({
 ![Title](Chart-Title_images/Chart-Title_img1.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
 
 
 We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-textoverflow) property. 

@@ -13,7 +13,7 @@ api: /api/js/ejautocomplete
 
 You can validate the Autocomplete [value](https://help.syncfusion.com/api/js/ejautocomplete#members:value) on form submission by applying [validationRules](https://help.syncfusion.com/api/js/ejautocomplete#members:validationrules) and [validationMessage](https://help.syncfusion.com/api/js/ejautocomplete#members:validationmessage) to the Autocomplete. 
 
-N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+N> [jquery.validate.min](https://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation).
 
 ### Validation Rules
 
