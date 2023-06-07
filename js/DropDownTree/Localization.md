@@ -25,7 +25,7 @@ To localize the DropDownTree’s strings with your own localization, copy the de
     
 {% endhighlight %}
 
-Set the [locale](https://help.syncfusion.com/api/js/ejDropDownTree#members:locale) property of the DropDownTree to the new language.
+Set the [locale](https://help.syncfusion.com/api/js/ejdropdowntree#members:locale) property of the DropDownTree to the new language.
 
 
 {% highlight javascript %}

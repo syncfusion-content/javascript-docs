@@ -170,7 +170,7 @@ $(function() {
 ![JavaScript DropDownTree data binding](DataBinding_images/databinding_local.png)
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
-I> The htmlAttributes and imageAttributes should have JSON type values and samples for spriteCSSClass field available  [here](http://jsplayground.syncfusion.com/Sync_px3jew3i).
+I> The htmlAttributes and imageAttributes should have JSON type values and samples for spriteCSSClass field available  [here](https://jsplayground.syncfusion.com/Sync_px3jew3i).
 	
 The JSON array to the `fields` property can also be provided as an instance of the [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager). When the JSON array is passed as an instance of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager), the [ej.JsonAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#json-adaptor) will be used to manipulate the DropDownTree data source. The following code explains this behavior,
 
@@ -333,7 +333,7 @@ To bind remote data to the DropDownTree, assign service data as an instance of `
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. Provide  [OData service](http://www.odata.org/) URL directly to the "ej.DataManager" class, and then you can assign it to the DropDownTree "dataSource".
+OData is a standardized protocol for creating and consuming data. Provide  [OData service](https://www.odata.org/) URL directly to the "ej.DataManager" class, and then you can assign it to the DropDownTree "dataSource".
 
 {% highlight html %}
 
@@ -376,7 +376,7 @@ $(function() {
            
           
 ## OData Version 4
-The OData v4 is an improved version of OData protocols, and the data manager can also retrieve and consume data from [ODatav4](http://www.odata.org/) services.
+The OData v4 is an improved version of OData protocols, and the data manager can also retrieve and consume data from [ODatav4](https://www.odata.org/) services.
 
 By using URL property of “ej.DataManager”, bind OData Version 4 Service link and specify adaptor as ej.ODataV4Adaptor.
 
