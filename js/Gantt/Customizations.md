@@ -92,7 +92,7 @@ The following code example shows how to define template for taskbars in Gantt.
 
 The DOM structure and class names mentioned in the above code snippet is mandatory for providing the editing support in custom templates.
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/taskbartemplate) here to view the online demo sample for Taskbar templates in Gantt.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/customizations/taskbartemplate) here to view the online demo sample for Taskbar templates in Gantt.
 
 The following screenshot shows the template for taskbars in Gantt.
 
@@ -186,7 +186,7 @@ The following code example explains how to map custom templates to task labels.
 </script>
 {% endhighlight %}
 
-You can find the online demo sample for task label templates in Gantt [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/tasklabeltemplate)
+You can find the online demo sample for task label templates in Gantt [here](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/customizations/tasklabeltemplate)
 
 The following screenshot shows Gantt with task label templates.
 
@@ -299,7 +299,7 @@ The default dependency tooltip in Gantt can be customized by using [`predecessor
 The following screenshot show the output of above code example.
 ![](/js/Gantt/Customization_images/Customization_img8.png)
 
-You can find the JS playground sample for dependency tooltip template [here](http://jsplayground.syncfusion.com/Sync_f5fvhwfi).
+You can find the JS playground sample for dependency tooltip template [here](https://jsplayground.syncfusion.com/Sync_f5fvhwfi).
 
 ### Cell tooltip 
 
@@ -361,7 +361,7 @@ TreeGrid part tooltip can also be customized using [`cellTooltipTemplate`](/api/
 {% endhighlight %}
 ![](/js/Gantt/Customization_images/Customization_img5.png)
 
-You can find the online demo sample for tooltip templates for taskbars [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/tooltiptemplate)
+You can find the online demo sample for tooltip templates for taskbars [here](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/customizations/tooltiptemplate)
 
 ### Taskbar Editing Tooltip
 
@@ -419,7 +419,7 @@ Taskbar editing tooltip can be customized by using [`taskbarEditingTooltipTempla
 The below screenshot shows the output of above code example.
 ![](/js/Gantt/Customization_images/Customization_img6.png)
 
-You can find the JS playground sample for this property [here](http://jsplayground.syncfusion.com/Sync_khndhguw).
+You can find the JS playground sample for this property [here](https://jsplayground.syncfusion.com/Sync_khndhguw).
 
 #### Customize progress bar editing tooltip
 
@@ -451,4 +451,4 @@ Progress bar editing tooltip can be customized by using [`progressbarTooltipTemp
 The below screenshot shows the output of above code example.
 ![](/js/Gantt/Customization_images/Customization_img7.png)
 
-You can find the JS playground sample for this property [here](http://jsplayground.syncfusion.com/Sync_aakdzajo).
+You can find the JS playground sample for this property [here](https://jsplayground.syncfusion.com/Sync_aakdzajo).

@@ -62,7 +62,7 @@ $("#GanttContainer").ejGantt({
 
 The below sample explains the tasks’ duration unit in Gantt.
 
-[Duration Unit](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/durationunits)
+[Duration Unit](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/schedulingconcepts/durationunits)
 
 The below screen shot shows different duration unit support in Gantt control.
 
@@ -99,4 +99,4 @@ ej.Gantt.Locale["en-US"] = {
 N> **durationUnitTexts** property is used to display the unit of duration in columns and taskbar tooltips.
 N> **durationUnitEditText** property is used to save the edited duration unit value on editing action.
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/durationunits) here to view the online demo sample for mapping the duration units.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/schedulingconcepts/durationunits) here to view the online demo sample for mapping the duration units.

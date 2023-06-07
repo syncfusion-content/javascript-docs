@@ -16,7 +16,7 @@ The Grid control uses [`ej.DataManager`](https://help.syncfusion.com/js/datamana
 3. HTML table
 
 N> 1. To update the dataSource after Grid rendered, use `dataSource` method of Grid. Refer to this [link](https://help.syncfusion.com/api/js/ejgrid#members:datasource) for more information.
-N> 2. DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://www.syncfusion.com/kb/8613/how-to-convert-dates-to-utc-format).
+N> 2. DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://support.syncfusion.com/kb/article/7605/how-to-convert-dates-to-utc-format).
 
 ## Local Data
 
@@ -74,7 +74,7 @@ The following output is displayed as a result of the above code example.
 
 
 N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [custom adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept. 
-N> 2. Refer this [Knowledge Base link](https://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid) for bounding XML data to grid using custom adaptor. 
+N> 2. Refer this [Knowledge Base link](https://support.syncfusion.com/kb/article/3562/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid) for bounding XML data to grid using custom adaptor. 
 N> 3. To update the dataSource after Grid rendered, use [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#methods:datasource) method of grid. Either JSON or DataManager can be passed to [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#methods:datasource) method.
 
 ## Remote Data
@@ -126,7 +126,7 @@ The following code example describes the above behavior.
 	$(function () {
 
 		var dataManager = ej.DataManager({
-			url:["http://services.odata.org/V4/Northwind/Northwind.svc/Regions/"](http://services.odata.org/V4/Northwind/Northwind.svc/Regions/#),
+			url:["http://services.odata.org/V4/Northwind/Northwind.svc/Regions/"](https://services.odata.org/V4/Northwind/Northwind.svc/Regions/),
 			adaptor: new ej.ODataV4Adaptor()
 		});
 
@@ -138,7 +138,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% seealso %}For further details about OData service please refer to [this link](http://www.odata.org/#). {% endseealso %}
+{% seealso %}For further details about OData service please refer to [this link](https://www.odata.org/). {% endseealso %}
 
 ### WebAPI
 
