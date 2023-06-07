@@ -31,7 +31,7 @@ N> 2. [`dayWorkingTime`](/api/js/ejgantt#members:dayworkingtime) property is use
 
 The below demo explains the working time range in Gantt.
 
-[Working Time Range](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/workingtimerange)
+[Working Time Range](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/schedulingconcepts/workingtimerange)
 
 The following screen shot shows working time range in Gantt control. 
 

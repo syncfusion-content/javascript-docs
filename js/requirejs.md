@@ -9,7 +9,7 @@ documentation: ug
 
 # RequireJS
 
-**Essential JavaScript** includes [RequireJS](http://www.requirejs.org/) support for all of its components, which implements the **AMD** (Asynchronous Module Definition) specification. Its main goal is to load the user-specified multiple custom scripts/modules in a particular order – as one relies on the other. Also, it improves the speed and quality of the code.
+**Essential JavaScript** includes [RequireJS](https://requirejs.org/) support for all of its components, which implements the **AMD** (Asynchronous Module Definition) specification. Its main goal is to load the user-specified multiple custom scripts/modules in a particular order – as one relies on the other. Also, it improves the speed and quality of the code.
 
 In General, a single widget file **ej.web.all.min.js** file is used to load any of the Syncfusion widgets – but with the introduction of new **AMD** **modules**, it is not necessary to refer the entire script files in the project – just adding the script reference for **RequireJS** is enough – as it loads only the required widgets scripts at the required time. 
 
@@ -22,7 +22,7 @@ You can find the **require.min.js** from the following installed location of you
 `(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external`   
 _For example, If you have installed the Essential Studio package within `C:\Program Files (x86)`, then navigate to the location,_ **C:\Program Files (x86)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external  
 
-N> For version lower than 13.3.0.18, refer this [Knowledge Base](http://www.syncfusion.com/support/kb/7146).
+N> For version lower than 13.3.0.18, refer this [Knowledge Base](https://www.syncfusion.com/support/kb/7146).
 
 N> From version 14.3.0.49, we have removed the **jquery.easing** dependency from our components. For version lower than 14.3.0.49, you need to refer the jquery.easing as additional dependency. 
 

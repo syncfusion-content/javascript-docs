@@ -122,13 +122,13 @@ Generally web based file explorer needs a service for handling the file related 
 
 By default, we have provided these server side AJAX handling functionalities in “**C#**” for managing physical filesystem and you can check it with “**FileExplorerOperations**” file, which is available at following Web API service application.
 
-**Web API service**: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip#) 
+**Web API service**: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip) 
 
 **Note**: In this Web API application, we have provided “**FileOperationController**” file, which contains “**doJSONAction**” action method. When you make AJAX request, “**doJSONAction**” method will be called with AJAX request parameters then it calls the corresponding built-in file handling methods (Read, Search, Download, Upload, Remove, Rename etc.) that are available in our “**FileExplorerOperations**” class based on the “**ActionType**” parameter value.
 
 For your convenience, we have prepared a sample based on this and you can find it under following location.
 
-Sample: [http://jsplayground.syncfusion.com/gysvwdcp](http://jsplayground.syncfusion.com/gysvwdcp#) 
+Sample: [http://jsplayground.syncfusion.com/gysvwdcp](https://jsplayground.syncfusion.com/gysvwdcp) 
 
 **Note**: First run the provided Web API service, then you will get an URL like ”[http://localhost:51460/](http://localhost:51460/#)“ (Here port number may change). As per port number, replace the specified URL in “**path**” and “**ajaxAction**” of “**FileExplorer**” sample.
 
@@ -140,7 +140,7 @@ Please refer following steps to create a Web API service for FileExplorer using 
 
 **Step 1**: Create a new ASP.NET Web API project using Visual Studio. 
 
-Reference [link](https://docs.microsoft.com/en-us/aspnet/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api#)  
+Reference [link](https://learn.microsoft.com/en-us/aspnet/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api)  
 
 **Step 2**: Add "**Syncfusion.EJ**" assembly reference, which is available at following location of your system. 
 
@@ -152,7 +152,7 @@ C:\Program Files (x86)\Syncfusion\Essential Studio\\{15.1.0.33}\Assemblies\4.5
 
 This assembly contain built-in file handling methods such as (Read, Search, Download, Upload, Remove, Rename etc.) and it will be available in "**FileExplorerOperations**" class.
 
-**Step 3**: Add “[FileExplorerController.cs](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorerController-2059296017#)” file in the controller part of Web API project.
+**Step 3**: Add “[FileExplorerController.cs](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorerController-2059296017)” file in the controller part of Web API project.
 This file, contains action handler methods. Based on the request parameters, it helps to call the built-in file handling methods of **Syncfusion.EJ** assembly.
 
 **Step 4**: Add following content in the “**WebApiApplication**” class of “**Global.asax.cs**” file.
@@ -399,7 +399,7 @@ It used to search all the matched files and sub-folders in the given folder path
 
 You can set the alias name to the root folder of FileExplorer by using [`rootFolderName`](https://help.syncfusion.com/api/js/ejfileexplorer#members:rootfoldername) API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below sample to set the alias name for the root folder of FileExplorer.
 
-Sample Link: [link](http://jsplayground.syncfusion.com/psx0vwle)
+Sample Link: [link](https://jsplayground.syncfusion.com/psx0vwle)
 
 
 ## Use the FTP connection using FileExplorer
@@ -422,7 +422,7 @@ In this FTP Web API application, we have provided “FTPFileOperationController�
 
 **Step 2:** Include **“FTPFileExplorerOperations”** file in that application. This file contains built-in file handling methods which helps to connect our FileExplorer with FTP service.
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip#)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip)
 
 **Step 3:** Add **“FileExplorerController.cs”** file in the controller part of FTP project.
 
@@ -528,4 +528,4 @@ ajaxAction: "http://localhost/FileExplorer/FileOperation/doJSONAction" });
 
 We have prepared a demo based on above steps, please refer this.
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI1239740174.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI1239740174.zip#)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI1239740174.zip](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI1239740174.zip)

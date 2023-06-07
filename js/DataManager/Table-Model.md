@@ -114,6 +114,6 @@ The result for the above code example is illustrated as follows.
 
 ![](Table-Model_images/Table-Model_img1.png) 
 
-[Sample Link](http://jsplayground.syncfusion.com/2clbqjhr)
+[Sample Link](https://jsplayground.syncfusion.com/2clbqjhr)
 
 

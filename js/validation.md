@@ -66,8 +66,8 @@ Up to 13.4.0.58 version, above specified jQuery validation settings were configu
 
 We have prepared a sample based on this and you can find sample under the following location.
 
-Sample: [http://jsplayground.syncfusion.com/dobcyify](http://jsplayground.syncfusion.com/dobcyify#) 
+Sample: [http://jsplayground.syncfusion.com/dobcyify](https://jsplayground.syncfusion.com/dobcyify) 
 
 Also you may create custom rules for validation. Please refer following sample to perform custom validation in “DatePicker” component.
 
-Sample: [http://jsplayground.syncfusion.com/irf1eldu](http://jsplayground.syncfusion.com/irf1eldu#) 
+Sample: [http://jsplayground.syncfusion.com/irf1eldu](https://jsplayground.syncfusion.com/irf1eldu) 

@@ -58,5 +58,5 @@ Syncfusion JavaScript components are compatible with all the major browsers whic
 
 * Any text editors such as **Notepad** or **Notepad++**.  
 * Visual Studio Code (optional text-editor)
-* Web browsers with [JavaScript enabled](https://support.microsoft.com/en-in/gp/howtoscript) in it.
+* Web browsers with [JavaScript enabled](https://support.microsoft.com/en-gb/topic/how-to-enable-javascript-in-windows-88d27b37-6484-7fc0-17df-872f65168279) in it.
 * If you want to use Reporting or Business Intelligence controls, it is necessary to have one of the IDE – **Visual Studio 2010+** in the machine.

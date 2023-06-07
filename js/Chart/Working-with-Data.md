@@ -45,7 +45,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 ![Local data in JavaScript Chart](Working-with-Data_images/Working-with-Data_img1.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
 
 
 2.You can also plot data to chart using [`x`](../api/ejchart.html#members:series-points-x) and [`y`](../api/ejchart.html#members:series-points-y) field of [`points`](../api/ejchart.html#members:series-points) option in the series. Using this property you can customize each and every point in the data.
@@ -99,7 +99,7 @@ You can bind the remote data to the chart by using the DataManager and you can u
 
 ![Remote data in JavaScript Chart](Working-with-Data_images/Working-with-Data_img3.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/remotedata) here to view the remote data binding online demo sample.	
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/databinding/remotedata) here to view the remote data binding online demo sample.	
 
 
 ## AngularJS Data Binding

@@ -99,7 +99,7 @@ You can use [showRoundedCorner](https://help.syncfusion.com/api/js/ejdropdownlis
 
 ![Applying Rounded Corner in JavaScript DropDown List](Customization_images/Customization_img3.jpeg)
 
-I> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
+I> The browser support details for rounded corner is given [here](https://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
 ## Enable/Disable the widget
 

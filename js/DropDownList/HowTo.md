@@ -127,7 +127,7 @@ The following screenshot will exhibit the select event arguments details,
 
 ## Append custom HTML in DropDownList popup outside the scroller part?
 
-Create a custom HTML element and insert it after popup wrapper. Detailed sample is given [here](http://jsplayground.syncfusion.com/ey2mpity)
+Create a custom HTML element and insert it after popup wrapper. Detailed sample is given [here](https://jsplayground.syncfusion.com/ey2mpity)
 
 ## Add check all option in popup list?
 
@@ -935,7 +935,7 @@ In the DropDownList control, the `Display` property for the outer wrapper elemen
 
 {% endhighlight %}  
 
-[Sample](http://jsplayground.syncfusion.com/gxmdr42a)
+[Sample](https://jsplayground.syncfusion.com/gxmdr42a)
 
 ## Add context menu for DropDownList items
 
@@ -1087,4 +1087,4 @@ To show the selected value as tooltip on DropDownList's input, render the DropDo
 
  {% endhighlight %}
 
-Refer to the sample [here](http://jsplayground.syncfusion.com/2m1bd3t0)
+Refer to the sample [here](https://jsplayground.syncfusion.com/2m1bd3t0)

@@ -69,7 +69,7 @@ Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dep
 
 
 
-N>To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server. 
+N>To reduce the file size further please use [GZip](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en) compression in your server. 
 {%seealso%}[custom script generator](https://help.syncfusion.com/js/custom-script-generator) {%endseealso%}
 
 ## Create Dialog
@@ -147,7 +147,7 @@ The Dialog widget can be hidden on initialize using [showOnInit](https://help.sy
 
 Refer the below example. The dialog will be opened on clicking the Button widget. 
 
-{%seealso%} [Button](http://docs.syncfusion.com/js/button/overview)
+{%seealso%} [Button](https://docs.syncfusion.com/js/button/overview)
 {%endseealso%}
 
 {% highlight html %}
