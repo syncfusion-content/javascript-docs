@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Numeric Format Strings
 
-Create a custom numeric format string that contains one or more custom numeric specifiers. This numeric specifier helps to defines the format of numeric data. This type of format string is not a [`standard numeric format string`](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings#) and it can be of any format string.
+Create a custom numeric format string that contains one or more custom numeric specifiers. This numeric specifier helps to defines the format of numeric data. This type of format string is not a [`standard numeric format string`](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) and it can be of any format string.
 Some of the custom numeric format specifiers are illustrated in the following sections.
 
 ## Custom specifier "0"

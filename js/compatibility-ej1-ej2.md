@@ -80,7 +80,7 @@ Please refer the below code snippet.
 
 ### Add Essential JS 2 Button
 
-You can refer the [`Getting Started`](http://npmci.syncfusion.com/production/documentation/getting-started/JavaScript-ES5.html?lang=es5) for button creation and made the Essential JS 2 related changes in the same html file.
+You can refer the [`Getting Started`](https://npmci.syncfusion.com/production/documentation/getting-started/JavaScript-ES5.html?lang=es5) for button creation and made the Essential JS 2 related changes in the same html file.
 
 Please find the below html code.
 

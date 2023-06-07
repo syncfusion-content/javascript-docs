@@ -13,13 +13,13 @@ documentation: ug
 ## Introduction
 
 Ionic is an open source Mobile SDK for developing native and progressive web apps. Ionic offers a library of mobile-optimized HTML, CSS and JS components and tools for building highly interactive native and progressive Web apps. Built with Sass, optimized for AngularJS. 
-Please go through the [http://ionicframework.com/](http://ionicframework.com/) page.
+Please go through the [http://ionicframework.com/](https://ionicframework.com/) page.
 
 ## Prerequisites and Compatibility
 
 ### Prerequisites
 
-While running the ionic it requires [Node.js](https://nodejs.org/en/download/) (which includes [npm](https://npmjs.org/)) on your system.
+While running the ionic it requires [Node.js](https://nodejs.org/en/download) (which includes [npm](https://www.npmjs.com/)) on your system.
 
 ### Install Ionic
 
@@ -47,7 +47,7 @@ Steps to add the sample and run the application
 
 #### Get basic application
 
-Get Syncfusion blank ionic project from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BlankSyncfusionApplication-982410597.zip) Then extract the project, folder holds following files
+Get Syncfusion blank ionic project from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BlankSyncfusionApplication-982410597.zip) Then extract the project, folder holds following files
 
 ![](ionic_images/getblankapplication_img1.png)
 

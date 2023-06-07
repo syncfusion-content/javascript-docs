@@ -15,11 +15,11 @@ You can find the ej.web.all.d.ts file in the following location,
 
 <b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\typescript
 
-Apart from ej.web.all.d.ts file, it is also necessary to make use of the jquery.d.ts file in your TypeScript application, which can be downloaded from [here](https://github.com/borisyankov/DefinitelyTyped).
+Apart from ej.web.all.d.ts file, it is also necessary to make use of the jquery.d.ts file in your TypeScript application, which can be downloaded from [here](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
 ## Prerequisites
 
-To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below mentioned System requirements are necessary,
+To work with [TypeScript](https://www.typescriptlang.org/Handbook), the below mentioned System requirements are necessary,
 
 * Visual Studio 2012/ 2013
 * TypeScript 1.0 – It is available as built-in with Visual Studio 2013, but the Visual Studio 2012 users’ needs to download it from [here](https://visualstudiogallery.msdn.microsoft.com/fa041d2d-5d77-494b-b0ba-8b4550792b4d).
