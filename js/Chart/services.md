@@ -19,7 +19,7 @@ Export Chart as PNG, JPG, SVG, PDF document, Excel document or Word document.
 
 ### URL
 
-[http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart](https://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart)
+[https://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart](https://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart)
 
 ### Parameters
 <table>
