@@ -160,7 +160,7 @@ The following methods, used to retrieve the items from the DropDownList.
     </tr>
 </table>
 
-I> When multiSelectMode is enabled in a DropDownList and selected items having same text but its value is different means, the items can be selected. Please refer the online [link](http://jsplayground.syncfusion.com/Sync_5fgywhmb)
+I> When multiSelectMode is enabled in a DropDownList and selected items having same text but its value is different means, the items can be selected. Please refer the online [link](https://jsplayground.syncfusion.com/Sync_5fgywhmb)
 
 ### Using value or text
 
@@ -902,7 +902,7 @@ First two DropDownList cascaded based on the parentId, and then from second to t
 
 You can validate the DropDownList value on form submission by applying “validationRules” and “validationMessage” to the DropDownList. 
 
-N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+N> [jquery.validate.min](https://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation).
 
 ### Validation Rules
 

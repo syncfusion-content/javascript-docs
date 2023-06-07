@@ -31,7 +31,7 @@ $("#CircularGauge1").ejCircularGauge({
 ![](/js/CircularGauge/Legend_images/Legend_img1.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/flatlight/radialgauge/legend) here to view the online demo sample for  legend in the circular Gauge.
+[Click](https://ej2.syncfusion.com/home/#!/flatlight/radialgauge/legend) here to view the online demo sample for  legend in the circular Gauge.
 
 ### Legend Text
 
