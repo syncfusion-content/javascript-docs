@@ -256,7 +256,7 @@ The following screenshot displays the customization of context menu in FileExplo
 
 ![](Context-Menu_images/Context-Menu_img1.png)
 
-For more details about context menu customization, refer the sample [here](http://jsplayground.syncfusion.com/Sync_nz201mh4).
+For more details about context menu customization, refer the sample [here](https://jsplayground.syncfusion.com/Sync_nz201mh4).
 
 ## Context Menu Events
 
