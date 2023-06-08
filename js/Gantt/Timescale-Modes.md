@@ -266,7 +266,7 @@ $("#GanttContainer").ejGantt({
 
 ![Rounding off timescale](Timescale-Modes_images/Timescale-Modes_img6.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/timescalemodes) here to view the timescale modes in Gantt.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/schedulingconcepts/timescalemodes) here to view the timescale modes in Gantt.
 
 
 ## Customize automatic timescale update action

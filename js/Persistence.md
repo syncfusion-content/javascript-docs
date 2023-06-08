@@ -43,4 +43,4 @@ Please refer the below code block:
 
 We have prepared a sample based on that and you can get it from following location. 
 
-[Sample Location](http://jsplayground.syncfusion.com/v2steydg) 
+[Sample Location](https://jsplayground.syncfusion.com/v2steydg) 

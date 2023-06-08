@@ -192,7 +192,7 @@ You can add the [custom attribute](https://help.syncfusion.com/api/js/ejgrid#mem
 
 Based on custom attribute you can customize the style and appearance of the `td` element or handling jQuery functionalities. 
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "the link").
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer to [this link](https://www.jsviews.com/#jsrapi "the link").
 
 The following code example describes the above behavior.
 
@@ -259,7 +259,7 @@ When you move the cursor over the particular cell it provides an information abo
 
 **Template**
 
-HTML templates can be specified in the   [tooltip ](https://help.syncfusion.com/api/js/ejgrid#members:columns-tooltip "tooltip ")  property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "this link"). 
+HTML templates can be specified in the   [tooltip ](https://help.syncfusion.com/api/js/ejgrid#members:columns-tooltip "tooltip ")  property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer to [this link](https://www.jsviews.com/#jsrapi "this link"). 
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
 

@@ -56,13 +56,13 @@ Add the below CSS reference in the head section, for the default theme
 
 {% endhighlight %}
 
-N> Essential JS widgets having the support for 13 built-in themes, to know more please check [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#)
+N> Essential JS widgets having the support for 13 built-in themes, to know more please check [here](https://docs.syncfusion.com/js/theming-in-essential-javascript-components)
 
 ### Script references
 
 The external script dependencies of the FileExplorer widget are,
 
-* [jQuery 1.7.1](http://jquery.com/#) or later versions.
+* [jQuery 1.7.1](https://jquery.com/) or later versions.
 * [jsrender](https://www.jsviews.com/#jsrender) – for grid view template.
 
 And the internal script dependencies of the FileExplorer widget are:
@@ -146,7 +146,7 @@ So you can add the below Script references in the head section:
 
 {% endhighlight %}
 
-N> The above Script and CSS references uses the [CDN links](http://docs.syncfusion.com/js/cdn#). In case if you need to refer the local files then you can copy the corresponding files from the [installed location](http://docs.syncfusion.com/js/installation-and-deployment#) and can include into your application directory
+N> The above Script and CSS references uses the [CDN links](https://docs.syncfusion.com/js/cdn). In case if you need to refer the local files then you can copy the corresponding files from the [installed location](https://docs.syncfusion.com/js/installation-and-deployment) and can include into your application directory
 
 N> In production we recommend you to use our [Custom script generator](http://docs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only]
 

@@ -68,7 +68,7 @@ Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dep
 
 
 
-N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
+N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en) compression in your server.
 
 
 

@@ -239,7 +239,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 ![JavaScript DropDownList data binding](DataBinding_images/DataBinding_img1.jpeg)
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
-I> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](http://jsplayground.syncfusion.com/Sync_px3jew3i) 
+I> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](https://jsplayground.syncfusion.com/Sync_px3jew3i) 
 	
 The JSON array to the [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property can also be provided as an instance of the [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager). When the JSON array is passed as an instance of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager), the [ej.JsonAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#json-adaptor) will be used to manipulate the DropDownList data source. The following code explains this behavior,
 
@@ -285,7 +285,7 @@ To bind remote data to the DropDownList, assign a service data as an instance of
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. Provide the [OData service](http://www.odata.org/) URL directly to the "ej.DataManager" class and then you can assign it to DropDownList "dataSource".
+OData is a standardized protocol for creating and consuming data. Provide the [OData service](https://www.odata.org/) URL directly to the "ej.DataManager" class and then you can assign it to DropDownList "dataSource".
 
 {% highlight html %}
 
@@ -310,7 +310,7 @@ OData is a standardized protocol for creating and consuming data. Provide the [
            
           
 ## OData Version 4
-The OData v4 is an improved version of OData protocols and the Data Manager can also retrieve and consume data from [ODatav4](http://www.odata.org/) services.
+The OData v4 is an improved version of OData protocols and the Data Manager can also retrieve and consume data from [ODatav4](https://www.odata.org/) services.
 
 By using URL property of “ej.DataManager” bind OData Version 4 Service link and specify adaptor as ej.ODataV4Adaptor.
 
