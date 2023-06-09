@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Searching in JavaScript TreeGrid control | Syncfusion
-description: Learn here all about serching in Syncfusion Essential JavaScript TreeGrid control, its elements, and more.
+title: Searching in JavaScript TreeGrid Control | Syncfusion
+description: Learn here all about serching support in Syncfusion Essential JavaScript TreeGrid control, its elements, and more.
 platform: js
 control: TreeGrid
 documentation: ug
 api: /api/js/ejtreegrid
 ---
 
-# Searching in JavaScript TreeGrid control
+# Searching in JavaScript TreeGrid
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the [`toolbarSettings.toolbarItems`](/api/js/ejtreegrid#members:toolbarsettings-toolbaritems) property. The following code example explains how to integrate search textbox in toolbar.
 
