@@ -14,7 +14,7 @@ api: /api/js/ejdraggable
 
 The external script dependencies of the Drag and Drop are,
 
-* [jQuery 1.7.1](http://jquery.com/) and later versions.
+* [jQuery 1.7.1](https://jquery.com/) and later versions.
 
 And the internal script dependencies of the Drag and Drop are:
 
@@ -81,7 +81,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
-N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en#text-compression-with-gzip) in your server. 
 
 ## Initialize Drag And Drop
 

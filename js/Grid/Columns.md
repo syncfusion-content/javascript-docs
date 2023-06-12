@@ -297,7 +297,7 @@ The following output is displayed as a result of the above code example.
 
 [Format](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "Format") is the process of customizing the particular column data with specified jQuery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns").
 
-The [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings are available for the Date and Number types.
+The [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/globalizejs/globalize/tree/v0.1.1#format "data format") strings are available for the Date and Number types.
 
 The following code example describes the above behavior.
 
@@ -362,7 +362,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column width customization by external action
 
-To change the columns width by external action use  [`setWidthToColumns`](https://help.syncfusion.com/api/js/ejGrid#methods:setwidthtocolumns "setWidthToColumns") method.
+To change the columns width by external action use  [`setWidthToColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:setwidthtocolumns "setWidthToColumns") method.
 
 The following code example describes the above behavior. 
 
@@ -702,7 +702,7 @@ The following output is displayed as a result of the above code example.
 
 HTML templates can be specified in the [`template`](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") property of the particular column as a string (HTML element) or ID of the template's HTML element.
 
-You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
+You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](https://www.jsviews.com/#jsrapi "this link"). 
 
 For template manipulation using JavaScript, either you can use JsRender [helper](https://www.jsviews.com/#helpers) function or [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") grid event. For more information on [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") event, refer [this link](https://help.syncfusion.com/js/grid/how-to#display-other-syncfusion-controls-in-grid-columns "this link").
 
@@ -849,7 +849,7 @@ The following output is displayed as a result of the above code example.
 
 [Expression](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "Expression") column is possible only for the [`template`](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") column.
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "the link"). 
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer to [this link](https://www.jsviews.com/#jsrapi "the link"). 
 
 N> This expression column is supported at read only mode.
 

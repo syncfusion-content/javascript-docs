@@ -50,7 +50,7 @@ $(function () {
 
 ## External Export in Grid
 
-To export the grid by external action use [`export `](https://help.syncfusion.com/api/js/ejgrid#methods:export "export ") method, refer the KB  [`link `](https://www.syncfusion.com/kb/4335/how-to-export-grid-data-to-excel-word-and-pdf-formats-on-external-action "link ").
+To export the grid by external action use [`export `](https://help.syncfusion.com/api/js/ejgrid#methods:export "export ") method, refer the KB  [`link `](https://support.syncfusion.com/kb/article/4020/how-to-export-grid-data-to-excel-word-and-pdf-formats-on-external-action "link ").
 
 
 ## Server configuration

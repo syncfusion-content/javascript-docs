@@ -12,13 +12,13 @@ documentation: ug
 
 ## Introduction
 
-The [Ionic 3](http://blog.ionic.io/ionic-3-0-has-arrived/) is an open source Mobile SDK for developing native and progressive web apps and that it works with newer version of Angular4 and with a newer version of typescript.
+The [Ionic 3](https://ionic.io/blog/ionic-3-0-has-arrived/) is an open source Mobile SDK for developing native and progressive web apps and that it works with newer version of Angular4 and with a newer version of typescript.
 
 ## Prerequisites and Compatibility
 
 ### Prerequisites
 
-While running the ionic it requires [Node.js](https://nodejs.org/en/download/) (which includes [npm](https://npmjs.org/)) on your system.
+While running the ionic it requires [Node.js](https://nodejs.org/en/download) (which includes [npm](https://www.npmjs.com/)) on your system.
 
 ### Install Ionic
 
@@ -217,7 +217,7 @@ ionic serve
 
 ### Quick start application
 
-Get Syncfusion blank ionic3 project from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ionic3sample205835827) Then extract the project, folder holds following files
+Get Syncfusion blank ionic3 project from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ionic3sample205835827) Then extract the project, folder holds following files
 
 ![](ionic_images/blankionic3_img.png)
 

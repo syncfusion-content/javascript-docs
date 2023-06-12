@@ -81,4 +81,4 @@ N> Here [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members
 
 ![AutoComplete-MultiColumn](multicolumn_images\multicolumn_img1.png)
 
-[Live demo](https://js.syncfusion.com/demos/web/#!/bootstrap/autocomplete/multicolumn)
+[Live demo](https://ej2.syncfusion.com/home/#!/bootstrap/autocomplete/multicolumn)

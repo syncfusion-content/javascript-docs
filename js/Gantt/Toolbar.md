@@ -130,4 +130,4 @@ To insert EJ Controls in Gantt toolbar we need to initiate the control in the [`
 
 ![](/js/Gantt/Toolbar_images/Toolbar_img2.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/toolbartemplate) here to view the demo sample for custom toolbar item.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/customizations/toolbartemplate) here to view the demo sample for custom toolbar item.

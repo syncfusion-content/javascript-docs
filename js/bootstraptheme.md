@@ -17,7 +17,7 @@ The bootstrap theme file is available within the **css** folder which is depicte
 
 ## Example: To use the RTE control in bootstrap form layout, 
 
-Create a usual HTML file along with the necessary scripts and stylesheets referred in the page. Bootstrap files can be downloaded from [here](http://getbootstrap.com/getting-started/), if you need to refer it locally. We have used the CDN links for the Scripts and CSS file references in the page within the &lt;head&gt; section as shown below, 
+Create a usual HTML file along with the necessary scripts and stylesheets referred in the page. Bootstrap files can be downloaded from [here](https://getbootstrap.com/getting-started/), if you need to refer it locally. We have used the CDN links for the Scripts and CSS file references in the page within the &lt;head&gt; section as shown below, 
 
 {% highlight html %}
 

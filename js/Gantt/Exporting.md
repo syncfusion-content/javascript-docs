@@ -244,7 +244,7 @@ The following code snippets shows how to bind `ServerExcelQueryCellInfo` event i
       
 {% endhighlight %}
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
 
 N> Refer this [link](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.XlsIO.IExtendedFormat.html) to know more about what are the properties are available in Excel cell and it's type values.
 
@@ -338,9 +338,9 @@ The following code snippets shows how to bind `ServerPdfQueryCellInfo` event in 
 
 {% endhighlight %}
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
 
-N> Refer this [link](http://help.syncfusion.com/cr/cref_files/aspnetmvc/Syncfusion.EJ.Export~Syncfusion.EJ.Export.PdfTreeGridCellStyle_members.html) to know more about what are the properties are available in PDF cell and it's type values.
+N> Refer this [link](https://help.syncfusion.com/cr/cref_files/aspnetmvc/Syncfusion.EJ.Export~Syncfusion.EJ.Export.PdfTreeGridCellStyle_members.html) to know more about what are the properties are available in PDF cell and it's type values.
 
 ### Customize PDF taskbar
 
@@ -426,4 +426,4 @@ The following code snippets shows how to bind `ServerPdfQueryTaskbarInfo` event 
 
 {% endhighlight %}
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.

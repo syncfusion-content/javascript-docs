@@ -38,7 +38,7 @@ You can enable/disable the critical path in Gantt by using toolbar button, and t
 
 ![JavaScript Gantt toolbar icons](criticalfeature_images/criticalfeature_img1.jpeg)
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/criticalpath) here to view the online demo sample for critical path in Gantt.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/schedulingconcepts/criticalpath) here to view the online demo sample for critical path in Gantt.
 
 
 ## Using Method

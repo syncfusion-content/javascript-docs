@@ -59,7 +59,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) **+ j** key to focus the **Textbox** widget. Perform provided functionality by using keyboard shortcuts.
+Run the above example and press [Access key](https://en.wikipedia.org/wiki/Access_key) **+ j** key to focus the **Textbox** widget. Perform provided functionality by using keyboard shortcuts.
 
 
 

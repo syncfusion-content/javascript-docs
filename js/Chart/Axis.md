@@ -45,7 +45,7 @@ $("#container").ejChart({
 ![Category](Axis_images/Axis_img1.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/column) here to view our online demo sample that uses Category axis.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/column) here to view our online demo sample that uses Category axis.
 
 
 ### Place labels on ticks
@@ -357,7 +357,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 ![Datetime](Axis_images/Axis_img12.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/datetimeaxis) here to view our online demo sample for date time axis.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartaxes/datetimeaxis) here to view our online demo sample for date time axis.
 
  
 ### Customizing date time range
@@ -518,7 +518,7 @@ $("#container").ejChart({
 
 ![Datetimecategory](Axis_images/Axis_img63.png)
 
- [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/ChartAxes/DateTimeCategoryAxis) here to view our online demo sample for date time axis.
+ [Click](https://ej2.syncfusion.com/home/#!/bootstrap/chart/ChartAxes/DateTimeCategoryAxis) here to view our online demo sample for date time axis.
 
 ### Customizing DateTime Category range
 
@@ -597,7 +597,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 ![Log](Axis_images/Axis_img19.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/logaxis) here to view our online demo sample link for logarithmic axis.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartaxes/logaxis) here to view our online demo sample link for logarithmic axis.
 
 ### Customize Logarithmic range
 
@@ -1122,7 +1122,7 @@ For category value type, **<br>** can be specified in x value of data points.
 
 ![Linebreak](Axis_images/Axis_img68.png)
 
-[JS Playground Sample](http://jsplayground.syncfusion.com/zsaomrq5)
+[JS Playground Sample](https://jsplayground.syncfusion.com/zsaomrq5)
 
 For numeric, datetime and datetimeCategory value type, **<br>** can be specified in labelFormat.
 
@@ -1140,7 +1140,7 @@ For numeric, datetime and datetimeCategory value type, **<br>** can be specified
 
 ![Format](Axis_images/Axis_img69.png)
 
-[JS Playground Sample](http://jsplayground.syncfusion.com/fllsqowe)
+[JS Playground Sample](https://jsplayground.syncfusion.com/fllsqowe)
 
 ### Label and tick positioning
  
@@ -1617,7 +1617,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 ![Multipleimage2](Axis_images/Axis_img41.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/multipleaxes) here to view the multiple axis online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartaxes/multipleaxes) here to view the multiple axis online demo sample.
 
 
 ## Smart Axis Labels
@@ -1645,7 +1645,7 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 ![Smartaxis](Axis_images/Axis_img42.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/smartaxislabels) here to view our online demo sample for smart axis labels.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartaxes/smartaxislabels) here to view our online demo sample for smart axis labels.
 
 
 
@@ -1799,4 +1799,4 @@ The below screenshot shows the trimmed multi-level labels
 ![Multi-leveltrim](Axis_images/Axis_img61.png)
 
 And these labels can be placed in various rows using the [`level`] property.
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/chartaxes/multi-levellabels) here to view the multi-level labels online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/chart/chartaxes/multi-levellabels) here to view the multi-level labels online demo sample.

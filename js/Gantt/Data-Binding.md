@@ -229,7 +229,7 @@ The following screenshot shows the output of the above steps.
 
 ![](/js/Gantt/Data-Binding_images/Data-Binding_img2.png)
 
-You can find the online demo sample for binding self-referential data [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/databinding/selfreference)
+You can find the online demo sample for binding self-referential data [here](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/databinding/selfreference)
 
 ## Remote data
 
@@ -337,4 +337,4 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
-You can find the online demo sample of Gantt with virtualization mode [here](https://js.syncfusion.com/demos/web/#!/bootstrap/gantt/databinding/performance).
+You can find the online demo sample of Gantt with virtualization mode [here](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/databinding/performance).

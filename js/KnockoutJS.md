@@ -9,7 +9,7 @@ documentation: ug
 
 # KnockoutJS
 
-Essential JS provides a complete support of [KnockoutJS](http://knockoutjs.com/documentation/introduction.html) (MVVM pattern) for all the Syncfusion widgets, which can be achieved by integrating and referring the Syncfusion JS library `ej.widget.ko.min.js` file in the application.
+Essential JS provides a complete support of [KnockoutJS](https://knockoutjs.com/documentation/introduction.html) (MVVM pattern) for all the Syncfusion widgets, which can be achieved by integrating and referring the Syncfusion JS library `ej.widget.ko.min.js` file in the application.
 
 ## Required JavaScript libraries
 

@@ -23,7 +23,7 @@ Electron uses Chromium browser and Node.js (Building block of Electron) and 
 
 
 
-For more information, refer the official electron page in this [link](http://electron.atom.io/).
+For more information, refer the official electron page in this [link](https://www.electronjs.org/).
 
 
 
@@ -32,7 +32,7 @@ For more information, refer the official electron page in this [link](http://ele
 
 **Prerequisites**
 
-While running the electron it requires[Node.js](https://nodejs.org/en/download/)(which includes[npm](https://npmjs.org/)) on your system.
+While running the electron it requires[Node.js](https://nodejs.org/en/download)(which includes[npm](https://www.npmjs.com/)) on your system.
 
 **Compatibility**
 
@@ -62,7 +62,7 @@ This step by step guide is used to create a combination of Essential JS UI contr
 
 Step1:
 
-To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command using terminal (Mac OS) or Command Prompt (Windows).
+To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download)(which comes with[npm](https://www.npmjs.com/)) installed on your system, then enter the below command using terminal (Mac OS) or Command Prompt (Windows).
 
 
 N> For Mac OS run the command in administrator mode with $sudo as prefix
@@ -106,7 +106,7 @@ N> For Mac OS run the command in administrator mode with $sudo as prefix
 ![JavaScript Electron and its API](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img3.png)
 
 
-N> Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs).
+N> Learn more about Electron and its API in the [documentation](https://www.electronjs.org/docs).
 
 
 
@@ -118,7 +118,7 @@ Add the Syncfusion JS and CSS file reference in index.html file as mentioned on 
 
 ![JavaScript Electron steps to add the sample and run the application](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img4.png)
 
-N> When refer jQuery reference add the below_ [code](http://electron.atom.io/docs/faq/) _in head tag._
+N> When refer jQuery reference add the below_ [code](https://www.electronjs.org/docs/faq/) _in head tag._
 
 {% highlight javascript %}     
 
@@ -193,7 +193,7 @@ Now see the created Electron Application as below.
 
 ## Steps to use Electron Packager
 
-Bundle the Electron based application and make it as executable file by using[Electron Packager](https://github.com/electron-userland/electron-packager)After creating the application as mentioned above, use the below steps to package the application.
+Bundle the Electron based application and make it as executable file by using[Electron Packager](https://github.com/electron/electron-packager)After creating the application as mentioned above, use the below steps to package the application.
 
 
 

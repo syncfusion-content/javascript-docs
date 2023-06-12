@@ -39,7 +39,7 @@ For rendering a 3D Column Chart, specify the series [`type`](../api/ejchart#memb
 ![](/js/Chart/3D-Chart_images/3D-Chart_img1.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/column) here to view the 3D Column Chart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/column) here to view the 3D Column Chart online demo sample.
 
 
 ## 3D Bar Chart
@@ -68,7 +68,7 @@ You can create a 3D Bar Chart by setting the series [`type`](../api/ejchart#memb
 ![](/js/Chart/3D-Chart_images/3D-Chart_img2.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/bar) here to view the 3D Bar Chart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/bar) here to view the 3D Bar Chart online demo sample.
 
 
 ## 3D Stacked Column Chart
@@ -100,7 +100,7 @@ Stacking Column 3DChart is rendered by specifying the series [`type`](../api/ejc
 
 ![](/js/Chart/3D-Chart_images/3D-Chart_img3.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/stackedcolumn) here to view the Stacked Column 3DChart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/stackedcolumn) here to view the Stacked Column 3DChart online demo sample.
 
 
 ## 3D 100% Stacked Column Chart
@@ -133,7 +133,7 @@ Stacking Column 3DChart is rendered by specifying the series [`type`](../api/ejc
 ![](/js/Chart/3D-Chart_images/3D-Chart_img4.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/100%stackedcolumn) here to view the 100% Stacked Column 3DChart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/100%stackedcolumn) here to view the 100% Stacked Column 3DChart online demo sample.
 
 
 ## 3D Stacked Bar Chart
@@ -165,7 +165,7 @@ To create Stacking Bar 3DChart, set the series [`type`](../api/ejchart#members:s
 
 ![](/js/Chart/3D-Chart_images/3D-Chart_img5.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/stackedbar) here to view the Stacked Bar 3DChart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/stackedbar) here to view the Stacked Bar 3DChart online demo sample.
 
 
 ## 3D 100% Stacked Bar Chart
@@ -197,7 +197,7 @@ You can create 100% Stacking Bar 3DChart by setting the series [`type`](../api/e
 
 ![](/js/Chart/3D-Chart_images/3D-Chart_img6.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/100%stackedbar) here to view the 100% Stacking Bar 3DChart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/100%stackedbar) here to view the 100% Stacking Bar 3DChart online demo sample.
 
 
 ## 3D Pie Chart
@@ -225,7 +225,7 @@ To render the Pie Chart in 3D view, enable the **enbel3D** option in the chart a
 
 ![](/js/Chart/3D-Chart_images/3D-Chart_img7.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/pie) here to view the Pie 3DChart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/pie) here to view the Pie 3DChart online demo sample.
 
 
 ## 3D Doughnut Chart
@@ -254,7 +254,7 @@ To render the Doughnut Chart in 3D view, enable the **enbel3D** option in the ch
 ![](/js/Chart/3D-Chart_images/3D-Chart_img8.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/doughnut) here to view the Doughnut 3DChart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/doughnut) here to view the Doughnut 3DChart online demo sample.
 
 
 ## Configure 3D Chart
@@ -278,7 +278,7 @@ To render the EjChart in 3D view, set the [`enable3D`](../api/ejchart#members:en
 
 ![](/js/Chart/3D-Chart_images/3D-Chart_img9.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/column) here to view the 3DChart online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/3d/column) here to view the 3DChart online demo sample.
 
  
 ### Placing Bar / Column kind of series side-by-side

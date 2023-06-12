@@ -107,7 +107,7 @@ To create an Accumulation Distribution indicator, set the [`indicators.type`](..
 
 ![Accumulation Distribution](Technical-Indicators_images/Technical-Indicators_img1.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/accumulationdistribution) here to view the Accumulation Distribution indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/accumulationdistribution) here to view the Accumulation Distribution indicator online demo sample.
 
 
 ### Average True Range (ATR)
@@ -133,7 +133,7 @@ You can create an ATR indicator by setting the [`indicators.type`](../api/ejchar
 
 ![ATR](Technical-Indicators_images/Technical-Indicators_img2.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/atr) here to view the ATR indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/atr) here to view the ATR indicator online demo sample.
 
 
 ### Bollinger Band 
@@ -159,7 +159,7 @@ Bollinger Band indicator is created by setting the [`indicators.type`](../api/ej
 
 ![Bollinger Band](Technical-Indicators_images/Technical-Indicators_img3.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/bollingerband) here to view the Bollinger Band indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/bollingerband) here to view the Bollinger Band indicator online demo sample.
 
 
 ### Exponential Moving Average (EMA)
@@ -185,7 +185,7 @@ To render an EMA indicator, you have to set the [`indicators.type`](../api/ejcha
 
 ![EMA](Technical-Indicators_images/Technical-Indicators_img4.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/ema) here to view the EMA indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/ema) here to view the EMA indicator online demo sample.
 
 
 ### Momentum 
@@ -211,7 +211,7 @@ Momentum Technical indicator is created by setting the [`indicators.type`](../ap
 
 ![Momentum](Technical-Indicators_images/Technical-Indicators_img5.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/momentum) here to view the Momentum indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/momentum) here to view the Momentum indicator online demo sample.
 
 
 ### Moving Average Convergence Divergence (MACD)
@@ -238,7 +238,7 @@ To render an MACD indicator, you have to set the [`indicators.type`](../api/ejch
 ![MACD](Technical-Indicators_images/Technical-Indicators_img6.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/macd) here to view the MACD indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/macd) here to view the MACD indicator online demo sample.
 
 
 #### macdType
@@ -291,7 +291,7 @@ To render the RSI indicator, set the [`indicators.type`](../api/ejchart#members:
 ![RSI](Technical-Indicators_images/Technical-Indicators_img8.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/rsi) here to view the RSI indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/rsi) here to view the RSI indicator online demo sample.
 
 
 ### Simple Moving Average (SMA)
@@ -318,7 +318,7 @@ To render the SMA indicator, you should specify the [`indicators.type`](../api/e
 ![SMA](Technical-Indicators_images/Technical-Indicators_img9.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/sma) here to view the SMA indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/sma) here to view the SMA indicator online demo sample.
 
 
 ### Stochastic 
@@ -346,7 +346,7 @@ For the Stochastic indicator, you need to set the [`indicators.type`](../api/ejc
 ![Stochastic](Technical-Indicators_images/Technical-Indicators_img10.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/stochastic) here to view the stochastic indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/stochastic) here to view the stochastic indicator online demo sample.
 
 
 ### Triangular Moving Average (TMA)
@@ -373,7 +373,7 @@ To render the TMA indicator, you should specify the [`indicators.type`](../api/e
 ![TMA](Technical-Indicators_images/Technical-Indicators_img11.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/tma) here to view the TMA indicator online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/technicalindicators/tma) here to view the TMA indicator online demo sample.
 
 
 ## Enable Tooltip 

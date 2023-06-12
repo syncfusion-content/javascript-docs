@@ -94,6 +94,6 @@ You can also bind data from WebAPI controller as shown below and map the WebAPI 
 
 {% endhighlight %}
 
-Sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DropDownTree830477731)
+Sample can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DropDownTree830477731)
 
 ![Load](LoadOnDemand_images/loadondemand.png)

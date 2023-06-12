@@ -26,7 +26,7 @@ The below screenshot depicts the output of above code example.
 
 ![](/js/Gantt/WorkBreakdownStructure_images/wbs_img1.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/workbreakdownstrcture) here to view the online demo sample for WBS in Gantt.
+[Click](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/schedulingconcepts/workbreakdownstrcture) here to view the online demo sample for WBS in Gantt.
 
 
 

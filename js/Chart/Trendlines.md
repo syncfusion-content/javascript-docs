@@ -32,7 +32,7 @@ The visibility of the trendline is controlled by using the [`visibility`](../api
 ![](/js/Chart/Trendlines_images/Trendlines_img1.png)
 
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/trendlines) here to view the Trendlines online demo sample.
+[Click](https://ej2.syncfusion.com/home/#!/azure/chart/trendlines) here to view the Trendlines online demo sample.
 
 
 ## Customize the trendline styles
