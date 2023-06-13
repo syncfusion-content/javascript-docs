@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in JavaScript TreeGrid Control | Syncfusion
-description: Learn here all about serching support in Syncfusion Essential JavaScript TreeGrid control, its elements, and more.
+description: Learn here all about searching support in Syncfusion Essential JavaScript TreeGrid control, its elements, and more.
 platform: js
 control: TreeGrid
 documentation: ug
