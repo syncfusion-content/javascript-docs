@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom-labels
-description: custom labels
+title: Custom-labels | Linear Gauge | JavaScript | Syncfusion
+description: Learn here about Custom labels in Syncfusion Essential JavaScript Linear Gauge Control, its elements, and more.
 platform: js
 control: Linear Gauge
 documentation: ug
 api: /api/js/ejlineargauge
 ---
 
-# Custom labels
+# Custom labels in JavaScript Linear Gauge 
 
 Custom labels are the text that can paste in any location of the **Linear Gauge**. It is used to define the purpose of the gauge.
 
@@ -70,7 +70,7 @@ Custom labels are the text that can paste in any location of the **Linear Gauge*
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Custom-labels_images/Custom-labels_img1.png)
+![Adding Custom Label Collection in JavaScript Linear Gauge ](/js/LinearGauge/Custom-labels_images/Custom-labels_img1.png)
 
 ## Basic Customization
 
@@ -140,7 +140,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Custom-labels_images/Custom-labels_img2.png)
+![Basic Customization in JavaScript Linear Gauge](/js/LinearGauge/Custom-labels_images/Custom-labels_img2.png)
 
 ## Locating the CustomLabels
 
@@ -201,7 +201,7 @@ To specify the label [`position type`](../api/ejlineargauge#members:scales-custo
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Custom-labels_images/Custom-labels_img3.png)
+![Locating the Custom Labels in JavaScript Linear Gauge](/js/LinearGauge/Custom-labels_images/Custom-labels_img3.png)
 
 ## Multiple Custom Labels
 
@@ -268,7 +268,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Custom-labels_images/Custom-labels_img4.png)
+![Multiple Custom Labels in JavaScript Linear Gauge](/js/LinearGauge/Custom-labels_images/Custom-labels_img4.png)
 
 
 ## Outer Custom Label
