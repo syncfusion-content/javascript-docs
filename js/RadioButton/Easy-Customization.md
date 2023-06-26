@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion Easy-Customization
-description: easy customization
+title: Easy-Customization | RadioButton | JavaScript | Syncfusion
+description: Learn here about easy customization in Syncfusion Essential JavaScript RadioButton Control, its elements, and more.
 platform: js
 control: RadioButton
 documentation: ug
 api: /api/js/ejradiobutton
 ---
 
-# Easy Customization
+# Easy Customization in JavaScript RadioButton
 
 ## Checked status
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard-Interaction
-description: keyboard interaction
+title: Keyboard-Interaction | Slider | JavaScript | Syncfusion
+description: Learn here about keyboard interaction in Syncfusion Essential JavasCript Slider Control, its elements, and more.
 platform: js
 control: Slider
 documentation: ug
 api: /api/js/ejslider
 ---
 
-# Keyboard Interaction
+# Keyboard Interaction in JavasCript Slider 
 
 You can use Keyboard shortcut keys as an alternative to the mouse for using the **Slider** widget. All options in the **Slider** can be accessed using keyboard shortcuts. The following table explains the keyboard shortcut keys and the operations that can be performed using the corresponding keys.
 
