@@ -44,7 +44,7 @@ TreeGrid allows you to sort multiple columns by clicking the desired column hea
 
 The following screenshot shows the output of multicolumn sorting in TreeGrid control.
 
-![Multicolumn Sorting in JavaScript TreeGrid](/js/TreeGrid/Sorting_images/Sorting_img1.png)
+![Multicolumn Sorting in JavaScript TreeGrid](/js/treegrid/sorting_images/js-treegrid-multicolumn-sorting.png)
 
 ### Disable sorting for specific column
 
@@ -92,7 +92,7 @@ The following code shows how to add sorted column in TreeGrid.
 
 {% endhighlight %}
 
-![Sorting Column at initial load in JavaScript TreeGrid](/js/TreeGrid/Sorting_images/Sorting_img2.png)
+![Sorting Column at initial load in JavaScript TreeGrid](/js/treegrid/sorting_images/js-treegrid-sorting-column.png)
 
 The above screenshot shows TreeGrid rendered with descending order of `Task Name` column.
 {:.caption}
