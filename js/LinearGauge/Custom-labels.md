@@ -70,7 +70,7 @@ Custom labels are the text that can paste in any location of the **Linear Gauge*
 
 Execute the above code to render the following output.
 
-![Adding Custom Label Collection in JavaScript Linear Gauge ](/js/LinearGauge/Custom-labels_images/Custom-labels_img1.png)
+![Adding Custom Label Collection in JavaScript Linear Gauge ](/js/lineargauge/custom-labels_images/js-linear-gauge-adding-custom-label.png)
 
 ## Basic Customization
 
@@ -140,7 +140,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![Basic Customization in JavaScript Linear Gauge](/js/LinearGauge/Custom-labels_images/Custom-labels_img2.png)
+![Basic Customization in JavaScript Linear Gauge](/js/lineargauge/custom-labels_images/js-linear-gauge-basic-customization.png)
 
 ## Locating the CustomLabels
 
@@ -201,7 +201,7 @@ To specify the label [`position type`](../api/ejlineargauge#members:scales-custo
 
 Execute the above code to render the following output.
 
-![Locating the Custom Labels in JavaScript Linear Gauge](/js/LinearGauge/Custom-labels_images/Custom-labels_img3.png)
+![Locating the Custom Labels in JavaScript Linear Gauge](/js/lineargauge/custom-labels_images/js-linear-gauge-locating-custom-labels.png)
 
 ## Multiple Custom Labels
 
@@ -268,7 +268,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![Multiple Custom Labels in JavaScript Linear Gauge](/js/LinearGauge/Custom-labels_images/Custom-labels_img4.png)
+![Multiple Custom Labels in JavaScript Linear Gauge](/js/lineargauge/custom-labels_images/js-linear-gauge-multiple-custom-labels.png)
 
 
 ## Outer Custom Label

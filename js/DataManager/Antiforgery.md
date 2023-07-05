@@ -61,8 +61,8 @@ For this purpose, the input element with hidden value field and name attribute i
 
 
 
-![Antiforgery Tocken in JavaScript DataManager](Antiforgery_images/Antiforgery.png)
+![Antiforgery Tocken in JavaScript DataManager](antiforgery_images/js-data-manager-antiforgery-tocken.png)
 
 In the header, You can find the anti-forgery token value
 
-![Antiforgery Header in JavaScript DataManager](Antiforgery_images/Antiforgery_header.png)
+![Antiforgery Header in JavaScript DataManager](antiforgery_images/js-data-manager-antiforgery-header.png)

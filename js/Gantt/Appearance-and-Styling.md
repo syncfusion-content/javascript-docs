@@ -36,7 +36,7 @@ And you can change the background of weekends available in timescale by using [`
 
 The following screenshot shows the customized format schedule header in Gantt control.
 
-![Schedule Header Unit Format in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Schedule Header Unit Format in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-header-unit-format.png)
 
 ### Schedule Header Unit Width
 
@@ -55,12 +55,12 @@ The following code example shows how to use this properties.
 {% endhighlight %}
 
 The following screenshot shows the output of above code example.
-![Schedule Header Unit Width in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
+![Schedule Header Unit Width in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-header-unit-width.png)
 
 Schedule header units with `300%` width value
 {:.caption}
 
-![Schedule Header Unit Width Value in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
+![Schedule Header Unit Width Value in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-header-unit-value.png)
 
 Schedule header units with `70%` width value
 {:.caption}
@@ -84,7 +84,7 @@ Background color of child taskbars and parent taskbars can be customized by usin
 {% endhighlight %}
 
 The following screenshot shows the customized parent and child taskbars in Gantt.
-![Taskbar Background in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![Taskbar Background in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-taskbar-background.png)
 
 You can find the JS playground sample for this properties [here](http://jsplayground.syncfusion.com/Sync_wd4b4xrw "Demo Link").
 
@@ -103,7 +103,7 @@ Height of child taskbars and parent taskbars can be customized by using [`taskba
 {% endhighlight %}
 
 The following screenshot shows the output of above code example.
-![Taskbar Height in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
+![Taskbar Height in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-taskbar-height.png)
 
 You can find the JS playground sample for this properties [here](http://jsplayground.syncfusion.com/Sync_skkep23a "Demo Link").
 
@@ -127,7 +127,7 @@ Background color of child task's progress bar and parent task's progress bar can
 {% endhighlight %}
 
 The following screenshot shows the customized progress bar of parent and child tasks in Gantt.
-![Progressbar Customization in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
+![Progressbar Customization in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-progressbar-customozation.png)
 
 You can find the JS playground sample for this properties [here](http://jsplayground.syncfusion.com/Sync_ca3bj03o "Demo Link").
 
@@ -164,7 +164,7 @@ The Taskbar can be customized based on the task information in Gantt control by 
 
 The following screenshot shows the customized taskbar in Gantt control.
 
-![Conditional Formatting in in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Conditional Formatting in in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-conditional-formatting.png)
 
 ## Dependency line customization
 
@@ -181,7 +181,7 @@ Width and background color of dependency line in Gantt can be customized by usin
 {% endhighlight %}
 
 The following screenshot shows the customized dependency lines in Gantt.
-![Dependency Line Customization in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![Dependency Line Customization in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-dependency.png)
 
 You can find the JS playground sample for this properties [here](http://jsplayground.syncfusion.com/Sync_ecvgphrl "Demo Link").
 
@@ -199,7 +199,7 @@ Background color of weekends in Gantt can be changed by using [`weekendBackgroun
 {% endhighlight %}
 
 The following screenshot shows the customized dependency lines in Gantt.
-![Weekend Background in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img10.png)
+![Weekend Background in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-weekend-background.png)
 
 You can find the JS playground sample for this properties [here](http://jsplayground.syncfusion.com/Sync_rkk1fzd5 "Demo Link").
 
@@ -243,7 +243,7 @@ The theme (Gradient lime) can be applied to the Gantt control by using the style
 
 The following screenshot shows the Gantt control with `Gradient-lime` theme.
 
-![Themes in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![Themes in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-themes.png)
 
 ## Configuring CSS Class
 
@@ -281,7 +281,7 @@ In Gantt [`cssClass`](/api/js/ejgantt#members:cssclass) property was used to app
 
 The below screenshot shows the output of above code example.
 
-![Configuring CSS Class in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img11.png)
+![Configuring CSS Class in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-configuring-css.png)
 
 ## Customize rows and cells
 
@@ -308,4 +308,4 @@ $("#GanttContainer").ejGantt({
 {% endhighlight %}
 
 The below screenshot shows the output of above code example.
-![Customize rows and cells in JavaScript Gantt](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img12.png)
+![Customize rows and cells in JavaScript Gantt](/js/gantt/appearance-and-styling_images/js-gantt-customize-rows-and-cells.png)
