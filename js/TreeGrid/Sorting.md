@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting
-description: sorting
+title: Sorting in JavaScript TreeGrid | Syncfusion
+description: Learn here about sorting in Syncfusion JavaScript TreeGrid control, its elements, and more.
 platform: js
 control: TreeGrid
 documentation: ug

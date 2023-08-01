@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows
-description: rows
+title: Rows in JavaScript TreeGrid | Syncfusion
+description: Learn here about rows in Syncfusion JavaScript TreeGrid control, its elements, and more.
 platform: js
 control: TreeGrid
 documentation: ug

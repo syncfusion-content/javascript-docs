@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar | FileExplorer | JavaScript | Syncfusion
-description: Toolbar support
+title: Toolbar in JavaScript FileExplorer | Syncfusion
+description: Learn here about toolbar support in Syncfusion JavaScript File Explorer control, its elements, and more.
 platform: js
 control: File Explorer
 documentation: ug
