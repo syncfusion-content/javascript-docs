@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Aurelia Syncfusion Bridge
-description: How to use Essential js Aurelia.
+description: Learn here about how to use Essentials in Syncfusion JavaScript Aurelia control, its elements, and more.
 platform: js
 control: Introduction
 documentation: ug
@@ -249,9 +249,9 @@ gulp watch
 
 {% endhighlight %}
 
-* Browse to [`http://localhost:9000`](http://localhost:9000)  to see the application. You can make changes in the code found under `src` folder and the browser should auto-refresh itself while you save files. The Grid component is rendered as like the below screenshot.
+* Browse to [`http://localhost:9000`](http://localhost:9000/)  to see the application. You can make changes in the code found under `src` folder and the browser should auto-refresh itself while you save files. The Grid component is rendered as like the below screenshot.
 
-![](/js/Aurelia_images/skeleton_navigation.png)
+![Skeleton navigation in JavaScipt Aurelia](/js/aurelia_images/javascript-aurelia-skeleton-navigation.png)
 
 # Catalog application
 
