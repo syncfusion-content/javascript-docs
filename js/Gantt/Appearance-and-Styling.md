@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling in JavaScript Gantt | Syncfusion
+title: Appearance and styling in JavaScript Gantt | Syncfusion
 description: Learn here about appearance and styling in Syncfusion Essential JavaScript Gantt Control, its elements, and more.
 platform: js
 control: Gantt

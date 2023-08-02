@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in JavaScript TreeGrid | Syncfusion
-description: Learn here about filtering in Syncfusion JavaScript TreeGrid control, its elements, and more.
+description: Learn here about filtering in Syncfusion Essential JavaScript TreeGrid control, its elements, and more.
 platform: js
 control: TreeGrid
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updating-slider-value in JavaScript Slider | Syncfusion
+title: Updating slider value in JavaScript Slider | Syncfusion
 description: Learn here about updating slider value in Syncfusion JavaScript Slider control, its elements, and more.
 platform: js
 control: Slider

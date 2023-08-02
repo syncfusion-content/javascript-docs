@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Repeat-Button in JavaScript Button | Syncfusion
-description: Learn here about repeat button in Syncfusion JavaScript Button control, its elements, and more.
+description: Learn here about repeat button in Syncfusion Essential JavaScript Button control, its elements, and more.
 platform: js
 control: Button
 documentation: ug
