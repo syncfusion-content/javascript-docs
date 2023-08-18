@@ -15,7 +15,7 @@ Grid  supports SignalR features for live updates in record. Please find the belo
 
 1) Before configure SignalR with ejGrid. You need to Setup SignalR configuration in Visual Studio project. For reference, please find the link.
 
-N> Getting started with [SignalR](http://www.asp.net/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup "signalr") 
+N> Getting started with [SignalR](https://learn.microsoft.com/en-us/aspnet/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup "signalr") 
 
 
 
