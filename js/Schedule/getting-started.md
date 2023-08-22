@@ -74,7 +74,7 @@ Refer the CSS file from the specific theme folder to your HTML file within the h
 <head>
     <meta charset="utf-8" />
     <title>Getting Started - Schedule</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/20.4.0.38/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 </head>
 
 {% endhighlight %}
@@ -86,11 +86,11 @@ Add links to the [CDN](/js/cdn) Script files with other required external depend
 <head>
     <meta charset="utf-8" />
     <title>Getting Started - Schedule</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/20.4.0.38/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/20.4.0.38/js/web/ej.web.all.min.js"></script>
 </head>
 
 {% endhighlight %}
