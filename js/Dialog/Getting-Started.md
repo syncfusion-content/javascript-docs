@@ -147,7 +147,7 @@ The Dialog widget can be hidden on initialize using [showOnInit](https://help.sy
 
 Refer the below example. The dialog will be opened on clicking the Button widget. 
 
-{%seealso%} [Button](https://docs.syncfusion.com/js/button/overview)
+{%seealso%} [Button](https://help.syncfusion.com/js/button/overview)
 {%endseealso%}
 
 {% highlight html %}
