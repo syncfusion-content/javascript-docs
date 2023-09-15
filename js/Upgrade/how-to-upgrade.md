@@ -13,7 +13,7 @@ Syncfusion releases new volumes once every three months, with exciting new featu
 
 You can upgrade to our latest version from any installed Syncfusion version.
 
-See our "[**Upgrade Guide**](https://help.syncfusion.com/upgrade-guide/jquery-ui-widgets)" for JavaScript to learn more about the “Breaking Changes, Bug Fixes, Features and Knows Issues” between your current version and the latest version you are trying to upgrade.
+See our "[**Upgrade Guide**](https://help.syncfusion.com/upgrade-guide/javascript-ui-controls)" for JavaScript to learn more about the “Breaking Changes, Bug Fixes, Features and Knows Issues” between your current version and the latest version you are trying to upgrade.
 
 
 ## Upgrading to the latest version
@@ -22,7 +22,7 @@ The most recent version of Syncfusion JavaScript can be downloaded and installed
 
 ![Control Panel](Upgrade-images/upgrade-control-panel.png)
 
-You can also upgrade to the latest version just by downloading and installing the products you require from [this](https://www.syncfusion.com/downloads/latest-version) link. The existing installed versions are not required to be uninstalled. 
+You can also upgrade to the latest version just by downloading and installing the products you require from [this](https://www.syncfusion.com/account/downloads) link. The existing installed versions are not required to be uninstalled. 
 
 
 It is not required to install the Volume release before installing the Service Pack release. As releases for Volume and Service Packs work independently, you can install the latest version with major bug fixes directly.
