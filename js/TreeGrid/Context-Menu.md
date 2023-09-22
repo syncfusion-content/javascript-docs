@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context-Menu
-description: context menu
+title: Context-Menu | JavaScript | Syncfusion
+description: Learn here about context menu in Syncfusion Essential JavaScript TreeGrid Control, its elements, and more.
 platform: js
 control: TreeGrid
 documentation: ug
 api: /api/js/ejtreegrid
 ---
 
-# Context Menu
+# Context Menu in JavaScript TreeGrid
 
 The **Context menu** in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with the [`contextMenuSettings`](/api/js/ejtreegrid#members:contextmenusettings) property. The [`contextMenuSettings`](/api/js/ejtreegrid#members:contextmenusettings) property contains two inner properties [`showContextMenu`](/api/js/ejtreegrid#members:contextmenusettings-showcontextmenu "contextMenuSettings.showContextMenu") and [`contextMenuItems`](/api/js/ejtreegrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems").
 
@@ -31,9 +31,9 @@ The [`contextMenuItems`](/api/js/ejtreegrid#members:contextmenusettings-contextm
 
 The following screenshot displays the Context menu in TreeGrid control.
 
-![](/js/TreeGrid/Context-Menu_images/Context-Menu_img1.png)
+![Context Menu in JavaScript TreeGrid](/js/TreeGrid/Context-Menu_images/Context-Menu_img1.png)
 
-# Header Context Menu
+## Header Context Menu
 Header context menu can be enabled by setting [`showContextMenu`](/api/js/ejtreegrid#members:contextmenusettings-showcontextmenu "contextMenuSettings.showContextMenu") as `true`. The default value of the [`showContextMenu`](/api/js/ejtreegrid#members:contextmenusettings-showcontextmenu "contextMenuSettings.showContextMenu") property is false.
 
 Following options are shown in header context menu. 
@@ -57,7 +57,7 @@ The below code snippet explains how to enable header context menu in TreeGrid
 
 The following screenshot displays the Header context menu in TreeGrid control.
 
-![](/js/TreeGrid/Context-Menu_images/Context-Menu_img2.png)
+![Header Context Menu in JavaScript TreeGrid](/js/TreeGrid/Context-Menu_images/Context-Menu_img2.png)
 
 ### ContextMenu Customization
 
@@ -108,5 +108,5 @@ Context menu can be customized by adding a new custom menu item to it. In TreeGr
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-![](/js/TreeGrid/Context-Menu_images/Context-Menu_img2.jpg)
+![Context Menu Customization in JavaScript TreeGrid](/js/TreeGrid/Context-Menu_images/Context-Menu_img2.jpg)
 
