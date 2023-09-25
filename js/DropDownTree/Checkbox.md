@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CheckBox with DropDownTree widget for Syncfusion Essential JS
-description: Describes about Checkbox functionalities in DropDownTree widget for Syncfusion Essential JS
+description: Learn here about about Checkbox functionalities in Syncfusion Essential JavaScript DropDownTree Control, its elements, and more.
 platform: js
 control: DropDownTree
 documentation: ug
@@ -9,7 +9,7 @@ keywords: Checkbox, dropdown,textModes, Delimiter
 api: /api/js/ejDropDownTree
 ---
 
-# Checkbox
+# Checkbox with JavaScript DropDownTree widget
 
 DropDownTree displays checkboxes to the left of each item when you set [treeViewSettings.showCheckBox](https://help.syncfusion.com/api/js/ejdropdowntree#members:treeViewSettings) property to true. It allows you to select more than one item at a time from the DropDownTree. Popup list stays open until selection is complete. Click on an item’s text or checkbox to change the checkbox’s checked status.
 
@@ -139,7 +139,7 @@ var localData = [{
  });
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img1.png)
+![Checkbox with JavaScript DropDownTree widget](Checkbox_images/Checkbox_img1.png)
 
 N> If you want to showcase the DropDownTree with default checked items on data binding, use `checkedNodes` in the `treeViewSettings` property.
 
@@ -288,7 +288,7 @@ var localData = [{
  }
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img2.png)
+![Check/Uncheck All in JavaScript DropDownTree](Checkbox_images/Checkbox_img2.png)
 
 ## checkNode/uncheckNode
 You can check/uncheck a particular node at run time by using [checkNode](https://help.syncfusion.com/api/js/ejdropdowntree#methods:checkNode) and [uncheckNode](https://help.syncfusion.com/api/js/ejdropdowntree#methods:uncheckNode) methods. By default, no item will be in checked state. 
@@ -434,4 +434,4 @@ function onCheckUncheckAll(args) {
     
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img2.png)
+![checkNode/uncheckNode in JavaScript DropdownTree](Checkbox_images/Checkbox_img2.png)

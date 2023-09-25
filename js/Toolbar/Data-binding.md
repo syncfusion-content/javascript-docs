@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data-binding
-description: data binding
+title: Data-binding | JavaScript Toolbar | Syncfusion
+description: Learn here about data binding in Syncfusion Essential JavaScript Toolbar Control, its elements, and more.
 platform: js
 control: Toolbar
 documentation: ug
 api: /api/js/ejtoolbar
 ---
 
-# Data binding
+# Data binding in JavaScript Toolbar
 
 **Toolbar** provides you a flexible approach for binding data from various data sources. There are various properties in **Toolbar** for Data Binding.
 
@@ -175,7 +175,7 @@ And also you can add image, image styles, sprite CSS class, query and HTML attri
 
 {% endhighlight %}
 
-![](/js/Toolbar/Data-binding_images/Data-binding_img1.png) 
+![Data fields and configuration in JavaScript Toolbar](/js/Toolbar/Data-binding_images/Data-binding_img1.png) 
 
 
 ## Remote data
@@ -213,7 +213,7 @@ To bind Remote data to **Toolbar** and [query](https://help.syncfusion.com/api/j
 {% endhighlight %}
 
 
-![](/js/Toolbar/Data-binding_images/Data-binding_img2.png) 
+![Remote data in JavaScript Toolbar](/js/Toolbar/Data-binding_images/Data-binding_img2.png) 
 
 ## KnockoutJS binding
 
@@ -268,7 +268,7 @@ The following code example depicts you the way to bind data to the **Toolbar** t
     
  {% endhighlight %}
     
- ![](/js/Toolbar/Data-binding_images/Data-binding_img4.png)
+ ![KnockoutJS binding in JavaScript Toolbar](/js/Toolbar/Data-binding_images/Data-binding_img4.png)
     
 
 ## AngularJS binding
@@ -419,5 +419,5 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% endhighlight %}
 
-![](/js/Toolbar/Data-binding_images/Data-binding_img6.png)
+![AngularJS binding in JavaScript Toolbar](/js/Toolbar/Data-binding_images/Data-binding_img6.png)
 
