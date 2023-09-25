@@ -10,7 +10,7 @@ api : /api/js/ejchart
 
 # Exporting in JavaScript Chart
 
-The exporting of the chart is done using the [`exportSettings`](../api/ejchart#members:exportsettings) property. The chart  export can be done in both client-side and in server-side.This can be modified by setting values to the property [`mode`](../api/ejchart#members:exportsettings-mode) in exporting. Default value for mode is client. 
+The exporting of the chart is done using the [`exportSettings`](https://help.syncfusion.com/api/js/ejchart#members:exportsettings) property. The chart  export can be done in both client-side and in server-side.This can be modified by setting values to the property [`mode`](../api/ejchart#members:exportsettings-mode) in exporting. Default value for mode is client. 
 
 ## Client-side Exporting
 
