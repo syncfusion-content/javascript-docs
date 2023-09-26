@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context-Menu | JavaScript | Syncfusion
+title: Context-Menu in JavaScript TreeGrid | Syncfusion
 description: Learn here about context menu in Syncfusion Essential JavaScript TreeGrid Control, its elements, and more.
 platform: js
 control: TreeGrid

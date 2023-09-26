@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy-customization | JavaScript Split Button | Syncfusion
+title: Easy-customization in JavaScript Split Button | Syncfusion
 description: Learn here about easy customization in Syncfusion Essential JavaScript Split Button Control, its elements, and more.
 platform: js
 control: Split Button
