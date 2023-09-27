@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data-binding | JavaScript Menu | Syncfusion
-description: Learn here about data binding in Syncfusion Essential JavaScript Menu Control, its elements, and more.
+title: Data-binding in JavaScript Menu | Syncfusion
+description: Learn here about data binding support in Syncfusion Essential JavaScript Menu Control, its elements, and more.
 platform: js
 control: Menu
 documentation: ug
