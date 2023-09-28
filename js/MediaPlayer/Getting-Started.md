@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with JavaScript MediaPlayer | Syncfusion
+title: Getting started with JavaScript MediaPlayer Control | Syncfusion
 description: Learn here about how to get start with MediaPlayer by adding references in Syncfusion Essential JS MediaPlayer Control, its elements, and more.
 platform: js
 control: MediaPlayer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-binding in JavaScript Toolbar | Syncfusion
+title: Data-binding in JavaScript Toolbar Control | Syncfusion
 description: Learn here about data binding support in Syncfusion Essential JavaScript Toolbar Control, its elements, and more.
 platform: js
 control: Toolbar

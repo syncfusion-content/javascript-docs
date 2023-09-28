@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging |JavaScript Grid | Syncfusion 
-description: Learn here about how to enable paging and its functionalites in Syncfusion Essential JS Grid Control, its elements, and more.
+title: Paging in JavaScript Grid Control | Syncfusion 
+description: Learn here about how to enable paging and its functionalites in Syncfusion Essential JavaScript Grid Control, its elements, and more.
 platform: js
 control: Grid
 documentation: ug
@@ -57,7 +57,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Pager with query string in JS Grid](paging_images/paging_img2.png)
+![Pager with query string in JavaScript Grid](paging_images/paging_img2.png)
 
 
 ## Pager template
@@ -111,7 +111,7 @@ function btnClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![Pager template in JS Grid](paging_images/paging_img3.png)
+![Pager template in JavaScript Grid](paging_images/paging_img3.png)
 
 
 ## Pager with pageSize drop down
@@ -137,7 +137,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Pager with pageSize drop down in JS Grid](paging_images/paging_img4.png)
+![Pager with pageSize drop down in JavaScript Grid](paging_images/paging_img4.png)
 
 ## Pager with pageSettings
 
@@ -169,4 +169,4 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![Pager with pageSettings in JS Grid](paging_images/paging_img6.png)
+![Pager with pageSettings in JavaScript Grid](paging_images/paging_img6.png)

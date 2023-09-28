@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in JavaScript GroupButton | Syncfusion
+title: Overview in JavaScript GroupButton Control | Syncfusion
 description: Learn here about overview support in Syncfusion Essential JavaScript GroupButton Control, its elements, and more.
 platform: js
 control: GroupButton

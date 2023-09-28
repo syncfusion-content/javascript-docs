@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-binding in JavaScript Menu | Syncfusion
+title: Data-binding in JavaScript Menu Control | Syncfusion
 description: Learn here about data binding support in Syncfusion Essential JavaScript Menu Control, its elements, and more.
 platform: js
 control: Menu
@@ -142,7 +142,7 @@ Add the following code in your **HTML** page.
 
 The following screenshot displays the output of the above code.
 
-![Field Members in JavaScript Menu](/js/Menu/Data-binding_images/Data-binding_img1.png) 
+![Field members in JavaScript Menu](/js/Menu/Data-binding_images/Data-binding_img1.png) 
 
 
 ## Remote data

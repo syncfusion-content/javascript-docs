@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CheckBox with DropDownTree widget for Syncfusion Essential JS
-description: Learn here about about Checkbox functionalities in Syncfusion Essential JavaScript DropDownTree Control, its elements, and more.
+title: Checkbox with JavaScript DropDownTree Control | Syncfusion 
+description: Learn here about Checkbox functionalities in Syncfusion Essential JavaScript DropDownTree Control, its elements, and more.
 platform: js
 control: DropDownTree
 documentation: ug
@@ -288,7 +288,7 @@ var localData = [{
  }
 {% endhighlight %}
 
-![Check/Uncheck All in JavaScript DropDownTree](Checkbox_images/Checkbox_img2.png)
+![Check an uncheck all in JavaScript DropDownTree](Checkbox_images/Checkbox_img2.png)
 
 ## checkNode/uncheckNode
 You can check/uncheck a particular node at run time by using [checkNode](https://help.syncfusion.com/api/js/ejdropdowntree#methods:checkNode) and [uncheckNode](https://help.syncfusion.com/api/js/ejdropdowntree#methods:uncheckNode) methods. By default, no item will be in checked state. 
@@ -434,4 +434,4 @@ function onCheckUncheckAll(args) {
     
 {% endhighlight %}
 
-![checkNode/uncheckNode in JavaScript DropdownTree](Checkbox_images/Checkbox_img2.png)
+![checkNode and uncheckNode in JavaScript DropdownTree](Checkbox_images/Checkbox_img2.png)
