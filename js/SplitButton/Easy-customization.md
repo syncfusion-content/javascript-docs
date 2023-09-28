@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy-customization in JavaScript Split Button | Syncfusion
+title: Easy-customization in JavaScript Split Button Control | Syncfusion
 description: Learn here about easy customization in Syncfusion Essential JavaScript Split Button Control, its elements, and more.
 platform: js
 control: Split Button
@@ -54,7 +54,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 Execute the above code to render the following output.
 
-![Content For Split Button in JavaScript](/js/SplitButton/Easy-customization_images/Easy-customization_img1.png) 
+![Content for Split Button in JavaScript](/js/SplitButton/Easy-customization_images/Easy-customization_img1.png) 
 
 ## Button Size
 
@@ -238,7 +238,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-![Button Size in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img2.png) 
+![Button size in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img2.png) 
 
 ## Content Type
 
@@ -426,7 +426,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-![Content Type in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img3.png) 
+![Content type in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img3.png) 
 
 ## Image Position
 
@@ -667,7 +667,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-![Image Possition in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img4.png) 
+![Image position in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img4.png) 
 
 ## Theme support
 
@@ -857,7 +857,7 @@ Configure the **CSS** styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-![Theme Support in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img5.png) 
+![Theme support in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img5.png) 
 
 # Enable/Disable SplitButton
 
