@@ -9,7 +9,7 @@ keywords: Checkbox, dropdown,textModes, Delimiter
 api: /api/js/ejDropDownTree
 ---
 
-# Checkbox in JavaScript DropDownTree widget
+# Checkbox in JavaScript DropDownTree
 
 DropDownTree displays checkboxes to the left of each item when you set [treeViewSettings.showCheckBox](https://help.syncfusion.com/api/js/ejdropdowntree#members:treeViewSettings) property to true. It allows you to select more than one item at a time from the DropDownTree. Popup list stays open until selection is complete. Click on an item’s text or checkbox to change the checkbox’s checked status.
 
