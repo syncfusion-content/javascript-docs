@@ -44,11 +44,11 @@ Add the following references to the project that are necessary for using the ejP
 * Syncfusion.EJ.PdfViewer
 * Syncfusion.Pdf.Base
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key "Syncfusion Licensing Overview") to know about registering Syncfusion license key in your JavaScript application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview "Syncfusion Licensing Overview") to know about registering Syncfusion license key in your JavaScript application to use our components.
 
 **Add Scripts and Styles**
 
-The PDF viewer has the [JQuery](http://jquery.com/# "JQuery") external dependency.
+The PDF viewer has the [JQuery](https://jquery.com/ "JQuery") external dependency.
 
 The following table shows the list of ej widgets required for using the ejPdfViewer.
 
@@ -201,9 +201,9 @@ ej.slider.min.js
 </table>
 
 Find the scripts and style sheets in any of the following locations:
-Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer# "Installation and deployment") to know more about script and style sheets installed in local machine.
-CDN Link: [Click here](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
-NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
+Local Disk: [Click here](https://help.syncfusion.com/js/installation/web-installer/how-to-install "Installation and deployment") to know more about script and style sheets installed in local machine.
+CDN Link: [Click here](https://help.syncfusion.com/js/cdn "CDN scripts and styles links") to know more about script and style sheets available online.
+NuGet Package: [Click here](https://help.syncfusion.com/js/installation/web-installer/how-to-install#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the <head> tag of the Default.html page.
 
