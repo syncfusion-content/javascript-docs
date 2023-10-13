@@ -48,7 +48,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 **Add Scripts and Styles**
 
-The PDF viewer has the [JQuery](https://jquery.com/ "JQuery") external dependency.
+The PDF viewer has the [JQuery](https://jquery.com/# "JQuery") external dependency.
 
 The following table shows the list of ej widgets required for using the ejPdfViewer.
 
@@ -202,7 +202,7 @@ ej.slider.min.js
 
 Find the scripts and style sheets in any of the following locations:
 Local Disk: [Click here](https://help.syncfusion.com/js/installation/web-installer/how-to-install "Installation and deployment") to know more about script and style sheets installed in local machine.
-CDN Link: [Click here](https://help.syncfusion.com/js/cdn "CDN scripts and styles links") to know more about script and style sheets available online.
+CDN Link: [Click here](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
 NuGet Package: [Click here](https://help.syncfusion.com/js/installation/web-installer/how-to-install#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the <head> tag of the Default.html page.
