@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization
-description: Customization
+title: Customization in JavaScript Gantt | Syncfusion
+description: Learn here about customization in Syncfusion Essential JavaScript Gantt Control, its elements, and more.
 platform: Js
 control: Gantt
 documentation: ug
 api: /api/js/ejgantt
 ---
-# Customizations 
+# Customizations in JavaScript Gantt
 
 Gantt provides support for the following UI customizations,
 
@@ -96,7 +96,7 @@ The DOM structure and class names mentioned in the above code snippet is mandato
 
 The following screenshot shows the template for taskbars in Gantt.
 
-![](/js/Gantt/Customization_images/Customization_img1.png)
+![Taskbar template in JavaScript Gantt](/js/Gantt/Customization_images/Customization_img1.png)
 
 ## Task label template
 
@@ -128,7 +128,7 @@ The following code example explains how to set task name field as right label an
 
 The following screenshot shows Gantt with task labels mapped with different data source fields
 
-![](/js/Gantt/Customization_images/Customization_img4.png)
+![Mapping data source fields as task labels JavaScript Gantt](/js/Gantt/Customization_images/Customization_img4.png)
 
 ### Task label templates
 
@@ -190,7 +190,7 @@ You can find the online demo sample for task label templates in Gantt [here](htt
 
 The following screenshot shows Gantt with task label templates.
 
-![](/js/Gantt/Customization_images/Customization_img2.png)
+![Task label templates in JavaScript Gantt](/js/Gantt/Customization_images/Customization_img2.png)
 
 ## Tooltip template
 
@@ -250,7 +250,7 @@ $(function () { $("#GanttContainer").ejGantt({ //… taskbarTooltipTemplateId: "
 
 The following screenshot shows Gantt with task tooltip customization.
 
-![](/js/Gantt/Customization_images/Customization_img3.png)
+![Taskbar tooltip in JavaScript Gantt](/js/Gantt/Customization_images/Customization_img3.png)
 
 ### Dependency tooltip
 
@@ -297,7 +297,7 @@ The default dependency tooltip in Gantt can be customized by using [`predecessor
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![](/js/Gantt/Customization_images/Customization_img8.png)
+![Dependency tooltip in JavaScript Gantt](/js/Gantt/Customization_images/Customization_img8.png)
 
 You can find the JS playground sample for dependency tooltip template [here](https://jsplayground.syncfusion.com/Sync_f5fvhwfi).
 
@@ -359,7 +359,7 @@ TreeGrid part tooltip can also be customized using [`cellTooltipTemplate`](/api/
 
 </script>
 {% endhighlight %}
-![](/js/Gantt/Customization_images/Customization_img5.png)
+![Cell tooltip in JavaScript Gantt](/js/Gantt/Customization_images/Customization_img5.png)
 
 You can find the online demo sample for tooltip templates for taskbars [here](https://ej2.syncfusion.com/home/#!/bootstrap/gantt/customizations/tooltiptemplate)
 
@@ -417,7 +417,7 @@ Taskbar editing tooltip can be customized by using [`taskbarEditingTooltipTempla
 {% endhighlight %}
 
 The below screenshot shows the output of above code example.
-![](/js/Gantt/Customization_images/Customization_img6.png)
+![Customize taskbar editing tooltip in JavaScript Gantt](/js/Gantt/Customization_images/Customization_img6.png)
 
 You can find the JS playground sample for this property [here](https://jsplayground.syncfusion.com/Sync_khndhguw).
 
@@ -449,6 +449,6 @@ Progress bar editing tooltip can be customized by using [`progressbarTooltipTemp
 {% endhighlight %}
 
 The below screenshot shows the output of above code example.
-![](/js/Gantt/Customization_images/Customization_img7.png)
+![Customize progress bar editing tooltip in JavaScript Gantt](/js/Gantt/Customization_images/Customization_img7.png)
 
 You can find the JS playground sample for this property [here](https://jsplayground.syncfusion.com/Sync_aakdzajo).
