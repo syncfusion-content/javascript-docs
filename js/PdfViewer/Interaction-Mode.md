@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interaction modes in JavaScript PDF Viewer Control | Syncfusion
-description: Learn here all about interaction modes support in Syncfusion Essential JS PDF viewer control, it's element and more.
+description: Learn here all about interaction modes support in Syncfusion Essential JavaScript PDF viewer control, it's element and more.
 platform: js
 control: PDF viewer
 documentation: ug
