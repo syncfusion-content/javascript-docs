@@ -112,7 +112,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-![JavaScript DateTimePicker Display format](Display-format_images/Display-format_img1.png)
+![JavaScript DateTimePicker Display format](display-format_images/js-datetimepicker-display-format.png)
 
 
 ## Day Header format
@@ -191,7 +191,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
   
 
-![JavaScript DateTimePicker Day Header format](Display-format_images/Display-format_img2.png)
+![JavaScript DateTimePicker Day Header format](display-format_images/js-datetimepicker-day-header-format.png)
 
 ## Drilldown and Meridian
 
@@ -225,6 +225,6 @@ We can drill down up to time interval on selected date with meridian details.you
 
 Execute the above code to render the following outputs.
 
-![JavaScript DateTimePicker Drilldown](Display-format_images/Display-format_img3.png)
+![JavaScript DateTimePicker Drilldown](display-format_images/js-datetimepicker-drilldown.png)
 
-![JavaScript DateTimePicker Meridian](Display-format_images/Display-format_img4.png)
+![JavaScript DateTimePicker Meridian](display-format_images/js-datetimepicker-meridian.png)
