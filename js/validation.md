@@ -1,18 +1,18 @@
 ---
-title: JQuery validation
-description: How to perform jQuery validation for EJ form controls
+title: Validation in JavaScript Platform | Syncfusion
+description: Learn here all about validation support in Syncfusion Essential JavaScript platform, it's elements and more.
 platform: js
 control: Introduction
 documentation: UG
 keywords: Validation, jQuery validation, Client side validation
 ---
-# Validation 
+# Validation in JavaScript
 
 ## jQuery Validation
 
 To perform the jQuery validation for EJ form controls, please refer following steps.
 
-**Step 1:** First you need to include [jquery.validate](http://www.nuget.org/packages/jQuery.Validation/#) (1.15.0) script in your HTML page.
+**Step 1:** First you need to include [jquery.validate](https://www.nuget.org/packages/jQuery.Validation/) (1.15.0) script in your HTML page.
 
 **Step 2:** After adding this script file, you can validate the EJ form controls in same way as you perform the jQuery validation for HTML form elements. But here you have to do some little bit configuration along with that.  Let we discuss about it.
 
@@ -66,8 +66,8 @@ Up to 13.4.0.58 version, above specified jQuery validation settings were configu
 
 We have prepared a sample based on this and you can find sample under the following location.
 
-Sample: [http://jsplayground.syncfusion.com/dobcyify](https://jsplayground.syncfusion.com/dobcyify) 
+Sample: [https://ej2.syncfusion.com/home/index.html#platform](https://ej2.syncfusion.com/home/index.html#platform) 
 
 Also you may create custom rules for validation. Please refer following sample to perform custom validation in “DatePicker” component.
 
-Sample: [http://jsplayground.syncfusion.com/irf1eldu](https://jsplayground.syncfusion.com/irf1eldu) 
+Sample: [https://ej2.syncfusion.com/home/index.html#platform](https://ej2.syncfusion.com/home/index.html#platform) 
