@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with JavaScript Grid Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio JavaScript Grid control, its elements, and more.
+title: Getting Started with JavaScript Grid Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Studio JavaScript Grid control, its elements, and more.
 platform: JS
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Getting started with Javascript Grid
+# Getting Started with JavaScript Grid
 
 ## Preparing HTML document
 
@@ -145,7 +145,7 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 
 
 
-N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also, to reduce the file size further please use [GZip compression](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en) in your server.
+N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also, to reduce the file size further please use [GZip compression](https://web.dev/articles/optimizing-content-efficiency-optimize-encoding-and-transfer?hl=en) in your server.
 
 For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
@@ -177,7 +177,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 {% endhighlight %}
 
 
-![Getting started](Getting-started_images/Getting-started_img1.png)
+![Getting Started with JavaScript Grid](getting-started_images/javascript-grid-getting-started.png)
 {:.image }
 
 
@@ -200,7 +200,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 {% endhighlight %}
 
-![Data binding](Getting-started_images/Getting-started_img2.png)
+![Data binding in JavaScript Grid](getting-started_images/javascript-grid-data-binding.png)
 {:.image }
 
 
@@ -228,7 +228,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 N> Pager settings can be customized by using the [`pageSettings.pageSize`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize) property. When it is not given by default the values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 
-![Paging](Getting-started_images/Getting-started_img3.png)
+![Paging in JavaScript Grid](getting-started_images/javascript-grid-paging.png)
 {:.image }
 
 
@@ -254,7 +254,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](https
     </script>
 {% endhighlight %}
 
-![Filtering](Getting-started_images/Getting-started_img4.png)
+![Filtering in JavaScript Grid](getting-started_images/javascript-grid-filtering.png)
 {:.image }
 
 
@@ -279,7 +279,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](https
 </script>
 {% endhighlight %}
 
-![Grouping](Getting-started_images/Getting-started_img5.png)
+![Grouping in JavaScript Grid](getting-started_images/javascript-grid-grouping.png)
 {:.image }
 
 
@@ -304,7 +304,7 @@ Refer to the following code example for initial grouping.
 </script>
 {% endhighlight %}
 
-![Initial Grouping](Getting-started_images/Getting-started_img6.png)
+![Initial grouping in JavaScript Grid](getting-started_images/javascript-grid-initial-grouping.png)
 {:.image }
 
 
@@ -340,7 +340,7 @@ Refer to the following code example for initial grouping.
 </script>
 {% endhighlight %}
 
-![Summaries](Getting-started_images/Getting-started_img7.png)
+![Summaries in JavaScript Grid](getting-started_images/javascript-grid-summaries.png)
 {:.image }
 
 
