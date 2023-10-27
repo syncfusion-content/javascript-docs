@@ -177,7 +177,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 {% endhighlight %}
 
 
-![Getting Started with JavaScript Grid](getting-started_images/javascript-grid-getting-started.png)
+![Getting Started with JavaScript Grid](getting-started_images/javascrip-grid-getting-started.png)
 {:.image }
 
 
