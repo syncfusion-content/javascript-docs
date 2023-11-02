@@ -13,7 +13,7 @@ Syncfusion releases new volumes once every three months, with exciting new featu
 
 You can upgrade to our latest version from any installed Syncfusion version.
 
-See our "[**Upgrade Guide**](https://help.syncfusion.com/upgrade-guide/jquery-ui-widgets)" for JavaScript to learn more about the “Breaking Changes, Bug Fixes, Features and Knows Issues” between your current version and the latest version you are trying to upgrade.
+See our "[**Upgrade Guide**](https://help.syncfusion.com/upgrade-guide/javascript-ui-controls)" for JavaScript to learn more about the “Breaking Changes, Bug Fixes, Features and Knows Issues” between your current version and the latest version you are trying to upgrade.
 
 
 ## Upgrading to the latest version
