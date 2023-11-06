@@ -458,4 +458,4 @@ Run the sample. You can view the PDF viewer with custom toolbar.
 
 **Sample:**
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ToolbarCustomization63328491>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ToolbarCustomization63328491>

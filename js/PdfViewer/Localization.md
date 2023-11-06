@@ -709,7 +709,7 @@ The following code snippet illustrates you to change the localization to German 
 
 {% highlight html %}
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml/">
 //--
 <body>
     <div class="content-container-fluid">
@@ -906,7 +906,7 @@ The following screenshot shows the PDF viewer with tooltip in German language.
 
 **Sample:**
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization338521894>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization338521894>
 
 ![Localization](Localization_images/Localization_img1.png)
 
