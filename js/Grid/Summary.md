@@ -49,7 +49,7 @@ N> The [`dataMember`](https://help.syncfusion.com/api/js/ejgrid#members:summaryr
 
 ## Supported aggregates 
 
-Following are the supported list of the [aggregates](https://help.syncfusion.com/js/datamanager/summary#) 
+Following are the supported list of the [aggregates](https://help.syncfusion.com/js/datamanager/summary) 
 
 * Sum
 * Average
@@ -469,7 +469,7 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-To format summary values, the [`format`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in the [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer to the [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format summary values, the [`format`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in the [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer to the [**globalize.js**](https://github.com/globalizejs/globalize/tree/v0.1.1)
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -504,6 +504,7 @@ To format summary values, the [`format`](https://help.syncfusion.com/api/js/ejgr
 {% endhighlight %}
 
 ![Format summary in Javascript grid](Summary_images/summaryGrid_img7.png)
+
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with MediaPlayer
-description: To get start with MediaPlayer by adding references.
+title: Getting started with JavaScript MediaPlayer Control | Syncfusion
+description: Learn here about how to get start with MediaPlayer by adding references in Syncfusion Essential JS MediaPlayer Control, its elements, and more.
 platform: js
 control: MediaPlayer
 documentation: ug
 api: /api/js/ejmediaplayer
 ---
-# Getting Started
+# Getting Started with JavaScript MediaPlayer
 
 This section explains you the steps required to create a simple Media Player component and configure its available functionalities.
 
@@ -110,7 +110,7 @@ Add the HTML <div> element for Media Player component into your index.html
 
 Execute the above code to render the following output.
 
-![](/js/MediaPlayer/Display_images/Getting_img1.png)
+![Adding Media Player component in JavaScript](/js/MediaPlayer/Display_images/Getting_img1.png)
 
 
 
