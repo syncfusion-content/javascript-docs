@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display format in JQuery DateTimePicker widget | Syncfusion
-description: Learn here all about display format support in Syncfusion JQuery DateTimePicker Control, its elements, and more.
+title: Display date format in JQuery DateTimePicker widget | Syncfusion
+description: Learn here all about display date format support in Syncfusion JQuery DateTimePicker Control, its elements, and more.
 platform: js
 control: DateTimePicker
 documentation: ug
