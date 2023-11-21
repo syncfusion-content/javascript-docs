@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
-platform: js
+title: Getting Started with JavaScript Button Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JavaScript Button component, it's elements and more details.
 control: Button
 documentation: ug
 api : /api/js/ejbutton
 ---
 
-# Getting Started
+# Getting Started with JavaScript Button Component
 
 This section explains you briefly on how to create a **Button** in your application with **JavaScript**. Essential JavaScript Button helps to display a Button widget within a web page and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize Button control in a Media Player and Office Ribbon Application. 
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img1.png)
+![Getting Started with JavaScript Button.](/js/Button/Getting-Started_images/javascript-button-getting-started.png)
 
 ## Create Button Widget
 
@@ -280,7 +279,7 @@ Add the following function in **&lt;script&gt;** tag.
 
 The following screenshot displays the output.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img2.png) 
+![JavaScript Button getting started output](/js/Button/Getting-Started_images/javascript-button-output.png) 
 
 ## Create Office Ribbon Control
 
@@ -384,9 +383,9 @@ Add Function Definition from click event to Button function.
 
 The following screenshot displays Office Ribbon Application.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img3.png) 
+![JavaScript Button application.](/js/Button/Getting-Started_images/javascript-button-application.png) 
 
 The following screenshot displays **Office Ribbon** **Bold** Option.	
 
-![](/js/Button/Getting-Started_images/Getting-Started_img4.png)
+![JavaScript Button display.](/js/Button/Getting-Started_images/javaScript-button-display.png)
 
