@@ -7,7 +7,7 @@ documentation: ug
 api : /api/js/ejbutton
 ---
 
-# Getting Started with JavaScript Button Component
+# Getting Started with JavaScript Button Control
 
 This section explains you briefly on how to create a **Button** in your application with **JavaScript**. Essential JavaScript Button helps to display a Button widget within a web page and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize Button control in a Media Player and Office Ribbon Application. 
 
@@ -279,7 +279,7 @@ Add the following function in **&lt;script&gt;** tag.
 
 The following screenshot displays the output.
 
-![JavaScript Button getting started output](/js/Button/Getting-Started_images/javascript-button-output.png) 
+![JavaScript Button getting started output.](/js/Button/Getting-Started_images/javascript-button-output.png) 
 
 ## Create Office Ribbon Control
 
