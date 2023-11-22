@@ -58,8 +58,8 @@ if(currentBuild.result != 'FAILURE')
 		bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Targetbranch "+env.githubTargetBranch+" -Branch "+'"'+env.githubSourceBranch+'"'
 	 	}
 	 	
-	 	//def files = findFiles(glob: '**/cireports/errorlogs/*.txt')
-		def files = findFiles(glob: '**/cireports/*.*') 
+	 	def files = findFiles(glob: '**/cireports/errorlogs/*.txt')
+		
  
         if(files.size() > 0)
         {
