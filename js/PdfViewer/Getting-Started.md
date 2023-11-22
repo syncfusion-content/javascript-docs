@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with JavaScript PDF viewer Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio JavaScript PDF viewer control, its elements, and more.
+title: Getting Started with JavaScript PDF Viewer Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio JavaScript PDF Viewer control, its elements, and more.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer, PDF Viewer
 api: /api/js/ejpdfviewer
 ---
 
-# Getting Started with Javascript PDF viewer
+# Getting Started with JavaScript PDF Viewer
 
 This section explains how to create the PDF viewer in your web application using JavaScript.
 
@@ -17,13 +17,13 @@ This section explains how to create the PDF viewer in your web application using
 
 Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting Started with JavaScript PDF Viewer.](getting-started_images/javascript-pdf-viewer-getting-started.jpeg)
 
 **Create HTML Page**
 
 Right-click the project and select New Item option from the ‘Add’ menu to add a HTML page to the application. Name the page as **Default.html** and click OK.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img2.jpeg)
+![Create HTMl page in JavaScript PDF Viewer.](getting-started_images/javascript-pdf-viewer-create-html-page.jpeg)
 
 ### Add References, Scripts, Styles
 
@@ -402,7 +402,7 @@ Add the following code in the <body> tag in the Default.html page. Here, the PDF
 
 The PDF viewer uses Web API services to process the PDF file. Right-Click the Project, select Add and Web API Controller Class from the listed templates. Rename it as **PdfViewerAPIController.cs**.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img3.jpeg)
+![Web API controller for PDF Viewer in JavaScript.](getting-started_images/javascript-pdf-viewer-web-api-controller.jpeg)
 
 N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in the demo the controller is named as “PdfViewerAPIController”.
 
@@ -465,7 +465,7 @@ N> Create a folder named Data in the project location and add the PDF document t
 
 Right-Click the Project, select Add and Global.asax file from the listed templates.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img4.jpeg)
+![Web API routing in JavaScript PDF Viewer.](getting-started_images/javascript-pdf-viewer-web-api-routing.jpeg)
 
 You can route the Web API in the Application_Start event into Global.asax file as follows.
 
@@ -519,7 +519,7 @@ Run the sample application and you can see the PDF Viewer on the page as display
 
 <http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
 
-![GettingStarted](Getting-Started_images/Getting-Started_img5.png)
+![Display sample in JavaScript PDF Viewer.](getting-started_images/javascript-pdf-viewer-display-sample.png)
 
 **Destroy**
 
