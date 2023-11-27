@@ -79,4 +79,4 @@ $("#set_index").click(function () {
 
 {% endhighlight %}
 
-You can find the JS playground sample for this methods [here](http://jsplayground.syncfusion.com/Sync_qxj4bcda "Demo Link").
+You can find the JS playground sample for this methods [here](https://jsplayground.syncfusion.com/Sync_qxj4bcda "Demo Link").
