@@ -14,7 +14,7 @@ This section explains briefly about how to create a **TimePicker** in your appli
 
 The following screenshot illustrates the functionality of a **TimePicker** with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
-![JavaScript TimePicker Getting Started](Getting-Started_images/Getting-Started_img1.png) 
+![JavaScript TimePicker getting started.](Getting-Started_images/javascript-timepicker-getting-started.png) 
 
 ## Create a TimePicker 
 
@@ -136,7 +136,7 @@ Add the following styles to show **Time Picker** control.
 
 The following screenshot displays a **TimePicker** control.
 
-![JavaScript TimePicker Create a TimePicker](Getting-Started_images/Getting-Started_img2.png) 
+![JavaScript TimePicker Create a TimePicker.](Getting-Started_images/javascript-timepicker-create.png) 
 
 ## Set the Min and Max Values
 
@@ -169,7 +169,7 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
 
 The above code example displays the following output.
 
-![JavaScript TimePicker Set the Min and Max Values](Getting-Started_images/Getting-Started_img3.png) 
+![JavaScript TimePicker Set the Min and Max Values.](Getting-Started_images/javascript-timepicker-min-max.png) 
 
 ## Set Time Interval
 
@@ -206,7 +206,7 @@ Execute the above code to achieve the desired result. You can select the date an
 
 
 
-![JavaScript TimePicker Set Time Interval](Getting-Started_images/Getting-Started_img4.png) 
+![JavaScript TimePicker Set Time Interval.](Getting-Started_images/javascript-timepicker-interval.png) 
 
 ## Display the Acknowledgment Message
 
@@ -248,7 +248,7 @@ The following code example shows how to display the **acknowledgment message**.
 
 The following screenshot displays the **acknowledgment message**.
 
-![JavaScript TimePicker Display the Acknowledgment Message](Getting-Started_images/Getting-Started_img5.png) 
+![JavaScript TimePicker Display the Acknowledgment Message.](Getting-Started_images/javascript-timepicker-message.png) 
 
 ## Create Two TimePickers
 
@@ -356,7 +356,7 @@ Initialize **Two TimePickers** using the following code example.
 
 Execute the above code to achieve the desired result. By selecting the **Start Time** in the first **TimePicker**, you can select the End Time within the given range. This restricts you from selecting false time. This scenario is illustrated in the following screenshot.
 
-![JavaScript TimePicker Create Two TimePickers](Getting-Started_images/Getting-Started_img6.png) 
+![JavaScript TimePicker Create Two TimePickers.](Getting-Started_images/javascript-timepicker-create-two.png) 
 
 
 

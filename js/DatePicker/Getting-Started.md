@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with JavaScript DatePicker Control | Syncfusion
+title: Getting Started with JavaScript DatePicker Control | Syncfusion
 description: Learn here about getting started with Syncfusion JavaScript DatePicker control, its elements, and more.
 platform: js
 control: DatePicker
@@ -15,11 +15,11 @@ To get start with [DatePicker](https://www.syncfusion.com/javascript-ui-controls
 
 CSS file
 
-* [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) – includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](https://help.syncfusion.com/js/theming-in-essential-javascript-components#))
+* [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) – includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](https://help.syncfusion.com/js/theming-in-essential-javascript-components))
 
 External script files
 
-* [jQuery](http://jquery.com/#) (from the version 1.7.1 to 3.1.0)
+* [jQuery](https://jquery.com/) (from the version 1.7.1 to 3.1.0)
 
 N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization for our widgets. For version lower than 13.4.0.53, refer jQuery.globalize.min.js. jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
@@ -50,7 +50,7 @@ You can make use of ‘ej.web.all.min.js’ file which encapsulates all ‘ej’
 
 * [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) – includes all web widgets.
 
-N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en#text-compression-with-gzip) in your server. 
+N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en#text-compression-with-gzip) in your server. 
 
 A simple HTML file with required CSS and script reference added to create DatePicker
 
@@ -168,5 +168,5 @@ You can assign values after initialization in DatePicker (‘it helps to get or 
 
 {% endhighlight %}
 
-N>  Existing DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of DatePicker behavior.
+N>  Existing DatePicker instance can be created by [jQuery.data()](https://api.jquery.com/jQuery.data/) and you can control the API’s of DatePicker behavior.
 
