@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JavaScript Toggle Botton Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JavaScript Toggle Button component, it's elements and more details.
 platform: js
 control: Toggle Button
 documentation: ug
 api: /api/js/ejtogglebutton
 ---
 
-# Getting Started
+# Getting Started with JavaScript Toggle Botton Control
 
 This section explains briefly about how to create a **Toggle Button** in your application with **JavaScript.** 
 
@@ -16,11 +16,11 @@ This section explains briefly about how to create a **Toggle Button** in your ap
 
 The HTML checkbox element can be easily configured as **Essential JavaScript Toggle Button** control. The basic rendering of **Essential JavaScript Toggle Button** is achieved by using default functionality.
 
-![](/js/ToggleButton/Getting-Started_images/Getting-Started_img1.png) 
+![JavaScript Toggle Button structure.](/js/ToggleButton/Getting-Started_images/javascript-toggle-button-structure.png) 
 
 
 
-![](/js/ToggleButton/Getting-Started_images/Getting-Started_img2.png) 
+![JavaScript Toggle Button getting started.](/js/ToggleButton/Getting-Started_images/javascript-toggle-button-getting-started.png) 
 
 
 
@@ -106,7 +106,7 @@ Output of above steps
 
 
 
-![](/js/ToggleButton/Getting-Started_images/Getting-Started_img4.png) 
+![Label element in JavaScript Toggle Button.](/js/ToggleButton/Getting-Started_images/javascript-toggle-button-label.png) 
 
 
 
