@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with JavaScript Color Picker | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential Studio JavaScriptColor Picker control, its elements, and more details.
+description: Learn here all about getting started with Syncfusion Essential Studio JavaScript Color Picker control, its elements, and more details.
 platform: js
 control: ColorPicker
 documentation: ug
