@@ -73,9 +73,9 @@ var nodes = [{
 
 N> Deploy your HTML file in the web Application and export the diagram (image node) or else the image node will not be exported in the chrome and Firefox due to security issues. Please refer to the link below.
 
-Link: http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/
+Link: https://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/
 
-Link1: http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome
+Link1: https://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome
 
 ### Image Alignment
 
