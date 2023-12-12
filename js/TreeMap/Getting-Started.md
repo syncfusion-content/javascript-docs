@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JavaScript TreeMap | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JavaScript TreeMap component, it's elements and more details.
 platform: js
 control: TreeMap
 documentation: ug
 api: /api/js/ejtreemap
 ---
 
-# Getting Started
+# Getting Started with JavaScript TreeMap
 
 This section explains briefly about how to create a **TreeMap** in your application with **JavaScript**.
 
@@ -356,6 +356,8 @@ The following screenshot displays labels in a **TreeMap** control.
 Try it: [Legend Label](http://jsplayground.syncfusion.com/lhtvawqv)
 
 N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
+
+N> You can refer to our [JavaScript TreeMap](https://www.syncfusion.com/javascript-ui-controls/js-treemap) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript TreeMap Example](https://ej2.syncfusion.com/demos/#/material/treemap/default.html) that shows you how to render and configure the ListView in ASP.NET Core.
 
 
 
