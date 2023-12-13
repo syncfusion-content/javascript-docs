@@ -14,7 +14,7 @@ api: /api/js/ejslider
 
 AngularJS is structural Framework to create dynamic web apps. It is distributed as a **JavaScript** file. It extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. To learn more about AngularJS refer the following link
 
-[http://www.w3schools.com/angular/default.asp](http://www.w3schools.com/angular/default.asp)
+[https://www.w3schools.com/angular/default.asp](https://www.w3schools.com/angular/default.asp)
 
 **Slider** widget is provided with AngularJS support. The support is achieved by including the “**ej.widget.angular.min.js**” file. Refer the following link to know more about the AngularJS support.
 
@@ -95,7 +95,7 @@ Execute the above code example to render the following output.
 
 KnockoutJS is a **JavaScript** library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer the following link to know more about KnockoutJS.
 
-[http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
+[https://knockoutjs.com/documentation/introduction.html](https://knockoutjs.com/documentation/introduction.html)
 
 **Slider** widget includes support to use it with KnockoutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockoutJS support
 
