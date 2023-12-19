@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with JavaScript DateTime Picker | Syncfusion
-description: Learn here about getting started with Syncfusion Essential JavaScript DateTime PIcker Control, its elements, and more details.
+title: Getting Started with JavaScript DateTime Picker Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JavaScript DateTime Picker control, its elements, and more details.
 platform: js
 control: DateTimePicker
 documentation: ug
