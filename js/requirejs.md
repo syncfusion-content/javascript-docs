@@ -22,7 +22,7 @@ You can find the **require.min.js** from the following installed location of you
 `(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external`   
 _For example, If you have installed the Essential Studio package within `C:\Program Files (x86)`, then navigate to the location,_ **C:\Program Files (x86)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external  
 
-N> For version lower than 13.3.0.18, refer this [Knowledge Base](https://www.syncfusion.com/support/kb/7146).
+N> For version lower than 13.3.0.18, refer this [Knowledge Base](https://support.syncfusion.com/kb/article/6661/how-to-use-essential-javascript-component-with-requirejs).
 
 N> From version 14.3.0.49, we have removed the **jquery.easing** dependency from our components. For version lower than 14.3.0.49, you need to refer the jquery.easing as additional dependency. 
 
