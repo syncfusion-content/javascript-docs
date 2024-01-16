@@ -27,7 +27,7 @@ We have used Northwind services for Grid control where it has the data tables li
 |$top|Returns only the first n results.| 
 |$skip|Used to skip the first n results.| 
 
-> We can use other query options in order to perform the filtering in Northwind database. For demo purpose we have used [Northwind database](http://services.odata.org/V3/Northwind/Northwind.svc/$metadata). To know more about the query option click [here](https://msdn.microsoft.com/en-us/library/dd728283(v=vs.110).aspx)
+> We can use other query options in order to perform the filtering in Northwind database. For demo purpose we have used [Northwind database](http://services.odata.org/V3/Northwind/Northwind.svc/$metadata). To know more about the query option click [here](https://learn.microsoft.com/en-us/previous-versions/dotnet/framework/data/wcf/accessing-data-service-resources-wcf-data-services?redirectedfrom=MSDN)
 
 ### Response information 
 

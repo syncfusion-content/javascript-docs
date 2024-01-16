@@ -19,7 +19,7 @@ CSS file
 
 External script files
 
-* [jQuery](http://jquery.com/#) (from the version 1.7.1 to 3.1.0)
+* [jQuery](https://jquery.com/) (from the version 1.7.1 to 3.1.0)
 
 N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization for our widgets. For version lower than 13.4.0.53, refer jQuery.globalize.min.js. jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
@@ -168,5 +168,5 @@ You can assign values after initialization in DatePicker (‘it helps to get or 
 
 {% endhighlight %}
 
-N>  Existing DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of DatePicker behavior.
+N>  Existing DatePicker instance can be created by [jQuery.data()](https://api.jquery.com/jQuery.data/) and you can control the API’s of DatePicker behavior.
 
