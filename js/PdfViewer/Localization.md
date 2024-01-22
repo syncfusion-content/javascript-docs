@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization of JQuery PDF Viewer | Syncfusion
-description: Learn about Localization support of JQuery PDF Viewer control and more details.Text labels provided in the ejPdfViewer control can be localized.
+description: Learn about Localization support of JQuery PDF Viewer Control and more details.Text labels provided in the ejPdfViewer control can be localized.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -906,7 +906,7 @@ The following screenshot shows the PDF viewer with tooltip in German language.
 
 **Sample:**
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization338521894>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization338521894>
 
 ![Localization](Localization_images/Localization_img1.png)
 

@@ -43,7 +43,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         allowImport: true,
         importSettings: {
-            importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"
+            importMapper: "https://ej2.syncfusion.com/home/javascript.html"
         }
     });
 });
@@ -80,8 +80,8 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         allowImport: true,
         importSettings: {
-            importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import",
-            importUrl: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"
+            importMapper: "https://ej2.syncfusion.com/home/javascript.html",
+            importUrl: "https://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"
         }
     });
 });
@@ -102,7 +102,7 @@ $(function () {
         importSettings: {
             importOnLoad: true,
             password: "Spreadsheet" //It opens the excel file using this password.
-            importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"
+            importMapper: "https://ej2.syncfusion.com/home/javascript.html"
         }           
     });
 });    
@@ -121,7 +121,7 @@ public class SpreadSheetController : ApiController
     public HttpResponseMessage Import()
     {
         ImportRequest importRequest = new ImportRequest();
-        importRequest.Url = "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx";           
+        importRequest.Url = "https://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx";           
         string str = Spreadsheet.Open(importRequest);
         return new HttpResponseMessage() { Content = new StringContent(str, Encoding.UTF8, "text/plain") };
     }
@@ -174,7 +174,7 @@ The code snippets to open excel document as URL from client side are as follows,
 
 function fileOpen() {
     var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-    excelObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
+    excelObj["import"]({Url: "https://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
 }
 
 {% endhighlight %}
@@ -190,7 +190,7 @@ The code snippets to specify excel document as URL in server side are as follows
 public HttpResponseMessage Import()
 {
     ImportRequest importRequest = new ImportRequest();
-    importRequest.Url = "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx";
+    importRequest.Url = "https://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx";
     string str = Spreadsheet.Open(importRequest);
     return new HttpResponseMessage() { Content = new StringContent(str, Encoding.UTF8, "text/plain") };
 }
@@ -217,9 +217,9 @@ $(function () {
         exportSettings:
         {
             allowExporting: true,
-            excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport",
-            csvUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport",
-            pdfUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport"
+            excelUrl: "https://ej2.syncfusion.com/home/javascript.html",
+            csvUrl: "https://ej2.syncfusion.com/home/javascript.html",
+            pdfUrl: "https://ej2.syncfusion.com/home/javascript.html"
         }           
     });
 });
@@ -234,7 +234,7 @@ You can save Spreadsheet contents with following file types
 * CSV
 * PDF
 
-[`Click`](http://js.syncfusion.com/demos/web/#!/azure/spreadsheet/importexport "Click") here to view online demo sample.
+[`Click`](https://ej2.syncfusion.com/home/javascript.html/#!/azure/spreadsheet/importexport "Click") here to view online demo sample.
 You can save excel documents in following ways
 
 1. Methods
