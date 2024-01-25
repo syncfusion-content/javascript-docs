@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JavaScript DateTime Picker Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JavaScript DateTime Picker control, its elements, and more details.
 platform: js
 control: DateTimePicker
 documentation: ug
 api: /api/js/ejdatetimepicker
 ---
 
-# Getting Started
+# Getting Started with JavaScript DateTime Picker
 
 This section explains briefly about how to create a **DateTimePicker** in your application with **JavaScript**.
 
@@ -18,7 +18,7 @@ The following screenshot illustrates the functionality of a **DateTimePicker** w
 
 
 
-![](/js/DateTimePicker/Getting-Started_images/Getting-Started_img1.png)
+![JavaScript DateTime Picker getting started.](/js/DateTimePicker/Getting-Started_images/javascript-datetime-picker-functionality.png)
 
 ## Create DateTimePicker 
 
@@ -107,7 +107,7 @@ Initialize **DateTimePicker** in the script.
 
 The following screenshot displays a **DateTimePicker** control.
 
-![](/js/DateTimePicker/Getting-Started_images/Getting-Started_img.png)
+![JavaScript DateTime Picker screenshot display.](/js/DateTimePicker/Getting-Started_images/javascript-datetime-picker-screenshot.png)
 
 
 ## Get / Set value
@@ -159,7 +159,7 @@ You can assign values after initialization in DateTimePicker (‘it helps to get
 
 The following screenshot displays a **DateTimePicker** control with datetime value.
 
-![](/js/DateTimePicker/Getting-Started_images/Getting-Started_img2.png)
+![Javascript DateTime Picker datetime value.](/js/DateTimePicker/Getting-Started_images/javascript-datetime-picker-value.png)
 
 
 ## Set the Min and Max Date with Time Interval
@@ -183,5 +183,5 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
 The following screenshot shows the output for the above code example.
 
-![](/js/DateTimePicker/Getting-Started_images/Getting-Started_img3.png)
+![Javascript DateTime Picker output screenshot.](/js/DateTimePicker/Getting-Started_images/javascript-datetime-picker-output-screenshot.png)
 
