@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JavaScript Color Picker | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Studio JavaScript Color Picker control, its elements, and more details.
 platform: js
 control: ColorPicker
 documentation: ug
 api: /api/js/ejcolorpicker
 ---
 
-# Getting Started
+# Getting Started with JavaScript Color Picker
 
 This section explains briefly about how to create a **ColorPicker** in your application with **JavaScript**. The **Essential JavaScript ColorPicker** control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also render the color value from control in three formats such as RGB, HSV and HEXCODE. 
 
 In this example, you can learn how to customize **ColorPicker** control in a category Application. 
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png) 
+![Getting Started with JavaScript Color Picker.](/js/ColorPicker/Getting-Started_images/javascript-color-picker-getting-started.png) 
 
 In the following sections you can learn, How to:
 
@@ -79,7 +79,7 @@ Initialize **ColorPicker** element in **&lt;script&gt;** tag.
 
 Run the above code to render the following output.
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png) 
+![JavaScript Color Picker output.](/js/ColorPicker/Getting-Started_images/javascript-color-picker-output.png) 
 
 ## Initialize the other widgets
 
@@ -245,7 +245,7 @@ Add the following style section to align form fields.
 
 Run the above code to render the following output.
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png) 
+![JavaScript Color Picker output render.](/js/ColorPicker/Getting-Started_images/javascript-color-picker-output-render.png) 
 
 ## Add value with Selected Color 
 
@@ -278,5 +278,5 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
 
 The following screenshot illustrates the resultant output after you click **Add** button.
 
-![](/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png) 
+![Javascript Color Picker resultant output.](/js/ColorPicker/Getting-Started_images/javascript-color-picker-resultant-output.png) 
 
