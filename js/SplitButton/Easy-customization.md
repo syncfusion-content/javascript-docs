@@ -859,7 +859,7 @@ Execute the above code to render the following output.
 
 ![Theme support in JavaScript Split Button](/js/SplitButton/Easy-customization_images/Easy-customization_img5.png) 
 
-# Enable/Disable SplitButton
+## Enable/Disable SplitButton
 
 **SplitButton** provides you an option to enable /disable the ToggleButton. You can disable the ToggleButton by setting the “**enabled**” property value as **false**.
 

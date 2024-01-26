@@ -1,5 +1,5 @@
 ---
-title: Getting started with JavaScript Schedule Control | Syncfusion
+title: Getting Started with JavaScript Schedule Control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential JavaScript Schedule Control, its elements, and more.
 platform: js
 control: schedule
@@ -193,6 +193,6 @@ $(function() { // Document is ready
 
 {% endhighlight %}
 
-![JavaScript Schedule Mapper Fields](Getting-Started_images/Getting-Started_img1.png)
+![JavaScript Schedule Mapper Fields.](Getting-Started_images/javascript-scheduler-mapper-field.png)
 
 
