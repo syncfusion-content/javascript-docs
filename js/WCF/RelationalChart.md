@@ -43,7 +43,7 @@ public Dictionary<string, object> Initialize(string action, string currentReport
 
 ## Drill
 
- [POST] [/WCF/PivotChart/Drill](https://ej2.syncfusion.com/javascript/demos/#/material3/pivot-table/Drill-Down.html)
+ [POST] [/WCF/PivotChart/Drill](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/pivot-table/Drill-Down.html)
 
 It fetches the drilled OLAP data which is required to render the PivotChart control from server-end.
 
