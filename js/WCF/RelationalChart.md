@@ -9,7 +9,7 @@ keywords: PivotChart , syncfusion, PivotChart WCF
 
 ## Initialize
 
- [POST] [/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Relational.svc/Initialize)
+ [POST] [/WCF/PivotChart/Initialize](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/pivot-table/overview.html)
 
 It fetches the OLAP data which is required to initialize the PivotChart from server-end.
 
@@ -43,7 +43,7 @@ public Dictionary<string, object> Initialize(string action, string currentReport
 
 ## Drill
 
- [POST] [/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Relational.svc/Drill)
+ [POST] [/WCF/PivotChart/Drill](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/pivot-table/Drill-Down.html)
 
 It fetches the drilled OLAP data which is required to render the PivotChart control from server-end.
 
