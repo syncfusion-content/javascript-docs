@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Databinding in Syncfusion AutoComplete widget for Essential JS
-description: How to populate data for the suggestion list.
+title: Data Binding in JavaScript AutoComplete | Syncfusion
+description: Learn here all about Data Binding in Syncfusion JavaScript AutoComplete component of Syncfusion Essential JS 2 and more.
 platform: js
 control: AutoComplete
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 api: /api/js/ejautocomplete
 ---
 
-# Data Binding
+# Data Binding in JavaScript AutoComplete
 
 In order to render the Autocomplete widget, the data needs to be bound to it in a proper way. The below sections explain about binding local or remote data to the Autocomplete widget.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart types
-description: What are the different types of Charts available in Essential JavaScript Chart.
+title: Chart types in JavaScript Chart | Syncfusion
+description: What are the different types of Charts available in JavaScript Chart component of Syncfusion Essential JS 2 and more.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# ChartTypes
+# Chart Types in JavaScript Chart
 
 ## Line Chart
 
