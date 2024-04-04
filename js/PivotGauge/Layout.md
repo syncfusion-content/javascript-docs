@@ -8,10 +8,9 @@ documentation: ug
 api: /api/js/ejpivotgauge
 ---
 
-# Layout
+# Layout in JavaScript PivotGauge
 
-## Row-wise layout in JavaScript PivotGauge
-
+## Row-wise layout
 Gauges can be arranged in the specified number of rows by using the [`rowsCount`](/api/js/ejpivotgauge#members:rowscount) property.
 
 {% highlight javascript %}
