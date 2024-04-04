@@ -48,7 +48,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 **Add Scripts and Styles**
 
-The PDF viewer has the [JQuery](http://jquery.com/# "JQuery") external dependency.
+The PDF viewer has the [JQuery](https://jquery.com/ "JQuery") external dependency.
 
 The following table shows the list of ej widgets required for using the ejPdfViewer.
 
@@ -214,7 +214,7 @@ Add the script files and CSS files in the <head> tag of the Default.html pag
 {% endhighlight %}
 
 
-N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in a single file. In production, it is highly recommended to use [custom script generator](http://csg.syncfusion.com "Custom Script Generator") to create custom script file with required widgets and its dependencies to reduce the size of the script files.
+N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in a single file. In production, it is highly recommended to use [custom script generator](https://csg.syncfusion.com/ "Custom Script Generator") to create custom script file with required widgets and its dependencies to reduce the size of the script files.
 
 ### Add ejPdfViewer in HTML Page
 
@@ -517,7 +517,7 @@ Run the sample application and you can see the PDF Viewer on the page as display
 
 **Sample:**
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
 
 ![GettingStarted](Getting-Started_images/Getting-Started_img5.png)
 
