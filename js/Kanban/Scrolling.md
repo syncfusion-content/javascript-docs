@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Syncfusion Kanban Scrolling
-description: This section explains how to achieve the scrolling behavior of the Syncfusion JavaScript Kanban component.
+description: This section explains on how to achieve the scrolling behavior of the Syncfusion JavaScript Kanban component.
 documentation: ug
 platform: js
 keywords: scrolling,kanban scrolling
