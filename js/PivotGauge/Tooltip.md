@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip | JavaScript | PivotGauge | Syncfusion
-description: This document illustrates that how to enable tooltip and its customization in JavaScript PivotGauge control
+title: Tooltip in JavaScript PivotGauge Control | Syncfusion
+description: Learn here all about how to enable tooltip and its customization in Synfusion JavaScript PivotGauge control, it's elements and more.
 platform: js
 control: PivotGauge
 documentation: ug
 api: /api/js/ejpivotgauge
 ---
 
-# Tooltip
+# Tooltip in JavaScript PivotGauge
 
 The tooltip can be enabled by using the [`enableTooltip`](/api/js/ejpivotgauge#members:enabletooltip) property. 
 
