@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Layout | JavaScript | PivotGauge | Syncfusion
-description: This document illustrates that how to define layouts and its functionalities in JavaScript PivotGauge control
+title: Layout in JavaScript PivotGauge Control | Syncfusion
+description: Learn here all about how to define layouts and its functionalities in Syncfusion JavaScript PivotGauge control, it's elements and more.
 platform: js
 control: PivotGauge
 documentation: ug
 api: /api/js/ejpivotgauge
 ---
 
-# Layout
+# Layout in JavaScript PivotGauge
 
-## Row-wise layout 
-
+## Row-wise layout
 Gauges can be arranged in the specified number of rows by using the [`rowsCount`](/api/js/ejpivotgauge#members:rowscount) property.
 
 {% highlight javascript %}
