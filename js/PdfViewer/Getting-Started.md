@@ -201,9 +201,9 @@ ej.slider.min.js
 </table>
 
 Find the scripts and style sheets in any of the following locations:
-Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer# "Installation and deployment") to know more about script and style sheets installed in local machine.
-CDN Link: [Click here](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
-NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
+[Local Disk](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer# "Installation and deployment") to know more about script and style sheets installed in local machine.
+[CDN Link](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
+[NuGet Package](https://help.syncfusion.com/js/installation-and-upgrade/install-using-the-web-installer#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the <head> tag of the Default.html page.
 
@@ -214,7 +214,7 @@ Add the script files and CSS files in the <head> tag of the Default.html pag
 {% endhighlight %}
 
 
-N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in a single file. In production, it is highly recommended to use [custom script generator](http://csg.syncfusion.com "Custom Script Generator") to create custom script file with required widgets and its dependencies to reduce the size of the script files.
+N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in a single file. In production, it is highly recommended to use [custom script generator](https://csg.syncfusion.com/) to create custom script file with required widgets and its dependencies to reduce the size of the script files.
 
 ### Add ejPdfViewer in HTML Page
 
@@ -517,7 +517,7 @@ Run the sample application and you can see the PDF Viewer on the page as display
 
 **Sample:**
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
 
 ![GettingStarted](Getting-Started_images/Getting-Started_img5.png)
 
