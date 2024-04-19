@@ -214,7 +214,7 @@ Add the script files and CSS files in the <head> tag of the Default.html pag
 {% endhighlight %}
 
 
-N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in a single file. In production, it is highly recommended to use [custom script generator](http://csg.syncfusion.com "Custom Script Generator") to create custom script file with required widgets and its dependencies to reduce the size of the script files.
+N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in a single file. In production, it is highly recommended to use [custom script generator](https://csg.syncfusion.com/ "Custom Script Generator") to create custom script file with required widgets and its dependencies to reduce the size of the script files.
 
 ### Add ejPdfViewer in HTML Page
 
