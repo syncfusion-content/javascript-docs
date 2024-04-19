@@ -234,7 +234,7 @@ You can save Spreadsheet contents with following file types
 * CSV
 * PDF
 
-[`Click`](http://js.syncfusion.com/demos/web/#!/azure/spreadsheet/importexport "Click") here to view online demo sample.
+[`Click`](https://ej2.syncfusion.com/home/javascript.html#!/azure/spreadsheet/importexport%20%22Click%22) here to view online demo sample.
 You can save excel documents in following ways
 
 1. Methods
