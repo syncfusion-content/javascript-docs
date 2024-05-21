@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WebAPI reference in JavaScript DocumentEditor Control | Syncfusion
-description: Learn here all about webAPI reference support in Syncfusion JavaScript DocumentEditor control, its elements and more.
+title: WebAPI Reference in JavaScript Document Editor Control | Syncfusion
+description: Learn here all about WebAPI reference support in Syncfusion JavaScript Document Editor control, its elements, and more.
 documentation: ug
 platform: js
 keywords: documenteditor,syncfusion,documenteditor webapi
