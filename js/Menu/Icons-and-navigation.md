@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons and Navigation in JavaScrript Menu Control | Syncfusion
+title: Icons and Navigation in JavaScript Menu Control | Syncfusion
 description: Learn here all about icons and navigation support in Syncfusion Essential JavaScript Menu control, it's elements and more.
 platform: js
 control: Menu
