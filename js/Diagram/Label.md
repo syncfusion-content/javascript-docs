@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label in Javascript Diagram Control | Syncfusion
+title: Label in JavaScript Diagram Control | Syncfusion
 description: Learn here all about label support in Syncfusion JavaScript Diagram control, its elements, and more.
 platform: js
 control: Diagram
@@ -8,13 +8,13 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-# Label in Javascript Diagram Control
+# Label in JavaScript Diagram Control
 
 **Label** is a block of text that can be displayed over a node or connector. Label is used to textually represent an object with a string that can be edited at run time. You can add Multiple Labels to a node/connector.
 
 ## Create Label
 
-You can add a label to a node/connector by defining the label object and adding that to the [labels](/api/js/ejdiagram#members:nodes-labels "labels")  collection of node/connector. The [text](/api/js/ejdiagram#members:nodes-labels-text "text")  property of label defines the text to be displayed. The following code illustrates how to create a Label. 
+You can add a label to a node/connector by defining the label object and adding that to the [labels](/api/js/ejdiagram#members:nodes-labels "labels") collection of node/connector. The [text](/api/js/ejdiagram#members:nodes-labels-text "text") property of label defines the text to be displayed. The following code illustrates how to create a Label. 
 
 {% highlight javascript %}
 
