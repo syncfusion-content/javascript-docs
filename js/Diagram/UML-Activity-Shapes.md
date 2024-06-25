@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejdiagram
 ---
 
-### UML Activity Shapes
+# UML Activity Shapes in JavaScript Diagram
 
 UML activity Shapes used to draw a behavior diagram which shows flow of control or object flow with emphasis on the sequence and conditions of the flow.
 These diagrams are useful for analyzing a use case by describing what actions need to take place and when they should occur, describing a complicates sequential algorithm and modeling applications with parallel processes. 
@@ -39,8 +39,8 @@ The following code example illustrates how to create a simple behavior diagram.
 
 {% endhighlight %}	
 
-![UML Activity Shape](Shapes_images/Shapes_img152.png)
+![UML activity shape in JavaScript Diagram.](shapes_images/javascript-diagram-uml-activity-shape.png)
 
 The list of flow shapes are as follows.
 
-![List of available UML Activity Shapes](Shapes_images/Shapes_img153.png)
+![List of available UML Activity Shapes in JavaScript Diagram.](shapes_images/javascript-diagram-list-of-flow-uml-activity-shapes.png)
