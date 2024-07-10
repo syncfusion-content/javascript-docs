@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Gallery
-description: gallery
+title: Gallery in JavaScript Ribbon Control | Syncfusion
+description: Learn here all about gallery support in Syncfusion JavaScript Ribbon control, it's elements, and more.
 documentation: ug
 platform: js
 keywords: gallery,ribbon gallery
 api: /api/js/ejribbon
 ---
 
-# Gallery
+# Gallery in JavaScript Ribbon
 
 Galleries are used to display items that can be arranged in a grid-type layout. Items in the gallery can be customized as [`button`](https://help.syncfusion.com/api/js/ejbutton)/[`menu`](https://help.syncfusion.com/api/js/ejmenu) to display images, text, or both images and text. You can set [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-type) of group as `gallery`.
 
@@ -120,13 +120,13 @@ N> The [`itemHeight`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-g
 {% endhighlight %}
 
 
-![](/js/Ribbon/Gallery_images/Gallery_img1.png)
+![Gallery in JavaScript Ribbon.](gallery_images/javascript-ribbon-gallery.png)
 
 Ribbon Gallery.
 {:.caption}
 
 
-![](/js/Ribbon/Gallery_images/Gallery_img2.png)
+![Gallery at expanded state in JavaScript Ribbon.](gallery_images/javascript-ribbon-gallery-at-expanded-state.png)
 
 Gallery at Expanded State
 {:.caption}
@@ -257,4 +257,4 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
 
 {% endhighlight %}
 
-![](/js/Ribbon/Gallery_images/Gallery_img3.png)
+![Custom gallery items in JavaScript Ribbon.](gallery_images/javascript-ribbon-custom-gallery-items.png)
