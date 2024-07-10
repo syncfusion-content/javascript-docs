@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gallery in JavaScript Ribbon Control | Syncfusion
-description: Learn here all about gallery support in Syncfusion JavaScript Ribbon control, it's element's and more.
+description: Learn here all about gallery support in Syncfusion JavaScript Ribbon control, it's elements, and more.
 documentation: ug
 platform: js
 keywords: gallery,ribbon gallery

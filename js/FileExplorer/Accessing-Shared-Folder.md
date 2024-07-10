@@ -1,6 +1,6 @@
 ---
 title: Accessing shared folder in JavaScript File Explorer | Syncfusion
-description: Learn here all about accessing shared folder option support in Syncfusion JavaScript File Explorer control, it's element's and more.
+description: Learn here all about accessing shared folder option support in Syncfusion JavaScript File Explorer control, it's elements, and more.
 platform: js
 control: FileExplorer
 documentation: UG
