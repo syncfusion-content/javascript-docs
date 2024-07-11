@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported and unsupported elements of Syncfusion Essential JS PDF viewer.
-description: Supported and unsupported elements of Syncfusion Essential JS PDF viewer.
+title: Supported and unsupported elements in JavaScript PDF Viewer | Syncfusion
+description: Learn here about supported and unsupported elements in Syncfusion Essential JavaScript PDF viewer control, its elements, and more.
 platform: js
 control: PDF viewer
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejPdfViewer, PDF Viewer
 api: /api/js/ejpdfviewer
 ---
 
-## Supported and Unsupported Elements
+# Supported and Unsupported Elements in JavaScript PDF Viewer
 
 The supported and un-supported elements of the PDF viewer control are:
 
