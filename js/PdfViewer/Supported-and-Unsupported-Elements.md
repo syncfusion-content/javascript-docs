@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported and unsupported elements in JavaScript PDF Viewer | Syncfusion
+title: Supported and unsupported elements in JS PDF Viewer | Syncfusion
 description: Learn here about supported and unsupported elements in Syncfusion Essential JavaScript PDF viewer control, its elements, and more.
 platform: js
 control: PDF viewer
