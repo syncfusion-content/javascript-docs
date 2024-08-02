@@ -34,22 +34,22 @@ The following code example explains how to define the [`splitterSettings.positio
 
 {% endhighlight %}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img2.png)
+![Change Splitter position at load in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img2.png)
 
 Gantt with 30% splitter position
 {:.caption}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img3.png)
+![Gantt with 30% splitter position in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img3.png)
 
 Gantt with 50% splitter position
 {:.caption}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img4.png)
+![Gantt with 50% splitter position in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img4.png)
 
 Gantt with 600px splitter position
 {:.caption}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img5.png)
+![Gantt with 600px splitter position in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img5.png)
 
 Gantt splitter positioned on third indexed column.
 {:.caption}
