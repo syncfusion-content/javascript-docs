@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change-Splitter-position
-description: change splitter position
+title: Change-Splitter-position in JavaScript Gantt | Syncfusion
+description: Learn here about change splitter position with Syncfusion JavaScript Gantt control, its elements, and more.
 platform: js
 control: Gantt
 documentation: ug
