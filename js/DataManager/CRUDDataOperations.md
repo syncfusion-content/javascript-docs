@@ -69,7 +69,7 @@ The [insert](https://help.syncfusion.com/api/js/ejdatamanager#methods:insert) me
 
 {% endhighlight %}
 
-![](CRUD_images/insert1.png) 
+![Update in JavaScript DataManager CrudDataOperation](CRUD_images/insert1.png) 
 
 ### Update
 
@@ -118,7 +118,7 @@ The [update](https://help.syncfusion.com/api/js/ejdatamanager#methods:update) me
 
 {% endhighlight %}
 
-![](CRUD_images/update1.png) 
+![Remove in JavaScript DataManager CrudDataOperation](CRUD_images/update1.png) 
 
 ### Remove
 
@@ -167,7 +167,7 @@ The [remove](https://help.syncfusion.com/api/js/ejdatamanager#methods:remove) fu
 
 {% endhighlight %}
 
-![](CRUD_images/remove1.png) 
+![Remote CRUD Operations in JavaScript DataManager CrudDataOperation](CRUD_images/remove1.png) 
 
 ## Remote CRUD Operations
 
@@ -233,7 +233,7 @@ The insert method of the data manager is used to add a new record to the table. 
 
 {% endhighlight %}
 
-![](CRUD_images/insert2.png) 
+![Update in JavaScript DataManager CrudDataOperation](CRUD_images/insert2.png) 
 
 ### Update
 
@@ -432,4 +432,4 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
 
 Result of the above code example is illustrated as follows.
 
-![](Editing_images/Editing_img1.png)
+![Batch Edit in JavaScript DataManager CrudDataOperation](Editing_images/Editing_img1.png)
