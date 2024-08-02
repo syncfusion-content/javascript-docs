@@ -40,7 +40,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 The output for **NumericTextBox** with **decimalPlaces** is as follows.
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img1.png) 
+![Output for Calculated NumericTextBox with decimalPlaces in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img1.png) 
 
 ## Persistence Support
 
@@ -75,12 +75,12 @@ The output for **NumericTextBox** with **enablePersistence** is as follows. You 
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img2.png)
+![Output for NumericTextBox with enablePersistence in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img2.png)
 
 NumericTextBox at initial load
 {:.caption}
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img3.png)
+![NumericTextBox at initial load in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img3.png)
 
 NumericTextBox after changing the value and after page refresh 
 {:.caption}
@@ -120,7 +120,7 @@ The output for NumericTextBox when enableStrictMode is “true” is as follows.
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img4.png) 
+![Output for NumericTextBox at initial load in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img4.png) 
 
 ## Enabled or Disabled
 
@@ -154,14 +154,14 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for NumericTextBox when enabled is “false” and when enabled is “true”.
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img5.png)
+![Output for NumericTextBox when enable load in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img5.png)
 
 NumericTextBox with enabled as false
 {:.caption}
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img6.png)
+![NumericTextBox with enabled as false in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img6.png)
 
 NumericTextBox with enabled as true
 {:.caption}
@@ -198,7 +198,7 @@ The output for NumericTextBox after setting “**height**” and “**width**”
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img7.png) 
+![Output for NumericTextBox in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img7.png) 
 
 ## Increment Step
 
@@ -232,14 +232,14 @@ Output of Numeric textbox with **incrementStep** is as follows**.**
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img8.png)
+![Output of Numeric textbox with incrementStep in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img8.png)
 
 NumericTextBox at initial load
 {:.caption}
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img9.png)
+![NumericTextBox at initial load in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img9.png)
 
 NumericTextBox after increasing two step
 {:.caption}
@@ -303,7 +303,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **NumericTextBox** with the **value** property is as follows**.**
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img11.png) 
+![Output for NumericTextBox with the value in JvaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img11.png) 
 
 ## Define maxValue and minValue
 
@@ -346,14 +346,14 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **NumericTextBox** with basic properties is as follows**.**
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img12.png)
+![Output for NumericTextBox with basic properties in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img12.png)
 
 NumericTextBox with maxValue
 {:.caption}
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img13.png)
+![NumericTextBox with maxValue in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img13.png)
 
 NumericTextBox with minValue
 {:.caption}
@@ -390,7 +390,7 @@ The output for NumericTextBox when **readOnly** is “**true**” is as follows*
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img14.png) 
+![Output for NumericTextBox when true in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img14.png) 
 
 ## Appearance
 
@@ -473,7 +473,7 @@ The output for NumericTextBox after applying **cssClass** is as follows.
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img15.png) 
+![output for NumericTextBox after applying cssClass in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img15.png) 
 
 ## Rounded Corner Support
 
@@ -506,7 +506,7 @@ The output for NumericTextBox when **showRoundedCorner** is “**true**”.
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img16.png) 
+![Output for NumericTextBox when showRoundedCorner in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img16.png) 
 
 ## Spin Button Support
 
@@ -541,7 +541,7 @@ The output for NumericTextBox when showSpinButton is “false”.
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img17.png) 
+![Output for NumericTextBox when showSpinButton in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img17.png) 
 
 ## Water Mark Text Support
 
@@ -575,5 +575,5 @@ The output for NumericTextBox after applying **watermarkText** is as follows.
 
 
 
-![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img18.png) 
+![Output for NumericTextBox after applying watermarkText in JavaScript](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img18.png) 
 
