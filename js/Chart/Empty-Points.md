@@ -8,7 +8,7 @@ documentation: ug
 api : /api/js/ejchart
 ---
 
-# Empty Points 
+# Empty Points with Syncfusion JavaScript Chart
 
 The Data points that uses the **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the [`points`](../api/ejchart.html#members:series-points) property, you can set the **isEmpty** to true to specify that the particular point is an empty point.
 
