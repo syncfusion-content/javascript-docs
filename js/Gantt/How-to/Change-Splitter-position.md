@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change-Splitter-position
-description: change splitter position
+title: Change-Splitter-position in JavaScript Gantt | Syncfusion
+description: Learn here about change splitter position with Syncfusion JavaScript Gantt control, its elements, and more.
 platform: js
 control: Gantt
 documentation: ug
@@ -34,29 +34,29 @@ The following code example explains how to define the [`splitterSettings.positio
 
 {% endhighlight %}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img2.png)
+![Change Splitter position at load in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img2.png)
 
 Gantt with 30% splitter position
 {:.caption}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img3.png)
+![Gantt with 30% splitter position in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img3.png)
 
 Gantt with 50% splitter position
 {:.caption}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img4.png)
+![Gantt with 50% splitter position in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img4.png)
 
 Gantt with 600px splitter position
 {:.caption}
 
-![](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img5.png)
+![Gantt with 600px splitter position in JavaScript Gantt](/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img5.png)
 
 Gantt splitter positioned on third indexed column.
 {:.caption}
 
 N> We can define the splitter position value by using [`splitterPosition`](/api/js/ejgantt#members:splitterposition) property also, but this property was deprecated with [`splitterSettings.position`](/api/js/ejgantt#members:splittersettings-position "splitterSettings.position") property.
 
-# Change splitter position dynamically
+## Change splitter position dynamically
 
 In Gantt, we can change the splitter position dynamically by using [`setSplitterPosition`](/api/js/ejgantt#methods:setsplitterposition) and [`setSplitterIndex`](/api/js/ejgantt#methods:setsplitterindex) methods. The following code example shows how to use this methods.
 
