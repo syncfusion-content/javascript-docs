@@ -1,8 +1,7 @@
 ---
 layout: post
 title: CRUD Data Operations with JavaScript DataManager | Syncfusion
-description: CRUD Data Operations
-Learn here about CRUD Data Operations with Syncfusion JavaScript DataManager control, its elements, and more
+description: Learn here about CRUD Data Operations with Syncfusion JavaScript DataManager control, its elements, and more
 platform: js
 control: DataManager
 documentation: ug
