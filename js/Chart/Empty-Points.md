@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Empty Points 
-description: How to show or hide an empty point in Essential JavaScript Chart.
+title: Empty Points with JavaScript Chart | Syncfusion
+description: Learn here about how to show or hide an empty point in Essential JavaScript Chart control, its elements, and more.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Empty Points 
+# Empty Points with Syncfusion JavaScript Chart
 
 The Data points that uses the **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the [`points`](../api/ejchart.html#members:series-points) property, you can set the **isEmpty** to true to specify that the particular point is an empty point.
 
@@ -34,7 +34,7 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 {% endhighlight %}
 
-![](/js/Chart/Empty-Points_images/Empty-Points_img1.png)
+![Empty Points in JavaScript Chart](/js/Chart/Empty-Points_images/Empty-Points_img1.png)
 
 
 [Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartcustomization/emptypoints) here to view the online demo sample for empty points.
@@ -62,12 +62,12 @@ You can customize the empty points visibility and change its [`displayMode`](../
 
 {% endhighlight %}
 
-![](/js/Chart/Empty-Points_images/Empty-Points_img2.png)
+![EmptyPointSettings in JavaScript Chart](/js/Chart/Empty-Points_images/Empty-Points_img2.png)
 
 
 If the [`visible`](../api/ejchart.html#members:series-emptypointsettings-visible) property of [`emptyPointSettings`](../api/ejchart.html#members:series-emptypointsettings) is *false*, then the empty points has been dropped and chart will be rendered without empty points.
 
-![](/js/Chart/Empty-Points_images/Empty-Points_img3.png)
+![EmptyPointSettings in JavaScript Chart](/js/Chart/Empty-Points_images/Empty-Points_img3.png)
 
 ## Customizing Styles
 
@@ -97,4 +97,4 @@ Empty points [`color`](../api/ejchart.html#members:series-emptypointsettings-sty
 
 {% endhighlight %}
 
-![](/js/Chart/Empty-Points_images/Empty-Points_img4.png)
+![Customizing Styles in JavaScript Chart](/js/Chart/Empty-Points_images/Empty-Points_img4.png)
