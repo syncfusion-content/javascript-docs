@@ -56,7 +56,7 @@ Gantt splitter positioned on third indexed column.
 
 N> We can define the splitter position value by using [`splitterPosition`](/api/js/ejgantt#members:splitterposition) property also, but this property was deprecated with [`splitterSettings.position`](/api/js/ejgantt#members:splittersettings-position "splitterSettings.position") property.
 
-# Change splitter position dynamically
+## Change splitter position dynamically
 
 In Gantt, we can change the splitter position dynamically by using [`setSplitterPosition`](/api/js/ejgantt#methods:setsplitterposition) and [`setSplitterIndex`](/api/js/ejgantt#methods:setsplitterindex) methods. The following code example shows how to use this methods.
 
