@@ -7,7 +7,7 @@ platform: js
 keywords: Schedule, ejSchedule, syncfusion, ejSchedule webapi
 ---
 
-## LoadData
+# LoadData
 
  [POST] [/Api/Schedule/LoadData](http://js.syncfusion.com/demos/ejservices/api/Schedule/LoadData)
 
