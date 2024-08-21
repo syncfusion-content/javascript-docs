@@ -17,13 +17,13 @@ This section explains how to create the PDF viewer in your web application using
 
 Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting Started with PDF Viewer.](Getting-Started_images/getting-started-with-pdf-viewer.jpeg)
 
 **Create HTML Page**
 
 Right-click the project and select New Item option from the ‘Add’ menu to add a HTML page to the application. Name the page as **Default.html** and click OK.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting Started with default HTML.](Getting-Started_images/getting-started-with-default-html.jpeg)
 
 ### Add References, Scripts, Styles
 
@@ -402,7 +402,7 @@ Add the following code in the <body> tag in the Default.html page. Here, the PDF
 
 The PDF viewer uses Web API services to process the PDF file. Right-Click the Project, select Add and Web API Controller Class from the listed templates. Rename it as **PdfViewerAPIController.cs**.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img3.jpeg)
+![PDF Viewer API Controller.](Getting-Started_images/Pdf-viewer-api-controller.jpeg)
 
 N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in the demo the controller is named as “PdfViewerAPIController”.
 
@@ -465,7 +465,7 @@ N> Create a folder named Data in the project location and add the PDF document t
 
 Right-Click the Project, select Add and Global.asax file from the listed templates.
 
-![GettingStarted](Getting-Started_images/Getting-Started_img4.jpeg)
+![Getting Started with Web API Routing.](Getting-Started_images/getting-started-with-web-api-routing.jpeg)
 
 You can route the Web API in the Application_Start event into Global.asax file as follows.
 
@@ -519,7 +519,7 @@ Run the sample application and you can see the PDF Viewer on the page as display
 
 <https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
 
-![GettingStarted](Getting-Started_images/Getting-Started_img5.png)
+![Getting Started with Application.](Getting-Started_images/getting-started-with-web-application.png)
 
 **Destroy**
 
