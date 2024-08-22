@@ -17,7 +17,7 @@ This section explains how to create the PDF viewer in your web application using
 
 Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
-![Getting Started with JavaScript PDF Viewer.](getting-started_images/getting-started-with-javascript-pdf-viewer.jpeg)
+![Creation Wizard in JavaScript PDF Viewer.](getting-started_images/creation-wizard-in-javascript-pdf-viewer.jpeg)
 
 **Create HTML Page**
 
