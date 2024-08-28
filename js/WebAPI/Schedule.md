@@ -1,19 +1,19 @@
 ---
 layout: post
-title: webAPI reference for ejSchedule
-description: webAPI reference for ejSchedule
+title: WebAPI reference in JavaScript Schedule | Syncfusion
+description: Learn more about webAPI reference in Syncfusion Essential JavaScript Schedule control, its elements, and more.
 documentation: ug
 platform: js
 keywords: Schedule, ejSchedule, syncfusion, ejSchedule webapi
 ---
 
-## LoadData
+# Load data in JavaScript Schedule Control
 
  [POST] [/Api/Schedule/LoadData](http://js.syncfusion.com/demos/ejservices/api/Schedule/LoadData)
 
 It fetches the records from Default Schedule table and binding it to the Scheduler.
 
-### URL parameters
+## URL parameters
 
 |  Parameter |  Description | 
 |---|---|
