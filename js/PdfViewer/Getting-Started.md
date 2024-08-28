@@ -519,7 +519,7 @@ Run the sample application and you can see the PDF Viewer on the page as display
 
 <https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
 
-![Sample application in JavaScript PDF Viewer.](getting-started_images/sample-application-in-javascript-pdf-viewer.png)
+![web API controller in JavaScript PDF Viewer.](getting-started_images/web-api-controller-in-javascript-pdf-viewer.png)
 
 **Destroy**
 
