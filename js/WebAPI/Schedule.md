@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WebAPI reference in JavaScript Schedule | Syncfusion
-description: Learn more about webAPI reference in Syncfusion Essential JavaScript Schedule control, its elements, and more.
+title: Web API reference in JavaScript Schedule | Syncfusion
+description: Learn more about Web API reference in Syncfusion Essential JavaScript Schedule control, its elements, and more.
 documentation: ug
 platform: js
 keywords: Schedule, ejSchedule, syncfusion, ejSchedule webapi
