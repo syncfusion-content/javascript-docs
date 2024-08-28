@@ -908,5 +908,5 @@ The following screenshot shows the PDF viewer with tooltip in German language.
 
 <https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization338521894>
 
-![Localization in JavaScript PDF Viewer.](localization_images/localization-in-javascript-pdf-viewer.png)
+![JavaScript PDF Viewer with tooltip in German language.](localization_images/javascript-pdf-viewer-with-tooltip-in-german-language.png)
 
