@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Change-Splitter-position
-description: change splitter position
+title: Change splitter position in JavaScript Gantt | Syncfusion
+description: Learn hera all about change splitter position Syncfusion Essential JavaScript Gantt control, its elements and more details.
 platform: js
 control: Gantt
 documentation: ug
 ---
 
-# Change Splitter position at load 
+# Change splitter position at load in JavaScript Gantt
 
 In Gantt control, Splitter separates the TreeGrid section from the Chart section and is possible to change the position of the Splitter while loading the Gantt by using the [`splitterSettings`](/api/js/ejgantt#members:splittersettings "splitterSettings") property, thereby varying the width of the TreeGrid and Chart sections in the control. [`splitterSettings.position`](/api/js/ejgantt#members:splittersettings-position "splitterSettings.position") property denotes the percentage of the TreeGrid section’s width to be rendered and this property supports both pixels and percentage values.
 And also we can define the splitter position as column index value by using [`splitterSettings.index`](/api/js/ejgantt#members:splittersettings-index "splitterSettings.index") property.
@@ -56,7 +56,7 @@ Gantt splitter positioned on third indexed column.
 
 N> We can define the splitter position value by using [`splitterPosition`](/api/js/ejgantt#members:splitterposition) property also, but this property was deprecated with [`splitterSettings.position`](/api/js/ejgantt#members:splittersettings-position "splitterSettings.position") property.
 
-# Change splitter position dynamically
+## Change splitter position dynamically
 
 In Gantt, we can change the splitter position dynamically by using [`setSplitterPosition`](/api/js/ejgantt#methods:setsplitterposition) and [`setSplitterIndex`](/api/js/ejgantt#methods:setsplitterindex) methods. The following code example shows how to use this methods.
 
