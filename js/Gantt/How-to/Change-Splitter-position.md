@@ -39,12 +39,12 @@ The following code example explains how to define the [`splitterSettings.positio
 Gantt with 30% splitter position
 {:.caption}
 
-![Change splitter 30% position in JavaScript Gantt.](/js/gantt/how-to/change-splitter-position_images/javascript-gantt-thirty-percent-position.png)
+![Change splitter thirty percent position in JavaScript Gantt.](/js/gantt/how-to/change-splitter-position_images/javascript-gantt-thirty-percent-position.png)
 
 Gantt with 50% splitter position
 {:.caption}
 
-![Change splitter 50% position in JavaScript Gantt.](/js/gantt/how-to/change-splitter-position_images/javascript-gantt-fifty-percent-position.png)
+![Change splitter fifty percent position in JavaScript Gantt.](/js/gantt/how-to/change-splitter-position_images/javascript-gantt-fifty-percent-position.png)
 
 Gantt with 600px splitter position
 {:.caption}
