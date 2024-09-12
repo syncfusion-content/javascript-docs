@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript NuGet Packages | Syncfusion
-description: NuGet Packages
+description: Learn here all about How to develop the essential studio javascript NuGet Packages, its features and more.
 platform: js
 control: NuGet Packages
 documentation: ug
