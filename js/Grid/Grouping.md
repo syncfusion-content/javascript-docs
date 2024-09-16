@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping with Grid widget for Syncfusion Essential JS
-description: How to enable grouping and its functionalities
+title: Grouping with Grid widget for Syncfusion Essential JS | Syncfusion
+description: This guide is written for you to learn how to enable grouping and its functionalities with Grid widget for Syncfusion Essential JS
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Grouping
+# Grouping with Grid widget for Syncfusion Essential JS
 
 The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 
@@ -33,7 +33,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img1.png)
+![Grouping in JavaScript Grid](Grouping_images/Grouping_img1.png)
 
 
 ## Initial Grouping
@@ -61,7 +61,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img2.png)
+![Initial Grouping in JavaScript Grid](Grouping_images/Grouping_img2.png)
 
 
 ## Multi-Column Grouping
@@ -90,7 +90,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img3.png)
+![Multi-Column Grouping in JavaScript Grid](Grouping_images/Grouping_img3.png)
 
 
 ## Group buttons
@@ -118,7 +118,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img4.png)
+![Group buttons in JavaScript Grid](Grouping_images/Grouping_img4.png)
 
 
 ## Hide Ungroup button
@@ -146,7 +146,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img5.png)
+![Hide Ungroup button in JavaScript Grid](Grouping_images/Grouping_img5.png)
 
 
 ## Hide Grouped Column
@@ -174,7 +174,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img6.png)
+![Hide Grouped Column in JavaScript Grid](Grouping_images/Grouping_img6.png)
 
 
 ## AutoSize Drop Area
@@ -202,7 +202,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img7.png)
+![AutoSize Drop Area in JavaScript Grid](Grouping_images/Grouping_img7.png)
 
 
 ## Hide Drop area
@@ -230,7 +230,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img8.png)
+![Hide Drop area in JavaScript Grid](Grouping_images/Grouping_img8.png)
 
 
 ## Group Caption Format / Group Caption Template
@@ -278,10 +278,10 @@ function btnClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img9.png)
+![Group Caption Format in JavaScript Grid](Grouping_images/Grouping_img9.png)
 
 
-![](Grouping_images/Grouping_img10.png)
+![Group Caption Template in JavaScript Grid](Grouping_images/Grouping_img10.png)
 
 
 ### Perform Grouping by External Action:-
@@ -343,7 +343,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![](Grouping_images/Grouping_img11.png)
+![Grouping by External Action in JavaScript Grid](Grouping_images/Grouping_img11.png)
 
 ## Handling grouped records count in server-side    
 
@@ -417,4 +417,4 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img12.png)
+![Handling grouped records in JavaScript Grid](Grouping_images/Grouping_img12.png)

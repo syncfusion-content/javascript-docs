@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print  in Essential JavaScript Chart
-description: Learn how to print the chart.
+title: Print in Essential JavaScript Chart | Syncfusion
+description: This guide is written for you to learn how to print the chart in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Printing Chart
+# Print  in Essential JavaScript Chart
 The rendered chart can be printed directly from the browser by calling the public method [`print`](../api/ejchart#methods:print). ID of the chart div element must be passed as argument to that method.
 
 {% highlight html %}
@@ -36,7 +36,7 @@ chartObj.print("container");
 
 This print method can be called by performing any action on the web page. For example, by clicking a button. While calling the print method in chart, print preview will be displayed in the browser.
 
-![](/js/Chart/Printing_images/Printing_img1.png)
+![Printing Chart in JavaScript Chart](/js/Chart/Printing_images/Printing_img1.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/exportandprint) here to view the Printing chart online demo sample
 
@@ -63,7 +63,7 @@ Multiple charts in a web page can be printed together. For printing multiple cha
 
 The Print preview of multiple Charts is shown below 
 
-![](/js/Chart/Printing_images/Printing_img2.png)
+![Printing Multiple Chart in JavaScript Chart](/js/Chart/Printing_images/Printing_img2.png)
 
 ## Page Setup
 

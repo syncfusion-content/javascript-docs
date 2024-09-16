@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Markers and data labels in Essential JavaScript Chart
-description: Learn how to add markers and data point labels to a Chart series.
+title: Markers and data labels in Essential JavaScript Chart | Syncfusion
+description: This guide is written for you to learn how to add markers and data point labels to the Chart series.
 platform: js
 control: Chart
 documentation: ug
 api : /api/js/ejchart
 ---
 
-# Data Markers
+# Markers and data labels in Essential JavaScript Chart
 
 Data markers are used to provide information about the data point to the user. You can add a shape and label to adorn each data point.
 
@@ -54,7 +54,7 @@ The following code example explains on how to enable series marker and add shape
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img1.png)
+![Add Shapes in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img1.png)
 
 ## Customizing marker 
 
@@ -96,7 +96,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img2.png)
+![Add image as marker in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img2.png)
 
 
 ## Add labels
@@ -127,7 +127,7 @@ The following code example shows how to enable data label and set its [`horizont
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img3.png)
+![Add labels in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img3.png)
 
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text *"point.x"* and *"point.y"* to display corresponding data points x & y value.
@@ -190,7 +190,7 @@ The border [`color`](../api/ejchart#members:series-marker-border-color) and [`wi
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img4.png)
+![Label Content in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img4.png)
 
 
 The appearance of the labels can be customized by using the [`font`](../api/ejchart#members:series-marker-datalabel-font) and [`offset`](../api/ejchart#members:series-marker-datalabel-offset) options. The [`color`](../api/ejchart#members:series-marker-datalabel-font-color), [`fontFamily`](../api/ejchart#members:series-marker-datalabel-font-fontfamily), [`fontStyle`](../api/ejchart#members:series-marker-datalabel-font-fontstyle), [`fontWeight`](../api/ejchart#members:series-marker-datalabel-font-fontweight), [`opacity`](../api/ejchart#members:series-marker-datalabel-font-opacity) and [`size`](../api/ejchart#members:series-marker-datalabel-font-size) of font can also be customized. The [`offset`](../api/ejchart#members:series-marker-datalabel-offset) option is used to move the labels vertically. Also, labels can be rotated by using the [`angle`](../api/ejchart#members:series-marker-datalabel-angle) option.
@@ -220,7 +220,7 @@ The following code example shows how to rotate datalabel text and customize the 
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img5.png)
+![Appearance of labels in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img5.png)
 
 
 You can position the label to the top, center or bottom position of the segment by using the [`textPosition`](../api/ejchart#members:series-marker-datalabel-textposition) option for the chart types such as column, bar, stacked bar, stacked column, 100% stacked bar, 100% stacked column, candle and OHLC.
@@ -249,7 +249,7 @@ The following code example shows how to set textPosition to display data label i
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img6.png)
+![Positioning labels to the top in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img6.png)
 
 
 The label can be positioned inside or outside the perimeter of the series by using the [`labelPosition`](../api/ejchart#members:series-labelposition) option for the chart types such as Pie and Doughnut, .
@@ -287,17 +287,17 @@ The following code example shows how to set the *labelPosition*,
 
 {% endhighlight %} 
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img7.png)
+![Positioning labels inside in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img7.png)
 
 
 The following screenshot displays the labels when the [`labelPosition`](../api/ejchart#members:series-labelposition) is set as *inside* position.
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img8.png)
+![Positioning labels outside in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img8.png)
 
 
 The following screenshot displays the labels when the [`labelPosition`](../api/ejchart#members:series-labelposition) is set as *outsideExtended* position.
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img9.png)
+![Positioning labels outsideExtended in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img9.png)
 
 
 The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the [`enableWrap`](../api/ejchart#members:series-marker-datalabel-enablewrap) property. The maximum label width for data label can be specified using [`maximumLabelWidth`](../api/ejchart#members:series-marker-datalabel-maximumlabelwidth) property.
@@ -343,7 +343,7 @@ $("#container").ejChart({
 
 {% endhighlight %} 
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img13.png)
+![Wraping labels for pie in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img13.png)
 
 
 ## Binding label from the datasource
@@ -532,7 +532,7 @@ When the data is provided by using the [`points`](../api/ejchart#members:series-
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img10.png)
+![Customize specific points in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img10.png)
 
 When the data is bound to the series by using the [`dataSource`](../api/ejchart#members:series-datasource) option, you can customize the points in the [`seriesRendering`](../api/ejchart#members:events-seriesrendering) event as illustrated in the following code example,
 
@@ -585,7 +585,7 @@ When the data is bound to the series by using the [`dataSource`](../api/ejchart#
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img10.png)
+![Binding data to series in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img10.png)
 
 
 ## Connect Line
@@ -618,7 +618,7 @@ This feature is used to connect label and data point by using a line. It can be 
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img11.png)
+![Connect Line in JavaScript Chart](/js/Chart/Data-Markers_images/Data-Markers_img11.png)
 
 
 ## Smart labels
@@ -659,6 +659,6 @@ The following code example shows how to enable smart labels,
 
 {% endhighlight %}
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img12.png)
+![Smart labels in JavaScrip Chart](/js/Chart/Data-Markers_images/Data-Markers_img12.png)
 
 
