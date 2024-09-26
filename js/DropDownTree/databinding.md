@@ -333,7 +333,7 @@ To bind remote data to the DropDownTree, assign service data as an instance of `
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. Provide  [OData service](http://www.odata.org/) URL directly to the "ej.DataManager" class, and then you can assign it to the DropDownTree "dataSource".
+OData is a standardized protocol for creating and consuming data. Provide  [OData service](https://www.odata.org/) URL directly to the "ej.DataManager" class, and then you can assign it to the DropDownTree "dataSource".
 
 {% highlight html %}
 
@@ -376,7 +376,7 @@ $(function() {
            
           
 ## OData Version 4
-The OData v4 is an improved version of OData protocols, and the data manager can also retrieve and consume data from [ODatav4](http://www.odata.org/) services.
+The OData v4 is an improved version of OData protocols, and the data manager can also retrieve and consume data from [ODatav4](https://www.odata.org/) services.
 
 By using URL property of “ej.DataManager”, bind OData Version 4 Service link and specify adaptor as ej.ODataV4Adaptor.
 
