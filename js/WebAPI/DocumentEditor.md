@@ -10,7 +10,7 @@ api: /api/js/ejdocumenteditor
 
 # WebAPI Reference in JavaScript Document Editor Control
 
- [POST] [/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
+ [POST] [/Api/DocumentEditor/Import](https://ej2.syncfusion.com/home/javascript.html)
 
 It loads the document from specified path in DocumentEditor.
 
@@ -56,7 +56,7 @@ $.ajax({
         crossDomain: true,
         data: formData,
         dataType: "JSON",
-        url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import",
+        url: "https://ej2.syncfusion.com/home/javascript.html",
 })
 
 {% endhighlight %}
@@ -64,7 +64,7 @@ $.ajax({
 
 ## LoadDefault
 
- [POST] [/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault)
+ [POST] [https://ej2.syncfusion.com/home/javascript.html)
 
 It loads the default document in DocumentEditor.
 
@@ -103,7 +103,7 @@ $.ajax({
         crossDomain: true,
         data: formData,
         dataType: "JSON",
-        url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault",
+        url: "https://ej2.syncfusion.com/home/javascript.html",
 })
 
 {% endhighlight %}
