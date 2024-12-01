@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbar with Grid widget for Syncfusion Essential JS
-description: How to enable toolbar and its actions.
+title: Toolbar in JavaScript Grid Control | Syncfusion
+description: Learn here all about toolbar support in Syncfusion JavaScript Grid control, it's elements, and more.
 platform: js
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 ---
-# Toolbar
+# Toolbar in JavaScript Grid
 
 Toolbar can be shown by setting the [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") as true. To modify the toolbar behavior use [`toolbarSettings`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings "toolbarSettings") property. Toolbar has an option to add default items in the [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
 
@@ -75,7 +75,7 @@ Search text in records.</td></tr>
 
 {% endhighlight %}
 
-![](Toolbar_images/Toolbar_img1.png)
+![Toolbar in JavaScript Toolbar.](toolbar_images/javascript-grid-toolbar.png)
 
 
 I> [`editSettings.allowAdding`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowadding "allowAdding"), [`editSettings.allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowediting "allowEditing") and [`editSettings.allowDeleting`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowdeleting "allowdeleting") need to be enabled for add, delete, edit, save & cancel in [`toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbaritems"). [`allowSearching`](https://help.syncfusion.com/api/js/ejgrid#members:allowsearching "allowsearching")` to be enabled while adding search in toolbar to perform search action.
@@ -135,6 +135,6 @@ To add custom toolbar item as template use [`templateID`](https://help.syncfusio
 
 {% endhighlight %}
 
-![](Toolbar_images/Toolbar_img2.png)
+![Custom toolbar items in JavaScript Grid.](toolbar_images/javascript-grid-custom-toolbar-item.png)
 
 
