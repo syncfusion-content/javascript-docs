@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DatePicker Customization
-description: DatePicker customization such as dimension, highlight dates, other months, etc.
+title: Customization in JavaScript DatePicker | Syncfusion
+description: Learn here about Customization with Syncfusion Essential JavaScript DatePicker control, its elements, and more.
 platform: js
 control: DatePicker
 documentation: ug
 api: /api/js/ejdatepicker
 ---
-# Customization
+# Customization in JavaScript DatePicker
 
 DatePicker provides more flexible way to customize the below listed properties.
 
