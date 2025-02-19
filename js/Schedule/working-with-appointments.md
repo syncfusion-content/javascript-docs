@@ -1,6 +1,6 @@
 ---
-title: Working with appointments
-description: Working with Scheduler appointments and its related options like Recurrence.
+title: Working with appointments in JavaScript Schedule | Syncfusion
+description: Learn here all about working with appointments and its related options like recurrence in Syncfusion Essential JavaScript Schedule Control, its elements, and more. 
 platform: js
 control: schedule
 documentation: ug
