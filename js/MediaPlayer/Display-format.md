@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejmediaplayer
 ---
 
-## Render Mode
+# Render Mode
 
 There are three rendering layouts in Media Player such as Basic, Advanced and Mobile. You can get the available render modes in ej.MediaPlayer.RenderMode Object as follows.
 
