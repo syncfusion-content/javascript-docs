@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Separators
-description: separators
+title: Getting Started with JavaScript Separators Control | Syncfusion
+description: Learn about getting started with the Syncfusion JavaScript separators control with its basic features.
 platform: js
 control: Menu
 documentation: ug
@@ -87,10 +87,10 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
 
 The following screenshot displays the output for the above code. 
 
-![](/js/Menu/Separators_images/Separators_img2.png) 
+![java script enable Separator.](/js/Menu/Separators_images/Separators_img2.png) 
 
 
-# Separators for Context Menu
+## Separators for Context Menu
 
 We can add the separators for particular ContextMenu items by including **e-separator** class in the required **LI** elements. Add the following code to display ContextMenu with separator lines.
 
@@ -150,6 +150,6 @@ We can add the separators for particular ContextMenu items by including **e-sepa
 
 The following screenshot displays the output for the above code. 
 
-![](/js/Menu/Separators_images/Separators_img3.png) 
+![java script separators for context menu.](/js/Menu/Separators_images/Separators_img3.png) 
 
 
