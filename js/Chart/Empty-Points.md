@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Empty Points 
-description: How to show or hide an empty point in Essential JavaScript Chart.
+title: Empty Points | Chart | JavaScript | Syncfusio 
+description: Check out and learn here all about how to show or hide an empty point in Essential JavaScript Chart and much more.
 platform: js
 control: Chart
 documentation: ug
@@ -34,7 +34,7 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 {% endhighlight %}
 
-![](/js/Chart/Empty-Points_images/Empty-Points_img1.png)
+![Empty Points in javascript.](/js/Chart/Empty-Points_images/Empty-Points_img1.png)
 
 
 [Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartcustomization/emptypoints) here to view the online demo sample for empty points.
@@ -62,7 +62,7 @@ You can customize the empty points visibility and change its [`displayMode`](../
 
 {% endhighlight %}
 
-![](/js/Chart/Empty-Points_images/Empty-Points_img2.png)
+![to customize the empty points visibility.](/js/Chart/Empty-Points_images/Empty-Points_img2.png)
 
 
 If the [`visible`](../api/ejchart.html#members:series-emptypointsettings-visible) property of [`emptyPointSettings`](../api/ejchart.html#members:series-emptypointsettings) is *false*, then the empty points has been dropped and chart will be rendered without empty points.
@@ -97,4 +97,4 @@ Empty points [`color`](../api/ejchart.html#members:series-emptypointsettings-sty
 
 {% endhighlight %}
 
-![](/js/Chart/Empty-Points_images/Empty-Points_img4.png)
+![Customizing Styles for empty points.](/js/Chart/Empty-Points_images/Empty-Points_img4.png)
