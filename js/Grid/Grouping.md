@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping with Grid widget for Syncfusion Essential JS
-description: How to enable grouping and its functionalities
+description: Check out and learn here all about how to enable grouping and its functionalities in Syncfusion Grid and much more.
 platform: js
 control: Grid
 documentation: ug
@@ -33,7 +33,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img1.png)
+![grouping in grid](Grouping_images/Grouping_img1.png)
 
 
 ## Initial Grouping
@@ -61,7 +61,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img2.png)
+![initial grouping in grid.](Grouping_images/Grouping_img2.png)
 
 
 ## Multi-Column Grouping
@@ -90,7 +90,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img3.png)
+![multiple columns grouping in grid.](Grouping_images/Grouping_img3.png)
 
 
 ## Group buttons
@@ -118,7 +118,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img4.png)
+![group buttons in grid.](Grouping_images/Grouping_img4.png)
 
 
 ## Hide Ungroup button
@@ -146,7 +146,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img5.png)
+![hide ungroup button in grid.](Grouping_images/Grouping_img5.png)
 
 
 ## Hide Grouped Column
@@ -174,7 +174,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img6.png)
+![hide grouped column in grid.](Grouping_images/Grouping_img6.png)
 
 
 ## AutoSize Drop Area
@@ -202,7 +202,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img7.png)
+![autosize drop area in grid.](Grouping_images/Grouping_img7.png)
 
 
 ## Hide Drop area
@@ -230,7 +230,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img8.png)
+![hide drop area in grouping.](Grouping_images/Grouping_img8.png)
 
 
 ## Group Caption Format / Group Caption Template
@@ -278,10 +278,10 @@ function btnClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img9.png)
+![group caption format in grouping](Grouping_images/Grouping_img9.png)
 
 
-![](Grouping_images/Grouping_img10.png)
+![group caption template in grouping grid.](Grouping_images/Grouping_img10.png)
 
 
 ### Perform Grouping by External Action:-
@@ -343,7 +343,7 @@ $(function () {
 
 The following output is displayed as a result of the previous code example.
 
-![](Grouping_images/Grouping_img11.png)
+![perform erouping by external action in grid.](Grouping_images/Grouping_img11.png)
 
 ## Handling grouped records count in server-side    
 
@@ -417,4 +417,4 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img12.png)
+![handling grouped records count in server-side in grid.](Grouping_images/Grouping_img12.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in DataManager widget for Syncfusion Javascript
-description: Describes about Filtering in DataManager control.
+description: Check out and learn here all about descriptions of filtering in Syncfusion DataManager control and much more details.
 platform: js
 control: DataManager
 documentation: ug
@@ -92,7 +92,7 @@ This operator is used to get the records with values less than that of the filte
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img1.png) 
+![values less than that of the filter value.](Filtering_images/Filtering_img1.png) 
 
 ## greaterThan
 
@@ -145,7 +145,7 @@ This operator is used to get the records with values greater than that of the fi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img2.png) 
+![values greater than that of the filter value.](Filtering_images/Filtering_img2.png) 
 
 ## lessThanOrEqual
 
@@ -200,7 +200,7 @@ This operator is used to get the records with values less than or equal to the f
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img3.png) 
+![values less than or equal to the filter value.](Filtering_images/Filtering_img3.png) 
 
 ## greaterThanOrEqual
 
@@ -254,7 +254,7 @@ This operator is used to get the records with values greater than or equal to th
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img4.png) 
+![values greater than or equal to the filter value.](Filtering_images/Filtering_img4.png) 
 
 ## equal
 
@@ -306,7 +306,7 @@ This operator is used to get the records with values equal to that of the filter
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img5.png) 
+![values equal to that of the filter value.](Filtering_images/Filtering_img5.png) 
 
 ## notEqual
 
@@ -359,7 +359,7 @@ This operator is used to get the records with values not equal to that of the fi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img6.png) 
+![values not equal to that of the filter value specified.](Filtering_images/Filtering_img6.png) 
 
 ## contains
 
@@ -414,7 +414,7 @@ This operator is used to get the records that contains the filter value.
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img7.png) 
+![contains the filter value.](Filtering_images/Filtering_img7.png) 
 
 ## startswith
 
@@ -467,7 +467,7 @@ This operator is used to get the records that starts with the filter value speci
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img8.png) 
+![starts with the filter value specified.](Filtering_images/Filtering_img8.png) 
 
 ## endswith
 
@@ -521,7 +521,7 @@ This operator is used to get the records that ends with the filter value specifi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img9.png) 
+![ends with the filter value specified.](Filtering_images/Filtering_img9.png) 
 
 ## and predicate
 
@@ -575,7 +575,7 @@ The `and` predicate is used to add n-number of predicates with “and” conditi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img10.png) 
+![and condition and filter the data.](Filtering_images/Filtering_img10.png) 
 
 ## or predicate
 
@@ -630,7 +630,7 @@ Using this method you can add n-number of predicates with `or` condition and fil
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img11.png) 
+![or condition and filter the data.](Filtering_images/Filtering_img11.png) 
 
 ## Containment Operators
 
@@ -682,7 +682,7 @@ This operator is used to get the records that not contains the filter value.
 
 {% endhighlight %}
 
-![](Filtering_images/Filtering_image111.png) 
+![not contains the filter value.](Filtering_images/Filtering_image111.png) 
 
 ### contains
 
@@ -732,7 +732,7 @@ This operator is used to get the records that contains the filter value.
 
 {% endhighlight %}
 
-![](Filtering_images/Filtering_image12.png) 
+![contains the filter value.](Filtering_images/Filtering_image12.png) 
 
 ### in
 
@@ -782,7 +782,7 @@ This operator used to fetch the records with value match with the given filter v
 
 {% endhighlight %}
 
-![](Filtering_images/Filtering_image13.png) 
+![value match with the given filter value.](Filtering_images/Filtering_image13.png) 
 
 ### notin
 
@@ -832,9 +832,9 @@ This operator used to fetch the records with value not match with the given filt
 
 {% endhighlight %}
 
-![](Filtering_images/Filtering_image14.png) 
+![value not match with the given filter value.](Filtering_images/Filtering_image14.png) 
 
-![](Filtering_images/Filtering_image15.png) 
+![output for the notin filter.](Filtering_images/Filtering_image15.png) 
 
 ## Lambda Operators
 
@@ -883,7 +883,7 @@ The ALL operator returns true if all the sub query values meet the condition. Th
 
 {% endhighlight %}
 
-![](Filtering_images/Filtering_image16.png) 
+![all the sub query values meet the condition.](Filtering_images/Filtering_image16.png) 
 
 ### any
 
@@ -932,4 +932,4 @@ The ANY operator returns true if any of the sub query values meet the condition.
 
 {% endhighlight %}
 
-![](Filtering_images/Filtering_image17.png) 
+![any one of the field in existing table.](Filtering_images/Filtering_image17.png) 

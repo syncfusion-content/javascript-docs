@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: localization
+title: Localization | DataTimePicker | Javascript
+description: Check out and learn here all about localization in the Syncfusion Data Time Picker and much more details.
 platform: js
 control: DateTimePicker
 documentation: ug
@@ -106,5 +106,5 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-![](/js/DateTimePicker/Globalization_images/Globalization_img1.png)
+![DateTimePicker in Spanish language.](/js/DateTimePicker/Globalization_images/Globalization_img1.png)
 
