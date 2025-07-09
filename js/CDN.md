@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CDN links for Syncfusion Essential JS widgets
-description: Learn how to add  CDN links for syncfusion essential js widgets and dependent scripts.
+description: Check out and learn here all about how to add  CDN links for syncfusion essential js widgets and dependent scripts.
 platform: js
 control: Introduction
 documentation: ug
