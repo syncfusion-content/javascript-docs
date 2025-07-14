@@ -150,6 +150,6 @@ We can add the separators for particular ContextMenu items by including **e-sepa
 
 The following screenshot displays the output for the above code. 
 
-![Separators for Context Menu.](/js/Menu/Separators_images/Separators_img3.png) 
+![Separators for context menu.](/js/Menu/Separators_images/Separators_img3.png) 
 
 
