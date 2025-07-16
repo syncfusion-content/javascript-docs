@@ -7,7 +7,7 @@ platform: js
 keywords: Northwind, syncfusion, Northwind wcf
 ---
 
-## NorthwindDataService
+# NorthwindDataService
 
  [GET] [/WCF/Northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
 
