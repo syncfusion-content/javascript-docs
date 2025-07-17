@@ -48,7 +48,7 @@ In EjChart, you can add multiple series object in the [`series`](../api/js/ejcha
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Series_images/Chart-Series_img1.png)
+![multiple series in Chart](/js/Chart/Chart-Series_images/Chart-Series_img1.png)
 
 
 [Click](https://ej2.syncfusion.com/home/#!/azure/chart/column) here to view the multiple series online demo sample.
@@ -99,7 +99,7 @@ The following code example explains on how to enable marker, tooltip and animati
 
 {% endhighlight %} 
 
-![](/js/Chart/Chart-Series_images/Chart-Series_img2.png)
+![customizing all series together in Chart.](/js/Chart/Chart-Series_images/Chart-Series_img2.png)
 
 
 ## Combination Series
@@ -128,7 +128,7 @@ EjChart allows you to render the combination of different series in the chart.
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Series_images/Chart-Series_img3.png)
+![combination Series in Chart.](/js/Chart/Chart-Series_images/Chart-Series_img3.png)
 
 
 [Click](https://ej2.syncfusion.com/home/#!/azure/chart/combination) here to view the combination series online demo sample.
@@ -172,7 +172,7 @@ When the combination of Cartesian and accumulation series types are added to the
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Series_images/Chart-Series_img4.png)
+![limitation of combination chart.](/js/Chart/Chart-Series_images/Chart-Series_img4.png)
 
 ## Init Series render
 
