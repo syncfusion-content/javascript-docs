@@ -7,7 +7,7 @@ platform: js
 keywords: Spreadsheet,ejSpreadsheet , syncfusion, ejSpreadsheet webapi
 ---
 
-## ExcelExport
+# ExcelExport
 
  [POST] [/Api/Spreadsheet/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/ExcelExport)
 
