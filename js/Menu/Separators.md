@@ -87,7 +87,7 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
 
 The following screenshot displays the output for the above code. 
 
-![to display the separators in the Menu control.](/js/Menu/Separators_images/Separators_img2.png) 
+![to display the separators in the menu control.](/js/Menu/Separators_images/Separators_img2.png) 
 
 
 ## Separators for Context Menu
@@ -150,6 +150,6 @@ We can add the separators for particular ContextMenu items by including **e-sepa
 
 The following screenshot displays the output for the above code. 
 
-![Separators for context menu.](/js/Menu/Separators_images/Separators_img3.png) 
+![separators for context menu.](/js/Menu/Separators_images/Separators_img3.png) 
 
 
