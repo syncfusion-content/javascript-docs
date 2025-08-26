@@ -16,7 +16,7 @@ The Cross-Origin Resource Sharing (CORS) mechanism enable secure cross-domain da
 
 This policy defined the rule for, “how a web page can be accessed by an external resource”. Browsers wont permits a request to access the resources who origin is differ than the current page. To overcome the restriction of same-origin policy, we can use a technique called Cross-origin resource sharing.
 
-![](CORS_images/SAME-ORIGIN1.png) 
+![same-origin policy in DataManager.](CORS_images/SAME-ORIGIN1.png) 
 
 ## Access-Control-Allow-Origin
 

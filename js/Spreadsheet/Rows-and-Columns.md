@@ -185,7 +185,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img1.png)
+![delete entire column in Javasript Spreadsheet.](Rows-and-Columns_images/Rows-and-Columns_img1.png)
 
 ## Show and Hide 
 
@@ -233,7 +233,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img2.png)
+![hide column in Javascript spreadsheet.](Rows-and-Columns_images/Rows-and-Columns_img2.png)
 
 #### Show Row
 
@@ -276,7 +276,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img3.png)
+![show column in Javascript spreadsheet.](Rows-and-Columns_images/Rows-and-Columns_img3.png)
 
 ## Resizing
 
@@ -319,4 +319,4 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img4.png)
+![resizing in Javascript Spreadsheet.](Rows-and-Columns_images/Rows-and-Columns_img4.png)

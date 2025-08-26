@@ -66,7 +66,7 @@ The below sample explains the tasks’ duration unit in Gantt.
 
 The below screen shot shows different duration unit support in Gantt control.
 
-![](/js/Gantt/Duration-units_images/Duration-units_img1.png)
+![mapping the duration unit field in Javascript Gantt.](/js/Gantt/Duration-units_images/Duration-units_img1.png)
 
 N> 1. The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
 

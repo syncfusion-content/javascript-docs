@@ -50,4 +50,4 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Stackedheader_images/Stackedheader_img1.png)
+![adding stacked header columns in Javasript Grid.](Stackedheader_images/Stackedheader_img1.png)

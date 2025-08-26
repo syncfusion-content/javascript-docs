@@ -40,7 +40,7 @@ The visibility of the annotation is controlled by using the [`visible`](../api/e
 {% endhighlight %}
 
 
-![](/js/Chart/Annotations_images/Annotations_img1.png)
+![annotations in Javascript Chart.](/js/Chart/Annotations_images/Annotations_img1.png)
 
 
 [Click](https://ej2.syncfusion.com/home/#!/azure/chart/chartcustomization/annotations) here to view the Annotations online demo sample.
@@ -70,7 +70,7 @@ To rotate the annotation template, you can use the [`angle`](../api/ejchart#memb
 {% endhighlight %}
 
 
-![](/js/Chart/Annotations_images/Annotations_img2.png)
+![rotate the annotation template in Javascript Chart.](/js/Chart/Annotations_images/Annotations_img2.png)
 
 ## Positioning Annotation
 
@@ -106,7 +106,7 @@ N> By using the [`region`](../api/ejchart#members:annotations-region) option, yo
 {% endhighlight %}
 
 
-![](/js/Chart/Annotations_images/Annotations_img3.png)
+![positioning annotation in Javascript Chart.](/js/Chart/Annotations_images/Annotations_img3.png)
 
 
 ## Annotation alignments
@@ -139,4 +139,4 @@ The margin property of the annotation can  further be customized in [`right`](..
 {% endhighlight %}
 
 
-![](/js/Chart/Annotations_images/Annotations_img4.png)
+![annotation alignments in Javascript Chart.](/js/Chart/Annotations_images/Annotations_img4.png)
